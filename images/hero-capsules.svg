@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 680" fill="none">
+  <defs>
+    <linearGradient id="bottleBody" x1="190" y1="130" x2="490" y2="640" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3a3a3a"/>
+      <stop offset="32%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="bottleSpec" x1="210" y1="150" x2="310" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="steelCap" x1="226" y1="30" x2="454" y2="122" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="28%" stop-color="#a3a3a3"/>
+      <stop offset="65%" stop-color="#d4d4d4"/>
+      <stop offset="100%" stop-color="#404040"/>
+    </linearGradient>
+    <linearGradient id="capMono" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#404040"/>
+      <stop offset="48%" stop-color="#171717"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <filter id="drop" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="22" stdDeviation="20" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- Center Pharmaceutical Bottle -->
+  <g filter="url(#drop)">
+    <rect x="248" y="106" width="184" height="46" rx="12" fill="#0a0a0a"/>
+    <rect x="228" y="26" width="224" height="88" rx="18" fill="url(#steelCap)"/>
+    <rect x="242" y="34" width="46" height="72" rx="10" fill="#ffffff" fill-opacity="0.24"/>
+    <line x1="228" y1="102" x2="452" y2="102" stroke="#000000" stroke-opacity="0.45" stroke-width="3"/>
+
+    <path d="M248 140C192 158 170 198 170 246V618C170 652 198 674 236 674H444C482 674 510 652 510 618V246C510 198 488 158 432 140H248Z" fill="url(#bottleBody)"/>
+    <path d="M196 240C196 206 216 178 256 166L280 166V654H236C210 654 196 638 196 610V240Z" fill="url(#bottleSpec)"/>
+
+    <text x="340" y="294" text-anchor="middle" font-family="Georgia, serif" font-size="44" font-weight="700" letter-spacing="5" fill="#ffffff">ERAWAT</text>
+    <text x="340" y="320" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" letter-spacing="5" fill="#d4d4d4">INDORE</text>
+
+    <g transform="translate(310 356)">
+      <circle cx="30" cy="30" r="30" stroke="#d4d4d4" stroke-opacity="0.65" stroke-width="1.8"/>
+      <rect x="19" y="7" width="22" height="46" rx="11" stroke="#ffffff" stroke-width="2.4" fill="none"/>
+      <line x1="19" y1="30" x2="41" y2="30" stroke="#d4d4d4" stroke-width="2"/>
+    </g>
+
+    <text x="340" y="458" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="2.5" fill="#ffffff">HARD CAPSULES</text>
+    <text x="340" y="482" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="500" letter-spacing="2" fill="#b5b5b5">GELATIN &amp; HPMC · SIZES 00–5</text>
+  </g>
+
+  <!-- Floating Monochrome Capsules -->
+  <g transform="translate(464 10) rotate(-14)" filter="url(#drop)">
+    <rect x="0" y="0" width="48" height="124" rx="24" fill="url(#capMono)"/>
+    <rect x="8" y="12" width="9" height="96" rx="4.5" fill="#ffffff" fill-opacity="0.28"/>
+    <line x1="0" y1="62" x2="48" y2="62" stroke="#000000" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(76 364) rotate(56)" filter="url(#drop)">
+    <rect x="0" y="0" width="46" height="118" rx="23" fill="url(#capMono)"/>
+    <rect x="8" y="12" width="8" height="90" rx="4" fill="#ffffff" fill-opacity="0.26"/>
+    <line x1="0" y1="59" x2="46" y2="59" stroke="#000000" stroke-width="2"/>
+  </g>
+
+  <g transform="translate(474 446) rotate(-28)" filter="url(#drop)">
+    <rect x="0" y="0" width="46" height="116" rx="23" fill="url(#capMono)"/>
+    <rect x="8" y="12" width="8" height="90" rx="4" fill="#ffffff" fill-opacity="0.26"/>
+    <line x1="0" y1="58" x2="46" y2="58" stroke="#000000" stroke-width="2"/>
+  </g>
+
+  <!-- Monochrome Blades at Bottle Base -->
+  <g>
+    <path d="M128 678 Q166 540 218 488 Q186 584 176 678 Z" fill="#404040"/>
+    <path d="M174 678 Q216 510 264 468 Q232 570 224 678 Z" fill="#525252"/>
+    <path d="M236 678 Q266 530 310 478 Q284 576 280 678 Z" fill="#171717"/>
+    <path d="M294 678 Q336 550 374 504 Q352 596 346 678 Z" fill="#050505"/>
+    <path d="M362 678 Q382 518 422 464 Q408 574 412 678 Z" fill="#404040"/>
+    <path d="M416 678 Q458 538 506 492 Q472 586 466 678 Z" fill="#525252"/>
+    <path d="M468 678 Q514 570 554 532 Q522 612 516 678 Z" fill="#1f1f1f"/>
+  </g>
+</svg>

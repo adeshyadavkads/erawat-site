@@ -1,0 +1,184 @@
+/* ==========================================================================
+   TOKENS.CSS — Design Tokens for Erawat Pharma Limited
+   All colors, typography, spacing, radii, shadows, and motion tokens.
+   ========================================================================== */
+
+:root {
+  /* ------------------------------------------------------------------------
+     1. BRAND & NATURAL COLOR PALETTE
+     ------------------------------------------------------------------------ */
+
+  /* Brand monochromatic scale derived from the official Erawat logo (Black & White high contrast) */
+  --brand-black: #000000;
+  --brand-black-950: #0a0a0a;
+  --brand-black-900: #121212;
+  --brand-black-800: #1a1a1a;
+  --brand-charcoal: #262626;
+
+  /* Legacy variable mappings re-anchored to logo black, graphite & neutral slate */
+  --green-950: #0a0a0a;
+  --green-900: #121212;
+  --green-700: #262626;
+  --green-600: #000000;
+  --green-400: #e2e8f0;
+
+  /* Clean light slate / crisp chrome neutrals (replacing greenish sage) */
+  --sage-100: #f1f5f9;
+
+  /* Architectural steel blue (Manufacturing section & cards) */
+  --blue-900: #10375c;
+  --blue-700: #1d4ed8;
+  --blue-50: #eff6ff;
+
+  /* Warm sand & clean crisp surfaces */
+  --sand-50: #faf9f5;
+  --sand-100: #f3f1eb;
+  --sand-200: #e5e1d8;
+  --sand-300: #cbc5b8;
+
+  /* Dark neutrals (footer, inquiry panel, deep corporate monochrome) */
+  --ink-950: #0a0a0a;
+  --ink-900: #121212;
+  --ink-800: #1c1c1e;
+  --ink-700: #2c2c2e;
+  --ink-500: #52525b;
+  --ink-300: #a1a1aa;
+  --white: #ffffff;
+
+  /* Warm amber & copper accents */
+  --amber-500: #f59e0b;
+  --amber-200: #fde68a;
+
+  /* Status accents */
+  --danger: #ef4444;
+
+  /* ------------------------------------------------------------------------
+     2. GRADIENTS
+     ------------------------------------------------------------------------ */
+  --gradient-hero: linear-gradient(180deg, #18181b 0%, #0f1012 55%, #050505 100%);
+  --gradient-banner-btn: linear-gradient(90deg, #c52222 0%, #e53935 50%, #f4511e 100%);
+  --gradient-banner-btn-crimson: linear-gradient(90deg, #c52222 0%, #e53935 50%, #f4511e 100%);
+  --gradient-banner-btn-emerald: linear-gradient(90deg, #18181b 0%, #27272a 50%, #3f3f46 100%);
+  --gradient-banner-btn-sapphire: linear-gradient(90deg, #1e40af 0%, #2563eb 50%, #0284c7 100%);
+  --gradient-banner-btn-amber: linear-gradient(90deg, #d97706 0%, #ea580c 50%, #e11d48 100%);
+  --gradient-blue-card: linear-gradient(180deg, #2d537a 0%, #1d3c5c 100%);
+  --gradient-split-left: radial-gradient(circle at 82% 72%, rgba(100, 116, 139, 0.35) 0%, rgba(30, 41, 59, 0.86) 44%, #0a0a0a 88%);
+  --gradient-word: radial-gradient(ellipse 72% 92% at 50% 92%, #cbd5e1 0%, #64748b 34%, #1e293b 65%, #050505 94%);
+
+  /* ------------------------------------------------------------------------
+     3. SEMANTIC COLOR ROLES
+     ------------------------------------------------------------------------ */
+  --color-bg: var(--sand-50);
+  --color-surface: var(--white);
+  --color-surface-muted: var(--sand-100);
+  --color-text: var(--ink-900);
+  --color-text-muted: var(--ink-500);
+  --color-brand: #000000;
+  --color-action: #000000;
+  --color-action-hover: #262626;
+  --color-link: var(--blue-700);
+  --color-focus: var(--amber-500);
+  --color-dark-bg: var(--ink-950);
+  --color-dark-surface: var(--ink-800);
+  --color-dark-border: var(--ink-700);
+  --color-dark-text: var(--white);
+  --color-dark-muted: var(--ink-300);
+  --color-danger: var(--danger);
+
+  /* Surface-specific semantic roles */
+  --color-blue-bg: var(--blue-50);
+  --color-blue-heading: #000000;
+  --color-header-bg: rgba(10, 10, 10, 0.94);
+  --color-header-top: transparent;
+  --color-glass-nav: rgba(15, 15, 15, 0.55);
+  --color-btn-dark: #000000;
+  --color-glass-dark-border: rgba(255, 255, 255, 0.16);
+  --color-hero-overlay: rgba(0, 0, 0, 0.65);
+  --color-hero-text-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.45);
+  --color-step-glass: rgba(255, 255, 255, 0.08);
+  --color-step-glass-border: rgba(255, 255, 255, 0.18);
+  --color-step-badge: rgba(255, 255, 255, 0.18);
+
+  /* ------------------------------------------------------------------------
+     4. TYPOGRAPHY
+     ------------------------------------------------------------------------ */
+  --font-heading: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-body: "Figtree", system-ui, sans-serif;
+
+  --text-hero-heading: clamp(2rem, 1.4rem + 2.2vw, 3.5rem);
+  --text-h1: clamp(2.5rem, 1.6rem + 4vw, 5rem);
+  --text-h2: clamp(1.75rem, 1.35rem + 1.5vw, 2.625rem);
+  --text-section-heading: var(--text-h2);
+  --text-h3: clamp(1.375rem, 1.15rem + 1vw, 2rem);
+  --text-body: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-small: clamp(0.8125rem, 0.78rem + 0.15vw, 0.9375rem);
+  --text-wordmark: clamp(4rem, 2rem + 20vw, 22rem);
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  --leading-heading: 1.05;
+  --leading-snug: 1.25;
+  --leading-body: 1.6;
+  --tracking-heading: -0.03em;
+  --measure: 65ch;
+
+  /* ------------------------------------------------------------------------
+     5. FLUID SPACING & LAYOUT
+     ------------------------------------------------------------------------ */
+  --space-3xs: clamp(0.25rem, 0.2rem + 0.25vw, 0.375rem);
+  --space-2xs: clamp(0.5rem, 0.45rem + 0.25vw, 0.625rem);
+  --space-xs: clamp(0.75rem, 0.65rem + 0.5vw, 1rem);
+  --space-sm: clamp(1rem, 0.85rem + 0.75vw, 1.375rem);
+  --space-md: clamp(1.375rem, 1.1rem + 1.35vw, 2rem);
+  --space-lg: clamp(1.75rem, 1.4rem + 1.75vw, 2.75rem);
+  --space-xl: clamp(2.25rem, 1.7rem + 2.75vw, 3.75rem);
+  --space-2xl: clamp(3rem, 2.2rem + 4vw, 5rem);
+  --space-3xl: clamp(3.5rem, 2.5rem + 5vw, 6.5rem);
+
+  --gutter: clamp(1rem, 0.5rem + 3vw, 3rem);
+  --container-max: 75rem;
+  --touch-target: 2.75rem;
+
+  /* Component sizing tokens */
+  --border-thin: 0.0625rem;
+  --border-thick: 0.125rem;
+  --focus-offset: 0.1875rem;
+  --brand-logo-h: clamp(2rem, 1.75rem + 0.8vw, 2.5rem);
+  --stat-icon-size: 1.75rem;
+  --mini-step-min-h: 8rem;
+  --mfg-banner-copy-max: 32rem;
+  --hero-min-h: 100vh;
+  --hero-copy-max: 36rem;
+  --header-h: 5.5rem;
+  --wordmark-cut: 0.16em;
+
+  /* ------------------------------------------------------------------------
+     6. SHAPE, SHADOWS & MOTION
+     ------------------------------------------------------------------------ */
+  --radius-sharp: 0;
+  --radius-control: 0;
+  --radius-panel: 0;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 0.5rem 1.5rem rgba(10, 10, 10, 0.07);
+  --shadow-card: 0 1rem 2.25rem rgba(0, 0, 0, 0.08);
+  --shadow-lift: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.16);
+
+  --ease-standard: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --duration-fast: 180ms;
+  --duration-base: 260ms;
+  --duration-loader: 400ms;
+  --lift-y: -0.125rem;
+  --loader-size: clamp(11rem, 8rem + 8vw, 15rem);
+
+  /* Layering */
+  --z-backdrop: 0;
+  --z-base: 1;
+  --z-overlay: 10;
+  --z-header: 50;
+  --z-loader: 100;
+}

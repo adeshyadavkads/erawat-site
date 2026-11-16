@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Trial Capsule Sample | Erawat Pharma Limited</title>
+  <meta name="description" content="Request complimentary empty hard gelatin or HPMC vegetarian capsule samples for test-running on your high-speed filling machines.">
+  <link rel="icon" type="image/gif" href="images/logo.gif">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/aos.css">
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header__inner">
+      <a class="brand" href="index.html" aria-label="Erawat Pharma Limited Home">
+        <span class="brand__logo-wrap">
+          <img class="brand__logo" src="images/logo_1.png" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine" width="180" height="48">
+        </span>
+      </a>
+
+      <button type="button" id="navToggle" class="nav-toggle" aria-controls="siteNav" aria-expanded="false">Menu</button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="profile.html">About</a></li>
+          <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
+          <li><a class="nav__link" href="certification.html">Certification</a></li>
+          <li><a class="nav__link" href="epl-products.html">Products</a></li>
+          <li><a class="nav__link" href="exports.html">Export Areas</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+          <li><a class="nav__link" href="careers.html">Careers</a></li>
+        </ul>
+        <div class="nav__mobile-cta">
+          <a class="btn-gradient-pill" href="#" data-open-modal="modalSendInquiry">Send Inquiry &rarr;</a>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn-gradient-pill" href="#" data-open-modal="modalSendInquiry">Send Inquiry &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- 1. Page Banner -->
+    <section class="page-banner" aria-label="Page Header">
+      <div class="container page-banner__inner">
+        <span class="section-tag page-banner__label" data-aos="fade-down"><span class="section-tag__dot"></span>Free Trial Evaluation</span>
+        <h1 class="page-banner__title" data-aos="fade-up" data-aos-delay="100">Request a Sample</h1>
+        <p class="page-banner__subline" data-aos="fade-up" data-aos-delay="150">Tell us what you fill and on which machine. We will send the right capsule.</p>
+        <nav class="breadcrumb" aria-label="Breadcrumb" data-aos="fade-up" data-aos-delay="200">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep">/</span>
+          <span class="breadcrumb__current">Request Sample</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- 2. Form + What Happens Next (3 Short Groups) -->
+    <section class="section">
+      <div class="container">
+        <div class="split-layout" style="align-items: flex-start;">
+          <!-- Left: 3-Group Form -->
+          <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: 0 4px 16px rgba(0,0,0,0.04);" data-aos="fade-right">
+            <h2 style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800; color: var(--ink-950); margin: 0 0 1.5rem;">Sample Dispatch Request</h2>
+
+            <form id="sampleDispatchForm" novalidate>
+              <!-- Group 1: Your Company -->
+              <fieldset style="border: none; padding: 0; margin: 0 0 1.75rem 0;">
+                <legend style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--green-900); border-bottom: 2px solid var(--green-600); padding-bottom: 0.35rem; margin-bottom: 1rem; width: 100%;">1. Your Company Details</legend>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; margin-bottom: 0.85rem;">
+                  <div class="field-line">
+                    <label class="field-line__label" for="sampCompanyName">Company Name<span class="required-star">*</span></label>
+                    <input class="field-line__input" type="text" id="sampCompanyName" name="company" placeholder="e.g. Medilife Formulations" required>
+                  </div>
+                  <div class="field-line">
+                    <label class="field-line__label" for="sampUserName">Your Name<span class="required-star">*</span></label>
+                    <input class="field-line__input" type="text" id="sampUserName" name="name" placeholder="e.g. Rajesh Sharma" required>
+                  </div>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem;">
+                  <div class="field-line">
+                    <label class="field-line__label" for="sampEmail">Official Email<span class="required-star">*</span></label>
+                    <input class="field-line__input" type="email" id="sampEmail" name="email" placeholder="name@company.com" required>
+                  </div>
+                  <div class="field-line">
+                    <label class="field-line__label" for="sampPhone">Phone Number<span class="required-star">*</span></label>
+                    <input class="field-line__input" type="tel" id="sampPhone" name="phone" placeholder="e.g. 9876543210" required>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Group 2: What You Need -->
+              <fieldset style="border: none; padding: 0; margin: 0 0 1.75rem 0;">
+                <legend style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--green-900); border-bottom: 2px solid var(--green-600); padding-bottom: 0.35rem; margin-bottom: 1rem; width: 100%;">2. What You Need</legend>
+                
+                <div style="margin-bottom: 1rem;">
+                  <label class="field-line__label">Capsule Type<span class="required-star">*</span></label>
+                  <div style="display: flex; gap: 1.5rem; margin-top: 0.35rem;">
+                    <label style="font-size: 0.9rem; font-weight: 500; display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+                      <input type="radio" name="capsule_type" value="Gelatin" checked> Gelatin Hard Capsule
+                    </label>
+                    <label style="font-size: 0.9rem; font-weight: 500; display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+                      <input type="radio" name="capsule_type" value="HPMC"> HPMC Vegetarian Capsule
+                    </label>
+                  </div>
+                </div>
+
+                <div class="field-line" style="margin-bottom: 1rem;">
+                  <label class="field-line__label">Sizes Required (Multiple Selection)</label>
+                  <div class="interest-minimal__chips" style="margin-top: 0.35rem;">
+                    <label class="minimal-chip"><input type="checkbox" name="sample_size" value="00"><span>00</span></label>
+                    <label class="minimal-chip"><input type="checkbox" name="sample_size" value="0EL"><span>0EL</span></label>
+                    <label class="minimal-chip"><input type="checkbox" name="sample_size" value="0" checked><span>0</span></label>
+                    <label class="minimal-chip"><input type="checkbox" name="sample_size" value="1"><span>1</span></label>
+                    <label class="minimal-chip"><input type="checkbox" name="sample_size" value="2"><span>2</span></label>
+                    <label class="minimal-chip"><input type="checkbox" name="sample_size" value="3"><span>3</span></label>
+                    <label class="minimal-chip"><input type="checkbox" name="sample_size" value="4"><span>4</span></label>
+                    <label class="minimal-chip"><input type="checkbox" name="sample_size" value="5"><span>5</span></label>
+                  </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; margin-bottom: 0.85rem;">
+                  <div class="field-line">
+                    <label class="field-line__label" for="sampColour">Colour Preference</label>
+                    <input class="field-line__input" type="text" id="sampColour" name="colour" placeholder="e.g. Clear, White/White, Custom">
+                  </div>
+                  <div class="field-line">
+                    <label class="field-line__label" for="sampVol">Monthly Requirement</label>
+                    <input class="field-line__input" type="text" id="sampVol" name="monthly_vol" placeholder="e.g. 5 Million Capsules">
+                  </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem;">
+                  <div class="field-line">
+                    <label class="field-line__label" for="sampMachine">Filling Machine Make &amp; Model</label>
+                    <input class="field-line__input" type="text" id="sampMachine" name="machine" placeholder="e.g. Bosch GKF 702 / Pam Pac">
+                  </div>
+                  <div class="field-line">
+                    <label class="field-line__label" for="sampProduct">Product Formulation Type</label>
+                    <select class="field-line__input" id="sampProduct" name="formulation_type">
+                      <option value="Powder">Dry Powder</option>
+                      <option value="Granules">Granules</option>
+                      <option value="Pellets">Pellets / Beads</option>
+                      <option value="Liquid">Non-aqueous Liquid / Paste</option>
+                      <option value="Tablet">Tablet in Capsule</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Group 3: Where to Send -->
+              <fieldset style="border: none; padding: 0; margin: 0 0 1.5rem 0;">
+                <legend style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 700; color: var(--green-900); border-bottom: 2px solid var(--green-600); padding-bottom: 0.35rem; margin-bottom: 1rem; width: 100%;">3. Shipping Destination</legend>
+                <div class="field-line" style="margin-bottom: 0.85rem;">
+                  <label class="field-line__label" for="sampAddress">Factory / Delivery Address<span class="required-star">*</span></label>
+                  <textarea class="field-line__input field-line__textarea" id="sampAddress" name="shipping_address" rows="2" placeholder="Street address, unit/gate number, city, and postal code..." required></textarea>
+                </div>
+                <div class="field-line" style="margin-bottom: 1rem;">
+                  <label class="field-line__label" for="sampCountry">Country<span class="required-star">*</span></label>
+                  <input class="field-line__input" type="text" id="sampCountry" name="country" placeholder="e.g. India" required>
+                </div>
+                <label style="font-size: 0.825rem; color: var(--ink-700); display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
+                  <input type="checkbox" name="agree_contact" required checked style="margin-top: 0.2rem;">
+                  <span>I agree to be contacted by Erawat technical team regarding this sample request.</span>
+                </label>
+              </fieldset>
+
+              <button type="submit" class="btn-gradient-pill" style="width: 100%;">Send Sample Request &rarr;</button>
+              <div class="form-status is-hidden" id="sampleFormStatus" style="margin-top: 1rem;" role="status"></div>
+            </form>
+          </div>
+
+          <!-- Right Column: What Happens Next (3 Numbered Lines) -->
+          <div data-aos="fade-left" data-aos-delay="150">
+            <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: clamp(1.5rem, 2.5vw, 2rem); box-shadow: 0 4px 16px rgba(0,0,0,0.04); margin-bottom: 2rem;">
+              <span class="section-tag"><span class="section-tag__dot"></span>Fast Fulfillment</span>
+              <h3 style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--ink-950); margin: 0.5rem 0 1.25rem;">What happens next</h3>
+
+              <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                  <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--green-600); line-height: 1;">1</span>
+                  <div>
+                    <strong style="display: block; font-size: 0.95rem; color: var(--ink-950); margin-bottom: 0.2rem;">Technical Review</strong>
+                    <p style="font-size: 0.85rem; color: var(--ink-700); margin: 0; line-height: 1.5;">Our engineering team reviews your filling machine model and active formulation requirements.</p>
+                  </div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                  <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--green-600); line-height: 1;">2</span>
+                  <div>
+                    <strong style="display: block; font-size: 0.95rem; color: var(--ink-950); margin-bottom: 0.2rem;">Email Confirmation</strong>
+                    <p style="font-size: 0.85rem; color: var(--ink-700); margin: 0; line-height: 1.5;">We confirm exact size, colour availability, and batch quantity by email within 24 hours.</p>
+                  </div>
+                </div>
+
+                <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                  <span style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--green-600); line-height: 1;">3</span>
+                  <div>
+                    <strong style="display: block; font-size: 0.95rem; color: var(--ink-950); margin-bottom: 0.2rem;">Sample Ships (2&ndash;3 Working Days)</strong>
+                    <p style="font-size: 0.85rem; color: var(--ink-700); margin: 0; line-height: 1.5;">Your sample box is sealed in moisture-barrier packaging and dispatched via express courier with tracking.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. FAQ -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem;">
+              <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: var(--ink-950); margin: 0 0 1rem;">Sample Policy FAQs</h3>
+              
+              <div style="border-bottom: 1px solid #edf2f7; padding-bottom: 0.75rem; margin-bottom: 0.75rem;">
+                <strong style="display: block; font-size: 0.9rem; color: var(--ink-950); margin-bottom: 0.2rem;">Is the trial sample free?</strong>
+                <p style="font-size: 0.825rem; color: var(--ink-700); margin: 0; line-height: 1.5;">Yes. Complimentary trial sample boxes are provided to verified pharmaceutical and nutraceutical manufacturers.</p>
+              </div>
+
+              <div style="border-bottom: 1px solid #edf2f7; padding-bottom: 0.75rem; margin-bottom: 0.75rem;">
+                <strong style="display: block; font-size: 0.9rem; color: var(--ink-950); margin-bottom: 0.2rem;">How many capsules are provided?</strong>
+                <p style="font-size: 0.825rem; color: var(--ink-700); margin: 0; line-height: 1.5;">Standard sample packs contain 1,000 to 5,000 capsules, enough for multiple machine tooling calibration test runs.</p>
+              </div>
+
+              <div>
+                <strong style="display: block; font-size: 0.9rem; color: var(--ink-950); margin-bottom: 0.2rem;">Do you ship sample packs internationally?</strong>
+                <p style="font-size: 0.825rem; color: var(--ink-700); margin: 0; line-height: 1.5;">Yes. We regularly dispatch samples worldwide along with CoA and customs clearance documentation. See <a href="exports.html" style="color: var(--green-700); text-decoration: underline;">Export Areas</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CTA Band -->
+    <section class="cta-band" aria-label="Call to Action">
+      <div class="container cta-band__inner">
+        <h2 class="cta-band__text">Have questions before submitting your request?</h2>
+        <div class="cta-band__actions">
+          <a class="btn-gradient-pill" href="contact.html">Contact Us &rarr;</a>
+          <button type="button" class="btn-outline-white" data-open-modal="modalSendInquiry">Send Inquiry</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="Erawat Pharma Limited Home">
+            <span class="brand__logo-wrap">
+              <img class="brand__logo" src="images/logo.gif" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine" width="180" height="48">
+            </span>
+          </a>
+          <p class="footer__desc">
+            Erawat Pharma Limited, an Erawat Group Company, ranks among the top Capsule manufacturers in the world &amp; second largest in India. Founded in 1997.
+          </p>
+        </div>
+
+        <div class="footer__columns">
+          <div>
+            <h2 class="footer__heading">Quick links</h2>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="index.html">Home</a></li>
+              <li><a class="footer__link" href="epl-products.html">Products</a></li>
+              <li><a class="footer__link" href="technical-details.html">Technical Details</a></li>
+              <li><a class="footer__link" href="certification.html">Certification</a></li>
+              <li><a class="footer__link" href="exports.html">Export Areas</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="footer__heading">Company</h2>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="profile.html">About</a></li>
+              <li><a class="footer__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
+              <li><a class="footer__link" href="why-us.html">Why Choose Us</a></li>
+              <li><a class="footer__link is-active" href="request-sample.html">Request Sample</a></li>
+              <li><a class="footer__link" href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="footer__heading">Contact Details</h2>
+            <address class="footer__address">
+              <span class="footer__address-line">12-C/FA, Scheme No. 94, Ring Road, Near Pipliyahana Square, Indore - 452016, Madhya Pradesh, India</span>
+              <a class="footer__link" href="tel:+917316659100">+91 731 6659100</a>
+              <a class="footer__link" href="mailto:info@erawatgroup.com">info@erawatgroup.com</a>
+              <a class="footer__link" href="mailto:marketing@erawatgroup.com">marketing@erawatgroup.com</a>
+            </address>
+          </div>
+
+          <div>
+            <h2 class="footer__heading">Navigation</h2>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="contact.html">Contact Us</a></li>
+              <li><a class="footer__link" href="product.html">Size-by-Size Details</a></li>
+              <li><a class="footer__link" href="sitemap.html">SiteMap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>Copyright &copy; 2026 Erawat Pharma Limited. All Rights Reserved | <a class="footer__link" href="sitemap.html">SiteMap</a></p>
+        <p>Indore, Madhya Pradesh, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal P1: Send Inquiry -->
+  <div class="modal-backdrop" id="modalSendInquiry" role="dialog" aria-modal="true" aria-labelledby="inquiryModalTitle" aria-hidden="true">
+    <div class="modal-overlay" data-close-modal></div>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      <h3 class="modal-title" id="inquiryModalTitle">Send Inquiry</h3>
+      <p class="modal-lead">Connect directly with EPL India technical engineering specialists for formulation and machine support.</p>
+      <form class="modal-form" id="globalInquiryForm" novalidate>
+        <div class="field-line" style="margin-bottom: 0.85rem;">
+          <label class="field-line__label" for="modalInqName">Full Name<span class="required-star">*</span></label>
+          <input class="field-line__input" type="text" id="modalInqName" name="name" placeholder="e.g. Rajesh Sharma" required>
+        </div>
+        <div class="field-line" style="margin-bottom: 0.85rem;">
+          <label class="field-line__label" for="modalInqCompany">Company Name<span class="required-star">*</span></label>
+          <input class="field-line__input" type="text" id="modalInqCompany" name="company" placeholder="e.g. Medilife Formulations" required>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.85rem;">
+          <div class="field-line">
+            <label class="field-line__label" for="modalInqEmail">Work Email<span class="required-star">*</span></label>
+            <input class="field-line__input" type="email" id="modalInqEmail" name="email" placeholder="name@company.com" required>
+          </div>
+          <div class="field-line">
+            <label class="field-line__label" for="modalInqPhone">Phone Number<span class="required-star">*</span></label>
+            <input class="field-line__input" type="tel" id="modalInqPhone" name="phone" placeholder="e.g. 9876543210" required>
+          </div>
+        </div>
+        <div class="field-line" style="margin-bottom: 0.85rem;">
+          <label class="field-line__label" for="modalInqCountry">Country<span class="required-star">*</span></label>
+          <input class="field-line__input" type="text" id="modalInqCountry" name="country" placeholder="e.g. India" required>
+        </div>
+        <div class="field-line" style="margin-bottom: 1.25rem;">
+          <label class="field-line__label" for="modalInqMessage">Message</label>
+          <textarea class="field-line__input field-line__textarea" id="modalInqMessage" name="message" rows="2" placeholder="Specify filling speed, formulations, or trial requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn-gradient-pill" style="width: 100%;">Send Inquiry &rarr;</button>
+      </form>
+      <div class="modal-success is-hidden" style="display: none; padding: 2rem 1rem; text-align: center;">
+        <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--green-900); margin-bottom: 0.5rem;">Thanks. We will reply by email soon.</h4>
+        <p style="font-size: 0.95rem; color: var(--ink-700);">Our EPL technical specialist will review your specifications and contact you shortly.</p>
+        <button type="button" class="btn-outline-white" style="color: var(--ink-900); border-color: #cbd5e1; margin-top: 1rem;" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/aos.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

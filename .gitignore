@@ -1,0 +1,11 @@
+# Large video files (>100MB exceeds GitHub push limit)
+*.mp4
+
+# OS and Editor artifacts
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.log

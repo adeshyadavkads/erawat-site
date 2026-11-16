@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="warmWall" x1="0" y1="0" x2="0.85" y2="1">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="52%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </linearGradient>
+    <linearGradient id="deepShadow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#431407" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#1c0a03" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="lightBeam" x1="0" y1="0" x2="1" y2="0.8">
+      <stop offset="0%" stop-color="#fff7ed" stop-opacity="0.58"/>
+      <stop offset="100%" stop-color="#fb923c" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="capWarmSculpt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="40%" stop-color="#0d3b2d"/>
+      <stop offset="80%" stop-color="#06231a"/>
+      <stop offset="100%" stop-color="#03140e"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="400" fill="url(#warmWall)"/>
+  <polygon points="0,0 135,0 0,165" fill="url(#deepShadow)"/>
+  <polygon points="340,0 400,0 400,260 190,400 60,400" fill="url(#deepShadow)" opacity="0.65"/>
+  <polygon points="110,0 320,0 140,400 0,400 0,150" fill="url(#lightBeam)"/>
+
+  <g transform="translate(115 112)">
+    <polygon points="28,288 148,288 265,175 180,175" fill="#1c0a03" fill-opacity="0.48"/>
+    <rect x="26" y="18" width="96" height="260" rx="48" fill="url(#capWarmSculpt)"/>
+    <path d="M 38 70 Q 34 148 38 226" stroke="#fde68a" stroke-opacity="0.78" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 26 142 Q 74 150 122 142" stroke="#03140e" stroke-opacity="0.78" stroke-width="2.5"/>
+    <path d="M 26 144 Q 74 152 122 144" stroke="#ffffff" stroke-opacity="0.38" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" width="300" height="240" role="img" aria-label="Erawat Loading">
+  <style>
+      .erawat-globe-spin {
+        transform-origin: 66px 68px;
+        animation: erawatGlobeRotate 3.6s linear infinite;
+      }
+      .erawat-outer-frame {
+        stroke-dasharray: 760;
+        stroke-dashoffset: 760;
+        animation: erawatDrawFrame 2.4s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+      }
+      .erawat-bar-1 {
+        transform-origin: 146px 104px;
+        animation: erawatBarSlide 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+      }
+      .erawat-bar-2 {
+        transform-origin: 108px 142px;
+        animation: erawatBarSlide2 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+      }
+      .erawat-wordmark {
+        animation: erawatTextReveal 2.4s ease-in-out infinite;
+      }
+
+      @keyframes erawatGlobeRotate {
+        0% { transform: rotate(-25deg); }
+        100% { transform: rotate(335deg); }
+      }
+      @keyframes erawatDrawFrame {
+        0% { stroke-dashoffset: 760; opacity: 0.2; }
+        45% { stroke-dashoffset: 0; opacity: 1; }
+        80% { stroke-dashoffset: 0; opacity: 1; }
+        100% { stroke-dashoffset: -760; opacity: 0.2; }
+      }
+      @keyframes erawatBarSlide {
+        0%, 15% { opacity: 0; transform: translateX(-18px); }
+        42%, 82% { opacity: 1; transform: translateX(0); }
+        100% { opacity: 0; transform: translateX(14px); }
+      }
+      @keyframes erawatBarSlide2 {
+        0%, 24% { opacity: 0; transform: translateX(-18px); }
+        50%, 82% { opacity: 1; transform: translateX(0); }
+        100% { opacity: 0; transform: translateX(14px); }
+      }
+      @keyframes erawatTextReveal {
+        0%, 28% { opacity: 0; transform: translateY(4px); }
+        52%, 82% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(-2px); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .erawat-globe-spin,
+        .erawat-outer-frame,
+        .erawat-bar-1,
+        .erawat-bar-2,
+        .erawat-wordmark {
+          animation: none;
+          stroke-dashoffset: 0;
+          opacity: 1;
+          transform: none;
+        }
+      }
+  </style>
+
+  <defs>
+    <!-- Clip path for clean globe wireframe edges -->
+    <clipPath id="erawatGlobeClip">
+      <circle cx="66" cy="68" r="35.5" />
+    </clipPath>
+  </defs>
+
+  <!-- 1. Top-Left Tilted Wireframe Globe -->
+  <g class="erawat-globe-spin">
+    <circle cx="66" cy="68" r="36" fill="none" stroke="#000000" stroke-width="2.4" />
+    <g clip-path="url(#erawatGlobeClip)" fill="none" stroke="#000000" stroke-width="1.7">
+      <!-- Longitude Ellipses -->
+      <ellipse cx="66" cy="68" rx="12" ry="36" />
+      <ellipse cx="66" cy="68" rx="25" ry="36" />
+      <line x1="66" y1="32" x2="66" y2="104" />
+      <!-- Latitude Arcs -->
+      <path d="M 30 53 Q 66 61 102 53" />
+      <line x1="30" y1="68" x2="102" y2="68" />
+      <path d="M 30 83 Q 66 75 102 83" />
+    </g>
+  </g>
+
+  <!-- 2. Stylized Geometric 'E' Outer Structure -->
+  <path class="erawat-outer-frame"
+    d="M 272 52 L 160 52 L 56 156 L 56 202 L 272 202"
+    fill="none"
+    stroke="#000000"
+    stroke-width="16"
+    stroke-linejoin="miter"
+    stroke-miterlimit="4" />
+  <!-- Solid Bottom Base Bar housing 'Erawat' -->
+  <rect x="48" y="182" width="224" height="32" fill="#000000" />
+
+  <!-- 3. Upper Inner Horizontal Bar (45-deg slanted left edge) -->
+  <polygon class="erawat-bar-1"
+    points="154,96 272,96 272,112 138,112"
+    fill="#000000" />
+
+  <!-- 4. Lower Inner Horizontal Bar (45-deg slanted left edge) -->
+  <polygon class="erawat-bar-2"
+    points="116,138 272,138 272,154 100,154"
+    fill="#000000" />
+
+  <!-- 5. 'Erawat' Wordmark inside Bottom Base Bar -->
+  <text class="erawat-wordmark"
+    x="166"
+    y="206"
+    text-anchor="middle"
+    font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+    font-size="25"
+    font-weight="600"
+    letter-spacing="2.2"
+    fill="#ffffff">Erawat</text>
+</svg>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Erawat Pharma | Empty Capsule Manufacturers Since 1997</title>
+  <meta name="description" content="Erawat Pharma Limited is India's second largest manufacturer of empty hard gelatin and HPMC vegetarian capsules, founded in 1997 in Indore.">
+  <link rel="icon" type="image/gif" href="images/logo.gif">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/aos.css">
+</head>
+<body>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header__inner">
+      <a class="brand" href="index.html" aria-label="Erawat Pharma Limited Home">
+        <span class="brand__logo-wrap">
+          <img class="brand__logo" src="images/logo_1.png" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine" width="180" height="48">
+        </span>
+      </a>
+
+      <button type="button" id="navToggle" class="nav-toggle" aria-controls="siteNav" aria-expanded="false">Menu</button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link is-active" href="profile.html">About</a></li>
+          <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
+          <li><a class="nav__link" href="certification.html">Certification</a></li>
+          <li><a class="nav__link" href="epl-products.html">Products</a></li>
+          <li><a class="nav__link" href="exports.html">Export Areas</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+          <li><a class="nav__link" href="careers.html">Careers</a></li>
+        </ul>
+        <div class="nav__mobile-cta">
+          <a class="btn-gradient-pill" href="#" data-open-modal="modalSendInquiry">Send Inquiry &rarr;</a>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn-gradient-pill" href="#" data-open-modal="modalSendInquiry">Send Inquiry &rarr;</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <!-- 1. Page Banner -->
+    <section class="page-banner" aria-label="Page Header">
+      <div class="container page-banner__inner">
+        <span class="section-tag page-banner__label" data-aos="fade-down"><span class="section-tag__dot"></span>About</span>
+        <h1 class="page-banner__title" data-aos="fade-up" data-aos-delay="100">About Erawat Pharma</h1>
+        <nav class="breadcrumb" aria-label="Breadcrumb" data-aos="fade-up" data-aos-delay="150">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb__sep">/</span>
+          <span class="breadcrumb__current">About</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- 2. Intro Section (Split, Text Left, Image Right Offset 24px) -->
+    <section class="section">
+      <div class="container">
+        <div class="split-layout">
+          <div class="split-layout__content" data-aos="fade-right">
+            <span class="section-tag"><span class="section-tag__dot"></span>Company Overview</span>
+            <h2 class="split-layout__heading">Empty capsules, made in Indore since 1997.</h2>
+            <p class="split-layout__lead">
+              Erawat Pharma Limited is part of the Erawat Group. We make empty hard capsules in gelatin and in HPMC for vegetarian formulations, and we are the second largest capsule manufacturer in India.
+            </p>
+            <p class="split-layout__lead">
+              Our team has worked in capsule technology for more than 30 years as a group, and a strong R&amp;D unit sits behind every batch we ship.
+            </p>
+            <div>
+              <a class="btn-gradient-pill" href="manufacturing-setup.html">Explore Manufacturing Setup &rarr;</a>
+            </div>
+          </div>
+          <div class="split-layout__media split-layout__img--offset" data-aos="fade-left" data-aos-delay="150">
+            <div class="ph" data-ratio="4:3">
+              <img src="images/whoweare1.png" alt="Capsule macro close-up view of empty hard gelatin and vegetarian shells">
+              <span class="ph__tag">Capsule macro, 4:3</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Stat Strip -->
+        <div class="stat-strip" data-aos="fade-up">
+          <div class="stat-strip__item">
+            <span class="stat-strip__num">1997</span>
+            <span class="stat-strip__label">Year founded</span>
+          </div>
+          <div class="stat-strip__item">
+            <span class="stat-strip__num">30+ years</span>
+            <span class="stat-strip__label">Group experience in capsule technology</span>
+          </div>
+          <div class="stat-strip__item">
+            <span class="stat-strip__num">No. 2</span>
+            <span class="stat-strip__label">Largest capsule maker in India</span>
+          </div>
+          <div class="stat-strip__item">
+            <span class="stat-strip__num">2</span>
+            <span class="stat-strip__label">Capsule types: gelatin and HPMC</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Our Journey (Timeline) -->
+    <section class="timeline-section" aria-labelledby="timelineHeading">
+      <div class="container">
+        <span class="section-tag" data-aos="fade-up"><span class="section-tag__dot"></span>Milestones</span>
+        <h2 class="section-heading" id="timelineHeading" data-aos="fade-up" data-aos-delay="100">Our Journey</h2>
+        <div class="timeline-track">
+          <div class="timeline-node" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <span class="timeline-year">1997</span>
+            <p class="timeline-desc">Erawat Pharma Limited founded in Indore, India.</p>
+          </div>
+          <div class="timeline-node" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot"></div>
+            <span class="timeline-year">2003</span>
+            <p class="timeline-desc">High-speed automated gelatin capsule lines installed.</p>
+          </div>
+          <div class="timeline-node" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-dot"></div>
+            <span class="timeline-year">2011</span>
+            <p class="timeline-desc">HPMC vegetarian capsule line commissioned.</p>
+          </div>
+          <div class="timeline-node" data-aos="fade-up" data-aos-delay="400">
+            <div class="timeline-dot"></div>
+            <span class="timeline-year">2018</span>
+            <p class="timeline-desc">Advanced cGMP cleanroom expansion &amp; camera sorting.</p>
+          </div>
+          <div class="timeline-node" data-aos="fade-up" data-aos-delay="500">
+            <div class="timeline-dot"></div>
+            <span class="timeline-year">2024</span>
+            <p class="timeline-desc">Global export supply expanded across 30+ countries.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Mission Statement (Large Statement) -->
+    <section class="section">
+      <div class="container">
+        <div class="mission-quote-box" data-aos="zoom-in" data-aos-duration="700">
+          <span class="mission-quote-box__label">Company Mission</span>
+          <blockquote class="mission-quote-box__text">
+            &ldquo;To provide pharmaceutical manufacturers with products and services of consistent quality, so they get the highest output, highest reliability, maximum continuity and the lowest production cost.&rdquo;
+          </blockquote>
+        </div>
+
+        <!-- 6. Group and R&D (Split, Image Left, Text Right) -->
+        <div class="split-layout split-layout--img-left" style="margin-top: 3rem;">
+          <div class="split-layout__media" data-aos="fade-right">
+            <div class="ph" data-ratio="3:2">
+              <img src="images/whoweare3.png" alt="EPL laboratory technician running quality testing at analytical bench">
+              <span class="ph__tag">Lab technician at bench, 3:2</span>
+            </div>
+          </div>
+          <div class="split-layout__content" data-aos="fade-left" data-aos-delay="150">
+            <span class="section-tag"><span class="section-tag__dot"></span>Engineering &amp; Support</span>
+            <h2 class="split-layout__heading">Backed by technical people, not just a sales desk.</h2>
+            <p class="split-layout__lead">
+              Our R&amp;D unit and EPL technical team work with customers on filling machine settings and problem solving. When a capsule behaves differently on your line, you talk to someone who understands both the capsule and the machine.
+            </p>
+            <div>
+              <a class="btn-gradient-pill" href="technical-details.html">View Technical Specs &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CTA Band -->
+    <section class="cta-band" aria-label="Call to Action">
+      <div class="container cta-band__inner">
+        <h2 class="cta-band__text">Want to see our capsules on your machine?</h2>
+        <div class="cta-band__actions">
+          <a class="btn-outline-white" href="request-sample.html">Request Sample</a>
+          <button type="button" class="btn-gradient-pill" data-open-modal="modalSendInquiry">Send Inquiry &rarr;</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="Erawat Pharma Limited Home">
+            <span class="brand__logo-wrap">
+              <img class="brand__logo" src="images/logo.gif" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine" width="180" height="48">
+            </span>
+          </a>
+          <p class="footer__desc">
+            Erawat Pharma Limited, an Erawat Group Company, ranks among the top Capsule manufacturers in the world &amp; second largest in India. Founded in 1997.
+          </p>
+        </div>
+
+        <div class="footer__columns">
+          <div>
+            <h2 class="footer__heading">Quick links</h2>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="index.html">Home</a></li>
+              <li><a class="footer__link" href="epl-products.html">Products</a></li>
+              <li><a class="footer__link" href="technical-details.html">Technical Details</a></li>
+              <li><a class="footer__link" href="certification.html">Certification</a></li>
+              <li><a class="footer__link" href="exports.html">Export Areas</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="footer__heading">Company</h2>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="profile.html">About</a></li>
+              <li><a class="footer__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
+              <li><a class="footer__link" href="why-us.html">Why Choose Us</a></li>
+              <li><a class="footer__link" href="request-sample.html">Request Sample</a></li>
+              <li><a class="footer__link" href="careers.html">Careers</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="footer__heading">Contact Details</h2>
+            <address class="footer__address">
+              <span class="footer__address-line">12-C/FA, Scheme No. 94, Ring Road, Near Pipliyahana Square, Indore - 452016, Madhya Pradesh, India</span>
+              <a class="footer__link" href="tel:+917316659100">+91 731 6659100</a>
+              <a class="footer__link" href="mailto:info@erawatgroup.com">info@erawatgroup.com</a>
+              <a class="footer__link" href="mailto:marketing@erawatgroup.com">marketing@erawatgroup.com</a>
+            </address>
+          </div>
+
+          <div>
+            <h2 class="footer__heading">Navigation</h2>
+            <ul class="footer__list">
+              <li><a class="footer__link" href="contact.html">Contact Us</a></li>
+              <li><a class="footer__link" href="product.html">Size-by-Size Details</a></li>
+              <li><a class="footer__link" href="sitemap.html">SiteMap</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>Copyright &copy; 2026 Erawat Pharma Limited. All Rights Reserved | <a class="footer__link" href="sitemap.html">SiteMap</a></p>
+        <p>Indore, Madhya Pradesh, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal P1: Send Inquiry -->
+  <div class="modal-backdrop" id="modalSendInquiry" role="dialog" aria-modal="true" aria-labelledby="inquiryModalTitle" aria-hidden="true">
+    <div class="modal-overlay" data-close-modal></div>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      <h3 class="modal-title" id="inquiryModalTitle">Send Inquiry</h3>
+      <p class="modal-lead">Connect directly with EPL India technical engineering specialists for formulation and machine support.</p>
+      <form class="modal-form" id="globalInquiryForm" novalidate>
+        <div class="field-line" style="margin-bottom: 0.85rem;">
+          <label class="field-line__label" for="modalInqName">Full Name<span class="required-star">*</span></label>
+          <input class="field-line__input" type="text" id="modalInqName" name="name" placeholder="e.g. Rajesh Sharma" required>
+        </div>
+        <div class="field-line" style="margin-bottom: 0.85rem;">
+          <label class="field-line__label" for="modalInqCompany">Company Name<span class="required-star">*</span></label>
+          <input class="field-line__input" type="text" id="modalInqCompany" name="company" placeholder="e.g. Medilife Formulations" required>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.85rem;">
+          <div class="field-line">
+            <label class="field-line__label" for="modalInqEmail">Work Email<span class="required-star">*</span></label>
+            <input class="field-line__input" type="email" id="modalInqEmail" name="email" placeholder="name@company.com" required>
+          </div>
+          <div class="field-line">
+            <label class="field-line__label" for="modalInqPhone">Phone Number<span class="required-star">*</span></label>
+            <input class="field-line__input" type="tel" id="modalInqPhone" name="phone" placeholder="e.g. 9876543210" required>
+          </div>
+        </div>
+        <div class="field-line" style="margin-bottom: 0.85rem;">
+          <label class="field-line__label" for="modalInqCountry">Country<span class="required-star">*</span></label>
+          <input class="field-line__input" type="text" id="modalInqCountry" name="country" placeholder="e.g. India" required>
+        </div>
+        <div class="field-line" style="margin-bottom: 0.85rem;">
+          <label class="field-line__label">Interest Area (Capsule Sizes)</label>
+          <div class="interest-minimal__chips" style="margin-top: 0.35rem;">
+            <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="00"><span>Gelatin 00</span></label>
+            <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="0"><span>Gelatin 0</span></label>
+            <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="1"><span>Gelatin 1</span></label>
+            <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="00"><span>HPMC 00</span></label>
+            <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="0"><span>HPMC 0</span></label>
+          </div>
+        </div>
+        <div class="field-line" style="margin-bottom: 1.25rem;">
+          <label class="field-line__label" for="modalInqMessage">Message</label>
+          <textarea class="field-line__input field-line__textarea" id="modalInqMessage" name="message" rows="2" placeholder="Specify filling speed, formulations, or trial requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn-gradient-pill" style="width: 100%;">Send Inquiry &rarr;</button>
+      </form>
+      <div class="modal-success is-hidden" style="display: none; padding: 2rem 1rem; text-align: center;">
+        <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--green-900); margin-bottom: 0.5rem;">Thanks. We will reply by email soon.</h4>
+        <p style="font-size: 0.95rem; color: var(--ink-700);">Our EPL technical specialist will review your specifications and contact you shortly.</p>
+        <button type="button" class="btn-outline-white" style="color: var(--ink-900); border-color: #cbd5e1; margin-top: 1rem;" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/aos.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
