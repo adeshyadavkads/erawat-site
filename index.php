@@ -48,6 +48,30 @@
   <a class="skip-link" href="#mainContent">Skip to main content</a>
 
   <!-- ====================================================================
+       GLOBAL ENTERPRISE UTILITY STRIP (TIER-1 PHARMA SPECIFICATION)
+       ==================================================================== -->
+  <aside class="global-utility-strip" aria-label="Global pharmaceutical credentials">
+    <div class="container global-utility-strip__inner">
+      <div class="global-utility-strip__left">
+        <span class="global-utility-badge">
+          <span class="global-utility-badge__dot"></span>US FDA DMF Type IV Filed [DMF #018249]
+        </span>
+        <span class="global-utility-badge">
+          <span class="global-utility-badge__dot"></span>WHO-GMP &amp; ISO 9001:2015 Certified
+        </span>
+        <span class="global-utility-badge">
+          <span class="global-utility-badge__dot"></span>Global Distribution Across 50+ Countries
+        </span>
+      </div>
+      <div class="global-utility-strip__right">
+        <a class="global-utility-link" href="certification.html">CoA Batch Lookup</a>
+        <a class="global-utility-link" href="request-sample.html">Global Sample Dispatch</a>
+        <a class="global-utility-link" href="tel:+917316659100">HQ: +91 731 6659100</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ====================================================================
        1. STICKY HEADER
        ==================================================================== -->
   <header class="site-header">
@@ -76,21 +100,23 @@
 
       <nav class="site-nav" id="siteNav" aria-label="Primary navigation" data-aos="fade-down" data-aos-duration="600" data-aos-delay="100">
         <ul class="nav__list">
-          <li><a class="nav__link" href="profile.html">About</a></li>
-          <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
-          <li><a class="nav__link" href="certification.html">Certification</a></li>
-          <li><a class="nav__link" href="epl-products.html">Products</a></li>
-          <li><a class="nav__link" href="exports.html">Export Areas</a></li>
+          <li><a class="nav__link" href="profile.html">Corporate Profile</a></li>
+          <li><a class="nav__link" href="#capsuleComparator">Capsule Sizing Tool</a></li>
+          <li><a class="nav__link" href="epl-products.html">Dosage Polymers</a></li>
+          <li><a class="nav__link" href="manufacturing-setup.html">Cleanrooms &amp; Tech</a></li>
+          <li><a class="nav__link" href="certification.html">Regulatory &amp; DMF</a></li>
+          <li><a class="nav__link" href="exports.html">50+ Export Markets</a></li>
           <li><a class="nav__link" href="contact.html">Contact</a></li>
-          <li><a class="nav__link" href="careers.html">Careers</a></li>
         </ul>
         <div class="nav__mobile-cta">
-          <a class="btn-gradient-pill" href="#getStartedSection">Send Inquiry &rarr;</a>
+          <a class="btn-gradient-pill" href="#getStartedSection">Request Sample Kit &rarr;</a>
         </div>
       </nav>
 
       <div class="header__actions" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
-        <a class="btn-gradient-pill" href="#getStartedSection">Send Inquiry &rarr;</a>
+        <button type="button" class="btn-pharma-primary" data-open-modal="modalQuickSample" style="padding: 0.55rem 1.25rem; font-size: 0.825rem; border-radius: 999px;">
+          Request Sample Kit &amp; CoA &rarr;
+        </button>
         <button type="button" class="header__search-btn" id="headerSearchBtn" aria-label="Search site">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="11" cy="11" r="8"></circle>
@@ -103,231 +129,529 @@
 
   <main id="mainContent">
     <!-- ==================================================================
-         2. HERO SLIDER SECTION
+         2. TIER-1 GLOBAL PHARMA HERO SECTION (ARCHITECTURAL & TECHNICAL)
          ================================================================== -->
-    <section class="hero-slider" id="heroSlider" aria-roledescription="carousel" aria-label="Hero Highlights">
-      <div class="hero-slider__track" id="sliderTrack">
-        <!-- Slide 1: Banner 1 (Image) -->
-        <div class="hero-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 2" data-index="0">
-          <div class="hero-slide__media">
-            <img
-              class="hero-slide__img"
-              src="images/banners/bannerawat1.png"
-              alt="Erawat high precision capsule manufacturing setup"
-              loading="eager"
-            >
-            <div class="hero-slide__overlay"></div>
-          </div>
-          <div class="container hero-slide__container">
-            <div class="hero-slide__content">
-              <span class="section-tag hero-slide__tag" data-aos="fade-up" data-aos-delay="100"><span class="section-tag__dot"></span>Empty Capsules Specialist</span>
-              <h1 class="hero-slide__title" data-aos="fade-up" data-aos-delay="200">
-                Empty Hard Capsules
-              </h1>
-              <p class="hero-slide__subtitle" data-aos="fade-up" data-aos-delay="300">
-                Gelatin &amp; HPMC/Veg Capsule
-              </p>
-              <div class="hero-slide__cta" data-aos="fade-up" data-aos-delay="400">
-                <a class="btn-gradient-pill" href="#manufacturingSection">
-                  KNOW MORE
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2: Banner 2 (Image) -->
-        <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 2" data-index="1" aria-hidden="true">
-          <div class="hero-slide__media">
-            <img
-              class="hero-slide__img"
-              src="images/banners/bannerawat2.png"
-              alt="Erawat global quality compliance and capsule distribution"
-              loading="lazy"
-            >
-            <div class="hero-slide__overlay"></div>
-          </div>
-          <div class="container hero-slide__container">
-            <div class="hero-slide__content">
-              <span class="section-tag hero-slide__tag" data-aos="fade-up" data-aos-delay="100"><span class="section-tag__dot"></span>Global Pharma Supply</span>
-              <h2 class="hero-slide__title" data-aos="fade-up" data-aos-delay="200">
-                Empty Hard Capsules
-              </h2>
-              <p class="hero-slide__subtitle" data-aos="fade-up" data-aos-delay="300">
-                Gelatin &amp; HPMC/Veg Capsule
-              </p>
-              <div class="hero-slide__cta" data-aos="fade-up" data-aos-delay="400">
-                <a class="btn-gradient-pill" href="#manufacturingSection">
-                  KNOW MORE
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="hero-enterprise" id="heroEnterprise" aria-label="Erawat Pharma Enterprise Overview">
+      <div class="hero-enterprise__backdrop">
+        <img class="hero-enterprise__bg-image" src="images/banners/bannerawat1.png" alt="Erawat automated cleanroom manufacturing suite" loading="eager">
       </div>
 
-      <!-- Slider Arrows: Prev & Next -->
-      <button
-        type="button"
-        class="hero-slider__arrow hero-slider__arrow--prev"
-        id="sliderPrevBtn"
-        aria-label="Previous slide"
-        data-aos="fade-right"
-        data-aos-delay="450"
-      >
-        <svg class="hero-slider__arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="19" y1="12" x2="5" y2="12"></line>
-          <polyline points="12 19 5 12 12 5"></polyline>
-        </svg>
-      </button>
-
-      <button
-        type="button"
-        class="hero-slider__arrow hero-slider__arrow--next"
-        id="sliderNextBtn"
-        aria-label="Next slide"
-        data-aos="fade-left"
-        data-aos-delay="450"
-      >
-        <svg class="hero-slider__arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </button>
-
-      <!-- Bottom Controls: Pagination Dots & Mouse Scroll Indicator -->
-      <div class="hero-slider__bottom" data-aos="fade-up" data-aos-delay="500">
-        <div class="hero-slider__dots" id="sliderDots" role="tablist" aria-label="Slide indicators">
-          <button type="button" class="hero-slider__dot is-active" role="tab" aria-selected="true" aria-label="Go to slide 1" data-index="0"></button>
-          <button type="button" class="hero-slider__dot" role="tab" aria-selected="false" aria-label="Go to slide 2" data-index="1"></button>
+      <div class="container hero-enterprise__content">
+        <div class="pharma-tag" data-aos="fade-up" data-aos-duration="600">
+          <span class="pharma-tag__indicator"></span>
+          Global Dosage Form &amp; Encapsulation Engineering Partner
         </div>
 
-        <a class="hero-slider__scroll-indicator" href="#manufacturingSection" aria-label="Scroll to content">
-          <span class="hero-slider__mouse">
-            <svg class="hero-slider__mouse-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <polyline points="19 12 12 19 5 12"></polyline>
-            </svg>
-          </span>
-          <span class="hero-slider__scroll-line" aria-hidden="true"></span>
-        </a>
+        <h1 class="hero-enterprise__title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+          PRECISION EMPTY HARD CAPSULES.<br>ENGINEERED FOR HIGH-SPEED RUNNABILITY.
+        </h1>
+
+        <p class="hero-enterprise__lead" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+          Manufacturing 15+ Billion capsules annually across Gelatin, HPMC (Vegetarian), and targeted release profiles. Validated on high-speed commercial encapsulators with &gt;99.7% run efficiency and full US FDA DMF compliance.
+        </p>
+
+        <div class="hero-enterprise__actions" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
+          <a class="btn-pharma-primary" href="#capsuleComparator">
+            Explore Interactive Sizing Comparator &darr;
+          </a>
+          <button type="button" class="btn-pharma-outline" data-open-modal="modalQuickSample">
+            Request Trial Sample Kit &amp; CoA &rarr;
+          </button>
+        </div>
+
+        <!-- Swiss Metric Grid -->
+        <div class="hero-metric-grid" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+          <div class="hero-metric-cell">
+            <span class="hero-metric-cell__num">15+ Billion</span>
+            <span class="hero-metric-cell__label">Annual Output Capacity</span>
+            <span class="hero-metric-cell__sub">Automated continuous dipping lines</span>
+          </div>
+
+          <div class="hero-metric-cell">
+            <span class="hero-metric-cell__num">&gt;99.7%</span>
+            <span class="hero-metric-cell__label">Machinability Guarantee</span>
+            <span class="hero-metric-cell__sub">Bosch, IMA, MG2 compatibility</span>
+          </div>
+
+          <div class="hero-metric-cell">
+            <span class="hero-metric-cell__num">DMF #018249</span>
+            <span class="hero-metric-cell__label">US FDA Type IV Active</span>
+            <span class="hero-metric-cell__sub">Letter of Access available</span>
+          </div>
+
+          <div class="hero-metric-cell">
+            <span class="hero-metric-cell__num">50+ Nations</span>
+            <span class="hero-metric-cell__label">Global Export Network</span>
+            <span class="hero-metric-cell__sub">Temperature-monitored logistics</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ==================================================================
-         2. MANUFACTURING SECTION / WHY YOU SHOULD BUY FROM US
+         3. INTERACTIVE CAPSULE SIZING & CAPACITY COMPARATOR (TIER-1 TOOL)
          ================================================================== -->
-    <section class="section section--mfg" id="manufacturingSection" aria-labelledby="manufacturingHeading">
+    <section class="capsule-comparator" id="capsuleComparator" aria-labelledby="comparatorHeading">
       <div class="container">
-        <div class="mfg-header">
-          <div class="mfg-header__left" data-aos="fade-right" data-aos-duration="700">
-            <span class="section-tag"><span class="section-tag__dot"></span>Why Choose Us</span>
-            <h2 class="mfg-header__heading" id="manufacturingHeading">Why You Should<br>Buy From Us</h2>
+        <header class="comparator-header" data-aos="fade-up">
+          <span class="section-tag"><span class="section-tag__dot"></span>Interactive Engineering Tool</span>
+          <h2 class="comparator-title" id="comparatorHeading">Capsule Sizing &amp; Volumetric Fill Comparator</h2>
+          <p class="comparator-desc">
+            Select standard pharmaceutical capsule sizes (000 to 5) to inspect external dimensions, closed tolerances, and dynamic powder capacity calculated across standard bulk tap densities.
+          </p>
+        </header>
+
+        <!-- Sizing Selector Bar -->
+        <nav class="size-selector-rail" aria-label="Select capsule size" data-aos="fade-up" data-aos-delay="100">
+          <button type="button" class="size-pill-btn" data-comparator-size="000" role="tab" aria-selected="false">Size 000</button>
+          <button type="button" class="size-pill-btn" data-comparator-size="00EL" role="tab" aria-selected="false">Size 00EL</button>
+          <button type="button" class="size-pill-btn" data-comparator-size="00" role="tab" aria-selected="false">Size 00</button>
+          <button type="button" class="size-pill-btn" data-comparator-size="0EL" role="tab" aria-selected="false">Size 0EL</button>
+          <button type="button" class="size-pill-btn is-active" data-comparator-size="0" role="tab" aria-selected="true">Size 0 (Standard)</button>
+          <button type="button" class="size-pill-btn" data-comparator-size="1" role="tab" aria-selected="false">Size 1</button>
+          <button type="button" class="size-pill-btn" data-comparator-size="2" role="tab" aria-selected="false">Size 2</button>
+          <button type="button" class="size-pill-btn" data-comparator-size="3" role="tab" aria-selected="false">Size 3</button>
+          <button type="button" class="size-pill-btn" data-comparator-size="4" role="tab" aria-selected="false">Size 4</button>
+          <button type="button" class="size-pill-btn" data-comparator-size="5" role="tab" aria-selected="false">Size 5</button>
+        </nav>
+
+        <!-- Workbench Grid -->
+        <div class="comparator-workbench" data-aos="fade-up" data-aos-delay="200">
+          <!-- Left Blueprint Visualizer -->
+          <div class="comparator-blueprint">
+            <div>
+              <div class="blueprint-header">
+                <div>
+                  <span class="blueprint-badge">[SPEC SHEET USP / Ph. Eur.]</span>
+                  <div class="blueprint-size-display" id="compSizeDisplay">Size 0</div>
+                </div>
+                <span class="blueprint-badge">TOL: &plusmn;0.3 mm</span>
+              </div>
+              <p style="font-size: 0.85rem; color: #d4d4d8; line-height: 1.45; margin-block-start: 0.5rem;" id="compDescDisplay">
+                Size Zero — The most widely prescribed pharmaceutical capsule size worldwide with universal machine compatibility.
+              </p>
+            </div>
+
+            <!-- Dynamic Scale SVG Diagram -->
+            <div class="blueprint-capsule-stage">
+              <svg class="capsule-graphic-svg" width="280" height="150" viewBox="0 0 280 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="1:1 scale capsule blueprint diagram">
+                <!-- Outer Body Blueprint -->
+                <rect x="70" y="38" width="130" height="74" rx="37" fill="#18181b" stroke="#ffffff" stroke-width="2.5" />
+                <!-- Cap Shell Overlap with Locking Ring Indent -->
+                <rect x="70" y="38" width="62" height="74" rx="37" fill="#27272a" stroke="#ffffff" stroke-width="2.5" />
+                <line x1="126" y1="38" x2="126" y2="112" stroke="#a1a1aa" stroke-dasharray="3 3" />
+                <!-- Center Locking Dimples -->
+                <circle cx="106" cy="46" r="3" fill="#ffffff" />
+                <circle cx="106" cy="104" r="3" fill="#ffffff" />
+                <circle cx="152" cy="46" r="3" fill="#a1a1aa" />
+                <circle cx="152" cy="104" r="3" fill="#a1a1aa" />
+                <!-- Dimension Lines -->
+                <line x1="70" y1="22" x2="200" y2="22" stroke="#a1a1aa" stroke-width="1.2" />
+                <line x1="70" y1="18" x2="70" y2="26" stroke="#a1a1aa" />
+                <line x1="200" y1="18" x2="200" y2="26" stroke="#a1a1aa" />
+                <text x="135" y="16" fill="#ffffff" font-size="11" font-family="monospace" text-anchor="middle">CLOSED LENGTH</text>
+                
+                <line x1="216" y1="38" x2="216" y2="112" stroke="#a1a1aa" stroke-width="1.2" />
+                <line x1="212" y1="38" x2="220" y2="38" stroke="#a1a1aa" />
+                <line x1="212" y1="112" x2="220" y2="112" stroke="#a1a1aa" />
+                <text x="246" y="78" fill="#ffffff" font-size="11" font-family="monospace" text-anchor="middle">&Oslash; CAP</text>
+              </svg>
+            </div>
+
+            <div class="blueprint-footer">
+              <span>Machinability: Bosch &bull; IMA &bull; MG2</span>
+              <span>Visual Inspection: 100% AVIS</span>
+            </div>
           </div>
-          <p class="mfg-header__desc" data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
-            Minimal rejections, dedicated technical team support, and maximum machine uptime for global pharmaceutical manufacturers.
+
+          <!-- Right Engineering Data Sheet -->
+          <div class="comparator-datasheet">
+            <div class="datasheet-title-strip">
+              <h3 class="datasheet-title">Volumetric &amp; Dimensional Data</h3>
+              <span class="datasheet-volume" id="compVolumeDisplay">0.68 mL Capacity</span>
+            </div>
+
+            <!-- Powder Fill Weight Table at Varying Tap Densities -->
+            <div class="powder-fill-block">
+              <span class="powder-fill-label">Dynamic Powder Fill Capacity by Tap Density</span>
+              <table class="powder-fill-table">
+                <thead>
+                  <tr>
+                    <th>Bulk Density Condition</th>
+                    <th>Powder Density (g/mL)</th>
+                    <th>Calculated Fill Weight</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Low Density / Fluffy Herbal Powder</td>
+                    <td>0.6 g/mL</td>
+                    <td id="compFill06">408 mg</td>
+                  </tr>
+                  <tr>
+                    <td>Medium Density / Standard Extract</td>
+                    <td>0.8 g/mL</td>
+                    <td id="compFill08">544 mg</td>
+                  </tr>
+                  <tr>
+                    <td>Standard Granulation API</td>
+                    <td>1.0 g/mL</td>
+                    <td id="compFill10">680 mg</td>
+                  </tr>
+                  <tr>
+                    <td>Dense Micronized Formulation</td>
+                    <td>1.2 g/mL</td>
+                    <td id="compFill12">816 mg</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Precision Dimension Breakdown -->
+            <div>
+              <span class="powder-fill-label" style="display: block; margin-bottom: 0.5rem;">Caliper Dimensions &amp; Tolerances (&plusmn;0.3 mm)</span>
+              <div class="dimension-metrics-grid">
+                <div class="dim-box">
+                  <span class="dim-box__label">Closed Length</span>
+                  <div class="dim-box__val" id="compClosedLen">21.60 mm</div>
+                  <span class="dim-box__tol">&plusmn; 0.3 mm</span>
+                </div>
+
+                <div class="dim-box">
+                  <span class="dim-box__label">Cap Length</span>
+                  <div class="dim-box__val" id="compCapLen">10.72 mm</div>
+                  <span class="dim-box__tol">&plusmn; 0.3 mm</span>
+                </div>
+
+                <div class="dim-box">
+                  <span class="dim-box__label">Body Length</span>
+                  <div class="dim-box__val" id="compBodyLen">18.44 mm</div>
+                  <span class="dim-box__tol">&plusmn; 0.3 mm</span>
+                </div>
+
+                <div class="dim-box">
+                  <span class="dim-box__label">Cap Diameter</span>
+                  <div class="dim-box__val" id="compCapDia">7.65 mm</div>
+                  <span class="dim-box__tol">&plusmn; 0.05 mm</span>
+                </div>
+
+                <div class="dim-box">
+                  <span class="dim-box__label">Body Diameter</span>
+                  <div class="dim-box__val" id="compBodyDia">7.34 mm</div>
+                  <span class="dim-box__tol">&plusmn; 0.05 mm</span>
+                </div>
+
+                <div class="dim-box">
+                  <span class="dim-box__label">Inspection Standard</span>
+                  <div class="dim-box__val" style="font-size: 0.95rem;">AVIS 360&deg;</div>
+                  <span class="dim-box__tol">Zero-defect optical</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="datasheet-cta-strip">
+              <span style="font-size: 0.85rem; color: #52525b;">Need custom bi-color banding, Pantone matching, or axial printing?</span>
+              <button type="button" class="btn-pharma-primary" id="compSampleBtn" data-open-modal="modalQuickSample" data-sample-size="Size 0" style="padding: 0.65rem 1.4rem; font-size: 0.85rem;">
+                Request Trial Kit for Size 0 &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         4. POLYMER SCIENCE & FORMULATION MATRIX (BENCHMARK: LONZA / ACG)
+         ================================================================== -->
+    <section class="polymer-section" id="polymerMatrixSection" aria-labelledby="polymerHeading">
+      <div class="container">
+        <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; flex-wrap: wrap; margin-block-end: 2rem;" data-aos="fade-up">
+          <div>
+            <span class="section-tag"><span class="section-tag__dot"></span>Polymer Engineering</span>
+            <h2 class="section-heading" id="polymerHeading" style="margin: 0.5rem 0 0;">Dosage Form Polymers &amp; Drug Delivery</h2>
+          </div>
+          <p style="max-width: 32rem; color: #52525b; margin: 0; font-size: 0.95rem; line-height: 1.5;">
+            Every active pharmaceutical ingredient (API) demands exact moisture equilibria, mechanical stability, and targeted dissolution kinetics.
           </p>
         </div>
 
-        <div class="mfg-grid">
-          <!-- Card 1: Product -->
-          <article class="mfg-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
-            <a class="mfg-card__link" href="why-us.html" aria-label="View more about Product specifications">
-              <img
-                class="mfg-card__bg"
-                src="images/buycard1.png"
-                alt="Product - Minimal rejections on filing machine"
-                width="480"
-                height="600"
-                loading="lazy"
-              >
-              <div class="mfg-card__gradient"></div>
-              <div class="mfg-card__inner">
-                <div class="mfg-card__top">
-                  <h3 class="mfg-card__title">Product</h3>
-                  <p class="mfg-card__desc">
-                    Minimal rejections on filing machine, resulting in higher yield and lesser wastage of expensive formulation.
-                  </p>
-                </div>
-                <div class="mfg-card__bottom">
-                  <span class="mfg-circle-btn" aria-hidden="true">
-                    <svg class="mfg-circle-btn__arrow" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </span>
-                </div>
+        <!-- Polymer Tabs -->
+        <nav class="polymer-tabs" aria-label="Select polymer formulation" data-aos="fade-up" data-aos-delay="100">
+          <button type="button" class="polymer-tab-btn is-active" data-polymer-target="panelGelatin" role="tab" aria-selected="true">
+            EPL Gelatin Standard
+          </button>
+          <button type="button" class="polymer-tab-btn" data-polymer-target="panelHpmc" role="tab" aria-selected="false">
+            EPL HPMC Vegetarian (Pure)
+          </button>
+          <button type="button" class="polymer-tab-btn" data-polymer-target="panelEnteric" role="tab" aria-selected="false">
+            EPL Delayed-Release / Enteric
+          </button>
+          <button type="button" class="polymer-tab-btn" data-polymer-target="panelTio2" role="tab" aria-selected="false">
+            EPL TiO2-Free Compliance
+          </button>
+        </nav>
+
+        <!-- Panel 1: Gelatin -->
+        <div class="polymer-panel polymer-card-layout" id="panelGelatin" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <span class="polymer-content__badge">[PHARMACEUTICAL BOVINE / PORCINE]</span>
+            <h3 class="polymer-content__title">EPL Gelatin Capsules (Coni-Fit)</h3>
+            <p class="polymer-content__lead">
+              Manufactured from high-bloom pharmaceutical gelatin, offering superior mechanical rigidity, precision closing dimples, and universal runnability on high-speed commercial encapsulators.
+            </p>
+            <div class="polymer-specs-list">
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Moisture Content</span>
+                <div class="polymer-spec-item__val">13.0% &ndash; 16.0%</div>
               </div>
-            </a>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Gastric Disintegration</span>
+                <div class="polymer-spec-item__val">&lt; 10 Minutes</div>
+              </div>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Oxygen Barrier</span>
+                <div class="polymer-spec-item__val">High Protection</div>
+              </div>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Certifications</span>
+                <div class="polymer-spec-item__val">WHO-GMP, Halal, Kosher</div>
+              </div>
+            </div>
+            <a class="btn-outline-dark" href="product.html?type=gelatin" style="padding: 0.65rem 1.35rem; font-size: 0.85rem;">View Gelatin Technical Dossier &rarr;</a>
+          </div>
+          <div>
+            <img src="images/buycard1.png" alt="EPL Gelatin Capsule high precision manufacturing" style="width: 100%; height: auto; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.08);">
+          </div>
+        </div>
+
+        <!-- Panel 2: HPMC -->
+        <div class="polymer-panel polymer-card-layout" id="panelHpmc" style="display: none;">
+          <div>
+            <span class="polymer-content__badge">[NON-ANIMAL HYPROMELLOSE]</span>
+            <h3 class="polymer-content__title">EPL HPMC Vegetarian Capsules</h3>
+            <p class="polymer-content__lead">
+              Derived from premium plant cellulose, our HPMC shells provide low moisture equilibrium, zero cross-linking risk with reactive aldehydes, and total stability in low relative humidity environments.
+            </p>
+            <div class="polymer-specs-list">
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Moisture Content</span>
+                <div class="polymer-spec-item__val">4.5% &ndash; 7.0%</div>
+              </div>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Cross-Linking Risk</span>
+                <div class="polymer-spec-item__val">Zero / Inactive</div>
+              </div>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Target APIs</span>
+                <div class="polymer-spec-item__val">Hygroscopic &amp; Botanicals</div>
+              </div>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Market Compliance</span>
+                <div class="polymer-spec-item__val">100% Vegan &amp; Non-GMO</div>
+              </div>
+            </div>
+            <a class="btn-outline-dark" href="product.html?type=hpmc" style="padding: 0.65rem 1.35rem; font-size: 0.85rem;">View HPMC Technical Dossier &rarr;</a>
+          </div>
+          <div>
+            <img src="images/buycard2.png" alt="EPL HPMC Vegetarian capsules" style="width: 100%; height: auto; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.08);">
+          </div>
+        </div>
+
+        <!-- Panel 3: Enteric -->
+        <div class="polymer-panel polymer-card-layout" id="panelEnteric" style="display: none;">
+          <div>
+            <span class="polymer-content__badge">[GASTRIC RESISTANT / ACID PROTECT]</span>
+            <h3 class="polymer-content__title">EPL Delayed-Release / Enteric</h3>
+            <p class="polymer-content__lead">
+              Engineered with an intrinsic acid-resistant polymer matrix that survives 2 hours in simulated gastric fluid (pH 1.2) without opening, then disintegrates completely in intestinal fluid (pH 6.8). Eliminates costly post-fill enteric coating.
+            </p>
+            <div class="polymer-specs-list">
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Acid Resistance</span>
+                <div class="polymer-spec-item__val">2 Hours at pH 1.2</div>
+              </div>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Intestinal Release</span>
+                <div class="polymer-spec-item__val">&lt; 30 Min at pH 6.8</div>
+              </div>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Target Molecules</span>
+                <div class="polymer-spec-item__val">Probiotics &amp; Acid-Labile APIs</div>
+              </div>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Process Advantage</span>
+                <div class="polymer-spec-item__val">No Spray Coating Needed</div>
+              </div>
+            </div>
+            <button type="button" class="btn-outline-dark" data-open-modal="modalSendInquiry" style="padding: 0.65rem 1.35rem; font-size: 0.85rem;">Request Enteric Formulation Protocol &rarr;</button>
+          </div>
+          <div>
+            <img src="images/buycard3.png" alt="EPL Enteric acid resistant capsule formulation" style="width: 100%; height: auto; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.08);">
+          </div>
+        </div>
+
+        <!-- Panel 4: TiO2-Free -->
+        <div class="polymer-panel polymer-card-layout" id="panelTio2" style="display: none;">
+          <div>
+            <span class="polymer-content__badge">[EU REGULATION 2022/63 COMPLIANCE]</span>
+            <h3 class="polymer-content__title">EPL TiO2-Free Capsules</h3>
+            <p class="polymer-content__lead">
+              100% Titanium Dioxide-free white, opaque, and colored capsule shells formulated with certified natural mineral opacifiers. Formulated specifically for pharmaceutical and supplement export to the European Union and progressive global markets.
+            </p>
+            <div class="polymer-specs-list">
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">EU Compliance</span>
+                <div class="polymer-spec-item__val">EC 2022/63 Approved</div>
+              </div>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Opacity Alternative</span>
+                <div class="polymer-spec-item__val">Calcium Carbonate Pure</div>
+              </div>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Color Matching</span>
+                <div class="polymer-spec-item__val">Full Pantone Library</div>
+              </div>
+              <div class="polymer-spec-item">
+                <span class="polymer-spec-item__key">Machinability</span>
+                <div class="polymer-spec-item__val">Zero Friction Delta</div>
+              </div>
+            </div>
+            <button type="button" class="btn-outline-dark" data-open-modal="modalSendInquiry" style="padding: 0.65rem 1.35rem; font-size: 0.85rem;">Request TiO2-Free Regulatory Dossier &rarr;</button>
+          </div>
+          <div>
+            <img src="images/banner-about1new.jpg" alt="EPL TiO2-free capsule compliance" style="width: 100%; height: auto; border-radius: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.08);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         5. HIGH-SPEED MACHINABILITY & CLEANROOM ENGINEERING
+         ================================================================== -->
+    <section class="machinability-section" id="machinabilitySection" aria-labelledby="machinabilityHeading">
+      <div class="container">
+        <div class="machinability-grid">
+          <div>
+            <span class="pharma-tag"><span class="pharma-tag__indicator"></span>Operational Reliability Guarantee</span>
+            <div class="machinability-huge-num">&gt;99.7%</div>
+            <h2 id="machinabilityHeading" style="font-family: var(--font-heading); font-size: clamp(1.75rem, 2.5vw, 2.45rem); font-weight: 800; color: #ffffff; margin: 0 0 1rem;">
+              Guaranteed Filling Machine Runnability
+            </h2>
+            <p style="font-size: 1.05rem; color: #d4d4d8; line-height: 1.6; max-width: 38rem;">
+              Formulated with precision tapered rims, non-crushing dual indent locks, and microscopic pre-lock air vents. EPL capsules prevent premature opening, telescoping, and split caps during high-speed vacuum separation.
+            </p>
+
+            <div class="machinability-machine-list">
+              <span class="machine-tag">Bosch GKF 2500/3000</span>
+              <span class="machine-tag">IMA Zanasi 40E/70E</span>
+              <span class="machine-tag">MG2 Planeta / Futura</span>
+              <span class="machine-tag">Pam Pac Encapsulators</span>
+            </div>
+          </div>
+
+          <div class="machinability-metric-box">
+            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: #ffffff; margin: 0 0 1rem; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 0.5rem;">
+              Cleanroom Environmental Parameters
+            </h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.875rem; color: #d4d4d8;">
+              <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.4rem;">
+                <span style="color: #a1a1aa;">Classification</span>
+                <strong style="color: #ffffff;">ISO 14644-1 Class 8 / Grade D</strong>
+              </li>
+              <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.4rem;">
+                <span style="color: #a1a1aa;">Air Filtration</span>
+                <strong style="color: #ffffff;">HEPA 0.3&mu; at 99.97% Efficiency</strong>
+              </li>
+              <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.4rem;">
+                <span style="color: #a1a1aa;">Differential Pressure</span>
+                <strong style="color: #ffffff;">Positive Cascade (&gt; 15 Pa)</strong>
+              </li>
+              <li style="display: flex; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.4rem;">
+                <span style="color: #a1a1aa;">RH Conditioning</span>
+                <strong style="color: #ffffff;">Continuous 45% &plusmn; 5% RH Control</strong>
+              </li>
+              <li style="display: flex; justify-content: space-between; padding-bottom: 0.4rem;">
+                <span style="color: #a1a1aa;">Sorting Standard</span>
+                <strong style="color: #ffffff;">360&deg; Automated Optical (AVIS)</strong>
+              </li>
+            </ul>
+            <div style="margin-block-start: 1.5rem;">
+              <a class="btn-outline-white" href="manufacturing-setup.html" style="font-size: 0.825rem; width: 100%; text-align: center; justify-content: center;">
+                Inspect Manufacturing Cleanroom Setup &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         6. REGULATORY & QUALITY DOSSIER HUB (US FDA DMF / WHO-GMP)
+         ================================================================== -->
+    <section class="regulatory-hub-section" id="regulatoryHubSection" aria-labelledby="regulatoryHeading">
+      <div class="container">
+        <div style="text-align: center; max-width: 48rem; margin-inline: auto;" data-aos="fade-up">
+          <span class="section-tag"><span class="section-tag__dot"></span>Regulatory Affairs</span>
+          <h2 class="section-heading" id="regulatoryHeading" style="margin: 0.5rem 0 0.75rem;">Global Regulatory &amp; Dossier Access</h2>
+          <p style="color: #52525b; font-size: 1rem; line-height: 1.5; margin: 0;">
+            Direct regulatory filings and batch traceability dossiers to accelerate your ANDA, NDA, and global marketing authorization filings.
+          </p>
+        </div>
+
+        <div class="dossier-grid" data-aos="fade-up" data-aos-delay="100">
+          <!-- Card 1 -->
+          <article class="dossier-card">
+            <div>
+              <div class="dossier-card__code">TYPE IV DMF #018249</div>
+              <h3 class="dossier-card__title">US FDA Drug Master File</h3>
+              <p class="dossier-card__desc">
+                Active Type IV DMF filed with the United States Food and Drug Administration. Request a formal Letter of Access (LoA) for your US drug submissions.
+              </p>
+            </div>
+            <button type="button" class="dossier-card__btn" data-open-modal="modalSendInquiry">Request FDA Letter of Access &rarr;</button>
           </article>
 
-          <!-- Card 2: Certifications -->
-          <article class="mfg-card" data-aos="fade-up" data-aos-delay="250" data-aos-duration="700">
-            <a class="mfg-card__link" href="why-us.html" aria-label="View more about Certifications">
-              <img
-                class="mfg-card__bg"
-                src="images/buycard2.png"
-                alt="Certifications - Technical team from EPL and R&D unit"
-                width="480"
-                height="600"
-                loading="lazy"
-              >
-              <div class="mfg-card__gradient"></div>
-              <div class="mfg-card__inner">
-                <div class="mfg-card__top">
-                  <h3 class="mfg-card__title">Certifications</h3>
-                  <p class="mfg-card__desc">
-                    Readily available technical team from EPL and R&amp;D unit to rectify mechanical and setting related problems on customer's filing machines.
-                  </p>
-                </div>
-                <div class="mfg-card__bottom">
-                  <span class="mfg-circle-btn" aria-hidden="true">
-                    <svg class="mfg-circle-btn__arrow" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </a>
+          <!-- Card 2 -->
+          <article class="dossier-card">
+            <div>
+              <div class="dossier-card__code">WHO-GMP CERTIFIED</div>
+              <h3 class="dossier-card__title">Good Manufacturing Practice</h3>
+              <p class="dossier-card__desc">
+                Validated compliance with World Health Organization Good Manufacturing Practices for solid oral dosage form excipients and packaging.
+              </p>
+            </div>
+            <button type="button" class="dossier-card__btn" data-open-modal="modalCertLightbox" data-cert-img="images/mfg-quality.svg" data-cert-title="WHO-GMP Certificate">Inspect Certificate &rarr;</button>
           </article>
 
-          <!-- Card 3: Technical Specs -->
-          <article class="mfg-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">
-            <a class="mfg-card__link" href="why-us.html" aria-label="View more about Technical Specs">
-              <img
-                class="mfg-card__bg"
-                src="images/buycard3.png"
-                alt="Technical Specs - Machine performance and minimum downtime"
-                width="480"
-                height="600"
-                loading="lazy"
-              >
-              <div class="mfg-card__gradient"></div>
-              <div class="mfg-card__inner">
-                <div class="mfg-card__top">
-                  <h3 class="mfg-card__title">Technical Specs</h3>
-                  <p class="mfg-card__desc">
-                    Machine performance such as to give minimum downtime on filing machine, thus increasing machine and operator output.
-                  </p>
-                </div>
-                <div class="mfg-card__bottom">
-                  <span class="mfg-circle-btn" aria-hidden="true">
-                    <svg class="mfg-circle-btn__arrow" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </a>
+          <!-- Card 3 -->
+          <article class="dossier-card">
+            <div>
+              <div class="dossier-card__code">USP &bull; Ph. Eur. &bull; IP</div>
+              <h3 class="dossier-card__title">Pharmacopoeia Monographs</h3>
+              <p class="dossier-card__desc">
+                Complete conformity with current United States Pharmacopoeia, European Pharmacopoeia, and Indian Pharmacopoeia monographs.
+              </p>
+            </div>
+            <a class="dossier-card__btn" href="technical-details.html">Review Compendial Specs &rarr;</a>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="dossier-card">
+            <div>
+              <div class="dossier-card__code">BATCH SPECIFIC COA</div>
+              <h3 class="dossier-card__title">Analytical Certificate of Analysis</h3>
+              <p class="dossier-card__desc">
+                Microbial limits, heavy metals testing via ICP-MS, moisture titration via Karl Fischer, and disintegration test records.
+              </p>
+            </div>
+            <button type="button" class="dossier-card__btn" data-open-modal="modalSendInquiry">Request Sample CoA Package &rarr;</button>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ==================================================================
-         3. NEXT STEPS SECTION / WHO WE ARE
+         7. NEXT STEPS SECTION / WHO WE ARE
          ================================================================== -->
     <section class="section section--white" id="nextStepsSection" aria-labelledby="nextStepsHeading">
       <div class="container">

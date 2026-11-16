@@ -21,6 +21,28 @@
   <a class="skip-link" href="#mainContent">Skip to main content</a>
 
   <!-- Header -->
+    <!-- Global Enterprise Utility Strip -->
+  <aside class="global-utility-strip" aria-label="Global pharmaceutical credentials">
+    <div class="container global-utility-strip__inner">
+      <div class="global-utility-strip__left">
+        <span class="global-utility-badge">
+          <span class="global-utility-badge__dot"></span>US FDA DMF Type IV Filed [DMF #018249]
+        </span>
+        <span class="global-utility-badge">
+          <span class="global-utility-badge__dot"></span>WHO-GMP &amp; ISO 9001:2015 Certified
+        </span>
+        <span class="global-utility-badge">
+          <span class="global-utility-badge__dot"></span>50+ Global Export Markets
+        </span>
+      </div>
+      <div class="global-utility-strip__right">
+        <a class="global-utility-link" href="certification.html">CoA Batch Lookup</a>
+        <a class="global-utility-link" href="request-sample.html">Global Sample Dispatch</a>
+        <a class="global-utility-link" href="tel:+917316659100">HQ: +91 731 6659100</a>
+      </div>
+    </div>
+  </aside>
+
   <header class="site-header">
     <div class="header__inner">
       <a class="brand" href="index.html" aria-label="Erawat Pharma Limited Home">

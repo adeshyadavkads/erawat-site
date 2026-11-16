@@ -3121,3 +3121,790 @@ ol {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================================================
+   13. TIER-1 GLOBAL PHARMA ENTERPRISE SYSTEM
+   (Benchmark: Capsugel / Lonza, ACG Worldwide, Qualicaps)
+   Precision Industrial Architecture, Interactive Tools & Regulatory Dossier
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   13a. TOP GLOBAL ENTERPRISE UTILITY STRIP
+   -------------------------------------------------------------------------- */
+.global-utility-strip {
+  background: #000000;
+  color: #a1a1aa;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  border-block-end: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: calc(var(--z-header) + 1);
+  padding-block: 0.45rem;
+}
+
+.global-utility-strip__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.global-utility-strip__left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.global-utility-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #e4e4e7;
+  font-weight: 500;
+}
+
+.global-utility-badge__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: inline-block;
+}
+
+.global-utility-strip__right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.global-utility-link {
+  color: #d4d4d8;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.18s ease;
+}
+
+.global-utility-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   13b. TIER-1 PHARMA HERO ARCHITECTURE
+   -------------------------------------------------------------------------- */
+.hero-enterprise {
+  position: relative;
+  background-color: #050505;
+  color: #ffffff;
+  min-height: calc(100vh - 2.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block-start: calc(var(--header-h) + 2.5rem);
+  padding-block-end: clamp(3rem, 6vw, 5rem);
+  overflow: hidden;
+}
+
+.hero-enterprise__backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 20%, rgba(30, 41, 59, 0.45) 0%, rgba(5, 5, 5, 0.95) 85%),
+    linear-gradient(180deg, rgba(10, 10, 10, 0.7) 0%, #050505 100%);
+}
+
+.hero-enterprise__bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.32;
+  filter: grayscale(100%) contrast(115%);
+  mix-blend-mode: luminosity;
+}
+
+.hero-enterprise__content {
+  position: relative;
+  z-index: 2;
+  max-width: 68rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.pharma-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 0.775rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e4e4e7;
+  margin-block-end: 1.25rem;
+}
+
+.pharma-tag__indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+}
+
+.hero-enterprise__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.35rem, 5vw, 4.65rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  margin: 0 0 1.25rem;
+}
+
+.hero-enterprise__lead {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+  font-weight: 400;
+  line-height: 1.55;
+  color: #d1d5db;
+  max-width: 48rem;
+  margin-inline: auto;
+  margin-block-end: 2.25rem;
+}
+
+.hero-enterprise__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-block-end: clamp(2.5rem, 5vw, 4rem);
+}
+
+.btn-pharma-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--font-heading);
+  font-size: 0.925rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 0.95rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  border: 1px solid #ffffff;
+}
+
+.btn-pharma-primary:hover {
+  background: #f4f4f5;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.18);
+}
+
+.btn-pharma-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: 0.925rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.95rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.22s ease;
+}
+
+.btn-pharma-outline:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: #ffffff;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Swiss Metric Grid */
+.hero-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-block-start: 1rem;
+}
+
+.hero-metric-cell {
+  background: rgba(12, 12, 14, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: clamp(1.25rem, 2vw, 1.85rem) 1.25rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.hero-metric-cell__num {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 2.6vw, 2.85rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.hero-metric-cell__label {
+  font-size: 0.825rem;
+  font-weight: 600;
+  color: #e4e4e7;
+  letter-spacing: 0.02em;
+}
+
+.hero-metric-cell__sub {
+  font-size: 0.725rem;
+  color: #a1a1aa;
+}
+
+/* --------------------------------------------------------------------------
+   13c. INTERACTIVE CAPSULE SIZING & CAPACITY COMPARATOR
+   -------------------------------------------------------------------------- */
+.capsule-comparator {
+  background: #f8fafc;
+  padding-block: var(--space-3xl);
+  border-block: 1px solid #e2e8f0;
+}
+
+.comparator-header {
+  text-align: center;
+  max-width: 48rem;
+  margin-inline: auto;
+  margin-block-end: 2.5rem;
+}
+
+.comparator-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 2.8vw, 2.75rem);
+  font-weight: 800;
+  color: #0a0a0a;
+  letter-spacing: -0.02em;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.comparator-desc {
+  font-size: 1rem;
+  color: #52525b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Size Chips Selector Bar */
+.size-selector-rail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-block-end: 2.5rem;
+}
+
+.size-pill-btn {
+  background: #ffffff;
+  border: 1.5px solid #d4d4d8;
+  color: #18181b;
+  font-family: var(--font-heading);
+  font-size: 0.925rem;
+  font-weight: 700;
+  padding: 0.55rem 1.15rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.size-pill-btn:hover {
+  border-color: #000000;
+  background: #f4f4f5;
+}
+
+.size-pill-btn.is-active {
+  background: #000000;
+  border-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Comparator Asymmetric Grid */
+.comparator-workbench {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 2rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+/* Left Blueprint Visualizer */
+.comparator-blueprint {
+  background: linear-gradient(145deg, #0a0a0a 0%, #18181b 100%);
+  color: #ffffff;
+  padding: clamp(2rem, 3.5vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.blueprint-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.blueprint-badge {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: #a1a1aa;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.blueprint-size-display {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #ffffff;
+  margin: 0.5rem 0 0.25rem;
+}
+
+.blueprint-capsule-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 2.5rem;
+  position: relative;
+}
+
+/* Dynamic Capsule Silhouette Drawing */
+.capsule-graphic-svg {
+  filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.5));
+  max-width: 100%;
+  height: auto;
+}
+
+.blueprint-footer {
+  border-top: 1px dashed rgba(255, 255, 255, 0.16);
+  padding-block-start: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #a1a1aa;
+}
+
+/* Right Engineering Data Sheet */
+.comparator-datasheet {
+  padding: clamp(2rem, 3.5vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.datasheet-title-strip {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 0.75rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.datasheet-title {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #0a0a0a;
+  margin: 0;
+}
+
+.datasheet-volume {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Powder Fill Calculation Table */
+.powder-fill-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.powder-fill-label {
+  font-size: 0.825rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #71717a;
+}
+
+.powder-fill-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.powder-fill-table th {
+  background: #f4f4f5;
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: #3f3f46;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.powder-fill-table td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid #f4f4f5;
+  color: #18181b;
+  font-weight: 500;
+}
+
+.powder-fill-table td:last-child {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-align: right;
+  color: #000000;
+}
+
+/* Dimensions Spec Grid */
+.dimension-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.dim-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem;
+  border-radius: 4px;
+}
+
+.dim-box__label {
+  display: block;
+  font-size: 0.725rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #71717a;
+  margin-bottom: 0.2rem;
+}
+
+.dim-box__val {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0a0a0a;
+}
+
+.dim-box__tol {
+  font-size: 0.7rem;
+  color: #a1a1aa;
+}
+
+.datasheet-cta-strip {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* --------------------------------------------------------------------------
+   13d. POLYMER FORMULATION MATRIX
+   -------------------------------------------------------------------------- */
+.polymer-section {
+  padding-block: var(--space-3xl);
+  background: #ffffff;
+}
+
+.polymer-tabs {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 2px solid #e2e8f0;
+  margin-block-end: 2rem;
+  overflow-x: auto;
+}
+
+.polymer-tab-btn {
+  background: none;
+  border: none;
+  padding: 0.75rem 0.25rem 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #71717a;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  transition: color 0.18s ease;
+}
+
+.polymer-tab-btn:hover {
+  color: #000000;
+}
+
+.polymer-tab-btn.is-active {
+  color: #000000;
+  border-bottom: 3px solid #000000;
+  margin-bottom: -2px;
+}
+
+.polymer-card-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: clamp(2rem, 3.5vw, 3rem);
+}
+
+.polymer-content__badge {
+  font-family: monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #000000;
+  background: #e4e4e7;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  display: inline-block;
+  margin-block-end: 0.5rem;
+}
+
+.polymer-content__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 2.2vw, 2.25rem);
+  font-weight: 800;
+  color: #0a0a0a;
+  margin: 0 0 1rem;
+}
+
+.polymer-content__lead {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #3f3f46;
+  margin-block-end: 1.5rem;
+}
+
+.polymer-specs-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-block-end: 1.5rem;
+}
+
+.polymer-spec-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+}
+
+.polymer-spec-item__key {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #71717a;
+  text-transform: uppercase;
+}
+
+.polymer-spec-item__val {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+/* --------------------------------------------------------------------------
+   13e. HIGH-SPEED MACHINABILITY & CLEANROOM ENGINEERING
+   -------------------------------------------------------------------------- */
+.machinability-section {
+  background: #0a0a0a;
+  color: #ffffff;
+  padding-block: var(--space-3xl);
+}
+
+.machinability-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.machinability-metric-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: clamp(2rem, 3.5vw, 3rem);
+}
+
+.machinability-huge-num {
+  font-family: var(--font-heading);
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  margin-block-end: 0.5rem;
+}
+
+.machinability-machine-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-block-start: 1.5rem;
+}
+
+.machine-tag {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.35rem 0.85rem;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #e4e4e7;
+}
+
+/* --------------------------------------------------------------------------
+   13f. REGULATORY & QUALITY DOSSIER HUB
+   -------------------------------------------------------------------------- */
+.regulatory-hub-section {
+  background: #f8fafc;
+  padding-block: var(--space-3xl);
+  border-block: 1px solid #e2e8f0;
+}
+
+.dossier-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-block-start: 2.5rem;
+}
+
+.dossier-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dossier-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  border-color: #000000;
+}
+
+.dossier-card__code {
+  font-family: monospace;
+  font-size: 0.775rem;
+  font-weight: 700;
+  color: #71717a;
+  margin-bottom: 0.5rem;
+}
+
+.dossier-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #0a0a0a;
+  margin: 0 0 0.5rem;
+}
+
+.dossier-card__desc {
+  font-size: 0.85rem;
+  color: #52525b;
+  line-height: 1.5;
+  margin: 0 0 1.25rem;
+}
+
+.dossier-card__btn {
+  font-size: 0.825rem;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Responsive Queries for Tier-1 Pharma System */
+@media (max-width: 1024px) {
+  .hero-metric-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .comparator-workbench {
+    grid-template-columns: 1fr;
+  }
+
+  .polymer-card-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .machinability-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .dossier-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-metric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dossier-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dimension-metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
