@@ -301,7 +301,6 @@ box-shadow:0 calc(10px + 24px*var(--f,0)) calc(24px + 30px*var(--f,0)) rgba(10,2
 .ew-go svg{flex:none}.ew-go span{opacity:var(--f,0)}
 .ew-prog{display:flex;gap:10px;margin-top:30px}.ew-prog i{width:46px;height:4px;border-radius:4px;background:rgba(11,12,16,.14);overflow:hidden;position:relative}
 .ew-prog i b{position:absolute;inset:0;background:linear-gradient(90deg,#c9191f,#f4571f);transform:scaleX(0);transform-origin:0 50%}
-.ew canvas{position:absolute;inset:0;width:100%;height:100%;z-index:5;pointer-events:none}
 @media (max-width:800px){
 .ew-head{flex-direction:column;gap:6px;margin-bottom:24px}.ew-sub{margin:0;max-width:none}
 .ew-row{display:block;height:48vh}
@@ -322,75 +321,43 @@ box-shadow:0 calc(10px + 24px*var(--f,0)) calc(24px + 30px*var(--f,0)) rgba(10,2
    <a class="ew-card" href="why-us.html" aria-label="View more about Technical Specs"><img class="ew-art" src="images/buycard3.png" alt="Technical Specs" loading="lazy"><div class="t"><h3>Technical Specs</h3><p>Machine performance such as to give minimum downtime on filing machine, thus increasing machine and operator output.</p></div><div class="ew-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Explore</span></div></a>
   </div>
   <div class="ew-prog" id="ew-prog"><i><b></b></i><i><b></b></i><i><b></b></i></div>
-  <canvas id="ew-gl" aria-hidden="true"></canvas>
  </div>
 </section>
 <script>
 (function(){
-var sec=document.getElementById('ew'),pin=document.getElementById('ew-pin'),row=document.getElementById('ew-row'),cv=document.getElementById('ew-gl'),cards=[].slice.call(row.children),segs=[].slice.call(document.querySelectorAll('#ew-prog b')),chip=document.getElementById('ew-chip'),sub=document.getElementById('ew-sub'),h2=document.getElementById('ew-h2');
-var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,run=false,ready=false,loading=false,tp=0,sp=0,W=1,H=1,mx=0,my=0,R,S,C,cap,ha,hb,pw,pc,dm,lay={cx:[0,0,0],top:0,cw:1,ch:1,rc:0};
-function L(a,b,t){return a+(b-a)*t}function cl(v,a,b){return Math.min(b==null?1:b,Math.max(a||0,v))}function ss(t){t=cl(t);return t*t*(3-2*t)}
+var sec=document.getElementById('ew'),pin=document.getElementById('ew-pin'),row=document.getElementById('ew-row'),cards=[].slice.call(row.children),segs=[].slice.call(document.querySelectorAll('#ew-prog b')),chip=document.getElementById('ew-chip'),sub=document.getElementById('ew-sub'),h2=document.getElementById('ew-h2');
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,run=false,tp=0,sp=0,W=1,H=1,mx=0,my=0,lay={cx:[0,0,0],top:0,cw:1,ch:1,rc:0};
+function cl(v,a,b){return Math.min(b==null?1:b,Math.max(a||0,v))}
+function ss(t){t=cl(t);return t*t*(3-2*t)}
 /* split headline into masked words */
 var words=h2.textContent.trim().split(/\s+/);h2.setAttribute('aria-label',h2.textContent.trim());h2.innerHTML=words.map(function(w){return '<span class="w" aria-hidden="true"><span>'+w+'</span></span>'}).join(' ');var ws=[].slice.call(h2.querySelectorAll('.w>span'));
 function measure(){var r=row;lay.rc=r.offsetLeft+r.offsetWidth/2;lay.top=r.offsetTop;lay.cw=cards[0].offsetWidth;lay.ch=cards[0].offsetHeight;
 cards.forEach(function(c,k){lay.cx[k]=r.offsetLeft+c.offsetLeft+c.offsetWidth/2});W=pin.clientWidth;H=pin.clientHeight}
 function prog(){var r=sec.getBoundingClientRect();return cl(-r.top/Math.max(1,r.height-innerHeight))}
-function init(){
-if(ready)return;
-try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});}catch(e){return}
-R.setPixelRatio(Math.min(devicePixelRatio,2));S=new THREE.Scene();C=new THREE.PerspectiveCamera(35,1,.1,50);C.position.z=10;
-S.add(new THREE.HemisphereLight(0xffffff,0x8a93a8,.95));
-var k1=new THREE.DirectionalLight(0xffffff,1.3);k1.position.set(3,6,7);S.add(k1);
-var k2=new THREE.PointLight(0xff6a3a,1.2,30);k2.position.set(-5,-2,4);S.add(k2);
-var pts=[new THREE.Vector2(0,0),new THREE.Vector2(.6,0),new THREE.Vector2(.6,1.1)];for(var i=1;i<=14;i++){var a=i/14*Math.PI/2;pts.push(new THREE.Vector2(.6*Math.cos(a),1.1+.6*Math.sin(a)))}
-var geo=new THREE.LatheGeometry(pts,40);function hm(c){return new THREE.MeshPhysicalMaterial({color:c,roughness:.14,clearcoat:1,clearcoatRoughness:.05,side:THREE.DoubleSide})}
-cap=new THREE.Group();ha=new THREE.Mesh(geo,hm(0xf6f6fa));hb=new THREE.Mesh(geo,hm(0xd8232a));hb.rotation.z=Math.PI;cap.add(ha,hb);S.add(cap);
-var sg=new THREE.SphereGeometry(1,10,8);pw=new THREE.InstancedMesh(sg,new THREE.MeshStandardMaterial({color:0xffffff,roughness:.3}),36);pc=new THREE.InstancedMesh(sg,new THREE.MeshStandardMaterial({color:0xd8232a,roughness:.3}),36);S.add(pw,pc);dm=new THREE.Object3D();
-ready=true;size()}
-function size(){measure();if(R){R.setSize(W,H,false);C.aspect=W/H;C.updateProjectionMatrix()}}
+function size(){measure()}
 addEventListener('resize',size);addEventListener('load',size);size();
 pin.addEventListener('pointermove',function(e){var r=pin.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5},{passive:true});
 addEventListener('scroll',function(){tp=prog()},{passive:true});tp=prog();sp=tp;
-new IntersectionObserver(function(en){run=en[0].isIntersecting;if(run&&!window.THREE&&!loading)load()},{rootMargin:'200px'}).observe(sec);
-function load(){loading=true;if(window.THREE){init();return;}var existing=document.querySelector('script[src*="three.min.js"]');if(existing){existing.addEventListener('load',init);return;}var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';s.onload=init;document.head.appendChild(s);}
-if(window.THREE)init();
-var BC=[[.85,.14,.17],[.72,.5,.2],[.33,.43,.53]];
+new IntersectionObserver(function(en){run=en[0].isIntersecting},{rootMargin:'200px'}).observe(sec);
 function tick(t){
 requestAnimationFrame(tick);if(!run)return;
-sp+=(tp-sp)*(reduce?1:.1);var p=sp,nar=innerWidth<800,k;
+sp+=(tp-sp)*(reduce?1:.1);var p=sp,nar=innerWidth<800;
 var rect=sec.getBoundingClientRect(),enter=cl((innerHeight-rect.top)/(innerHeight*.85));
 /* header reveal */
 chip.style.opacity=ss(enter*3-.6);chip.style.translate='0 '+(1-ss(enter*3-.6))*14+'px';
 ws.forEach(function(w,i){w.style.transform='translateY('+(1-ss(enter*3.2-.9-i*.25))*110+'%)'});
 sub.style.opacity=ss(enter*3-1.6);sub.style.translate='0 '+(1-ss(enter*3-1.6))*16+'px';
 /* deal + stages */
-var d=ss((p-.02)/.3),s=cl((p-.36)/.54,0,1)*2,fon=ss((p-.34)/.06)*(1-ss((p-.93)/.07)),fm=0;
+var d=ss((p-.02)/.3),s=cl((p-.36)/.54,0,1)*2,fon=ss((p-.34)/.06)*(1-ss((p-.93)/.07));
 cards.forEach(function(c,n){
-var f=ss(1-Math.abs(s-n)*1.25)*fon;fm=Math.max(fm,f);
+var f=ss(1-Math.abs(s-n)*1.25)*fon;
 var dx=nar?0:(lay.rc-lay.cx[n])*(1-d),ro=n-1,sc=(.86+.14*d)*(1+.05*f)*(1-.03*fon*(1-f)),ry=-ro*26*(1-d)+mx*10*f,rz=ro*5*(1-d),rx=-my*8*f,dy=(1-d)*50-14*f,op=ss(enter*2.2-.5);
 if(nar){var o=n-s*(p>.34?1:0);dx=o*W*.9;ry+=o*-16;op*=1-.55*Math.min(1,Math.abs(o));sc*=1-.08*Math.min(1,Math.abs(o))}
 c.style.transform='translate3d('+dx+'px,'+dy+'px,'+(f*40)+'px) rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ('+rz+'deg) scale('+sc+')';
 c.style.opacity=op;c.style.zIndex=(nar?10-Math.round(Math.abs(n-s)):n==1?3:2)+(f>.5?5:0);
 c.style.setProperty('--f',f.toFixed(3));c.style.setProperty('--z',(1+.12*f).toFixed(3))});
 segs.forEach(function(b,n){b.style.transform='scaleX('+(p<.34?0:cl(s-n+.6,0,1))+')'});
-if(!ready)return;
-/* capsule */
-var wpp=Math.tan(17.5*Math.PI/180)*10/(H/2),sf=cl(s,0,2),i=Math.min(1,Math.floor(sf)),fr=sf-i;
-var x0=nar?lay.rc:L(lay.rc,lay.cx[0],d),stX=nar?lay.rc:L(lay.cx[i],lay.cx[i+1],ss(fr)),X=p>.36?stX:x0;
-var Lp=lay.cw*(nar?.8:.62)*(1+.3*(1-d)),sc2=Lp*wpp/3.4,py=lay.top-(nar?4:2)+Math.sin(t/700)*4-(1-d)*6;
-cap.position.set((X-W/2)*wpp,(H/2-py)*wpp+(nar?0:.0),1);cap.scale.setScalar(sc2);
-var spin=sf*Math.PI*2*(p>.36?1:0);
-cap.rotation.set(.35+my*.3,.5*Math.sin(t/1700)+mx*.6+spin+(1-d)*t*.0006,Math.PI/2+.18*Math.sin(t/1300));
-var sep=1.0*fm;ha.position.y=sep;hb.position.y=-sep;
-var bc=[L(BC[i][0],BC[i+1]?BC[i+1][0]:BC[i][0],ss(fr)),L(BC[i][1],BC[i+1]?BC[i+1][1]:BC[i][1],ss(fr)),L(BC[i][2],BC[i+1]?BC[i+1][2]:BC[i][2],ss(fr))];
-hb.material.color.setRGB(bc[0],bc[1],bc[2]);pc.material.color.setRGB(bc[0],bc[1],bc[2]);
-/* pellets falling out of the open capsule onto the card */
-var on=fm>.05&&!reduce;pw.visible=pc.visible=on;
-if(on){for(var m=0;m<72;m++){var mesh=m%2?pc:pw,id=m>>1,ph=m/72,life=(t*.00045+ph)%1,off=((m*37)%100)/100-.5,
-ex=X+off*lay.cw*.42*(.4+life*.6),ey=py+14+life*lay.ch*.88,sz=(3+((m*13)%5))*wpp*fm*Math.sin(life*Math.PI);
-dm.position.set((ex-W/2)*wpp,(H/2-ey)*wpp,1.6);dm.scale.setScalar(Math.max(.0001,sz));dm.updateMatrix();mesh.setMatrixAt(id,dm.matrix)}
-pw.instanceMatrix.needsUpdate=true;pc.instanceMatrix.needsUpdate=true}
-R.render(S,C)}
+}
 requestAnimationFrame(tick);
 })();
 </script>
@@ -399,69 +366,107 @@ requestAnimationFrame(tick);
     <!-- ==================================================================
          3. NEXT STEPS SECTION / WHO WE ARE
          ================================================================== -->
-    <section class="section section--white" id="nextStepsSection" aria-labelledby="nextStepsHeading">
-      <div class="container">
-        <div class="steps-layout">
-          <div class="steps-intro" data-aos="fade-right" data-aos-duration="700">
-            <span class="section-tag" data-aos="fade-up" data-aos-delay="100"><span class="section-tag__dot"></span>Empty Capsules Manufacturers</span>
-            <h2 class="section-heading" id="nextStepsHeading" data-aos="fade-up" data-aos-delay="150">Who We Are</h2>
-            <p class="section-lead" data-aos="fade-up" data-aos-delay="200">
-              Erawat Pharma Limited, an Erawat Group Company, ranks among the top <a href="manufacturing-setup.html">Capsule manufacturers</a> in the world &amp; second largest in India.
-            </p>
-            <p class="section-lead" data-aos="fade-up" data-aos-delay="250">
-              Manufacturing empty hard capsules since 1997, our team brings more than 30 years of total group experience in capsule manufacturing technologies. Backed by high technical competence and rigorous R &amp; D, we manufacture empty Gelatin Capsules as well as plant-derived <a href="epl-products.html">HPMC Capsules</a> for vegetarian and hygroscopic formulations.
-            </p>
-            <div class="steps-intro__cta" data-aos="fade-up" data-aos-delay="300">
-              <a class="btn-gradient-pill btn-mfg-more" href="profile.html">VIEW MORE &rarr;</a>
-            </div>
-          </div>
+<!-- ===== ERAWAT "WHO WE ARE" SCROLL SECTION: paste in place of your current section ===== -->
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+.ww{position:relative;height:320vh;background:#fff;color:#111;font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+.ww *{box-sizing:border-box}
+.ww-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:0 5vw}
+.ww-in{width:min(1200px,100%);display:grid;grid-template-columns:1.35fr 1fr;gap:5vw;align-items:center}
+.ww-chip{display:inline-block;background:#e0302f;color:#fff;font-weight:800;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;padding:7px 24px 7px 14px;clip-path:polygon(0 0,calc(100% - 11px) 0,100% 50%,calc(100% - 11px) 100%,0 100%);margin-bottom:22px}
+.ww h2{margin:0 0 20px;font-size:clamp(2.2rem,3.8vw,3.2rem);line-height:1.05;font-weight:800;letter-spacing:-.025em}
+.ww h2 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}.ww h2 .w>span{display:inline-block;will-change:transform}
+.ww p{margin:0 0 18px;font-size:clamp(.98rem,1.25vw,1.12rem);line-height:1.7;color:#4a4d57;max-width:62ch}
+.ww p a{color:#1d4ed8;text-decoration:none}
+.ww p a:hover{text-decoration:underline}
+.ww p .sw{opacity:.22}
+.ww-btn{display:inline-block;margin-top:14px;padding:19px 46px;border-radius:99px;background:linear-gradient(90deg,#c9191f,#f4571f);color:#fff;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.95rem;text-decoration:none;box-shadow:0 14px 36px rgba(220,50,30,.3);transition:box-shadow .3s,transform .3s}
+.ww-btn:hover{box-shadow:0 18px 44px rgba(220,50,30,.45)}
+.ww-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,24px)}
+.ww-tile{position:relative;aspect-ratio:1;border-radius:14px;overflow:hidden;background:#e4e6ea;box-shadow:0 12px 34px rgba(20,30,60,.14);will-change:clip-path,transform}
+.ww-art{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;display:block;will-change:transform}
+.ww canvas{position:absolute;inset:0;width:100%;height:100%;z-index:5;pointer-events:none;filter:drop-shadow(0 16px 20px rgba(30,20,0,.38))}
+@media (max-width:900px){
+.ww{height:auto}.ww-pin{position:relative;height:auto;overflow:hidden;padding:70px 5vw}
+.ww-in{grid-template-columns:1fr;gap:34px}
+}
+@media (prefers-reduced-motion:reduce){.ww p .sw{opacity:1}}
+</style>
+<section class="ww" id="ww" aria-label="Who we are">
+     <div id="nextStepsSection" style="position:absolute;top:0;left:0;pointer-events:none;" aria-hidden="true"></div>
+ <div class="ww-pin" id="ww-pin">
+  <div class="ww-in">
+   <div id="ww-text">
+    <span class="ww-chip" id="ww-chip">Empty Capsules Manufacturers</span>
+    <h2 id="ww-h2">Who We Are</h2>
+    <p>Erawat Pharma Limited, an Erawat Group Company, ranks among the top <a href="manufacturing-setup.html">Capsule manufacturers</a> in the world &amp; second largest in India.</p>
+    <p>Manufacturing empty hard capsules since 1997, our team brings more than 30 years of total group experience in capsule manufacturing technologies. Backed by high technical competence and rigorous R &amp; D, we manufacture empty Gelatin Capsules as well as plant-derived <a href="epl-products.html">HPMC Capsules</a> for vegetarian and hygroscopic formulations.</p>
+    <a class="ww-btn" id="ww-btn" href="profile.html">View more →</a>
+   </div>
+   <div class="ww-grid" id="ww-grid">
+    <div class="ww-tile"><img class="ww-art" src="images/whoweare1.png" alt="Empty hard Gelatin and HPMC vegetarian capsule polymers" loading="lazy"></div>
+    <div class="ww-tile"><img class="ww-art" src="images/whoweare2.png" alt="Automated cleanroom capsule production and AC container logistics" loading="lazy"></div>
+    <div class="ww-tile"><img class="ww-art" src="images/whoweare3.png" alt="Stringent I.P. 2014 quality inspection of empty hard capsules" loading="lazy"></div>
+    <div class="ww-tile"><img class="ww-art" src="images/whoweare4.png" alt="Automated camera sorting and cleanroom dimensional tolerances" loading="lazy"></div>
+   </div>
+  </div>
+  <canvas id="ww-gl" aria-hidden="true"></canvas>
+ </div>
+</section>
+<script>
+(function(){
+var sec=document.getElementById('ww'),pin=document.getElementById('ww-pin'),grid=document.getElementById('ww-grid'),cv=document.getElementById('ww-gl'),tiles=[].slice.call(grid.children),arts=tiles.map(function(t){return t.firstElementChild}),chip=document.getElementById('ww-chip'),h2=document.getElementById('ww-h2'),btn=document.getElementById('ww-btn'),text=document.getElementById('ww-text');
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,run=true,ready=false,loading=false,tp=0,sp=0,W=1,H=1,R,S,C,cap,ha,hb,G={cx:0,cy:0,w:1};
+function L(a,b,t){return a+(b-a)*t}function cl(v,a,b){return Math.min(b==null?1:b,Math.max(a||0,v))}function ss(t){t=cl(t);return t*t*(3-2*t)}
+/* word-by-word scrub for the paragraphs (links keep their colour) */
+var sw=[];function wrap(n){[].slice.call(n.childNodes).forEach(function(c){if(c.nodeType==3){var f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(function(w){if(!w)return;if(/^\s+$/.test(w)){f.appendChild(document.createTextNode(w))}else{var s=document.createElement('span');s.className='sw';s.textContent=w;sw.push(s);f.appendChild(s)}});n.replaceChild(f,c)}else if(c.nodeType==1)wrap(c)})}
+[].slice.call(text.querySelectorAll('p')).forEach(wrap);
+var words=h2.textContent.trim().split(/\s+/);h2.setAttribute('aria-label',h2.textContent.trim());h2.innerHTML=words.map(function(w){return '<span class="w" aria-hidden="true"><span>'+w+'</span></span>'}).join(' ');var ws=[].slice.call(h2.querySelectorAll('.w>span'));
+function measure(){W=pin.clientWidth;H=pin.clientHeight;var pr=pin.getBoundingClientRect(),gr=grid.getBoundingClientRect();G.cx=gr.left-pr.left+gr.width/2;G.cy=gr.top-pr.top+gr.height/2;G.w=gr.width}
+function prog(){var r=sec.getBoundingClientRect();if(innerWidth<900)return cl((innerHeight*.9-r.top)/(r.height+innerHeight*.2));return cl(-r.top/Math.max(1,r.height-innerHeight))}
+/* one polished gold capsule, lit with a studio-style reflection map */
+function init(){
+if(ready)return;
+try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});}catch(e){return}
+R.setPixelRatio(Math.min(devicePixelRatio,2));S=new THREE.Scene();C=new THREE.PerspectiveCamera(30,1,.1,50);C.position.z=12;
+var pm=new THREE.PMREMGenerator(R),es=new THREE.Scene();es.background=new THREE.Color(0x6f7480);
+function bx(x,y,z,w,h,d,c,i){var m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),new THREE.MeshBasicMaterial({color:new THREE.Color(c).multiplyScalar(i)}));m.position.set(x,y,z);es.add(m)}
+bx(0,9,0,14,.6,14,0xffffff,3.2);bx(7,0,4,.6,7,7,0xffffff,2.4);bx(-8,1,-3,.6,6,9,0xfff0d0,1.8);bx(0,-7,0,14,.4,14,0x555a66,1);bx(0,0,-9,14,8,.4,0xffffff,1.4);
+S.environment=pm.fromScene(es,.03).texture;
+var pts=[new THREE.Vector2(0,0),new THREE.Vector2(.6,0),new THREE.Vector2(.6,1.1)];for(var i=1;i<=16;i++){var a=i/16*Math.PI/2;pts.push(new THREE.Vector2(.6*Math.cos(a),1.1+.6*Math.sin(a)))}
+var geo=new THREE.LatheGeometry(pts,64),gm=function(c){return new THREE.MeshPhysicalMaterial({color:c,metalness:1,roughness:.2,clearcoat:.4,clearcoatRoughness:.15,side:THREE.DoubleSide})};
+cap=new THREE.Group();ha=new THREE.Mesh(geo,gm(0xe3ab2e));hb=new THREE.Mesh(geo,gm(0xd89c22));hb.rotation.z=Math.PI;cap.add(ha,hb);S.add(cap);
+ready=true;size()}
+function size(){measure();if(R){R.setSize(W,H,false);C.aspect=W/H;C.updateProjectionMatrix()}}
+addEventListener('resize',size);addEventListener('load',size);size();setTimeout(size,400);
+addEventListener('scroll',function(){tp=prog()},{passive:true});tp=prog();sp=tp;
+new IntersectionObserver(function(en){run=en[0].isIntersecting;if(run){measure();if(!window.THREE&&!loading)load()}},{rootMargin:'200px'}).observe(sec);
+function load(){loading=true;if(window.THREE){init();return;}var existing=document.querySelector('script[src*="three.min.js"]');if(existing){existing.addEventListener('load',init);return;}var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';s.onload=init;document.head.appendChild(s);}
+if(window.THREE)init();
+function tick(t){
+requestAnimationFrame(tick);if(!run)return;
+sp+=(tp-sp)*(reduce?1:.1);var p=sp,nar=innerWidth<900,rect=sec.getBoundingClientRect(),enter=nar?1:cl((innerHeight-rect.top)/(innerHeight*.85));
+var u=nar?p*3:enter*.5+p*1.7;
+chip.style.opacity=ss(u*2.4);chip.style.translate='0 '+(1-ss(u*2.4))*12+'px';
+ws.forEach(function(w,n){w.style.transform='translateY('+(1-ss(u*2.6-.25-n*.3))*110+'%)'});
+var N=sw.length,sc=cl((p-.08)/(nar?.5:.46))*N;sw.forEach(function(s,n){s.style.opacity=reduce?1:(.22+.78*cl(sc-n+.5))});
+var b=ss((p-(nar?.5:.5))/.12);btn.style.opacity=reduce?1:b;btn.style.translate='0 '+(1-b)*20+'px';
+/* photo tiles: clean mask reveal, top row from the bottom, bottom row from the top */
+tiles.forEach(function(el,k){var a=reduce?1:ss(u*1.55-k*.2-.12),up=k<2,inset=(1-a)*100;
+el.style.clipPath=up?'inset('+inset+'% 0 0 0 round 14px)':'inset(0 0 '+inset+'% 0 round 14px)';
+el.style.transform='translateY('+((1-a)*(up?36:-36))+'px)';
+arts[k].style.transform='translateY('+((p-.5)*-22*(k%2?-1:1))+'px) scale('+(1+.28*(1-a))+')'});
+if(!ready)return;
+var wpp=Math.tan(15*Math.PI/180)*12/(H/2),Lp=G.w*.36,s=Lp*wpp/3.4*(reduce?1:ss((p-.34)/.16)),fl=Math.sin(t/1100)*5;
+cap.visible=s>.002;cap.position.set((G.cx-W/2)*wpp,(H/2-G.cy-fl)*wpp,0);cap.scale.setScalar(Math.max(.001,s));
+cap.rotation.set(.2,p*Math.PI*3+t*.00025,1.0+Math.sin(t/1700)*.06);
+R.render(S,C)}
+requestAnimationFrame(tick);
+})();
+</script>
+<!-- ===== END ERAWAT WHO WE ARE SECTION ===== -->
 
-          <div class="steps-grid">
-            <figure class="photo-tile" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
-              <img
-                class="photo-tile__img"
-                src="images/whoweare1.png"
-                alt="Empty hard Gelatin and HPMC vegetarian capsule polymers"
-                width="400"
-                height="400"
-              >
-            </figure>
-
-            <figure class="photo-tile" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">
-              <img
-                class="photo-tile__img"
-                  src="images/whoweare2.png"
-                alt="Automated cleanroom capsule production and AC container logistics"
-                width="400"
-                height="400"
-              >
-            </figure>
-
-            <figure class="photo-tile" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600">
-              <img
-                class="photo-tile__img"
-                 src="images/whoweare3.png"
-                alt="Stringent I.P. 2014 quality inspection of empty hard capsules"
-                width="400"
-                height="400"
-              >
-            </figure>
-
-            <figure class="photo-tile" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="600">
-              <img
-                class="photo-tile__img"
-                  src="images/whoweare4.png"
-                alt="Automated camera sorting and cleanroom dimensional tolerances"
-                width="400"
-                height="400"
-              >
-            </figure>
-          </div>
-        </div>
-      </div>
-    </section>
-
-            <!-- ==================================================================
+    <!-- ==================================================================
          4. FACILITY VIDEO & MANUFACTURING EXCELLENCE SECTION
          ================================================================== -->
     <section class="section section--facility-video" id="facilityVideoSection" aria-labelledby="facilityVideoHeading">

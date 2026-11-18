@@ -1,0 +1,97 @@
+<!-- ===== ERAWAT "WHO WE ARE" SCROLL SECTION: paste in place of your current section ===== -->
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+.ww{position:relative;height:320vh;background:#fff;color:#111;font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+.ww *{box-sizing:border-box}
+.ww-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:0 5vw}
+.ww-in{width:min(1200px,100%);display:grid;grid-template-columns:1.35fr 1fr;gap:5vw;align-items:center}
+.ww-chip{display:inline-block;background:#e0302f;color:#fff;font-weight:800;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;padding:7px 24px 7px 14px;clip-path:polygon(0 0,calc(100% - 11px) 0,100% 50%,calc(100% - 11px) 100%,0 100%);margin-bottom:22px}
+.ww h2{margin:0 0 20px;font-size:clamp(2.2rem,3.8vw,3.2rem);line-height:1.05;font-weight:800;letter-spacing:-.025em}
+.ww h2 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}.ww h2 .w>span{display:inline-block;will-change:transform}
+.ww p{margin:0 0 18px;font-size:clamp(.98rem,1.25vw,1.12rem);line-height:1.7;color:#4a4d57;max-width:62ch}
+.ww p a{color:#1d4ed8;text-decoration:none}
+.ww p a:hover{text-decoration:underline}
+.ww p .sw{opacity:.22}
+.ww-btn{display:inline-block;margin-top:14px;padding:19px 46px;border-radius:99px;background:linear-gradient(90deg,#c9191f,#f4571f);color:#fff;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.95rem;text-decoration:none;box-shadow:0 14px 36px rgba(220,50,30,.3);transition:box-shadow .3s,transform .3s}
+.ww-btn:hover{box-shadow:0 18px 44px rgba(220,50,30,.45)}
+.ww-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,24px)}
+.ww-tile{position:relative;aspect-ratio:1;border-radius:14px;overflow:hidden;background:#e4e6ea;box-shadow:0 12px 34px rgba(20,30,60,.14);will-change:clip-path,transform}
+.ww-art{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;display:block;will-change:transform}
+.ww canvas{position:absolute;inset:0;width:100%;height:100%;z-index:5;pointer-events:none;filter:drop-shadow(0 16px 20px rgba(30,20,0,.38))}
+@media (max-width:900px){
+.ww{height:auto}.ww-pin{position:relative;height:auto;overflow:hidden;padding:70px 5vw}
+.ww-in{grid-template-columns:1fr;gap:34px}
+}
+@media (prefers-reduced-motion:reduce){.ww p .sw{opacity:1}}
+</style>
+<section class="ww" id="ww" aria-label="Who we are">
+ <div class="ww-pin" id="ww-pin">
+  <div class="ww-in">
+   <div id="ww-text">
+    <span class="ww-chip" id="ww-chip">Empty Capsules Manufacturers</span>
+    <h2 id="ww-h2">Who We Are</h2>
+    <p>Erawat Pharma Limited, an Erawat Group Company, ranks among the top <a href="manufacturing-setup.html">Capsule manufacturers</a> in the world &amp; second largest in India.</p>
+    <p>Manufacturing empty hard capsules since 1997, our team brings more than 30 years of total group experience in capsule manufacturing technologies. Backed by high technical competence and rigorous R &amp; D, we manufacture empty Gelatin Capsules as well as plant-derived <a href="epl-products.html">HPMC Capsules</a> for vegetarian and hygroscopic formulations.</p>
+    <a class="ww-btn" id="ww-btn" href="profile.html">View more →</a>
+   </div>
+   <div class="ww-grid" id="ww-grid">
+    <div class="ww-tile"><img class="ww-art" src="images/whoweare1.png" alt="Empty hard Gelatin and HPMC vegetarian capsule polymers" loading="lazy"></div>
+    <div class="ww-tile"><img class="ww-art" src="images/whoweare2.png" alt="Automated cleanroom capsule production and AC container logistics" loading="lazy"></div>
+    <div class="ww-tile"><img class="ww-art" src="images/whoweare3.png" alt="Stringent I.P. 2014 quality inspection of empty hard capsules" loading="lazy"></div>
+    <div class="ww-tile"><img class="ww-art" src="images/whoweare4.png" alt="Automated camera sorting and cleanroom dimensional tolerances" loading="lazy"></div>
+   </div>
+  </div>
+  <canvas id="ww-gl" aria-hidden="true"></canvas>
+ </div>
+</section>
+<script>
+(function(){
+var sec=document.getElementById('ww'),pin=document.getElementById('ww-pin'),grid=document.getElementById('ww-grid'),cv=document.getElementById('ww-gl'),tiles=[].slice.call(grid.children),arts=tiles.map(function(t){return t.firstElementChild}),chip=document.getElementById('ww-chip'),h2=document.getElementById('ww-h2'),btn=document.getElementById('ww-btn'),text=document.getElementById('ww-text');
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,run=true,ready=false,loading=false,tp=0,sp=0,W=1,H=1,R,S,C,cap,ha,hb,G={cx:0,cy:0,w:1};
+function L(a,b,t){return a+(b-a)*t}function cl(v,a,b){return Math.min(b==null?1:b,Math.max(a||0,v))}function ss(t){t=cl(t);return t*t*(3-2*t)}
+/* word-by-word scrub for the paragraphs (links keep their colour) */
+var sw=[];function wrap(n){[].slice.call(n.childNodes).forEach(function(c){if(c.nodeType==3){var f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(function(w){if(!w)return;if(/^\s+$/.test(w)){f.appendChild(document.createTextNode(w))}else{var s=document.createElement('span');s.className='sw';s.textContent=w;sw.push(s);f.appendChild(s)}});n.replaceChild(f,c)}else if(c.nodeType==1)wrap(c)})}
+[].slice.call(text.querySelectorAll('p')).forEach(wrap);
+var words=h2.textContent.trim().split(/\s+/);h2.setAttribute('aria-label',h2.textContent.trim());h2.innerHTML=words.map(function(w){return '<span class="w" aria-hidden="true"><span>'+w+'</span></span>'}).join(' ');var ws=[].slice.call(h2.querySelectorAll('.w>span'));
+function measure(){W=pin.clientWidth;H=pin.clientHeight;var pr=pin.getBoundingClientRect(),gr=grid.getBoundingClientRect();G.cx=gr.left-pr.left+gr.width/2;G.cy=gr.top-pr.top+gr.height/2;G.w=gr.width}
+function prog(){var r=sec.getBoundingClientRect();if(innerWidth<900)return cl((innerHeight*.9-r.top)/(r.height+innerHeight*.2));return cl(-r.top/Math.max(1,r.height-innerHeight))}
+/* one polished gold capsule, lit with a studio-style reflection map */
+function init(){
+try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});}catch(e){return}
+R.setPixelRatio(Math.min(devicePixelRatio,2));S=new THREE.Scene();C=new THREE.PerspectiveCamera(30,1,.1,50);C.position.z=12;
+var pm=new THREE.PMREMGenerator(R),es=new THREE.Scene();es.background=new THREE.Color(0x6f7480);
+function bx(x,y,z,w,h,d,c,i){var m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),new THREE.MeshBasicMaterial({color:new THREE.Color(c).multiplyScalar(i)}));m.position.set(x,y,z);es.add(m)}
+bx(0,9,0,14,.6,14,0xffffff,3.2);bx(7,0,4,.6,7,7,0xffffff,2.4);bx(-8,1,-3,.6,6,9,0xfff0d0,1.8);bx(0,-7,0,14,.4,14,0x555a66,1);bx(0,0,-9,14,8,.4,0xffffff,1.4);
+S.environment=pm.fromScene(es,.03).texture;
+var pts=[new THREE.Vector2(0,0),new THREE.Vector2(.6,0),new THREE.Vector2(.6,1.1)];for(var i=1;i<=16;i++){var a=i/16*Math.PI/2;pts.push(new THREE.Vector2(.6*Math.cos(a),1.1+.6*Math.sin(a)))}
+var geo=new THREE.LatheGeometry(pts,64),gm=function(c){return new THREE.MeshPhysicalMaterial({color:c,metalness:1,roughness:.2,clearcoat:.4,clearcoatRoughness:.15,side:THREE.DoubleSide})};
+cap=new THREE.Group();ha=new THREE.Mesh(geo,gm(0xe3ab2e));hb=new THREE.Mesh(geo,gm(0xd89c22));hb.rotation.z=Math.PI;cap.add(ha,hb);S.add(cap);
+ready=true;size()}
+function size(){measure();if(R){R.setSize(W,H,false);C.aspect=W/H;C.updateProjectionMatrix()}}
+addEventListener('resize',size);size();setTimeout(size,400);
+addEventListener('scroll',function(){tp=prog()},{passive:true});tp=prog();sp=tp;
+new IntersectionObserver(function(en){run=en[0].isIntersecting;if(run){measure();if(!window.THREE&&!loading)load()}},{rootMargin:'200px'}).observe(sec);
+function load(){loading=true;var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';s.onload=init;document.head.appendChild(s)}
+if(window.THREE)init();
+function tick(t){
+requestAnimationFrame(tick);if(!run)return;
+sp+=(tp-sp)*(reduce?1:.1);var p=sp,nar=innerWidth<900,rect=sec.getBoundingClientRect(),enter=nar?1:cl((innerHeight-rect.top)/(innerHeight*.85));
+var u=nar?p*3:enter*.5+p*1.7;
+chip.style.opacity=ss(u*2.4);chip.style.translate='0 '+(1-ss(u*2.4))*12+'px';
+ws.forEach(function(w,n){w.style.transform='translateY('+(1-ss(u*2.6-.25-n*.3))*110+'%)'});
+var N=sw.length,sc=cl((p-.08)/(nar?.5:.46))*N;sw.forEach(function(s,n){s.style.opacity=reduce?1:(.22+.78*cl(sc-n+.5))});
+var b=ss((p-(nar?.5:.5))/.12);btn.style.opacity=reduce?1:b;btn.style.translate='0 '+(1-b)*20+'px';
+/* photo tiles: clean mask reveal, top row from the bottom, bottom row from the top */
+tiles.forEach(function(el,k){var a=reduce?1:ss(u*1.55-k*.2-.12),up=k<2,inset=(1-a)*100;
+el.style.clipPath=up?'inset('+inset+'% 0 0 0 round 14px)':'inset(0 0 '+inset+'% 0 round 14px)';
+el.style.transform='translateY('+((1-a)*(up?36:-36))+'px)';
+arts[k].style.transform='translateY('+((p-.5)*-22*(k%2?-1:1))+'px) scale('+(1+.28*(1-a))+')'});
+if(!ready)return;
+var wpp=Math.tan(15*Math.PI/180)*12/(H/2),Lp=G.w*.36,s=Lp*wpp/3.4*(reduce?1:ss((p-.34)/.16)),fl=Math.sin(t/1100)*5;
+cap.visible=s>.002;cap.position.set((G.cx-W/2)*wpp,(H/2-G.cy-fl)*wpp,0);cap.scale.setScalar(Math.max(.001,s));
+cap.rotation.set(.2,p*Math.PI*3+t*.00025,1.0+Math.sin(t/1700)*.06);
+R.render(S,C)}
+requestAnimationFrame(tick);
+})();
+</script>
+<!-- ===== END ERAWAT WHO WE ARE SECTION ===== -->

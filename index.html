@@ -28,6 +28,14 @@
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/aos.css">
+  <style>
+    .header-inner{
+
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  </style>
 </head>
 <body>
   <!-- ====================================================================
@@ -73,8 +81,8 @@
       >
         Menu
       </button>
-
-      <nav class="site-nav" id="siteNav" aria-label="Primary navigation" data-aos="fade-down" data-aos-duration="600" data-aos-delay="100">
+<div class="header-inner">
+ <nav class="site-nav" id="siteNav" aria-label="Primary navigation" data-aos="fade-down" data-aos-duration="600" data-aos-delay="100">
         <ul class="nav__list">
           <li><a class="nav__link" href="profile.html">About</a></li>
           <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
@@ -85,134 +93,1084 @@
           <li><a class="nav__link" href="careers.html">Careers</a></li>
         </ul>
         <div class="nav__mobile-cta">
-          <a class="btn-gradient-pill" href="#getStartedSection">Send Inquiry &rarr;</a>
+          <a class="btn-gradient-pill" href="#getStartedSection">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">Send Inquiry</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    </span>
+                  </span>
+                </a>
         </div>
       </nav>
 
       <div class="header__actions" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
-        <a class="btn-gradient-pill" href="#getStartedSection">Send Inquiry &rarr;</a>
-        <button type="button" class="header__search-btn" id="headerSearchBtn" aria-label="Search site">
+        <a class="btn-gradient-pill" href="#getStartedSection">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">Send Inquiry</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    </span>
+                  </span>
+                </a>
+        <!-- <button type="button" class="header__search-btn" id="headerSearchBtn" aria-label="Search site">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>
-        </button>
+        </button> -->
       </div>
+</div>
+     
     </div>
   </header>
 
   <main id="mainContent">
     <!-- ==================================================================
-         2. HERO SLIDER SECTION
+         WHITE HEADER THEME & 2-PART SPLIT SCROLL BANNER (4 SCENES)
          ================================================================== -->
-    <section class="hero-slider" id="heroSlider" aria-roledescription="carousel" aria-label="Hero Highlights">
-      <div class="hero-slider__track" id="sliderTrack">
-        <!-- Slide 1: Banner 1 (Image) -->
-        <div class="hero-slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 2" data-index="0">
-          <div class="hero-slide__media">
-            <img
-              class="hero-slide__img"
-              src="images/banners/bannerawat1.png"
-              alt="Erawat high precision capsule manufacturing setup"
-              loading="eager"
-            >
-            <div class="hero-slide__overlay"></div>
-          </div>
-          <div class="container hero-slide__container">
-            <div class="hero-slide__content">
-              <span class="section-tag hero-slide__tag" data-aos="fade-up" data-aos-delay="100"><span class="section-tag__dot"></span>Empty Capsules Specialist</span>
-              <h1 class="hero-slide__title" data-aos="fade-up" data-aos-delay="200">
-                Empty Hard Capsules
+    <style>
+    /* --------------------------------------------------------------------------
+       1. WHITE HEADER STYLING FOR INDEX.HTML
+       -------------------------------------------------------------------------- */
+    .site-header {
+      background: rgba(255, 255, 255, 0.98) !important;
+      border-block-end: 1px solid rgba(0, 0, 0, 0.08) !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+    }
+    .site-header .brand__logo {
+      filter: brightness(0) !important;
+    }
+    .site-header .nav__link {
+      color: #1a1e24 !important;
+      font-weight: 600 !important;
+      transition: color 0.2s ease, background-color 0.2s ease;
+    }
+    .site-header .nav__link:hover {
+      color: #e0302f !important;
+      background-color: rgba(224, 48, 47, 0.08) !important;
+    }
+    .site-header .header__search-btn {
+      color: #1a1e24 !important;
+      border-color: #d8dde6 !important;
+      background: #f8fafc !important;
+      transition: all 0.2s ease;
+    }
+    .site-header .header__search-btn:hover {
+      background-color: #e0302f !important;
+      color: #ffffff !important;
+      border-color: #e0302f !important;
+    }
+    .site-header .nav-toggle {
+      color: #1a1e24 !important;
+      background: #f1f4f9 !important;
+      border: 1px solid #d8dde6 !important;
+    }
+    .site-header .btn-gradient-pill,
+    .site-header .nav__mobile-cta .btn-gradient-pill {
+      background: #000000 !important;
+      color: #ffffff !important;
+      border: 1.5px solid #000000 !important;
+    }
+    .site-header .btn-gradient-pill:hover,
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover {
+      background: #222222 !important;
+      border-color: #222222 !important;
+      color: #ffffff !important;
+      transform: translateY(-2px);
+    }
+
+    /* --------------------------------------------------------------------------
+       2. 2-PART SPLIT SCROLL BANNER (CURVED REFERENCE STYLE + DUAL VERTICAL SLIDE)
+       -------------------------------------------------------------------------- */
+    .split-hero {
+      position: relative;
+      height: 420vh;
+      background: #ffffff;
+      color: #000000;
+    }
+    .split-hero * {
+      box-sizing: border-box;
+    }
+    .split-hero__pin {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      background: #ffffff;
+      padding: 0;
+    }
+    .split-hero__inner {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1.05fr 1.15fr;
+      align-items: center;
+      padding-top: 72px; /* space below sticky white header */
+    }
+
+    /* Part 1: Text Column */
+    .split-hero__text-col {
+      position: relative;
+      height: clamp(420px, 60vh, 540px);
+      overflow: hidden;
+      padding-left: clamp(24px, 5.5vw, 90px);
+      padding-right: clamp(16px, 3vw, 40px);
+      display: flex;
+      align-items: center;
+    }
+    .split-hero__pane {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: clamp(24px, 5.5vw, 90px);
+      padding-right: clamp(16px, 3vw, 40px);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-100%);
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                  opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                  visibility 0.8s;
+      pointer-events: none;
+      will-change: transform, opacity;
+    }
+    .split-hero__pane.is-active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .split-hero__pane.is-passed {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(100%); /* Slides down to bottom */
+      pointer-events: none;
+    }
+    .split-hero__pane.is-upcoming {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-100%); /* Waiting at top */
+      pointer-events: none;
+    }
+
+    .split-hero__meta {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #64748b;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .split-hero__meta span.meta-dot {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #000000;
+      opacity: 0.45;
+    }
+    .split-hero__title {
+      font-family: var(--font-heading, "Bricolage Grotesque", sans-serif);
+      font-size: clamp(2.3rem, 3.8vw, 3.5rem);
+      line-height: 1.12;
+      font-weight: 700 !important;
+      letter-spacing: -0.03em;
+      color: #000000 !important;
+      margin: 0 0 18px;
+      max-width: 18ch;
+    }
+    .split-hero__title * {
+      font-weight: 700 !important;
+      color: #000000 !important;
+      -webkit-text-fill-color: #000000 !important;
+      background: none !important;
+    }
+    .mfg-header__heading,
+    .section-heading {
+      font-weight: 700 !important;
+    }
+    .split-hero__desc {
+      font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+      line-height: 1.65;
+      color: #475569;
+      margin: 0 0 28px;
+      max-width: 48ch;
+    }
+    .split-hero__actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    /* --------------------------------------------------------------------------
+       ANIMATED BUTTONS (ROLLING TEXT + SLIDING CHEVRON ARROW)
+       -------------------------------------------------------------------------- */
+    .btn-black-pill,
+    .split-hero .btn-gradient-pill,
+    .btn-outline-pill,
+    .split-hero .btn-outline-pill,
+    .site-header .btn-gradient-pill,
+    .site-header .nav__mobile-cta .btn-gradient-pill {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 30px;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+      box-sizing: border-box;
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease;
+    }
+
+    .btn-black-pill,
+    .split-hero .btn-gradient-pill,
+    .site-header .btn-gradient-pill,
+    .site-header .nav__mobile-cta .btn-gradient-pill {
+      background: #000000 !important;
+      color: #ffffff !important;
+      border: 1.5px solid #000000 !important;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18) !important;
+    }
+    .btn-black-pill:hover,
+    .split-hero .btn-gradient-pill:hover,
+    .site-header .btn-gradient-pill:hover,
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover {
+      border-color: #2e2e2e !important;
+      color: #ffffff !important;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28) !important;
+    }
+
+    .btn-outline-pill,
+    .split-hero .btn-outline-pill {
+      background: transparent !important;
+      color: #000000 !important;
+      border: 1.5px solid #000000 !important;
+    }
+    .btn-outline-pill:hover,
+    .split-hero .btn-outline-pill:hover {
+      color: #ffffff !important;
+      border-color: #000000 !important;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    /* --------------------------------------------------------------------------
+       BACKGROUND FILL FROM LEFT TO RIGHT ON HOVER
+       -------------------------------------------------------------------------- */
+    .btn-black-pill::before,
+    .split-hero .btn-gradient-pill::before,
+    .site-header .btn-gradient-pill::before,
+    .site-header .nav__mobile-cta .btn-gradient-pill::before,
+    .btn-outline-pill::before,
+    .split-hero .btn-outline-pill::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      z-index: 0;
+      pointer-events: none;
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 0.42s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+
+    /* On hover: fill sweeps across from left to right smoothly */
+    .btn-black-pill:hover::before,
+    .split-hero .btn-gradient-pill:hover::before,
+    .site-header .btn-gradient-pill:hover::before,
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover::before,
+    .btn-outline-pill:hover::before,
+    .split-hero .btn-outline-pill:hover::before {
+      transform: scaleX(1);
+    }
+
+    /* Primary CTA fill: dark charcoal tone over solid black */
+    .btn-black-pill::before,
+    .split-hero .btn-gradient-pill::before,
+    .site-header .btn-gradient-pill::before,
+    .site-header .nav__mobile-cta .btn-gradient-pill::before {
+      background: #2e2e2e;
+    }
+
+    /* Secondary CTA fill: pure solid black over transparent outline */
+    .btn-outline-pill::before,
+    .split-hero .btn-outline-pill::before {
+      background: #000000;
+    }
+
+    /* 1. Text Roll Animation: text goes up, same text comes from bottom */
+    .btn-anim__text {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      line-height: 1.25;
+      vertical-align: middle;
+    }
+    .btn-anim__text-track {
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+    .btn-anim__text-item {
+      display: block;
+      white-space: nowrap;
+      line-height: 1.25;
+    }
+    .btn-anim__text-clone {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+    }
+
+    .btn-black-pill:hover .btn-anim__text-track,
+    .split-hero .btn-gradient-pill:hover .btn-anim__text-track,
+    .btn-outline-pill:hover .btn-anim__text-track,
+    .split-hero .btn-outline-pill:hover .btn-anim__text-track,
+    .site-header .btn-gradient-pill:hover .btn-anim__text-track,
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__text-track {
+      transform: translateY(-100%);
+    }
+
+    /* 2. Arrow Slide Animation: arrow goes to right, same arrow comes from left */
+    .btn-anim__icon {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 12px;
+      height: 12px;
+      overflow: hidden;
+      flex-shrink: 0;
+      vertical-align: middle;
+    }
+    .btn-anim__icon-track {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .btn-anim__icon-item {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      will-change: transform, opacity;
+    }
+    .btn-anim__icon-item:not(.btn-anim__icon-clone) {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .btn-anim__icon-clone {
+      transform: translateX(-150%);
+      opacity: 0;
+    }
+
+    .btn-black-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+    .split-hero .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+    .btn-outline-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+    .split-hero .btn-outline-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+    .site-header .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone) {
+      transform: translateX(150%);
+      opacity: 0;
+    }
+    .btn-black-pill:hover .btn-anim__icon-clone,
+    .split-hero .btn-gradient-pill:hover .btn-anim__icon-clone,
+    .btn-outline-pill:hover .btn-anim__icon-clone,
+    .split-hero .btn-outline-pill:hover .btn-anim__icon-clone,
+    .site-header .btn-gradient-pill:hover .btn-anim__icon-clone,
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__icon-clone {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    /* Part 2: Media Column (Curved Cutout Mask) */
+    .split-hero__media-col {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px 0 30px;
+    }
+    .split-hero__card {
+      position: relative;
+      width: 100%;
+      height: clamp(480px, 80vh, 680px);
+      overflow: hidden;
+      background: #0f172a;
+      -webkit-clip-path: url(#heroCutout);
+      clip-path: url(#heroCutout);
+      border-bottom-left-radius: 120px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+    }
+    .split-hero__img-item {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(100%);
+      transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+                  opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+                  visibility 0.85s;
+      pointer-events: none;
+      will-change: transform, opacity;
+    }
+    .split-hero__img-item.is-active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .split-hero__img-item.is-passed {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-100%); /* Slides up to top */
+      pointer-events: none;
+    }
+    .split-hero__img-item.is-upcoming {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(100%); /* Waiting at bottom */
+      pointer-events: none;
+    }
+    .split-hero__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: scale(1);
+      transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .split-hero__img-item:not(.is-active) .split-hero__img {
+      transform: scale(1.08);
+    }
+    .split-hero__img-badge {
+      position: absolute;
+      right: 28px;
+      bottom: 38px;
+      z-index: 5;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 9px 20px;
+      border-radius: 9999px;
+      background: rgba(0, 0, 0, 0.82);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #ffffff;
+      font-size: 0.82rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+    .split-hero__img-step {
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.05em;
+    }
+    .split-hero__img-caption {
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    /* Interactive Scene Indicator Tabs */
+    .split-hero__nav {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 6px 12px;
+      border-radius: 9999px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    .split-hero__nav-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #64748b;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: all 0.25s ease;
+    }
+    .split-hero__nav-btn:hover {
+      color: #000000;
+    }
+    .split-hero__nav-btn.is-active {
+      background: #000000 !important;
+      color: #ffffff !important;
+    }
+    .split-hero__nav-btn.is-active .split-hero__nav-num {
+      color: #ffffff !important;
+    }
+
+    /* Mouse Scroll Indicator */
+    .split-hero__scroll-cue {
+      position: absolute;
+      right: clamp(20px, 4vw, 48px);
+      bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 1;
+      transition: opacity 0.4s ease;
+    }
+    .split-hero__mouse {
+      width: 20px;
+      height: 32px;
+      border: 2px solid #000000;
+      border-radius: 14px;
+      position: relative;
+    }
+    .split-hero__mouse::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 3px;
+      height: 6px;
+      border-radius: 2px;
+      background: #000000;
+      animation: mouseWheel 1.5s infinite;
+    }
+    @keyframes mouseWheel {
+      0% { opacity: 1; transform: translate(-50%, 0); }
+      100% { opacity: 0; transform: translate(-50%, 12px); }
+    }
+
+    /* Linear Progress Bar */
+    .split-hero__progress-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background: #000000;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      transition: transform 0.1s linear;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .split-hero__inner {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 85px 20px 60px;
+      }
+      .split-hero__text-col {
+        height: auto;
+        min-height: 280px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .split-hero__pane {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .split-hero__media-col {
+        padding: 0;
+      }
+      .split-hero__card {
+        height: 340px;
+        clip-path: none !important;
+        -webkit-clip-path: none !important;
+        border-radius: 20px;
+      }
+      .split-hero__img-badge {
+        right: 14px;
+        bottom: 14px;
+      }
+      .split-hero__nav-label {
+        display: none;
+      }
+      .split-hero__scroll-cue {
+        display: none;
+      }
+    }
+    @media (max-width: 640px) {
+      .split-hero__title {
+        font-size: 1.85rem;
+      }
+      .split-hero__desc {
+        font-size: 0.9rem;
+        margin-bottom: 18px;
+      }
+      .split-hero__meta {
+        font-size: 0.72rem;
+      }
+    }
+    </style>
+
+    <!-- SVG Definition for Curved Slanted Banner Silhouette -->
+    <svg width="0" height="0" style="position: absolute; pointer-events: none;" aria-hidden="true">
+      <defs>
+        <clipPath id="heroCutout" clipPathUnits="objectBoundingBox">
+          <path d="M 0.08,0 L 1,0 L 1,0.95 L 0.26,0.95 C 0.18,0.95 0.15,0.88 0.15,0.76 L 0.08,0 Z" />
+        </clipPath>
+      </defs>
+    </svg>
+
+    <section class="split-hero" id="heroSplit" aria-label="Erawat Product Highlights">
+      <div class="split-hero__pin" id="heroSplitPin">
+        <div class="split-hero__inner">
+          
+          <!-- ================= Part 1: Text Column (Slides Downwards) ================= -->
+          <div class="split-hero__text-col" id="heroTextCol">
+            
+            <!-- Scene 1: Gelatin -->
+            <article class="split-hero__pane is-active" data-scene="0">
+              <div class="split-hero__meta">
+                <span>EMPTY CAPSULES</span>
+                <span class="meta-dot"></span>
+                <span>TSE/BSE FREE</span>
+                <span class="meta-dot"></span>
+                <span>EDQM DMF</span>
+                <span class="meta-dot"></span>
+                <span>WHO-cGMP</span>
+              </div>
+              <h1 class="split-hero__title">
+                Empty Hard Gelatin Capsules
               </h1>
-              <p class="hero-slide__subtitle" data-aos="fade-up" data-aos-delay="300">
-                Gelatin &amp; HPMC/Veg Capsule
+              <p class="split-hero__desc">
+                High-quality TSE/BSE-free Gelatin capsules engineered for high-speed automated filling machines, delivering minimal rejections, tight locking tolerances, and maximum pharmaceutical output.
               </p>
-              <div class="hero-slide__cta" data-aos="fade-up" data-aos-delay="400">
-                <a class="btn-gradient-pill" href="#manufacturingSection">
-                  KNOW MORE
+              <div class="split-hero__actions">
+                <a class="btn-black-pill" href="#manufacturingSection">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">KNOW MORE</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">KNOW MORE</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    </span>
+                  </span>
+                </a>
+                <a class="btn-outline-pill" href="epl-products.html">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">View Gelatin Specs</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">View Gelatin Specs</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    </span>
+                  </span>
                 </a>
               </div>
-            </div>
-          </div>
-        </div>
+            </article>
 
-        <!-- Slide 2: Banner 2 (Image) -->
-        <div class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 2" data-index="1" aria-hidden="true">
-          <div class="hero-slide__media">
-            <img
-              class="hero-slide__img"
-              src="images/banners/bannerawat2.png"
-              alt="Erawat global quality compliance and capsule distribution"
-              loading="lazy"
-            >
-            <div class="hero-slide__overlay"></div>
-          </div>
-          <div class="container hero-slide__container">
-            <div class="hero-slide__content">
-              <span class="section-tag hero-slide__tag" data-aos="fade-up" data-aos-delay="100"><span class="section-tag__dot"></span>Global Pharma Supply</span>
-              <h2 class="hero-slide__title" data-aos="fade-up" data-aos-delay="200">
-                Empty Hard Capsules
+            <!-- Scene 2: HPMC -->
+            <article class="split-hero__pane is-upcoming" data-scene="1">
+              <div class="split-hero__meta">
+                <span>PLANT-DERIVED</span>
+                <span class="meta-dot"></span>
+                <span>VEGETARIAN</span>
+                <span class="meta-dot"></span>
+                <span>NON-GMO</span>
+                <span class="meta-dot"></span>
+                <span>HALAL &amp; KOSHER</span>
+              </div>
+              <h2 class="split-hero__title">
+                HPMC / Veg Capsules
               </h2>
-              <p class="hero-slide__subtitle" data-aos="fade-up" data-aos-delay="300">
-                Gelatin &amp; HPMC/Veg Capsule
+              <p class="split-hero__desc">
+                Naturally derived Hypromellose capsules tailored for moisture-sensitive APIs, herbal formulations, hygroscopic powders, and global clean-label nutraceutical brands.
               </p>
-              <div class="hero-slide__cta" data-aos="fade-up" data-aos-delay="400">
-                <a class="btn-gradient-pill" href="#manufacturingSection">
-                  KNOW MORE
+              <div class="split-hero__actions">
+                <a class="btn-black-pill" href="epl-products.html">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">EXPLORE HPMC</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">EXPLORE HPMC</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    </span>
+                  </span>
+                </a>
+                <a class="btn-outline-pill" href="#manufacturingSection">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">Why Choose Us</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Why Choose Us</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    </span>
+                  </span>
                 </a>
               </div>
+            </article>
+
+            <!-- Scene 3: Sizes & Colors -->
+            <article class="split-hero__pane is-upcoming" data-scene="2">
+              <div class="split-hero__meta">
+                <span>FULL SPECTRUM SIZES</span>
+                <span class="meta-dot"></span>
+                <span>00 TO 5</span>
+                <span class="meta-dot"></span>
+                <span>10,000+ CUSTOM SHADES</span>
+              </div>
+              <h2 class="split-hero__title">
+                Precision Sizing &amp; Custom Colors
+              </h2>
+              <p class="split-hero__desc">
+                Available in every commercial standard and elongated size — 00, 0EL, 0, 1, 2, 3, 4, and 5 — backed by custom shade matching and 360° axial/radial pharmaceutical printing.
+              </p>
+              <div class="split-hero__actions">
+                <a class="btn-black-pill" href="technical-details.html">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">SIZE SPECIFICATIONS</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">SIZE SPECIFICATIONS</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    </span>
+                  </span>
+                </a>
+                <a class="btn-outline-pill" href="product.html">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">Color Palette</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Color Palette</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Scene 4: Global Standards & Export -->
+            <article class="split-hero__pane is-upcoming" data-scene="3">
+              <div class="split-hero__meta">
+                <span>US FDA DMF #018249</span>
+                <span class="meta-dot"></span>
+                <span>WHO-cGMP</span>
+                <span class="meta-dot"></span>
+                <span>40+ COUNTRIES</span>
+              </div>
+              <h2 class="split-hero__title">
+                Zero-Defect Quality &amp; Global Supply
+              </h2>
+              <p class="split-hero__desc">
+                Manufactured in WHO-cGMP automated cleanrooms with US FDA DMF Type IV filings (#018249). Delivering over 12 billion empty capsules annually to pharmaceutical innovators across 40+ countries.
+              </p>
+              <div class="split-hero__actions">
+                <a class="btn-black-pill" href="#getStartedSection">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">SEND INQUIRY</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">SEND INQUIRY</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    </span>
+                  </span>
+                </a>
+                <a class="btn-outline-pill" href="exports.html">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">Export Network</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Export Network</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- ================= Part 2: Images Column (Slides Upwards) ================= -->
+          <div class="split-hero__media-col">
+            <div class="split-hero__card" id="heroMediaCard">
+              
+              <!-- Image 1: Gelatin Cleanroom Production -->
+              <div class="split-hero__img-item is-active" data-scene="0">
+                <img
+                  src="images/banners/bannerawat1.png"
+                  alt="Erawat cleanroom automated gelatin capsule production line"
+                  class="split-hero__img"
+                  loading="eager"
+                  width="1280"
+                  height="820"
+                >
+                <div class="split-hero__img-badge">
+                  <span class="split-hero__img-step">01 / 04</span>
+                  <span class="split-hero__img-caption">Hard Gelatin Manufacturing</span>
+                </div>
+              </div>
+
+              <!-- Image 2: HPMC Vegetarian Capsules -->
+              <div class="split-hero__img-item is-upcoming" data-scene="1">
+                <img
+                  src="images/banners/bannerawat2.png"
+                  alt="Erawat HPMC vegetarian capsule quality compliance and distribution"
+                  class="split-hero__img"
+                  loading="lazy"
+                  width="1280"
+                  height="820"
+                >
+                <div class="split-hero__img-badge">
+                  <span class="split-hero__img-step">02 / 04</span>
+                  <span class="split-hero__img-caption">HPMC Vegetarian Cleanroom</span>
+                </div>
+              </div>
+
+              <!-- Image 3: Sizing & Custom Printing -->
+              <div class="split-hero__img-item is-upcoming" data-scene="2">
+                <img
+                  src="images/banners/bannerawat3.png"
+                  alt="Precision sizing range 00 to 5 and custom capsule printing"
+                  class="split-hero__img"
+                  loading="lazy"
+                  width="1280"
+                  height="820"
+                >
+                <div class="split-hero__img-badge">
+                  <span class="split-hero__img-step">03 / 04</span>
+                  <span class="split-hero__img-caption">Precision Sizing 00 to 5</span>
+                </div>
+              </div>
+
+              <!-- Image 4: Optical Camera Inspection & Global Export -->
+              <div class="split-hero__img-item is-upcoming" data-scene="3">
+                <img
+                  src="images/banners/bannerawat4.png"
+                  alt="Zero-defect optical inspection and global pharmaceutical export"
+                  class="split-hero__img"
+                  loading="lazy"
+                  width="1280"
+                  height="820"
+                >
+                <div class="split-hero__img-badge">
+                  <span class="split-hero__img-step">04 / 04</span>
+                  <span class="split-hero__img-caption">Zero-Defect Global Export</span>
+                </div>
+              </div>
+
             </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Slider Arrows: Prev & Next -->
-      <button
-        type="button"
-        class="hero-slider__arrow hero-slider__arrow--prev"
-        id="sliderPrevBtn"
-        aria-label="Previous slide"
-        data-aos="fade-right"
-        data-aos-delay="450"
-      >
-        <svg class="hero-slider__arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="19" y1="12" x2="5" y2="12"></line>
-          <polyline points="12 19 5 12 12 5"></polyline>
-        </svg>
-      </button>
-
-      <button
-        type="button"
-        class="hero-slider__arrow hero-slider__arrow--next"
-        id="sliderNextBtn"
-        aria-label="Next slide"
-        data-aos="fade-left"
-        data-aos-delay="450"
-      >
-        <svg class="hero-slider__arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </button>
-
-      <!-- Bottom Controls: Pagination Dots & Mouse Scroll Indicator -->
-      <div class="hero-slider__bottom" data-aos="fade-up" data-aos-delay="500">
-        <div class="hero-slider__dots" id="sliderDots" role="tablist" aria-label="Slide indicators">
-          <button type="button" class="hero-slider__dot is-active" role="tab" aria-selected="true" aria-label="Go to slide 1" data-index="0"></button>
-          <button type="button" class="hero-slider__dot" role="tab" aria-selected="false" aria-label="Go to slide 2" data-index="1"></button>
         </div>
 
-        <a class="hero-slider__scroll-indicator" href="#manufacturingSection" aria-label="Scroll to content">
-          <span class="hero-slider__mouse">
-            <svg class="hero-slider__mouse-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <line x1="12" y1="5" x2="12" y2="19"></line>
-              <polyline points="19 12 12 19 5 12"></polyline>
-            </svg>
-          </span>
-          <span class="hero-slider__scroll-line" aria-hidden="true"></span>
-        </a>
+        <!-- Interactive Scene Indicators (Clickable Jumpers) -->
+        <nav class="split-hero__nav" id="heroNav" aria-label="Banner scenes navigation">
+          <button type="button" class="split-hero__nav-btn is-active" data-scene="0" aria-label="Scene 1: Gelatin">
+            <span class="split-hero__nav-num">01</span>
+            <span class="split-hero__nav-label">Gelatin</span>
+          </button>
+          <button type="button" class="split-hero__nav-btn" data-scene="1" aria-label="Scene 2: HPMC">
+            <span class="split-hero__nav-num">02</span>
+            <span class="split-hero__nav-label">HPMC / Veg</span>
+          </button>
+          <button type="button" class="split-hero__nav-btn" data-scene="2" aria-label="Scene 3: Sizing">
+            <span class="split-hero__nav-num">03</span>
+            <span class="split-hero__nav-label">Sizes 00–5</span>
+          </button>
+          <button type="button" class="split-hero__nav-btn" data-scene="3" aria-label="Scene 4: Global Export">
+            <span class="split-hero__nav-num">04</span>
+            <span class="split-hero__nav-label">Global Quality</span>
+          </button>
+        </nav>
+
+        <!-- Mouse Scroll Cue -->
+        <div class="split-hero__scroll-cue" id="heroScrollCue">
+          <span class="split-hero__mouse"></span>
+          <span class="split-hero__scroll-text">Scroll to explore</span>
+        </div>
+
+        <!-- Linear Progress Bar -->
+        <div class="split-hero__progress-bar" id="heroProgressBar" aria-hidden="true"></div>
+
       </div>
     </section>
+
+    <script>
+    (function() {
+      var hero = document.getElementById('heroSplit');
+      if (!hero) return;
+
+      var panes = [].slice.call(hero.querySelectorAll('.split-hero__pane'));
+      var imgItems = [].slice.call(hero.querySelectorAll('.split-hero__img-item'));
+      var navBtns = [].slice.call(hero.querySelectorAll('.split-hero__nav-btn'));
+      var progressBar = document.getElementById('heroProgressBar');
+      var scrollCue = document.getElementById('heroScrollCue');
+
+      var totalScenes = 4;
+      var activeScene = 0;
+
+      function updateScene(index) {
+        if (index === activeScene && panes[0].classList.contains('is-active')) return;
+        activeScene = index;
+
+        // Text panes: passed slide DOWN (100%), upcoming wait ABOVE (-100%), active at center (0)
+        panes.forEach(function(p, i) {
+          p.classList.remove('is-active', 'is-passed', 'is-upcoming');
+          if (i === index) {
+            p.classList.add('is-active');
+          } else if (i < index) {
+            p.classList.add('is-passed');
+          } else {
+            p.classList.add('is-upcoming');
+          }
+        });
+
+        // Images: passed slide UP (-100%), upcoming wait BELOW (100%), active at center (0)
+        imgItems.forEach(function(img, i) {
+          img.classList.remove('is-active', 'is-passed', 'is-upcoming');
+          if (i === index) {
+            img.classList.add('is-active');
+          } else if (i < index) {
+            img.classList.add('is-passed');
+          } else {
+            img.classList.add('is-upcoming');
+          }
+        });
+
+        navBtns.forEach(function(btn, i) {
+          btn.classList.toggle('is-active', i === index);
+          btn.setAttribute('aria-selected', i === index ? 'true' : 'false');
+        });
+      }
+
+      // Initialize initial state
+      updateScene(0);
+
+      function onScroll() {
+        var rect = hero.getBoundingClientRect();
+        var scrollDist = hero.offsetHeight - window.innerHeight;
+        if (scrollDist <= 0) return;
+
+        var progress = Math.max(0, Math.min(1, -rect.top / scrollDist));
+
+        if (progressBar) {
+          progressBar.style.transform = 'scaleX(' + progress + ')';
+        }
+
+        if (scrollCue) {
+          scrollCue.style.opacity = progress > 0.04 ? '0' : '1';
+        }
+
+        var rawStep = Math.floor(progress * totalScenes);
+        var targetScene = Math.max(0, Math.min(totalScenes - 1, rawStep));
+
+        updateScene(targetScene);
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      navBtns.forEach(function(btn, i) {
+        btn.addEventListener('click', function() {
+          var heroTop = hero.getBoundingClientRect().top + window.scrollY;
+          var scrollDist = hero.offsetHeight - window.innerHeight;
+          var targetScroll = heroTop + (i / totalScenes) * scrollDist + 15;
+          window.scrollTo({
+            top: targetScroll,
+            behavior: 'smooth'
+          });
+        });
+      });
+    })();
+    </script>
 
     <!-- ==================================================================
          2. MANUFACTURING SECTION / WHY YOU SHOULD BUY FROM US
