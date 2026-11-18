@@ -35,7 +35,12 @@
       align-items: center;
       gap: 30px;
     }
-  </style>
+      /* Universal Shadow Removal - All shadows disabled per user request */
+    *, *::before, *::after {
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+    </style>
 </head>
 <body>
   <!-- ====================================================================
@@ -172,104 +177,184 @@
     /* --------------------------------------------------------------------------
        SEND INQUIRY SECTION (2-PART SPLIT: FORM ON LEFT & CONTACT DETAILS ON RIGHT)
        -------------------------------------------------------------------------- */
+    .section--editorial {
+      background-color: #f1f5f9 !important;
+      padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      box-sizing: border-box;
+    }
     .inquiry-split-layout {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: clamp(2rem, 3.5vw, 3.5rem);
-      align-items: stretch;
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      gap: 2rem !important;
+      align-items: stretch !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
     }
     @media (min-width: 993px) {
       .inquiry-split-layout {
-        grid-template-columns: 1.18fr 0.92fr !important;
-        gap: clamp(2.5rem, 4.5vw, 4.5rem) !important;
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+        gap: clamp(2rem, 3.5vw, 3.5rem) !important;
         align-items: stretch !important;
       }
     }
 
     .inquiry-split__left {
-      display: flex;
-      flex-direction: column;
-      gap: 1.75rem;
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 1.5rem !important;
+      box-sizing: border-box !important;
     }
 
     .inquiry-header-compact {
-      display: flex;
-      flex-direction: column;
-      gap: 0.65rem;
-      align-items: flex-start;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 0.65rem !important;
+      align-items: flex-start !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
     }
 
     .inquiry-header-compact .inquiry-heading {
-      font-family: var(--font-heading, "Bricolage Grotesque", sans-serif);
-      font-size: clamp(2rem, 1.8rem + 1.2vw, 2.75rem);
+      font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
+      font-size: clamp(2rem, 1.8rem + 1.2vw, 2.75rem) !important;
       font-weight: 700 !important;
       color: #000000 !important;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-      margin: 0;
+      line-height: 1.15 !important;
+      letter-spacing: -0.03em !important;
+      margin: 0 !important;
+      max-width: 100% !important;
+      word-wrap: break-word !important;
     }
 
     .inquiry-header-compact .inquiry-lead {
-      font-size: 0.95rem;
-      color: #475569;
-      line-height: 1.6;
-      margin: 0;
-      max-width: 48ch;
+      font-size: 0.95rem !important;
+      color: #475569 !important;
+      line-height: 1.6 !important;
+      margin: 0 !important;
+      max-width: 48ch !important;
     }
 
     /* 2-Column Form Rows */
     .form-grid-row--2 {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
-      margin-block-end: 0.25rem;
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      gap: 1.25rem !important;
+      margin-block-end: 0.25rem !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
     }
     @media (min-width: 540px) {
       .form-grid-row--2 {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.25rem 1.75rem;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1.25rem 1.75rem !important;
       }
     }
 
-    /* Right Column: Clean Image Card (No Content) */
+    /* Row 6: Submit Row with Red Pill Button */
+    .editorial-submit-row {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 1.25rem !important;
+      margin-top: 1rem !important;
+      padding-top: 1.25rem !important;
+      border-top: 1px solid rgba(113, 113, 122, 0.35) !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    /* Consistent Black Pill Button (matching all site-wide buttons) */
+    .btn-editorial-send {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px !important;
+      padding: 13px 30px !important;
+      border-radius: 9999px !important;
+      background: #000000 !important;
+      color: #ffffff !important;
+      border: 1.5px solid #000000 !important;
+      font-family: var(--font-body, "Inter", sans-serif) !important;
+      font-weight: 700 !important;
+      font-size: 0.88rem !important;
+      letter-spacing: 0.04em !important;
+      text-transform: uppercase !important;
+      text-decoration: none !important;
+      line-height: 1 !important;
+      cursor: pointer !important;
+      box-sizing: border-box !important;
+      /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important; -- shadow removed */
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+    .btn-editorial-send:hover {
+      background: #1e293b !important;
+      border-color: #1e293b !important;
+      color: #ffffff !important;
+      transform: translateY(-2px) !important;
+      /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important; -- shadow removed */
+    }
+    .btn-editorial-send:active {
+      transform: translateY(0) !important;
+      /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important; -- shadow removed */
+    }
+
+    /* Right Column: Clean Image Card (Matching Form Height from top to bottom) */
     .inquiry-split__right {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      height: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      box-sizing: border-box !important;
     }
 
     .inquiry-image-card {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      min-height: 480px;
-      border-radius: 24px;
-      overflow: hidden;
-      
-      border: none;
-      background-color: none;
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 100% !important;
+      flex: 1 1 auto !important;
+      border-radius: 24px !important;
+      overflow: hidden !important;
+      background: #0f172a !important;
+      /* box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12) !important; -- shadow removed */
+      border: 1px solid rgba(0, 0, 0, 0.08) !important;
+      box-sizing: border-box !important;
     }
 
     .inquiry-image-card__img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      display: block;
-      transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: cover !important;
+      object-position: center !important;
+      display: block !important;
+      transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1) !important;
     }
 
     .inquiry-image-card:hover .inquiry-image-card__img {
-      transform: scale(1.04);
+      transform: scale(1.04) !important;
     }
 
     @media (max-width: 992px) {
       .inquiry-image-card {
-        min-height: 320px;
-        aspect-ratio: 16 / 10;
-        height: auto;
+        min-height: 320px !important;
+        aspect-ratio: 16 / 10 !important;
+        height: auto !important;
+        flex: none !important;
       }
     }
 
@@ -289,7 +374,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 22px 55px rgba(0, 0, 0, 0.14);
+      /* box-shadow: 0 22px 55px rgba(0, 0, 0, 0.14); -- shadow removed */
       background-color: #0f172a;
       border: 1px solid rgba(0, 0, 0, 0.08);
     }
@@ -348,7 +433,7 @@
       line-height: 1.52;
       letter-spacing: -0.015em;
       margin: 0;
-      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+      /* text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4); -- shadow removed */
     }
     .mission-card__footer {
       display: flex;
@@ -426,7 +511,7 @@
       border-radius: 26px !important;
       overflow: hidden !important;
       background: #0f172a !important;
-      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12) !important;
+      /* box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12) !important; -- shadow removed */
       border: 1px solid rgba(0, 0, 0, 0.08) !important;
       display: flex !important;
       align-items: center !important;
@@ -505,7 +590,7 @@
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(255, 255, 255, 0.4) !important;
+      /* box-shadow: 0 10px 32px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(255, 255, 255, 0.4) !important; -- shadow removed */
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
       z-index: 2 !important;
     }
@@ -519,7 +604,7 @@
       transform: scale(1.12) !important;
       background-color: #ff0000 !important;
       color: #ffffff !important;
-      box-shadow: 0 16px 42px rgba(255, 0, 0, 0.55), 0 0 0 4px rgba(255, 255, 255, 0.7) !important;
+      /* box-shadow: 0 16px 42px rgba(255, 0, 0, 0.55), 0 0 0 4px rgba(255, 255, 255, 0.7) !important; -- shadow removed */
     }
     .facility-video__play-link:hover .play-icon {
       transform: scale(1.08) !important;
@@ -564,21 +649,53 @@
 
     /* --------------------------------------------------------------------------
        WHY YOU SHOULD BUY FROM US: INFOGRAPHIC CARDS WITH FOLDED RIBBONS
+       (EXACT MATCH TO REFERENCE IMAGE DIMENSIONS: ~200px COMPACT CARD HEIGHT)
        -------------------------------------------------------------------------- */
     .section--mfg {
-      background: #ffffff;
-      padding-block: clamp(3.5rem, 6vw, 6rem);
+      background: #ffffff !important;
+      padding-block: clamp(2.5rem, 3.5vw, 3.5rem) !important;
+      position: relative;
+    }
+    .mfg-header {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-block-end: clamp(1.5rem, 2.2vw, 2.25rem) !important;
+    }
+    @media (min-width: 768px) {
+      .mfg-header {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+    }
+    .mfg-header__heading {
+      font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
+      font-size: clamp(1.85rem, 1.5rem + 1vw, 2.45rem) !important;
+      font-weight: 700 !important;
+      color: #000000 !important;
+      line-height: 1.15 !important;
+      letter-spacing: -0.03em !important;
+      margin: 0 !important;
+    }
+    .mfg-header__desc {
+      font-size: 0.85rem !important;
+      color: #556987 !important;
+      line-height: 1.55 !important;
+      max-width: 34rem !important;
+      margin: 0 !important;
     }
     .mfg-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2rem;
-      padding-top: 1.2rem;
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      gap: 1.5rem !important;
+      padding-top: 0.5rem !important;
     }
     @media (min-width: 768px) {
       .mfg-grid {
         grid-template-columns: repeat(3, 1fr) !important;
-        gap: clamp(1.5rem, 2.5vw, 2.2rem) !important;
+        gap: clamp(1.25rem, 2vw, 1.85rem) !important;
       }
     }
 
@@ -586,21 +703,27 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      border-radius: 22px;
+      border-radius: 18px !important;
       background: #ffffff !important;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05) !important; -- shadow removed */
       transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
                   box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
                   border-color 0.35s ease;
-      height: 450px !important;
-      min-height: 450px !important;
-      max-height: 450px !important;
+      min-height: 200px !important;
+      height: clamp(205px, 20vw, 230px) !important;
+      max-height: none !important;
       box-sizing: border-box;
       overflow: visible !important;
     }
+    @media (max-width: 767px) {
+      .mfg-card {
+        height: auto !important;
+        min-height: 190px !important;
+      }
+    }
     .mfg-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 22px 48px rgba(0, 0, 0, 0.12);
+      transform: translateY(-6px);
+      /* box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1) !important; -- shadow removed */
     }
 
     .mfg-card__link {
@@ -611,7 +734,7 @@
       flex: 1 1 auto;
       text-decoration: none;
       color: inherit;
-      padding: clamp(2rem, 2.4vw, 2.6rem) clamp(1.4rem, 2vw, 1.8rem) clamp(1.6rem, 2vw, 2rem);
+      padding: clamp(1.2rem, 1.6vw, 1.5rem) clamp(1rem, 1.4vw, 1.35rem) clamp(0.9rem, 1.2vw, 1.1rem) !important;
       border-radius: inherit;
       box-sizing: border-box;
       position: relative;
@@ -620,24 +743,24 @@
 
     /* Overhanging Folded Ribbon Badge (Top Left Corner) */
     .mfg-card__badge {
-    position: absolute;
-    top: 20px;
-    left: -8px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  min-width: 70px;
-    height: 60px;
-    padding: 0 16px;
-    border-radius: 12px 20px 20px 4px;
-    font-weight: 800;
-    font-size: 1.05rem;
-    color: #ffffff;
-    letter-spacing: 0.04em;
-    z-index: 5;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
-    transition: transform 0.3s ease;
-}
+      position: absolute;
+      top: 14px !important;
+      left: -6px !important;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 48px !important;
+      height: 38px !important;
+      padding: 0 10px !important;
+      border-radius: 8px 14px 14px 3px !important;
+      font-weight: 800;
+      font-size: 0.92rem !important;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+      z-index: 5;
+      /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16); -- shadow removed */
+      transition: transform 0.3s ease;
+    }
     .mfg-card:hover .mfg-card__badge {
       transform: scale(1.06);
     }
@@ -651,12 +774,12 @@
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 0 8px 8px 0;
+      border-width: 0 6px 6px 0 !important;
     }
 
     /* Card 1: Lime Green Theme */
     .mfg-card--green {
-      border: 2.5px solid #84cc16 !important;
+      border: 2px solid #84cc16 !important;
     }
     .mfg-card--green .mfg-card__badge {
       background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
@@ -679,7 +802,7 @@
 
     /* Card 2: Golden Yellow Theme */
     .mfg-card--yellow {
-      border: 2.5px solid #eab308 !important;
+      border: 2px solid #eab308 !important;
     }
     .mfg-card--yellow .mfg-card__badge {
       background: linear-gradient(135deg, #facc15 0%, #ca8a04 100%);
@@ -702,7 +825,7 @@
 
     /* Card 3: Warm Orange Theme */
     .mfg-card--orange {
-      border: 2.5px solid #f97316 !important;
+      border: 2px solid #f97316 !important;
     }
     .mfg-card--orange .mfg-card__badge {
       background: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
@@ -732,7 +855,7 @@
       height: 100% !important;
       flex: 1 1 auto;
       justify-content: space-between;
-      gap: 16px;
+      gap: 6px !important;
       box-sizing: border-box;
     }
     .mfg-card__content {
@@ -743,32 +866,33 @@
       width: 100%;
     }
     .mfg-card__category {
-      font-size: 1.05rem;
+      font-size: clamp(0.78rem, 0.9vw, 0.88rem) !important;
       font-weight: 600;
-      color: #475569;
+      color: #64748b;
       letter-spacing: -0.01em;
+      line-height: 1.2;
     }
     .mfg-card__headline {
       font-family: var(--font-heading, "Bricolage Grotesque", sans-serif);
-      font-size: clamp(1.65rem, 2.2vw, 2.15rem);
+      font-size: clamp(1.2rem, 1.45vw, 1.45rem) !important;
       font-weight: 700 !important;
       line-height: 1.18;
       letter-spacing: -0.03em;
-      margin: 4px 0 12px;
+      margin: 2px 0 5px !important;
       color: #000000 !important;
     }
     .mfg-card__desc {
-      font-size: 0.95rem;
-      line-height: 1.62;
+      font-size: clamp(0.75rem, 0.8vw, 0.82rem) !important;
+      line-height: 1.48 !important;
       color: #64748b;
       margin: 0;
-      max-width: 32ch;
+      max-width: 30ch;
     }
 
     /* Bottom Action Button */
     .mfg-card__action {
       margin-top: auto;
-      padding-top: 20px;
+      padding-top: 6px !important;
       display: flex;
       justify-content: center;
       width: 100%;
@@ -777,15 +901,17 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 46px;
-      height: 46px;
+      width: 36px !important;
+      height: 36px !important;
       border-radius: 50%;
       background: #ffffff;
       border: 1.5px solid;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      /* box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06); -- shadow removed */
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .mfg-card__arrow {
+      width: 16px !important;
+      height: 16px !important;
       transition: transform 0.25s ease;
     }
     .mfg-card:hover .mfg-card__arrow {
@@ -811,7 +937,7 @@
 
     .who-slider-wrap {
       width: 100%;
-      max-width: 520px;
+      max-width: 100%;
       margin-inline: auto;
     }
     .who-slider {
@@ -821,7 +947,7 @@
       border-radius: 16px;
       overflow: hidden;
       background: white;
-      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.1);
+      /* box-shadow: 0 20px 48px rgba(0, 0, 0, 0.1); -- shadow removed */
       border: 1px solid rgba(0, 0, 0, 0.06);
     }
     .who-slides-track {
@@ -909,7 +1035,7 @@
       justify-content: center;
       cursor: pointer;
       z-index: 5;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      /* box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15); -- shadow removed */
       opacity: 0;
       transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease, color 0.2s ease;
     }
@@ -1040,7 +1166,7 @@
       background: #0077b5;
       border-color: #0077b5;
       transform: translateY(-1px);
-      box-shadow: 0 2px 8px rgba(0, 119, 181, 0.35);
+      /* box-shadow: 0 2px 8px rgba(0, 119, 181, 0.35); -- shadow removed */
     }
     .site-topbar__social-icon {
       width: 12px;
@@ -1079,7 +1205,7 @@
       background: rgba(255, 255, 255, 0.98) !important;
       border-block-end: 1px solid rgba(0, 0, 0, 0.08) !important;
       border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+      /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important; -- shadow removed */
       backdrop-filter: blur(12px) !important;
       -webkit-backdrop-filter: blur(12px) !important;
     }
@@ -1355,7 +1481,7 @@
       background: #000000 !important;
       color: #ffffff !important;
       border: 1.5px solid #000000 !important;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18) !important;
+      /* box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18) !important; -- shadow removed */
     }
     .btn-black-pill:hover,
     .split-hero .btn-gradient-pill:hover,
@@ -1364,7 +1490,7 @@
       border-color: #2e2e2e !important;
       color: #ffffff !important;
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28) !important;
+      /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28) !important; -- shadow removed */
     }
 
     .btn-outline-pill,
@@ -1378,7 +1504,7 @@
       color: #ffffff !important;
       border-color: #000000 !important;
       transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+      /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); -- shadow removed */
     }
 
     /* --------------------------------------------------------------------------
@@ -1546,7 +1672,7 @@
       clip-path: none !important;
       border-radius: 0 !important;
       border-bottom-left-radius: 0 !important;
-      box-shadow: none;
+      /* box-shadow: none; -- shadow removed */
     }
     .split-hero__img-item {
       position: absolute;
@@ -1610,7 +1736,7 @@
       color: #ffffff;
       font-size: 0.82rem;
       border: 1px solid rgba(255, 255, 255, 0.15);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); -- shadow removed */
     }
     .split-hero__img-step {
       font-weight: 800;
@@ -1637,7 +1763,7 @@
       -webkit-backdrop-filter: blur(10px);
       padding: 6px 12px;
       border-radius: 9999px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); -- shadow removed */
       border: 1px solid rgba(0, 0, 0, 0.08);
     }
     .split-hero__nav-btn {
@@ -1807,11 +1933,14 @@
     /* 2. UNIFIED SECTION VERTICAL RHYTHM & SPACING */
     .section,
     .section--white,
-    .section--mfg,
     .section--facility-video,
     .section--mission,
     .section--editorial {
       padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
+      position: relative;
+    }
+    .section--mfg {
+      padding-block: clamp(2.5rem, 3.5vw, 3.5rem) !important;
       position: relative;
     }
 
@@ -1848,7 +1977,7 @@
       margin-bottom: 0.85rem !important;
       width: fit-content !important;
       user-select: none !important;
-      box-shadow: 0 2px 8px rgba(211, 47, 47, 0.2) !important;
+      /* box-shadow: 0 2px 8px rgba(211, 47, 47, 0.2) !important; -- shadow removed */
     }
     .section-tag__dot {
       display: none !important;
@@ -1891,32 +2020,22 @@
 
     .btn-black-pill,
     .site-header .btn-gradient-pill,
-    .site-header .nav__mobile-cta .btn-gradient-pill {
+    .site-header .nav__mobile-cta .btn-gradient-pill,
+    .btn-editorial-send {
       background: #000000 !important;
       color: #ffffff !important;
       border: 1.5px solid #000000 !important;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important;
+      /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important; -- shadow removed */
     }
     .btn-black-pill:hover,
     .site-header .btn-gradient-pill:hover,
-    .site-header .nav__mobile-cta .btn-gradient-pill:hover {
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover,
+    .btn-editorial-send:hover {
       background: #1e293b !important;
       border-color: #1e293b !important;
       color: #ffffff !important;
       transform: translateY(-2px) !important;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
-    }
-
-    .btn-editorial-send {
-      background: linear-gradient(135deg, #e53935 0%, #d32f2f 100%) !important;
-      color: #ffffff !important;
-      border: 1.5px solid transparent !important;
-      box-shadow: 0 6px 20px rgba(211, 47, 47, 0.32) !important;
-    }
-    .btn-editorial-send:hover {
-      background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%) !important;
-      transform: translateY(-2px) !important;
-      box-shadow: 0 10px 28px rgba(211, 47, 47, 0.45) !important;
+      /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important; -- shadow removed */
     }
 
     </style>
@@ -2702,9 +2821,9 @@
               Our Mission
             </span>
 
-            <svg class="mission-card__quote-mark" width="42" height="42" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <!-- <svg class="mission-card__quote-mark" width="42" height="42" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-            </svg>
+            </svg> -->
 
             <blockquote class="mission-card__text" data-aos="fade-up" data-aos-delay="200">
               &ldquo;To provide pharmaceutical manufacturers with products and services with consistent quality of such a level that gives our customers highest output, highest reliability, maximum continuity and thus lowest production cost.&rdquo;
@@ -2856,7 +2975,20 @@
                   </div>
                 </div>
 
-                <button class="btn-editorial-send" type="submit" id="submitInquiryBtn">Send Message &rarr;</button>
+                <button class="btn-black-pill btn-editorial-send" type="submit" id="submitInquiryBtn">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">Send Message</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Message</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    </span>
+                  </span>
+                </button>
               </div>
 
               <div class="form-status is-hidden" id="formStatus" role="status" aria-live="polite"></div>
@@ -3005,7 +3137,20 @@
           <label class="field-line__label" for="modalInqMessage">Message</label>
           <textarea class="field-line__input field-line__textarea" id="modalInqMessage" name="message" rows="2" placeholder="Specify filling speed, formulations, or trial requirements..."></textarea>
         </div>
-        <button type="submit" class="btn-gradient-pill" style="width: 100%;">Send Inquiry &rarr;</button>
+        <button type="submit" class="btn-black-pill" style="width: 100%; justify-content: center;">
+          <span class="btn-anim__text">
+            <span class="btn-anim__text-track">
+              <span class="btn-anim__text-item">Send Inquiry</span>
+              <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
+            </span>
+          </span>
+          <span class="btn-anim__icon">
+            <span class="btn-anim__icon-track">
+              <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+              <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+            </span>
+          </span>
+        </button>
       </form>
       <div class="modal-success is-hidden" style="display: none; padding: 2rem 1rem; text-align: center;">
         <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--green-900); margin-bottom: 0.5rem;">Thanks. We will reply by email soon.</h4>
