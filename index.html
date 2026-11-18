@@ -81,8 +81,8 @@
       >
         Menu
       </button>
-<div class="header-inner">
- <nav class="site-nav" id="siteNav" aria-label="Primary navigation" data-aos="fade-down" data-aos-duration="600" data-aos-delay="100">
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation" data-aos="fade-down" data-aos-duration="600" data-aos-delay="100">
         <ul class="nav__list">
           <li><a class="nav__link" href="profile.html">About</a></li>
           <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
@@ -125,15 +125,7 @@
                     </span>
                   </span>
                 </a>
-        <!-- <button type="button" class="header__search-btn" id="headerSearchBtn" aria-label="Search site">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button> -->
       </div>
-</div>
-     
     </div>
   </header>
 
@@ -217,24 +209,89 @@
       background: #ffffff;
       padding: 0;
     }
-    .split-hero__inner {
-      width: 100%;
-      height: 100%;
-      display: grid;
-      grid-template-columns: 1.05fr 1.15fr;
-      align-items: center;
-      padding-top: 72px; /* space below sticky white header */
+    /* Right-aligned Navigation Menu with CTA Button */
+    @media (min-width: 993px) {
+      .site-header .header__inner {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 16px !important;
+        padding-block: 8px !important;
+      }
+      .site-header .brand {
+        margin-right: auto !important; /* anchors logo on the far left, pushing menu to the right */
+        flex-shrink: 0 !important;
+      }
+      .site-header .site-nav {
+        margin-left: auto !important; /* right aligns the navigation menu */
+        display: flex !important;
+        align-items: center !important;
+      }
+      .site-header .nav__list {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        gap: clamp(4px, 0.8vw, 12px) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+      }
+      .site-header .header__actions {
+        display: flex !important;
+        align-items: center !important;
+        margin-left: clamp(12px, 1.6vw, 24px) !important;
+        flex-shrink: 0 !important;
+      }
     }
 
-    /* Part 1: Text Column */
+    /* --------------------------------------------------------------------------
+       80% CONTAINER SYSTEM (CONTENT & HEADER) + FULL-BLEED RIGHT IMAGE
+       -------------------------------------------------------------------------- */
+    .container,
+    .container--editorial,
+    .container--video,
+    .header__inner {
+      width: 80% !important;
+      max-width: 80% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-inline: auto !important;
+      box-sizing: border-box !important;
+    }
+
+    .site-header .header__inner {
+      padding-inline: 0 !important;
+    }
+
+    /* Split Hero: Left text aligns at 10vw (80% container left edge / logo),
+       Right image column extends FULL to the very last end of the right screen edge */
+    .split-hero__inner {
+      width: 100% !important;
+      max-width: 100% !important;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      align-items: stretch;
+      padding-top: 64px; /* perfectly flush with sticky white header bottom */
+      padding-bottom: 24px;
+      padding-left: 10vw !important; /* aligns with 80% container left boundary */
+      padding-right: 0 !important; /* image area is FULL to the far right screen edge */
+      margin: 0 !important;
+      box-sizing: border-box !important;
+    }
+
+    /* Part 1: Text Column (Flush aligned with 80% container left edge / logo) */
     .split-hero__text-col {
       position: relative;
-      height: clamp(420px, 60vh, 540px);
+      height: 100%;
       overflow: hidden;
-      padding-left: clamp(24px, 5.5vw, 90px);
-      padding-right: clamp(16px, 3vw, 40px);
+      padding-left: 0 !important;
+      padding-right: clamp(20px, 3.5vw, 56px) !important;
       display: flex;
       align-items: center;
+      padding-top: 0;
+      padding-bottom: 24px;
     }
     .split-hero__pane {
       position: absolute;
@@ -242,8 +299,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-left: clamp(24px, 5.5vw, 90px);
-      padding-right: clamp(16px, 3vw, 40px);
+      padding-left: 0 !important;
+      padding-right: clamp(16px, 2.5vw, 36px) !important;
       opacity: 0;
       visibility: hidden;
       transform: translateY(-100%);
@@ -283,6 +340,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 8px;
+      display: none;
     }
     .split-hero__meta span.meta-dot {
       display: inline-block;
@@ -527,20 +585,21 @@
       opacity: 1;
     }
 
-    /* Part 2: Media Column (Curved Cutout Mask) */
+    /* Part 2: Media Column (Curved Cutout Mask - Flush with Header) */
     .split-hero__media-col {
       position: relative;
       width: 100%;
       height: 100%;
       display: flex;
-      align-items: center;
+      align-items: flex-start; /* top-aligned flush with header bottom */
       justify-content: flex-end;
-      padding: 20px 0 30px;
+      padding: 0 0 24px 0; /* no top padding */
     }
     .split-hero__card {
       position: relative;
       width: 100%;
-      height: clamp(480px, 80vh, 680px);
+      height: 100%; /* fills directly from below header to bottom */
+      min-height: 480px;
       overflow: hidden;
       background: #0f172a;
       -webkit-clip-path: url(#heroCutout);
@@ -597,7 +656,8 @@
       right: 28px;
       bottom: 38px;
       z-index: 5;
-      display: inline-flex;
+      /* display: inline-flex; */
+      display: none !important;
       align-items: center;
       gap: 10px;
       padding: 9px 20px;
@@ -667,7 +727,7 @@
     /* Mouse Scroll Indicator */
     .split-hero__scroll-cue {
       position: absolute;
-      right: clamp(20px, 4vw, 48px);
+      right: calc(10% + 14px);
       bottom: 24px;
       display: flex;
       align-items: center;
@@ -706,6 +766,7 @@
 
     /* Linear Progress Bar */
     .split-hero__progress-bar {
+      display: none;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -719,7 +780,21 @@
 
     /* Responsive adjustments */
     @media (max-width: 992px) {
+      .container,
+      .container--editorial,
+      .container--video,
+      .header__inner {
+        width: 90% !important;
+        max-width: 90% !important;
+      }
+      .split-hero__scroll-cue {
+        right: 5% !important;
+      }
       .split-hero__inner {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 85px 20px 60px;
@@ -816,7 +891,7 @@
                     </span>
                   </span>
                 </a>
-                <a class="btn-outline-pill" href="epl-products.html">
+                <!-- <a class="btn-outline-pill" href="epl-products.html">
                   <span class="btn-anim__text">
                     <span class="btn-anim__text-track">
                       <span class="btn-anim__text-item">View Gelatin Specs</span>
@@ -829,7 +904,7 @@
                       <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
                     </span>
                   </span>
-                </a>
+                </a> -->
               </div>
             </article>
 
@@ -865,7 +940,7 @@
                     </span>
                   </span>
                 </a>
-                <a class="btn-outline-pill" href="#manufacturingSection">
+                <!-- <a class="btn-outline-pill" href="#manufacturingSection">
                   <span class="btn-anim__text">
                     <span class="btn-anim__text-track">
                       <span class="btn-anim__text-item">Why Choose Us</span>
@@ -878,7 +953,7 @@
                       <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
                     </span>
                   </span>
-                </a>
+                </a> -->
               </div>
             </article>
 
@@ -912,7 +987,7 @@
                     </span>
                   </span>
                 </a>
-                <a class="btn-outline-pill" href="product.html">
+                <!-- <a class="btn-outline-pill" href="product.html">
                   <span class="btn-anim__text">
                     <span class="btn-anim__text-track">
                       <span class="btn-anim__text-item">Color Palette</span>
@@ -925,7 +1000,7 @@
                       <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
                     </span>
                   </span>
-                </a>
+                </a> -->
               </div>
             </article>
 
@@ -959,7 +1034,7 @@
                     </span>
                   </span>
                 </a>
-                <a class="btn-outline-pill" href="exports.html">
+                <!-- <a class="btn-outline-pill" href="exports.html">
                   <span class="btn-anim__text">
                     <span class="btn-anim__text-track">
                       <span class="btn-anim__text-item">Export Network</span>
@@ -972,7 +1047,7 @@
                       <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
                     </span>
                   </span>
-                </a>
+                </a> -->
               </div>
             </article>
 
@@ -1052,7 +1127,7 @@
         </div>
 
         <!-- Interactive Scene Indicators (Clickable Jumpers) -->
-        <nav class="split-hero__nav" id="heroNav" aria-label="Banner scenes navigation">
+        <!-- <nav class="split-hero__nav d-none" id="heroNav" aria-label="Banner scenes navigation">
           <button type="button" class="split-hero__nav-btn is-active" data-scene="0" aria-label="Scene 1: Gelatin">
             <span class="split-hero__nav-num">01</span>
             <span class="split-hero__nav-label">Gelatin</span>
@@ -1069,16 +1144,13 @@
             <span class="split-hero__nav-num">04</span>
             <span class="split-hero__nav-label">Global Quality</span>
           </button>
-        </nav>
+        </nav> -->
 
         <!-- Mouse Scroll Cue -->
-        <div class="split-hero__scroll-cue" id="heroScrollCue">
-          <span class="split-hero__mouse"></span>
-          <span class="split-hero__scroll-text">Scroll to explore</span>
-        </div>
+       
 
         <!-- Linear Progress Bar -->
-        <div class="split-hero__progress-bar" id="heroProgressBar" aria-hidden="true"></div>
+        <div class="split-hero__progress-bar d-none" id="heroProgressBar" aria-hidden="true"></div>
 
       </div>
     </section>
