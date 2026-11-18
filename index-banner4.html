@@ -203,6 +203,7 @@ function prog(){var r=sec.getBoundingClientRect();return cl(-r.top/Math.max(1,r.
 function go(f){var top=sec.getBoundingClientRect().top+scrollY,max=sec.offsetHeight-innerHeight;scrollTo({top:top+max*f,behavior:reduce?'auto':'smooth'})}
 /* 3D */
 function init(){
+if(ready)return;
 try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});}catch(e){return}
 R.setPixelRatio(Math.min(devicePixelRatio,2));
 S=new THREE.Scene();S.fog=new THREE.Fog(0x07070a,12,50);C=new THREE.PerspectiveCamera(36,1,.1,90);S.add(C);
@@ -277,118 +278,123 @@ requestAnimationFrame(tick);
 </script>
 <!-- ===== END ERAWAT 4-SCENE SCROLL BANNER ===== -->
 
-
-    <!-- ==================================================================
-         2. MANUFACTURING SECTION / WHY YOU SHOULD BUY FROM US
-         ================================================================== -->
-    <section class="section section--mfg" id="manufacturingSection" aria-labelledby="manufacturingHeading">
-      <div class="container">
-        <div class="mfg-header">
-          <div class="mfg-header__left" data-aos="fade-right" data-aos-duration="700">
-            <span class="section-tag"><span class="section-tag__dot"></span>Why Choose Us</span>
-            <h2 class="mfg-header__heading" id="manufacturingHeading">Why You Should<br>Buy From Us</h2>
-          </div>
-          <p class="mfg-header__desc" data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
-            Minimal rejections, dedicated technical team support, and maximum machine uptime for global pharmaceutical manufacturers.
-          </p>
-        </div>
-
-        <div class="mfg-grid">
-          <!-- Card 1: Product -->
-          <article class="mfg-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
-            <a class="mfg-card__link" href="why-us.html" aria-label="View more about Product specifications">
-              <img
-                class="mfg-card__bg"
-                src="images/buycard1.png"
-                alt="Product - Minimal rejections on filing machine"
-                width="480"
-                height="600"
-                loading="lazy"
-              >
-              <div class="mfg-card__gradient"></div>
-              <div class="mfg-card__inner">
-                <div class="mfg-card__top">
-                  <h3 class="mfg-card__title">Product</h3>
-                  <p class="mfg-card__desc">
-                    Minimal rejections on filing machine, resulting in higher yield and lesser wastage of expensive formulation.
-                  </p>
-                </div>
-                <div class="mfg-card__bottom">
-                  <span class="mfg-circle-btn" aria-hidden="true">
-                    <svg class="mfg-circle-btn__arrow" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Card 2: Certifications -->
-          <article class="mfg-card" data-aos="fade-up" data-aos-delay="250" data-aos-duration="700">
-            <a class="mfg-card__link" href="why-us.html" aria-label="View more about Certifications">
-              <img
-                class="mfg-card__bg"
-                src="images/buycard2.png"
-                alt="Certifications - Technical team from EPL and R&D unit"
-                width="480"
-                height="600"
-                loading="lazy"
-              >
-              <div class="mfg-card__gradient"></div>
-              <div class="mfg-card__inner">
-                <div class="mfg-card__top">
-                  <h3 class="mfg-card__title">Certifications</h3>
-                  <p class="mfg-card__desc">
-                    Readily available technical team from EPL and R&amp;D unit to rectify mechanical and setting related problems on customer's filing machines.
-                  </p>
-                </div>
-                <div class="mfg-card__bottom">
-                  <span class="mfg-circle-btn" aria-hidden="true">
-                    <svg class="mfg-circle-btn__arrow" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </a>
-          </article>
-
-          <!-- Card 3: Technical Specs -->
-          <article class="mfg-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">
-            <a class="mfg-card__link" href="why-us.html" aria-label="View more about Technical Specs">
-              <img
-                class="mfg-card__bg"
-                src="images/buycard3.png"
-                alt="Technical Specs - Machine performance and minimum downtime"
-                width="480"
-                height="600"
-                loading="lazy"
-              >
-              <div class="mfg-card__gradient"></div>
-              <div class="mfg-card__inner">
-                <div class="mfg-card__top">
-                  <h3 class="mfg-card__title">Technical Specs</h3>
-                  <p class="mfg-card__desc">
-                    Machine performance such as to give minimum downtime on filing machine, thus increasing machine and operator output.
-                  </p>
-                </div>
-                <div class="mfg-card__bottom">
-                  <span class="mfg-circle-btn" aria-hidden="true">
-                    <svg class="mfg-circle-btn__arrow" viewBox="0 0 24 24" fill="none" stroke="#111827" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </span>
-                </div>
-              </div>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
+<!-- ===== ERAWAT "WHY CHOOSE US" SCROLL SECTION: paste in place of your current section ===== -->
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+.ew{position:relative;height:430vh;background:#eff2f8;color:#0b0c10;font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+.ew *{box-sizing:border-box}
+.ew-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 5vw}
+.ew-head{width:min(1100px,100%);display:flex;justify-content:space-between;align-items:flex-start;gap:40px;margin-bottom:56px}
+.ew-chip{display:inline-block;background:#e0302f;color:#fff;font-weight:800;font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;padding:5px 20px 5px 12px;clip-path:polygon(0 0,calc(100% - 9px) 0,100% 50%,calc(100% - 9px) 100%,0 100%);margin-bottom:12px}
+.ew h2{margin:0;font-size:clamp(2rem,3.6vw,3.1rem);line-height:1.08;font-weight:800;letter-spacing:-.025em}
+.ew h2 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}.ew h2 .w>span{display:inline-block;will-change:transform}
+.ew-sub{max-width:330px;margin:44px 60px 0 0;color:#5a6b8c;font-size:.86rem;line-height:1.7}
+.ew-row{position:relative;width:min(1100px,100%);display:grid;grid-template-columns:repeat(3,1fr);gap:24px;perspective:1500px}
+.ew-card{position:relative;height:clamp(260px,47vh,420px);border-radius:8px;overflow:hidden;background:#16181d;color:#fff;transform-style:preserve-3d;will-change:transform,opacity;
+box-shadow:0 calc(10px + 24px*var(--f,0)) calc(24px + 30px*var(--f,0)) rgba(10,20,40,calc(.12 + .2*var(--f,0)));text-decoration:none;display:block}
+.ew-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;scale:var(--z,1);transition:scale .2s linear}
+.ew-card::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(8,8,8,.94) 0,rgba(8,8,8,.7) 34%,rgba(8,8,8,0) 72%)}
+.ew-card .t{position:absolute;z-index:2;left:7.5%;right:7.5%;top:7%}
+.ew-card h3{margin:0 0 8px;font-size:clamp(1.15rem,1.7vw,1.5rem);font-weight:800;letter-spacing:-.01em}
+.ew-card p{margin:0;font-size:.78rem;line-height:1.55;color:#e8e8ec}
+.ew-go{position:absolute;z-index:2;right:7%;bottom:7%;height:38px;max-width:calc(38px + 84px*var(--f,0));padding:0 11px;border-radius:99px;background:#fff;color:#111;display:flex;align-items:center;gap:8px;overflow:hidden;white-space:nowrap;font-weight:800;font-size:.8rem;box-shadow:0 6px 20px rgba(0,0,0,.3);flex-direction:row-reverse;justify-content:flex-start}
+.ew-go svg{flex:none}.ew-go span{opacity:var(--f,0)}
+.ew-prog{display:flex;gap:10px;margin-top:30px}.ew-prog i{width:46px;height:4px;border-radius:4px;background:rgba(11,12,16,.14);overflow:hidden;position:relative}
+.ew-prog i b{position:absolute;inset:0;background:linear-gradient(90deg,#c9191f,#f4571f);transform:scaleX(0);transform-origin:0 50%}
+.ew canvas{position:absolute;inset:0;width:100%;height:100%;z-index:5;pointer-events:none}
+@media (max-width:800px){
+.ew-head{flex-direction:column;gap:6px;margin-bottom:24px}.ew-sub{margin:0;max-width:none}
+.ew-row{display:block;height:48vh}
+.ew-card{position:absolute;top:0;bottom:0;height:auto;left:50%;width:80vw;margin-left:-40vw}
+}
+@media (prefers-reduced-motion:reduce){.ew-art{transition:none}}
+</style>
+<section class="ew" id="ew" aria-label="Why you should buy from us">
+  <div id="manufacturingSection" style="position:absolute;top:0;left:0;pointer-events:none;" aria-hidden="true"></div>
+ <div class="ew-pin" id="ew-pin">
+  <div class="ew-head">
+   <div><span class="ew-chip" id="ew-chip">Why choose us</span><h2 id="ew-h2">Why You Should Buy From Us</h2></div>
+   <p class="ew-sub" id="ew-sub">Minimal rejections, dedicated technical team support, and maximum machine uptime for global pharmaceutical manufacturers.</p>
+  </div>
+  <div class="ew-row" id="ew-row">
+   <a class="ew-card" href="why-us.html" aria-label="View more about Product specifications"><img class="ew-art" src="images/buycard1.png" alt="Product" loading="lazy"><div class="t"><h3>Product</h3><p>Minimal rejections on filing machine, resulting in higher yield and lesser wastage of expensive formulation.</p></div><div class="ew-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Explore</span></div></a>
+   <a class="ew-card" href="why-us.html" aria-label="View more about Certifications"><img class="ew-art" src="images/buycard2.png" alt="Certifications" loading="lazy"><div class="t"><h3>Certifications</h3><p>Readily available technical team from EPL and R&amp;D unit to rectify mechanical and setting related problems on customer's filing machines.</p></div><div class="ew-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Explore</span></div></a>
+   <a class="ew-card" href="why-us.html" aria-label="View more about Technical Specs"><img class="ew-art" src="images/buycard3.png" alt="Technical Specs" loading="lazy"><div class="t"><h3>Technical Specs</h3><p>Machine performance such as to give minimum downtime on filing machine, thus increasing machine and operator output.</p></div><div class="ew-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Explore</span></div></a>
+  </div>
+  <div class="ew-prog" id="ew-prog"><i><b></b></i><i><b></b></i><i><b></b></i></div>
+  <canvas id="ew-gl" aria-hidden="true"></canvas>
+ </div>
+</section>
+<script>
+(function(){
+var sec=document.getElementById('ew'),pin=document.getElementById('ew-pin'),row=document.getElementById('ew-row'),cv=document.getElementById('ew-gl'),cards=[].slice.call(row.children),segs=[].slice.call(document.querySelectorAll('#ew-prog b')),chip=document.getElementById('ew-chip'),sub=document.getElementById('ew-sub'),h2=document.getElementById('ew-h2');
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,run=false,ready=false,loading=false,tp=0,sp=0,W=1,H=1,mx=0,my=0,R,S,C,cap,ha,hb,pw,pc,dm,lay={cx:[0,0,0],top:0,cw:1,ch:1,rc:0};
+function L(a,b,t){return a+(b-a)*t}function cl(v,a,b){return Math.min(b==null?1:b,Math.max(a||0,v))}function ss(t){t=cl(t);return t*t*(3-2*t)}
+/* split headline into masked words */
+var words=h2.textContent.trim().split(/\s+/);h2.setAttribute('aria-label',h2.textContent.trim());h2.innerHTML=words.map(function(w){return '<span class="w" aria-hidden="true"><span>'+w+'</span></span>'}).join(' ');var ws=[].slice.call(h2.querySelectorAll('.w>span'));
+function measure(){var r=row;lay.rc=r.offsetLeft+r.offsetWidth/2;lay.top=r.offsetTop;lay.cw=cards[0].offsetWidth;lay.ch=cards[0].offsetHeight;
+cards.forEach(function(c,k){lay.cx[k]=r.offsetLeft+c.offsetLeft+c.offsetWidth/2});W=pin.clientWidth;H=pin.clientHeight}
+function prog(){var r=sec.getBoundingClientRect();return cl(-r.top/Math.max(1,r.height-innerHeight))}
+function init(){
+if(ready)return;
+try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});}catch(e){return}
+R.setPixelRatio(Math.min(devicePixelRatio,2));S=new THREE.Scene();C=new THREE.PerspectiveCamera(35,1,.1,50);C.position.z=10;
+S.add(new THREE.HemisphereLight(0xffffff,0x8a93a8,.95));
+var k1=new THREE.DirectionalLight(0xffffff,1.3);k1.position.set(3,6,7);S.add(k1);
+var k2=new THREE.PointLight(0xff6a3a,1.2,30);k2.position.set(-5,-2,4);S.add(k2);
+var pts=[new THREE.Vector2(0,0),new THREE.Vector2(.6,0),new THREE.Vector2(.6,1.1)];for(var i=1;i<=14;i++){var a=i/14*Math.PI/2;pts.push(new THREE.Vector2(.6*Math.cos(a),1.1+.6*Math.sin(a)))}
+var geo=new THREE.LatheGeometry(pts,40);function hm(c){return new THREE.MeshPhysicalMaterial({color:c,roughness:.14,clearcoat:1,clearcoatRoughness:.05,side:THREE.DoubleSide})}
+cap=new THREE.Group();ha=new THREE.Mesh(geo,hm(0xf6f6fa));hb=new THREE.Mesh(geo,hm(0xd8232a));hb.rotation.z=Math.PI;cap.add(ha,hb);S.add(cap);
+var sg=new THREE.SphereGeometry(1,10,8);pw=new THREE.InstancedMesh(sg,new THREE.MeshStandardMaterial({color:0xffffff,roughness:.3}),36);pc=new THREE.InstancedMesh(sg,new THREE.MeshStandardMaterial({color:0xd8232a,roughness:.3}),36);S.add(pw,pc);dm=new THREE.Object3D();
+ready=true;size()}
+function size(){measure();if(R){R.setSize(W,H,false);C.aspect=W/H;C.updateProjectionMatrix()}}
+addEventListener('resize',size);addEventListener('load',size);size();
+pin.addEventListener('pointermove',function(e){var r=pin.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5},{passive:true});
+addEventListener('scroll',function(){tp=prog()},{passive:true});tp=prog();sp=tp;
+new IntersectionObserver(function(en){run=en[0].isIntersecting;if(run&&!window.THREE&&!loading)load()},{rootMargin:'200px'}).observe(sec);
+function load(){loading=true;if(window.THREE){init();return;}var existing=document.querySelector('script[src*="three.min.js"]');if(existing){existing.addEventListener('load',init);return;}var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';s.onload=init;document.head.appendChild(s);}
+if(window.THREE)init();
+var BC=[[.85,.14,.17],[.72,.5,.2],[.33,.43,.53]];
+function tick(t){
+requestAnimationFrame(tick);if(!run)return;
+sp+=(tp-sp)*(reduce?1:.1);var p=sp,nar=innerWidth<800,k;
+var rect=sec.getBoundingClientRect(),enter=cl((innerHeight-rect.top)/(innerHeight*.85));
+/* header reveal */
+chip.style.opacity=ss(enter*3-.6);chip.style.translate='0 '+(1-ss(enter*3-.6))*14+'px';
+ws.forEach(function(w,i){w.style.transform='translateY('+(1-ss(enter*3.2-.9-i*.25))*110+'%)'});
+sub.style.opacity=ss(enter*3-1.6);sub.style.translate='0 '+(1-ss(enter*3-1.6))*16+'px';
+/* deal + stages */
+var d=ss((p-.02)/.3),s=cl((p-.36)/.54,0,1)*2,fon=ss((p-.34)/.06)*(1-ss((p-.93)/.07)),fm=0;
+cards.forEach(function(c,n){
+var f=ss(1-Math.abs(s-n)*1.25)*fon;fm=Math.max(fm,f);
+var dx=nar?0:(lay.rc-lay.cx[n])*(1-d),ro=n-1,sc=(.86+.14*d)*(1+.05*f)*(1-.03*fon*(1-f)),ry=-ro*26*(1-d)+mx*10*f,rz=ro*5*(1-d),rx=-my*8*f,dy=(1-d)*50-14*f,op=ss(enter*2.2-.5);
+if(nar){var o=n-s*(p>.34?1:0);dx=o*W*.9;ry+=o*-16;op*=1-.55*Math.min(1,Math.abs(o));sc*=1-.08*Math.min(1,Math.abs(o))}
+c.style.transform='translate3d('+dx+'px,'+dy+'px,'+(f*40)+'px) rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ('+rz+'deg) scale('+sc+')';
+c.style.opacity=op;c.style.zIndex=(nar?10-Math.round(Math.abs(n-s)):n==1?3:2)+(f>.5?5:0);
+c.style.setProperty('--f',f.toFixed(3));c.style.setProperty('--z',(1+.12*f).toFixed(3))});
+segs.forEach(function(b,n){b.style.transform='scaleX('+(p<.34?0:cl(s-n+.6,0,1))+')'});
+if(!ready)return;
+/* capsule */
+var wpp=Math.tan(17.5*Math.PI/180)*10/(H/2),sf=cl(s,0,2),i=Math.min(1,Math.floor(sf)),fr=sf-i;
+var x0=nar?lay.rc:L(lay.rc,lay.cx[0],d),stX=nar?lay.rc:L(lay.cx[i],lay.cx[i+1],ss(fr)),X=p>.36?stX:x0;
+var Lp=lay.cw*(nar?.8:.62)*(1+.3*(1-d)),sc2=Lp*wpp/3.4,py=lay.top-(nar?4:2)+Math.sin(t/700)*4-(1-d)*6;
+cap.position.set((X-W/2)*wpp,(H/2-py)*wpp+(nar?0:.0),1);cap.scale.setScalar(sc2);
+var spin=sf*Math.PI*2*(p>.36?1:0);
+cap.rotation.set(.35+my*.3,.5*Math.sin(t/1700)+mx*.6+spin+(1-d)*t*.0006,Math.PI/2+.18*Math.sin(t/1300));
+var sep=1.0*fm;ha.position.y=sep;hb.position.y=-sep;
+var bc=[L(BC[i][0],BC[i+1]?BC[i+1][0]:BC[i][0],ss(fr)),L(BC[i][1],BC[i+1]?BC[i+1][1]:BC[i][1],ss(fr)),L(BC[i][2],BC[i+1]?BC[i+1][2]:BC[i][2],ss(fr))];
+hb.material.color.setRGB(bc[0],bc[1],bc[2]);pc.material.color.setRGB(bc[0],bc[1],bc[2]);
+/* pellets falling out of the open capsule onto the card */
+var on=fm>.05&&!reduce;pw.visible=pc.visible=on;
+if(on){for(var m=0;m<72;m++){var mesh=m%2?pc:pw,id=m>>1,ph=m/72,life=(t*.00045+ph)%1,off=((m*37)%100)/100-.5,
+ex=X+off*lay.cw*.42*(.4+life*.6),ey=py+14+life*lay.ch*.88,sz=(3+((m*13)%5))*wpp*fm*Math.sin(life*Math.PI);
+dm.position.set((ex-W/2)*wpp,(H/2-ey)*wpp,1.6);dm.scale.setScalar(Math.max(.0001,sz));dm.updateMatrix();mesh.setMatrixAt(id,dm.matrix)}
+pw.instanceMatrix.needsUpdate=true;pc.instanceMatrix.needsUpdate=true}
+R.render(S,C)}
+requestAnimationFrame(tick);
+})();
+</script>
+<!-- ===== END ERAWAT WHY CHOOSE US SECTION ===== -->
 
     <!-- ==================================================================
          3. NEXT STEPS SECTION / WHO WE ARE
