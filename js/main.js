@@ -147,9 +147,15 @@
     const loader = document.getElementById("pageLoader");
     if (!loader) return;
 
+    // Immediately lock scroll so no background content or scrollbar is interactive/visible
+    document.documentElement.classList.add("is-loading");
+    document.body.classList.add("is-loading");
+
     function hideLoader() {
       loader.classList.add("is-hidden");
       loader.setAttribute("aria-hidden", "true");
+      document.documentElement.classList.remove("is-loading");
+      document.body.classList.remove("is-loading");
       if (typeof AOS !== "undefined") {
         AOS.refresh();
       }

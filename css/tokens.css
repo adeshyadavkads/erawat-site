@@ -182,5 +182,5 @@
   --z-base: 1;
   --z-overlay: 10;
   --z-header: 50;
-  --z-loader: 100;
+  --z-loader: 2147483647;
 }

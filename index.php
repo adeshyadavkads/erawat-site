@@ -1452,7 +1452,7 @@
           align-items: center !important;
           justify-content: flex-start !important;
           gap: 16px !important;
-          padding-block: 44px !important;
+          padding-block: clamp(14px, 1.6vh, 22px) !important;
         }
 
         .site-header .brand {
@@ -2305,7 +2305,7 @@
         align-items: center !important;
         justify-content: center !important;
         gap: 10px !important;
-        padding: 20px 30px !important;
+        padding: 12px 24px !important;
         border-radius: 9999px !important;
         font-family: var(--font-body, "Inter", sans-serif) !important;
         font-weight: 700 !important;
@@ -2337,6 +2337,125 @@
         color: #ffffff !important;
         transform: translateY(-2px) !important;
         /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important; -- shadow removed */
+      }
+
+      /* Header & Split-Hero Responsive Enhancements Below 1600px */
+      .site-header .btn-gradient-pill {
+        padding: 10px 20px !important;
+        font-size: 0.82rem !important;
+      }
+
+      @media (max-width: 1600px) and (min-width: 993px) {
+        .split-hero__pin {
+          height: 70vh !important;
+          min-height: 500px !important;
+        }
+
+        .split-hero__inner {
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr) !important;
+        }
+
+        .split-hero__text-col {
+          padding-left: clamp(24px, 5.5vw, 6vw) !important;
+          padding-right: clamp(16px, 2.5vw, 36px) !important;
+          padding-bottom: 20px !important;
+        }
+
+        .split-hero__title {
+          font-size: clamp(2rem, 1.6rem + 1.6vw, 3.25rem) !important;
+          line-height: 1.15 !important;
+          margin: 0 0 14px !important;
+          max-width: 20ch !important;
+        }
+
+        .split-hero__desc {
+          font-size: clamp(0.88rem, 0.82rem + 0.2vw, 1rem) !important;
+          line-height: 1.6 !important;
+          margin: 0 0 20px !important;
+          max-width: 44ch !important;
+        }
+
+        .split-hero__meta {
+          margin-bottom: 12px !important;
+          font-size: 0.82rem !important;
+        }
+
+        .split-hero__actions {
+          gap: 12px !important;
+        }
+
+        .facility-video__layout {
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr) !important;
+          gap: clamp(1.5rem, 2.5vw, 2.5rem) !important;
+        }
+
+        .facility-video__heading {
+          font-size: clamp(1.85rem, 1.4rem + 1.4vw, 2.5rem) !important;
+        }
+
+        .facility-video__desc {
+          font-size: clamp(0.9rem, 0.85rem + 0.18vw, 1rem) !important;
+          line-height: 1.6 !important;
+        }
+
+        .facility-video__banner {
+          min-height: 320px !important;
+        }
+
+        .mfg-card {
+          min-height: 300px !important;
+          height: auto !important;
+        }
+
+        .inquiry-split-layout {
+          gap: clamp(1.5rem, 2.5vw, 2.5rem) !important;
+        }
+
+        .inquiry-header-compact .inquiry-heading {
+          font-size: clamp(1.85rem, 1.5rem + 1vw, 2.35rem) !important;
+        }
+      }
+
+      @media (max-width: 1280px) and (min-width: 993px) {
+        .split-hero__inner {
+          grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr) !important;
+        }
+
+        .split-hero__text-col {
+          padding-left: clamp(20px, 4.5vw, 5vw) !important;
+        }
+
+        .split-hero__title {
+          font-size: clamp(1.85rem, 1.5rem + 1.4vw, 2.75rem) !important;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .mfg-grid {
+          grid-template-columns: repeat(3, 1fr) !important;
+          gap: 1rem !important;
+        }
+
+        .mfg-card {
+          min-height: 280px !important;
+        }
+
+        .mfg-card__badge {
+          min-width: 75px !important;
+          height: 55px !important;
+          font-size: 0.82rem !important;
+        }
+      }
+
+      @media (max-width: 860px) {
+        .mfg-grid {
+          grid-template-columns: 1fr !important;
+          gap: 1.5rem !important;
+        }
+
+        .mfg-card {
+          min-height: auto !important;
+        }
       }
     </style>
 
