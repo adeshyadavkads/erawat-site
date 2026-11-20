@@ -341,7 +341,7 @@ ol {
 
 .brand__logo {
   display: block;
-  inline-size: clamp(130px, 110px + 6vw, 180px);
+  inline-size: clamp(130px, 110px + 6vw, 230px);
   block-size: auto;
   max-inline-size: none;
   flex-shrink: 0;
