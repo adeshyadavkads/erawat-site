@@ -769,8 +769,8 @@
         transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
           box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
           border-color 0.35s ease;
-        min-height: 200px !important;
-        height: clamp(205px, 20vw, 230px) !important;
+        min-height: 350px !important;
+        height: clamp(205px, 20vw, 350px) !important;
         max-height: none !important;
         box-sizing: border-box;
         overflow: visible !important;
@@ -811,8 +811,8 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        min-width: 48px !important;
-        height: 38px !important;
+        min-width: 100px !important;
+        height: 70px !important;
         padding: 0 10px !important;
         border-radius: 8px 14px 14px 3px !important;
         font-weight: 800;
@@ -937,6 +937,7 @@
       }
 
       .mfg-card__content {
+        margin-top: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -970,7 +971,7 @@
 
       /* Bottom Action Button */
       .mfg-card__action {
-        margin-top: auto;
+        /* margin-top: auto; */
         padding-top: 6px !important;
         display: flex;
         justify-content: center;
