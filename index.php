@@ -1436,8 +1436,7 @@
       .split-hero__pin {
         position: sticky;
         top: var(--header-actual-h, 110px);
-        height: calc(100vh - var(--header-actual-h, 110px));
-        height: calc(100dvh - var(--header-actual-h, 110px));
+        height: 70vh !important;
         overflow: hidden;
         display: flex;
         align-items: stretch;
