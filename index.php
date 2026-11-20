@@ -722,9 +722,13 @@
       }
     }
     .mfg-card:hover {
-      transform: translateY(-6px);
-      /* box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1) !important; -- shadow removed */
-    }
+        transform: translateY(-8px);
+      }
+
+      .mfg-card:hover .mfg-card__badge {
+        transform: scale(1.08) translateY(-2px);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+      }
 
     .mfg-card__link {
       display: flex;
@@ -790,15 +794,22 @@
     .mfg-card--green .mfg-card__headline {
       color: #000000 !important;
     }
-    .mfg-card--green .mfg-card__btn {
-      color: #65a30d;
-      border-color: #84cc16;
-    }
-    .mfg-card--green:hover .mfg-card__btn {
-      background: #84cc16;
-      color: #ffffff;
-      border-color: #84cc16;
-    }
+    .mfg-card--green .mfg-card__readmore {
+        color: #65a30d;
+        text-decoration-color: #84cc16;
+      }
+
+      .mfg-card--green:hover {
+        border-color: #65a30d !important;
+        box-shadow: 0 20px 40px -15px rgba(132, 204, 22, 0.35), 0 8px 24px -8px rgba(0, 0, 0, 0.08) !important;
+        background: linear-gradient(180deg, #ffffff 60%, #f7fee7 100%) !important;
+      }
+
+      .mfg-card--green:hover .mfg-card__readmore {
+        color: #3f6212;
+        text-decoration-color: #3f6212;
+        text-decoration-thickness: 2.5px;
+      }
 
     /* Card 2: Golden Yellow Theme */
     .mfg-card--yellow {
@@ -813,15 +824,22 @@
     .mfg-card--yellow .mfg-card__headline {
       color: #000000 !important;
     }
-    .mfg-card--yellow .mfg-card__btn {
-      color: #ca8a04;
-      border-color: #eab308;
-    }
-    .mfg-card--yellow:hover .mfg-card__btn {
-      background: #eab308;
-      color: #ffffff;
-      border-color: #eab308;
-    }
+    .mfg-card--yellow .mfg-card__readmore {
+        color: #ca8a04;
+        text-decoration-color: #eab308;
+      }
+
+      .mfg-card--yellow:hover {
+        border-color: #ca8a04 !important;
+        box-shadow: 0 20px 40px -15px rgba(234, 179, 8, 0.38), 0 8px 24px -8px rgba(0, 0, 0, 0.08) !important;
+        background: linear-gradient(180deg, #ffffff 60%, #fefce8 100%) !important;
+      }
+
+      .mfg-card--yellow:hover .mfg-card__readmore {
+        color: #854d0e;
+        text-decoration-color: #854d0e;
+        text-decoration-thickness: 2.5px;
+      }
 
     /* Card 3: Warm Orange Theme */
     .mfg-card--orange {
@@ -836,15 +854,22 @@
     .mfg-card--orange .mfg-card__headline {
       color: #000000 !important;
     }
-    .mfg-card--orange .mfg-card__btn {
-      color: #ea580c;
-      border-color: #f97316;
-    }
-    .mfg-card--orange:hover .mfg-card__btn {
-      background: #f97316;
-      color: #ffffff;
-      border-color: #f97316;
-    }
+    .mfg-card--orange .mfg-card__readmore {
+        color: #ea580c;
+        text-decoration-color: #f97316;
+      }
+
+      .mfg-card--orange:hover {
+        border-color: #ea580c !important;
+        box-shadow: 0 20px 40px -15px rgba(249, 115, 22, 0.35), 0 8px 24px -8px rgba(0, 0, 0, 0.08) !important;
+        background: linear-gradient(180deg, #ffffff 60%, #fff7ed 100%) !important;
+      }
+
+      .mfg-card--orange:hover .mfg-card__readmore {
+        color: #9a3412;
+        text-decoration-color: #9a3412;
+        text-decoration-thickness: 2.5px;
+      }
 
     /* Card Body & Centered Content */
     .mfg-card__body {
@@ -889,34 +914,32 @@
       max-width: 30ch;
     }
 
-    /* Bottom Action Button */
-    .mfg-card__action {
-      margin-top: auto;
-      padding-top: 6px !important;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-    .mfg-card__btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px !important;
-      height: 36px !important;
-      border-radius: 50%;
-      background: #ffffff;
-      border: 1.5px solid;
-      /* box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06); -- shadow removed */
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .mfg-card__arrow {
-      width: 16px !important;
-      height: 16px !important;
-      transition: transform 0.25s ease;
-    }
-    .mfg-card:hover .mfg-card__arrow {
-      transform: translateX(3px);
-    }
+    /* Bottom Action Button / Read More */
+      .mfg-card__action {
+        padding-top: 10px !important;
+        padding-bottom: 4px !important;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .mfg-card__readmore {
+        display: inline-block;
+        font-family: var(--font-body, "Inter", sans-serif);
+        font-size: 0.95rem;
+        font-weight: 700;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        text-decoration-thickness: 1.5px;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .mfg-card:hover .mfg-card__readmore {
+        text-underline-offset: 8px;
+        letter-spacing: 0.04em;
+      }
 
     /* --------------------------------------------------------------------------
        WHO WE ARE: AUTO SLIDER (LEFT) & TEXT (RIGHT)
@@ -2746,12 +2769,7 @@
                   </p>
                 </div>
                 <div class="mfg-card__action">
-                  <span class="mfg-card__btn" aria-hidden="true">
-                    <svg class="mfg-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </span>
+                  <span class="mfg-card__readmore">Read More</span>
                 </div>
               </div>
             </a>
@@ -2770,12 +2788,7 @@
                   </p>
                 </div>
                 <div class="mfg-card__action">
-                  <span class="mfg-card__btn" aria-hidden="true">
-                    <svg class="mfg-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </span>
+                  <span class="mfg-card__readmore">Read More</span>
                 </div>
               </div>
             </a>
@@ -2794,12 +2807,7 @@
                   </p>
                 </div>
                 <div class="mfg-card__action">
-                  <span class="mfg-card__btn" aria-hidden="true">
-                    <svg class="mfg-card__arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </span>
+                  <span class="mfg-card__readmore">Read More</span>
                 </div>
               </div>
             </a>
