@@ -397,7 +397,7 @@ ol {
 .nav__link {
   display: inline-flex;
   align-items: center;
-  min-block-size: var(--touch-target);
+  /* min-block-size: var(--touch-target); */
   padding-inline: var(--space-2xs);
   border-radius: var(--radius-control);
   color: var(--ink-900);
