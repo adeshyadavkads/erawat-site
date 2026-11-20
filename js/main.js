@@ -164,7 +164,7 @@
       return;
     }
 
-    const minDisplayMs = 400;
+    const minDisplayMs = 4500; // 4.5 seconds display time (4-5s)
     const startTime = Date.now();
 
     function scheduleHide() {
@@ -173,7 +173,6 @@
       window.setTimeout(hideLoader, remaining);
     }
 
-    window.setTimeout(hideLoader, 500);
     if (document.readyState === "complete") {
       scheduleHide();
     } else {

@@ -1337,7 +1337,7 @@
         transition: color 0.2s ease;
       }
 
-   .site-header .nav__link::after {
+      .site-header .nav__link::after {
         content: "";
         position: absolute;
         bottom: 2px;
@@ -1575,7 +1575,7 @@
 
       .split-hero__title {
         font-family: var(--font-heading, "Bricolage Grotesque", sans-serif);
-        font-size: clamp(2.3rem, 4vw, 5rem);
+        font-size: clamp(2.3rem, 3vw, 5rem);
         line-height: 1.12;
         font-weight: 700 !important;
         color: #000000 !important;
@@ -1759,16 +1759,16 @@
 
       /* 2. Arrow Slide Animation: arrow goes to right, same arrow comes from left */
       .btn-anim__icon {
-          position: relative;
-    z-index: 1;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 18px;
-    height: 18px;
-    overflow: hidden;
-    flex-shrink: 0;
-    vertical-align: middle;
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+        overflow: hidden;
+        flex-shrink: 0;
+        vertical-align: middle;
       }
 
       .btn-anim__icon-track {
@@ -1896,6 +1896,11 @@
         transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
       }
 
+      video.split-hero__img {
+        display: block;
+        object-fit: cover;
+      }
+
       .split-hero__img-item:not(.is-active) .split-hero__img {
         transform: scale(1.08);
       }
@@ -1919,7 +1924,8 @@
         border: 1px solid rgba(255, 255, 255, 0.15);
         /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); -- shadow removed */
       }
-.split-hero__img-step {
+
+      .split-hero__img-step {
         font-weight: 800;
         color: #ffffff;
       }
@@ -2022,7 +2028,7 @@
         border-radius: 9999px;
       }
 
-/* Mouse Scroll Indicator */
+      /* Mouse Scroll Indicator */
       .split-hero__scroll-cue {
         position: absolute;
         right: calc(10% + 14px);
@@ -2232,8 +2238,8 @@
         display: inline-flex !important;
         align-items: center !important;
         gap: 0.5rem !important;
-        background: linear-gradient(135deg, #e53935 0%, #d32f2f 100%) !important;
-        color: #ffffff !important;
+        background: transparent;
+        color: #ff0000 !important;
         font-family: var(--font-body, "Inter", sans-serif) !important;
         font-size: 0.775rem !important;
         font-weight: 700 !important;
@@ -2244,7 +2250,7 @@
         margin-bottom: 0.85rem !important;
         width: fit-content !important;
         user-select: none !important;
-        /* box-shadow: 0 2px 8px rgba(211, 47, 47, 0.2) !important; -- shadow removed */
+        border: 1px solid;
       }
 
       .section-tag__dot {
@@ -2327,12 +2333,12 @@
                 <span class="meta-dot"></span>
                 <span>WHO-cGMP</span>
               </div>
-              <h1 class="split-hero__title">
-                Empty Hard Gelatin Capsules
-              </h1>
+              <h2 class="split-hero__title">
+                HPMC / Veg Capsules
+              </h2>
               <p class="split-hero__desc">
-                High-quality TSE/BSE-free Gelatin capsules engineered for high-speed automated filling machines,
-                delivering minimal rejections, tight locking tolerances, and maximum pharmaceutical output.
+                Naturally derived Hypromellose capsules tailored for moisture-sensitive APIs, herbal formulations,
+                hygroscopic powders, and global clean-label nutraceutical brands.
               </p>
               <div class="split-hero__actions">
                 <a class="btn-black-pill" href="#manufacturingSection">
@@ -2385,13 +2391,14 @@
                 <span class="meta-dot"></span>
                 <span>HALAL &amp; KOSHER</span>
               </div>
-              <h2 class="split-hero__title">
-                HPMC / Veg Capsules
-              </h2>
+              <h1 class="split-hero__title">
+                Empty Hard Gelatin Capsules
+              </h1>
               <p class="split-hero__desc">
-                Naturally derived Hypromellose capsules tailored for moisture-sensitive APIs, herbal formulations,
-                hygroscopic powders, and global clean-label nutraceutical brands.
+                High-quality TSE/BSE-free Gelatin capsules engineered for high-speed automated filling machines,
+                delivering minimal rejections, tight locking tolerances, and maximum pharmaceutical output.
               </p>
+
               <div class="split-hero__actions">
                 <a class="btn-black-pill" href="epl-products.html">
                   <span class="btn-anim__text">
@@ -2553,9 +2560,12 @@
 
               <!-- Image 1: Gelatin Cleanroom Production -->
               <div class="split-hero__img-item is-active" data-scene="0">
-                <img src="images/banners/bannerawat1.png"
-                  alt="Erawat cleanroom automated gelatin capsule production line" class="split-hero__img"
-                  loading="eager" width="1280" height="820">
+                <video class="split-hero__img" autoplay muted loop playsinline preload="auto">
+                  <source src="images/banners/hpmc1.mp4" type="video/mp4">
+                  <img src="images/banners/bannerawat1.png"
+                    alt="Erawat cleanroom automated gelatin capsule production line" class="split-hero__img"
+                    loading="eager" width="1280" height="820">
+                </video>
                 <div class="split-hero__img-badge">
                   <span class="split-hero__img-step">01 / 04</span>
                   <span class="split-hero__img-caption">Hard Gelatin Manufacturing</span>
@@ -2564,9 +2574,13 @@
 
               <!-- Image 2: HPMC Vegetarian Capsules -->
               <div class="split-hero__img-item is-upcoming" data-scene="1">
-                <img src="images/banners/bannerawat2.png"
-                  alt="Erawat HPMC vegetarian capsule quality compliance and distribution" class="split-hero__img"
-                  loading="lazy" width="1280" height="820">
+                <video class="split-hero__img" autoplay muted loop playsinline preload="auto" poster="images/banners/hmpcveg1.jpg">
+                  <source src="images/banners/hmpcveg1.mov" type="video/mp4">
+                  <source src="images/banners/hmpcveg1.mov" type="video/quicktime">
+                  <img src="images/banners/hmpcveg1.jpg"
+                    alt="Erawat HPMC vegetarian capsule quality compliance and distribution" class="split-hero__img"
+                    loading="lazy" width="1280" height="820">
+                </video>
                 <div class="split-hero__img-badge">
                   <span class="split-hero__img-step">02 / 04</span>
                   <span class="split-hero__img-caption">HPMC Vegetarian Cleanroom</span>
@@ -2598,13 +2612,16 @@
               <!-- Slide Pagination (Right-Side Dots) -->
               <div class="split-hero__dots" role="tablist" aria-label="Hero slider pagination">
                 <button type="button" class="split-hero__dot is-active" role="tab" aria-selected="true"
-                  aria-label="Slide 1: Empty Hard Gelatin Capsules" title="Empty Hard Gelatin Capsules" data-scene="0"></button>
+                  aria-label="Slide 1: Empty Hard Gelatin Capsules" title="Empty Hard Gelatin Capsules"
+                  data-scene="0"></button>
                 <button type="button" class="split-hero__dot" role="tab" aria-selected="false"
                   aria-label="Slide 2: HPMC / Veg Capsules" title="HPMC / Veg Capsules" data-scene="1"></button>
                 <button type="button" class="split-hero__dot" role="tab" aria-selected="false"
-                  aria-label="Slide 3: Precision Sizing & Colors" title="Precision Sizing & Custom Colors" data-scene="2"></button>
+                  aria-label="Slide 3: Precision Sizing & Colors" title="Precision Sizing & Custom Colors"
+                  data-scene="2"></button>
                 <button type="button" class="split-hero__dot" role="tab" aria-selected="false"
-                  aria-label="Slide 4: Zero-Defect Quality & Export" title="Zero-Defect Quality & Global Supply" data-scene="3"></button>
+                  aria-label="Slide 4: Zero-Defect Quality & Export" title="Zero-Defect Quality & Global Supply"
+                  data-scene="3"></button>
               </div>
             </div>
           </div>
@@ -2797,6 +2814,18 @@
             }
           });
 
+
+          // Play active video, pause inactive videos
+          imgItems.forEach(function (item, i) {
+            var v = item.querySelector('video');
+            if (v) {
+              if (i === index) {
+                v.play().catch(function () {});
+              } else {
+                v.pause();
+              }
+            }
+          });
           // Pagination Dots active state
           dots.forEach(function (dot, i) {
             var isActive = (i === index);

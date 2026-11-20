@@ -1716,6 +1716,11 @@
       transform: scale(1);
       transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
     }
+
+      video.split-hero__img {
+        display: block;
+        object-fit: cover;
+      }
     .split-hero__img-item:not(.is-active) .split-hero__img {
       transform: scale(1.08);
     }
@@ -2311,14 +2316,10 @@
               
               <!-- Image 1: Gelatin Cleanroom Production -->
               <div class="split-hero__img-item is-active" data-scene="0">
-                <img
-                  src="images/banners/bannerawat1.png"
-                  alt="Erawat cleanroom automated gelatin capsule production line"
-                  class="split-hero__img"
-                  loading="eager"
-                  width="1280"
-                  height="820"
-                >
+                <video class="split-hero__img" autoplay muted loop playsinline preload="auto">
+                  <source src="images/banners/hpmc1.mp4" type="video/mp4">
+                  <img src="images/banners/bannerawat1.png" alt="Erawat cleanroom automated gelatin capsule production line" class="split-hero__img" loading="eager" width="1280" height="820">
+                </video>
                 <div class="split-hero__img-badge">
                   <span class="split-hero__img-step">01 / 04</span>
                   <span class="split-hero__img-caption">Hard Gelatin Manufacturing</span>
@@ -2327,14 +2328,13 @@
 
               <!-- Image 2: HPMC Vegetarian Capsules -->
               <div class="split-hero__img-item is-upcoming" data-scene="1">
-                <img
-                  src="images/banners/bannerawat2.png"
-                  alt="Erawat HPMC vegetarian capsule quality compliance and distribution"
-                  class="split-hero__img"
-                  loading="lazy"
-                  width="1280"
-                  height="820"
-                >
+                <video class="split-hero__img" autoplay muted loop playsinline preload="auto" poster="images/banners/hmpcveg1.jpg">
+                  <source src="images/banners/hmpcveg1.mov" type="video/mp4">
+                  <source src="images/banners/hmpcveg1.mov" type="video/quicktime">
+                  <img src="images/banners/hmpcveg1.jpg"
+                    alt="Erawat HPMC vegetarian capsule quality compliance and distribution" class="split-hero__img"
+                    loading="lazy" width="1280" height="820">
+                </video>
                 <div class="split-hero__img-badge">
                   <span class="split-hero__img-step">02 / 04</span>
                   <span class="split-hero__img-caption">HPMC Vegetarian Cleanroom</span>
@@ -2570,7 +2570,19 @@
             }
           });
 
-          // Pagination Dots active state
+          
+          // Play active video, pause inactive videos
+          imgItems.forEach(function (item, i) {
+            var v = item.querySelector('video');
+            if (v) {
+              if (i === index) {
+                v.play().catch(function () {});
+              } else {
+                v.pause();
+              }
+            }
+          });
+// Pagination Dots active state
           dots.forEach(function (dot, i) {
             var isActive = (i === index);
             dot.classList.toggle('is-active', isActive);
