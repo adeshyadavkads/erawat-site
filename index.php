@@ -555,11 +555,11 @@
         aspect-ratio: auto !important;
         min-block-size: unset !important;
         max-block-size: unset !important;
-        border-radius: 26px !important;
+        border-radius: 5px !important;
         overflow: hidden !important;
-        background: #0f172a !important;
+        background: transparent !important;
         /* box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12) !important; -- shadow removed */
-        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        border: none !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
