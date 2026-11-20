@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,46 +16,47 @@
   <meta name="email" content="info@erawatgroup.com">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Capsule Manufacturers | Empty Gelatin Capsule Manufacturers | Erawat">
-  <meta property="og:description" content="Erawat Pharma is known for Capsule manufacturers, empty hard capsules, capsule shell and gelatin capsule manufacturers in the world &amp; second largest in India.">
+  <meta property="og:description"
+    content="Erawat Pharma is known for Capsule manufacturers, empty hard capsules, capsule shell and gelatin capsule manufacturers in the world &amp; second largest in India.">
   <meta property="og:image" content="https://www.erawat.com/images/logo.gif">
   <link rel="icon" type="image/gif" href="images/logo.gif">
 
   <!-- Typography: Bricolage Grotesque & Figtree -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- External Stylesheets Only -->
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/aos.css">
   <style>
-    .header-inner{
+    .header-inner {
 
       display: flex;
       align-items: center;
       gap: 30px;
     }
-      /* Universal Shadow Removal - All shadows disabled per user request */
-    *, *::before, *::after {
+
+    /* Universal Shadow Removal - All shadows disabled per user request */
+    *,
+    *::before,
+    *::after {
       box-shadow: none !important;
       text-shadow: none !important;
     }
-    </style>
+  </style>
 </head>
+
 <body>
   <!-- ====================================================================
        PAGE LOADER (ERAWAT ANIMATED SVG)
        ==================================================================== -->
   <div class="page-loader" id="pageLoader" role="status" aria-live="polite" aria-label="Loading Erawat Pharma Limited">
     <div class="page-loader__content">
-      <img
-        class="page-loader__icon"
-        src="images/erawat-loader.svg"
-        alt="Erawat Loading"
-        width="300"
-        height="240"
-      >
+      <img class="page-loader__icon" src="images/erawat-loader.svg" alt="Erawat Loading" width="300" height="240">
     </div>
   </div>
 
@@ -69,7 +71,11 @@
       <div class="site-topbar__inner">
         <div class="site-topbar__left">
           <div class="site-topbar__item">
-            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
             <span class="site-topbar__muted">Email Us:</span>
             <a href="mailto:info@erawatgroup.com" class="site-topbar__link">info@erawatgroup.com</a>
           </div>
@@ -77,22 +83,36 @@
           <span class="site-topbar__divider" aria-hidden="true"></span>
 
           <div class="site-topbar__item">
-            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M4 15V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1"/><path d="M2 15h10"/><path d="m9 18 3-3-3-3"/></svg>
+            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+              <path d="M4 15V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1" />
+              <path d="M2 15h10" />
+              <path d="m9 18 3-3-3-3" />
+            </svg>
             <a href="request-sample.html" class="site-topbar__link site-topbar__link--highlight">Request Sample</a>
           </div>
 
           <span class="site-topbar__divider" aria-hidden="true"></span>
 
           <div class="site-topbar__item">
-            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+              <path d="M2 12h20" />
+            </svg>
             <a href="exports.html" class="site-topbar__link">Export Areas</a>
           </div>
         </div>
 
         <div class="site-topbar__right">
-          <a href="https://www.linkedin.com/company/erawat-pharma-limited" target="_blank" rel="noopener noreferrer" class="site-topbar__social" aria-label="Follow Erawat on LinkedIn">
-            <svg class="site-topbar__social-icon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.7a1.64 1.64 0 0 0-1.64 1.64c0 .91.73 1.64 1.64 1.64s1.64-.73 1.64-1.64A1.64 1.64 0 0 0 7.83 6.7Z"/>
+          <a href="https://www.linkedin.com/company/erawat-pharma-limited" target="_blank" rel="noopener noreferrer"
+            class="site-topbar__social" aria-label="Follow Erawat on LinkedIn">
+            <svg class="site-topbar__social-icon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"
+              aria-hidden="true">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.7a1.64 1.64 0 0 0-1.64 1.64c0 .91.73 1.64 1.64 1.64s1.64-.73 1.64-1.64A1.64 1.64 0 0 0 7.83 6.7Z" />
             </svg>
             <span class="site-topbar__social-text">LinkedIn</span>
           </a>
@@ -100,29 +120,20 @@
       </div>
     </div>
     <div class="header__inner">
-      <a class="brand" href="index.html" aria-label="Erawat Pharma Limited Home" data-aos="fade-down" data-aos-duration="600">
+      <a class="brand" href="index.html" aria-label="Erawat Pharma Limited Home" data-aos="fade-down"
+        data-aos-duration="600">
         <span class="brand__logo-wrap">
-          <img
-            class="brand__logo"
-            src="images/logo_1.png"
-            alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine"
-            width="180"
-            height="48"
-          >
+          <img class="brand__logo" src="images/logo_1.png" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine"
+            width="180" height="48">
         </span>
       </a>
 
-      <button
-        type="button"
-        id="navToggle"
-        class="nav-toggle"
-        aria-controls="siteNav"
-        aria-expanded="false"
-      >
+      <button type="button" id="navToggle" class="nav-toggle" aria-controls="siteNav" aria-expanded="false">
         Menu
       </button>
 
-      <nav class="site-nav" id="siteNav" aria-label="Primary navigation" data-aos="fade-down" data-aos-duration="600" data-aos-delay="100">
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation" data-aos="fade-down" data-aos-duration="600"
+        data-aos-delay="100">
         <ul class="nav__list">
           <li><a class="nav__link" href="profile.html">About</a></li>
           <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
@@ -134,37 +145,53 @@
         </ul>
         <div class="nav__mobile-cta">
           <a class="btn-gradient-pill" href="#getStartedSection">
-                  <span class="btn-anim__text">
-                    <span class="btn-anim__text-track">
-                      <span class="btn-anim__text-item">Send Inquiry</span>
-                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
-                    </span>
-                  </span>
-                  <span class="btn-anim__icon">
-                    <span class="btn-anim__icon-track">
-                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                    </span>
-                  </span>
-                </a>
+            <span class="btn-anim__text">
+              <span class="btn-anim__text-track">
+                <span class="btn-anim__text-item">Send Inquiry</span>
+                <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
+              </span>
+            </span>
+            <span class="btn-anim__icon">
+              <span class="btn-anim__icon-track">
+                <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                  stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M4 2L8 6L4 10" />
+                </svg>
+                <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                  fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M4 2L8 6L4 10" />
+                </svg>
+              </span>
+            </span>
+          </a>
         </div>
       </nav>
 
       <div class="header__actions" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
         <a class="btn-gradient-pill" href="#getStartedSection">
-                  <span class="btn-anim__text">
-                    <span class="btn-anim__text-track">
-                      <span class="btn-anim__text-item">Send Inquiry</span>
-                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
-                    </span>
-                  </span>
-                  <span class="btn-anim__icon">
-                    <span class="btn-anim__icon-track">
-                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                    </span>
-                  </span>
-                </a>
+          <span class="btn-anim__text">
+            <span class="btn-anim__text-track">
+              <span class="btn-anim__text-item">Send Inquiry</span>
+              <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
+            </span>
+          </span>
+          <span class="btn-anim__icon">
+            <span class="btn-anim__icon-track">
+              <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 2L8 6L4 10" />
+              </svg>
+              <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 2L8 6L4 10" />
+              </svg>
+            </span>
+          </span>
+        </a>
       </div>
     </div>
   </header>
@@ -174,554 +201,595 @@
          WHITE HEADER THEME & 2-PART SPLIT SCROLL BANNER (4 SCENES)
          ================================================================== -->
     <style>
-    /* --------------------------------------------------------------------------
+      /* --------------------------------------------------------------------------
        SEND INQUIRY SECTION (2-PART SPLIT: FORM ON LEFT & CONTACT DETAILS ON RIGHT)
        -------------------------------------------------------------------------- */
-    .section--editorial {
-      background-color: #f1f5f9 !important;
-      padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    .inquiry-split-layout {
-      display: grid !important;
-      grid-template-columns: 1fr !important;
-      gap: 2rem !important;
-      align-items: stretch !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      box-sizing: border-box !important;
-    }
-    @media (min-width: 993px) {
+      .section--editorial {
+        background-color: #f1f5f9 !important;
+        padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
       .inquiry-split-layout {
-        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
-        gap: clamp(2rem, 3.5vw, 3.5rem) !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
         align-items: stretch !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
       }
-    }
 
-    .inquiry-split__left {
-      width: 100% !important;
-      max-width: 100% !important;
-      min-width: 0 !important;
-      display: flex !important;
-      flex-direction: column !important;
-      gap: 1.5rem !important;
-      box-sizing: border-box !important;
-    }
+      @media (min-width: 993px) {
+        .inquiry-split-layout {
+          grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+          gap: clamp(2rem, 3.5vw, 3.5rem) !important;
+          align-items: stretch !important;
+        }
+      }
 
-    .inquiry-header-compact {
-      display: flex !important;
-      flex-direction: column !important;
-      gap: 0.65rem !important;
-      align-items: flex-start !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      box-sizing: border-box !important;
-    }
+      .inquiry-split__left {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+        box-sizing: border-box !important;
+      }
 
-    .inquiry-header-compact .inquiry-heading {
-      font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
-      font-size: clamp(2rem, 1.8rem + 1.2vw, 2.75rem) !important;
-      font-weight: 700 !important;
-      color: #000000 !important;
-      line-height: 1.15 !important;
-      letter-spacing: -0.03em !important;
-      margin: 0 !important;
-      max-width: 100% !important;
-      word-wrap: break-word !important;
-    }
+      .inquiry-header-compact {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.65rem !important;
+        align-items: flex-start !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
 
-    .inquiry-header-compact .inquiry-lead {
-      font-size: 0.95rem !important;
-      color: #475569 !important;
-      line-height: 1.6 !important;
-      margin: 0 !important;
-      max-width: 48ch !important;
-    }
+      .inquiry-header-compact .inquiry-heading {
+        font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
+        font-size: clamp(2rem, 1.8rem + 1.2vw, 2.75rem) !important;
+        font-weight: 700 !important;
+        color: #000000 !important;
+        line-height: 1.15 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        word-wrap: break-word !important;
+      }
 
-    /* 2-Column Form Rows */
-    .form-grid-row--2 {
-      display: grid !important;
-      grid-template-columns: 1fr !important;
-      gap: 1.25rem !important;
-      margin-block-end: 0.25rem !important;
-      width: 100% !important;
-      box-sizing: border-box !important;
-    }
-    @media (min-width: 540px) {
+      .inquiry-header-compact .inquiry-lead {
+        font-size: 0.95rem !important;
+        color: #475569 !important;
+        line-height: 1.6 !important;
+        margin: 0 !important;
+        max-width: 48ch !important;
+      }
+
+      /* 2-Column Form Rows */
       .form-grid-row--2 {
-        grid-template-columns: 1fr 1fr !important;
-        gap: 1.25rem 1.75rem !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem !important;
+        margin-block-end: 0.25rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
       }
-    }
 
-    /* Row 6: Submit Row with Red Pill Button */
-    .editorial-submit-row {
-      display: flex !important;
-      flex-wrap: wrap !important;
-      align-items: center !important;
-      justify-content: space-between !important;
-      gap: 1.25rem !important;
-      margin-top: 1rem !important;
-      padding-top: 1.25rem !important;
-      border-top: 1px solid rgba(113, 113, 122, 0.35) !important;
-      width: 100% !important;
-      box-sizing: border-box !important;
-    }
+      @media (min-width: 540px) {
+        .form-grid-row--2 {
+          grid-template-columns: 1fr 1fr !important;
+          gap: 1.25rem 1.75rem !important;
+        }
+      }
 
-    /* Consistent Black Pill Button (matching all site-wide buttons) */
-    .btn-editorial-send {
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      gap: 10px !important;
-      padding: 13px 30px !important;
-      border-radius: 9999px !important;
-      background: #000000 !important;
-      color: #ffffff !important;
-      border: 1.5px solid #000000 !important;
-      font-family: var(--font-body, "Inter", sans-serif) !important;
-      font-weight: 700 !important;
-      font-size: 0.88rem !important;
-      letter-spacing: 0.04em !important;
-      text-transform: uppercase !important;
-      text-decoration: none !important;
-      line-height: 1 !important;
-      cursor: pointer !important;
-      box-sizing: border-box !important;
-      /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important; -- shadow removed */
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    }
-    .btn-editorial-send:hover {
-      background: #1e293b !important;
-      border-color: #1e293b !important;
-      color: #ffffff !important;
-      transform: translateY(-2px) !important;
-      /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important; -- shadow removed */
-    }
-    .btn-editorial-send:active {
-      transform: translateY(0) !important;
-      /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important; -- shadow removed */
-    }
+      /* Row 6: Submit Row with Red Pill Button */
+      .editorial-submit-row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 1.25rem !important;
+        margin-top: 1rem !important;
+        padding-top: 1.25rem !important;
+        border-top: 1px solid rgba(113, 113, 122, 0.35) !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+      }
 
-    /* Right Column: Clean Image Card (Matching Form Height from top to bottom) */
-    .inquiry-split__right {
-      width: 100% !important;
-      max-width: 100% !important;
-      min-width: 0 !important;
-      height: 100% !important;
-      display: flex !important;
-      flex-direction: column !important;
-      box-sizing: border-box !important;
-    }
+      /* Consistent Black Pill Button (matching all site-wide buttons) */
+      .btn-editorial-send {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        padding: 13px 30px !important;
+        border-radius: 9999px !important;
+        background: #000000 !important;
+        color: #ffffff !important;
+        /* border: 1.5px solid #000000 !important; */
+        font-family: var(--font-body, "Inter", sans-serif) !important;
+        font-weight: 700 !important;
+        font-size: 0.88rem !important;
+        text-transform: uppercase !important;
+        text-decoration: none !important;
+        line-height: 1 !important;
+        cursor: pointer !important;
+        box-sizing: border-box !important;
+        /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important; -- shadow removed */
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      }
 
-    .inquiry-image-card {
-      position: relative !important;
-      width: 100% !important;
-      height: 100% !important;
-      min-height: 100% !important;
-      flex: 1 1 auto !important;
-      border-radius: 24px !important;
-      overflow: hidden !important;
-      background: #0f172a !important;
-      /* box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12) !important; -- shadow removed */
-      border: 1px solid rgba(0, 0, 0, 0.08) !important;
-      box-sizing: border-box !important;
-    }
+      .btn-editorial-send:hover {
+        background: #1e293b !important;
+        border-color: #1e293b !important;
+        color: #ffffff !important;
+        transform: translateY(-2px) !important;
+        /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important; -- shadow removed */
+      }
 
-    .inquiry-image-card__img {
-      position: absolute !important;
-      inset: 0 !important;
-      width: 100% !important;
-      height: 100% !important;
-      max-width: 100% !important;
-      max-height: 100% !important;
-      object-fit: cover !important;
-      object-position: center !important;
-      display: block !important;
-      transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    }
+      .btn-editorial-send:active {
+        transform: translateY(0) !important;
+        /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important; -- shadow removed */
+      }
 
-    .inquiry-image-card:hover .inquiry-image-card__img {
-      transform: scale(1.04) !important;
-    }
+      /* Right Column: Clean Image Card (Matching Form Height from top to bottom) */
+      .inquiry-split__right {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        box-sizing: border-box !important;
+      }
 
-    @media (max-width: 992px) {
       .inquiry-image-card {
-        min-height: 320px !important;
-        aspect-ratio: 16 / 10 !important;
-        height: auto !important;
-        flex: none !important;
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        min-height: 100% !important;
+        flex: 1 1 auto !important;
+        border-radius: 5px !important;
+        overflow: hidden !important;
+        box-sizing: border-box !important;
       }
-    }
 
-    /* --------------------------------------------------------------------------
+      .inquiry-image-card__img {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        display: block !important;
+        transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      }
+
+      .inquiry-image-card:hover .inquiry-image-card__img {
+        transform: scale(1.04) !important;
+      }
+
+      @media (max-width: 992px) {
+        .split-hero {
+          height: auto !important;
+        }
+        .split-hero__pin {
+          position: relative !important;
+          top: auto !important;
+          height: auto !important;
+        }
+        .inquiry-image-card {
+          min-height: 320px !important;
+          aspect-ratio: 16 / 10 !important;
+          height: auto !important;
+          flex: none !important;
+        }
+      }
+
+      /* --------------------------------------------------------------------------
        OUR MISSION SECTION (IMAGE BACKGROUND + OVERLAY TEXT)
        -------------------------------------------------------------------------- */
-    .section--mission {
-      background: #ffffff;
-      padding-block: clamp(3.5rem, 6vw, 6rem);
-    }
-    .mission-card {
-      position: relative;
-      width: 100%;
-      border-radius: 28px;
-      overflow: hidden;
-      min-height: 420px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      /* box-shadow: 0 22px 55px rgba(0, 0, 0, 0.14); -- shadow removed */
-      background-color: #0f172a;
-      border: 1px solid rgba(0, 0, 0, 0.08);
-    }
-    .mission-card__bg {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      transform: scale(1.02);
-      transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .mission-card:hover .mission-card__bg {
-      transform: scale(1.06);
-    }
-    .mission-card__overlay {
-    position: absolute;
-    inset: 0;
-    background: #000000c7;
-}
-    .mission-card__content {
-      position: relative;
-      z-index: 2;
-      max-width: 880px;
-      text-align: center;
-      padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.5rem, 4vw, 3.5rem);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.25rem;
-    }
-    .mission-card__eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.82rem;
-      font-weight: 800;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: #ff5722;
-      background: rgba(255, 87, 34, 0.12);
-      border: 1px solid rgba(255, 87, 34, 0.3);
-      padding: 6px 20px;
-      border-radius: 9999px;
-    }
-    .mission-card__quote-mark {
-      color: rgba(255, 87, 34, 0.35);
-      margin-bottom: -10px;
-    }
-    .mission-card__text {
-      font-family: var(--font-heading, "Bricolage Grotesque", sans-serif);
-      font-size: clamp(1.25rem, 1.1rem + 1vw, 1.85rem);
-      font-weight: 600;
-      color: #ffffff;
-      line-height: 1.52;
-      letter-spacing: -0.015em;
-      margin: 0;
-      /* text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4); -- shadow removed */
-    }
-    .mission-card__footer {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 0.5rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .mission-card__author {
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: #e2e8f0;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-    .mission-card__dot {
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: #ff5722;
-    }
-    .mission-card__sub {
-      font-size: 0.82rem;
-      color: #94a3b8;
-    }
+      .section--mission {
+        background: #ffffff;
+        padding-block: clamp(3.5rem, 6vw, 6rem);
+      }
 
-    /* --------------------------------------------------------------------------
+      .mission-card {
+        position: relative;
+        width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+        min-height: 420px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* box-shadow: 0 22px 55px rgba(0, 0, 0, 0.14); -- shadow removed */
+        background-color: #0f172a;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .mission-card__bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transform: scale(1.02);
+        transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .mission-card:hover .mission-card__bg {
+        transform: scale(1.06);
+      }
+
+      .mission-card__overlay {
+        position: absolute;
+        inset: 0;
+        background: #000000c7;
+      }
+
+      .mission-card__content {
+        position: relative;
+        z-index: 2;
+        max-width: 880px;
+        text-align: center;
+        padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.5rem, 4vw, 3.5rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+      }
+
+      .mission-card__eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.82rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ff5722;
+        background: rgba(255, 87, 34, 0.12);
+        border: 1px solid rgba(255, 87, 34, 0.3);
+        padding: 6px 20px;
+        border-radius: 9999px;
+      }
+
+      .mission-card__quote-mark {
+        color: rgba(255, 87, 34, 0.35);
+        margin-bottom: -10px;
+      }
+
+      .mission-card__text {
+        font-family: var(--font-heading, "Bricolage Grotesque", sans-serif);
+        font-size: clamp(1.25rem, 1.1rem + 1vw, 1.85rem);
+        font-weight: 600;
+        color: #ffffff;
+        line-height: 1.52;
+        margin: 0;
+        /* text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4); -- shadow removed */
+      }
+
+      .mission-card__footer {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .mission-card__author {
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: #e2e8f0;
+        text-transform: uppercase;
+      }
+
+      .mission-card__dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #ff5722;
+      }
+
+      .mission-card__sub {
+        font-size: 0.82rem;
+        color: #94a3b8;
+      }
+
+      /* --------------------------------------------------------------------------
        FACILITY VIDEO SECTION: LEFT VIDEO AREA & RIGHT TEXT
        -------------------------------------------------------------------------- */
-    .section--facility-video {
-      background-color: #f8fafc;
-      padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    .facility-video__layout {
-      display: grid !important;
-      grid-template-columns: 1fr !important;
-      gap: 2rem !important;
-      align-items: stretch !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      box-sizing: border-box !important;
-    }
-    @media (min-width: 993px) {
+      .section--facility-video {
+        background-color: #f8fafc;
+        padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
       .facility-video__layout {
-        grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr) !important;
-        gap: clamp(2rem, 3.5vw, 3.5rem) !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
         align-items: stretch !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
       }
-    }
 
-    .facility-video__media-col {
-      width: 100% !important;
-      max-width: 100% !important;
-      min-width: 0 !important;
-      height: 100% !important;
-      display: flex !important;
-      flex-direction: column !important;
-      box-sizing: border-box !important;
-    }
-    .facility-video__banner {
-      position: relative !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      min-width: 0 !important;
-      height: 100% !important;
-      min-height: 100% !important;
-      aspect-ratio: auto !important;
-      min-block-size: unset !important;
-      max-block-size: unset !important;
-      border-radius: 26px !important;
-      overflow: hidden !important;
-      background: #0f172a !important;
-      /* box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12) !important; -- shadow removed */
-      border: 1px solid rgba(0, 0, 0, 0.08) !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      box-sizing: border-box !important;
-    }
-    @media (max-width: 992px) {
+      @media (min-width: 993px) {
+        .facility-video__layout {
+          grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) !important;
+          gap: clamp(2rem, 3.5vw, 3.5rem) !important;
+          align-items: stretch !important;
+        }
+      }
+
+      .facility-video__media-col {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        box-sizing: border-box !important;
+      }
+
       .facility-video__banner {
-        aspect-ratio: 16 / 9 !important;
-        min-height: 240px !important;
-        max-height: 380px !important;
-        height: auto !important;
+        position: relative !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        height: 100% !important;
+        min-height: 100% !important;
+        aspect-ratio: auto !important;
+        min-block-size: unset !important;
+        max-block-size: unset !important;
+        border-radius: 26px !important;
+        overflow: hidden !important;
+        background: #0f172a !important;
+        /* box-shadow: 0 20px 48px rgba(0, 0, 0, 0.12) !important; -- shadow removed */
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
       }
-    }
-    .facility-video__thumbnail {
-      position: absolute !important;
-      inset: 0 !important;
-      width: 100% !important;
-      height: 100% !important;
-      max-width: 100% !important;
-      max-height: 100% !important;
-      object-fit: cover !important;
-      display: block !important;
-      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .facility-video__banner:hover .facility-video__thumbnail {
-      transform: scale(1.05);
-    }
-    .facility-video__overlay {
-      position: absolute !important;
-      inset: 0 !important;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.45) 100%) !important;
-      pointer-events: none !important;
-    }
 
-    /* Video Play Button: Centered with mathematical precision */
-    .facility-video__play-link {
-      position: absolute !important;
-      top: 50% !important;
-      left: 50% !important;
-      transform: translate(-50%, -50%) !important;
-      margin: 0 !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      width: clamp(68px, 8.5vw, 88px) !important;
-      height: clamp(68px, 8.5vw, 88px) !important;
-      z-index: 4 !important;
-      text-decoration: none !important;
-      cursor: pointer !important;
-      -webkit-tap-highlight-color: transparent !important;
-    }
-    .facility-video__play-link .play-ripple {
-      position: absolute !important;
-      top: 50% !important;
-      left: 50% !important;
-      transform: translate(-50%, -50%) !important;
-      width: 100% !important;
-      height: 100% !important;
-      border-radius: 50% !important;
-      background-color: rgba(255, 255, 255, 0.45) !important;
-      z-index: 1 !important;
-      pointer-events: none !important;
-      animation: ripplePulse 2.4s cubic-bezier(0.16, 1, 0.3, 1) infinite !important;
-    }
-    .facility-video__play-link .play-ripple--2 {
-      animation-delay: 1.2s !important;
-    }
-    .facility-video__play-link .play-btn-circle {
-      position: relative !important;
-      width: 100% !important;
-      height: 100% !important;
-      border-radius: 50% !important;
-      background-color: #ffffff !important;
-      color: #e53935 !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      /* box-shadow: 0 10px 32px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(255, 255, 255, 0.4) !important; -- shadow removed */
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
-      z-index: 2 !important;
-    }
-    .facility-video__play-link .play-icon {
-      width: 26px !important;
-      height: 26px !important;
-      margin-left: 3px !important;
-      transition: transform 0.35s ease !important;
-    }
-    .facility-video__play-link:hover .play-btn-circle {
-      transform: scale(1.12) !important;
-      background-color: #ff0000 !important;
-      color: #ffffff !important;
-      /* box-shadow: 0 16px 42px rgba(255, 0, 0, 0.55), 0 0 0 4px rgba(255, 255, 255, 0.7) !important; -- shadow removed */
-    }
-    .facility-video__play-link:hover .play-icon {
-      transform: scale(1.08) !important;
-    }
-    .facility-video__play-link:active .play-btn-circle {
-      transform: scale(0.98) !important;
-    }
+      @media (max-width: 992px) {
+        .facility-video__banner {
+          aspect-ratio: 16 / 9 !important;
+          min-height: 240px !important;
+          max-height: 380px !important;
+          height: auto !important;
+        }
+      }
 
-    .facility-video__text-col {
-      width: 100% !important;
-      max-width: 100% !important;
-      min-width: 0 !important;
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: flex-start !important;
-      gap: 1.15rem !important;
-      height: 100% !important;
-      box-sizing: border-box !important;
-    }
-    .facility-video__heading {
-      font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
-      font-size: clamp(1.9rem, 1.5rem + 1.2vw, 2.5rem) !important;
-      font-weight: 700 !important;
-      color: #000000 !important;
-      line-height: 1.18 !important;
-      letter-spacing: -0.03em !important;
-      margin: 0 !important;
-      max-width: 100% !important;
-      word-wrap: break-word !important;
-      overflow-wrap: break-word !important;
-    }
-    .facility-video__desc {
-      font-size: 0.95rem !important;
-      color: #475569 !important;
-      line-height: 1.65 !important;
-      margin: 0 !important;
-      max-width: 100% !important;
-    }
-    .facility-video__cta {
-      margin-top: auto !important;
-    }
+      .facility-video__thumbnail {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        object-fit: cover !important;
+        display: block !important;
+        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      }
 
-    /* --------------------------------------------------------------------------
+      .facility-video__banner:hover .facility-video__thumbnail {
+        transform: scale(1.05);
+      }
+
+      .facility-video__overlay {
+        position: absolute !important;
+        inset: 0 !important;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.45) 100%) !important;
+        pointer-events: none !important;
+      }
+
+      /* Video Play Button: Centered with mathematical precision */
+      .facility-video__play-link {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: clamp(68px, 8.5vw, 88px) !important;
+        height: clamp(68px, 8.5vw, 88px) !important;
+        z-index: 4 !important;
+        text-decoration: none !important;
+        cursor: pointer !important;
+        -webkit-tap-highlight-color: transparent !important;
+      }
+
+      .facility-video__play-link .play-ripple {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 50% !important;
+        background-color: rgba(255, 255, 255, 0.45) !important;
+        z-index: 1 !important;
+        pointer-events: none !important;
+        animation: ripplePulse 2.4s cubic-bezier(0.16, 1, 0.3, 1) infinite !important;
+      }
+
+      .facility-video__play-link .play-ripple--2 {
+        animation-delay: 1.2s !important;
+      }
+
+      .facility-video__play-link .play-btn-circle {
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 50% !important;
+        background-color: #ffffff !important;
+        color: #e53935 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        /* box-shadow: 0 10px 32px rgba(0, 0, 0, 0.4), 0 0 0 3px rgba(255, 255, 255, 0.4) !important; -- shadow removed */
+        transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        z-index: 2 !important;
+      }
+
+      .facility-video__play-link .play-icon {
+        width: 26px !important;
+        height: 26px !important;
+        margin-left: 3px !important;
+        transition: transform 0.35s ease !important;
+      }
+
+      .facility-video__play-link:hover .play-btn-circle {
+        transform: scale(1.12) !important;
+        background-color: #ff0000 !important;
+        color: #ffffff !important;
+        /* box-shadow: 0 16px 42px rgba(255, 0, 0, 0.55), 0 0 0 4px rgba(255, 255, 255, 0.7) !important; -- shadow removed */
+      }
+
+      .facility-video__play-link:hover .play-icon {
+        transform: scale(1.08) !important;
+      }
+
+      .facility-video__play-link:active .play-btn-circle {
+        transform: scale(0.98) !important;
+      }
+
+      .facility-video__text-col {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 1.15rem !important;
+        height: 100% !important;
+        box-sizing: border-box !important;
+      }
+
+      .facility-video__heading {
+        font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
+        font-size: clamp(1.9rem, 1.5rem + 1.2vw, 2.5rem) !important;
+        font-weight: 700 !important;
+        color: #000000 !important;
+        line-height: 1.18 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+      }
+
+      .facility-video__desc {
+        font-size: 0.95rem !important;
+        color: #475569 !important;
+        line-height: 1.65 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+      }
+
+      .facility-video__cta {
+        margin-top: auto !important;
+      }
+
+      /* --------------------------------------------------------------------------
        WHY YOU SHOULD BUY FROM US: INFOGRAPHIC CARDS WITH FOLDED RIBBONS
        (EXACT MATCH TO REFERENCE IMAGE DIMENSIONS: ~200px COMPACT CARD HEIGHT)
        -------------------------------------------------------------------------- */
-    .section--mfg {
-      background: #ffffff !important;
-      padding-block: clamp(2.5rem, 3.5vw, 3.5rem) !important;
-      position: relative;
-    }
-    .mfg-header {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      margin-block-end: clamp(1.5rem, 2.2vw, 2.25rem) !important;
-    }
-    @media (min-width: 768px) {
-      .mfg-header {
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
-        gap: 2rem;
+      .section--mfg {
+        background: #ffffff !important;
+        padding-block: clamp(2.5rem, 3.5vw, 3.5rem) !important;
+        position: relative;
       }
-    }
-    .mfg-header__heading {
-      font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
-      font-size: clamp(1.85rem, 1.5rem + 1vw, 2.45rem) !important;
-      font-weight: 700 !important;
-      color: #000000 !important;
-      line-height: 1.15 !important;
-      letter-spacing: -0.03em !important;
-      margin: 0 !important;
-    }
-    .mfg-header__desc {
-      font-size: 0.85rem !important;
-      color: #556987 !important;
-      line-height: 1.55 !important;
-      max-width: 34rem !important;
-      margin: 0 !important;
-    }
-    .mfg-grid {
-      display: grid !important;
-      grid-template-columns: 1fr !important;
-      gap: 1.5rem !important;
-      padding-top: 0.5rem !important;
-    }
-    @media (min-width: 768px) {
-      .mfg-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: clamp(1.25rem, 2vw, 1.85rem) !important;
-      }
-    }
 
-    .mfg-card {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      border-radius: 18px !important;
-      background: #ffffff !important;
-      /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05) !important; -- shadow removed */
-      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-                  box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-                  border-color 0.35s ease;
-      min-height: 200px !important;
-      height: clamp(205px, 20vw, 230px) !important;
-      max-height: none !important;
-      box-sizing: border-box;
-      overflow: visible !important;
-    }
-    @media (max-width: 767px) {
-      .mfg-card {
-        height: auto !important;
-        min-height: 190px !important;
+      .mfg-header {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-block-end: clamp(1.5rem, 2.2vw, 2.25rem) !important;
       }
-    }
-    .mfg-card:hover {
+
+      @media (min-width: 768px) {
+        .mfg-header {
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: space-between;
+          gap: 2rem;
+        }
+      }
+
+      .mfg-header__heading {
+        font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
+        font-size: clamp(1.85rem, 1.5rem + 1vw, 2.45rem) !important;
+        font-weight: 700 !important;
+        color: #000000 !important;
+        line-height: 1.15 !important;
+        margin: 0 !important;
+      }
+
+      .mfg-header__desc {
+        font-size: 0.85rem !important;
+        color: #556987 !important;
+        line-height: 1.55 !important;
+        max-width: 34rem !important;
+        margin: 0 !important;
+      }
+
+      .mfg-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        padding-top: 0.5rem !important;
+      }
+
+      @media (min-width: 768px) {
+        .mfg-grid {
+          grid-template-columns: repeat(3, 1fr) !important;
+          gap: clamp(1.25rem, 2vw, 1.85rem) !important;
+        }
+      }
+
+      .mfg-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 0px !important;
+        /* border-radius: 18px !important; */
+        background: #ffffff !important;
+        /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05) !important; -- shadow removed */
+        transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+          box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+          border-color 0.35s ease;
+        min-height: 350px !important;
+        height: clamp(205px, 20vw, 350px) !important;
+        max-height: none !important;
+        box-sizing: border-box;
+        overflow: visible !important;
+      }
+
+      @media (max-width: 767px) {
+        .mfg-card {
+          height: auto !important;
+          min-height: 190px !important;
+        }
+      }
+
+      .mfg-card:hover {
         transform: translateY(-8px);
       }
 
@@ -730,71 +798,75 @@
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
       }
 
-    .mfg-card__link {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 100% !important;
-      flex: 1 1 auto;
-      text-decoration: none;
-      color: inherit;
-      padding: clamp(1.2rem, 1.6vw, 1.5rem) clamp(1rem, 1.4vw, 1.35rem) clamp(0.9rem, 1.2vw, 1.1rem) !important;
-      border-radius: inherit;
-      box-sizing: border-box;
-      position: relative;
-      overflow: visible !important;
-    }
+      .mfg-card__link {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100% !important;
+        flex: 1 1 auto;
+        text-decoration: none;
+        color: inherit;
+        padding: clamp(1.2rem, 1.6vw, 1.5rem) clamp(1rem, 1.4vw, 1.35rem) clamp(0.9rem, 1.2vw, 1.1rem) !important;
+        border-radius: inherit;
+        box-sizing: border-box;
+        position: relative;
+        overflow: visible !important;
+      }
 
-    /* Overhanging Folded Ribbon Badge (Top Left Corner) */
-    .mfg-card__badge {
-      position: absolute;
-      top: 14px !important;
-      left: -6px !important;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 48px !important;
-      height: 38px !important;
-      padding: 0 10px !important;
-      border-radius: 8px 14px 14px 3px !important;
-      font-weight: 800;
-      font-size: 0.92rem !important;
-      color: #ffffff;
-      letter-spacing: 0.04em;
-      z-index: 5;
-      /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16); -- shadow removed */
-      transition: transform 0.3s ease;
-    }
-    .mfg-card:hover .mfg-card__badge {
-      transform: scale(1.06);
-    }
+      /* Overhanging Folded Ribbon Badge (Top Left Corner) */
+      .mfg-card__badge {
+        position: absolute;
+        top: 14px !important;
+        left: -6px !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 100px !important;
+        height: 70px !important;
+        padding: 0 10px !important;
+        border-radius: 8px 14px 14px 3px !important;
+        font-weight: 800;
+        font-size: 0.92rem !important;
+        color: #ffffff;
+        z-index: 5;
+        /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16); -- shadow removed */
+        transition: transform 0.3s ease;
+      }
 
-    /* Small folded triangle under the left edge */
-    .mfg-card__badge::before {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 6px 6px 0 !important;
-    }
+      .mfg-card:hover .mfg-card__badge {
+        transform: scale(1.06);
+      }
 
-    /* Card 1: Lime Green Theme */
-    .mfg-card--green {
-      border: 2px solid #84cc16 !important;
-    }
-    .mfg-card--green .mfg-card__badge {
-      background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
-    }
-    .mfg-card--green .mfg-card__badge::before {
-      border-color: transparent #3f6212 transparent transparent;
-    }
-    .mfg-card--green .mfg-card__headline {
-      color: #000000 !important;
-    }
-    .mfg-card--green .mfg-card__readmore {
+      /* Small folded triangle under the left edge */
+      .mfg-card__badge::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 6px 6px 0 !important;
+      }
+
+      /* Card 1: Lime Green Theme */
+      .mfg-card--green {
+        border: 2px solid #84cc16 !important;
+      }
+
+      .mfg-card--green .mfg-card__badge {
+        background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
+      }
+
+      .mfg-card--green .mfg-card__badge::before {
+        border-color: transparent #3f6212 transparent transparent;
+      }
+
+      .mfg-card--green .mfg-card__headline {
+        color: #000000 !important;
+      }
+
+      .mfg-card--green .mfg-card__readmore {
         color: #65a30d;
         text-decoration-color: #84cc16;
       }
@@ -811,20 +883,24 @@
         text-decoration-thickness: 2.5px;
       }
 
-    /* Card 2: Golden Yellow Theme */
-    .mfg-card--yellow {
-      border: 2px solid #eab308 !important;
-    }
-    .mfg-card--yellow .mfg-card__badge {
-      background: linear-gradient(135deg, #facc15 0%, #ca8a04 100%);
-    }
-    .mfg-card--yellow .mfg-card__badge::before {
-      border-color: transparent #854d0e transparent transparent;
-    }
-    .mfg-card--yellow .mfg-card__headline {
-      color: #000000 !important;
-    }
-    .mfg-card--yellow .mfg-card__readmore {
+      /* Card 2: Golden Yellow Theme */
+      .mfg-card--yellow {
+        border: 2px solid #eab308 !important;
+      }
+
+      .mfg-card--yellow .mfg-card__badge {
+        background: linear-gradient(135deg, #facc15 0%, #ca8a04 100%);
+      }
+
+      .mfg-card--yellow .mfg-card__badge::before {
+        border-color: transparent #854d0e transparent transparent;
+      }
+
+      .mfg-card--yellow .mfg-card__headline {
+        color: #000000 !important;
+      }
+
+      .mfg-card--yellow .mfg-card__readmore {
         color: #ca8a04;
         text-decoration-color: #eab308;
       }
@@ -841,20 +917,24 @@
         text-decoration-thickness: 2.5px;
       }
 
-    /* Card 3: Warm Orange Theme */
-    .mfg-card--orange {
-      border: 2px solid #f97316 !important;
-    }
-    .mfg-card--orange .mfg-card__badge {
-      background: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
-    }
-    .mfg-card--orange .mfg-card__badge::before {
-      border-color: transparent #9a3412 transparent transparent;
-    }
-    .mfg-card--orange .mfg-card__headline {
-      color: #000000 !important;
-    }
-    .mfg-card--orange .mfg-card__readmore {
+      /* Card 3: Warm Orange Theme */
+      .mfg-card--orange {
+        border: 2px solid #f97316 !important;
+      }
+
+      .mfg-card--orange .mfg-card__badge {
+        background: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
+      }
+
+      .mfg-card--orange .mfg-card__badge::before {
+        border-color: transparent #9a3412 transparent transparent;
+      }
+
+      .mfg-card--orange .mfg-card__headline {
+        color: #000000 !important;
+      }
+
+      .mfg-card--orange .mfg-card__readmore {
         color: #ea580c;
         text-decoration-color: #f97316;
       }
@@ -871,50 +951,53 @@
         text-decoration-thickness: 2.5px;
       }
 
-    /* Card Body & Centered Content */
-    .mfg-card__body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      height: 100% !important;
-      flex: 1 1 auto;
-      justify-content: space-between;
-      gap: 6px !important;
-      box-sizing: border-box;
-    }
-    .mfg-card__content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-    }
-    .mfg-card__category {
-      font-size: clamp(0.78rem, 0.9vw, 0.88rem) !important;
-      font-weight: 600;
-      color: #64748b;
-      letter-spacing: -0.01em;
-      line-height: 1.2;
-    }
-    .mfg-card__headline {
-      font-family: var(--font-heading, "Bricolage Grotesque", sans-serif);
-      font-size: clamp(1.2rem, 1.45vw, 1.45rem) !important;
-      font-weight: 700 !important;
-      line-height: 1.18;
-      letter-spacing: -0.03em;
-      margin: 2px 0 5px !important;
-      color: #000000 !important;
-    }
-    .mfg-card__desc {
-      font-size: clamp(0.75rem, 0.8vw, 0.82rem) !important;
-      line-height: 1.48 !important;
-      color: #64748b;
-      margin: 0;
-      max-width: 30ch;
-    }
+      /* Card Body & Centered Content */
+      .mfg-card__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100% !important;
+        flex: 1 1 auto;
+        justify-content: space-between;
+        gap: 6px !important;
+        box-sizing: border-box;
+      }
 
-    /* Bottom Action Button / Read More */
+      .mfg-card__content {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      }
+
+      .mfg-card__category {
+        font-size: clamp(0.78rem, 0.9vw, 0.88rem) !important;
+        font-weight: 600;
+        color: #64748b;
+        line-height: 1.2;
+      }
+
+      .mfg-card__headline {
+        font-family: var(--font-heading, "Bricolage Grotesque", sans-serif);
+        font-size: clamp(1.2rem, 1.45vw, 1.45rem) !important;
+        font-weight: 700 !important;
+        line-height: 1.18;
+        margin: 2px 0 5px !important;
+        color: #000000 !important;
+      }
+
+      .mfg-card__desc {
+        font-size: clamp(0.75rem, 0.8vw, 0.82rem) !important;
+        line-height: 1.48 !important;
+        color: #64748b;
+        margin: 0;
+        max-width: 30ch;
+      }
+
+      /* Bottom Action Button / Read More */
       .mfg-card__action {
         padding-top: 10px !important;
         padding-bottom: 4px !important;
@@ -941,884 +1024,992 @@
         letter-spacing: 0.04em;
       }
 
-    /* --------------------------------------------------------------------------
+      /* --------------------------------------------------------------------------
        WHO WE ARE: AUTO SLIDER (LEFT) & TEXT (RIGHT)
        -------------------------------------------------------------------------- */
-    .steps-layout {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: clamp(2rem, 4vw, 4.5rem);
-      align-items: center;
-    }
-    @media (min-width: 993px) {
       .steps-layout {
-        grid-template-columns: 1fr 1.05fr !important;
-        gap: clamp(3rem, 5.5vw, 5.5rem) !important;
-        align-items: center !important;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: clamp(2rem, 4vw, 4.5rem);
+        align-items: center;
       }
-    }
 
-    .who-slider-wrap {
-      width: 100%;
-      max-width: 100%;
-      margin-inline: auto;
-    }
-    .who-slider {
-      position: relative;
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      border-radius: 16px;
-      overflow: hidden;
-      background: white;
-      /* box-shadow: 0 20px 48px rgba(0, 0, 0, 0.1); -- shadow removed */
-      border: 1px solid rgba(0, 0, 0, 0.06);
-    }
-    .who-slides-track {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-    .who-slide {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      visibility: hidden;
-      transform: scale(1.05);
-      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
-                  transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
-                  visibility 0.75s;
-      pointer-events: none;
-    }
-    .who-slide.is-active {
-      opacity: 1;
-      visibility: visible;
-      transform: scale(1);
-      pointer-events: auto;
-    }
-    .who-slide__img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      border-radius: inherit;
-    }
+      @media (min-width: 993px) {
+        .steps-layout {
+          grid-template-columns: 0.8fr 1.05fr !important;
+          gap: clamp(3rem, 5.5vw, 5.5rem) !important;
+          align-items: center !important;
+        }
+      }
 
-    /* Slider Dots */
-    .who-slider__dots {
-      position: absolute;
-      bottom: 18px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      z-index: 5;
-      background: rgba(0, 0, 0, 0.42);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      padding: 6px 14px;
-      border-radius: 9999px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-    }
-    .who-slider__dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 9999px;
-      background: rgba(255, 255, 255, 0.45);
-      border: none;
-      padding: 0;
-      cursor: pointer;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .who-slider__dot:hover {
-      background: rgba(255, 255, 255, 0.85);
-    }
-    .who-slider__dot.is-active {
-      width: 22px;
-      background: #ffffff;
-    }
+      .who-slider-wrap {
+        width: 100%;
+        max-width: 100%;
+        margin-inline: auto;
+      }
 
-    /* Slider Prev/Next Arrows */
-    .who-slider__nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.92);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      color: #000000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 5;
-      /* box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15); -- shadow removed */
-      opacity: 0;
-      transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease, color 0.2s ease;
-    }
-    .who-slider:hover .who-slider__nav {
-      opacity: 1;
-    }
-    .who-slider__nav--prev {
-      left: 14px;
-    }
-    .who-slider__nav--prev:hover {
-      transform: translateY(-50%) scale(1.08);
-      background: #000000;
-      color: #ffffff;
-    }
-    .who-slider__nav--next {
-      right: 14px;
-    }
-    .who-slider__nav--next:hover {
-      transform: translateY(-50%) scale(1.08);
-      background: #000000;
-      color: #ffffff;
-    }
-    @media (hover: none) {
+      .who-slider {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 0px;
+        overflow: hidden;
+        background: white;
+        /* box-shadow: 0 20px 48px rgba(0, 0, 0, 0.1); -- shadow removed */
+        border: 1px solid rgba(0, 0, 0, 0.06);
+      }
+
+      .who-slides-track {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+
+      .who-slide {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.05);
+        transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+          visibility 0.75s;
+        pointer-events: none;
+      }
+
+      .who-slide.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        pointer-events: auto;
+      }
+
+      .who-slide__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: inherit;
+      }
+
+      /* Slider Dots */
+      .who-slider__dots {
+        position: absolute;
+        bottom: 18px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        z-index: 5;
+        background: rgba(0, 0, 0, 0.42);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 6px 14px;
+        border-radius: 9999px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+      }
+
+      .who-slider__dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.45);
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .who-slider__dot:hover {
+        background: rgba(255, 255, 255, 0.85);
+      }
+
+      .who-slider__dot.is-active {
+        width: 22px;
+        background: #ffffff;
+      }
+
+      /* Slider Prev/Next Arrows */
       .who-slider__nav {
-        opacity: 0.85;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.92);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 5;
+        /* box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15); -- shadow removed */
+        opacity: 0;
+        transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease, color 0.2s ease;
       }
-    }
 
-    /* --------------------------------------------------------------------------
+      .who-slider:hover .who-slider__nav {
+        opacity: 1;
+      }
+
+      .who-slider__nav--prev {
+        left: 14px;
+      }
+
+      .who-slider__nav--prev:hover {
+        transform: translateY(-50%) scale(1.08);
+        background: #000000;
+        color: #ffffff;
+      }
+
+      .who-slider__nav--next {
+        right: 14px;
+      }
+
+      .who-slider__nav--next:hover {
+        transform: translateY(-50%) scale(1.08);
+        background: #000000;
+        color: #ffffff;
+      }
+
+      @media (hover: none) {
+        .who-slider__nav {
+          opacity: 0.85;
+        }
+      }
+
+      /* --------------------------------------------------------------------------
        TOP UTILITY BAR (MODERN SLEEK DESIGN)
        -------------------------------------------------------------------------- */
-    .site-topbar {
-      background: #000000;
-      color: #94a3b8;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      font-size: 0.76rem;
-      letter-spacing: 0.02em;
-      line-height: 1;
-      position: relative;
-      z-index: 1001;
-    }
-    .site-topbar__inner {
-      width: 80% !important;
-      max-width: 80% !important;
-      margin-inline: auto !important;
-      padding: 7px 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      box-sizing: border-box;
-    }
-    .site-topbar__left,
-    .site-topbar__right {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-    .site-topbar__item {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .site-topbar__icon {
-      color: #94a3b8;
-      flex-shrink: 0;
-      transition: color 0.2s ease, transform 0.2s ease;
-    }
-    .site-topbar__item:hover .site-topbar__icon {
-      color: #ffffff;
-      transform: translateY(-1px);
-    }
-    .site-topbar__muted {
-      color: #64748b;
-      font-weight: 500;
-    }
-    .site-topbar__link {
-      color: #e2e8f0;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
-    .site-topbar__link:hover {
-      color: #ffffff;
-    }
-    .site-topbar__link--highlight {
-      position: relative;
-      color: #ffffff;
-    }
-    .site-topbar__link--highlight::after {
-      content: "";
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 0;
-      height: 1px;
-      background: #ffffff;
-      transition: width 0.25s ease;
-    }
-    .site-topbar__link--highlight:hover::after {
-      width: 100%;
-    }
-    .site-topbar__divider {
-      display: inline-block;
-      width: 1px;
-      height: 11px;
-      background: rgba(255, 255, 255, 0.15);
-      flex-shrink: 0;
-    }
-    .site-topbar__social {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: #e2e8f0;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 3px 10px;
-      border-radius: 9999px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.25s ease;
-    }
-    .site-topbar__social:hover {
-      color: #ffffff;
-      background: #0077b5;
-      border-color: #0077b5;
-      transform: translateY(-1px);
-      /* box-shadow: 0 2px 8px rgba(0, 119, 181, 0.35); -- shadow removed */
-    }
-    .site-topbar__social-icon {
-      width: 12px;
-      height: 12px;
-      flex-shrink: 0;
-    }
+      .site-topbar {
+        background: hsl(141.03deg 81.82% 28.04%);
+        color: #94a3b8;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        font-size: 1rem;
+        line-height: 1;
+        position: relative;
+        z-index: 1001;
+      }
 
-    @media (max-width: 992px) {
       .site-topbar__inner {
-        width: 90% !important;
-        max-width: 90% !important;
+        width: 80% !important;
+        max-width: 80% !important;
+        margin-inline: auto !important;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        box-sizing: border-box;
       }
-    }
-    @media (max-width: 768px) {
-      .site-topbar__inner {
-        padding: 6px 0;
-        font-size: 0.72rem;
+
+      .site-topbar__left,
+      .site-topbar__right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
       }
-      .site-topbar__left {
-        gap: 10px;
-        overflow-x: auto;
-        scrollbar-width: none;
+
+      .site-topbar__item {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
       }
-      .site-topbar__left::-webkit-scrollbar {
-        display: none;
+
+      .site-topbar__icon {
+        color: #fff;
+        flex-shrink: 0;
+        transition: color 0.2s ease, transform 0.2s ease;
       }
+
+      .site-topbar__item:hover .site-topbar__icon {
+        color: #ffffff;
+        transform: translateY(-1px);
+      }
+
       .site-topbar__muted {
-        display: none;
+        color: #fff;
+        font-weight: 500;
       }
-    }
 
-    /* --------------------------------------------------------------------------
+      .site-topbar__link {
+        color: #e2e8f0;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .site-topbar__link:hover {
+        color: #ffffff;
+      }
+
+      .site-topbar__link--highlight {
+        position: relative;
+        color: #ffffff;
+      }
+
+      .site-header .nav__link::after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #e0302f;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+      }
+
+      .site-topbar__link--highlight:hover::after {
+        width: 100%;
+      }
+
+      .site-topbar__divider {
+        display: inline-block;
+        width: 1px;
+        height: 11px;
+        background: rgba(255, 255, 255, 0.15);
+        flex-shrink: 0;
+      }
+
+      .site-topbar__social {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: #e2e8f0;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 3px 10px;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.25s ease;
+      }
+
+      .site-topbar__social:hover {
+        color: #ffffff;
+        background: #0077b5;
+        border-color: #0077b5;
+        transform: translateY(-1px);
+        /* box-shadow: 0 2px 8px rgba(0, 119, 181, 0.35); -- shadow removed */
+      }
+
+      .site-topbar__social-icon {
+        width: 12px;
+        height: 12px;
+        flex-shrink: 0;
+      }
+
+      @media (max-width: 992px) {
+        .site-topbar__inner {
+          width: 90% !important;
+          max-width: 90% !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .site-topbar__inner {
+          padding: 6px 0;
+          font-size: 0.72rem;
+        }
+
+        .site-topbar__left {
+          gap: 10px;
+          overflow-x: auto;
+          scrollbar-width: none;
+        }
+
+        .site-topbar__left::-webkit-scrollbar {
+          display: none;
+        }
+
+        .site-topbar__muted {
+          display: none;
+        }
+      }
+
+      /* --------------------------------------------------------------------------
        1. WHITE HEADER STYLING FOR INDEX.HTML
        -------------------------------------------------------------------------- */
-    .site-header {
-      background: rgba(255, 255, 255, 0.98) !important;
-      border-block-end: 1px solid rgba(0, 0, 0, 0.08) !important;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
-      /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important; -- shadow removed */
-      backdrop-filter: blur(12px) !important;
-      -webkit-backdrop-filter: blur(12px) !important;
-    }
-    .site-header .brand__logo {
-      filter: brightness(0) !important;
-    }
-    .site-header .nav__link {
-      color: #1a1e24 !important;
-      font-weight: 600 !important;
-      transition: color 0.2s ease, background-color 0.2s ease;
-    }
-    .site-header .nav__link:hover {
-      color: #e0302f !important;
-      background-color: rgba(224, 48, 47, 0.08) !important;
-    }
-    .site-header .header__search-btn {
-      color: #1a1e24 !important;
-      border-color: #d8dde6 !important;
-      background: #f8fafc !important;
-      transition: all 0.2s ease;
-    }
-    .site-header .header__search-btn:hover {
-      background-color: #e0302f !important;
-      color: #ffffff !important;
-      border-color: #e0302f !important;
-    }
-    .site-header .nav-toggle {
-      color: #1a1e24 !important;
-      background: #f1f4f9 !important;
-      border: 1px solid #d8dde6 !important;
-    }
-    .site-header .btn-gradient-pill,
-    .site-header .nav__mobile-cta .btn-gradient-pill {
-      background: #000000 !important;
-      color: #ffffff !important;
-      border: 1.5px solid #000000 !important;
-    }
-    .site-header .btn-gradient-pill:hover,
-    .site-header .nav__mobile-cta .btn-gradient-pill:hover {
-      background: #222222 !important;
-      border-color: #222222 !important;
-      color: #ffffff !important;
-      transform: translateY(-2px);
-    }
+      .site-header {
+        background: rgba(255, 255, 255, 0.98) !important;
+        border-block-end: 1px solid rgba(0, 0, 0, 0.08) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+        /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important; -- shadow removed */
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+      }
 
-    /* --------------------------------------------------------------------------
+      .site-header .brand__logo {
+        filter: brightness(0) !important;
+      }
+
+      .site-header .nav__link {
+        color: #1a1e24 !important;
+        font-weight: 600 !important;
+        position: relative;
+        display: inline-block;
+        transition: color 0.2s ease;
+      }
+
+      .site-header .nav__link::after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #e0302f;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.3s ease;
+      }
+
+      .site-header .nav__link:hover {
+        color: #e0302f !important;
+        background-color: transparent !important;
+      }
+
+      .site-header .nav__link:hover::after {
+        transform: scaleX(1);
+      }
+
+      .site-header .header__search-btn {
+        color: #1a1e24 !important;
+        border-color: #d8dde6 !important;
+        background: #f8fafc !important;
+        transition: all 0.2s ease;
+      }
+
+      .site-header .header__search-btn:hover {
+        background-color: #e0302f !important;
+        color: #ffffff !important;
+        border-color: #e0302f !important;
+      }
+
+      .site-header .nav-toggle {
+        color: #1a1e24 !important;
+        background: #f1f4f9 !important;
+        border: 1px solid #d8dde6 !important;
+      }
+
+      .site-header .btn-gradient-pill,
+      .site-header .nav__mobile-cta .btn-gradient-pill {
+        background: #000000 !important;
+        color: #ffffff !important;
+        /* border: 1.5px solid #000000 !important; */
+      }
+
+      .site-header .btn-gradient-pill:hover,
+      .site-header .nav__mobile-cta .btn-gradient-pill:hover {
+        background: #222222 !important;
+        border-color: #222222 !important;
+        color: #ffffff !important;
+        transform: translateY(-2px);
+      }
+
+      /* --------------------------------------------------------------------------
        2. 2-PART SPLIT SCROLL BANNER (CURVED REFERENCE STYLE + DUAL VERTICAL SLIDE)
        -------------------------------------------------------------------------- */
-    .split-hero {
-      position: relative;
-      height: 350vh;
-      background: #ffffff;
-      color: #000000;
-    }
-    .split-hero * {
-      box-sizing: border-box;
-    }
-    .split-hero__pin {
-      position: sticky;
-      top: 0;
-      height: 90vh;
-      overflow: hidden;
-      display: flex;
-      align-items: stretch;
-      background: #ffffff;
-      padding: 0;
-    }
-    /* Right-aligned Navigation Menu with CTA Button */
-    @media (min-width: 993px) {
-      .site-header .header__inner {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: flex-start !important;
-        gap: 16px !important;
-        padding-block: 14px !important;
+      .split-hero {
+        position: relative;
+        height: 300vh;
+        background: #ffffff;
+        color: #000000;
       }
-      .site-header .brand {
-        margin-right: auto !important; /* anchors logo on the far left, pushing menu to the right */
-        flex-shrink: 0 !important;
-      }
-      .site-header .site-nav {
-        margin-left: auto !important; /* right aligns the navigation menu */
-        display: flex !important;
-        align-items: center !important;
-      }
-      .site-header .nav__list {
-        display: flex !important;
-        flex-direction: row !important;
-        align-items: center !important;
-        justify-content: flex-end !important;
-        gap: clamp(4px, 0.8vw, 12px) !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        list-style: none !important;
-      }
-      .site-header .header__actions {
-        display: flex !important;
-        align-items: center !important;
-        margin-left: clamp(12px, 1.6vw, 24px) !important;
-        flex-shrink: 0 !important;
-      }
-    }
 
-    /* --------------------------------------------------------------------------
+      .split-hero * {
+        box-sizing: border-box;
+      }
+
+      .split-hero__pin {
+        position: sticky;
+        top: var(--header-actual-h, 110px);
+        height: calc(100vh - var(--header-actual-h, 110px));
+        height: calc(100dvh - var(--header-actual-h, 110px));
+        overflow: hidden;
+        display: flex;
+        align-items: stretch;
+        background: #ffffff;
+        padding: 0;
+        z-index: 10;
+      }
+
+      /* Right-aligned Navigation Menu with CTA Button */
+      @media (min-width: 993px) {
+        .site-header .header__inner {
+          display: flex !important;
+          align-items: center !important;
+          justify-content: flex-start !important;
+          gap: 16px !important;
+          padding-block: 44px !important;
+        }
+
+        .site-header .brand {
+          margin-right: auto !important;
+          /* anchors logo on the far left, pushing menu to the right */
+          flex-shrink: 0 !important;
+        }
+
+        .site-header .site-nav {
+          margin-left: auto !important;
+          /* right aligns the navigation menu */
+          display: flex !important;
+          align-items: center !important;
+        }
+
+        .site-header .nav__list {
+          display: flex !important;
+          flex-direction: row !important;
+          align-items: center !important;
+          justify-content: flex-end !important;
+          gap: clamp(2px, 0.4vw, 8px) !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          list-style: none !important;
+        }
+
+        .site-header .header__actions {
+          display: flex !important;
+          align-items: center !important;
+          margin-left: clamp(12px, 1.6vw, 24px) !important;
+          flex-shrink: 0 !important;
+        }
+      }
+
+      /* --------------------------------------------------------------------------
        80% CONTAINER SYSTEM (CONTENT & HEADER) + FULL-BLEED RIGHT IMAGE
        -------------------------------------------------------------------------- */
-    .container,
-    .container--editorial,
-    .container--video,
-    .header__inner {
-      width: 80% !important;
-      max-width: 80% !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      margin-inline: auto !important;
-      box-sizing: border-box !important;
-    }
+      .container,
+      .container--editorial,
+      .container--video,
+      .header__inner {
+        width: 80% !important;
+        max-width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-inline: auto !important;
+        box-sizing: border-box !important;
+      }
 
-    .site-header .header__inner {
-      padding-inline: 0 !important;
-    }
+      .site-header .header__inner {
+        padding-inline: 0 !important;
+      }
 
-    /* Split Hero: Left text aligns at 10vw (80% container left edge / logo),
+      /* Split Hero: Left text aligns at 10vw (80% container left edge / logo),
        Right image column extends FULL to the very last end of the right screen edge (100vh) */
-    .split-hero__inner {
-      width: 100% !important;
-      max-width: 100% !important;
-      height: 100% !important;
-      display: grid;
-      grid-template-columns: 1fr 1.25fr;
-      align-items: stretch;
-      padding: 0 !important;
-      margin: 0 !important;
-      box-sizing: border-box !important;
-    }
+      .split-hero__inner {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 100% !important;
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        align-items: stretch;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+      }
 
-    /* Part 1: Text Column (Flush aligned with 80% container left edge / logo) */
-    .split-hero__text-col {
-      position: relative;
-      height: 100% !important;
-      overflow: hidden;
-      padding-left: 10vw !important;
-      padding-right: clamp(20px, 3.5vw, 56px) !important;
-      padding-top: 110px !important;
-      padding-bottom: 30px !important;
-      display: flex;
-      align-items: center;
-      box-sizing: border-box !important;
-    }
-    .split-hero__pane {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-left: 10vw !important;
-      padding-right: clamp(16px, 2.5vw, 36px) !important;
-      padding-top: 110px !important;
-      padding-bottom: 30px !important;
-      box-sizing: border-box !important;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-100%);
-      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                  opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
-                  visibility 0.8s;
-      pointer-events: none;
-      will-change: transform, opacity;
-    }
-    .split-hero__pane.is-active {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-      pointer-events: auto;
-    }
-    .split-hero__pane.is-passed {
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(100%); /* Slides down to bottom */
-      pointer-events: none;
-    }
-    .split-hero__pane.is-upcoming {
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-100%); /* Waiting at top */
-      pointer-events: none;
-    }
+      /* Part 1: Text Column (Flush aligned with 80% container left edge / logo) */
+      .split-hero__text-col {
+        position: relative;
+        height: 100% !important;
+        overflow: hidden;
+        padding-left: 10vw !important;
+        padding-right: clamp(20px, 3.5vw, 56px) !important;
+        /* padding-top: 110px !important; */
+        padding-bottom: 30px !important;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box !important;
+      }
 
-    .split-hero__meta {
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #64748b;
-      margin-bottom: 18px;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 8px;
-      display: none;
-    }
-    .split-hero__meta span.meta-dot {
-      display: inline-block;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background: #000000;
-      opacity: 0.45;
-    }
-    .split-hero__title {
-      font-family: var(--font-heading, "Bricolage Grotesque", sans-serif);
-      font-size: clamp(2.3rem, 3.8vw, 3.5rem);
-      line-height: 1.12;
-      font-weight: 700 !important;
-      letter-spacing: -0.03em;
-      color: #000000 !important;
-      margin: 0 0 18px;
-      max-width: 18ch;
-    }
-    .split-hero__title * {
-      font-weight: 700 !important;
-      color: #000000 !important;
-      -webkit-text-fill-color: #000000 !important;
-      background: none !important;
-    }
-    .mfg-header__heading,
-    .section-heading {
-      font-weight: 700 !important;
-    }
-    .split-hero__desc {
-      font-size: clamp(0.95rem, 1.1vw, 1.05rem);
-      line-height: 1.65;
-      color: #475569;
-      margin: 0 0 28px;
-      max-width: 48ch;
-    }
-    .split-hero__actions {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-    /* --------------------------------------------------------------------------
+      .split-hero__pane {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 10vw !important;
+        padding-right: clamp(16px, 2.5vw, 36px) !important;
+        padding-top: 110px !important;
+        padding-bottom: 30px !important;
+        box-sizing: border-box !important;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100%);
+        transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+          opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+          visibility 0.8s;
+        pointer-events: none;
+        will-change: transform, opacity;
+      }
+
+      .split-hero__pane.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      .split-hero__pane.is-passed {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(100%);
+        /* Slides down to bottom */
+        pointer-events: none;
+      }
+
+      .split-hero__pane.is-upcoming {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100%);
+        /* Waiting at top */
+        pointer-events: none;
+      }
+
+      .split-hero__meta {
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #64748b;
+        margin-bottom: 18px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        display: none;
+      }
+
+      .split-hero__meta span.meta-dot {
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #000000;
+        opacity: 0.45;
+      }
+
+      .split-hero__title {
+        font-family: var(--font-heading, "Bricolage Grotesque", sans-serif);
+        font-size: clamp(2.3rem, 3vw, 5rem);
+        line-height: 1.12;
+        font-weight: 700 !important;
+        color: #000000 !important;
+        margin: 0 0 18px;
+        max-width: 18ch;
+      }
+
+      .split-hero__title * {
+        font-weight: 700 !important;
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+        background: none !important;
+      }
+
+      .mfg-header__heading,
+      .section-heading {
+        font-weight: 700 !important;
+      }
+
+      .split-hero__desc {
+        font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+        line-height: 1.65;
+        color: #475569;
+        margin: 0 0 28px;
+        max-width: 48ch;
+      }
+
+      .split-hero__actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      /* --------------------------------------------------------------------------
        ANIMATED BUTTONS (ROLLING TEXT + SLIDING CHEVRON ARROW)
        -------------------------------------------------------------------------- */
-    .btn-black-pill,
-    .split-hero .btn-gradient-pill,
-    .btn-outline-pill,
-    .split-hero .btn-outline-pill,
-    .site-header .btn-gradient-pill,
-    .site-header .nav__mobile-cta .btn-gradient-pill {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 13px 30px;
-      border-radius: 9999px;
-      font-weight: 700;
-      font-size: 0.88rem;
-      letter-spacing: 0.02em;
-      text-decoration: none;
-      overflow: hidden;
-      cursor: pointer;
-      box-sizing: border-box;
-      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease;
-    }
+      .btn-black-pill,
+      .split-hero .btn-gradient-pill,
+      .btn-outline-pill,
+      .split-hero .btn-outline-pill,
+      .site-header .btn-gradient-pill,
+      .site-header .nav__mobile-cta .btn-gradient-pill {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 13px 30px;
+        border-radius: 9999px;
+        font-weight: 700;
+        font-size: 0.88rem;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        box-sizing: border-box;
+        transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.25s ease;
+      }
 
-    .btn-black-pill,
-    .split-hero .btn-gradient-pill,
-    .site-header .btn-gradient-pill,
-    .site-header .nav__mobile-cta .btn-gradient-pill {
-      background: #000000 !important;
-      color: #ffffff !important;
-      border: 1.5px solid #000000 !important;
-      /* box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18) !important; -- shadow removed */
-    }
-    .btn-black-pill:hover,
-    .split-hero .btn-gradient-pill:hover,
-    .site-header .btn-gradient-pill:hover,
-    .site-header .nav__mobile-cta .btn-gradient-pill:hover {
-      border-color: #2e2e2e !important;
-      color: #ffffff !important;
-      transform: translateY(-2px);
-      /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28) !important; -- shadow removed */
-    }
+      .btn-black-pill,
+      .split-hero .btn-gradient-pill,
+      .site-header .btn-gradient-pill,
+      .site-header .nav__mobile-cta .btn-gradient-pill {
+        background: #000000 !important;
+        color: #ffffff !important;
+        /* border: 1.5px solid #000000 !important; */
+        /* box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18) !important; -- shadow removed */
+      }
 
-    .btn-outline-pill,
-    .split-hero .btn-outline-pill {
-      background: transparent !important;
-      color: #000000 !important;
-      border: 1.5px solid #000000 !important;
-    }
-    .btn-outline-pill:hover,
-    .split-hero .btn-outline-pill:hover {
-      color: #ffffff !important;
-      border-color: #000000 !important;
-      transform: translateY(-2px);
-      /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); -- shadow removed */
-    }
+      .btn-black-pill:hover,
+      .split-hero .btn-gradient-pill:hover,
+      .site-header .btn-gradient-pill:hover,
+      .site-header .nav__mobile-cta .btn-gradient-pill:hover {
+        border-color: #2e2e2e !important;
+        color: #ffffff !important;
+        transform: translateY(-2px);
+        /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28) !important; -- shadow removed */
+      }
 
-    /* --------------------------------------------------------------------------
+      .btn-outline-pill,
+      .split-hero .btn-outline-pill {
+        background: transparent !important;
+        color: #000000 !important;
+        /* border: 1.5px solid #000000 !important; */
+      }
+
+      .btn-outline-pill:hover,
+      .split-hero .btn-outline-pill:hover {
+        color: #ffffff !important;
+        border-color: #000000 !important;
+        transform: translateY(-2px);
+        /* box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); -- shadow removed */
+      }
+
+      /* --------------------------------------------------------------------------
        BACKGROUND FILL FROM LEFT TO RIGHT ON HOVER
        -------------------------------------------------------------------------- */
-    .btn-black-pill::before,
-    .split-hero .btn-gradient-pill::before,
-    .site-header .btn-gradient-pill::before,
-    .site-header .nav__mobile-cta .btn-gradient-pill::before,
-    .btn-outline-pill::before,
-    .split-hero .btn-outline-pill::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: inherit;
-      z-index: 0;
-      pointer-events: none;
-      transform: scaleX(0);
-      transform-origin: left center;
-      transition: transform 0.42s cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: transform;
-    }
+      .btn-black-pill::before,
+      .split-hero .btn-gradient-pill::before,
+      .site-header .btn-gradient-pill::before,
+      .site-header .nav__mobile-cta .btn-gradient-pill::before,
+      .btn-outline-pill::before,
+      .split-hero .btn-outline-pill::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        z-index: 0;
+        pointer-events: none;
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 0.42s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: transform;
+      }
 
-    /* On hover: fill sweeps across from left to right smoothly */
-    .btn-black-pill:hover::before,
-    .split-hero .btn-gradient-pill:hover::before,
-    .site-header .btn-gradient-pill:hover::before,
-    .site-header .nav__mobile-cta .btn-gradient-pill:hover::before,
-    .btn-outline-pill:hover::before,
-    .split-hero .btn-outline-pill:hover::before {
-      transform: scaleX(1);
-    }
+      /* On hover: fill sweeps across from left to right smoothly */
+      .btn-black-pill:hover::before,
+      .split-hero .btn-gradient-pill:hover::before,
+      .site-header .btn-gradient-pill:hover::before,
+      .site-header .nav__mobile-cta .btn-gradient-pill:hover::before,
+      .btn-outline-pill:hover::before,
+      .split-hero .btn-outline-pill:hover::before {
+        transform: scaleX(1);
+      }
 
-    /* Primary CTA fill: dark charcoal tone over solid black */
-    .btn-black-pill::before,
-    .split-hero .btn-gradient-pill::before,
-    .site-header .btn-gradient-pill::before,
-    .site-header .nav__mobile-cta .btn-gradient-pill::before {
-      background: #2e2e2e;
-    }
+      /* Primary CTA fill: dark charcoal tone over solid black */
+      .btn-black-pill::before,
+      .split-hero .btn-gradient-pill::before,
+      .site-header .btn-gradient-pill::before,
+      .site-header .nav__mobile-cta .btn-gradient-pill::before {
+        background: #2e2e2e;
+      }
 
-    /* Secondary CTA fill: pure solid black over transparent outline */
-    .btn-outline-pill::before,
-    .split-hero .btn-outline-pill::before {
-      background: #000000;
-    }
+      /* Secondary CTA fill: pure solid black over transparent outline */
+      .btn-outline-pill::before,
+      .split-hero .btn-outline-pill::before {
+        background: #000000;
+      }
 
-    /* 1. Text Roll Animation: text goes up, same text comes from bottom */
-    .btn-anim__text {
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-      overflow: hidden;
-      line-height: 1.25;
-      vertical-align: middle;
-    }
-    .btn-anim__text-track {
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1);
-      will-change: transform;
-    }
-    .btn-anim__text-item {
-      display: block;
-      white-space: nowrap;
-      line-height: 1.25;
-    }
-    .btn-anim__text-clone {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-    }
+      /* 1. Text Roll Animation: text goes up, same text comes from bottom */
+      .btn-anim__text {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        line-height: 1.25;
+        vertical-align: middle;
+      }
 
-    .btn-black-pill:hover .btn-anim__text-track,
-    .split-hero .btn-gradient-pill:hover .btn-anim__text-track,
-    .btn-outline-pill:hover .btn-anim__text-track,
-    .split-hero .btn-outline-pill:hover .btn-anim__text-track,
-    .site-header .btn-gradient-pill:hover .btn-anim__text-track,
-    .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__text-track {
-      transform: translateY(-100%);
-    }
+      .btn-anim__text-track {
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: transform;
+      }
 
-    /* 2. Arrow Slide Animation: arrow goes to right, same arrow comes from left */
-    .btn-anim__icon {
-      position: relative;
-      z-index: 1;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 12px;
-      height: 12px;
-      overflow: hidden;
-      flex-shrink: 0;
-      vertical-align: middle;
-    }
-    .btn-anim__icon-track {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      position: relative;
-    }
-    .btn-anim__icon-item {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
-      will-change: transform, opacity;
-    }
-    .btn-anim__icon-item:not(.btn-anim__icon-clone) {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    .btn-anim__icon-clone {
-      transform: translateX(-150%);
-      opacity: 0;
-    }
+      .btn-anim__text-item {
+        display: block;
+        white-space: nowrap;
+        line-height: 1.25;
+      }
 
-    .btn-black-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-    .split-hero .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-    .btn-outline-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-    .split-hero .btn-outline-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-    .site-header .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-    .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone) {
-      transform: translateX(150%);
-      opacity: 0;
-    }
-    .btn-black-pill:hover .btn-anim__icon-clone,
-    .split-hero .btn-gradient-pill:hover .btn-anim__icon-clone,
-    .btn-outline-pill:hover .btn-anim__icon-clone,
-    .split-hero .btn-outline-pill:hover .btn-anim__icon-clone,
-    .site-header .btn-gradient-pill:hover .btn-anim__icon-clone,
-    .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__icon-clone {
-      transform: translateX(0);
-      opacity: 1;
-    }
+      .btn-anim__text-clone {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+      }
 
-    /* Part 2: Media Column (Curved Cutout Mask - Full 100vh) */
-    .split-hero__media-col {
-      position: relative;
-      width: 100%;
-      height: 100% !important;
-      display: flex;
-      align-items: stretch;
-      justify-content: flex-end;
-      padding: 0 !important;
-      margin: 0 !important;
-    }
-    .split-hero__card {
-      position: relative;
-      width: 100%;
-      height: 100% !important;
-      min-height: 100% !important;
-      overflow: hidden;
-      background: #0f172a;
-      -webkit-clip-path: none !important;
-      clip-path: none !important;
-      border-radius: 0 !important;
-      border-bottom-left-radius: 0 !important;
-      /* box-shadow: none; -- shadow removed */
-    }
-    .split-hero__img-item {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(100%);
-      transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
-                  opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
-                  visibility 0.85s;
-      pointer-events: none;
-      will-change: transform, opacity;
-    }
-    .split-hero__img-item.is-active {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-      pointer-events: auto;
-    }
-    .split-hero__img-item.is-passed {
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-100%); /* Slides up to top */
-      pointer-events: none;
-    }
-    .split-hero__img-item.is-upcoming {
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(100%); /* Waiting at bottom */
-      pointer-events: none;
-    }
-    .split-hero__img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 0 !important;
-      transform: scale(1);
-      transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
-    }
+      .btn-black-pill:hover .btn-anim__text-track,
+      .split-hero .btn-gradient-pill:hover .btn-anim__text-track,
+      .btn-outline-pill:hover .btn-anim__text-track,
+      .split-hero .btn-outline-pill:hover .btn-anim__text-track,
+      .site-header .btn-gradient-pill:hover .btn-anim__text-track,
+      .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__text-track {
+        transform: translateY(-100%);
+      }
+
+      /* 2. Arrow Slide Animation: arrow goes to right, same arrow comes from left */
+      .btn-anim__icon {
+        position: relative;
+        z-index: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+        overflow: hidden;
+        flex-shrink: 0;
+        vertical-align: middle;
+      }
+
+      .btn-anim__icon-track {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      .btn-anim__icon-item {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+        will-change: transform, opacity;
+      }
+
+      .btn-anim__icon-item:not(.btn-anim__icon-clone) {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      .btn-anim__icon-clone {
+        transform: translateX(-150%);
+        opacity: 0;
+      }
+
+      .btn-black-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+      .split-hero .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+      .btn-outline-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+      .split-hero .btn-outline-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+      .site-header .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+      .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone) {
+        transform: translateX(150%);
+        opacity: 0;
+      }
+
+      .btn-black-pill:hover .btn-anim__icon-clone,
+      .split-hero .btn-gradient-pill:hover .btn-anim__icon-clone,
+      .btn-outline-pill:hover .btn-anim__icon-clone,
+      .split-hero .btn-outline-pill:hover .btn-anim__icon-clone,
+      .site-header .btn-gradient-pill:hover .btn-anim__icon-clone,
+      .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__icon-clone {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      /* Part 2: Media Column (Curved Cutout Mask - Full 100vh) */
+      .split-hero__media-col {
+        position: relative;
+        width: 100%;
+        height: 100% !important;
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-end;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      .split-hero__card {
+        position: relative;
+        width: 100%;
+        height: 100% !important;
+        min-height: 100% !important;
+        overflow: hidden;
+        background: #0f172a;
+        -webkit-clip-path: none !important;
+        clip-path: none !important;
+        border-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        /* box-shadow: none; -- shadow removed */
+      }
+
+      .split-hero__img-item {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(100%);
+        transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+          opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+          visibility 0.85s;
+        pointer-events: none;
+        will-change: transform, opacity;
+      }
+
+      .split-hero__img-item.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      .split-hero__img-item.is-passed {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-100%);
+        /* Slides up to top */
+        pointer-events: none;
+      }
+
+      .split-hero__img-item.is-upcoming {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(100%);
+        /* Waiting at bottom */
+        pointer-events: none;
+      }
+
+      .split-hero__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 0 !important;
+        transform: scale(1);
+        transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+      }
 
       video.split-hero__img {
         display: block;
         object-fit: cover;
       }
-    .split-hero__img-item:not(.is-active) .split-hero__img {
-      transform: scale(1.08);
-    }
-    .split-hero__img-badge {
-      position: absolute;
-      right: 28px;
-      bottom: 38px;
-      z-index: 5;
-      /* display: inline-flex; */
-      display: none !important;
-      align-items: center;
-      gap: 10px;
-      padding: 9px 20px;
-      border-radius: 9999px;
-      background: rgba(0, 0, 0, 0.82);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      color: #ffffff;
-      font-size: 0.82rem;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); -- shadow removed */
-    }
-    .split-hero__img-step {
-      font-weight: 800;
-      color: #ffffff;
-      letter-spacing: 0.05em;
-    }
-    .split-hero__img-caption {
-      font-weight: 600;
-      color: #e2e8f0;
-    }
 
-    /* Interactive Scene Indicator Tabs */
-    .split-hero__nav {
-      position: absolute;
-      bottom: 24px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      z-index: 10;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      padding: 6px 12px;
-      border-radius: 9999px;
-      /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); -- shadow removed */
-      border: 1px solid rgba(0, 0, 0, 0.08);
-    }
-    .split-hero__nav-btn {
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 6px 14px;
-      border-radius: 9999px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      color: #64748b;
-      font-family: inherit;
-      font-size: 0.82rem;
-      font-weight: 600;
-      transition: all 0.25s ease;
-    }
-    .split-hero__nav-btn:hover {
-      color: #000000;
-    }
-    .split-hero__nav-btn.is-active {
-      background: #000000 !important;
-      color: #ffffff !important;
-    }
-    .split-hero__nav-btn.is-active .split-hero__nav-num {
-      color: #ffffff !important;
-    }
+      .split-hero__img-item:not(.is-active) .split-hero__img {
+        transform: scale(1.08);
+      }
+
+      .split-hero__img-badge {
+        position: absolute;
+        right: 28px;
+        bottom: 38px;
+        z-index: 5;
+        /* display: inline-flex; */
+        display: none !important;
+        align-items: center;
+        gap: 10px;
+        padding: 9px 20px;
+        border-radius: 9999px;
+        background: rgba(0, 0, 0, 0.82);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: #ffffff;
+        font-size: 0.82rem;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); -- shadow removed */
+      }
+
+      .split-hero__img-step {
+        font-weight: 800;
+        color: #ffffff;
+      }
+
+      .split-hero__img-caption {
+        font-weight: 600;
+        color: #e2e8f0;
+      }
+
+      /* Interactive Scene Indicator Tabs */
+      .split-hero__nav {
+        position: absolute;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 6px 12px;
+        border-radius: 9999px;
+        /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); -- shadow removed */
+        border: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .split-hero__nav-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 6px 14px;
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        color: #64748b;
+        font-family: inherit;
+        font-size: 0.82rem;
+        font-weight: 600;
+        transition: all 0.25s ease;
+      }
+
+      .split-hero__nav-btn:hover {
+        color: #000000;
+      }
+
+      .split-hero__nav-btn.is-active {
+        background: #000000 !important;
+        color: #ffffff !important;
+      }
+
+      .split-hero__nav-btn.is-active .split-hero__nav-num {
+        color: #ffffff !important;
+      }
 
       /* Pagination Dots on Image's Right Side */
       .split-hero__dots {
@@ -1865,111 +2056,129 @@
         border-radius: 9999px;
       }
 
-
-    /* Mouse Scroll Indicator */
-    .split-hero__scroll-cue {
-      position: absolute;
-      right: calc(10% + 14px);
-      bottom: 24px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 0.78rem;
-      font-weight: 700;
-      color: #64748b;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      opacity: 1;
-      transition: opacity 0.4s ease;
-    }
-    .split-hero__mouse {
-      width: 20px;
-      height: 32px;
-      border: 2px solid #000000;
-      border-radius: 14px;
-      position: relative;
-    }
-    .split-hero__mouse::after {
-      content: "";
-      position: absolute;
-      top: 6px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 3px;
-      height: 6px;
-      border-radius: 2px;
-      background: #000000;
-      animation: mouseWheel 1.5s infinite;
-    }
-    @keyframes mouseWheel {
-      0% { opacity: 1; transform: translate(-50%, 0); }
-      100% { opacity: 0; transform: translate(-50%, 12px); }
-    }
-
-    /* Linear Progress Bar */
-    .split-hero__progress-bar {
-      display: none;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 3px;
-      width: 100%;
-      background: #000000;
-      transform: scaleX(0);
-      transform-origin: 0 50%;
-      transition: transform 0.1s linear;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 992px) {
-      .container,
-      .container--editorial,
-      .container--video,
-      .header__inner {
-        width: 90% !important;
-        max-width: 90% !important;
-      }
+      /* Mouse Scroll Indicator */
       .split-hero__scroll-cue {
-        right: 5% !important;
+        position: absolute;
+        right: calc(10% + 14px);
+        bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.78rem;
+        font-weight: 700;
+        color: #64748b;
+        text-transform: uppercase;
+        opacity: 1;
+        transition: opacity 0.4s ease;
       }
-      .split-hero__inner {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 85px 20px 60px;
+
+      .split-hero__mouse {
+        width: 20px;
+        height: 32px;
+        border: 2px solid #000000;
+        border-radius: 14px;
+        position: relative;
       }
-      .split-hero__text-col {
-        height: auto;
-        min-height: 280px;
-        padding-left: 0;
-        padding-right: 0;
+
+      .split-hero__mouse::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 3px;
+        height: 6px;
+        border-radius: 2px;
+        background: #000000;
+        animation: mouseWheel 1.5s infinite;
       }
-      .split-hero__pane {
-        padding-left: 0;
-        padding-right: 0;
+
+      @keyframes mouseWheel {
+        0% {
+          opacity: 1;
+          transform: translate(-50%, 0);
+        }
+
+        100% {
+          opacity: 0;
+          transform: translate(-50%, 12px);
+        }
       }
-      .split-hero__media-col {
-        padding: 0;
-      }
-      .split-hero__card {
-        height: 340px;
-        clip-path: none !important;
-        -webkit-clip-path: none !important;
-        border-radius: 0 !important;
-      }
-      .split-hero__img-badge {
-        right: 14px;
-        bottom: 14px;
-      }
-      .split-hero__nav-label {
+
+      /* Linear Progress Bar */
+      .split-hero__progress-bar {
         display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background: #000000;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition: transform 0.1s linear;
       }
-      .split-hero__scroll-cue {
-        display: none;
-      }
+
+      /* Responsive adjustments */
+      @media (max-width: 992px) {
+
+        .container,
+        .container--editorial,
+        .container--video,
+        .header__inner {
+          width: 90% !important;
+          max-width: 90% !important;
+        }
+
+        .split-hero__scroll-cue {
+          right: 5% !important;
+        }
+
+        .split-hero__inner {
+          width: 100% !important;
+          max-width: 100% !important;
+          padding-left: 5% !important;
+          padding-right: 5% !important;
+          grid-template-columns: 1fr;
+          gap: 20px;
+          padding: 85px 20px 60px;
+        }
+
+        .split-hero__text-col {
+          height: auto;
+          min-height: 280px;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .split-hero__pane {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .split-hero__media-col {
+          padding: 0;
+        }
+
+        .split-hero__card {
+          height: 340px;
+          clip-path: none !important;
+          -webkit-clip-path: none !important;
+          border-radius: 0 !important;
+        }
+
+        .split-hero__img-badge {
+          right: 14px;
+          bottom: 14px;
+        }
+
+        .split-hero__nav-label {
+          display: none;
+        }
+
+        .split-hero__scroll-cue {
+          display: none;
+        }
 
         .split-hero__dots {
           right: 12px;
@@ -1986,148 +2195,150 @@
           height: 20px;
         }
 
-    }
-    @media (max-width: 640px) {
-      .split-hero__title {
-        font-size: 1.85rem;
       }
-      .split-hero__desc {
-        font-size: 0.9rem;
-        margin-bottom: 18px;
-      }
-      .split-hero__meta {
-        font-size: 0.72rem;
-      }
-    }
 
-    /* ==========================================================================
+      @media (max-width: 640px) {
+        .split-hero__title {
+          font-size: 1.85rem;
+        }
+
+        .split-hero__desc {
+          font-size: 0.9rem;
+          margin-bottom: 18px;
+        }
+
+        .split-hero__meta {
+          font-size: 0.72rem;
+        }
+      }
+
+      /* ==========================================================================
        HOMEPAGE MASTER UNIFIED DESIGN SYSTEM (CONTAINERS, SPACING, HEADINGS, BTNS, FONTS)
        ========================================================================== */
 
-    /* 1. UNIFIED 80% CONTAINER SYSTEM ACROSS ALL HOMEPAGE SECTIONS */
-    .container,
-    .container--editorial,
-    .container--video,
-    .site-header .header__inner,
-    .site-topbar__inner,
-    .site-footer .container {
-      width: 80% !important;
-      max-width: 80% !important;
-      margin-left: auto !important;
-      margin-right: auto !important;
-      margin-inline: auto !important;
-      box-sizing: border-box !important;
-      padding-inline: 0 !important;
-    }
+      /* 1. UNIFIED 80% CONTAINER SYSTEM ACROSS ALL HOMEPAGE SECTIONS */
+      .container,
+      .container--editorial,
+      .container--video,
+      .site-header .header__inner,
+      .site-topbar__inner,
+      .site-footer .container {
+        width: 80% !important;
+        max-width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-inline: auto !important;
+        box-sizing: border-box !important;
+        padding-inline: 0 !important;
+      }
 
-    /* 2. UNIFIED SECTION VERTICAL RHYTHM & SPACING */
-    .section,
-    .section--white,
-    .section--facility-video,
-    .section--mission,
-    .section--editorial {
-      padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
-      position: relative;
-    }
-    .section--mfg {
-      padding-block: clamp(2.5rem, 3.5vw, 3.5rem) !important;
-      position: relative;
-    }
+      /* 2. UNIFIED SECTION VERTICAL RHYTHM & SPACING */
+      .section,
+      .section--white,
+      .section--facility-video,
+      .section--mission,
+      .section--editorial {
+        padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
+        position: relative;
+      }
 
-    /* 3. UNIFIED SECTION HEADINGS */
-    .section-heading,
-    .mfg-header__heading,
-    .facility-video__heading,
-    .inquiry-heading {
-      font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
-      font-size: clamp(2.1rem, 1.8rem + 1.4vw, 2.85rem) !important;
-      font-weight: 700 !important;
-      color: #000000 !important;
-      -webkit-text-fill-color: #000000 !important;
-      line-height: 1.15 !important;
-      letter-spacing: -0.03em !important;
-      margin: 0 0 1rem 0 !important;
-    }
+      .section--mfg {
+        padding-block: clamp(2.5rem, 3.5vw, 3.5rem) !important;
+        position: relative;
+      }
 
-    /* 4. UNIFIED RED EYEBROW TAGS */
-    .section-tag {
-      display: inline-flex !important;
-      align-items: center !important;
-      gap: 0.5rem !important;
-      background: linear-gradient(135deg, #e53935 0%, #d32f2f 100%) !important;
-      color: #ffffff !important;
-      font-family: var(--font-body, "Inter", sans-serif) !important;
-      font-size: 0.775rem !important;
-      font-weight: 700 !important;
-      text-transform: uppercase !important;
-      letter-spacing: 0.05em !important;
-      line-height: 1 !important;
-      padding: 0.42rem 0.85rem !important;
-      border-radius: 6px !important;
-      margin-bottom: 0.85rem !important;
-      width: fit-content !important;
-      user-select: none !important;
-      /* box-shadow: 0 2px 8px rgba(211, 47, 47, 0.2) !important; -- shadow removed */
-    }
-    .section-tag__dot {
-      display: none !important;
-    }
+      /* 3. UNIFIED SECTION HEADINGS */
+      .section-heading,
+      .mfg-header__heading,
+      .facility-video__heading,
+      .inquiry-heading {
+        font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
+        font-size: clamp(2.1rem, 1.8rem + 1.4vw, 2.85rem) !important;
+        font-weight: 700 !important;
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+        line-height: 1.15 !important;
+        margin: 0 0 1rem 0 !important;
+      }
 
-    /* 5. UNIFIED BODY & LEAD TYPOGRAPHY */
-    .section-lead,
-    .mfg-header__desc,
-    .facility-video__desc,
-    .inquiry-lead,
-    .split-hero__desc {
-      font-family: var(--font-body, "Inter", sans-serif) !important;
-      font-size: clamp(0.95rem, 1vw, 1.05rem) !important;
-      color: #475569 !important;
-      line-height: 1.68 !important;
-    }
+      /* 4. UNIFIED RED EYEBROW TAGS */
+      .section-tag {
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+        background: transparent;
+        color: #ff0000 !important;
+        font-family: var(--font-body, "Inter", sans-serif) !important;
+        font-size: 0.775rem !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        line-height: 1 !important;
+        padding: 0.42rem 0.85rem !important;
+        border-radius: 6px !important;
+        margin-bottom: 0.85rem !important;
+        width: fit-content !important;
+        user-select: none !important;
+        border: 1px solid;
+      }
 
-    /* 6. UNIFIED PILL BUTTON SYSTEM */
-    .btn-black-pill,
-    .site-header .btn-gradient-pill,
-    .site-header .nav__mobile-cta .btn-gradient-pill,
-    .btn-editorial-send {
-      display: inline-flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      gap: 10px !important;
-      padding: 13px 30px !important;
-      border-radius: 9999px !important;
-      font-family: var(--font-body, "Inter", sans-serif) !important;
-      font-weight: 700 !important;
-      font-size: 0.88rem !important;
-      letter-spacing: 0.04em !important;
-      text-transform: uppercase !important;
-      text-decoration: none !important;
-      line-height: 1 !important;
-      cursor: pointer !important;
-      box-sizing: border-box !important;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    }
+      .section-tag__dot {
+        display: none !important;
+      }
 
-    .btn-black-pill,
-    .site-header .btn-gradient-pill,
-    .site-header .nav__mobile-cta .btn-gradient-pill,
-    .btn-editorial-send {
-      background: #000000 !important;
-      color: #ffffff !important;
-      border: 1.5px solid #000000 !important;
-      /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important; -- shadow removed */
-    }
-    .btn-black-pill:hover,
-    .site-header .btn-gradient-pill:hover,
-    .site-header .nav__mobile-cta .btn-gradient-pill:hover,
-    .btn-editorial-send:hover {
-      background: #1e293b !important;
-      border-color: #1e293b !important;
-      color: #ffffff !important;
-      transform: translateY(-2px) !important;
-      /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important; -- shadow removed */
-    }
+      /* 5. UNIFIED BODY & LEAD TYPOGRAPHY */
+      .section-lead,
+      .mfg-header__desc,
+      .facility-video__desc,
+      .inquiry-lead,
+      .split-hero__desc {
+        font-family: var(--font-body, "Inter", sans-serif) !important;
+        font-size: clamp(0.95rem, 1.02vw, 2rem) !important;
+        color: #475569 !important;
+        line-height: 1.68 !important;
+      }
 
+      /* 6. UNIFIED PILL BUTTON SYSTEM */
+      .btn-black-pill,
+      .site-header .btn-gradient-pill,
+      .site-header .nav__mobile-cta .btn-gradient-pill,
+      .btn-editorial-send {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        padding: 20px 30px !important;
+        border-radius: 9999px !important;
+        font-family: var(--font-body, "Inter", sans-serif) !important;
+        font-weight: 700 !important;
+        font-size: 0.88rem !important;
+        text-transform: uppercase !important;
+        text-decoration: none !important;
+        line-height: 1 !important;
+        cursor: pointer !important;
+        box-sizing: border-box !important;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      }
+
+      .btn-black-pill,
+      .site-header .btn-gradient-pill,
+      .site-header .nav__mobile-cta .btn-gradient-pill,
+      .btn-editorial-send {
+        background: hsl(141.03deg 81.82% 28.04%) !important;
+        color: #ffffff !important;
+        /* border: 1.5px solid #000000 !important; */
+        /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important; -- shadow removed */
+      }
+
+      .btn-black-pill:hover,
+      .site-header .btn-gradient-pill:hover,
+      .site-header .nav__mobile-cta .btn-gradient-pill:hover,
+      .btn-editorial-send:hover {
+        background: #1e293b !important;
+        border-color: #1e293b !important;
+        color: #ffffff !important;
+        transform: translateY(-2px) !important;
+        /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important; -- shadow removed */
+      }
     </style>
 
     <!-- Banner Image: Full 100vh rectangular split without curve or radius -->
@@ -2135,10 +2346,10 @@
     <section class="split-hero" id="heroSplit" aria-label="Erawat Product Highlights">
       <div class="split-hero__pin" id="heroSplitPin">
         <div class="split-hero__inner">
-          
+
           <!-- ================= Part 1: Text Column (Slides Downwards) ================= -->
           <div class="split-hero__text-col" id="heroTextCol">
-            
+
             <!-- Scene 1: Gelatin -->
             <article class="split-hero__pane is-active" data-scene="0">
               <div class="split-hero__meta">
@@ -2150,11 +2361,12 @@
                 <span class="meta-dot"></span>
                 <span>WHO-cGMP</span>
               </div>
-              <h1 class="split-hero__title">
-                Empty Hard Gelatin Capsules
-              </h1>
+              <h2 class="split-hero__title">
+                HPMC / Veg Capsules
+              </h2>
               <p class="split-hero__desc">
-                High-quality TSE/BSE-free Gelatin capsules engineered for high-speed automated filling machines, delivering minimal rejections, tight locking tolerances, and maximum pharmaceutical output.
+                Naturally derived Hypromellose capsules tailored for moisture-sensitive APIs, herbal formulations,
+                hygroscopic powders, and global clean-label nutraceutical brands.
               </p>
               <div class="split-hero__actions">
                 <a class="btn-black-pill" href="#manufacturingSection">
@@ -2166,8 +2378,16 @@
                   </span>
                   <span class="btn-anim__icon">
                     <span class="btn-anim__icon-track">
-                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                        fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
                     </span>
                   </span>
                 </a>
@@ -2199,12 +2419,14 @@
                 <span class="meta-dot"></span>
                 <span>HALAL &amp; KOSHER</span>
               </div>
-              <h2 class="split-hero__title">
-                HPMC / Veg Capsules
-              </h2>
+              <h1 class="split-hero__title">
+                Empty Hard Gelatin Capsules
+              </h1>
               <p class="split-hero__desc">
-                Naturally derived Hypromellose capsules tailored for moisture-sensitive APIs, herbal formulations, hygroscopic powders, and global clean-label nutraceutical brands.
+                High-quality TSE/BSE-free Gelatin capsules engineered for high-speed automated filling machines,
+                delivering minimal rejections, tight locking tolerances, and maximum pharmaceutical output.
               </p>
+
               <div class="split-hero__actions">
                 <a class="btn-black-pill" href="epl-products.html">
                   <span class="btn-anim__text">
@@ -2215,8 +2437,16 @@
                   </span>
                   <span class="btn-anim__icon">
                     <span class="btn-anim__icon-track">
-                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                        fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
                     </span>
                   </span>
                 </a>
@@ -2250,20 +2480,30 @@
                 Precision Sizing &amp; Custom Colors
               </h2>
               <p class="split-hero__desc">
-                Available in every commercial standard and elongated size — 00, 0EL, 0, 1, 2, 3, 4, and 5 — backed by custom shade matching and 360° axial/radial pharmaceutical printing.
+                Available in every commercial standard and elongated size — 00, 0EL, 0, 1, 2, 3, 4, and 5 — backed by
+                custom shade matching and 360° axial/radial pharmaceutical printing.
               </p>
               <div class="split-hero__actions">
                 <a class="btn-black-pill" href="technical-details.html">
                   <span class="btn-anim__text">
                     <span class="btn-anim__text-track">
                       <span class="btn-anim__text-item">SIZE SPECIFICATIONS</span>
-                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">SIZE SPECIFICATIONS</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">SIZE
+                        SPECIFICATIONS</span>
                     </span>
                   </span>
                   <span class="btn-anim__icon">
                     <span class="btn-anim__icon-track">
-                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                        fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
                     </span>
                   </span>
                 </a>
@@ -2297,7 +2537,8 @@
                 Zero-Defect Quality &amp; Global Supply
               </h2>
               <p class="split-hero__desc">
-                Manufactured in WHO-cGMP automated cleanrooms with US FDA DMF Type IV filings (#018249). Delivering over 12 billion empty capsules annually to pharmaceutical innovators across 40+ countries.
+                Manufactured in WHO-cGMP automated cleanrooms with US FDA DMF Type IV filings (#018249). Delivering over
+                12 billion empty capsules annually to pharmaceutical innovators across 40+ countries.
               </p>
               <div class="split-hero__actions">
                 <a class="btn-black-pill" href="#getStartedSection">
@@ -2309,8 +2550,16 @@
                   </span>
                   <span class="btn-anim__icon">
                     <span class="btn-anim__icon-track">
-                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                        fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
                     </span>
                   </span>
                 </a>
@@ -2336,12 +2585,14 @@
           <!-- ================= Part 2: Images Column (Slides Upwards) ================= -->
           <div class="split-hero__media-col">
             <div class="split-hero__card" id="heroMediaCard">
-              
+
               <!-- Image 1: Gelatin Cleanroom Production -->
               <div class="split-hero__img-item is-active" data-scene="0">
                 <video class="split-hero__img" autoplay muted loop playsinline preload="auto">
                   <source src="images/banners/hpmc1.mp4" type="video/mp4">
-                  <img src="images/banners/bannerawat1.png" alt="Erawat cleanroom automated gelatin capsule production line" class="split-hero__img" loading="eager" width="1280" height="820">
+                  <img src="images/banners/bannerawat1.png"
+                    alt="Erawat cleanroom automated gelatin capsule production line" class="split-hero__img"
+                    loading="eager" width="1280" height="820">
                 </video>
                 <div class="split-hero__img-badge">
                   <span class="split-hero__img-step">01 / 04</span>
@@ -2366,14 +2617,9 @@
 
               <!-- Image 3: Sizing & Custom Printing -->
               <div class="split-hero__img-item is-upcoming" data-scene="2">
-                <img
-                  src="images/banners/bannerawat3.png"
-                  alt="Precision sizing range 00 to 5 and custom capsule printing"
-                  class="split-hero__img"
-                  loading="lazy"
-                  width="1280"
-                  height="820"
-                >
+                <img src="images/banners/bannerawat3.png"
+                  alt="Precision sizing range 00 to 5 and custom capsule printing" class="split-hero__img"
+                  loading="lazy" width="1280" height="820">
                 <div class="split-hero__img-badge">
                   <span class="split-hero__img-step">03 / 04</span>
                   <span class="split-hero__img-caption">Precision Sizing 00 to 5</span>
@@ -2382,14 +2628,9 @@
 
               <!-- Image 4: Optical Camera Inspection & Global Export -->
               <div class="split-hero__img-item is-upcoming" data-scene="3">
-                <img
-                  src="images/banners/bannerawat4.png"
-                  alt="Zero-defect optical inspection and global pharmaceutical export"
-                  class="split-hero__img"
-                  loading="lazy"
-                  width="1280"
-                  height="820"
-                >
+                <img src="images/banners/bannerawat4.png"
+                  alt="Zero-defect optical inspection and global pharmaceutical export" class="split-hero__img"
+                  loading="lazy" width="1280" height="820">
                 <div class="split-hero__img-badge">
                   <span class="split-hero__img-step">04 / 04</span>
                   <span class="split-hero__img-caption">Zero-Defect Global Export</span>
@@ -2399,13 +2640,16 @@
               <!-- Slide Pagination (Right-Side Dots) -->
               <div class="split-hero__dots" role="tablist" aria-label="Hero slider pagination">
                 <button type="button" class="split-hero__dot is-active" role="tab" aria-selected="true"
-                  aria-label="Slide 1: Empty Hard Gelatin Capsules" title="Empty Hard Gelatin Capsules" data-scene="0"></button>
+                  aria-label="Slide 1: Empty Hard Gelatin Capsules" title="Empty Hard Gelatin Capsules"
+                  data-scene="0"></button>
                 <button type="button" class="split-hero__dot" role="tab" aria-selected="false"
                   aria-label="Slide 2: HPMC / Veg Capsules" title="HPMC / Veg Capsules" data-scene="1"></button>
                 <button type="button" class="split-hero__dot" role="tab" aria-selected="false"
-                  aria-label="Slide 3: Precision Sizing & Colors" title="Precision Sizing & Custom Colors" data-scene="2"></button>
+                  aria-label="Slide 3: Precision Sizing & Colors" title="Precision Sizing & Custom Colors"
+                  data-scene="2"></button>
                 <button type="button" class="split-hero__dot" role="tab" aria-selected="false"
-                  aria-label="Slide 4: Zero-Defect Quality & Export" title="Zero-Defect Quality & Global Supply" data-scene="3"></button>
+                  aria-label="Slide 4: Zero-Defect Quality & Export" title="Zero-Defect Quality & Global Supply"
+                  data-scene="3"></button>
               </div>
             </div>
           </div>
@@ -2431,97 +2675,94 @@
         </nav> -->
 
         <!-- Mouse Scroll Cue -->
-       
+
 
         <!-- Linear Progress Bar -->
         <div class="split-hero__progress-bar d-none" id="heroProgressBar" aria-hidden="true"></div>
 
       </div>
     </section>
- <section class="section section--white" id="nextStepsSection" aria-labelledby="nextStepsHeading">
+    <section class="section section--white" id="nextStepsSection" aria-labelledby="nextStepsHeading">
       <div class="container">
         <div class="steps-layout">
-          
+
           <!-- Left Side: Single Image Auto Slider -->
           <div class="who-slider-wrap" data-aos="fade-right" data-aos-duration="700">
-            <div class="who-slider" id="whoWeAreSlider" aria-roledescription="carousel" aria-label="Who We Are Featured Slides">
+            <div class="who-slider" id="whoWeAreSlider" aria-roledescription="carousel"
+              aria-label="Who We Are Featured Slides">
               <div class="who-slides-track">
                 <!-- Slide 1 -->
-                <div class="who-slide is-active" data-index="0" role="group" aria-roledescription="slide" aria-label="1 of 4">
-                  <img
-                    class="who-slide__img"
-                    src="images/whoweare1.png"
-                    alt="Empty hard Gelatin and HPMC vegetarian capsule polymers"
-                    width="600"
-                    height="600"
-                    loading="lazy"
-                  >
+                <div class="who-slide is-active" data-index="0" role="group" aria-roledescription="slide"
+                  aria-label="1 of 4">
+                  <img class="who-slide__img" src="images/whoweare1.png"
+                    alt="Empty hard Gelatin and HPMC vegetarian capsule polymers" width="600" height="600"
+                    loading="lazy">
                 </div>
 
                 <!-- Slide 2 -->
                 <div class="who-slide" data-index="1" role="group" aria-roledescription="slide" aria-label="2 of 4">
-                  <img
-                    class="who-slide__img"
-                    src="images/whoweare2.png"
-                    alt="Automated cleanroom capsule production and AC container logistics"
-                    width="600"
-                    height="600"
-                    loading="lazy"
-                  >
+                  <img class="who-slide__img" src="images/whoweare2.png"
+                    alt="Automated cleanroom capsule production and AC container logistics" width="600" height="600"
+                    loading="lazy">
                 </div>
 
                 <!-- Slide 3 -->
                 <div class="who-slide" data-index="2" role="group" aria-roledescription="slide" aria-label="3 of 4">
-                  <img
-                    class="who-slide__img"
-                    src="images/whoweare3.png"
-                    alt="Stringent I.P. 2014 quality inspection of empty hard capsules"
-                    width="600"
-                    height="600"
-                    loading="lazy"
-                  >
+                  <img class="who-slide__img" src="images/whoweare3.png"
+                    alt="Stringent I.P. 2014 quality inspection of empty hard capsules" width="600" height="600"
+                    loading="lazy">
                 </div>
 
                 <!-- Slide 4 -->
                 <div class="who-slide" data-index="3" role="group" aria-roledescription="slide" aria-label="4 of 4">
-                  <img
-                    class="who-slide__img"
-                    src="images/whoweare4.png"
-                    alt="Automated camera sorting and cleanroom dimensional tolerances"
-                    width="600"
-                    height="600"
-                    loading="lazy"
-                  >
+                  <img class="who-slide__img" src="images/whoweare4.png"
+                    alt="Automated camera sorting and cleanroom dimensional tolerances" width="600" height="600"
+                    loading="lazy">
                 </div>
               </div>
 
               <!-- Navigation Arrows -->
-              <button type="button" class="who-slider__nav who-slider__nav--prev" aria-label="Previous slide">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              <!-- <button type="button" class="who-slider__nav who-slider__nav--prev" aria-label="Previous slide">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
               </button>
               <button type="button" class="who-slider__nav who-slider__nav--next" aria-label="Next slide">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </button>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button> -->
 
               <!-- Slide Indicators / Dots -->
               <div class="who-slider__dots" role="tablist" aria-label="Who We Are slide indicators">
-                <button type="button" class="who-slider__dot is-active" role="tab" aria-selected="true" aria-label="Slide 1" data-slide="0"></button>
-                <button type="button" class="who-slider__dot" role="tab" aria-selected="false" aria-label="Slide 2" data-slide="1"></button>
-                <button type="button" class="who-slider__dot" role="tab" aria-selected="false" aria-label="Slide 3" data-slide="2"></button>
-                <button type="button" class="who-slider__dot" role="tab" aria-selected="false" aria-label="Slide 4" data-slide="3"></button>
+                <button type="button" class="who-slider__dot is-active" role="tab" aria-selected="true"
+                  aria-label="Slide 1" data-slide="0"></button>
+                <button type="button" class="who-slider__dot" role="tab" aria-selected="false" aria-label="Slide 2"
+                  data-slide="1"></button>
+                <button type="button" class="who-slider__dot" role="tab" aria-selected="false" aria-label="Slide 3"
+                  data-slide="2"></button>
+                <button type="button" class="who-slider__dot" role="tab" aria-selected="false" aria-label="Slide 4"
+                  data-slide="3"></button>
               </div>
             </div>
           </div>
 
           <!-- Right Side: Who We Are Text Content -->
           <div class="steps-intro" data-aos="fade-left" data-aos-duration="700">
-            <span class="section-tag" data-aos="fade-up" data-aos-delay="100"><span class="section-tag__dot"></span>Empty Capsules Manufacturers</span>
+            <span class="section-tag" data-aos="fade-up" data-aos-delay="100"><span
+                class="section-tag__dot"></span>Empty Capsules Manufacturers</span>
             <h2 class="section-heading" id="nextStepsHeading" data-aos="fade-up" data-aos-delay="150">Who We Are</h2>
             <p class="section-lead" data-aos="fade-up" data-aos-delay="200">
-              Erawat Pharma Limited, an Erawat Group Company, ranks among the top <a href="manufacturing-setup.html">Capsule manufacturers</a> in the world &amp; second largest in India.
+              Erawat Pharma Limited, an Erawat Group Company, ranks among the top <a
+                href="manufacturing-setup.html">Capsule manufacturers</a> in the world &amp; second largest in India.
             </p>
             <p class="section-lead" data-aos="fade-up" data-aos-delay="250">
-              Manufacturing empty hard capsules since 1997, our team brings more than 30 years of total group experience in capsule manufacturing technologies. Backed by high technical competence and rigorous R &amp; D, we manufacture empty Gelatin Capsules as well as plant-derived <a href="epl-products.html">HPMC Capsules</a> for vegetarian and hygroscopic formulations.
+              Manufacturing empty hard capsules since 1997, our team brings more than 30 years of total group experience
+              in capsule manufacturing technologies. Backed by high technical competence and rigorous R &amp; D, we
+              manufacture empty Gelatin Capsules as well as plant-derived <a href="epl-products.html">HPMC Capsules</a>
+              for vegetarian and hygroscopic formulations.
             </p>
             <div class="steps-intro__cta" data-aos="fade-up" data-aos-delay="300">
               <a class="btn-black-pill" href="profile.html">
@@ -2533,8 +2774,16 @@
                 </span>
                 <span class="btn-anim__icon">
                   <span class="btn-anim__icon-track">
-                    <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                    <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                      stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                      aria-hidden="true">
+                      <path d="M4 2L8 6L4 10" />
+                    </svg>
+                    <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                      fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                      stroke-linejoin="round" aria-hidden="true">
+                      <path d="M4 2L8 6L4 10" />
+                    </svg>
                   </span>
                 </span>
               </a>
@@ -2550,6 +2799,17 @@
       (function () {
         var hero = document.getElementById('heroSplit');
         if (!hero) return;
+        var pin = document.getElementById('heroSplitPin');
+        var header = document.querySelector('.site-header');
+
+        function updateHeaderHeight() {
+          if (header) {
+            var h = header.offsetHeight;
+            document.documentElement.style.setProperty('--header-actual-h', h + 'px');
+          }
+        }
+        updateHeaderHeight();
+        window.addEventListener('resize', updateHeaderHeight, { passive: true });
 
         var panes = [].slice.call(hero.querySelectorAll('.split-hero__pane'));
         var imgItems = [].slice.call(hero.querySelectorAll('.split-hero__img-item'));
@@ -2593,7 +2853,6 @@
             }
           });
 
-          
           // Play active video, pause inactive videos
           imgItems.forEach(function (item, i) {
             var v = item.querySelector('video');
@@ -2605,7 +2864,8 @@
               }
             }
           });
-// Pagination Dots active state
+
+          // Pagination Dots active state
           dots.forEach(function (dot, i) {
             var isActive = (i === index);
             dot.classList.toggle('is-active', isActive);
@@ -2652,16 +2912,22 @@
         hero.addEventListener('mouseenter', stopAuto);
         hero.addEventListener('mouseleave', startAuto);
 
+        function getScrollMetrics() {
+          var headerH = header ? header.offsetHeight : 0;
+          var pinH = pin ? pin.offsetHeight : (window.innerHeight - headerH);
+          var scrollDist = hero.offsetHeight - pinH;
+          return { headerH: headerH, pinH: pinH, scrollDist: scrollDist };
+        }
+
         // Click handlers on pagination dots
         dots.forEach(function (dot, i) {
           dot.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
-            var heroTop = hero.getBoundingClientRect().top + window.scrollY;
-            var scrollDist = hero.offsetHeight - window.innerHeight;
-            if (scrollDist > 0) {
-              var targetProgress = (i === 0) ? 0 : (i === totalScenes - 1) ? 0.92 : ((i + 0.5) / totalScenes);
-              var targetScroll = heroTop + targetProgress * scrollDist;
+            var m = getScrollMetrics();
+            if (m.scrollDist > 0) {
+              var targetProgress = (i === 0) ? 0 : (i === totalScenes - 1) ? 0.99 : ((i + 0.3) / totalScenes);
+              var targetScroll = targetProgress * m.scrollDist;
               window.scrollTo({
                 top: targetScroll,
                 behavior: 'smooth'
@@ -2697,11 +2963,11 @@
         }
 
         function onScroll() {
-          var rect = hero.getBoundingClientRect();
-          var scrollDist = hero.offsetHeight - window.innerHeight;
-          if (scrollDist <= 0) return;
+          var m = getScrollMetrics();
+          if (m.scrollDist <= 0) return;
 
-          var progress = Math.max(0, Math.min(1, -rect.top / scrollDist));
+          // Banner scroll starts directly from scrollY = 0 (pinned right below the header)
+          var progress = Math.max(0, Math.min(1, window.scrollY / m.scrollDist));
 
           if (progressBar) {
             progressBar.style.transform = 'scaleX(' + progress + ')';
@@ -2722,11 +2988,10 @@
 
         navBtns.forEach(function (btn, i) {
           btn.addEventListener('click', function () {
-            var scrollDist = hero.offsetHeight - window.innerHeight;
-            if (scrollDist > 0) {
-              var heroTop = hero.getBoundingClientRect().top + window.scrollY;
-              var targetProgress = (i === 0) ? 0 : (i === totalScenes - 1) ? 0.92 : ((i + 0.5) / totalScenes);
-              var targetScroll = heroTop + targetProgress * scrollDist;
+            var m = getScrollMetrics();
+            if (m.scrollDist > 0) {
+              var targetProgress = (i === 0) ? 0 : (i === totalScenes - 1) ? 0.99 : ((i + 0.3) / totalScenes);
+              var targetScroll = targetProgress * m.scrollDist;
               window.scrollTo({
                 top: targetScroll,
                 behavior: 'smooth'
@@ -2751,7 +3016,8 @@
             <h2 class="mfg-header__heading" id="manufacturingHeading">Why You Should<br>Buy From Us</h2>
           </div>
           <p class="mfg-header__desc" data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
-            Minimal rejections, dedicated technical team support, and maximum machine uptime for global pharmaceutical manufacturers.
+            Minimal rejections, dedicated technical team support, and maximum machine uptime for global pharmaceutical
+            manufacturers.
           </p>
         </div>
 
@@ -2765,7 +3031,8 @@
                   <span class="mfg-card__category">Product Quality</span>
                   <h3 class="mfg-card__headline">Minimal Rejections</h3>
                   <p class="mfg-card__desc">
-                    Minimal rejections on filing machine, resulting in higher yield and lesser wastage of expensive formulation.
+                    Minimal rejections on filing machine, resulting in higher yield and lesser wastage of expensive
+                    formulation.
                   </p>
                 </div>
                 <div class="mfg-card__action">
@@ -2777,14 +3044,16 @@
 
           <!-- Card 2: Certifications (Golden Yellow Theme) -->
           <article class="mfg-card mfg-card--yellow" data-aos="fade-up" data-aos-delay="250" data-aos-duration="700">
-            <a class="mfg-card__link" href="why-us.html" aria-label="View more about Certifications and Technical Support">
+            <a class="mfg-card__link" href="why-us.html"
+              aria-label="View more about Certifications and Technical Support">
               <div class="mfg-card__badge">02</div>
               <div class="mfg-card__body">
                 <div class="mfg-card__content">
                   <span class="mfg-card__category">Technical Support</span>
                   <h3 class="mfg-card__headline">Dedicated R&amp;D Team</h3>
                   <p class="mfg-card__desc">
-                    Readily available technical team from EPL and R&amp;D unit to rectify mechanical and setting related problems on customer's filing machines.
+                    Readily available technical team from EPL and R&amp;D unit to rectify mechanical and setting related
+                    problems on customer's filing machines.
                   </p>
                 </div>
                 <div class="mfg-card__action">
@@ -2803,7 +3072,8 @@
                   <span class="mfg-card__category">Machine Performance</span>
                   <h3 class="mfg-card__headline">Zero Downtime</h3>
                   <p class="mfg-card__desc">
-                    Machine performance such as to give minimum downtime on filing machine, thus increasing machine and operator output.
+                    Machine performance such as to give minimum downtime on filing machine, thus increasing machine and
+                    operator output.
                   </p>
                 </div>
                 <div class="mfg-card__action">
@@ -2819,56 +3089,27 @@
     <!-- ==================================================================
          3. NEXT STEPS SECTION / WHO WE ARE
          ================================================================== -->
-   
 
-            <!-- ==================================================================
+
+    <!-- ==================================================================
          4. FACILITY VIDEO & MANUFACTURING EXCELLENCE SECTION
          ================================================================== -->
     <section class="section section--facility-video" id="facilityVideoSection" aria-labelledby="facilityVideoHeading">
       <div class="container container--video">
         <div class="facility-video__layout">
-          
-          <!-- Left Side: Video Player Area -->
-          <div class="facility-video__media-col" data-aos="fade-right" data-aos-duration="700">
-            <div class="facility-video__banner">
-              <img
-                class="facility-video__thumbnail"
-                src="images/banners/bannerawat1.png"
-                alt="Erawat capsule manufacturing cleanroom facility"
-                width="1280"
-                height="720"
-                loading="lazy"
-              >
 
-              <div class="facility-video__overlay"></div>
-
-              <!-- Center: Play Button with Direct YouTube Link -->
-              <a
-                class="facility-video__play-link"
-                href="https://www.youtube.com/watch?v=09swx1Q1sAA"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Play Erawat Corporate Video on YouTube (opens in new tab)"
-              >
-                <span class="play-ripple" aria-hidden="true"></span>
-                <span class="play-ripple play-ripple--2" aria-hidden="true"></span>
-                <span class="play-btn-circle">
-                  <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <polygon points="6 4 20 12 6 20 6 4"></polygon>
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Side: Text Area -->
-          <div class="facility-video__text-col" data-aos="fade-left" data-aos-duration="700">
-            <span class="section-tag" data-aos="fade-up"><span class="section-tag__dot"></span>Plant &amp; Technology</span>
+          <!-- Left Side: Text Area -->
+          <div class="facility-video__text-col" data-aos="fade-right" data-aos-duration="700">
+            <span class="section-tag" data-aos="fade-up"><span class="section-tag__dot"></span>Plant &amp;
+              Technology</span>
             <h2 class="facility-video__heading" id="facilityVideoHeading" data-aos="fade-up" data-aos-delay="100">
               State-of-the-Art Capsule Manufacturing in Action
             </h2>
             <p class="facility-video__desc" data-aos="fade-up" data-aos-delay="150">
-              Step inside Erawat's fully automated, cGMP-compliant cleanroom facility. With high-speed production lines operating 24/7 under computerized air handling units (AHUs), our plants produce over 12 billion hard gelatin and HPMC vegetarian capsules annually with micron-level precision and zero-defect consistency for global pharmaceutical leaders.
+              Step inside Erawat's fully automated, cGMP-compliant cleanroom facility. With high-speed production lines
+              operating 24/7 under computerized air handling units (AHUs), our plants produce over 12 billion hard
+              gelatin and HPMC vegetarian capsules annually with micron-level precision and zero-defect consistency for
+              global pharmaceutical leaders.
             </p>
             <div class="facility-video__cta" data-aos="fade-up" data-aos-delay="200">
               <a class="btn-black-pill" href="manufacturing-setup.html">
@@ -2880,9 +3121,39 @@
                 </span>
                 <span class="btn-anim__icon">
                   <span class="btn-anim__icon-track">
-                    <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                    <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                    <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                      stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                      aria-hidden="true">
+                      <path d="M4 2L8 6L4 10" />
+                    </svg>
+                    <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                      fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                      stroke-linejoin="round" aria-hidden="true">
+                      <path d="M4 2L8 6L4 10" />
+                    </svg>
                   </span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Side: Video Player Area -->
+          <div class="facility-video__media-col" data-aos="fade-left" data-aos-duration="700">
+            <div class="facility-video__banner">
+              <img class="facility-video__thumbnail" src="images/banners/bannerawat1.png"
+                alt="Erawat capsule manufacturing cleanroom facility" width="1280" height="720" loading="lazy">
+
+              <div class="facility-video__overlay"></div>
+
+              <!-- Center: Play Button with Direct YouTube Link -->
+              <a class="facility-video__play-link" href="https://www.youtube.com/watch?v=09swx1Q1sAA" target="_blank"
+                rel="noopener noreferrer" aria-label="Play Erawat Corporate Video on YouTube (opens in new tab)">
+                <span class="play-ripple" aria-hidden="true"></span>
+                <span class="play-ripple play-ripple--2" aria-hidden="true"></span>
+                <span class="play-btn-circle">
+                  <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <polygon points="6 4 20 12 6 20 6 4"></polygon>
+                  </svg>
                 </span>
               </a>
             </div>
@@ -2898,14 +3169,8 @@
     <section class="section section--mission" id="missionSection" aria-label="Our Mission">
       <div class="container">
         <div class="mission-card" data-aos="zoom-in" data-aos-duration="850">
-          <img
-            class="mission-card__bg"
-            src="images/banners/bannerawat2.png"
-            alt="Erawat high-speed pharmaceutical manufacturing cleanroom"
-            width="1920"
-            height="1080"
-            loading="lazy"
-          >
+          <img class="mission-card__bg" src="images/banners/bannerawat2.png"
+            alt="Erawat high-speed pharmaceutical manufacturing cleanroom" width="1920" height="1080" loading="lazy">
           <div class="mission-card__overlay"></div>
 
           <div class="mission-card__content">
@@ -2918,7 +3183,9 @@
             </svg> -->
 
             <blockquote class="mission-card__text" data-aos="fade-up" data-aos-delay="200">
-              &ldquo;To provide pharmaceutical manufacturers with products and services with consistent quality of such a level that gives our customers highest output, highest reliability, maximum continuity and thus lowest production cost.&rdquo;
+              &ldquo;To provide pharmaceutical manufacturers with products and services with consistent quality of such
+              a level that gives our customers highest output, highest reliability, maximum continuity and thus lowest
+              production cost.&rdquo;
             </blockquote>
 
             <!-- <div class="mission-card__footer" data-aos="fade-up" data-aos-delay="300">
@@ -2937,16 +3204,18 @@
     <section class="section section--editorial" id="getStartedSection" aria-labelledby="getStartedHeading">
       <div class="container container--editorial">
         <div class="inquiry-split-layout">
-          
+
           <!-- LEFT SIDE: Header + Form -->
           <div class="inquiry-split__left" data-aos="fade-right" data-aos-duration="700">
             <div class="inquiry-header-compact">
-              <span class="section-tag"><span class="section-tag__dot"></span>Direct Factory Support &bull; EPL India</span>
+              <span class="section-tag"><span class="section-tag__dot"></span>Direct Factory Support &bull; EPL
+                India</span>
               <h2 class="inquiry-heading" id="getStartedHeading">
                 Send A Technical Inquiry
               </h2>
               <p class="inquiry-lead">
-                Submit your requirements below. Our EPL technical engineering &amp; R&amp;D team will connect with you within 24 hours.
+                Submit your requirements below. Our EPL technical engineering &amp; R&amp;D team will connect with you
+                within 24 hours.
               </p>
             </div>
 
@@ -2955,13 +3224,16 @@
               <div class="form-grid-row--2">
                 <div class="field-line">
                   <label class="field-line__label" for="fullName">Name<span class="required-star">*</span></label>
-                  <input class="field-line__input" type="text" id="fullName" name="fullName" placeholder="e.g. Rajesh Sharma" autocomplete="name" required>
+                  <input class="field-line__input" type="text" id="fullName" name="fullName"
+                    placeholder="e.g. Rajesh Sharma" autocomplete="name" required>
                   <span class="field__error" id="fullNameError" aria-live="polite"></span>
                 </div>
 
                 <div class="field-line">
-                  <label class="field-line__label" for="companyName">Company Name<span class="required-star">*</span></label>
-                  <input class="field-line__input" type="text" id="companyName" name="companyName" placeholder="e.g. Medilife Formulations" autocomplete="organization" required>
+                  <label class="field-line__label" for="companyName">Company Name<span
+                      class="required-star">*</span></label>
+                  <input class="field-line__input" type="text" id="companyName" name="companyName"
+                    placeholder="e.g. Medilife Formulations" autocomplete="organization" required>
                   <span class="field__error" id="companyNameError" aria-live="polite"></span>
                 </div>
               </div>
@@ -2969,14 +3241,18 @@
               <!-- Row 2: Official Email* & 10 Digit Contact Number* -->
               <div class="form-grid-row--2">
                 <div class="field-line">
-                  <label class="field-line__label" for="workEmail">Official Email Id<span class="required-star">*</span></label>
-                  <input class="field-line__input" type="email" id="workEmail" name="workEmail" placeholder="e.g. name@company.com" autocomplete="email" required>
+                  <label class="field-line__label" for="workEmail">Official Email Id<span
+                      class="required-star">*</span></label>
+                  <input class="field-line__input" type="email" id="workEmail" name="workEmail"
+                    placeholder="e.g. name@company.com" autocomplete="email" required>
                   <span class="field__error" id="workEmailError" aria-live="polite"></span>
                 </div>
 
                 <div class="field-line">
-                  <label class="field-line__label" for="phoneNumber">10 Digit Contact Number<span class="required-star">*</span></label>
-                  <input class="field-line__input" type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g. 9876543210" autocomplete="tel" required>
+                  <label class="field-line__label" for="phoneNumber">10 Digit Contact Number<span
+                      class="required-star">*</span></label>
+                  <input class="field-line__input" type="tel" id="phoneNumber" name="phoneNumber"
+                    placeholder="e.g. 9876543210" autocomplete="tel" required>
                   <span class="field__error" id="phoneNumberError" aria-live="polite"></span>
                 </div>
               </div>
@@ -2984,20 +3260,24 @@
               <!-- Row 3: Designation* & Location (Country* & City*) -->
               <div class="form-grid-row--2">
                 <div class="field-line">
-                  <label class="field-line__label" for="designation">Designation<span class="required-star">*</span></label>
-                  <input class="field-line__input" type="text" id="designation" name="designation" placeholder="e.g. Procurement / Production Manager" required>
+                  <label class="field-line__label" for="designation">Designation<span
+                      class="required-star">*</span></label>
+                  <input class="field-line__input" type="text" id="designation" name="designation"
+                    placeholder="e.g. Procurement / Production Manager" required>
                   <span class="field__error" id="designationError" aria-live="polite"></span>
                 </div>
 
                 <div class="field-line-row">
                   <div class="field-line">
                     <label class="field-line__label" for="country">Country<span class="required-star">*</span></label>
-                    <input class="field-line__input" type="text" id="country" name="country" placeholder="e.g. India" required>
+                    <input class="field-line__input" type="text" id="country" name="country" placeholder="e.g. India"
+                      required>
                     <span class="field__error" id="countryError" aria-live="polite"></span>
                   </div>
                   <div class="field-line">
                     <label class="field-line__label" for="city">City<span class="required-star">*</span></label>
-                    <input class="field-line__input" type="text" id="city" name="city" placeholder="e.g. Mumbai" required>
+                    <input class="field-line__input" type="text" id="city" name="city" placeholder="e.g. Mumbai"
+                      required>
                     <span class="field__error" id="cityError" aria-live="polite"></span>
                   </div>
                 </div>
@@ -3005,33 +3285,50 @@
 
               <!-- Row 4: Interest Area (Capsule Sizes) -->
               <div class="field-line interest-area-line" style="margin-block: 0.25rem 1rem;">
-                <label class="field-line__label">Interest Area<span class="required-star">*</span> <span class="field-line__hint">(Capsule sizes)</span></label>
+                <label class="field-line__label">Interest Area<span class="required-star">*</span> <span
+                    class="field-line__hint">(Capsule sizes)</span></label>
                 <div class="interest-minimal">
                   <div class="interest-minimal__group">
                     <span class="interest-minimal__title">Gelatin:</span>
                     <div class="interest-minimal__chips">
-                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="00"><span>00</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="0EL"><span>0EL</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="0"><span>0</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="1"><span>1</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="2"><span>2</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="3"><span>3</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="4"><span>4</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="5"><span>5</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size"
+                          value="00"><span>00</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size"
+                          value="0EL"><span>0EL</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size"
+                          value="0"><span>0</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size"
+                          value="1"><span>1</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size"
+                          value="2"><span>2</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size"
+                          value="3"><span>3</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size"
+                          value="4"><span>4</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size"
+                          value="5"><span>5</span></label>
                     </div>
                   </div>
 
                   <div class="interest-minimal__group">
                     <span class="interest-minimal__title">HPMC:</span>
                     <div class="interest-minimal__chips">
-                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="00"><span>00</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="0EL"><span>0EL</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="0"><span>0</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="1"><span>1</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="2"><span>2</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="3"><span>3</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="4"><span>4</span></label>
-                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="5"><span>5</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size"
+                          value="00"><span>00</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size"
+                          value="0EL"><span>0EL</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size"
+                          value="0"><span>0</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size"
+                          value="1"><span>1</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size"
+                          value="2"><span>2</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size"
+                          value="3"><span>3</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size"
+                          value="4"><span>4</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size"
+                          value="5"><span>5</span></label>
                     </div>
                   </div>
                 </div>
@@ -3040,7 +3337,8 @@
               <!-- Row 5: Your Message -->
               <div class="field-line" style="margin-bottom: 1.25rem;">
                 <label class="field-line__label" for="inquiryMessage">Your message</label>
-                <textarea class="field-line__input field-line__textarea" id="inquiryMessage" name="inquiryMessage" placeholder="Filling machine model, estimated volume, or custom colors..." rows="2"></textarea>
+                <textarea class="field-line__input field-line__textarea" id="inquiryMessage" name="inquiryMessage"
+                  placeholder="Filling machine model, estimated volume, or custom colors..." rows="2"></textarea>
               </div>
 
               <!-- Row 6: reCAPTCHA + Submit Button -->
@@ -3050,7 +3348,8 @@
                     <input type="checkbox" id="recaptchaCheck" class="recaptcha-box__input">
                     <span class="recaptcha-box__checkbox" aria-hidden="true">
                       <svg class="recaptcha-box__check-icon" viewBox="0 0 16 16" fill="none">
-                        <path d="M3 8.5L6.5 12L13 4.5" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 8.5L6.5 12L13 4.5" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
                       </svg>
                     </span>
                     <span class="recaptcha-box__label">I'm not a robot</span>
@@ -3058,9 +3357,11 @@
                   <div class="recaptcha-brand">
                     <div class="recaptcha-logo" aria-hidden="true">
                       <svg viewBox="0 0 48 48" width="24" height="24">
-                        <path fill="#4285F4" d="M24 4.5c5 0 9.5 1.9 12.9 5l-4.5 4.5C30.2 12.1 27.3 11 24 11c-6.8 0-12.4 4.9-13.8 11.3l-6.3-4.9C7.4 9.6 15 4.5 24 4.5z"/>
-                        <path fill="#34A853" d="M43.5 24c0 10.8-8.7 19.5-19.5 19.5-5 0-9.5-1.9-12.9-5l4.5-4.5c2.2 1.9 5.1 3 8.4 3 6.8 0 12.4-4.9 13.8-11.3l6.3 4.9c-.4 2.3-1.6 4.4-3.2 6.1z"/>
-                        <path fill="#4A90E2" d="M24 18c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z"/>
+                        <path fill="#4285F4"
+                          d="M24 4.5c5 0 9.5 1.9 12.9 5l-4.5 4.5C30.2 12.1 27.3 11 24 11c-6.8 0-12.4 4.9-13.8 11.3l-6.3-4.9C7.4 9.6 15 4.5 24 4.5z" />
+                        <path fill="#34A853"
+                          d="M43.5 24c0 10.8-8.7 19.5-19.5 19.5-5 0-9.5-1.9-12.9-5l4.5-4.5c2.2 1.9 5.1 3 8.4 3 6.8 0 12.4-4.9 13.8-11.3l6.3 4.9c-.4 2.3-1.6 4.4-3.2 6.1z" />
+                        <path fill="#4A90E2" d="M24 18c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" />
                       </svg>
                     </div>
                     <span class="recaptcha-brand__text">reCAPTCHA</span>
@@ -3076,8 +3377,16 @@
                   </span>
                   <span class="btn-anim__icon">
                     <span class="btn-anim__icon-track">
-                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                        fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
                     </span>
                   </span>
                 </button>
@@ -3090,14 +3399,9 @@
           <!-- RIGHT SIDE: Pure Image Card (Matching Form Height) -->
           <div class="inquiry-split__right" data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
             <div class="inquiry-image-card">
-              <img
-                class="inquiry-image-card__img"
-                src="images/buycard2.png"
-                alt="EPL technical engineering support and capsule manufacturing plant"
-                width="1456"
-                height="733"
-                loading="lazy"
-              >
+              <img class="inquiry-image-card__img" src="images/contactsec.jpg"
+                alt="EPL technical engineering support and capsule manufacturing plant" width="1456" height="733"
+                loading="lazy">
             </div>
           </div>
 
@@ -3115,17 +3419,13 @@
         <div class="footer__brand" data-aos="fade-up" data-aos-delay="100">
           <a class="footer__logo" href="index.html" aria-label="Erawat Pharma Limited Home">
             <span class="brand__logo-wrap">
-              <img
-                class="brand__logo"
-                src="images/logo.gif"
-                alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine"
-                width="180"
-                height="48"
-              >
+              <img class="brand__logo" src="images/logo.gif" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine"
+                width="180" height="48">
             </span>
           </a>
           <p class="footer__desc">
-            Erawat Pharma Limited, an Erawat Group Company, ranks among the top Capsule manufacturers in the world &amp; second largest in India. Founded in 1997.
+            Erawat Pharma Limited, an Erawat Group Company, ranks among the top Capsule manufacturers in the world &amp;
+            second largest in India. Founded in 1997.
           </p>
         </div>
 
@@ -3186,48 +3486,61 @@
        REUSABLE POPUPS & MODALS (P1: SEND INQUIRY & P9: COOKIE NOTICE)
        ==================================================================== -->
   <!-- P1: Send Inquiry Modal -->
-  <div class="modal-backdrop" id="modalSendInquiry" role="dialog" aria-modal="true" aria-labelledby="inquiryModalTitle" aria-hidden="true">
+  <div class="modal-backdrop" id="modalSendInquiry" role="dialog" aria-modal="true" aria-labelledby="inquiryModalTitle"
+    aria-hidden="true">
     <div class="modal-overlay" data-close-modal></div>
     <div class="modal-dialog">
       <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
       <h3 class="modal-title" id="inquiryModalTitle">Send Inquiry</h3>
-      <p class="modal-lead">Connect directly with EPL India technical engineering specialists for formulation and machine support.</p>
+      <p class="modal-lead">Connect directly with EPL India technical engineering specialists for formulation and
+        machine support.</p>
       <form class="modal-form" id="globalInquiryForm" novalidate>
         <div class="field-line" style="margin-bottom: 0.85rem;">
           <label class="field-line__label" for="modalInqName">Full Name<span class="required-star">*</span></label>
-          <input class="field-line__input" type="text" id="modalInqName" name="name" placeholder="e.g. Rajesh Sharma" required>
+          <input class="field-line__input" type="text" id="modalInqName" name="name" placeholder="e.g. Rajesh Sharma"
+            required>
         </div>
         <div class="field-line" style="margin-bottom: 0.85rem;">
-          <label class="field-line__label" for="modalInqCompany">Company Name<span class="required-star">*</span></label>
-          <input class="field-line__input" type="text" id="modalInqCompany" name="company" placeholder="e.g. Medilife Formulations" required>
+          <label class="field-line__label" for="modalInqCompany">Company Name<span
+              class="required-star">*</span></label>
+          <input class="field-line__input" type="text" id="modalInqCompany" name="company"
+            placeholder="e.g. Medilife Formulations" required>
         </div>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.85rem;">
           <div class="field-line">
             <label class="field-line__label" for="modalInqEmail">Work Email<span class="required-star">*</span></label>
-            <input class="field-line__input" type="email" id="modalInqEmail" name="email" placeholder="name@company.com" required>
+            <input class="field-line__input" type="email" id="modalInqEmail" name="email" placeholder="name@company.com"
+              required>
           </div>
           <div class="field-line">
-            <label class="field-line__label" for="modalInqPhone">Phone Number<span class="required-star">*</span></label>
-            <input class="field-line__input" type="tel" id="modalInqPhone" name="phone" placeholder="e.g. 9876543210" required>
+            <label class="field-line__label" for="modalInqPhone">Phone Number<span
+                class="required-star">*</span></label>
+            <input class="field-line__input" type="tel" id="modalInqPhone" name="phone" placeholder="e.g. 9876543210"
+              required>
           </div>
         </div>
         <div class="field-line" style="margin-bottom: 0.85rem;">
           <label class="field-line__label" for="modalInqCountry">Country<span class="required-star">*</span></label>
-          <input class="field-line__input" type="text" id="modalInqCountry" name="country" placeholder="e.g. India" required>
+          <input class="field-line__input" type="text" id="modalInqCountry" name="country" placeholder="e.g. India"
+            required>
         </div>
         <div class="field-line" style="margin-bottom: 0.85rem;">
           <label class="field-line__label">Interest Area (Capsule Sizes)</label>
           <div class="interest-minimal__chips" style="margin-top: 0.35rem;">
-            <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="00"><span>Gelatin 00</span></label>
-            <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="0"><span>Gelatin 0</span></label>
-            <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="1"><span>Gelatin 1</span></label>
+            <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="00"><span>Gelatin
+                00</span></label>
+            <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="0"><span>Gelatin
+                0</span></label>
+            <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="1"><span>Gelatin
+                1</span></label>
             <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="00"><span>HPMC 00</span></label>
             <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="0"><span>HPMC 0</span></label>
           </div>
         </div>
         <div class="field-line" style="margin-bottom: 1.25rem;">
           <label class="field-line__label" for="modalInqMessage">Message</label>
-          <textarea class="field-line__input field-line__textarea" id="modalInqMessage" name="message" rows="2" placeholder="Specify filling speed, formulations, or trial requirements..."></textarea>
+          <textarea class="field-line__input field-line__textarea" id="modalInqMessage" name="message" rows="2"
+            placeholder="Specify filling speed, formulations, or trial requirements..."></textarea>
         </div>
         <button type="submit" class="btn-black-pill" style="width: 100%; justify-content: center;">
           <span class="btn-anim__text">
@@ -3238,26 +3551,41 @@
           </span>
           <span class="btn-anim__icon">
             <span class="btn-anim__icon-track">
-              <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-              <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
+              <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 2L8 6L4 10" />
+              </svg>
+              <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 2L8 6L4 10" />
+              </svg>
             </span>
           </span>
         </button>
       </form>
       <div class="modal-success is-hidden" style="display: none; padding: 2rem 1rem; text-align: center;">
-        <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--green-900); margin-bottom: 0.5rem;">Thanks. We will reply by email soon.</h4>
-        <p style="font-size: 0.95rem; color: var(--ink-700);">Our EPL technical specialist will review your specifications and contact you shortly.</p>
-        <button type="button" class="btn-outline-white" style="color: var(--ink-900); border-color: #cbd5e1; margin-top: 1rem;" data-close-modal>Close</button>
+        <h4
+          style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--green-900); margin-bottom: 0.5rem;">
+          Thanks. We will reply by email soon.</h4>
+        <p style="font-size: 0.95rem; color: var(--ink-700);">Our EPL technical specialist will review your
+          specifications and contact you shortly.</p>
+        <button type="button" class="btn-outline-white"
+          style="color: var(--ink-900); border-color: #cbd5e1; margin-top: 1rem;" data-close-modal>Close</button>
       </div>
     </div>
   </div>
 
   <!-- P9: Cookie Notice -->
   <aside class="cookie-notice is-hidden" id="cookieNotice" role="region" aria-label="Cookie preferences">
-    <p style="margin: 0; line-height: 1.45;">We use essential cookies to maintain site performance and process technical inquiries. No advertising trackers.</p>
+    <p style="margin: 0; line-height: 1.45;">We use essential cookies to maintain site performance and process technical
+      inquiries. No advertising trackers.</p>
     <div class="cookie-notice__actions">
-      <button type="button" class="btn-gradient-pill" id="acceptCookiesBtn" style="padding: 0.45rem 1.25rem; font-size: 0.8rem;">Accept</button>
-      <a href="sitemap.html" style="font-size: 0.8rem; color: var(--green-700); text-decoration: underline;">Learn more</a>
+      <button type="button" class="btn-gradient-pill" id="acceptCookiesBtn"
+        style="padding: 0.45rem 1.25rem; font-size: 0.8rem;">Accept</button>
+      <a href="sitemap.html" style="font-size: 0.8rem; color: var(--green-700); text-decoration: underline;">Learn
+        more</a>
     </div>
   </aside>
 

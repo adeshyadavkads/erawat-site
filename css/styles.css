@@ -3092,3 +3092,650 @@ ol {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ==========================================================================
+   MASTER UNIFIED DESIGN SYSTEM (MATCHING HOMEPAGE DESIGN SYSTEM)
+   Containers (80%), Headings, Eyebrows, Pill Buttons, Colors, Spacing & Topbar
+   ========================================================================== */
+
+/* 1. UNIVERSAL RESET & SHADOW REMOVAL */
+*, *::before, *::after {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+/* Card hover glow exceptions */
+.mfg-card--green:hover {
+  border-color: #65a30d !important;
+  box-shadow: 0 20px 40px -15px rgba(132, 204, 22, 0.35), 0 8px 24px -8px rgba(0, 0, 0, 0.08) !important;
+  background: linear-gradient(180deg, #ffffff 60%, #f7fee7 100%) !important;
+}
+
+.mfg-card--yellow:hover {
+  border-color: #ca8a04 !important;
+  box-shadow: 0 20px 40px -15px rgba(234, 179, 8, 0.38), 0 8px 24px -8px rgba(0, 0, 0, 0.08) !important;
+  background: linear-gradient(180deg, #ffffff 60%, #fefce8 100%) !important;
+}
+
+.mfg-card--orange:hover {
+  border-color: #ea580c !important;
+  box-shadow: 0 20px 40px -15px rgba(249, 115, 22, 0.35), 0 8px 24px -8px rgba(0, 0, 0, 0.08) !important;
+  background: linear-gradient(180deg, #ffffff 60%, #fff7ed 100%) !important;
+}
+
+/* 2. UNIFIED 80% CONTAINER SYSTEM ACROSS ALL PAGES & INNER SECTIONS */
+.container,
+.container--editorial,
+.container--video,
+.page-banner__inner,
+.cta-band__inner,
+.spec-table-container,
+.site-header .header__inner,
+.site-topbar__inner,
+.site-footer .container,
+.global-utility-strip__inner {
+  width: 80% !important;
+  max-width: 80% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-inline: auto !important;
+  box-sizing: border-box !important;
+  padding-inline: 0 !important;
+}
+
+@media (max-width: 992px) {
+  .container,
+  .container--editorial,
+  .container--video,
+  .page-banner__inner,
+  .cta-band__inner,
+  .spec-table-container,
+  .site-header .header__inner,
+  .site-topbar__inner,
+  .site-footer .container,
+  .global-utility-strip__inner {
+    width: 90% !important;
+    max-width: 90% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .container,
+  .container--editorial,
+  .container--video,
+  .page-banner__inner,
+  .cta-band__inner,
+  .spec-table-container,
+  .site-header .header__inner,
+  .site-topbar__inner,
+  .site-footer .container,
+  .global-utility-strip__inner {
+    width: 92% !important;
+    max-width: 92% !important;
+  }
+}
+
+/* 3. TOP UTILITY BAR (MODERN SLEEK DESIGN) */
+.site-topbar {
+  background: hsl(141.03deg 81.82% 28.04%);
+  color: #94a3b8;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 1rem;
+  line-height: 1;
+  position: relative;
+  z-index: 1001;
+}
+
+.site-topbar__inner {
+  padding: 14px 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+.site-topbar__left,
+.site-topbar__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-topbar__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.site-topbar__icon {
+  color: #fff;
+  flex-shrink: 0;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.site-topbar__item:hover .site-topbar__icon {
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.site-topbar__muted {
+  color: #fff;
+  font-weight: 500;
+}
+
+.site-topbar__link {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.site-topbar__link:hover {
+  color: #ffffff;
+}
+
+.site-topbar__link--highlight {
+  position: relative;
+  color: #ffffff;
+}
+
+.site-topbar__divider {
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background: rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.site-topbar__social {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.25s ease;
+}
+
+.site-topbar__social:hover {
+  color: #ffffff;
+  background: #0077b5;
+  border-color: #0077b5;
+  transform: translateY(-1px);
+}
+
+.site-topbar__social-icon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .site-topbar__inner {
+    padding: 8px 0 !important;
+    font-size: 0.75rem;
+  }
+
+  .site-topbar__left {
+    gap: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .site-topbar__left::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-topbar__muted {
+    display: none;
+  }
+}
+
+/* 4. UNIFIED WHITE HEADER & CLEAN DESKTOP NAV */
+.site-header {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-block-end: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+}
+
+.site-header .brand__logo {
+  filter: brightness(0) !important;
+}
+
+.site-header .nav__link {
+  color: #1a1e24 !important;
+  font-weight: 600 !important;
+  position: relative;
+  display: inline-block;
+  transition: color 0.2s ease;
+  font-family: var(--font-body, "Inter", sans-serif) !important;
+}
+
+.site-header .nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e0302f;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.site-header .nav__link:hover,
+.site-header .nav__link.is-active {
+  color: #e0302f !important;
+  background-color: transparent !important;
+}
+
+.site-header .nav__link:hover::after,
+.site-header .nav__link.is-active::after {
+  transform: scaleX(1);
+}
+
+@media (min-width: 993px) {
+  .site-header .header__inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 16px !important;
+    padding-block: 22px !important;
+  }
+
+  .site-header .brand {
+    margin-right: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  .site-header .site-nav {
+    margin-left: auto !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .site-header .nav__list {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: clamp(6px, 1vw, 16px) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  .site-header .header__actions {
+    display: flex !important;
+    align-items: center !important;
+    margin-left: clamp(12px, 1.6vw, 24px) !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* 5. UNIFIED SECTION VERTICAL RHYTHM & SPACING */
+.section,
+.section--white,
+.section--facility-video,
+.section--mission,
+.section--editorial,
+.section--blue,
+.timeline-section {
+  padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
+  position: relative;
+}
+
+.section--mfg {
+  padding-block: clamp(2.5rem, 3.5vw, 3.5rem) !important;
+  position: relative;
+}
+
+/* 6. UNIFIED SECTION HEADINGS */
+.section-heading,
+.mfg-header__heading,
+.facility-video__heading,
+.inquiry-heading,
+.page-hero__heading,
+.page-hero__title,
+.hero-editorial__title {
+  font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
+  font-size: clamp(2.1rem, 1.8rem + 1.4vw, 2.85rem) !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  margin: 0 0 1rem 0 !important;
+}
+
+.section:not(.page-banner):not(.cta-band) .section-heading,
+.section--white .section-heading,
+.section--editorial .section-heading {
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+}
+
+/* 7. UNIFIED RED EYEBROW TAGS */
+.section-tag,
+.page-banner__label,
+.badge--editorial {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  background: transparent !important;
+  color: #ff0000 !important;
+  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-size: 0.775rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  line-height: 1 !important;
+  padding: 0.42rem 0.85rem !important;
+  border-radius: 6px !important;
+  margin-bottom: 0.85rem !important;
+  width: fit-content !important;
+  user-select: none !important;
+  border: 1px solid #ff0000 !important;
+}
+
+.section-tag__dot {
+  display: none !important;
+}
+
+/* 8. UNIFIED BODY & LEAD TYPOGRAPHY */
+.section-lead,
+.mfg-header__desc,
+.facility-video__desc,
+.inquiry-lead,
+.split-hero__desc,
+.page-hero__lead,
+.setup-intro__lead {
+  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-size: clamp(0.95rem, 1.02vw, 1.15rem) !important;
+  color: #475569 !important;
+  line-height: 1.68 !important;
+}
+
+/* 9. UNIFIED PILL BUTTON SYSTEM (GREEN BRAND COLOR) */
+.btn,
+.btn-primary,
+.btn-black-pill,
+.btn-gradient-pill,
+.btn-solid-pill,
+.btn-editorial-send,
+.site-header .btn-gradient-pill,
+.site-header .nav__mobile-cta .btn-gradient-pill,
+.cta-band .btn-gradient-pill,
+.hero-editorial .btn-gradient-pill,
+.cert-card__btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 16px 28px !important;
+  border-radius: 9999px !important;
+  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-weight: 700 !important;
+  font-size: 0.88rem !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+  background: hsl(141.03deg 81.82% 28.04%) !important;
+  color: #ffffff !important;
+  border: none !important;
+  position: relative !important;
+  overflow: hidden !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-black-pill:hover,
+.btn-gradient-pill:hover,
+.btn-solid-pill:hover,
+.btn-editorial-send:hover,
+.site-header .btn-gradient-pill:hover,
+.site-header .nav__mobile-cta .btn-gradient-pill:hover,
+.cta-band .btn-gradient-pill:hover,
+.hero-editorial .btn-gradient-pill:hover,
+.cert-card__btn:hover {
+  background: #1e293b !important;
+  border-color: #1e293b !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Outline Pill Button */
+.btn-outline-white,
+.btn-outline-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 16px 28px !important;
+  border-radius: 9999px !important;
+  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-weight: 700 !important;
+  font-size: 0.88rem !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.6) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-outline-white:hover,
+.btn-outline-pill:hover {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+/* 10. ANIMATED BUTTON (TEXT ROLL + ICON SLIDE) */
+.btn-anim__text {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  line-height: 1.25;
+  vertical-align: middle;
+}
+
+.btn-anim__text-track {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.btn-anim__text-item {
+  display: block;
+  white-space: nowrap;
+  line-height: 1.25;
+}
+
+.btn-anim__text-clone {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.btn-gradient-pill:hover .btn-anim__text-track,
+.btn-black-pill:hover .btn-anim__text-track,
+.btn-primary:hover .btn-anim__text-track,
+.btn:hover .btn-anim__text-track {
+  transform: translateY(-100%);
+}
+
+.btn-anim__icon {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.btn-anim__icon-track {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.btn-anim__icon-item {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  will-change: transform, opacity;
+}
+
+.btn-anim__icon-item:not(.btn-anim__icon-clone) {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.btn-anim__icon-clone {
+  transform: translateX(-150%);
+  opacity: 0;
+}
+
+.btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.btn-black-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.btn-primary:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.btn:hover .btn-anim__icon-item:not(.btn-anim__icon-clone) {
+  transform: translateX(150%);
+  opacity: 0;
+}
+
+.btn-gradient-pill:hover .btn-anim__icon-clone,
+.btn-black-pill:hover .btn-anim__icon-clone,
+.btn-primary:hover .btn-anim__icon-clone,
+.btn:hover .btn-anim__icon-clone {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* 11. PAGE BANNER & CTA BAND MODERN ENHANCEMENTS */
+.page-banner {
+  background: radial-gradient(ellipse 90% 120% at 50% 10%, rgba(30, 41, 59, 0.95) 0%, rgba(10, 15, 26, 0.98) 85%), linear-gradient(180deg, #0f172a 0%, #020617 100%) !important;
+  border-block-end: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding-block-start: calc(var(--header-h, 110px) + 2.5rem) !important;
+  padding-block-end: clamp(3rem, 4.5vw, 4.5rem) !important;
+}
+
+.page-banner .page-banner__title {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  font-size: clamp(2.2rem, 1.8rem + 2vw, 3.25rem) !important;
+}
+
+.page-banner .page-banner__subline {
+  color: rgba(255, 255, 255, 0.82) !important;
+  font-size: clamp(1rem, 1.05vw, 1.2rem) !important;
+  max-width: 52rem;
+  line-height: 1.6;
+}
+
+.breadcrumb {
+  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-size: 0.85rem !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  margin-block-start: 0.75rem !important;
+}
+
+.breadcrumb a {
+  color: rgba(255, 255, 255, 0.75) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
+}
+
+.breadcrumb a:hover {
+  color: hsl(141.03deg 81.82% 28.04%) !important;
+}
+
+.cta-band {
+  background-color: #0f172a !important;
+  border-block-start: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding-block: clamp(3.5rem, 5vw, 5rem) !important;
+}
+
+.cta-band__text {
+  font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
+  font-size: clamp(1.6rem, 1.35rem + 1vw, 2.25rem) !important;
+  color: #ffffff !important;
+  line-height: 1.25 !important;
+}
+
+/* 12. READ MORE UNDERLINED BUTTON STYLING */
+.mfg-card__readmore,
+.card-readmore {
+  display: inline-block;
+  font-family: var(--font-body, "Inter", sans-serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 1.5px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mfg-card:hover .mfg-card__readmore,
+.card-readmore:hover {
+  text-underline-offset: 8px;
+  letter-spacing: 0.04em;
+}
+
+/* 13. FORM INPUTS & CONTROL STYLING */
+.field-line__input,
+.form-control,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  font-family: var(--font-body, "Inter", sans-serif) !important;
+  border-radius: 8px !important;
+  border: 1px solid #cbd5e1 !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.field-line__input:focus,
+.form-control:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: hsl(141.03deg 81.82% 28.04%) !important;
+  outline: none !important;
+}

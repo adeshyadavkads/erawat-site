@@ -9,7 +9,7 @@
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/tokens.css">
@@ -17,42 +17,89 @@
   <link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
+  <!-- ====================================================================
+       PAGE LOADER (ERAWAT ANIMATED SVG)
+       ==================================================================== -->
+  <div class="page-loader" id="pageLoader" role="status" aria-live="polite" aria-label="Loading Erawat Pharma Limited">
+    <div class="page-loader__content">
+      <img class="page-loader__icon" src="images/erawat-loader.svg" alt="Erawat Loading" width="300" height="240">
+    </div>
+  </div>
+
   <a class="skip-link" href="#mainContent">Skip to main content</a>
 
-  <!-- Header -->
-    <!-- Global Enterprise Utility Strip -->
-  <aside class="global-utility-strip" aria-label="Global pharmaceutical credentials">
-    <div class="container global-utility-strip__inner">
-      <div class="global-utility-strip__left">
-        <span class="global-utility-badge">
-          <span class="global-utility-badge__dot"></span>US FDA DMF Type IV Filed [DMF #018249]
-        </span>
-        <span class="global-utility-badge">
-          <span class="global-utility-badge__dot"></span>WHO-GMP &amp; ISO 9001:2015 Certified
-        </span>
-        <span class="global-utility-badge">
-          <span class="global-utility-badge__dot"></span>50+ Global Export Markets
-        </span>
-      </div>
-      <div class="global-utility-strip__right">
-        <a class="global-utility-link" href="certification.html">CoA Batch Lookup</a>
-        <a class="global-utility-link" href="request-sample.html">Global Sample Dispatch</a>
-        <a class="global-utility-link" href="tel:+917316659100">HQ: +91 731 6659100</a>
+  <!-- ====================================================================
+       1. STICKY HEADER
+       ==================================================================== -->
+  <header class="site-header">
+    <!-- Top Utility Bar (Modern Sleek Design) -->
+    <div class="site-topbar">
+      <div class="site-topbar__inner">
+        <div class="site-topbar__left">
+          <div class="site-topbar__item">
+            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            <span class="site-topbar__muted">Email Us:</span>
+            <a href="mailto:info@erawatgroup.com" class="site-topbar__link">info@erawatgroup.com</a>
+          </div>
+
+          <span class="site-topbar__divider" aria-hidden="true"></span>
+
+          <div class="site-topbar__item">
+            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+              <path d="M4 15V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1" />
+              <path d="M2 15h10" />
+              <path d="m9 18 3-3-3-3" />
+            </svg>
+            <a href="request-sample.html" class="site-topbar__link site-topbar__link--highlight">Request Sample</a>
+          </div>
+
+          <span class="site-topbar__divider" aria-hidden="true"></span>
+
+          <div class="site-topbar__item">
+            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+              <path d="M2 12h20" />
+            </svg>
+            <a href="exports.html" class="site-topbar__link">Export Areas</a>
+          </div>
+        </div>
+
+        <div class="site-topbar__right">
+          <a href="https://www.linkedin.com/company/erawat-pharma-limited" target="_blank" rel="noopener noreferrer"
+            class="site-topbar__social" aria-label="Follow Erawat on LinkedIn">
+            <svg class="site-topbar__social-icon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"
+              aria-hidden="true">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.7a1.64 1.64 0 0 0-1.64 1.64c0 .91.73 1.64 1.64 1.64s1.64-.73 1.64-1.64A1.64 1.64 0 0 0 7.83 6.7Z" />
+            </svg>
+            <span class="site-topbar__social-text">LinkedIn</span>
+          </a>
+        </div>
       </div>
     </div>
-  </aside>
-
-  <header class="site-header">
     <div class="header__inner">
-      <a class="brand" href="index.html" aria-label="Erawat Pharma Limited Home">
+      <a class="brand" href="index.html" aria-label="Erawat Pharma Limited Home" data-aos="fade-down"
+        data-aos-duration="600">
         <span class="brand__logo-wrap">
-          <img class="brand__logo" src="images/logo_1.png" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine" width="180" height="48">
+          <img class="brand__logo" src="images/logo_1.png" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine"
+            width="180" height="48">
         </span>
       </a>
 
-      <button type="button" id="navToggle" class="nav-toggle" aria-controls="siteNav" aria-expanded="false">Menu</button>
+      <button type="button" id="navToggle" class="nav-toggle" aria-controls="siteNav" aria-expanded="false">
+        Menu
+      </button>
 
-      <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation" data-aos="fade-down" data-aos-duration="600"
+        data-aos-delay="100">
         <ul class="nav__list">
           <li><a class="nav__link" href="profile.html">About</a></li>
           <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
@@ -63,12 +110,54 @@
           <li><a class="nav__link" href="careers.html">Careers</a></li>
         </ul>
         <div class="nav__mobile-cta">
-          <a class="btn-gradient-pill" href="contact.html">Send Inquiry &rarr;</a>
+          <a class="btn-gradient-pill" href="contact.html">
+            <span class="btn-anim__text">
+              <span class="btn-anim__text-track">
+                <span class="btn-anim__text-item">Send Inquiry</span>
+                <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
+              </span>
+            </span>
+            <span class="btn-anim__icon">
+              <span class="btn-anim__icon-track">
+                <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                  stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M4 2L8 6L4 10" />
+                </svg>
+                <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                  fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M4 2L8 6L4 10" />
+                </svg>
+              </span>
+            </span>
+          </a>
         </div>
       </nav>
 
-      <div class="header__actions">
-        <a class="btn-gradient-pill" href="contact.html">Send Inquiry &rarr;</a>
+      <div class="header__actions" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
+        <a class="btn-gradient-pill" href="contact.html">
+          <span class="btn-anim__text">
+            <span class="btn-anim__text-track">
+              <span class="btn-anim__text-item">Send Inquiry</span>
+              <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
+            </span>
+          </span>
+          <span class="btn-anim__icon">
+            <span class="btn-anim__icon-track">
+              <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 2L8 6L4 10" />
+              </svg>
+              <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 2L8 6L4 10" />
+              </svg>
+            </span>
+          </span>
+        </a>
       </div>
     </div>
   </header>

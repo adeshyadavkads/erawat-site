@@ -51,12 +51,14 @@
 
   /* Status accents */
   --danger: #ef4444;
+  --brand-green: hsl(141.03deg 81.82% 28.04%);
+  --brand-green-hover: #1e293b;
 
   /* ------------------------------------------------------------------------
      2. GRADIENTS
      ------------------------------------------------------------------------ */
   --gradient-hero: linear-gradient(180deg, #18181b 0%, #0f1012 55%, #050505 100%);
-  --gradient-banner-btn: linear-gradient(90deg, #c52222 0%, #e53935 50%, #f4511e 100%);
+  --gradient-banner-btn: hsl(141.03deg 81.82% 28.04%);
   --gradient-banner-btn-crimson: linear-gradient(90deg, #c52222 0%, #e53935 50%, #f4511e 100%);
   --gradient-banner-btn-emerald: linear-gradient(90deg, #18181b 0%, #27272a 50%, #3f3f46 100%);
   --gradient-banner-btn-sapphire: linear-gradient(90deg, #1e40af 0%, #2563eb 50%, #0284c7 100%);
@@ -103,7 +105,7 @@
      4. TYPOGRAPHY
      ------------------------------------------------------------------------ */
   --font-heading: "Bricolage Grotesque", system-ui, sans-serif;
-  --font-body: "Figtree", system-ui, sans-serif;
+  --font-body: "Inter", "Figtree", system-ui, sans-serif;
 
   --text-hero-heading: clamp(2rem, 1.4rem + 2.2vw, 3.5rem);
   --text-h1: clamp(2.5rem, 1.6rem + 4vw, 5rem);

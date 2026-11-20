@@ -377,6 +377,14 @@
       }
 
       @media (max-width: 992px) {
+        .split-hero {
+          height: auto !important;
+        }
+        .split-hero__pin {
+          position: relative !important;
+          top: auto !important;
+          height: auto !important;
+        }
         .inquiry-image-card {
           min-height: 320px !important;
           aspect-ratio: 16 / 10 !important;
@@ -521,7 +529,7 @@
 
       @media (min-width: 993px) {
         .facility-video__layout {
-          grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr) !important;
+          grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) !important;
           gap: clamp(2rem, 3.5vw, 3.5rem) !important;
           align-items: stretch !important;
         }
@@ -1416,7 +1424,7 @@
        -------------------------------------------------------------------------- */
       .split-hero {
         position: relative;
-        height: 350vh;
+        height: 300vh;
         background: #ffffff;
         color: #000000;
       }
@@ -1427,13 +1435,15 @@
 
       .split-hero__pin {
         position: sticky;
-        top: 0;
-        height: 90vh;
+        top: var(--header-actual-h, 110px);
+        height: calc(100vh - var(--header-actual-h, 110px));
+        height: calc(100dvh - var(--header-actual-h, 110px));
         overflow: hidden;
         display: flex;
         align-items: stretch;
         background: #ffffff;
         padding: 0;
+        z-index: 10;
       }
 
       /* Right-aligned Navigation Menu with CTA Button */
@@ -1518,7 +1528,7 @@
         overflow: hidden;
         padding-left: 10vw !important;
         padding-right: clamp(20px, 3.5vw, 56px) !important;
-        padding-top: 110px !important;
+        /* padding-top: 110px !important; */
         padding-bottom: 30px !important;
         display: flex;
         align-items: center;
@@ -2789,6 +2799,17 @@
       (function () {
         var hero = document.getElementById('heroSplit');
         if (!hero) return;
+        var pin = document.getElementById('heroSplitPin');
+        var header = document.querySelector('.site-header');
+
+        function updateHeaderHeight() {
+          if (header) {
+            var h = header.offsetHeight;
+            document.documentElement.style.setProperty('--header-actual-h', h + 'px');
+          }
+        }
+        updateHeaderHeight();
+        window.addEventListener('resize', updateHeaderHeight, { passive: true });
 
         var panes = [].slice.call(hero.querySelectorAll('.split-hero__pane'));
         var imgItems = [].slice.call(hero.querySelectorAll('.split-hero__img-item'));
@@ -2832,7 +2853,6 @@
             }
           });
 
-
           // Play active video, pause inactive videos
           imgItems.forEach(function (item, i) {
             var v = item.querySelector('video');
@@ -2844,6 +2864,7 @@
               }
             }
           });
+
           // Pagination Dots active state
           dots.forEach(function (dot, i) {
             var isActive = (i === index);
@@ -2891,16 +2912,22 @@
         hero.addEventListener('mouseenter', stopAuto);
         hero.addEventListener('mouseleave', startAuto);
 
+        function getScrollMetrics() {
+          var headerH = header ? header.offsetHeight : 0;
+          var pinH = pin ? pin.offsetHeight : (window.innerHeight - headerH);
+          var scrollDist = hero.offsetHeight - pinH;
+          return { headerH: headerH, pinH: pinH, scrollDist: scrollDist };
+        }
+
         // Click handlers on pagination dots
         dots.forEach(function (dot, i) {
           dot.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
-            var heroTop = hero.getBoundingClientRect().top + window.scrollY;
-            var scrollDist = hero.offsetHeight - window.innerHeight;
-            if (scrollDist > 0) {
-              var targetProgress = (i === 0) ? 0 : (i === totalScenes - 1) ? 0.92 : ((i + 0.5) / totalScenes);
-              var targetScroll = heroTop + targetProgress * scrollDist;
+            var m = getScrollMetrics();
+            if (m.scrollDist > 0) {
+              var targetProgress = (i === 0) ? 0 : (i === totalScenes - 1) ? 0.99 : ((i + 0.3) / totalScenes);
+              var targetScroll = targetProgress * m.scrollDist;
               window.scrollTo({
                 top: targetScroll,
                 behavior: 'smooth'
@@ -2936,11 +2963,11 @@
         }
 
         function onScroll() {
-          var rect = hero.getBoundingClientRect();
-          var scrollDist = hero.offsetHeight - window.innerHeight;
-          if (scrollDist <= 0) return;
+          var m = getScrollMetrics();
+          if (m.scrollDist <= 0) return;
 
-          var progress = Math.max(0, Math.min(1, -rect.top / scrollDist));
+          // Banner scroll starts directly from scrollY = 0 (pinned right below the header)
+          var progress = Math.max(0, Math.min(1, window.scrollY / m.scrollDist));
 
           if (progressBar) {
             progressBar.style.transform = 'scaleX(' + progress + ')';
@@ -2961,11 +2988,10 @@
 
         navBtns.forEach(function (btn, i) {
           btn.addEventListener('click', function () {
-            var scrollDist = hero.offsetHeight - window.innerHeight;
-            if (scrollDist > 0) {
-              var heroTop = hero.getBoundingClientRect().top + window.scrollY;
-              var targetProgress = (i === 0) ? 0 : (i === totalScenes - 1) ? 0.92 : ((i + 0.5) / totalScenes);
-              var targetScroll = heroTop + targetProgress * scrollDist;
+            var m = getScrollMetrics();
+            if (m.scrollDist > 0) {
+              var targetProgress = (i === 0) ? 0 : (i === totalScenes - 1) ? 0.99 : ((i + 0.3) / totalScenes);
+              var targetScroll = targetProgress * m.scrollDist;
               window.scrollTo({
                 top: targetScroll,
                 behavior: 'smooth'
@@ -3072,30 +3098,8 @@
       <div class="container container--video">
         <div class="facility-video__layout">
 
-          <!-- Left Side: Video Player Area -->
-          <div class="facility-video__media-col" data-aos="fade-right" data-aos-duration="700">
-            <div class="facility-video__banner">
-              <img class="facility-video__thumbnail" src="images/banners/bannerawat1.png"
-                alt="Erawat capsule manufacturing cleanroom facility" width="1280" height="720" loading="lazy">
-
-              <div class="facility-video__overlay"></div>
-
-              <!-- Center: Play Button with Direct YouTube Link -->
-              <a class="facility-video__play-link" href="https://www.youtube.com/watch?v=09swx1Q1sAA" target="_blank"
-                rel="noopener noreferrer" aria-label="Play Erawat Corporate Video on YouTube (opens in new tab)">
-                <span class="play-ripple" aria-hidden="true"></span>
-                <span class="play-ripple play-ripple--2" aria-hidden="true"></span>
-                <span class="play-btn-circle">
-                  <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <polygon points="6 4 20 12 6 20 6 4"></polygon>
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Right Side: Text Area -->
-          <div class="facility-video__text-col" data-aos="fade-left" data-aos-duration="700">
+          <!-- Left Side: Text Area -->
+          <div class="facility-video__text-col" data-aos="fade-right" data-aos-duration="700">
             <span class="section-tag" data-aos="fade-up"><span class="section-tag__dot"></span>Plant &amp;
               Technology</span>
             <h2 class="facility-video__heading" id="facilityVideoHeading" data-aos="fade-up" data-aos-delay="100">
@@ -3128,6 +3132,28 @@
                       <path d="M4 2L8 6L4 10" />
                     </svg>
                   </span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Side: Video Player Area -->
+          <div class="facility-video__media-col" data-aos="fade-left" data-aos-duration="700">
+            <div class="facility-video__banner">
+              <img class="facility-video__thumbnail" src="images/banners/bannerawat1.png"
+                alt="Erawat capsule manufacturing cleanroom facility" width="1280" height="720" loading="lazy">
+
+              <div class="facility-video__overlay"></div>
+
+              <!-- Center: Play Button with Direct YouTube Link -->
+              <a class="facility-video__play-link" href="https://www.youtube.com/watch?v=09swx1Q1sAA" target="_blank"
+                rel="noopener noreferrer" aria-label="Play Erawat Corporate Video on YouTube (opens in new tab)">
+                <span class="play-ripple" aria-hidden="true"></span>
+                <span class="play-ripple play-ripple--2" aria-hidden="true"></span>
+                <span class="play-btn-circle">
+                  <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <polygon points="6 4 20 12 6 20 6 4"></polygon>
+                  </svg>
                 </span>
               </a>
             </div>
