@@ -1256,7 +1256,7 @@
        -------------------------------------------------------------------------- */
     .split-hero {
       position: relative;
-      height: 420vh;
+      height: 350vh;
       background: #ffffff;
       color: #000000;
     }
@@ -1266,7 +1266,7 @@
     .split-hero__pin {
       position: sticky;
       top: 0;
-      height: 100vh;
+      height: 90vh;
       overflow: hidden;
       display: flex;
       align-items: stretch;
@@ -1333,7 +1333,7 @@
     .split-hero__inner {
       width: 100% !important;
       max-width: 100% !important;
-      height: 100vh !important;
+      height: 100% !important;
       display: grid;
       grid-template-columns: 1fr 1.25fr;
       align-items: stretch;
@@ -1345,7 +1345,7 @@
     /* Part 1: Text Column (Flush aligned with 80% container left edge / logo) */
     .split-hero__text-col {
       position: relative;
-      height: 100vh !important;
+      height: 100% !important;
       overflow: hidden;
       padding-left: 10vw !important;
       padding-right: clamp(20px, 3.5vw, 56px) !important;
@@ -1654,7 +1654,7 @@
     .split-hero__media-col {
       position: relative;
       width: 100%;
-      height: 100vh !important;
+      height: 100% !important;
       display: flex;
       align-items: stretch;
       justify-content: flex-end;
@@ -1664,8 +1664,8 @@
     .split-hero__card {
       position: relative;
       width: 100%;
-      height: 100vh !important;
-      min-height: 100vh !important;
+      height: 100% !important;
+      min-height: 100% !important;
       overflow: hidden;
       background: #0f172a;
       -webkit-clip-path: none !important;
@@ -1792,6 +1792,52 @@
       color: #ffffff !important;
     }
 
+      /* Pagination Dots on Image's Right Side */
+      .split-hero__dots {
+        position: absolute;
+        right: clamp(16px, 2.5vw, 32px);
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        z-index: 25;
+        padding: 14px 9px;
+        background: rgba(15, 23, 42, 0.45);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 9999px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      }
+
+      .split-hero__dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.45);
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        outline: none;
+        transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        display: block;
+      }
+
+      .split-hero__dot:hover {
+        background: rgba(255, 255, 255, 0.95);
+        transform: scale(1.25);
+      }
+
+      .split-hero__dot.is-active {
+        height: 26px;
+        background: #ffffff;
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.65);
+        border-radius: 9999px;
+      }
+
+
     /* Mouse Scroll Indicator */
     .split-hero__scroll-cue {
       position: absolute;
@@ -1896,6 +1942,22 @@
       .split-hero__scroll-cue {
         display: none;
       }
+
+        .split-hero__dots {
+          right: 12px;
+          gap: 10px;
+          padding: 10px 7px;
+        }
+
+        .split-hero__dot {
+          width: 7px;
+          height: 7px;
+        }
+
+        .split-hero__dot.is-active {
+          height: 20px;
+        }
+
     }
     @media (max-width: 640px) {
       .split-hero__title {
@@ -2311,11 +2373,20 @@
                 </div>
               </div>
 
+              <!-- Slide Pagination (Right-Side Dots) -->
+              <div class="split-hero__dots" role="tablist" aria-label="Hero slider pagination">
+                <button type="button" class="split-hero__dot is-active" role="tab" aria-selected="true"
+                  aria-label="Slide 1: Empty Hard Gelatin Capsules" title="Empty Hard Gelatin Capsules" data-scene="0"></button>
+                <button type="button" class="split-hero__dot" role="tab" aria-selected="false"
+                  aria-label="Slide 2: HPMC / Veg Capsules" title="HPMC / Veg Capsules" data-scene="1"></button>
+                <button type="button" class="split-hero__dot" role="tab" aria-selected="false"
+                  aria-label="Slide 3: Precision Sizing & Colors" title="Precision Sizing & Custom Colors" data-scene="2"></button>
+                <button type="button" class="split-hero__dot" role="tab" aria-selected="false"
+                  aria-label="Slide 4: Zero-Defect Quality & Export" title="Zero-Defect Quality & Global Supply" data-scene="3"></button>
+              </div>
             </div>
           </div>
-
         </div>
-
         <!-- Interactive Scene Indicators (Clickable Jumpers) -->
         <!-- <nav class="split-hero__nav d-none" id="heroNav" aria-label="Banner scenes navigation">
           <button type="button" class="split-hero__nav-btn is-active" data-scene="0" aria-label="Scene 1: Gelatin">
@@ -2453,184 +2524,185 @@
 
     <!-- Auto Slider JavaScript -->
     <script>
-    (function() {
-      var slider = document.getElementById('whoWeAreSlider');
-      if (!slider) return;
+      (function () {
+        var hero = document.getElementById('heroSplit');
+        if (!hero) return;
 
-      var slides = [].slice.call(slider.querySelectorAll('.who-slide'));
-      var dots = [].slice.call(slider.querySelectorAll('.who-slider__dot'));
-      var prevBtn = slider.querySelector('.who-slider__nav--prev');
-      var nextBtn = slider.querySelector('.who-slider__nav--next');
-      if (slides.length <= 1) return;
+        var panes = [].slice.call(hero.querySelectorAll('.split-hero__pane'));
+        var imgItems = [].slice.call(hero.querySelectorAll('.split-hero__img-item'));
+        var navBtns = [].slice.call(hero.querySelectorAll('.split-hero__nav-btn'));
+        var dots = [].slice.call(hero.querySelectorAll('.split-hero__dot'));
+        var progressBar = document.getElementById('heroProgressBar');
+        var scrollCue = document.getElementById('heroScrollCue');
 
-      var currentIndex = 0;
-      var intervalTime = 3200;
-      var timer = null;
+        var totalScenes = Math.max(panes.length, imgItems.length) || 4;
+        var activeScene = 0;
+        var timer = null;
+        var autoPlayInterval = 5000;
 
-      function showSlide(index) {
-        if (index < 0) index = slides.length - 1;
-        if (index >= slides.length) index = 0;
-        currentIndex = index;
+        function updateScene(index) {
+          if (index < 0) index = 0;
+          if (index >= totalScenes) index = totalScenes - 1;
 
-        slides.forEach(function(s, i) {
-          s.classList.toggle('is-active', i === currentIndex);
-        });
+          activeScene = index;
 
-        dots.forEach(function(d, i) {
-          d.classList.toggle('is-active', i === currentIndex);
-          d.setAttribute('aria-selected', i === currentIndex ? 'true' : 'false');
-        });
-      }
+          // Text panes: passed slide DOWN (100%), upcoming wait ABOVE (-100%), active at center (0)
+          panes.forEach(function (p, i) {
+            p.classList.remove('is-active', 'is-passed', 'is-upcoming');
+            if (i === index) {
+              p.classList.add('is-active');
+            } else if (i < index) {
+              p.classList.add('is-passed');
+            } else {
+              p.classList.add('is-upcoming');
+            }
+          });
 
-      function nextSlide() {
-        showSlide(currentIndex + 1);
-      }
+          // Images: passed slide UP (-100%), upcoming wait BELOW (100%), active at center (0)
+          imgItems.forEach(function (img, i) {
+            img.classList.remove('is-active', 'is-passed', 'is-upcoming');
+            if (i === index) {
+              img.classList.add('is-active');
+            } else if (i < index) {
+              img.classList.add('is-passed');
+            } else {
+              img.classList.add('is-upcoming');
+            }
+          });
 
-      function prevSlide() {
-        showSlide(currentIndex - 1);
-      }
+          // Pagination Dots active state
+          dots.forEach(function (dot, i) {
+            var isActive = (i === index);
+            dot.classList.toggle('is-active', isActive);
+            dot.setAttribute('aria-selected', isActive ? 'true' : 'false');
+          });
 
-      function startAuto() {
-        stopAuto();
-        timer = setInterval(nextSlide, intervalTime);
-      }
-
-      function stopAuto() {
-        if (timer) {
-          clearInterval(timer);
-          timer = null;
+          // Nav buttons active state
+          navBtns.forEach(function (btn, i) {
+            btn.classList.toggle('is-active', i === index);
+            btn.setAttribute('aria-selected', i === index ? 'true' : 'false');
+          });
         }
-      }
 
-      slider.addEventListener('mouseenter', stopAuto);
-      slider.addEventListener('mouseleave', startAuto);
-
-      if (prevBtn) {
-        prevBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          prevSlide();
-          startAuto();
-        });
-      }
-
-      if (nextBtn) {
-        nextBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          nextSlide();
-          startAuto();
-        });
-      }
-
-      dots.forEach(function(dot, i) {
-        dot.addEventListener('click', function() {
-          showSlide(i);
-          startAuto();
-        });
-      });
-
-      var touchStartX = 0;
-      slider.addEventListener('touchstart', function(e) {
-        touchStartX = e.changedTouches[0].screenX;
-      }, { passive: true });
-      slider.addEventListener('touchend', function(e) {
-        var diff = touchStartX - e.changedTouches[0].screenX;
-        if (Math.abs(diff) > 40) {
-          if (diff > 0) nextSlide();
-          else prevSlide();
-          startAuto();
+        function nextScene() {
+          var next = (activeScene + 1) % totalScenes;
+          updateScene(next);
         }
-      }, { passive: true });
 
-      startAuto();
-    })();
-    </script>
-    <script>
-    (function() {
-      var hero = document.getElementById('heroSplit');
-      if (!hero) return;
+        function prevScene() {
+          var prev = (activeScene - 1 + totalScenes) % totalScenes;
+          updateScene(prev);
+        }
 
-      var panes = [].slice.call(hero.querySelectorAll('.split-hero__pane'));
-      var imgItems = [].slice.call(hero.querySelectorAll('.split-hero__img-item'));
-      var navBtns = [].slice.call(hero.querySelectorAll('.split-hero__nav-btn'));
-      var progressBar = document.getElementById('heroProgressBar');
-      var scrollCue = document.getElementById('heroScrollCue');
-
-      var totalScenes = 4;
-      var activeScene = 0;
-
-      function updateScene(index) {
-        if (index === activeScene && panes[0].classList.contains('is-active')) return;
-        activeScene = index;
-
-        // Text panes: passed slide DOWN (100%), upcoming wait ABOVE (-100%), active at center (0)
-        panes.forEach(function(p, i) {
-          p.classList.remove('is-active', 'is-passed', 'is-upcoming');
-          if (i === index) {
-            p.classList.add('is-active');
-          } else if (i < index) {
-            p.classList.add('is-passed');
-          } else {
-            p.classList.add('is-upcoming');
+        function startAuto() {
+          stopAuto();
+          var isScrollMode = hero.offsetHeight > (window.innerHeight * 1.5);
+          if (!isScrollMode) {
+            timer = setInterval(nextScene, autoPlayInterval);
           }
-        });
+        }
 
-        // Images: passed slide UP (-100%), upcoming wait BELOW (100%), active at center (0)
-        imgItems.forEach(function(img, i) {
-          img.classList.remove('is-active', 'is-passed', 'is-upcoming');
-          if (i === index) {
-            img.classList.add('is-active');
-          } else if (i < index) {
-            img.classList.add('is-passed');
-          } else {
-            img.classList.add('is-upcoming');
+        function stopAuto() {
+          if (timer) {
+            clearInterval(timer);
+            timer = null;
           }
-        });
-
-        navBtns.forEach(function(btn, i) {
-          btn.classList.toggle('is-active', i === index);
-          btn.setAttribute('aria-selected', i === index ? 'true' : 'false');
-        });
-      }
-
-      // Initialize initial state
-      updateScene(0);
-
-      function onScroll() {
-        var rect = hero.getBoundingClientRect();
-        var scrollDist = hero.offsetHeight - window.innerHeight;
-        if (scrollDist <= 0) return;
-
-        var progress = Math.max(0, Math.min(1, -rect.top / scrollDist));
-
-        if (progressBar) {
-          progressBar.style.transform = 'scaleX(' + progress + ')';
         }
 
-        if (scrollCue) {
-          scrollCue.style.opacity = progress > 0.04 ? '0' : '1';
-        }
+        // Initialize initial scene and autoplay
+        updateScene(0);
+        startAuto();
 
-        var rawStep = Math.floor(progress * totalScenes);
-        var targetScene = Math.max(0, Math.min(totalScenes - 1, rawStep));
+        // Pause autoplay on mouse hover
+        hero.addEventListener('mouseenter', stopAuto);
+        hero.addEventListener('mouseleave', startAuto);
 
-        updateScene(targetScene);
-      }
-
-      window.addEventListener('scroll', onScroll, { passive: true });
-      onScroll();
-
-      navBtns.forEach(function(btn, i) {
-        btn.addEventListener('click', function() {
-          var heroTop = hero.getBoundingClientRect().top + window.scrollY;
-          var scrollDist = hero.offsetHeight - window.innerHeight;
-          var targetScroll = heroTop + (i / totalScenes) * scrollDist + 15;
-          window.scrollTo({
-            top: targetScroll,
-            behavior: 'smooth'
+        // Click handlers on pagination dots
+        dots.forEach(function (dot, i) {
+          dot.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var heroTop = hero.getBoundingClientRect().top + window.scrollY;
+            var scrollDist = hero.offsetHeight - window.innerHeight;
+            if (scrollDist > 0) {
+              var targetProgress = (i === 0) ? 0 : (i === totalScenes - 1) ? 0.92 : ((i + 0.5) / totalScenes);
+              var targetScroll = heroTop + targetProgress * scrollDist;
+              window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+              });
+            } else {
+              updateScene(i);
+              startAuto();
+            }
           });
         });
-      });
-    })();
+
+        // Touch swipe support on image card
+        var card = document.getElementById('heroMediaCard');
+        if (card) {
+          var touchStartX = 0;
+          var touchStartY = 0;
+          card.addEventListener('touchstart', function (e) {
+            touchStartX = e.changedTouches[0].screenX;
+            touchStartY = e.changedTouches[0].screenY;
+          }, { passive: true });
+          card.addEventListener('touchend', function (e) {
+            var diffX = touchStartX - e.changedTouches[0].screenX;
+            var diffY = touchStartY - e.changedTouches[0].screenY;
+            if (Math.abs(diffX) > 40 || Math.abs(diffY) > 40) {
+              if (diffX > 40 || diffY > 40) {
+                nextScene();
+              } else {
+                prevScene();
+              }
+              startAuto();
+            }
+          }, { passive: true });
+        }
+
+        function onScroll() {
+          var rect = hero.getBoundingClientRect();
+          var scrollDist = hero.offsetHeight - window.innerHeight;
+          if (scrollDist <= 0) return;
+
+          var progress = Math.max(0, Math.min(1, -rect.top / scrollDist));
+
+          if (progressBar) {
+            progressBar.style.transform = 'scaleX(' + progress + ')';
+          }
+
+          if (scrollCue) {
+            scrollCue.style.opacity = progress > 0.04 ? '0' : '1';
+          }
+
+          var rawStep = Math.floor(progress * totalScenes);
+          var targetScene = Math.max(0, Math.min(totalScenes - 1, rawStep));
+
+          updateScene(targetScene);
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        navBtns.forEach(function (btn, i) {
+          btn.addEventListener('click', function () {
+            var scrollDist = hero.offsetHeight - window.innerHeight;
+            if (scrollDist > 0) {
+              var heroTop = hero.getBoundingClientRect().top + window.scrollY;
+              var targetProgress = (i === 0) ? 0 : (i === totalScenes - 1) ? 0.92 : ((i + 0.5) / totalScenes);
+              var targetScroll = heroTop + targetProgress * scrollDist;
+              window.scrollTo({
+                top: targetScroll,
+                behavior: 'smooth'
+              });
+            } else {
+              updateScene(i);
+              startAuto();
+            }
+          });
+        });
+      })();
     </script>
 
     <!-- ==================================================================

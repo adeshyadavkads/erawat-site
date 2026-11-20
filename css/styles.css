@@ -1822,9 +1822,7 @@ ol {
   justify-content: center;
   gap: 0.5rem;
   padding: 13px 30px;
-  background: #000000;
   color: #ffffff;
-  border: 1.5px solid #000000;
   border-radius: 9999px;
   font-family: var(--font-body, "Inter", sans-serif);
   font-size: 0.88rem;
