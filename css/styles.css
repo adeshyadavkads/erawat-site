@@ -3791,10 +3791,58 @@ body.is-loading {
 
 /* 11. PAGE BANNER & CTA BAND MODERN ENHANCEMENTS */
 .page-banner {
+  position: relative;
+  height: 700px !important;
+  min-height: 700px !important;
+  display: flex !important;
+  align-items: center !important;
   background: radial-gradient(ellipse 90% 120% at 50% 10%, rgba(30, 41, 59, 0.95) 0%, rgba(10, 15, 26, 0.98) 85%), linear-gradient(180deg, #0f172a 0%, #020617 100%) !important;
   border-block-end: 1px solid rgba(255, 255, 255, 0.08) !important;
-  padding-block-start: calc(var(--header-h, 110px) + 2.5rem) !important;
-  padding-block-end: clamp(3rem, 4.5vw, 4.5rem) !important;
+  padding-block-start: calc(var(--header-h, 110px) + 1.5rem) !important;
+  padding-block-end: 3rem !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.page-banner__video-wrap {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.page-banner__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.page-banner__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(ellipse 90% 120% at 50% 30%, rgba(15, 23, 42, 0.45) 0%, rgba(2, 6, 23, 0.78) 100%),
+    linear-gradient(180deg, rgba(5, 10, 20, 0.7) 0%, rgba(2, 6, 23, 0.45) 45%, rgba(2, 6, 23, 0.85) 100%);
+  pointer-events: none;
+}
+
+.page-banner .page-banner__inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
 }
 
 .page-banner .page-banner__title {
