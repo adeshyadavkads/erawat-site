@@ -10,7 +10,7 @@
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/tokens.css">
@@ -238,6 +238,19 @@
             <span class="stat-strip__label">Capsule types: gelatin and HPMC</span>
           </div>
         </div>
+
+        <!-- 3b. Gallery Section (3 Images) -->
+        <div class="gallery-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-tile">
+            <img src="images/aboutnew1.jpg" alt="Erawat capsule manufacturing facility" loading="lazy" width="370" height="255">
+          </div>
+          <div class="gallery-tile">
+            <img src="images/aboutnew2.jpg" alt="Erawat cleanroom production lines" loading="lazy" width="370" height="220">
+          </div>
+          <div class="gallery-tile">
+            <img src="images/aboutnew3.jpg" alt="Erawat capsule quality inspection" loading="lazy" width="370" height="225">
+          </div>
+        </div>
       </div>
     </section>
 
@@ -327,7 +340,7 @@
         <div class="footer__brand">
           <a class="footer__logo" href="index.html" aria-label="Erawat Pharma Limited Home">
             <span class="brand__logo-wrap">
-              <img class="brand__logo" src="images/logo.gif" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine" width="180" height="48">
+              <img class="brand__logo" src="images/logo-white.png" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine" width="180" height="48">
             </span>
           </a>
           <p class="footer__desc">

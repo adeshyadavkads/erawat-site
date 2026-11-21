@@ -19,10 +19,10 @@
   <meta property="og:image" content="https://www.erawat.com/images/logo.gif">
   <link rel="icon" type="image/gif" href="images/logo.gif">
 
-  <!-- Typography: Bricolage Grotesque & Figtree -->
+  <!-- Typography: Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- External Stylesheets Only -->
   <link rel="stylesheet" href="css/tokens.css">
@@ -104,9 +104,9 @@
 
   <main id="mainContent">
     <!-- ===== ERAWAT 4-SCENE SCROLL BANNER: paste where your current banner is (keep your own navbar) ===== -->
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
 <style>
-.ez{position:relative;height:560vh;background:#07070a;color:#fff;font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+.ez{position:relative;height:560vh;background:#07070a;color:#fff;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif}
 .ez *{box-sizing:border-box}
 .ez-pin{position:sticky;top:0;height:100vh;overflow:hidden}
 .ez canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:2}
@@ -279,9 +279,9 @@ requestAnimationFrame(tick);
 <!-- ===== END ERAWAT 4-SCENE SCROLL BANNER ===== -->
 
 <!-- ===== ERAWAT "WHY CHOOSE US" SCROLL SECTION: paste in place of your current section ===== -->
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
 <style>
-.ew{position:relative;height:430vh;background:#eff2f8;color:#0b0c10;font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+.ew{position:relative;height:430vh;background:#eff2f8;color:#0b0c10;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif}
 .ew *{box-sizing:border-box}
 .ew-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 5vw}
 .ew-head{width:min(1100px,100%);display:flex;justify-content:space-between;align-items:flex-start;gap:40px;margin-bottom:56px}
@@ -367,9 +367,9 @@ requestAnimationFrame(tick);
          3. NEXT STEPS SECTION / WHO WE ARE
          ================================================================== -->
 <!-- ===== ERAWAT "WHO WE ARE" SCROLL SECTION: paste in place of your current section ===== -->
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
 <style>
-.ww{position:relative;height:320vh;background:#fff;color:#111;font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+.ww{position:relative;height:320vh;background:#fff;color:#111;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif}
 .ww *{box-sizing:border-box}
 .ww-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:0 5vw}
 .ww-in{width:min(1200px,100%);display:grid;grid-template-columns:1.35fr 1fr;gap:5vw;align-items:center}
@@ -684,7 +684,7 @@ requestAnimationFrame(tick);
             <span class="brand__logo-wrap">
               <img
                 class="brand__logo"
-                src="images/logo.gif"
+                src="images/logo-white.png"
                 alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine"
                 width="180"
                 height="48"

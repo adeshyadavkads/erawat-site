@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap');
+
+:root {
+  --font-heading: 'Poppins', system-ui, -apple-system, sans-serif !important;
+  --font-body: 'Poppins', system-ui, -apple-system, sans-serif !important;
+}
+
+*, *::before, *::after,
+html, body, button, input, optgroup, select, textarea {
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
 /* Universal Shadow Removal - All shadows disabled per user request */
 *, *::before, *::after {
   box-shadow: none !important;
@@ -375,10 +387,15 @@ body.is-loading {
 }
 
 .footer__brand .brand__logo-wrap {
-  background-color: var(--white);
-  padding: var(--space-3xs) var(--space-xs);
-  border-radius: var(--radius-sharp);
-  /* box-shadow: var(--shadow-soft); -- shadow removed */
+  background: transparent !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.footer__brand .brand__logo {
+  filter: brightness(0) invert(1) !important;
 }
 
 .nav-toggle {
@@ -1716,7 +1733,7 @@ body.is-loading {
   border-bottom: 1.5px solid #71717a;
   background-color: transparent;
   padding-block: 0.35rem 0.5rem;
-  padding-inline: 0;
+  padding-inline: 20px;
   border-radius: 0;
   font-family: inherit;
   font-size: 0.95rem;
@@ -1849,7 +1866,7 @@ body.is-loading {
   padding: 13px 30px;
   color: #ffffff;
   border-radius: 9999px;
-  font-family: var(--font-body, "Inter", sans-serif);
+  font-family: var(--font-body, "Poppins", sans-serif);
   font-size: 0.88rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -2144,6 +2161,7 @@ body.is-loading {
 
 .page-banner__label {
   align-self: flex-start;
+  display: none;
   margin-block-end: 0.25rem;
 }
 
@@ -3011,18 +3029,24 @@ body.is-loading {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-  margin-block: var(--space-2xl);
+  gap: 1.5rem;
+  margin-block-start: var(--space-xl);
+  margin-block-end: var(--space-2xl);
 }
 
 .gallery-tile {
   position: relative;
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
   aspect-ratio: 4 / 3;
   cursor: pointer;
   background: #f1f4f9;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.gallery-tile:hover {
+  border-color: rgba(0, 0, 0, 0.18);
 }
 
 .gallery-tile img {
@@ -3033,7 +3057,7 @@ body.is-loading {
 }
 
 .gallery-tile:hover img {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .gallery-tile__caption {
@@ -3362,7 +3386,7 @@ body.is-loading {
   position: relative;
   display: inline-block;
   transition: color 0.2s ease;
-  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-family: var(--font-body, "Poppins", sans-serif) !important;
 }
 
 .site-header .nav__link::after {
@@ -3537,7 +3561,6 @@ body.is-loading {
 .section,
 .section--white,
 .section--facility-video,
-.section--mission,
 .section--editorial,
 .section--blue,
 .timeline-section {
@@ -3558,7 +3581,7 @@ body.is-loading {
 .page-hero__heading,
 .page-hero__title,
 .hero-editorial__title {
-  font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
+  font-family: var(--font-heading, "Poppins", sans-serif) !important;
   font-size: clamp(2.1rem, 1.8rem + 1.4vw, 2.85rem) !important;
   font-weight: 700 !important;
   line-height: 1.15 !important;
@@ -3576,12 +3599,12 @@ body.is-loading {
 .section-tag,
 .page-banner__label,
 .badge--editorial {
-  display: inline-flex !important;
+  display: none !important;
   align-items: center !important;
   gap: 0.5rem !important;
   background: transparent !important;
   color: #ff0000 !important;
-  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-family: var(--font-body, "Poppins", sans-serif) !important;
   font-size: 0.775rem !important;
   font-weight: 700 !important;
   text-transform: uppercase !important;
@@ -3606,7 +3629,7 @@ body.is-loading {
 .split-hero__desc,
 .page-hero__lead,
 .setup-intro__lead {
-  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-family: var(--font-body, "Poppins", sans-serif) !important;
   font-size: clamp(0.95rem, 1.02vw, 1.15rem) !important;
   color: #475569 !important;
   line-height: 1.68 !important;
@@ -3630,7 +3653,7 @@ body.is-loading {
   gap: 10px !important;
   padding: 16px 28px !important;
   border-radius: 9999px !important;
-  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-family: var(--font-body, "Poppins", sans-serif) !important;
   font-weight: 700 !important;
   font-size: 0.88rem !important;
   text-transform: uppercase !important;
@@ -3672,7 +3695,7 @@ body.is-loading {
   gap: 10px !important;
   padding: 16px 28px !important;
   border-radius: 9999px !important;
-  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-family: var(--font-body, "Poppins", sans-serif) !important;
   font-weight: 700 !important;
   font-size: 0.88rem !important;
   text-transform: uppercase !important;
@@ -3860,7 +3883,7 @@ body.is-loading {
 }
 
 .breadcrumb {
-  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-family: var(--font-body, "Poppins", sans-serif) !important;
   font-size: 0.85rem !important;
   color: rgba(255, 255, 255, 0.6) !important;
   margin-block-start: 0.75rem !important;
@@ -3883,7 +3906,7 @@ body.is-loading {
 }
 
 .cta-band__text {
-  font-family: var(--font-heading, "Bricolage Grotesque", sans-serif) !important;
+  font-family: var(--font-heading, "Poppins", sans-serif) !important;
   font-size: clamp(1.6rem, 1.35rem + 1vw, 2.25rem) !important;
   color: #ffffff !important;
   line-height: 1.25 !important;
@@ -3893,7 +3916,7 @@ body.is-loading {
 .mfg-card__readmore,
 .card-readmore {
   display: inline-block;
-  font-family: var(--font-body, "Inter", sans-serif);
+  font-family: var(--font-body, "Poppins", sans-serif);
   font-size: 0.95rem;
   font-weight: 700;
   text-decoration: underline;
@@ -3918,7 +3941,7 @@ input[type="email"],
 input[type="tel"],
 select,
 textarea {
-  font-family: var(--font-body, "Inter", sans-serif) !important;
+  font-family: var(--font-body, "Poppins", sans-serif) !important;
   border-radius: 8px !important;
   border: 1px solid #cbd5e1 !important;
   transition: border-color 0.2s ease !important;
@@ -4376,7 +4399,6 @@ textarea:focus {
   .section,
   .section--white,
   .section--facility-video,
-  .section--mission,
   .section--editorial,
   .section--blue,
   .timeline-section {
@@ -4389,4 +4411,253 @@ textarea:focus {
     grid-template-columns: 1fr !important;
     gap: 1.75rem !important;
   }
+}
+
+
+      /* --------------------------------------------------------------------------
+       WHO WE ARE: SCROLL-DRIVEN PINNED SECTION WITH FLUSH-LEFT IMAGES
+       -------------------------------------------------------------------------- */
+      .who-scroll-section {
+        position: relative;
+        height: 280vh;
+        background: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .who-scroll-pin {
+        position: sticky;
+        top: var(--header-actual-h, 110px);
+        height: calc(100vh - var(--header-actual-h, 110px));
+        min-height: 560px;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+      }
+
+      .who-scroll-inner {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: minmax(360px, 48vw) 1fr;
+        align-items: center;
+        gap: clamp(2.5rem, 5vw, 6rem);
+      }
+
+      .who-scroll-media-col {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .who-scroll-frame {
+        position: relative;
+        width: 100%;
+        height: 85%;
+        max-height: 640px;
+        border-radius: 0 20px 20px 0;
+        overflow: hidden;
+        background: #f8fafc;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-left: none;
+      }
+
+      .who-scroll-img-item {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.05);
+        transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+          visibility 0.65s;
+        pointer-events: none;
+      }
+
+      .who-scroll-img-item.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        pointer-events: auto;
+      }
+
+      .who-scroll-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+      }
+
+      .who-scroll-dots {
+        position: absolute;
+        bottom: 24px;
+        left: 36px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        padding: 6px 14px;
+        border-radius: 9999px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .who-scroll-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.45);
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .who-scroll-dot.is-active {
+        width: 24px;
+        background: #ffffff;
+      }
+
+      .who-scroll-text-col {
+        padding-inline-end: clamp(24px, calc((100vw - 1280px) / 2 + 30px), 8vw);
+        max-width: 640px;
+        box-sizing: border-box;
+      }
+
+      @media (max-width: 992px) {
+        .who-scroll-section {
+          height: auto !important;
+          padding: 3rem 0;
+        }
+
+        .who-scroll-pin {
+          position: relative !important;
+          top: 0 !important;
+          height: auto !important;
+          min-height: auto !important;
+        }
+
+        .who-scroll-inner {
+          grid-template-columns: 1fr !important;
+          gap: 2rem !important;
+        }
+
+        .who-scroll-frame {
+          height: 380px !important;
+          max-height: none !important;
+          border-radius: 0 !important;
+          border-right: none !important;
+        }
+
+        .who-scroll-text-col {
+          padding-inline: 20px !important;
+          max-width: 100% !important;
+        }
+      }
+
+/* --------------------------------------------------------------------------
+   OUR MISSION SECTION (FULL-WIDTH PARALLAX, 70VH)
+   -------------------------------------------------------------------------- */
+.section--mission {
+  position: relative !important;
+  width: 100% !important;
+  height: 70vh !important;
+  min-height: 480px !important;
+  max-height: 800px;
+  padding: 0 !important;
+  padding-block: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background-color: #0b111e !important;
+  box-sizing: border-box !important;
+}
+
+.mission-parallax__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/banners/bannerawat2.png');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 991px), (hover: none) and (pointer: coarse) {
+  .mission-parallax__bg {
+    background-attachment: scroll;
+  }
+}
+
+.mission-parallax__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 12, 20, 0.72) 0%, rgba(8, 12, 20, 0.78) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.mission-parallax__container {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 1080px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mission-parallax__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(1.25rem, 2.5vh, 2rem);
+  text-align: center;
+}
+
+.mission-card__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-heading, "Poppins", sans-serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ff5722;
+  background: rgba(255, 87, 34, 0.14);
+  border: 1px solid rgba(255, 87, 34, 0.38);
+  padding: 7px 24px;
+  border-radius: 9999px;
+  backdrop-filter: blur(4px);
+}
+
+.mission-card__text {
+  font-family: var(--font-heading, "Poppins", sans-serif);
+  font-size: clamp(1.35rem, 1.15rem + 1.2vw, 2.15rem);
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.58;
+  margin: 0;
+  text-align: center;
+  letter-spacing: -0.01em;
 }
