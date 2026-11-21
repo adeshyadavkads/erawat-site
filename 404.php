@@ -164,6 +164,12 @@
 
   <main id="mainContent">
     <section class="page-banner" aria-label="Page Header">
+      <div class="page-banner__video-wrap" aria-hidden="true">
+        <video class="page-banner__video" autoplay muted loop playsinline preload="auto">
+          <source src="images/banners/innerbanner.mp4" type="video/mp4">
+        </video>
+        <div class="page-banner__overlay"></div>
+      </div>
       <div class="container page-banner__inner">
         <span class="section-tag page-banner__label" data-aos="fade-down"><span class="section-tag__dot"></span>Error 404</span>
         <h1 class="page-banner__title" data-aos="fade-up" data-aos-delay="100">That page is not here.</h1>

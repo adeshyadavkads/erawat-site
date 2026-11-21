@@ -409,6 +409,38 @@
   }
 
   /* ------------------------------------------------------------------------
+     7b. INNER BANNER VIDEO CONTROLLER
+     ------------------------------------------------------------------------ */
+  function initPageBannerVideo() {
+    const video = document.querySelector(".page-banner__video");
+    if (!video) return;
+
+    if (video.hasAttribute("autoplay")) {
+      video.play().catch(function () {});
+    }
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) {
+              if (!video.paused) {
+                video.pause();
+              }
+            } else {
+              if (video.paused && video.hasAttribute("autoplay")) {
+                video.play().catch(function () {});
+              }
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(video);
+    }
+  }
+
+  /* ------------------------------------------------------------------------
      8. AOS (ANIMATE ON SCROLL) INITIALIZATION
      ------------------------------------------------------------------------ */
   function initAOS() {
@@ -706,6 +738,7 @@
     initStickyHeader();
     initHeroSlider();
     initFacilityVideo();
+    initPageBannerVideo();
     initHeaderSearch();
     initMobileNav();
     initInquiryForm();
