@@ -14,8 +14,22 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=2.2">
   <link rel="stylesheet" href="css/aos.css">
+  <style>
+    .about-narrative,
+    .about-narrative__item,
+    .about-narrative__heading,
+    .about-narrative__text {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    .about-narrative__text p {
+      width: 100% !important;
+      max-width: 100% !important;
+      max-inline-size: 100% !important;
+    }
+  </style>
 </head>
 <body>
   <!-- ====================================================================
@@ -249,6 +263,46 @@
           </div>
           <div class="gallery-tile">
             <img src="images/aboutnew3.jpg" alt="Erawat capsule quality inspection" loading="lazy" width="370" height="225">
+          </div>
+        </div>
+
+        <!-- 3c. Detailed Company Story, Philosophy & Quality Policy -->
+        <div class="about-narrative" data-aos="fade-up" data-aos-delay="150">
+          <div class="about-narrative__item">
+            <h2 class="about-narrative__heading">Who are We and What's our Experience</h2>
+            <div class="about-narrative__text">
+              <p>
+                Erawat Pharma Limited, an Erawat Group Company, ranks among the <strong>top Capsule manufacturers</strong> in the world &amp; second largest in India.
+              </p>
+              <p>
+                Founded in 1997, we have a very rich experience of 20 years in manufacturing of hard capsules; and a 30 years of total group experience in the capsules manufacturing technologies. Because of our high technical competence and very strong R &amp; D support, besides having achieved excellence in the manufacturing of Gelatin Capsules, we have also developed capability of manufacturing HPMC Capsules or the Vegetarian Capsules.
+              </p>
+              <p>
+                As is known well, manufacturing of <strong>HPMC Capsules</strong> is a very special capability, which only a very few Companies worldwide have been able to achieve and Erawat Pharma is one of them. With our strong R &amp; D capability &amp; with our very high emphasis on process controls and through our strong engineering back up, we have been able to successfully develop Capsules best suited for running on the high speed Capsule filling machines. With our excellence in quality and consistency in deliveries, we can easily boast of supplying Capsules to most of the top ranking Companies within India and to a wide range of customers Internationally, including European &amp; US Customers.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-narrative__item">
+            <h2 class="about-narrative__heading">Our Guiding Philosophy and Quality Policy</h2>
+            <div class="about-narrative__text">
+              <p>
+                Erawat Pharma strongly believes in &ldquo;Building an Ever &ndash; Growing Relationship&rdquo; with our associates, whether a customer or a supplier or any other stake holder in any form. When it comes to serving our customers, we make it sure to step beyond quality and serve the customers&rsquo; requirements with CONSISTENCY .
+              </p>
+              <p>
+                <strong>Our Group's Quality Policy clearly states that:</strong><br>
+                We are committed to meet the customer and regulatory requirement, in order to ensure total customer satisfaction. We believe in achieving this by collecting and critically working on customer&rsquo;s feedback, continuous improvement in product quality, continuous improvement in productivity and following GMP with active implementation of documented systems and procedures.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-narrative__item">
+            <h2 class="about-narrative__heading">Mission Statement</h2>
+            <div class="about-narrative__text">
+              <p>
+                To provide pharmaceutical manufacturers with products and services with consistent quality of such a level that gives our customers highest output, highest reliability, maximum continuity and thus lowest production cost.
+              </p>
+            </div>
           </div>
         </div>
       </div>

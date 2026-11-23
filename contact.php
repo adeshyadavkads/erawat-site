@@ -198,8 +198,43 @@
     <section class="section">
       <div class="container">
         <div class="split-layout" style="align-items: flex-start;">
-          <!-- Left: Direct Inquiry Form -->
-          <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: 0 4px 16px rgba(0,0,0,0.04);" data-aos="fade-right">
+          <!-- Left: Direct Contact Details (Thin Dividers, No Icon Circles) -->
+          <div data-aos="fade-right" style="display: flex; flex-direction: column; gap: 1.75rem;">
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 1.5rem;">
+              <span class="section-tag"><span class="section-tag__dot"></span>Corporate Headquarters</span>
+              <h3 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--ink-950); margin: 0.5rem 0;">Erawat Pharma Limited</h3>
+              <p style="font-size: 0.95rem; color: var(--ink-700); line-height: 1.6; margin: 0;">
+                12-C/FA, Scheme No. 94, Ring Road,<br>
+                Near Pipliyahana Square, Indore &ndash; 452016,<br>
+                Madhya Pradesh, India
+              </p>
+            </div>
+
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 1.5rem;">
+              <span style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--ink-500); margin-bottom: 0.35rem;">Direct Phone</span>
+              <a href="tel:+917316659100" style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--green-900); text-decoration: none;">+91 731 6659100</a>
+              <span style="display: block; font-size: 0.825rem; color: var(--ink-500); margin-top: 0.25rem;">Monday to Saturday &bull; 9:30 AM &ndash; 6:30 PM IST</span>
+            </div>
+
+            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 1.5rem;">
+              <span style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--ink-500); margin-bottom: 0.35rem;">Email Communication</span>
+              <p style="margin: 0; line-height: 1.6;">
+                General: <a href="mailto:info@erawatgroup.com" style="color: var(--green-700); font-weight: 600; text-decoration: none;">info@erawatgroup.com</a><br>
+                Marketing &amp; Export: <a href="mailto:marketing@erawatgroup.com" style="color: var(--green-700); font-weight: 600; text-decoration: none;">marketing@erawatgroup.com</a>
+              </p>
+            </div>
+
+            <div>
+              <span style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--ink-500); margin-bottom: 0.35rem;">Sampling &amp; Trials</span>
+              <p style="font-size: 0.95rem; color: var(--ink-700); line-height: 1.6; margin: 0 0 0.75rem;">
+                Need machine-test quantities dispatched to your manufacturing facility?
+              </p>
+              <a href="request-sample.html" class="btn-outline-white" style="color: var(--green-900); border-color: #cbd5e1;">Request Sample Dispatch &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Right: Direct Inquiry Form -->
+          <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: clamp(1.5rem, 3vw, 2.5rem); box-shadow: 0 4px 16px rgba(0,0,0,0.04);" data-aos="fade-left" data-aos-delay="150">
             <h2 style="font-family: var(--font-heading); font-size: 1.65rem; font-weight: 800; color: var(--ink-950); margin: 0 0 0.5rem;">Send A Message</h2>
             <p style="font-size: 0.95rem; color: var(--ink-500); margin: 0 0 1.5rem;">Fill out your technical requirements below. Our engineering and sales team will respond within 24 hours.</p>
 
@@ -268,41 +303,6 @@
               <button type="submit" class="btn-gradient-pill" style="width: 100%;">Send Message &rarr;</button>
               <div class="form-status is-hidden" id="contactFormStatus" style="margin-top: 1rem;" role="status"></div>
             </form>
-          </div>
-
-          <!-- Right: Direct Contact Details (Thin Dividers, No Icon Circles) -->
-          <div data-aos="fade-left" data-aos-delay="150" style="display: flex; flex-direction: column; gap: 1.75rem;">
-            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 1.5rem;">
-              <span class="section-tag"><span class="section-tag__dot"></span>Corporate Headquarters</span>
-              <h3 style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: var(--ink-950); margin: 0.5rem 0;">Erawat Pharma Limited</h3>
-              <p style="font-size: 0.95rem; color: var(--ink-700); line-height: 1.6; margin: 0;">
-                12-C/FA, Scheme No. 94, Ring Road,<br>
-                Near Pipliyahana Square, Indore &ndash; 452016,<br>
-                Madhya Pradesh, India
-              </p>
-            </div>
-
-            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 1.5rem;">
-              <span style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--ink-500); margin-bottom: 0.35rem;">Direct Phone</span>
-              <a href="tel:+917316659100" style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 800; color: var(--green-900); text-decoration: none;">+91 731 6659100</a>
-              <span style="display: block; font-size: 0.825rem; color: var(--ink-500); margin-top: 0.25rem;">Monday to Saturday &bull; 9:30 AM &ndash; 6:30 PM IST</span>
-            </div>
-
-            <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 1.5rem;">
-              <span style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--ink-500); margin-bottom: 0.35rem;">Email Communication</span>
-              <p style="margin: 0; line-height: 1.6;">
-                General: <a href="mailto:info@erawatgroup.com" style="color: var(--green-700); font-weight: 600; text-decoration: none;">info@erawatgroup.com</a><br>
-                Marketing &amp; Export: <a href="mailto:marketing@erawatgroup.com" style="color: var(--green-700); font-weight: 600; text-decoration: none;">marketing@erawatgroup.com</a>
-              </p>
-            </div>
-
-            <div>
-              <span style="display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--ink-500); margin-bottom: 0.35rem;">Sampling &amp; Trials</span>
-              <p style="font-size: 0.95rem; color: var(--ink-700); line-height: 1.6; margin: 0 0 0.75rem;">
-                Need machine-test quantities dispatched to your manufacturing facility?
-              </p>
-              <a href="request-sample.html" class="btn-outline-white" style="color: var(--green-900); border-color: #cbd5e1;">Request Sample Dispatch &rarr;</a>
-            </div>
           </div>
         </div>
 

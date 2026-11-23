@@ -14,7 +14,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=2.5">
   <link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
@@ -205,40 +205,58 @@
           </p>
         </div>
 
-        <!-- 3. Certificate Grid (4 Columns Desktop, 2 Tablet, 1 Mobile) -->
+                <!-- 3. Certificate Grid (6 Cards, 3 Columns Desktop, 2 Tablet, 1 Mobile) -->
         <div class="cert-grid">
           <!-- Card 1: WHO-GMP -->
-          <article class="cert-card" data-aos="fade-up" data-aos-delay="100" data-open-modal="modalCertLightbox" data-cert-title="WHO-GMP Certification" data-cert-issuer="State Licensing &amp; Regulatory Authority">
+          <article class="cert-card" data-aos="fade-up" data-aos-delay="100" data-open-modal="modalCertLightbox" data-cert-title="WHO-GMP Certification" data-cert-issuer="Food and Drugs Administration, Madhya Pradesh (Form 28)" data-cert-img="images/cert/ecert5.jpg">
+            <div class="cert-card__preview">
+              <img src="images/cert/ecert5.jpg" alt="WHO-GMP Certificate" loading="lazy" width="425" height="603">
+              <div class="cert-card__preview-overlay">
+                <span class="cert-card__preview-badge">View Certificate</span>
+              </div>
+            </div>
             <div>
               <span class="cert-card__badge">GMP Standard</span>
               <h3 class="cert-card__title">WHO-GMP Certification</h3>
-              <p class="cert-card__body-text">Good Manufacturing Practice certification compliant with World Health Organization guidelines for pharmaceutical packaging materials.</p>
+              <p class="cert-card__body-text">Good Manufacturing Practice compliance certificate issued by State Licensing Authority, Food and Drugs Administration MP (Form 28).</p>
             </div>
             <div class="cert-card__footer">
-              <span class="cert-card__valid">Status: Certified</span>
+              <span class="cert-card__valid">Status: Certified (Till 2027)</span>
               <button type="button" class="cert-card__btn">View Document &rarr;</button>
             </div>
           </article>
 
           <!-- Card 2: ISO 9001:2015 -->
-          <article class="cert-card" data-aos="fade-up" data-aos-delay="200" data-open-modal="modalCertLightbox" data-cert-title="ISO 9001:2015 Quality Management" data-cert-issuer="TUV / Accredited Registrar">
+          <article class="cert-card" data-aos="fade-up" data-aos-delay="150" data-open-modal="modalCertLightbox" data-cert-title="ISO 9001:2015 Quality Management System" data-cert-issuer="RINA Services S.p.A. / IQNET / IAF (Cert #40285/20/AN)" data-cert-img="images/cert/ecert1.jpg">
+            <div class="cert-card__preview">
+              <img src="images/cert/ecert1.jpg" alt="ISO 9001:2015 QMS Certificate" loading="lazy" width="425" height="603">
+              <div class="cert-card__preview-overlay">
+                <span class="cert-card__preview-badge">View Certificate</span>
+              </div>
+            </div>
             <div>
               <span class="cert-card__badge">ISO Certified</span>
               <h3 class="cert-card__title">ISO 9001:2015 QMS</h3>
-              <p class="cert-card__body-text">Certified Quality Management System covering all stages from raw polymer procurement through automated encapsulation line tooling.</p>
+              <p class="cert-card__body-text">Certified Quality Management System covering manufacturing of gelatin and HPMC capsule shells by RINA, IQNET &amp; IAF.</p>
             </div>
             <div class="cert-card__footer">
-              <span class="cert-card__valid">Status: Certified</span>
+              <span class="cert-card__valid">Status: Certified (Till 2026)</span>
               <button type="button" class="cert-card__btn">View Document &rarr;</button>
             </div>
           </article>
 
-          <!-- Card 3: Halal -->
-          <article class="cert-card" data-aos="fade-up" data-aos-delay="300" data-open-modal="modalCertLightbox" data-cert-title="Halal Product Certification" data-cert-issuer="Halal Trust &amp; Certification Services">
+          <!-- Card 3: Halal Certification -->
+          <article class="cert-card" data-aos="fade-up" data-aos-delay="200" data-open-modal="modalCertLightbox" data-cert-title="Halal Product Certification" data-cert-issuer="JUHF Certification Pvt. Ltd. (Jamiat Ulama Halal Foundation)" data-cert-img="images/cert/ecert4.jpg">
+            <div class="cert-card__preview">
+              <img src="images/cert/ecert4.jpg" alt="Halal Certificate" loading="lazy" width="425" height="603">
+              <div class="cert-card__preview-overlay">
+                <span class="cert-card__preview-badge">View Certificate</span>
+              </div>
+            </div>
             <div>
               <span class="cert-card__badge">Religious Compliance</span>
               <h3 class="cert-card__title">Halal Certification</h3>
-              <p class="cert-card__body-text">Certified Halal gelatin sources with 100% verified bovine bone extract chain of custody, free of prohibited porcine derivatives.</p>
+              <p class="cert-card__body-text">Halal certified empty hard gelatin and HPMC capsule shells compliant with Islamic Shariah (MS 1500:2019 &amp; GSO standards).</p>
             </div>
             <div class="cert-card__footer">
               <span class="cert-card__valid">Status: Certified</span>
@@ -246,15 +264,59 @@
             </div>
           </article>
 
-          <!-- Card 4: Vegetarian / Kosher -->
-          <article class="cert-card" data-aos="fade-up" data-aos-delay="400" data-open-modal="modalCertLightbox" data-cert-title="Vegetarian &amp; Kosher Declaration" data-cert-issuer="Authorized Certification Board">
+          <!-- Card 4: Kosher Certification -->
+          <article class="cert-card" data-aos="fade-up" data-aos-delay="250" data-open-modal="modalCertLightbox" data-cert-title="Kosher Product Certification" data-cert-issuer="Kosher Inspection Service - India (Rabbi David Refaeli)" data-cert-img="images/cert/ecert3.jpg">
+            <div class="cert-card__preview">
+              <img src="images/cert/ecert3.jpg" alt="Kosher Certificate" loading="lazy" width="425" height="603">
+              <div class="cert-card__preview-overlay">
+                <span class="cert-card__preview-badge">View Certificate</span>
+              </div>
+            </div>
             <div>
-              <span class="cert-card__badge">100% Plant Origin</span>
-              <h3 class="cert-card__title">Vegetarian &amp; Kosher</h3>
-              <p class="cert-card__body-text">Formal declaration for plant-cellulose (HPMC) hard capsules, free from animal raw materials, preservatives, and GMO derivatives.</p>
+              <span class="cert-card__badge">Religious Compliance</span>
+              <h3 class="cert-card__title">Kosher Certification</h3>
+              <p class="cert-card__body-text">Kashrut compliance certificate for empty hard gelatin and cellulose capsule shells under regular rabbinical supervision.</p>
             </div>
             <div class="cert-card__footer">
               <span class="cert-card__valid">Status: Certified</span>
+              <button type="button" class="cert-card__btn">View Document &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Card 5: US FDA DMF #17515 -->
+          <article class="cert-card" data-aos="fade-up" data-aos-delay="300" data-open-modal="modalCertLightbox" data-cert-title="US FDA Drug Master File (DMF #17515)" data-cert-issuer="US Food and Drug Administration (FDA)" data-cert-img="images/cert/ecert7.jpg">
+            <div class="cert-card__preview">
+              <img src="images/cert/ecert7.jpg" alt="US FDA DMF Acknowledgement" loading="lazy" width="425" height="603">
+              <div class="cert-card__preview-overlay">
+                <span class="cert-card__preview-badge">View Certificate</span>
+              </div>
+            </div>
+            <div>
+              <span class="cert-card__badge">US FDA Registration</span>
+              <h3 class="cert-card__title">US FDA DMF #17515</h3>
+              <p class="cert-card__body-text">Type IV Drug Master File acknowledgement letter from the US FDA for empty hard gelatin capsules manufactured in Pithampur, India.</p>
+            </div>
+            <div class="cert-card__footer">
+              <span class="cert-card__valid">Status: US FDA Acknowledged</span>
+              <button type="button" class="cert-card__btn">View Document &rarr;</button>
+            </div>
+          </article>
+
+          <!-- Card 6: One Star Export House -->
+          <article class="cert-card" data-aos="fade-up" data-aos-delay="350" data-open-modal="modalCertLightbox" data-cert-title="One Star Export House Recognition" data-cert-issuer="Ministry of Commerce and Industry / DGFT, Govt. of India" data-cert-img="images/cert/ecert6.jpg">
+            <div class="cert-card__preview">
+              <img src="images/cert/ecert6.jpg" alt="One Star Export House Recognition" loading="lazy" width="425" height="603">
+              <div class="cert-card__preview-overlay">
+                <span class="cert-card__preview-badge">View Certificate</span>
+              </div>
+            </div>
+            <div>
+              <span class="cert-card__badge">Govt. Recognition</span>
+              <h3 class="cert-card__title">One Star Export House</h3>
+              <p class="cert-card__body-text">Certificate of Recognition as One Star Export House by Directorate General of Foreign Trade, Ministry of Commerce &amp; Industry.</p>
+            </div>
+            <div class="cert-card__footer">
+              <span class="cert-card__valid">Status: Recognized (Till 2028)</span>
               <button type="button" class="cert-card__btn">View Document &rarr;</button>
             </div>
           </article>
@@ -428,18 +490,17 @@
     </div>
   </footer>
 
-  <!-- Modal P4: Certificate Lightbox -->
+    <!-- Modal P4: Certificate Lightbox -->
   <div class="modal-backdrop" id="modalCertLightbox" role="dialog" aria-modal="true" aria-labelledby="certModalTitle" aria-hidden="true">
     <div class="modal-overlay" data-close-modal></div>
-    <div class="modal-dialog" style="max-width: 620px;">
+    <div class="modal-dialog" style="max-width: 680px;">
       <button type="button" class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
       <div style="text-align: center;">
         <span class="cert-card__badge" style="margin-bottom: 0.5rem;">Official Compliance Document</span>
         <h3 class="modal-title modal-cert-title" id="certModalTitle">Certificate of Compliance</h3>
         <p class="modal-cert-issuer" style="font-size: 0.9rem; color: var(--ink-500); margin-bottom: 1.25rem;">Issued by Regulatory Authority</p>
-        <div class="ph" data-ratio="4:3" style="margin-bottom: 1.5rem; background: #ffffff; border: 1px solid #cbd5e1;">
-          <img src="images/whoweare3.png" alt="Certificate Preview">
-          <span class="ph__tag">Document Scan Preview, 4:3</span>
+        <div class="modal-cert-preview-wrap">
+          <img class="modal-cert-img" src="images/cert/ecert5.jpg" alt="Certificate Preview">
         </div>
         <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
           <button type="button" class="btn-gradient-pill" data-open-modal="modalSendInquiry">Request Certified Copy &rarr;</button>
@@ -447,6 +508,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <!-- Modal P1: Send Inquiry -->

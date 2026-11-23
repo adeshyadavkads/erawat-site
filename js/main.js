@@ -548,6 +548,14 @@
             if (titleEl) titleEl.textContent = certTitle;
             const issuerEl = modal.querySelector(".modal-cert-issuer");
             if (issuerEl) issuerEl.textContent = trigger.getAttribute("data-cert-issuer") || "";
+            const certImg = trigger.getAttribute("data-cert-img");
+            if (certImg) {
+              const imgEl = modal.querySelector(".modal-cert-img, .modal-dialog img");
+              if (imgEl) {
+                imgEl.src = certImg;
+                imgEl.alt = certTitle || "Certificate Preview";
+              }
+            }
           }
 
           const videoSrc = trigger.getAttribute("data-video-src");

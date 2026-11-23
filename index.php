@@ -28,7 +28,7 @@
 
   <!-- External Stylesheets Only -->
   <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=2.5">
   <link rel="stylesheet" href="css/aos.css">
   <style>
     .header-inner {
@@ -492,20 +492,24 @@
       }
 
       .mission-card__eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        font-family: var(--font-heading, "Poppins", sans-serif);
-        font-size: 0.85rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: #ff5722;
-        background: rgba(255, 87, 34, 0.14);
-        border: 1px solid rgba(255, 87, 34, 0.38);
-        padding: 7px 24px;
-        border-radius: 9999px;
-        backdrop-filter: blur(4px);
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+        background: transparent !important;
+        color: #ff0000 !important;
+        font-family: var(--font-body, "Poppins", sans-serif) !important;
+        font-size: 0.775rem !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        line-height: 1 !important;
+        padding: 0.42rem 0.85rem !important;
+        border-radius: 6px !important;
+        margin-bottom: 0.85rem !important;
+        width: fit-content !important;
+        user-select: none !important;
+        border: 1px solid #ff0000 !important;
+        backdrop-filter: none !important;
+        letter-spacing: normal !important;
       }
 
       .mission-card__text {
@@ -1103,25 +1107,23 @@
         border-left: none;
       }
 
-      .who-scroll-img-item {
-        position: absolute;
-        inset: 0;
+      .who-scroll-track {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: 100%;
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(1.05);
-        transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1),
-          transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-          visibility 0.65s;
-        pointer-events: none;
+        transform: translateY(calc(var(--slide-idx, 0) * -100%));
+        transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: transform;
       }
 
-      .who-scroll-img-item.is-active {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1);
-        pointer-events: auto;
+      .who-scroll-img-item {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        flex: 0 0 100%;
+        min-height: 100%;
+        overflow: hidden;
       }
 
       .who-scroll-img {
@@ -1130,6 +1132,12 @@
         object-fit: cover;
         object-position: center;
         display: block;
+        transform: scale(1.05);
+        transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .who-scroll-img-item.is-active .who-scroll-img {
+        transform: scale(1);
       }
 
       .who-scroll-dots {
@@ -2828,7 +2836,8 @@
           <!-- Left Side: Flush to Left Screen Boundary -->
           <div class="who-scroll-media-col">
             <div class="who-scroll-frame" id="whoScrollFrame">
-              <div class="who-scroll-img-item is-active" data-index="0">
+              <div class="who-scroll-track" id="whoScrollTrack">
+                <div class="who-scroll-img-item is-active" data-index="0">
                 <img class="who-scroll-img" src="images/whoweare1.png"
                   alt="Empty hard Gelatin and HPMC vegetarian capsule polymers" width="700" height="700"
                   loading="lazy">
@@ -2850,6 +2859,7 @@
                 <img class="who-scroll-img" src="images/whoweare4.png"
                   alt="Automated camera sorting and cleanroom dimensional tolerances" width="700" height="700"
                   loading="lazy">
+              </div>
               </div>
 
               <!-- Slide Indicators / Dots -->
@@ -2919,6 +2929,7 @@
           if (!sec) return;
 
           var items = [].slice.call(sec.querySelectorAll('.who-scroll-img-item'));
+          var track = sec.querySelector('.who-scroll-track');
           var dots = [].slice.call(sec.querySelectorAll('.who-scroll-dot'));
           var total = items.length || 4;
           var curIndex = -1;
@@ -2928,6 +2939,11 @@
             if (idx >= total) idx = total - 1;
             if (curIndex === idx) return;
             curIndex = idx;
+
+            if (track) {
+              track.style.setProperty('--slide-idx', idx);
+              track.style.transform = 'translateY(' + (-idx * 100) + '%)';
+            }
 
             items.forEach(function (el, i) {
               el.classList.toggle('is-active', i === idx);
@@ -3387,9 +3403,7 @@
       <div class="mission-parallax__overlay" aria-hidden="true"></div>
       <div class="container mission-parallax__container">
         <div class="mission-parallax__content">
-          <span class="mission-card__eyebrow" data-aos="fade-down" data-aos-duration="600">
-            Our Mission
-          </span>
+          <span class="section-tag" data-aos="fade-down" data-aos-duration="600"><span class="section-tag__dot"></span>Our Mission</span>
 
           <blockquote class="mission-card__text" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
             &ldquo;To provide pharmaceutical manufacturers with products and services with consistent quality of such

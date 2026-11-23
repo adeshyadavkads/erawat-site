@@ -13,9 +13,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css?v=2.4">
   <link rel="stylesheet" href="css/aos.css">
+  <style>
+    .about-narrative,
+    .about-narrative__item,
+    .about-narrative__heading,
+    .about-narrative__text,
+    .about-narrative__list,
+    .about-narrative__list li {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    .about-narrative__text p,
+    .about-narrative__list li {
+      width: 100% !important;
+      max-width: 100% !important;
+      max-inline-size: 100% !important;
+    }
+    /* Full-height packaging gallery */
+    .gallery-grid--packaging {
+      grid-template-columns: repeat(2, 1fr) !important;
+      max-width: 960px !important;
+      margin-inline: auto !important;
+    }
+    .gallery-grid--packaging .gallery-tile,
+    .gallery-tile--full-height,
+    .gallery-tile:has(img[src*="pack"]),
+    .gallery-tile:has(img[src*="box"]) {
+      aspect-ratio: auto !important;
+      height: auto !important;
+      background: #fdfbf7 !important;
+    }
+    .gallery-grid--packaging .gallery-tile img,
+    .gallery-tile--full-height img,
+    .gallery-tile:has(img[src*="pack"]) img,
+    .gallery-tile:has(img[src*="box"]) img {
+      width: 100% !important;
+      height: auto !important;
+      max-height: none !important;
+      object-fit: contain !important;
+      display: block !important;
+    }
+    @media (max-width: 640px) {
+      .gallery-grid--packaging {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- ====================================================================
@@ -244,6 +290,59 @@
             </div>
           </div>
         </div>
+
+        <!-- Manufacturing Setup & Machinery Detailed Information -->
+        <div class="about-narrative" data-aos="fade-up" data-aos-delay="150">
+          <div class="about-narrative__item">
+            <h2 class="about-narrative__heading">Manufacturing Setup</h2>
+            <div class="about-narrative__text">
+              <p>
+                With fully automated &amp; state of the art manufacturing facility, we are manufacturing more than 6.5 billion capsules in a wide range of sizes &amp; varities.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-narrative__item">
+            <h2 class="about-narrative__heading">Machinery</h2>
+            <div class="about-narrative__text">
+              <p>
+                Our Highspeed <strong>capsule manufacturing</strong> plants and the printing machines are manufactured at highly Sophisticated Engineering facility of the group, Erawat Engineering Pvt. Ltd. Some of the distinct features of our capsule manufacturing plant are:-
+              </p>
+              <ul class="about-narrative__list">
+                <li>
+                  <svg class="about-narrative__list-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                  </svg>
+                  <span>Usage of indigenous and superior technology.</span>
+                </li>
+                <li>
+                  <svg class="about-narrative__list-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                  </svg>
+                  <span>Possesses pneumatic drives, Programmable logic controls, dedicated drives.</span>
+                </li>
+                <li>
+                  <svg class="about-narrative__list-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                  </svg>
+                  <span>Linear Motion Bearing that makes the product superior and matching the International Standard. Due to this Engineering strength next door, we have an on going R&amp;D and continuous improvements in our plants and process, which gives us a unique position in the market for providing quality and consistency.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        
+          <!-- <div class="about-narrative__item">
+            <h2 class="about-narrative__heading">Product Packaging</h2>
+            <div class="packaging-showcase">
+              <div class="packaging-card">
+                <img src="images/packaging-box1.png" alt="Erawat Pharma Limited Corrugated Export Packaging Carton - Front" loading="lazy" width="280" height="372">
+              </div>
+              <div class="packaging-card">
+                <img src="images/packaging-box2.png" alt="Erawat Pharma Limited Corrugated Export Packaging Carton - Side" loading="lazy" width="280" height="372">
+              </div>
+            </div>
+          </div> -->
+        </div>
       </div>
     </section>
 
@@ -385,20 +484,20 @@
           </div>
         </div>
 
-        <!-- 5. Plant Gallery (Masonry Grid) -->
+        <!-- 5. Product Packaging Gallery -->
         <div style="margin-top: var(--space-3xl);">
           <span class="section-tag" data-aos="fade-up"><span class="section-tag__dot"></span>Facility Tour</span>
-          <h2 class="section-heading" data-aos="fade-up" data-aos-delay="100">Plant Gallery</h2>
-          <div class="gallery-grid">
-            <div class="gallery-tile" data-aos="zoom-in" data-aos-delay="100">
-              <img src="images/banners/bannerawat1.png" alt="Dipping Line">
-              <span class="gallery-tile__caption">01 Dipping line</span>
+          <h2 class="section-heading" data-aos="fade-up" data-aos-delay="100">Product Packaging</h2>
+          <div class="gallery-grid gallery-grid--packaging gallery-grid--full-height">
+            <div class="gallery-tile gallery-tile--full-height" data-aos="zoom-in" data-aos-delay="100">
+              <img src="images/pack1n.jpg" alt="Erawat Pharma Limited Corrugated Export Packaging Carton - Front">
+              <span class="gallery-tile__caption">01 Export Packaging Carton (Front)</span>
             </div>
-            <div class="gallery-tile" data-aos="zoom-in" data-aos-delay="200">
-              <img src="images/banners/bannerawat2.png" alt="Drying Chamber">
-              <span class="gallery-tile__caption">02 Drying chamber</span>
+            <div class="gallery-tile gallery-tile--full-height" data-aos="zoom-in" data-aos-delay="200">
+              <img src="images/packaging-box2.png" alt="Erawat Pharma Limited Corrugated Export Packaging Carton - Side">
+              <span class="gallery-tile__caption">02 Export Packaging Carton (Side)</span>
             </div>
-            <div class="gallery-tile" data-aos="zoom-in" data-aos-delay="300">
+            <!-- <div class="gallery-tile" data-aos="zoom-in" data-aos-delay="300">
               <img src="images/whoweare2.png" alt="Automated Inspection">
               <span class="gallery-tile__caption">03 Inspection</span>
             </div>
@@ -413,7 +512,7 @@
             <div class="gallery-tile" data-aos="zoom-in" data-aos-delay="600">
               <img src="images/whoweare3.png" alt="R&D Analytical Lab">
               <span class="gallery-tile__caption">06 R&amp;D lab</span>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
