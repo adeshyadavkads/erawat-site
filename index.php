@@ -215,11 +215,16 @@
        -------------------------------------------------------------------------- */
       .section--editorial {
         background-color: #f1f5f9 !important;
-        padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
+        border-block-start: 1px solid #e2e8f0 !important;
+        min-height: 100vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        padding-block: clamp(2.5rem, 4vh, 4rem) !important;
         position: relative;
         overflow: hidden;
         width: 100%;
-        box-sizing: border-box;
+        box-sizing: border-box !important;
       }
 
       .inquiry-split-layout {
@@ -403,14 +408,14 @@
       }
 
       /* --------------------------------------------------------------------------
-       OUR MISSION SECTION (FULL-WIDTH PARALLAX, 70VH)
+       OUR MISSION SECTION (FULL-WIDTH PARALLAX, 100VH)
        -------------------------------------------------------------------------- */
       .section--mission {
         position: relative !important;
         width: 100% !important;
-        height: 70vh !important;
-        min-height: 480px !important;
-        max-height: 800px;
+        height: 100vh !important;
+        min-height: 100vh !important;
+        max-height: none !important;
         padding: 0 !important;
         padding-block: 0 !important;
         margin: 0 !important;
@@ -432,8 +437,23 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+        overflow: hidden;
         pointer-events: none;
         z-index: 1;
+      }
+
+      .mission-parallax__video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        object-position: center;
+        pointer-events: none;
       }
 
       @media (max-width: 991px), (hover: none) and (pointer: coarse) {
@@ -503,12 +523,17 @@
        FACILITY VIDEO SECTION: LEFT VIDEO AREA & RIGHT TEXT
        -------------------------------------------------------------------------- */
       .section--facility-video {
-        background-color: #f8fafc;
-        padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
+        background-color: #ffffff !important;
+        border-block-end: 1px solid #e2e8f0 !important;
+        min-height: 100vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        padding-block: clamp(2.5rem, 4vh, 4rem) !important;
         position: relative;
         overflow: hidden;
         width: 100%;
-        box-sizing: border-box;
+        box-sizing: border-box !important;
       }
 
       .facility-video__layout {
@@ -706,9 +731,15 @@
        (EXACT MATCH TO REFERENCE IMAGE DIMENSIONS: ~200px COMPACT CARD HEIGHT)
        -------------------------------------------------------------------------- */
       .section--mfg {
-        background: #ffffff !important;
-        padding-block: clamp(2.5rem, 3.5vw, 3.5rem) !important;
+        background-color: #f1f4f9 !important;
+        border-block: 1px solid #e2e8f0 !important;
+        min-height: 100vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        padding-block: clamp(2.5rem, 4vh, 4rem) !important;
         position: relative;
+        box-sizing: border-box !important;
       }
 
       .mfg-header {
@@ -1025,6 +1056,7 @@
         position: relative;
         height: 280vh;
         background: #ffffff;
+        border-block-start: 1px solid #e2e8f0;
         margin: 0;
         padding: 0;
       }
@@ -1421,6 +1453,7 @@
         position: sticky;
         top: var(--header-actual-h, 110px);
         height: 70vh !important;
+        min-height: 500px !important;
         overflow: hidden;
         display: flex;
         align-items: stretch;
@@ -2220,12 +2253,14 @@
       .section--white,
       .section--facility-video,
       .section--editorial {
-        padding-block: clamp(4rem, 6.5vw, 6.5rem) !important;
+        min-height: 100vh !important;
+        padding-block: clamp(2.5rem, 4vh, 4rem) !important;
         position: relative;
       }
 
       .section--mfg {
-        padding-block: clamp(2.5rem, 3.5vw, 3.5rem) !important;
+        min-height: 100vh !important;
+        padding-block: clamp(2.5rem, 4vh, 4rem) !important;
         position: relative;
       }
 
@@ -3339,10 +3374,16 @@
     </section>
 
     <!-- ==================================================================
-         5. OUR MISSION SECTION (FULL-WIDTH PARALLAX, 70VH)
+         5. OUR MISSION SECTION (FULL-WIDTH PARALLAX, 100VH)
          ================================================================== -->
     <section class="section--mission" id="missionSection" aria-label="Our Mission">
-      <div class="mission-parallax__bg" aria-hidden="true"></div>
+      <div class="mission-parallax__bg" aria-hidden="true">
+        <video class="mission-parallax__video" autoplay muted loop playsinline preload="auto" poster="images/banners/bannerawat2.png">
+          <source src="images/banners/paralexvideo.mp4" type="video/mp4">
+          <source src="images/banners/paralexvideo.mov" type="video/quicktime">
+          <source src="images/banners/paralexvideo.mov" type="video/mp4">
+        </video>
+      </div>
       <div class="mission-parallax__overlay" aria-hidden="true"></div>
       <div class="container mission-parallax__container">
         <div class="mission-parallax__content">
