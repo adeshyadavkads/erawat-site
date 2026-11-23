@@ -102,17 +102,7 @@
             <a href="request-sample.html" class="site-topbar__link site-topbar__link--highlight">Request Sample</a>
           </div>
 
-          <span class="site-topbar__divider" aria-hidden="true"></span>
 
-          <div class="site-topbar__item">
-            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-              <path d="M2 12h20" />
-            </svg>
-            <a href="exports.html" class="site-topbar__link">Export Areas</a>
-          </div>
 
           <span class="site-topbar__divider" aria-hidden="true"></span>
 
@@ -148,7 +138,6 @@
           <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
           <li><a class="nav__link" href="certification.html">Certification</a></li>
           <li><a class="nav__link" href="epl-products.html">Products</a></li>
-          <li><a class="nav__link" href="exports.html">Export Areas</a></li>
           <li><a class="nav__link" href="contact.html">Contact</a></li>
           <li><a class="nav__link" href="careers.html">Careers</a></li>
         </ul>
@@ -2707,20 +2696,6 @@
                     </span>
                   </span>
                 </a>
-                <!-- <a class="btn-outline-pill" href="exports.html">
-                  <span class="btn-anim__text">
-                    <span class="btn-anim__text-track">
-                      <span class="btn-anim__text-item">Export Network</span>
-                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Export Network</span>
-                    </span>
-                  </span>
-                  <span class="btn-anim__icon">
-                    <span class="btn-anim__icon-track">
-                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg>
-                    </span>
-                  </span>
-                </a> -->
               </div>
             </article>
 
@@ -3653,7 +3628,6 @@
               <li><a class="footer__link" href="epl-products.html">Products</a></li>
               <li><a class="footer__link" href="technical-details.html">Technical Details</a></li>
               <li><a class="footer__link" href="certification.html">Certification</a></li>
-              <li><a class="footer__link" href="exports.html">Export Areas</a></li>
             </ul>
           </div>
 

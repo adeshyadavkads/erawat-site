@@ -71,17 +71,7 @@
             <a href="request-sample.html" class="site-topbar__link site-topbar__link--highlight">Request Sample</a>
           </div>
 
-          <span class="site-topbar__divider" aria-hidden="true"></span>
 
-          <div class="site-topbar__item">
-            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-              <path d="M2 12h20" />
-            </svg>
-            <a href="exports.html" class="site-topbar__link">Export Areas</a>
-          </div>
 
           <span class="site-topbar__divider" aria-hidden="true"></span>
 
@@ -117,7 +107,6 @@
           <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
           <li><a class="nav__link" href="certification.html">Certification</a></li>
           <li><a class="nav__link" href="epl-products.html">Products</a></li>
-          <li><a class="nav__link" href="exports.html">Export Areas</a></li>
           <li><a class="nav__link" href="contact.html">Contact</a></li>
           <li><a class="nav__link" href="careers.html">Careers</a></li>
         </ul>
@@ -217,7 +206,6 @@
               <li><a href="product.html" style="color: var(--ink-900); text-decoration: none; font-weight: 600; font-size: 0.95rem;">&bull; Product Detail (Size-by-Size Selector)</a></li>
               <li><a href="technical-details.html" style="color: var(--ink-900); text-decoration: none; font-weight: 600; font-size: 0.95rem;">&bull; Technical Specs (Dimensional Tolerances)</a></li>
               <li><a href="request-sample.html" style="color: var(--ink-900); text-decoration: none; font-weight: 600; font-size: 0.95rem;">&bull; Request Sample (Complimentary Evaluation)</a></li>
-              <li><a href="exports.html" style="color: var(--ink-900); text-decoration: none; font-weight: 600; font-size: 0.95rem;">&bull; Export Areas (30+ Countries)</a></li>
               <li><a href="contact.html" style="color: var(--ink-900); text-decoration: none; font-weight: 600; font-size: 0.95rem;">&bull; Contact Us (Direct Factory Support)</a></li>
             </ul>
           </div>
@@ -249,7 +237,6 @@
               <li><a class="footer__link" href="epl-products.html">Products</a></li>
               <li><a class="footer__link" href="technical-details.html">Technical Details</a></li>
               <li><a class="footer__link" href="certification.html">Certification</a></li>
-              <li><a class="footer__link" href="exports.html">Export Areas</a></li>
             </ul>
           </div>
 

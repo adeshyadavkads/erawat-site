@@ -738,6 +738,217 @@
     }
   }
 
+    /* ------------------------------------------------------------------------
+     12b. CAREERS ACCORDION & JOIN US APPLICATION FORM
+     ------------------------------------------------------------------------ */
+  function initCareersAccordionAndForm() {
+    const accordionWrap = document.getElementById("careersAccordion");
+    if (accordionWrap) {
+      const headers = accordionWrap.querySelectorAll(".career-accordion-header");
+      headers.forEach(function (header) {
+        header.addEventListener("click", function () {
+          const isExpanded = header.getAttribute("aria-expanded") === "true";
+          const targetId = header.getAttribute("aria-controls");
+          const body = document.getElementById(targetId);
+          const icon = header.querySelector(".career-accordion-icon");
+
+          // Close other items for clean accordion UX
+          headers.forEach(function (otherHeader) {
+            if (otherHeader !== header) {
+              otherHeader.setAttribute("aria-expanded", "false");
+              const otherBody = document.getElementById(otherHeader.getAttribute("aria-controls"));
+              if (otherBody) otherBody.hidden = true;
+              const otherIcon = otherHeader.querySelector(".career-accordion-icon");
+              if (otherIcon) otherIcon.textContent = "+";
+            }
+          });
+
+          if (isExpanded) {
+            header.setAttribute("aria-expanded", "false");
+            if (body) body.hidden = true;
+            if (icon) icon.textContent = "+";
+          } else {
+            header.setAttribute("aria-expanded", "true");
+            if (body) body.hidden = false;
+            if (icon) icon.textContent = "×";
+          }
+        });
+      });
+    }
+
+    // Apply Now button click handler
+    document.addEventListener("click", function (e) {
+      const applyBtn = e.target.closest(".career-apply-btn");
+      if (applyBtn) {
+        e.preventDefault();
+        const role = applyBtn.getAttribute("data-role");
+        const functional = applyBtn.getAttribute("data-functional");
+
+        const targetSection = document.getElementById("joinUsSection");
+        const funcSelect = document.getElementById("joinFunctionalArea");
+        const levelSelect = document.getElementById("joinLevelApplied");
+        const firstNameInput = document.getElementById("joinFirstName");
+        const joinCard = document.getElementById("joinUsCard");
+
+        if (funcSelect && functional) {
+          for (let i = 0; i < funcSelect.options.length; i++) {
+            if (funcSelect.options[i].value === functional) {
+              funcSelect.selectedIndex = i;
+              break;
+            }
+          }
+        }
+
+        if (levelSelect && role) {
+          for (let i = 0; i < levelSelect.options.length; i++) {
+            if (levelSelect.options[i].value === role) {
+              levelSelect.selectedIndex = i;
+              break;
+            }
+          }
+        }
+
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        if (joinCard) {
+          joinCard.classList.add("is-highlighted");
+          setTimeout(function () {
+            joinCard.classList.remove("is-highlighted");
+          }, 2000);
+        }
+
+        if (firstNameInput) {
+          setTimeout(function () {
+            firstNameInput.focus();
+          }, 600);
+        }
+      }
+    });
+
+    // File name display
+    const resumeInput = document.getElementById("joinResumeFile");
+    const fileNameDisplay = document.getElementById("selectedFileName");
+    if (resumeInput && fileNameDisplay) {
+      resumeInput.addEventListener("change", function () {
+        if (this.files && this.files.length > 0) {
+          const file = this.files[0];
+          const sizeMb = (file.size / (1024 * 1024)).toFixed(2);
+          fileNameDisplay.innerHTML = "<strong>Selected:</strong> " + file.name + " (" + sizeMb + " MB)";
+        } else {
+          fileNameDisplay.textContent = "";
+        }
+      });
+    }
+
+    // Join Us Form submission
+    const joinForm = document.getElementById("joinUsForm");
+    const joinStatus = document.getElementById("joinUsFormStatus");
+    if (joinForm) {
+      joinForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        
+        let isValid = true;
+        const requiredInputs = joinForm.querySelectorAll("[required]");
+        requiredInputs.forEach(function (inp) {
+          if (!inp.value.trim()) {
+            isValid = false;
+            inp.classList.add("is-invalid");
+          } else {
+            inp.classList.remove("is-invalid");
+          }
+        });
+
+        // Check resume file
+        if (resumeInput && (!resumeInput.files || resumeInput.files.length === 0)) {
+          isValid = false;
+          if (fileNameDisplay) {
+            fileNameDisplay.innerHTML = "<span style='color: #dc2626;'>Please select a resume file (PDF, DOC, DOCX).</span>";
+          }
+        }
+
+        if (!isValid) {
+          if (joinStatus) {
+            joinStatus.className = "form-status form-status--error";
+            joinStatus.textContent = "Please fill in all required fields and upload your resume.";
+            joinStatus.classList.remove("is-hidden");
+          }
+          return;
+        }
+
+        const submitBtn = joinForm.querySelector("button[type='submit']");
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Submitting Application...";
+        }
+
+        setTimeout(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = "Submit Application &rarr;";
+          }
+          if (joinStatus) {
+            joinStatus.className = "form-status form-status--success";
+            joinStatus.innerHTML = "<strong>Thank you for applying!</strong> Your application has been received by the Erawat HR & Technical Recruitment panel. We will review your profile and contact you soon.";
+            joinStatus.classList.remove("is-hidden");
+          }
+          joinForm.reset();
+          if (fileNameDisplay) fileNameDisplay.textContent = "";
+          joinStatus.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }, 1200);
+      });
+    }
+  }
+
+  /* ------------------------------------------------------------------------
+     12c. PRODUCT RANGE SPECS EXPLORER TABS
+     ------------------------------------------------------------------------ */
+  function initSpecsTabs() {
+    const tabBtns = document.querySelectorAll(".specs-tab-btn");
+    if (tabBtns.length) {
+      tabBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          const targetTab = btn.getAttribute("data-spec-tab");
+          tabBtns.forEach(function (b) {
+            b.classList.remove("is-active");
+            b.setAttribute("aria-selected", "false");
+          });
+          btn.classList.add("is-active");
+          btn.setAttribute("aria-selected", "true");
+
+          const panels = document.querySelectorAll(".specs-tab-panel");
+          panels.forEach(function (p) {
+            if (p.getAttribute("data-panel-id") === targetTab) {
+              p.classList.add("is-active");
+              p.style.display = "block";
+            } else {
+              p.classList.remove("is-active");
+              p.style.display = "none";
+            }
+          });
+        });
+      });
+    }
+
+    // Diagram links jumping directly to matching tab
+    document.addEventListener("click", function (e) {
+      const jumpTrigger = e.target.closest("[data-jump-spec-tab]");
+      if (jumpTrigger) {
+        const tabKey = jumpTrigger.getAttribute("data-jump-spec-tab");
+        const matchingBtn = document.querySelector('.specs-tab-btn[data-spec-tab="' + tabKey + '"]');
+        if (matchingBtn) {
+          matchingBtn.click();
+          const targetSection = document.getElementById("specsExplorer");
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }
+      }
+    });
+  }
+
+
   /* ------------------------------------------------------------------------
      13. INITIALIZATION
      ------------------------------------------------------------------------ */
@@ -754,6 +965,8 @@
     initTabs();
     initCookieNotice();
     initProductDetailSize();
+    initCareersAccordionAndForm();
+    initSpecsTabs();
     initAOS();
   });
 })();

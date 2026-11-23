@@ -81,7 +81,6 @@
           <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
           <li><a class="nav__link" href="certification.html">Certification</a></li>
           <li><a class="nav__link" href="epl-products.html">Products</a></li>
-          <li><a class="nav__link" href="exports.html">Export Areas</a></li>
           <li><a class="nav__link" href="contact.html">Contact</a></li>
           <li><a class="nav__link" href="careers.html">Careers</a></li>
         </ul>
@@ -704,7 +703,6 @@ requestAnimationFrame(tick);
               <li><a class="footer__link" href="epl-products.html">Products</a></li>
               <li><a class="footer__link" href="technical-details.html">Technical Details</a></li>
               <li><a class="footer__link" href="certification.html">Certification</a></li>
-              <li><a class="footer__link" href="exports.html">Export Areas</a></li>
             </ul>
           </div>
 

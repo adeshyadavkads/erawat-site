@@ -71,17 +71,7 @@
             <a href="request-sample.html" class="site-topbar__link site-topbar__link--highlight">Request Sample</a>
           </div>
 
-          <span class="site-topbar__divider" aria-hidden="true"></span>
 
-          <div class="site-topbar__item">
-            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-              <path d="M2 12h20" />
-            </svg>
-            <a href="exports.html" class="site-topbar__link">Export Areas</a>
-          </div>
 
           <span class="site-topbar__divider" aria-hidden="true"></span>
 
@@ -117,7 +107,6 @@
           <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
           <li><a class="nav__link" href="certification.html">Certification</a></li>
           <li><a class="nav__link" href="epl-products.html">Products</a></li>
-          <li><a class="nav__link" href="exports.html">Export Areas</a></li>
           <li><a class="nav__link" href="contact.html">Contact</a></li>
           <li><a class="nav__link" href="careers.html">Careers</a></li>
         </ul>
@@ -359,7 +348,7 @@
 
               <div>
                 <strong style="display: block; font-size: 0.9rem; color: var(--ink-950); margin-bottom: 0.2rem;">Do you ship sample packs internationally?</strong>
-                <p style="font-size: 0.825rem; color: var(--ink-700); margin: 0; line-height: 1.5;">Yes. We regularly dispatch samples worldwide along with CoA and customs clearance documentation. See <a href="exports.html" style="color: var(--green-700); text-decoration: underline;">Export Areas</a>.</p>
+                <p style="font-size: 0.825rem; color: var(--ink-700); margin: 0; line-height: 1.5;">Yes. We regularly dispatch samples worldwide along with CoA and customs clearance documentation.</p>
               </div>
             </div>
           </div>
@@ -402,7 +391,6 @@
               <li><a class="footer__link" href="epl-products.html">Products</a></li>
               <li><a class="footer__link" href="technical-details.html">Technical Details</a></li>
               <li><a class="footer__link" href="certification.html">Certification</a></li>
-              <li><a class="footer__link" href="exports.html">Export Areas</a></li>
             </ul>
           </div>
 
