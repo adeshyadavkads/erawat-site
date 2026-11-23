@@ -165,7 +165,7 @@
   <main id="mainContent">
     <section class="page-banner" aria-label="Page Header">
       <div class="page-banner__video-wrap" aria-hidden="true">
-        <video class="page-banner__video" autoplay muted loop playsinline preload="auto">
+        <video class="page-banner__video" autoplay muted loop playsinline preload="auto" poster="images/banners/bannerawat3.png">
           <source src="images/banners/innerbanner.mp4" type="video/mp4">
         </video>
         <div class="page-banner__overlay"></div>

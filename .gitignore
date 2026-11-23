@@ -1,5 +1,7 @@
-# Large video files (>100MB exceeds GitHub push limit)
-*.mp4
+# Extremely large master video files (>100MB exceeds GitHub push limit)
+bannervideo.mp4
+images/bannervideo.mp4
+images/banners/bannervideo.mp4
 
 # OS and Editor artifacts
 Thumbs.db

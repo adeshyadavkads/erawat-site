@@ -2707,7 +2707,7 @@
 
               <!-- Image 1: Gelatin Cleanroom Production -->
               <div class="split-hero__img-item is-active" data-scene="0">
-                <video class="split-hero__img" autoplay muted loop playsinline preload="auto">
+                <video class="split-hero__img" autoplay muted loop playsinline preload="auto" poster="images/banners/bannerawat1.png">
                   <source src="images/banners/hpmc1.mp4" type="video/mp4">
                   <img src="images/banners/bannerawat1.png"
                     alt="Erawat cleanroom automated gelatin capsule production line" class="split-hero__img"
