@@ -192,7 +192,7 @@
           The link may be old, mistyped, or moved. Try one of these pages instead:
         </p>
         <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-          <a class="btn-gradient-pill" href="epl-products.html">Browse Products &rarr;</a>
+          <a class="btn-gradient-pill" href="epl-products.html"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Browse Products</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Browse Products</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
           <a class="btn-outline-white" style="color: var(--ink-900); border-color: #cbd5e1;" href="request-sample.html">Request Sample</a>
           <a class="btn-outline-white" style="color: var(--ink-900); border-color: #cbd5e1;" href="contact.html">Contact Us</a>
         </div>

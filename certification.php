@@ -211,7 +211,7 @@
             </div>
             <div class="cert-card__footer">
               <span class="cert-card__valid">Status: Certified (Till 2027)</span>
-              <button type="button" class="cert-card__btn">View Document &rarr;</button>
+              <button type="button" class="cert-card__btn"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">View Document</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">View Document</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
             </div>
           </article>
 
@@ -230,7 +230,7 @@
             </div>
             <div class="cert-card__footer">
               <span class="cert-card__valid">Status: Certified (Till 2026)</span>
-              <button type="button" class="cert-card__btn">View Document &rarr;</button>
+              <button type="button" class="cert-card__btn"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">View Document</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">View Document</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
             </div>
           </article>
 
@@ -249,7 +249,7 @@
             </div>
             <div class="cert-card__footer">
               <span class="cert-card__valid">Status: Certified</span>
-              <button type="button" class="cert-card__btn">View Document &rarr;</button>
+              <button type="button" class="cert-card__btn"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">View Document</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">View Document</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
             </div>
           </article>
 
@@ -268,7 +268,7 @@
             </div>
             <div class="cert-card__footer">
               <span class="cert-card__valid">Status: Certified</span>
-              <button type="button" class="cert-card__btn">View Document &rarr;</button>
+              <button type="button" class="cert-card__btn"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">View Document</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">View Document</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
             </div>
           </article>
 
@@ -287,7 +287,7 @@
             </div>
             <div class="cert-card__footer">
               <span class="cert-card__valid">Status: US FDA Acknowledged</span>
-              <button type="button" class="cert-card__btn">View Document &rarr;</button>
+              <button type="button" class="cert-card__btn"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">View Document</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">View Document</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
             </div>
           </article>
 
@@ -306,7 +306,7 @@
             </div>
             <div class="cert-card__footer">
               <span class="cert-card__valid">Status: Recognized (Till 2028)</span>
-              <button type="button" class="cert-card__btn">View Document &rarr;</button>
+              <button type="button" class="cert-card__btn"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">View Document</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">View Document</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
             </div>
           </article>
         </div>
@@ -406,7 +406,7 @@
       <div class="container cta-band__inner">
         <h2 class="cta-band__text">Need a document that is not listed?</h2>
         <div class="cta-band__actions">
-          <button type="button" class="btn-gradient-pill" data-open-modal="modalSendInquiry">Send Inquiry &rarr;</button>
+          <button type="button" class="btn-gradient-pill" data-open-modal="modalSendInquiry"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Send Inquiry</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
           <a class="btn-outline-white" href="contact.html">Contact Regulatory Team</a>
         </div>
       </div>
@@ -491,7 +491,7 @@
           <img class="modal-cert-img" src="images/cert/ecert5.jpg" alt="Certificate Preview">
         </div>
         <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-          <button type="button" class="btn-gradient-pill" data-open-modal="modalSendInquiry">Request Certified Copy &rarr;</button>
+          <button type="button" class="btn-gradient-pill" data-open-modal="modalSendInquiry"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Request Certified Copy</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Request Certified Copy</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
           <button type="button" class="btn-outline-white" style="color: var(--ink-900); border-color: #cbd5e1;" data-close-modal>Close</button>
         </div>
       </div>
@@ -542,7 +542,7 @@
           <label class="field-line__label" for="modalInqMessage">Message</label>
           <textarea class="field-line__input field-line__textarea" id="modalInqMessage" name="message" rows="2" placeholder="Specify filling speed, formulations, or trial requirements..."></textarea>
         </div>
-        <button type="submit" class="btn-gradient-pill" style="width: 100%;">Send Inquiry &rarr;</button>
+        <button type="submit" class="btn-gradient-pill" style="width: 100%;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Send Inquiry</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
       </form>
       <div class="modal-success is-hidden" style="display: none; padding: 2rem 1rem; text-align: center;">
         <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--green-900); margin-bottom: 0.5rem;">Thanks. We will reply by email soon.</h4>

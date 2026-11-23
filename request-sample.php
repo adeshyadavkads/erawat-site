@@ -294,7 +294,7 @@
                 </label>
               </fieldset>
 
-              <button type="submit" class="btn-gradient-pill" style="width: 100%;">Send Sample Request &rarr;</button>
+              <button type="submit" class="btn-gradient-pill" style="width: 100%;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Send Sample Request</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Sample Request</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
               <div class="form-status is-hidden" id="sampleFormStatus" style="margin-top: 1rem;" role="status"></div>
             </form>
           </div>
@@ -361,7 +361,7 @@
       <div class="container cta-band__inner">
         <h2 class="cta-band__text">Have questions before submitting your request?</h2>
         <div class="cta-band__actions">
-          <a class="btn-gradient-pill" href="contact.html">Contact Us &rarr;</a>
+          <a class="btn-gradient-pill" href="contact.html"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Contact Us</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Contact Us</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
           <button type="button" class="btn-outline-white" data-open-modal="modalSendInquiry">Send Inquiry</button>
         </div>
       </div>
@@ -467,7 +467,7 @@
           <label class="field-line__label" for="modalInqMessage">Message</label>
           <textarea class="field-line__input field-line__textarea" id="modalInqMessage" name="message" rows="2" placeholder="Specify filling speed, formulations, or trial requirements..."></textarea>
         </div>
-        <button type="submit" class="btn-gradient-pill" style="width: 100%;">Send Inquiry &rarr;</button>
+        <button type="submit" class="btn-gradient-pill" style="width: 100%;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Send Inquiry</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
       </form>
       <div class="modal-success is-hidden" style="display: none; padding: 2rem 1rem; text-align: center;">
         <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--green-900); margin-bottom: 0.5rem;">Thanks. We will reply by email soon.</h4>

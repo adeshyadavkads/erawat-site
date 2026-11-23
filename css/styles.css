@@ -5599,3 +5599,396 @@ textarea:focus {
   background: var(--green-900, #0d5c2e);
   color: #ffffff;
 }
+
+
+/* --------------------------------------------------------------------------
+   16. CAREERS ACCORDION & JOIN US APPLICATION FORM
+   -------------------------------------------------------------------------- */
+.career-openings-section {
+  margin-top: var(--space-3xl, 3rem);
+}
+
+.career-accordion-wrap {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  margin-top: 1.5rem;
+}
+
+.career-accordion-item {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.career-accordion-item:last-child {
+  border-bottom: none;
+}
+
+.career-accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.15rem 1.5rem;
+  background: #ffffff;
+  border: none;
+  font-family: var(--font-heading, "Poppins", sans-serif);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--ink-800, #1e293b);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.career-accordion-header:hover {
+  background-color: #f8fafc;
+  color: var(--ink-950, #0f172a);
+}
+
+.career-accordion-header[aria-expanded="true"] {
+  background-color: #f8fafc;
+  font-weight: 700;
+  color: var(--ink-950, #0f172a);
+}
+
+.career-accordion-icon {
+  font-family: var(--font-heading, "Poppins", sans-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1;
+  margin-left: 1rem;
+}
+
+.career-accordion-body {
+  padding: 1.5rem 1.75rem 2rem;
+  background-color: #ffffff;
+  border-top: 1px solid #f1f5f9;
+}
+
+.career-job-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.career-job-meta-item strong {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-500, #64748b);
+  margin-bottom: 0.2rem;
+}
+
+.career-job-meta-item span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink-900, #0f172a);
+}
+
+.career-responsibilities-title {
+  font-family: var(--font-heading, "Poppins", sans-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink-900, #0f172a);
+  margin: 0 0 0.85rem;
+}
+
+.career-responsibilities-list {
+  padding-left: 1.25rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.8;
+  color: var(--ink-700, #334155);
+  font-size: 0.925rem;
+}
+
+.career-responsibilities-list li {
+  margin-bottom: 0.4rem;
+}
+
+.career-skills-box {
+  background: #f8fafc;
+  border-left: 3px solid var(--green-600, #16a34a);
+  padding: 0.85rem 1.25rem;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 1.5rem;
+}
+
+.career-skills-box p {
+  margin: 0;
+  font-size: 0.925rem;
+  color: var(--ink-800, #1e293b);
+  line-height: 1.6;
+}
+
+.career-body-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* --------------------------------------------------------------------------
+   JOIN US FORM
+   -------------------------------------------------------------------------- */
+.join-us-section {
+  padding-block: clamp(3rem, 5vw, 4.5rem);
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.join-us-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: clamp(1.75rem, 4vw, 3rem);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-us-card.is-highlighted {
+  border-color: var(--green-600, #16a34a);
+  box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.18);
+}
+
+.join-us-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.join-us-title {
+  font-family: var(--font-heading, "Poppins", sans-serif);
+  font-size: clamp(1.75rem, 1.4rem + 1vw, 2.25rem);
+  font-weight: 800;
+  color: var(--ink-950, #0f172a);
+  margin: 0 0 0.5rem;
+}
+
+.join-us-lead {
+  font-size: 1rem;
+  color: var(--ink-600, #475569);
+  margin: 0;
+}
+
+.join-section-block {
+  margin-bottom: 2.25rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.join-section-block:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.join-section-legend {
+  font-family: var(--font-heading, "Poppins", sans-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink-900, #0f172a);
+  margin: 0 0 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.join-form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.join-form-grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .join-form-grid-2,
+  .join-form-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.join-field-group {
+  margin-bottom: 1rem;
+}
+
+.join-label {
+  display: block;
+  font-family: var(--font-heading, "Poppins", sans-serif);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink-800, #1e293b);
+  margin-bottom: 0.35rem;
+}
+
+.join-label .required-star {
+  color: #dc2626;
+  margin-left: 2px;
+}
+
+.join-input,
+.join-select,
+.join-textarea {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  font-family: inherit;
+  font-size: 0.925rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: var(--ink-900, #0f172a);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.join-input:focus,
+.join-select:focus,
+.join-textarea:focus {
+  outline: none;
+  border-color: var(--green-600, #16a34a);
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+}
+
+.join-input.is-invalid,
+.join-select.is-invalid,
+.join-textarea.is-invalid {
+  border-color: #dc2626;
+  background-color: #fff5f5;
+}
+
+.join-file-upload-wrap {
+  border: 2px dashed #cbd5e1;
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-align: center;
+  background: #f8fafc;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.join-file-upload-wrap:hover {
+  border-color: var(--green-600, #16a34a);
+  background-color: #f0fdf4;
+}
+
+.join-file-input {
+  display: none;
+}
+
+
+/* --------------------------------------------------------------------------
+   17. UNIVERSAL BUTTON ANIMATION & CHEVRON ARROW STYLING
+   -------------------------------------------------------------------------- */
+.spec-btn-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.45rem !important;
+  padding: 0.35rem 0.85rem !important;
+  border-radius: 9999px !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  background: var(--green-700, #15803d) !important;
+  color: #ffffff !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  line-height: 1 !important;
+  box-sizing: border-box !important;
+}
+
+.spec-btn-pill:hover {
+  background: var(--green-900, #0d5c2e) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px) !important;
+}
+
+.spec-btn-pill .btn-anim__icon {
+  width: 11px !important;
+  height: 11px !important;
+  margin-left: 2px !important;
+}
+
+.career-apply-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.cert-card__btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.cert-card__btn .btn-anim__icon {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+/* Universal hover triggers for any element with btn-anim text & icon */
+.btn:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.btn-primary:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.btn-black-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.btn-outline-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.btn-outline-white:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.btn-solid-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.btn-editorial-send:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.spec-btn-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.career-apply-btn:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.cert-card__btn:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.cert-card:hover .cert-card__btn .btn-anim__icon-item:not(.btn-anim__icon-clone),
+.tree-cat-banner:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+button:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+a:hover .btn-anim__icon-item:not(.btn-anim__icon-clone) {
+  transform: translateX(150%) !important;
+  opacity: 0 !important;
+}
+
+.btn:hover .btn-anim__icon-clone,
+.btn-primary:hover .btn-anim__icon-clone,
+.btn-gradient-pill:hover .btn-anim__icon-clone,
+.btn-black-pill:hover .btn-anim__icon-clone,
+.btn-outline-pill:hover .btn-anim__icon-clone,
+.btn-outline-white:hover .btn-anim__icon-clone,
+.btn-solid-pill:hover .btn-anim__icon-clone,
+.btn-editorial-send:hover .btn-anim__icon-clone,
+.spec-btn-pill:hover .btn-anim__icon-clone,
+.career-apply-btn:hover .btn-anim__icon-clone,
+.cert-card__btn:hover .btn-anim__icon-clone,
+.cert-card:hover .cert-card__btn .btn-anim__icon-clone,
+.tree-cat-banner:hover .btn-anim__icon-clone,
+button:hover .btn-anim__icon-clone,
+a:hover .btn-anim__icon-clone {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+.btn:hover .btn-anim__text-track,
+.btn-primary:hover .btn-anim__text-track,
+.btn-gradient-pill:hover .btn-anim__text-track,
+.btn-black-pill:hover .btn-anim__text-track,
+.btn-outline-pill:hover .btn-anim__text-track,
+.btn-outline-white:hover .btn-anim__text-track,
+.btn-solid-pill:hover .btn-anim__text-track,
+.btn-editorial-send:hover .btn-anim__text-track,
+.career-apply-btn:hover .btn-anim__text-track,
+.cert-card__btn:hover .btn-anim__text-track,
+.cert-card:hover .cert-card__btn .btn-anim__text-track,
+button:hover .btn-anim__text-track,
+a:hover .btn-anim__text-track {
+  transform: translateY(-100%) !important;
+}

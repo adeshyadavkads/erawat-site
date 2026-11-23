@@ -225,7 +225,7 @@
               Consistent lock length and wall thickness for smooth, high-speed automated filling. Designed with precision air vents to prevent air compression during locking.
             </p>
             <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
-              <button type="button" class="btn-gradient-pill" id="productRequestSampleBtn" data-open-modal="modalQuickSample" data-size="0">Request Sample &rarr;</button>
+              <button type="button" class="btn-gradient-pill" id="productRequestSampleBtn" data-open-modal="modalQuickSample" data-size="0"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Request Sample</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Request Sample</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
               <a class="btn-outline-white" style="color: var(--ink-900); border-color: #cbd5e1;" href="technical-details.html">Download Spec Sheet</a>
             </div>
           </div>
@@ -381,7 +381,7 @@
             <!-- Branch 1: Gelatin -->
             <div class="tree-cat-col">
               <a href="#specsExplorer" class="tree-cat-banner tree-cat-banner--gelatin" data-jump-spec-tab="gelatin" title="Click to view Gelatin specifications">
-                Gelatin &darr;
+                Gelatin <span class="btn-anim__icon" style="width: 12px; height: 12px; margin-left: 4px; display: inline-flex; vertical-align: middle;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4L6 8L10 4"/></svg></span>
                 <div class="tree-cat-stem" aria-hidden="true"></div>
               </a>
 
@@ -412,7 +412,7 @@
                     <div class="tree-spec-pill">SLS free capsules</div>
                     <div class="tree-spec-pill">Metallic Capsules</div>
                     <div class="tree-spec-pill">Pearl &amp; Golden Capsules</div>
-                    <span style="font-size: 0.75rem; color: #ea580c; font-weight: 700; margin-top: 0.35rem; display: block;">View Descriptions &rarr;</span>
+                    <span style="font-size: 0.75rem; color: #ea580c; font-weight: 700; margin-top: 0.35rem; display: block;">View Descriptions <span style="display: inline-flex; vertical-align: middle; margin-left: 3px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg></span></span>
                   </div>
                 </div>
               </div>
@@ -421,7 +421,7 @@
             <!-- Branch 2: HPMC/Veg -->
             <div class="tree-cat-col">
               <a href="#specsExplorer" class="tree-cat-banner tree-cat-banner--hpmc" data-jump-spec-tab="hpmc" title="Click to view HPMC/Veg specifications">
-                HPMC/Veg &darr;
+                HPMC/Veg <span class="btn-anim__icon" style="width: 12px; height: 12px; margin-left: 4px; display: inline-flex; vertical-align: middle;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4L6 8L10 4"/></svg></span>
                 <div class="tree-cat-stem" aria-hidden="true"></div>
               </a>
 
@@ -513,7 +513,7 @@
                   <h3 class="specs-panel-title">Hard Gelatin Capsule Specifications</h3>
                   <p class="specs-panel-sub">WEIGHT OF CAPSULE (In Milligram) &amp; VOLUME (In CC) &bull; AVERAGE WEIGHT (Deviation &plusmn;5%) &amp; VOLUME (In CC)</p>
                 </div>
-                <a href="request-sample.html" class="btn-gradient-pill" style="font-size: 0.8rem; padding: 0.45rem 1.25rem;">Request Gelatin Sample &rarr;</a>
+                <a href="request-sample.html" class="btn-gradient-pill" style="font-size: 0.8rem; padding: 0.45rem 1.25rem;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Request Gelatin Sample</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Request Gelatin Sample</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
               </div>
 
               <div class="spec-table-container">
@@ -533,56 +533,56 @@
                       <td>119</td>
                       <td>0.95</td>
                       <td>950 mg</td>
-                      <td><a href="product.html?size=00" class="spec-btn-pill">View Size 00 &rarr;</a></td>
+                      <td><a href="product.html?size=00" class="spec-btn-pill"><span>View Size 00</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                     <tr>
                       <td><strong>Size 0EL</strong></td>
                       <td>104</td>
                       <td>0.78</td>
                       <td>780 mg</td>
-                      <td><a href="product.html?size=0EL" class="spec-btn-pill">View Size 0EL &rarr;</a></td>
+                      <td><a href="product.html?size=0EL" class="spec-btn-pill"><span>View Size 0EL</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                     <tr>
                       <td><strong>Size 0</strong></td>
                       <td>96</td>
                       <td>0.68</td>
                       <td>680 mg</td>
-                      <td><a href="product.html?size=0" class="spec-btn-pill">View Size 0 &rarr;</a></td>
+                      <td><a href="product.html?size=0" class="spec-btn-pill"><span>View Size 0</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                     <tr>
                       <td><strong>Size 1</strong></td>
                       <td>76</td>
                       <td>0.50</td>
                       <td>480 mg</td>
-                      <td><a href="product.html?size=1" class="spec-btn-pill">View Size 1 &rarr;</a></td>
+                      <td><a href="product.html?size=1" class="spec-btn-pill"><span>View Size 1</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                     <tr>
                       <td><strong>Size 2</strong></td>
                       <td>63</td>
                       <td>0.37</td>
                       <td>370 mg</td>
-                      <td><a href="product.html?size=2" class="spec-btn-pill">View Size 2 &rarr;</a></td>
+                      <td><a href="product.html?size=2" class="spec-btn-pill"><span>View Size 2</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                     <tr>
                       <td><strong>Size 3</strong></td>
                       <td>50</td>
                       <td>0.30</td>
                       <td>300 mg</td>
-                      <td><a href="product.html?size=3" class="spec-btn-pill">View Size 3 &rarr;</a></td>
+                      <td><a href="product.html?size=3" class="spec-btn-pill"><span>View Size 3</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                     <tr>
                       <td><strong>Size 4</strong></td>
                       <td>40</td>
                       <td>0.21</td>
                       <td>210 mg</td>
-                      <td><a href="product.html?size=4" class="spec-btn-pill">View Size 4 &rarr;</a></td>
+                      <td><a href="product.html?size=4" class="spec-btn-pill"><span>View Size 4</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                     <tr>
                       <td><strong>Size 5</strong></td>
                       <td>28</td>
                       <td>0.13</td>
                       <td>130 mg</td>
-                      <td><a href="product.html?size=5" class="spec-btn-pill">View Size 5 &rarr;</a></td>
+                      <td><a href="product.html?size=5" class="spec-btn-pill"><span>View Size 5</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -598,7 +598,7 @@
                   <h3 class="specs-panel-title">HPMC / Vegetarian Capsule Specifications</h3>
                   <p class="specs-panel-sub">WEIGHT OF CAPSULE (In Milligram) &amp; VOLUME (In CC) &bull; AVERAGE WEIGHT (Deviation &plusmn;5%) &amp; VOLUME (In CC)</p>
                 </div>
-                <a href="request-sample.html" class="btn-gradient-pill" style="font-size: 0.8rem; padding: 0.45rem 1.25rem;">Request HPMC Sample &rarr;</a>
+                <a href="request-sample.html" class="btn-gradient-pill" style="font-size: 0.8rem; padding: 0.45rem 1.25rem;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Request HPMC Sample</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Request HPMC Sample</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
               </div>
 
               <div class="spec-table-container">
@@ -618,35 +618,35 @@
                       <td>119</td>
                       <td>0.95</td>
                       <td>950 mg</td>
-                      <td><a href="product.html?size=00" class="spec-btn-pill">View Size 00 &rarr;</a></td>
+                      <td><a href="product.html?size=00" class="spec-btn-pill"><span>View Size 00</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                     <tr>
                       <td><strong>Size 0</strong></td>
                       <td>96</td>
                       <td>0.68</td>
                       <td>680 mg</td>
-                      <td><a href="product.html?size=0" class="spec-btn-pill">View Size 0 &rarr;</a></td>
+                      <td><a href="product.html?size=0" class="spec-btn-pill"><span>View Size 0</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                     <tr>
                       <td><strong>Size 2</strong></td>
                       <td>63</td>
                       <td>0.37</td>
                       <td>370 mg</td>
-                      <td><a href="product.html?size=2" class="spec-btn-pill">View Size 2 &rarr;</a></td>
+                      <td><a href="product.html?size=2" class="spec-btn-pill"><span>View Size 2</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                     <tr>
                       <td><strong>Size 3</strong></td>
                       <td>50</td>
                       <td>0.30</td>
                       <td>300 mg</td>
-                      <td><a href="product.html?size=3" class="spec-btn-pill">View Size 3 &rarr;</a></td>
+                      <td><a href="product.html?size=3" class="spec-btn-pill"><span>View Size 3</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                     <tr>
                       <td><strong>Size 3 (DPI)</strong></td>
                       <td>50 (Inhalation Grade)</td>
                       <td>0.30</td>
                       <td>Dry Powder Inhalation</td>
-                      <td><a href="product.html?size=3" class="spec-btn-pill">View DPI Details &rarr;</a></td>
+                      <td><a href="product.html?size=3" class="spec-btn-pill"><span>View DPI Details</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -662,7 +662,7 @@
                   <h3 class="specs-panel-title">Specialty &amp; Customized Capsule Formulations</h3>
                   <p class="specs-panel-sub">Engineered to meet specific formulation challenges, drug delivery requirements, and distinct brand appeal.</p>
                 </div>
-                <button type="button" class="btn-gradient-pill" data-open-modal="modalSendInquiry" style="font-size: 0.8rem; padding: 0.45rem 1.25rem;">Inquire Custom Formulation &rarr;</button>
+                <button type="button" class="btn-gradient-pill" data-open-modal="modalSendInquiry" style="font-size: 0.8rem; padding: 0.45rem 1.25rem;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Inquire Custom Formulation</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Inquire Custom Formulation</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
               </div>
 
               <div class="specialty-cards-grid">
@@ -675,7 +675,7 @@
                   </div>
                   <div class="specialty-card__footer">
                     <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">For dry powder fills</span>
-                    <a href="request-sample.html" class="spec-btn-pill">Request Sample &rarr;</a>
+                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
                   </div>
                 </div>
 
@@ -688,7 +688,7 @@
                   </div>
                   <div class="specialty-card__footer">
                     <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">Zero chemical preservatives</span>
-                    <a href="request-sample.html" class="spec-btn-pill">Request Sample &rarr;</a>
+                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
                   </div>
                 </div>
 
@@ -701,7 +701,7 @@
                   </div>
                   <div class="specialty-card__footer">
                     <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">Oils &amp; lipid solutions</span>
-                    <a href="request-sample.html" class="spec-btn-pill">Request Sample &rarr;</a>
+                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
                   </div>
                 </div>
 
@@ -714,7 +714,7 @@
                   </div>
                   <div class="specialty-card__footer">
                     <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">EDQM certified collagen</span>
-                    <a href="request-sample.html" class="spec-btn-pill">Request Sample &rarr;</a>
+                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
                   </div>
                 </div>
 
@@ -727,7 +727,7 @@
                   </div>
                   <div class="specialty-card__footer">
                     <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">Sodium Lauryl Sulfate free</span>
-                    <a href="request-sample.html" class="spec-btn-pill">Request Sample &rarr;</a>
+                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
                   </div>
                 </div>
 
@@ -740,7 +740,7 @@
                   </div>
                   <div class="specialty-card__footer">
                     <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">Lustrous metallic finish</span>
-                    <a href="request-sample.html" class="spec-btn-pill">Request Sample &rarr;</a>
+                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
                   </div>
                 </div>
 
@@ -753,7 +753,7 @@
                   </div>
                   <div class="specialty-card__footer">
                     <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">Luxury cosmetics &amp; wellness</span>
-                    <a href="request-sample.html" class="spec-btn-pill">Request Sample &rarr;</a>
+                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
                   </div>
                 </div>
               </div>
@@ -771,25 +771,25 @@
             <a href="product.html?size=00" style="text-decoration: none; color: inherit; display: block; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 1.5rem; transition: transform 0.2s ease, box-shadow 0.2s ease;" class="size-nav-card">
               <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: var(--ink-950); margin: 0 0 0.25rem;">Size 00</h3>
               <p style="font-size: 0.85rem; color: var(--ink-500); margin: 0 0 0.75rem;">Volume: 0.91 ml &bull; 122 mg</p>
-              <span style="font-size: 0.85rem; font-weight: 600; color: var(--green-700);">View Size 00 &rarr;</span>
+              <span style="font-size: 0.85rem; font-weight: 600; color: var(--green-700);">View Size 00 <span style="display: inline-flex; vertical-align: middle; margin-left: 3px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg></span></span>
             </a>
 
             <a href="product.html?size=0EL" style="text-decoration: none; color: inherit; display: block; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 1.5rem; transition: transform 0.2s ease, box-shadow 0.2s ease;" class="size-nav-card">
               <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: var(--ink-950); margin: 0 0 0.25rem;">Size 0EL</h3>
               <p style="font-size: 0.85rem; color: var(--ink-500); margin: 0 0 0.75rem;">Volume: 0.78 ml &bull; 108 mg</p>
-              <span style="font-size: 0.85rem; font-weight: 600; color: var(--green-700);">View Size 0EL &rarr;</span>
+              <span style="font-size: 0.85rem; font-weight: 600; color: var(--green-700);">View Size 0EL <span style="display: inline-flex; vertical-align: middle; margin-left: 3px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg></span></span>
             </a>
 
             <a href="product.html?size=1" style="text-decoration: none; color: inherit; display: block; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 1.5rem; transition: transform 0.2s ease, box-shadow 0.2s ease;" class="size-nav-card">
               <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: var(--ink-950); margin: 0 0 0.25rem;">Size 1</h3>
               <p style="font-size: 0.85rem; color: var(--ink-500); margin: 0 0 0.75rem;">Volume: 0.50 ml &bull; 76 mg</p>
-              <span style="font-size: 0.85rem; font-weight: 600; color: var(--green-700);">View Size 1 &rarr;</span>
+              <span style="font-size: 0.85rem; font-weight: 600; color: var(--green-700);">View Size 1 <span style="display: inline-flex; vertical-align: middle; margin-left: 3px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg></span></span>
             </a>
 
             <a href="product.html?size=2" style="text-decoration: none; color: inherit; display: block; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 1.5rem; transition: transform 0.2s ease, box-shadow 0.2s ease;" class="size-nav-card">
               <h3 style="font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; color: var(--ink-950); margin: 0 0 0.25rem;">Size 2</h3>
               <p style="font-size: 0.85rem; color: var(--ink-500); margin: 0 0 0.75rem;">Volume: 0.37 ml &bull; 61 mg</p>
-              <span style="font-size: 0.85rem; font-weight: 600; color: var(--green-700);">View Size 2 &rarr;</span>
+              <span style="font-size: 0.85rem; font-weight: 600; color: var(--green-700);">View Size 2 <span style="display: inline-flex; vertical-align: middle; margin-left: 3px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg></span></span>
             </a>
           </div>
         </div>
@@ -801,7 +801,7 @@
       <div class="container cta-band__inner">
         <h2 class="cta-band__text">Need this size in a specific colour or print?</h2>
         <div class="cta-band__actions">
-          <button type="button" class="btn-gradient-pill" data-open-modal="modalSendInquiry">Send Inquiry &rarr;</button>
+          <button type="button" class="btn-gradient-pill" data-open-modal="modalSendInquiry"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Send Inquiry</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
           <a class="btn-outline-white" href="request-sample.html">Request Sample Box</a>
         </div>
       </div>
@@ -910,7 +910,7 @@
             <input class="field-line__input" type="text" id="sampleQty" name="quantity" placeholder="e.g. 2 Million">
           </div>
         </div>
-        <button type="submit" class="btn-gradient-pill" style="width: 100%;">Dispatch Sample Request &rarr;</button>
+        <button type="submit" class="btn-gradient-pill" style="width: 100%;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Dispatch Sample Request</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Dispatch Sample Request</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
       </form>
       <div class="modal-success is-hidden" style="display: none; padding: 2rem 1rem; text-align: center;">
         <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--green-900); margin-bottom: 0.5rem;">Sample Request Received.</h4>
@@ -954,7 +954,7 @@
           <label class="field-line__label" for="modalInqMessage">Message</label>
           <textarea class="field-line__input field-line__textarea" id="modalInqMessage" name="message" rows="2" placeholder="Specify filling speed, formulations, or trial requirements..."></textarea>
         </div>
-        <button type="submit" class="btn-gradient-pill" style="width: 100%;">Send Inquiry &rarr;</button>
+        <button type="submit" class="btn-gradient-pill" style="width: 100%;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Send Inquiry</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
       </form>
       <div class="modal-success is-hidden" style="display: none; padding: 2rem 1rem; text-align: center;">
         <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--green-900); margin-bottom: 0.5rem;">Thanks. We will reply by email soon.</h4>
