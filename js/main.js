@@ -946,6 +946,35 @@
         }
       }
     });
+
+    // Mobile tap support for flowchart tooltips
+    document.addEventListener("click", function (e) {
+      const specItem = e.target.closest(".tree-spec-item");
+      const tooltipBox = e.target.closest(".tree-box-card-red, .tree-box-card-green-sizes, .tree-box-item--has-tooltip");
+
+      if (!specItem && !tooltipBox) {
+        document.querySelectorAll(".tree-spec-item.is-active, .tree-box-card-red.is-tooltip-open, .tree-box-card-green-sizes.is-tooltip-open").forEach(function (el) {
+          el.classList.remove("is-active", "is-tooltip-open");
+        });
+        return;
+      }
+
+      if (specItem) {
+        const wasActive = specItem.classList.contains("is-active");
+        document.querySelectorAll(".tree-spec-item.is-active").forEach(function (el) {
+          el.classList.remove("is-active");
+        });
+        if (!wasActive) specItem.classList.add("is-active");
+      }
+
+      if (tooltipBox && !e.target.closest(".tree-link-size")) {
+        const wasActive = tooltipBox.classList.contains("is-tooltip-open");
+        document.querySelectorAll(".tree-box-card-red.is-tooltip-open, .tree-box-card-green-sizes.is-tooltip-open").forEach(function (el) {
+          el.classList.remove("is-tooltip-open");
+        });
+        if (!wasActive) tooltipBox.classList.add("is-tooltip-open");
+      }
+    });
   }
 
 

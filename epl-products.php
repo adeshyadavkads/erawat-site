@@ -185,6 +185,7 @@
     </section>
 
     <!-- 2. Product Range Hierarchy Diagram & Interactive Specifications (Our Products) -->
+        <!-- 2. Interactive Product Hierarchy Tree (Section 2 - Modern Interactive Charter) -->
     <section class="product-tree-section" id="ourProductsSection" aria-label="Our Products Range Hierarchy" data-aos="fade-up">
       <div class="container">
         <div class="product-tree-header">
@@ -192,7 +193,7 @@
           <p class="product-tree-title">Following Is The Wide And Varied Range Of Products That We Offer</p>
         </div>
 
-        <!-- Visual Tree Architecture -->
+        <!-- Visual Tree Architecture matching exact charter -->
         <div class="product-tree-diagram">
           <!-- Root: Hard Capsules -->
           <div class="tree-root-wrap">
@@ -202,387 +203,173 @@
             <div class="tree-root-stem" aria-hidden="true"></div>
           </div>
 
-          <!-- Level 2: Gelatin vs HPMC/Veg -->
-          <div class="tree-categories-row">
-            <div class="tree-top-connector" aria-hidden="true"></div>
+          <!-- Level 2: Gelatin vs HPMC/Veg Banners -->
+          <div class="tree-level2-row">
+            <div class="tree-level2-connector" aria-hidden="true"></div>
 
-            <!-- Branch 1: Gelatin -->
-            <div class="tree-cat-col">
+            <!-- Left Category Banner: Gelatin -->
+            <div class="tree-banner-col tree-banner-col--left">
               <a href="#specsExplorer" class="tree-cat-banner tree-cat-banner--gelatin" data-jump-spec-tab="gelatin" title="Click to view Gelatin specifications">
                 Gelatin <span class="btn-anim__icon" style="width: 12px; height: 12px; margin-left: 4px; display: inline-flex; vertical-align: middle;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4L6 8L10 4"/></svg></span>
-                <div class="tree-cat-stem" aria-hidden="true"></div>
               </a>
-
-              <div class="tree-boxes-row tree-boxes-row--gelatin">
-                <div class="tree-box-connector" aria-hidden="true"></div>
-
-                <!-- Sizes Box (Red) -->
-                <div class="tree-box-item">
-                  <div class="tree-box-card-red">
-                    <a href="product.html?size=00" class="tree-link-size">Size - 00</a>
-                    <a href="product.html?size=0EL" class="tree-link-size">Size - 0EL</a>
-                    <a href="product.html?size=0" class="tree-link-size">Size - 0</a>
-                    <a href="product.html?size=1" class="tree-link-size">Size - 1</a>
-                    <a href="product.html?size=2" class="tree-link-size">Size - 2</a>
-                    <a href="product.html?size=3" class="tree-link-size">Size - 3</a>
-                    <a href="product.html?size=4" class="tree-link-size">Size - 4</a>
-                    <a href="product.html?size=5" class="tree-link-size">Size - 5</a>
-                  </div>
-                </div>
-
-                <!-- Specialty Box (Gray) -->
-                <div class="tree-box-item">
-                  <div class="tree-box-card-gray" style="cursor: pointer;" data-jump-spec-tab="specialty" title="Click to view all 7 specialty formulation descriptions">
-                    <div class="tree-spec-pill">Sticky Free Capsules</div>
-                    <div class="tree-spec-pill">Preservative Free Capsules</div>
-                    <div class="tree-spec-pill">Liquid Filling Capsules</div>
-                    <div class="tree-spec-pill">TSE/BSE free capsules</div>
-                    <div class="tree-spec-pill">SLS free capsules</div>
-                    <div class="tree-spec-pill">Metallic Capsules</div>
-                    <div class="tree-spec-pill">Pearl &amp; Golden Capsules</div>
-                    <span style="font-size: 0.75rem; color: #ea580c; font-weight: 700; margin-top: 0.35rem; display: block;">View Descriptions <span style="display: inline-flex; vertical-align: middle; margin-left: 3px;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10"/></svg></span></span>
-                  </div>
-                </div>
-              </div>
+              <div class="tree-stem-down" aria-hidden="true"></div>
             </div>
 
-            <!-- Branch 2: HPMC/Veg -->
-            <div class="tree-cat-col">
+            <!-- Right Category Banner: HPMC/Veg -->
+            <div class="tree-banner-col tree-banner-col--right">
               <a href="#specsExplorer" class="tree-cat-banner tree-cat-banner--hpmc" data-jump-spec-tab="hpmc" title="Click to view HPMC/Veg specifications">
                 HPMC/Veg <span class="btn-anim__icon" style="width: 12px; height: 12px; margin-left: 4px; display: inline-flex; vertical-align: middle;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4L6 8L10 4"/></svg></span>
-                <div class="tree-cat-stem" aria-hidden="true"></div>
               </a>
-
-              <div class="tree-boxes-row tree-boxes-row--hpmc">
-                <div class="tree-box-connector" aria-hidden="true"></div>
-
-                <!-- Sizes Box (Slate Gray) -->
-                <div class="tree-box-item">
-                  <div class="tree-box-card-slate">
-                    <a href="product.html?size=00" class="tree-link-size">Size - 00</a>
-                    <a href="product.html?size=0" class="tree-link-size">Size - 0</a>
-                    <a href="product.html?size=1" class="tree-link-size">Size - 1</a>
-                    <a href="product.html?size=2" class="tree-link-size">Size - 2</a>
-                    <a href="product.html?size=3" class="tree-link-size">Size - 3</a>
-                    <a href="product.html?size=3" class="tree-link-size">Size - 3 (DPI)</a>
-                  </div>
-                </div>
-
-                <!-- Weight & Volume Spec Table (Green) -->
-                <div class="tree-box-item">
-                  <div class="tree-box-card-green" style="cursor: pointer;" data-jump-spec-tab="hpmc" title="Click to expand HPMC specifications">
-                    <div class="tree-table-heading">WEIGHT OF CAPSULE (In Milligram) &amp; VOLUME (In CC)</div>
-                    <div class="tree-table-sub">AVERAGE WEIGHT (Deviation +/-5%) &amp; VOLUME (In CC)</div>
-                    <table class="tree-data-table" aria-label="Capsule Weight and Volume specifications">
-                      <thead>
-                        <tr>
-                          <th>Size</th>
-                          <th>Average Wt.(Mg)</th>
-                          <th>Volume (cc)</th>
-                          <th>Suitable For (1.0 g/cc)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><strong>00</strong></td>
-                          <td>119</td>
-                          <td>0.95</td>
-                          <td>950 mg</td>
-                        </tr>
-                        <tr>
-                          <td><strong>0</strong></td>
-                          <td>96</td>
-                          <td>0.68</td>
-                          <td>680 mg</td>
-                        </tr>
-                        <tr>
-                          <td><strong>2</strong></td>
-                          <td>63</td>
-                          <td>0.37</td>
-                          <td>370 mg</td>
-                        </tr>
-                        <tr>
-                          <td><strong>3</strong></td>
-                          <td>50</td>
-                          <td>0.30</td>
-                          <td>300 mg</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Interactive Specifications Explorer & Specialty Formulations -->
-        <div class="product-specs-explorer" id="specsExplorer">
-          <div class="specs-nav-tabs" role="tablist">
-            <button type="button" class="specs-tab-btn is-active" id="tabBtnGelatin" role="tab" aria-selected="true" data-spec-tab="gelatin">
-              <span class="tab-indicator-dot tab-indicator-dot--red"></span>
-              Gelatin Capsules (8 Sizes: 00 – 5)
-            </button>
-            <button type="button" class="specs-tab-btn" id="tabBtnHpmc" role="tab" aria-selected="false" data-spec-tab="hpmc">
-              <span class="tab-indicator-dot tab-indicator-dot--green"></span>
-              HPMC / Veg Capsules (Sizes 00 – 3 DPI)
-            </button>
-            <button type="button" class="specs-tab-btn" id="tabBtnSpecial" role="tab" aria-selected="false" data-spec-tab="specialty">
-              <span class="tab-indicator-dot tab-indicator-dot--gold"></span>
-              Specialty Formulations (7 Varieties)
-            </button>
-          </div>
-
-          <!-- Tab Panel 1: Gelatin Specifications (All 8 Sizes) -->
-          <div class="specs-tab-panel is-active" id="panelGelatinSpecs" data-panel-id="gelatin" role="tabpanel" aria-labelledby="tabBtnGelatin">
-            <div class="specs-panel-card">
-              <div class="specs-panel-header">
-                <div>
-                  <h3 class="specs-panel-title">Hard Gelatin Capsule Specifications</h3>
-                  <p class="specs-panel-sub">WEIGHT OF CAPSULE (In Milligram) &amp; VOLUME (In CC) &bull; AVERAGE WEIGHT (Deviation &plusmn;5%) &amp; VOLUME (In CC)</p>
-                </div>
-                <a href="request-sample.html" class="btn-gradient-pill" style="font-size: 0.8rem; padding: 0.45rem 1.25rem;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Request Gelatin Sample</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Request Gelatin Sample</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
-              </div>
-
-              <div class="spec-table-container">
-                <table class="spec-table" aria-label="Gelatin Capsule Weight and Volume Specifications">
-                  <thead>
-                    <tr>
-                      <th>Size</th>
-                      <th>Average Wt. (Mg)</th>
-                      <th>Volume (cc)</th>
-                      <th>Suitable For (1.0 g/cc)</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><strong>Size 00</strong></td>
-                      <td>119</td>
-                      <td>0.95</td>
-                      <td>950 mg</td>
-                      <td><a href="product.html?size=00" class="spec-btn-pill"><span>View Size 00</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Size 0EL</strong></td>
-                      <td>104</td>
-                      <td>0.78</td>
-                      <td>780 mg</td>
-                      <td><a href="product.html?size=0EL" class="spec-btn-pill"><span>View Size 0EL</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Size 0</strong></td>
-                      <td>96</td>
-                      <td>0.68</td>
-                      <td>680 mg</td>
-                      <td><a href="product.html?size=0" class="spec-btn-pill"><span>View Size 0</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Size 1</strong></td>
-                      <td>76</td>
-                      <td>0.50</td>
-                      <td>480 mg</td>
-                      <td><a href="product.html?size=1" class="spec-btn-pill"><span>View Size 1</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Size 2</strong></td>
-                      <td>63</td>
-                      <td>0.37</td>
-                      <td>370 mg</td>
-                      <td><a href="product.html?size=2" class="spec-btn-pill"><span>View Size 2</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Size 3</strong></td>
-                      <td>50</td>
-                      <td>0.30</td>
-                      <td>300 mg</td>
-                      <td><a href="product.html?size=3" class="spec-btn-pill"><span>View Size 3</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Size 4</strong></td>
-                      <td>40</td>
-                      <td>0.21</td>
-                      <td>210 mg</td>
-                      <td><a href="product.html?size=4" class="spec-btn-pill"><span>View Size 4</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Size 5</strong></td>
-                      <td>28</td>
-                      <td>0.13</td>
-                      <td>130 mg</td>
-                      <td><a href="product.html?size=5" class="spec-btn-pill"><span>View Size 5</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <div class="tree-stem-down" aria-hidden="true"></div>
             </div>
           </div>
 
-          <!-- Tab Panel 2: HPMC / Veg Specifications -->
-          <div class="specs-tab-panel" id="panelHpmcSpecs" data-panel-id="hpmc" role="tabpanel" aria-labelledby="tabBtnHpmc" style="display: none;">
-            <div class="specs-panel-card">
-              <div class="specs-panel-header">
-                <div>
-                  <h3 class="specs-panel-title">HPMC / Vegetarian Capsule Specifications</h3>
-                  <p class="specs-panel-sub">WEIGHT OF CAPSULE (In Milligram) &amp; VOLUME (In CC) &bull; AVERAGE WEIGHT (Deviation &plusmn;5%) &amp; VOLUME (In CC)</p>
-                </div>
-                <a href="request-sample.html" class="btn-gradient-pill" style="font-size: 0.8rem; padding: 0.45rem 1.25rem;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Request HPMC Sample</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Request HPMC Sample</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
-              </div>
+          <!-- Level 3: Triad of 3 Connected Boxes (Red Sizes, Gray Specialty, Green Sizes) -->
+          <div class="tree-boxes-triad">
+            <div class="tree-crossbar" aria-hidden="true">
+              <div class="tree-crossbar-center-stem" aria-hidden="true"></div>
+            </div>
 
-              <div class="spec-table-container">
-                <table class="spec-table" aria-label="HPMC Capsule Weight and Volume Specifications">
-                  <thead>
-                    <tr>
-                      <th>Size</th>
-                      <th>Average Wt. (Mg)</th>
-                      <th>Volume (cc)</th>
-                      <th>Suitable For (1.0 g/cc)</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><strong>Size 00</strong></td>
-                      <td>119</td>
-                      <td>0.95</td>
-                      <td>950 mg</td>
-                      <td><a href="product.html?size=00" class="spec-btn-pill"><span>View Size 00</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Size 0</strong></td>
-                      <td>96</td>
-                      <td>0.68</td>
-                      <td>680 mg</td>
-                      <td><a href="product.html?size=0" class="spec-btn-pill"><span>View Size 0</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Size 2</strong></td>
-                      <td>63</td>
-                      <td>0.37</td>
-                      <td>370 mg</td>
-                      <td><a href="product.html?size=2" class="spec-btn-pill"><span>View Size 2</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Size 3</strong></td>
-                      <td>50</td>
-                      <td>0.30</td>
-                      <td>300 mg</td>
-                      <td><a href="product.html?size=3" class="spec-btn-pill"><span>View Size 3</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                    <tr>
-                      <td><strong>Size 3 (DPI)</strong></td>
-                      <td>50 (Inhalation Grade)</td>
-                      <td>0.30</td>
-                      <td>Dry Powder Inhalation</td>
-                      <td><a href="product.html?size=3" class="spec-btn-pill"><span>View DPI Details</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></td>
-                    </tr>
-                  </tbody>
-                </table>
+            <!-- 1. Left Box: Gelatin Sizes (Red) -->
+            <div class="tree-triad-col tree-triad-col--left">
+              <div class="tree-box-card-red" tabindex="0" role="region" aria-label="Gelatin capsule sizes (hover to view weight and volume specifications)">
+                <a href="product.html?size=00" class="tree-link-size">Size - 00</a>
+                <a href="product.html?size=0EL" class="tree-link-size">Size - 0EL</a>
+                <a href="product.html?size=0" class="tree-link-size">Size - 0</a>
+                <a href="product.html?size=1" class="tree-link-size">Size - 1</a>
+                <a href="product.html?size=2" class="tree-link-size">Size - 2</a>
+                <a href="product.html?size=3" class="tree-link-size">Size - 3</a>
+                <a href="product.html?size=4" class="tree-link-size">Size - 4</a>
+                <a href="product.html?size=5" class="tree-link-size">Size - 5</a>
+
+                <!-- Hover Tooltip: Gelatin Weight & Volume Specs Table (reveals only on hover) -->
+                <div class="tree-tooltip-popup" role="tooltip" aria-hidden="true">
+                  <div class="tree-tooltip-heading">WEIGHT OF CAPSULE (In Milligram) &amp; VOLUME (In CC)</div>
+                  <div class="tree-tooltip-sub">AVERAGE WEIGHT (Deviation +/-5%) &amp; VOLUME (In CC)</div>
+                  <table class="tree-tooltip-table">
+                    <thead>
+                      <tr>
+                        <th>Size</th>
+                        <th>Average Wt.(Mg)</th>
+                        <th>Volume (cc)</th>
+                        <th>Suitable For (1.0 g/cc)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td><strong>00</strong></td><td>119</td><td>0.95</td><td>950 mg</td></tr>
+                      <tr><td><strong>0EL</strong></td><td>104</td><td>0.78</td><td>780 mg</td></tr>
+                      <tr><td><strong>0</strong></td><td>96</td><td>0.68</td><td>680 mg</td></tr>
+                      <tr><td><strong>1</strong></td><td>76</td><td>0.50</td><td>480 mg</td></tr>
+                      <tr><td><strong>2</strong></td><td>63</td><td>0.37</td><td>370 mg</td></tr>
+                      <tr><td><strong>3</strong></td><td>50</td><td>0.30</td><td>300 mg</td></tr>
+                      <tr><td><strong>4</strong></td><td>40</td><td>0.21</td><td>210 mg</td></tr>
+                      <tr><td><strong>5</strong></td><td>28</td><td>0.13</td><td>130 mg</td></tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Tab Panel 3: Specialty Formulations (7 Types with full descriptions) -->
-          <div class="specs-tab-panel" id="panelSpecialtySpecs" data-panel-id="specialty" role="tabpanel" aria-labelledby="tabBtnSpecial" style="display: none;">
-            <div class="specs-panel-card">
-              <div class="specs-panel-header">
-                <div>
-                  <h3 class="specs-panel-title">Specialty &amp; Customized Capsule Formulations</h3>
-                  <p class="specs-panel-sub">Engineered to meet specific formulation challenges, drug delivery requirements, and distinct brand appeal.</p>
-                </div>
-                <button type="button" class="btn-gradient-pill" data-open-modal="modalSendInquiry" style="font-size: 0.8rem; padding: 0.45rem 1.25rem;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Inquire Custom Formulation</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Inquire Custom Formulation</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
-              </div>
+            <!-- 2. Middle Box: Specialty Formulations (Gray) -->
+            <div class="tree-triad-col tree-triad-col--center">
+              <div class="tree-box-card-gray" role="region" aria-label="Specialty capsule formulations (hover any item to read details)">
 
-              <div class="specialty-cards-grid">
                 <!-- 1. Sticky Free -->
-                <div class="specialty-card">
-                  <div>
-                    <span class="specialty-card__tag">Low Residual / Dry Powder</span>
-                    <h4 class="specialty-card__title">Sticky Free Capsules</h4>
-                    <p class="specialty-card__desc">These capsules are specially designed for dry powder medicaments . The residual medicine left in the capsules is substantially less as compared to normal capsules, thus releasing proper desired dosage.</p>
-                  </div>
-                  <div class="specialty-card__footer">
-                    <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">For dry powder fills</span>
-                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
+                <div class="tree-spec-item" tabindex="0">
+                  <span class="tree-spec-pill">Sticky Free Capsules</span>
+                  <div class="tree-spec-tooltip" role="tooltip">
+                    <h4 class="tree-spec-tooltip__title">Sticky Free Capsules</h4>
+                    <p class="tree-spec-tooltip__text">These capsules are specially designed for dry powder medicaments . The residual medicine left in the capsules is substantially less as compared to normal capsules, thus releasing proper desired dosage.</p>
                   </div>
                 </div>
 
                 <!-- 2. Preservative Free -->
-                <div class="specialty-card">
-                  <div>
-                    <span class="specialty-card__tag">Minimal Additives / High Purity</span>
-                    <h4 class="specialty-card__title">Preservative Free Capsules</h4>
-                    <p class="specialty-card__desc">In order to cater to the specific &amp; customized requirement of customers about providing them capsules with minimal additives and free of undesired preservatives , we offer them special &ldquo;Preservative Free Capsules&rdquo;.</p>
-                  </div>
-                  <div class="specialty-card__footer">
-                    <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">Zero chemical preservatives</span>
-                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
+                <div class="tree-spec-item" tabindex="0">
+                  <span class="tree-spec-pill">Preservative Free Capsules</span>
+                  <div class="tree-spec-tooltip" role="tooltip">
+                    <h4 class="tree-spec-tooltip__title">Preservative Free Capsules</h4>
+                    <p class="tree-spec-tooltip__text">In order to cater to the specific &amp; customized requirement of customers about providing them capsules with minimal additives and free of undesired preservatives , we offer them special &ldquo;Preservative Free Capsules&rdquo;.</p>
                   </div>
                 </div>
 
                 <!-- 3. Liquid Filling -->
-                <div class="specialty-card">
-                  <div>
-                    <span class="specialty-card__tag">Non-Aqueous Liquids / Band Sealing</span>
-                    <h4 class="specialty-card__title">Liquid Filling Capsules</h4>
-                    <p class="specialty-card__desc">For your non-aqueous &amp; semi solid products , we offer special liquid filling capsules which can directly be filled with such substances and then band sealed.</p>
-                  </div>
-                  <div class="specialty-card__footer">
-                    <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">Oils &amp; lipid solutions</span>
-                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
+                <div class="tree-spec-item" tabindex="0">
+                  <span class="tree-spec-pill">Liquid Filling Capsules</span>
+                  <div class="tree-spec-tooltip" role="tooltip">
+                    <h4 class="tree-spec-tooltip__title">Liquid Filling Capsules</h4>
+                    <p class="tree-spec-tooltip__text">For your non-aqueous &amp; semi solid products , we offer special liquid filling capsules which can directly be filled with such substances and then band sealed.</p>
                   </div>
                 </div>
 
                 <!-- 4. TSE/BSE Free -->
-                <div class="specialty-card">
-                  <div>
-                    <span class="specialty-card__tag">Certified Safe / Global Regulation</span>
-                    <h4 class="specialty-card__title">TSE/BSE Free Capsules</h4>
-                    <p class="specialty-card__desc">In order to cater to the specific &amp; customized requirement of customers about providing them capsules with minimal additives and free of undesired preservatives , we offer them special &ldquo;TSE/BSE free Capsules&rdquo; certified for international safety standards.</p>
-                  </div>
-                  <div class="specialty-card__footer">
-                    <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">EDQM certified collagen</span>
-                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
+                <div class="tree-spec-item" tabindex="0">
+                  <span class="tree-spec-pill">TSE/BSE free capsules</span>
+                  <div class="tree-spec-tooltip" role="tooltip">
+                    <h4 class="tree-spec-tooltip__title">TSE/BSE free capsules</h4>
+                    <p class="tree-spec-tooltip__text">In order to cater to the specific &amp; customized requirement of customers about providing them capsules with minimal additives and free of undesired preservatives , we offer them special &ldquo;TSE/BSE free capsules&rdquo; certified for international safety standards.</p>
                   </div>
                 </div>
 
                 <!-- 5. SLS Free -->
-                <div class="specialty-card">
-                  <div>
-                    <span class="specialty-card__tag">Surfactant Free / Sensitive Fills</span>
-                    <h4 class="specialty-card__title">SLS Free Capsules</h4>
-                    <p class="specialty-card__desc">This is another customisation made in capsule for those who do not want SLS in their formulation &amp; product. We give them &ldquo;SLS free Capsules&rdquo;.</p>
-                  </div>
-                  <div class="specialty-card__footer">
-                    <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">Sodium Lauryl Sulfate free</span>
-                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
+                <div class="tree-spec-item" tabindex="0">
+                  <span class="tree-spec-pill">SLS free capsules</span>
+                  <div class="tree-spec-tooltip" role="tooltip">
+                    <h4 class="tree-spec-tooltip__title">SLS free capsules</h4>
+                    <p class="tree-spec-tooltip__text">This is another customisation made in capsule for those who do not want SLS in their formulation &amp; product. We give them &ldquo;SLS free Capsules&rdquo;.</p>
                   </div>
                 </div>
 
-                <!-- 6. Metallic Capsules -->
-                <div class="specialty-card">
-                  <div>
-                    <span class="specialty-card__tag">Brand Protection / High Impact Visuals</span>
-                    <h4 class="specialty-card__title">Metallic Capsules</h4>
-                    <p class="specialty-card__desc">This is a very attractive product which is now widely used for various reasons. Its strong metallic aesthetics helps in Brand protection , product differentiation &amp; in creating strong visual appeal.</p>
-                  </div>
-                  <div class="specialty-card__footer">
-                    <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">Lustrous metallic finish</span>
-                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
+                <!-- 6. Metallic -->
+                <div class="tree-spec-item" tabindex="0">
+                  <span class="tree-spec-pill">Metallic Capsules</span>
+                  <div class="tree-spec-tooltip" role="tooltip">
+                    <h4 class="tree-spec-tooltip__title">Metallic Capsules</h4>
+                    <p class="tree-spec-tooltip__text">This is a very attractive product which is now widely used for various reasons. Its strong metallic aesthetics helps in Brand protection , product differentiation &amp; in creating strong visual appeal.</p>
                   </div>
                 </div>
 
                 <!-- 7. Pearl & Golden -->
-                <div class="specialty-card">
-                  <div>
-                    <span class="specialty-card__tag">Ornamental / Cosmetic &amp; Vitality</span>
-                    <h4 class="specialty-card__title">Pearl &amp; Golden Capsules</h4>
-                    <p class="specialty-card__desc">Along with all the benefits of metallic capsules , these two capsules carry a unique ornamental appeal , thus making it a preferred choice for cosmetic products and products related to sex &amp; stamina.</p>
+                <div class="tree-spec-item" tabindex="0">
+                  <span class="tree-spec-pill">Pearl &amp; Golden Capsules</span>
+                  <div class="tree-spec-tooltip" role="tooltip">
+                    <h4 class="tree-spec-tooltip__title">Pearl &amp; Golden Capsules</h4>
+                    <p class="tree-spec-tooltip__text">Along with all the benefits of metallic capsules , these two capsules carry a unique ornamental appeal , thus making it a preferred choice for cosmetic products and products related to sex &amp; stamina.</p>
                   </div>
-                  <div class="specialty-card__footer">
-                    <span style="font-size: 0.8rem; color: var(--ink-500); font-weight: 600;">Luxury cosmetics &amp; wellness</span>
-                    <a href="request-sample.html" class="spec-btn-pill"><span>Request Sample</span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
-                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- 3. Right Box: HPMC Sizes (Green) -->
+            <div class="tree-triad-col tree-triad-col--right">
+              <div class="tree-box-card-green-sizes" tabindex="0" role="region" aria-label="HPMC vegetarian capsule sizes (hover to view weight and volume specifications)">
+                <a href="product.html?size=00" class="tree-link-size">Size - 00</a>
+                <a href="product.html?size=0" class="tree-link-size">Size - 0</a>
+                <a href="product.html?size=1" class="tree-link-size">Size - 1</a>
+                <a href="product.html?size=2" class="tree-link-size">Size - 2</a>
+                <a href="product.html?size=3" class="tree-link-size">Size - 3</a>
+                <a href="product.html?size=3" class="tree-link-size">Size - 3 (DPI)</a>
+
+                <!-- Hover Tooltip: HPMC Weight & Volume Specs Table (reveals only on hover) -->
+                <div class="tree-tooltip-popup tree-tooltip-popup--right" role="tooltip" aria-hidden="true">
+                  <div class="tree-tooltip-heading">WEIGHT OF CAPSULE (In Milligram) &amp; VOLUME (In CC)</div>
+                  <div class="tree-tooltip-sub">AVERAGE WEIGHT (Deviation +/-5%) &amp; VOLUME (In CC)</div>
+                  <table class="tree-tooltip-table">
+                    <thead>
+                      <tr>
+                        <th>Size</th>
+                        <th>Average Wt.(Mg)</th>
+                        <th>Volume (cc)</th>
+                        <th>Suitable For (1.0 g/cc)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td><strong>00</strong></td><td>119</td><td>0.95</td><td>950 mg</td></tr>
+                      <tr><td><strong>0</strong></td><td>96</td><td>0.68</td><td>680 mg</td></tr>
+                      <tr><td><strong>2</strong></td><td>63</td><td>0.37</td><td>370 mg</td></tr>
+                      <tr><td><strong>3</strong></td><td>50</td><td>0.30</td><td>300 mg</td></tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>

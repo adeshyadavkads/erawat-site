@@ -5104,20 +5104,35 @@ textarea:focus {
 /* --------------------------------------------------------------------------
    15. PRODUCT RANGE HIERARCHY TREE DIAGRAM (OUR PRODUCTS)
    -------------------------------------------------------------------------- */
+/* ====================================================================
+   15. PRODUCT RANGE HIERARCHY TREE DIAGRAM (OUR PRODUCTS CHARTER)
+   Matches media_1795437875194_5aeb7554.png:
+   - Root: Hard Capsules
+   - Level 2: Gelatin (Red) & HPMC/Veg (Green) Banners
+   - Level 3: 3 Connected Boxes:
+       * Left: Red Box (Gelatin Sizes 00 to 5)
+       * Center: Gray Box (7 Specialty Formulations)
+       * Right: Green Box (HPMC Sizes 00 to 3 DPI)
+   - By Default: Only the 3 clean boxes are shown
+   - On Hover: Revealing inner details (Gelatin Specs Table, HPMC Specs Table,
+               and Formulation Descriptions)
+   ==================================================================== */
+
 .product-tree-section {
   padding-block: clamp(2.5rem, 5vw, 4.25rem);
   background: #ffffff;
   border-bottom: 1px solid #e2e8f0;
+  position: relative;
 }
 
 .product-tree-header {
   text-align: center;
-  margin-bottom: 2.75rem;
+  margin-bottom: 2.5rem;
 }
 
 .product-tree-overline {
   font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -5131,41 +5146,44 @@ textarea:focus {
 
 .product-tree-title {
   font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: clamp(1.2rem, 1.05rem + 0.9vw, 1.75rem);
+  font-size: clamp(1.2rem, 1.05rem + 0.9vw, 1.7rem);
   font-weight: 700;
-  color: #ea580c; /* vibrant orange accent matching user's reference */
+  color: #ea580c; /* vibrant orange accent matching screenshot */
   margin: 0.75rem auto 0;
   max-width: 680px;
   line-height: 1.35;
+  text-align: center;
 }
 
 /* Tree Diagram Container */
 .product-tree-diagram {
-  max-width: 1140px;
+  max-width: 860px;
   margin: 0 auto;
   position: relative;
+  padding: 0 1rem;
 }
 
-/* Root: Hard Capsules */
+/* Level 1: Root Node (Hard Capsules) */
 .tree-root-wrap {
   display: flex;
   justify-content: center;
   position: relative;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .tree-node-root {
   background: #ffffff;
-  border: 2px solid #94a3b8;
+  border: 1.5px solid #cbd5e1;
   border-radius: 4px;
-  padding: 0.75rem 2.5rem;
+  padding: 0.65rem 2.5rem;
   font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--ink-950, #0f172a);
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .tree-root-stem {
@@ -5173,822 +5191,467 @@ textarea:focus {
   top: 100%;
   left: 50%;
   width: 2px;
-  height: 2.5rem;
+  height: 2rem;
   background: #cbd5e1;
   transform: translateX(-50%);
 }
 
-/* Level 2: Gelatin vs HPMC/Veg */
-.tree-categories-row {
-  display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: clamp(1.5rem, 3.5vw, 3rem);
+/* Level 2: Gelatin & HPMC/Veg Banners */
+.tree-level2-row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 680px;
+  margin: 0 auto 1.75rem;
   position: relative;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
-.tree-top-connector {
+.tree-level2-connector {
   position: absolute;
   top: 0;
-  left: 23%;
-  right: 27%;
+  left: 17%;
+  right: 17%;
   height: 2px;
   background: #cbd5e1;
 }
 
-.tree-cat-col {
+.tree-banner-col {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  width: 190px;
 }
 
-.tree-cat-col::before {
+.tree-banner-col::before {
   content: "";
   position: absolute;
-  top: -2rem;
+  top: -1.5rem;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 2rem;
+  height: 1.5rem;
   background: #cbd5e1;
 }
 
-/* Category Badges */
 .tree-cat-banner {
   width: 100%;
-  max-width: 260px;
-  padding: 0.65rem 1.5rem;
+  padding: 0.65rem 1rem;
   font-family: var(--font-heading, "Poppins", sans-serif);
   font-size: 1.15rem;
   font-weight: 800;
   color: #ffffff;
   text-align: center;
   border-radius: 2px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
-  position: relative;
-  z-index: 2;
-  margin-bottom: 2.25rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, filter 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tree-cat-banner:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
 }
 
 .tree-cat-banner--gelatin {
-  background: #dc2626;
+  background: #d71920;
 }
 
 .tree-cat-banner--hpmc {
-  background: #16a34a;
+  background: #28a745;
 }
 
-.tree-cat-stem {
+.tree-stem-down {
   position: absolute;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 2.25rem;
+  height: 1.75rem;
   background: #cbd5e1;
 }
 
-/* Sub-branch rows */
-.tree-boxes-row {
-  display: grid;
-  width: 100%;
-  gap: 1.25rem;
+/* Level 3: The Triad of 3 Boxes (Red, Gray, Green) */
+.tree-boxes-triad {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 780px;
+  margin: 0 auto;
   position: relative;
-  padding-top: 1.25rem;
+  padding-top: 1.75rem;
+  gap: 1.25rem;
 }
 
-.tree-boxes-row--gelatin {
-  grid-template-columns: 140px 1fr;
-}
-
-.tree-boxes-row--hpmc {
-  grid-template-columns: 140px 1fr;
-}
-
-.tree-box-connector {
+/* Orthogonal Horizontal Line across all 3 columns */
+.tree-crossbar {
   position: absolute;
   top: 0;
-  left: 25%;
-  right: 25%;
+  left: 12%;
+  right: 12%;
   height: 2px;
   background: #cbd5e1;
 }
 
-.tree-box-item {
-  position: relative;
-}
-
-.tree-box-item::before {
-  content: "";
+.tree-crossbar-center-stem {
   position: absolute;
-  top: -1.25rem;
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 1.25rem;
+  height: 1.75rem;
   background: #cbd5e1;
 }
 
-/* Box 1: Gelatin Sizes (Red Card) */
-.tree-box-card-red {
-  background: #dc2626;
-  color: #ffffff;
-  padding: 1.25rem 1rem;
-  border-radius: 4px;
-  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.2);
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-  text-align: center;
+/* 3 Columns */
+.tree-triad-col {
+  position: relative;
 }
 
-/* Box 2: Specialty Formulations (Light Gray Card) */
+.tree-triad-col--left {
+  width: 190px;
+  flex-shrink: 0;
+}
+
+.tree-triad-col--center {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.tree-triad-col--right {
+  width: 190px;
+  flex-shrink: 0;
+}
+
+/* 1. Red Card (Gelatin Sizes) */
+.tree-box-card-red {
+  background: #d71920;
+  color: #ffffff;
+  border-radius: 2px;
+  padding: 0.75rem 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 14px rgba(215, 25, 32, 0.2);
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tree-box-card-red:hover,
+.tree-box-card-red:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(215, 25, 32, 0.32);
+}
+
+/* 2. Gray Card (Specialty Formulations) */
 .tree-box-card-gray {
   background: #e2e8f0;
-  color: #0f172a;
   border: 1px solid #cbd5e1;
-  padding: 1.25rem 1.25rem;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 2px;
+  padding: 0.65rem 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
-  justify-content: center;
-  text-align: center;
+  gap: 0.25rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  position: relative;
 }
 
-/* Box 3: HPMC Sizes (Slate Gray Card) */
-.tree-box-card-slate {
-  background: #64748b;
+/* 3. Green Card (HPMC Sizes) */
+.tree-box-card-green-sizes {
+  background: #28a745;
   color: #ffffff;
-  padding: 1.25rem 1rem;
-  border-radius: 4px;
-  box-shadow: 0 4px 14px rgba(100, 116, 139, 0.2);
+  border-radius: 2px;
+  padding: 0.75rem 0.4rem;
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
-  text-align: center;
+  align-items: center;
+  box-shadow: 0 4px 14px rgba(40, 167, 69, 0.2);
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Box 4: Weight & Volume Table (Green Card) */
-.tree-box-card-green {
-  background: #16a34a;
-  color: #ffffff;
-  padding: 1.15rem 1rem;
-  border-radius: 4px;
-  box-shadow: 0 4px 16px rgba(22, 163, 74, 0.25);
+.tree-box-card-green-sizes:hover,
+.tree-box-card-green-sizes:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(40, 167, 69, 0.32);
 }
 
+/* Size Links inside Red & Green Cards */
 .tree-link-size {
+  display: block;
+  width: 100%;
+  text-align: center;
   color: #ffffff;
-  text-decoration: none;
+  font-family: var(--font-heading, "Poppins", sans-serif);
   font-size: 0.95rem;
   font-weight: 700;
-  transition: transform 0.15s ease, opacity 0.15s ease;
-  display: block;
+  padding: 0.35rem 0.5rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.tree-link-size:last-of-type {
+  border-bottom: none;
 }
 
 .tree-link-size:hover {
-  text-decoration: underline;
-  opacity: 0.9;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+}
+
+/* Specialty Items in Center Gray Box */
+.tree-spec-item {
+  position: relative;
+  display: block;
 }
 
 .tree-spec-pill {
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: #1e293b;
-  line-height: 1.35;
-}
-
-.tree-table-heading {
-  font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: 0.85rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  text-align: center;
-  margin: 0 0 0.2rem;
-  line-height: 1.3;
-}
-
-.tree-table-sub {
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-  opacity: 0.9;
-  margin: 0 0 0.75rem;
-}
-
-.tree-data-table {
+  display: block;
   width: 100%;
-  border-collapse: collapse;
-  font-size: 0.825rem;
   text-align: center;
-}
-
-.tree-data-table th {
-  padding: 0.35rem 0.35rem;
+  padding: 0.45rem 0.45rem;
+  font-size: 0.825rem;
   font-weight: 700;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-  font-size: 0.76rem;
-  white-space: nowrap;
+  color: #1e293b;
+  background: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
 }
 
-.tree-data-table td {
-  padding: 0.35rem 0.35rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.tree-data-table tr:last-child td {
+.tree-spec-item:last-child .tree-spec-pill {
   border-bottom: none;
 }
 
-/* Responsive */
-@media (max-width: 960px) {
-  .tree-categories-row {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding-top: 0;
-  }
-  .tree-top-connector,
-  .tree-root-stem,
-  .tree-cat-col::before,
-  .tree-cat-stem,
-  .tree-box-connector,
-  .tree-box-item::before {
-    display: none;
-  }
-  .tree-boxes-row--gelatin,
-  .tree-boxes-row--hpmc {
-    grid-template-columns: 1fr;
-    padding-top: 0;
-  }
-  .tree-cat-banner {
-    margin-bottom: 1rem;
-  }
-  .tree-root-wrap {
-    margin-bottom: 1.5rem;
-  }
+.tree-spec-item:hover .tree-spec-pill,
+.tree-spec-item:focus-within .tree-spec-pill,
+.tree-spec-item.is-active .tree-spec-pill {
+  background: #0f172a;
+  color: #ffffff;
+  border-radius: 3px;
+  transform: scale(1.02);
 }
 
-/* --------------------------------------------------------------------------
-   15b. PRODUCT RANGE INTERACTIVE TABS & SPECIALTY CARDS
-   -------------------------------------------------------------------------- */
-.specs-nav-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin-top: 3.5rem;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid #e2e8f0;
-  padding-bottom: 1.25rem;
+/* Hover Tooltips for Specialty Items (Pops up above item) */
+.tree-spec-tooltip {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  max-width: 90vw;
+  background: #0f172a;
+  color: #f8fafc;
+  border-radius: 8px;
+  padding: 1rem 1.15rem;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.36);
+  z-index: 250;
+  pointer-events: none;
+  text-align: left;
+  animation: fadeInTooltip 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.specs-tab-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  padding: 0.75rem 1.4rem;
-  border-radius: 9999px;
-  border: 1px solid #cbd5e1;
-  background: #ffffff;
+.tree-spec-tooltip::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-top-color: #0f172a;
+}
+
+.tree-spec-item:hover .tree-spec-tooltip,
+.tree-spec-item:focus-within .tree-spec-tooltip,
+.tree-spec-item.is-active .tree-spec-tooltip {
+  display: block;
+}
+
+.tree-spec-tooltip__title {
   font-family: var(--font-heading, "Poppins", sans-serif);
   font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--ink-700, #334155);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.specs-tab-btn:hover {
-  border-color: #94a3b8;
-  background: #f8fafc;
-  color: var(--ink-950, #0f172a);
-}
-
-.specs-tab-btn.is-active {
-  background: var(--ink-950, #0f172a);
-  border-color: var(--ink-950, #0f172a);
-  color: #ffffff;
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
-}
-
-.tab-indicator-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.tab-indicator-dot--red { background: #dc2626; }
-.tab-indicator-dot--green { background: #16a34a; }
-.tab-indicator-dot--gold { background: #ea580c; }
-
-.specs-panel-card {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 8px;
-  padding: clamp(1.25rem, 3vw, 2.25rem);
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
-}
-
-.specs-panel-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 1px solid #f1f5f9;
-}
-
-.specs-panel-title {
-  font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: 1.25rem;
   font-weight: 800;
-  color: var(--ink-950, #0f172a);
+  color: #38bdf8;
+  margin: 0 0 0.4rem;
+}
+
+.tree-spec-tooltip__text {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  line-height: 1.55;
   margin: 0;
 }
 
-.specs-panel-sub {
-  font-size: 0.85rem;
-  color: var(--ink-500, #64748b);
-  margin: 0.25rem 0 0;
-}
-
-/* Specialty Cards Grid */
-.specialty-cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 1.5rem;
-}
-
-.specialty-card {
+/* Hover Specs Table Tooltip (Gelatin & HPMC) - Pops up below box */
+.tree-tooltip-popup {
+  display: none;
+  position: absolute;
+  top: calc(100% + 14px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 380px;
+  max-width: 440px;
   background: #ffffff;
-  border: 1px solid #e2e8f0;
+  border: 2px solid #d71920;
   border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  position: relative;
-  border-top: 3px solid #dc2626;
-}
-
-.specialty-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-  border-color: #cbd5e1;
-  border-top-color: #b91c1c;
-}
-
-.specialty-card__tag {
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #ea580c;
-  margin-bottom: 0.35rem;
-  display: block;
-}
-
-.specialty-card__title {
-  font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--ink-950, #0f172a);
-  margin: 0 0 0.75rem;
-}
-
-.specialty-card__desc {
-  font-size: 0.9rem;
-  color: var(--ink-700, #334155);
-  line-height: 1.6;
-  margin: 0 0 1.25rem;
-}
-
-.specialty-card__footer {
-  padding-top: 0.85rem;
-  border-top: 1px solid #f1f5f9;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.spec-btn-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.35rem 0.85rem;
-  border-radius: 9999px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-decoration: none;
-  background: var(--green-700, #15803d);
-  color: #ffffff;
-  transition: background-color 0.15s ease;
-}
-
-.spec-btn-pill:hover {
-  background: var(--green-900, #0d5c2e);
-  color: #ffffff;
-}
-
-
-/* --------------------------------------------------------------------------
-   16. CAREERS ACCORDION & JOIN US APPLICATION FORM
-   -------------------------------------------------------------------------- */
-.career-openings-section {
-  margin-top: var(--space-3xl, 3rem);
-}
-
-.career-accordion-wrap {
-  background: #ffffff;
-  border: 1px solid #cbd5e1;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
-  margin-top: 1.5rem;
-}
-
-.career-accordion-item {
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.career-accordion-item:last-child {
-  border-bottom: none;
-}
-
-.career-accordion-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.15rem 1.5rem;
-  background: #ffffff;
-  border: none;
-  font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: var(--ink-800, #1e293b);
+  padding: 1.15rem 1.25rem;
+  box-shadow: 0 16px 44px rgba(15, 23, 42, 0.22);
+  z-index: 200;
   text-align: left;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  animation: fadeInTooltip 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.career-accordion-header:hover {
-  background-color: #f8fafc;
-  color: var(--ink-950, #0f172a);
+.tree-tooltip-popup::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-bottom-color: #d71920;
 }
 
-.career-accordion-header[aria-expanded="true"] {
-  background-color: #f8fafc;
-  font-weight: 700;
-  color: var(--ink-950, #0f172a);
+.tree-tooltip-popup--right {
+  border-color: #28a745;
 }
 
-.career-accordion-icon {
-  font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: 1.35rem;
-  font-weight: 400;
-  color: #64748b;
-  line-height: 1;
-  margin-left: 1rem;
+.tree-tooltip-popup--right::before {
+  border-bottom-color: #28a745;
 }
 
-.career-accordion-body {
-  padding: 1.5rem 1.75rem 2rem;
-  background-color: #ffffff;
-  border-top: 1px solid #f1f5f9;
-}
-
-.career-job-meta-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  padding-bottom: 1.25rem;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #e2e8f0;
-}
-
-.career-job-meta-item strong {
+.tree-box-card-red:hover .tree-tooltip-popup,
+.tree-box-card-red:focus-within .tree-tooltip-popup,
+.tree-box-card-red.is-tooltip-open .tree-tooltip-popup {
   display: block;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--ink-500, #64748b);
+}
+
+.tree-box-card-green-sizes:hover .tree-tooltip-popup,
+.tree-box-card-green-sizes:focus-within .tree-tooltip-popup,
+.tree-box-card-green-sizes.is-tooltip-open .tree-tooltip-popup {
+  display: block;
+}
+
+.tree-tooltip-heading {
+  font-family: var(--font-heading, "Poppins", sans-serif);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.3;
   margin-bottom: 0.2rem;
 }
 
-.career-job-meta-item span {
-  font-size: 1rem;
+.tree-tooltip-sub {
+  font-size: 0.72rem;
   font-weight: 600;
-  color: var(--ink-900, #0f172a);
+  color: #64748b;
+  margin-bottom: 0.75rem;
 }
 
-.career-responsibilities-title {
-  font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: 1.05rem;
+.tree-tooltip-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.tree-tooltip-table th {
+  background: #f1f5f9;
+  color: #0f172a;
   font-weight: 700;
-  color: var(--ink-900, #0f172a);
-  margin: 0 0 0.85rem;
+  padding: 0.45rem 0.35rem;
+  border-bottom: 2px solid #cbd5e1;
+  white-space: nowrap;
 }
 
-.career-responsibilities-list {
-  padding-left: 1.25rem;
-  margin: 0 0 1.5rem;
-  line-height: 1.8;
-  color: var(--ink-700, #334155);
-  font-size: 0.925rem;
-}
-
-.career-responsibilities-list li {
-  margin-bottom: 0.4rem;
-}
-
-.career-skills-box {
-  background: #f8fafc;
-  border-left: 3px solid var(--green-600, #16a34a);
-  padding: 0.85rem 1.25rem;
-  border-radius: 0 4px 4px 0;
-  margin-bottom: 1.5rem;
-}
-
-.career-skills-box p {
-  margin: 0;
-  font-size: 0.925rem;
-  color: var(--ink-800, #1e293b);
-  line-height: 1.6;
-}
-
-.career-body-footer {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 1rem;
-  border-top: 1px solid #f1f5f9;
-}
-
-/* --------------------------------------------------------------------------
-   JOIN US FORM
-   -------------------------------------------------------------------------- */
-.join-us-section {
-  padding-block: clamp(3rem, 5vw, 4.5rem);
-  background: #f8fafc;
-  border-top: 1px solid #e2e8f0;
-}
-
-.join-us-card {
-  background: #ffffff;
-  border: 1px solid #cbd5e1;
-  border-radius: 8px;
-  padding: clamp(1.75rem, 4vw, 3rem);
-  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.join-us-card.is-highlighted {
-  border-color: var(--green-600, #16a34a);
-  box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.18);
-}
-
-.join-us-header {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
+.tree-tooltip-table td {
+  padding: 0.35rem 0.35rem;
   border-bottom: 1px solid #e2e8f0;
+  color: #334155;
 }
 
-.join-us-title {
-  font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: clamp(1.75rem, 1.4rem + 1vw, 2.25rem);
-  font-weight: 800;
-  color: var(--ink-950, #0f172a);
-  margin: 0 0 0.5rem;
+.tree-tooltip-table tr:hover td {
+  background: #f8fafc;
 }
 
-.join-us-lead {
-  font-size: 1rem;
-  color: var(--ink-600, #475569);
-  margin: 0;
-}
-
-.join-section-block {
-  margin-bottom: 2.25rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #f1f5f9;
-}
-
-.join-section-block:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.join-section-legend {
-  font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--ink-900, #0f172a);
-  margin: 0 0 1.25rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.join-form-grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-.join-form-grid-3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 768px) {
-  .join-form-grid-2,
-  .join-form-grid-3 {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+@keyframes fadeInTooltip {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 6px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 }
 
-.join-field-group {
-  margin-bottom: 1rem;
-}
-
-.join-label {
-  display: block;
-  font-family: var(--font-heading, "Poppins", sans-serif);
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--ink-800, #1e293b);
-  margin-bottom: 0.35rem;
-}
-
-.join-label .required-star {
-  color: #dc2626;
-  margin-left: 2px;
-}
-
-.join-input,
-.join-select,
-.join-textarea {
-  width: 100%;
-  padding: 0.65rem 0.9rem;
-  font-family: inherit;
-  font-size: 0.925rem;
+/* Facility Map Box with Background Image */
+.facility-map-bg-box {
+  margin-top: 1.25rem;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
   border: 1px solid #cbd5e1;
-  border-radius: 4px;
-  background-color: #ffffff;
-  color: var(--ink-900, #0f172a);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../images/maperawat.jpeg') center center / cover no-repeat;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
-.join-input:focus,
-.join-select:focus,
-.join-textarea:focus {
-  outline: none;
-  border-color: var(--green-600, #16a34a);
-  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
-}
-
-.join-input.is-invalid,
-.join-select.is-invalid,
-.join-textarea.is-invalid {
-  border-color: #dc2626;
-  background-color: #fff5f5;
-}
-
-.join-file-upload-wrap {
-  border: 2px dashed #cbd5e1;
-  border-radius: 6px;
-  padding: 1.5rem;
-  text-align: center;
-  background: #f8fafc;
-  cursor: pointer;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.join-file-upload-wrap:hover {
-  border-color: var(--green-600, #16a34a);
-  background-color: #f0fdf4;
-}
-
-.join-file-input {
-  display: none;
-}
-
-
-/* --------------------------------------------------------------------------
-   17. UNIVERSAL BUTTON ANIMATION & CHEVRON ARROW STYLING
-   -------------------------------------------------------------------------- */
-.spec-btn-pill {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 0.45rem !important;
-  padding: 0.35rem 0.85rem !important;
-  border-radius: 9999px !important;
-  font-size: 0.8rem !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
-  background: var(--green-700, #15803d) !important;
-  color: #ffffff !important;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
-  line-height: 1 !important;
-  box-sizing: border-box !important;
-}
-
-.spec-btn-pill:hover {
-  background: var(--green-900, #0d5c2e) !important;
-  color: #ffffff !important;
-  transform: translateY(-1px) !important;
-}
-
-.spec-btn-pill .btn-anim__icon {
-  width: 11px !important;
-  height: 11px !important;
-  margin-left: 2px !important;
-}
-
-.career-apply-btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-}
-
-.cert-card__btn {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 8px !important;
-}
-
-.cert-card__btn .btn-anim__icon {
-  width: 12px !important;
-  height: 12px !important;
-}
-
-/* Universal hover triggers for any element with btn-anim text & icon */
-.btn:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.btn-primary:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.btn-black-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.btn-outline-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.btn-outline-white:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.btn-solid-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.btn-editorial-send:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.spec-btn-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.career-apply-btn:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.cert-card__btn:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.cert-card:hover .cert-card__btn .btn-anim__icon-item:not(.btn-anim__icon-clone),
-.tree-cat-banner:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-button:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
-a:hover .btn-anim__icon-item:not(.btn-anim__icon-clone) {
-  transform: translateX(150%) !important;
-  opacity: 0 !important;
-}
-
-.btn:hover .btn-anim__icon-clone,
-.btn-primary:hover .btn-anim__icon-clone,
-.btn-gradient-pill:hover .btn-anim__icon-clone,
-.btn-black-pill:hover .btn-anim__icon-clone,
-.btn-outline-pill:hover .btn-anim__icon-clone,
-.btn-outline-white:hover .btn-anim__icon-clone,
-.btn-solid-pill:hover .btn-anim__icon-clone,
-.btn-editorial-send:hover .btn-anim__icon-clone,
-.spec-btn-pill:hover .btn-anim__icon-clone,
-.career-apply-btn:hover .btn-anim__icon-clone,
-.cert-card__btn:hover .btn-anim__icon-clone,
-.cert-card:hover .cert-card__btn .btn-anim__icon-clone,
-.tree-cat-banner:hover .btn-anim__icon-clone,
-button:hover .btn-anim__icon-clone,
-a:hover .btn-anim__icon-clone {
-  transform: translateX(0) !important;
-  opacity: 1 !important;
-}
-
-.btn:hover .btn-anim__text-track,
-.btn-primary:hover .btn-anim__text-track,
-.btn-gradient-pill:hover .btn-anim__text-track,
-.btn-black-pill:hover .btn-anim__text-track,
-.btn-outline-pill:hover .btn-anim__text-track,
-.btn-outline-white:hover .btn-anim__text-track,
-.btn-solid-pill:hover .btn-anim__text-track,
-.btn-editorial-send:hover .btn-anim__text-track,
-.career-apply-btn:hover .btn-anim__text-track,
-.cert-card__btn:hover .btn-anim__text-track,
-.cert-card:hover .cert-card__btn .btn-anim__text-track,
-button:hover .btn-anim__text-track,
-a:hover .btn-anim__text-track {
-  transform: translateY(-100%) !important;
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 768px) {
+  .tree-boxes-triad {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 1rem;
+  }
+  .tree-crossbar,
+  .tree-crossbar-center-stem,
+  .tree-level2-connector,
+  .tree-banner-col::before,
+  .tree-root-stem,
+  .tree-stem-down {
+    display: none;
+  }
+  .tree-level2-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0;
+  }
+  .tree-triad-col--left,
+  .tree-triad-col--center,
+  .tree-triad-col--right {
+    width: 100%;
+    max-width: 300px;
+  }
+  .tree-tooltip-popup {
+    position: static;
+    transform: none !important;
+    width: 100%;
+    min-width: unset;
+    margin-top: 0.75rem;
+  }
+  .tree-tooltip-popup::before {
+    display: none;
+  }
+  .tree-spec-tooltip {
+    position: static;
+    transform: none !important;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .tree-spec-tooltip::before {
+    display: none;
+  }
 }

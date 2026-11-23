@@ -335,14 +335,38 @@
         </div>
 
         <!-- 4. Map (Placeholder 16:6 with Pin Label and Directions Link) -->
+                <!-- 4. Facility Map Background -->
         <div style="margin-top: var(--space-2xl);" data-aos="fade-up">
           <span class="section-tag"><span class="section-tag__dot"></span>Location</span>
           <h2 class="section-heading">Facility Location &amp; Directions</h2>
-          <div class="ph" data-ratio="16:6" style="margin-top: 1rem; background: #e2e8f0; border: 1px solid #cbd5e1;">
-            <div style="z-index: 2; text-align: center; padding: 1rem;">
-              <span style="display: inline-block; font-size: 1.1rem; font-weight: 700; color: var(--green-900); margin-bottom: 0.25rem;">Erawat Pharma Limited Headquarters</span>
-              <p style="font-size: 0.85rem; color: var(--ink-700); margin: 0 0 0.75rem;">12-C/FA, Scheme No. 94, Ring Road, Near Pipliyahana Square, Indore, MP 452016</p>
-              <a href="https://maps.google.com/?q=Erawat+Pharma+Limited+Indore" target="_blank" rel="noopener noreferrer" class="btn-gradient-pill" style="padding: 0.45rem 1.25rem; font-size: 0.8rem;">Get Directions (Google Maps)</a>
+          <div class="facility-map-bg-box" style="margin-top: 1.25rem; position: relative; border-radius: 12px; overflow: hidden; border: 1px solid #cbd5e1; min-height: 420px; display: flex; align-items: center; justify-content: center; background: url('images/maperawat.jpeg') center center / cover no-repeat; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);">
+            <!-- Subtle dark overlay so the text card pops cleanly -->
+            <div style="position: absolute; inset: 0; background: rgba(15, 23, 42, 0.16); pointer-events: none;"></div>
+
+            <!-- Floating Glass Card for Headquarters & Directions -->
+            <div style="position: relative; z-index: 2; text-align: center; padding: 2.25rem 2.5rem; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.85); box-shadow: 0 16px 44px rgba(15, 23, 42, 0.16); max-width: 520px; margin: 1.5rem;">
+              <span style="display: inline-block; font-size: 1.25rem; font-weight: 800; color: var(--green-900); margin-bottom: 0.4rem; font-family: var(--font-heading);">Erawat Pharma Limited Headquarters</span>
+              <p style="font-size: 0.925rem; color: var(--ink-700); line-height: 1.55; margin: 0 0 1.35rem;">
+                12-C/FA, Scheme No. 94, Ring Road, Near Pipliyahana Square, Indore, MP 452016
+              </p>
+              <a href="https://maps.google.com/?q=Erawat+Pharma+Limited+Indore" target="_blank" rel="noopener noreferrer" class="btn-gradient-pill" style="padding: 0.6rem 1.6rem; font-size: 0.875rem; display: inline-flex; align-items: center; justify-content: center;">
+                <span class="btn-anim__text">
+                  <span class="btn-anim__text-track">
+                    <span class="btn-anim__text-item">Get Directions (Google Maps)</span>
+                    <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Get Directions (Google Maps)</span>
+                  </span>
+                </span>
+                <span class="btn-anim__icon">
+                  <span class="btn-anim__icon-track">
+                    <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M4 2L8 6L4 10" />
+                    </svg>
+                    <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M4 2L8 6L4 10" />
+                    </svg>
+                  </span>
+                </span>
+              </a>
             </div>
           </div>
         </div>
