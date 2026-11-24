@@ -202,61 +202,131 @@
           <!-- Root: Hard Capsules -->
           <div class="tree-root-wrap">
             <div class="tree-node-root">
-              Hard Capsules
+              <span class="tree-root-icon" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M10.5 5.5L18.5 13.5C20.7091 15.7091 20.7091 19.2909 18.5 21.5C16.2909 23.7091 12.7091 23.7091 10.5 21.5L2.5 13.5C0.290861 11.2909 0.290861 7.70914 2.5 5.5C4.70914 3.29086 8.29086 3.29086 10.5 5.5Z"/>
+                  <line x1="6.5" y1="9.5" x2="14.5" y2="17.5"/>
+                </svg>
+              </span>
+              <span>Hard Capsules</span>
             </div>
             <div class="tree-root-stem" aria-hidden="true"></div>
           </div>
 
-          <!-- Level 2: Gelatin vs HPMC/Veg Banners -->
-          <div class="tree-level2-row">
-            <div class="tree-level2-connector" aria-hidden="true"></div>
-
-            <!-- Left Category Banner: Gelatin -->
-            <div class="tree-banner-col tree-banner-col--left">
-              <a href="#specsExplorer" class="tree-cat-banner tree-cat-banner--gelatin" data-jump-spec-tab="gelatin" title="Click to view Gelatin specifications">
-                Gelatin <span class="btn-anim__icon" style="width: 12px; height: 12px; margin-left: 4px; display: inline-flex; vertical-align: middle;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4L6 8L10 4"/></svg></span>
-              </a>
-              <div class="tree-stem-down" aria-hidden="true"></div>
+          <!-- Connecting Lines across 5 Columns: Gelatin | Space 1 | Specialty | Space 2 | HPMC -->
+          <div class="tree-connectors-wrap" aria-hidden="true">
+            <div class="tree-conn-col tree-conn-col--left">
+              <div class="tree-stem-drop"></div>
             </div>
-
-            <!-- Right Category Banner: HPMC/Veg -->
-            <div class="tree-banner-col tree-banner-col--right">
-              <a href="#specsExplorer" class="tree-cat-banner tree-cat-banner--hpmc" data-jump-spec-tab="hpmc" title="Click to view HPMC/Veg specifications">
-                HPMC/Veg <span class="btn-anim__icon" style="width: 12px; height: 12px; margin-left: 4px; display: inline-flex; vertical-align: middle;"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4L6 8L10 4"/></svg></span>
-              </a>
-              <div class="tree-stem-down" aria-hidden="true"></div>
+            <div class="tree-conn-col tree-conn-col--space1"></div>
+            <div class="tree-conn-col tree-conn-col--center">
+              <div class="tree-stem-drop"></div>
+            </div>
+            <div class="tree-conn-col tree-conn-col--space2"></div>
+            <div class="tree-conn-col tree-conn-col--right">
+              <div class="tree-stem-drop"></div>
             </div>
           </div>
 
-          <!-- Level 3: Triad of 3 Connected Boxes (Red Sizes, Gray Specialty, Green Sizes) -->
-          <div class="tree-boxes-triad">
-            <div class="tree-crossbar" aria-hidden="true">
-              <div class="tree-crossbar-center-stem" aria-hidden="true"></div>
+          <!-- 5-Column Tree Triad Grid (ZERO OVERLAP: Each card & space has its own dedicated grid column) -->
+          <div class="tree-cards-triad">
+
+            <!-- 1. Left Card: Gelatin (Red) -->
+            <div class="tree-card tree-card--red" id="cardGelatin">
+              <div class="tree-card__badge-wrap">
+                <div class="tree-card__badge">
+                  <img class="tree-card__badge-img" src="images/tree/badge-gelatin.png" alt="Gelatin Capsules" width="88" height="88" loading="lazy">
+                </div>
+              </div>
+              <div class="tree-card__header">
+                <h3 class="tree-card__title">Gelatin</h3>
+              </div>
+              <div class="tree-card__body">
+                <ul class="tree-card__list">
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--red">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=00" class="tree-card__link">Size – 00</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--red">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=0EL" class="tree-card__link">Size – 0EL</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--red">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=0" class="tree-card__link">Size – 0</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--red">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=1" class="tree-card__link">Size – 1</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--red">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=2" class="tree-card__link">Size – 2</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--red">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=3" class="tree-card__link">Size – 3</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--red">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=4" class="tree-card__link">Size – 4</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--red">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=5" class="tree-card__link">Size – 5</a>
+                  </li>
+                </ul>
+
+                <!-- Interactive Specs Button -->
+                <div class="tree-card__specs-btn" id="btnGelatinSpecs" tabindex="0" role="button" aria-haspopup="true" title="Hover to view Gelatin capsule weight and volume specifications">
+                  <span class="tree-card__specs-btn-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  </span>
+                  <span>Hover for Specs Table</span>
+                </div>
+              </div>
             </div>
 
-            <!-- 1. Left Box: Gelatin Sizes (Red) -->
-            <div class="tree-triad-col tree-triad-col--left">
-              <div class="tree-box-card-red" tabindex="0" role="region" aria-label="Gelatin capsule sizes (hover to view weight and volume specifications)">
-                <a href="product.html?size=00" class="tree-link-size">Size - 00</a>
-                <a href="product.html?size=0EL" class="tree-link-size">Size - 0EL</a>
-                <a href="product.html?size=0" class="tree-link-size">Size - 0</a>
-                <a href="product.html?size=1" class="tree-link-size">Size - 1</a>
-                <a href="product.html?size=2" class="tree-link-size">Size - 2</a>
-                <a href="product.html?size=3" class="tree-link-size">Size - 3</a>
-                <a href="product.html?size=4" class="tree-link-size">Size - 4</a>
-                <a href="product.html?size=5" class="tree-link-size">Size - 5</a>
+            <!-- 2. Space 1: Dedicated Inter-Card Info Bay between Gelatin & Specialty (ZERO OVERLAP) -->
+            <div class="tree-space-bay tree-space-bay--left" id="treeBayLeft">
+              <!-- Default State in Space 1 -->
+              <div class="tree-bay-hint" id="bayHintLeft">
+                <span class="tree-bay-hint__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                </span>
+                <span class="tree-bay-hint__text">Hover Gelatin for Weight &amp; Volume Specs</span>
+              </div>
 
-                <!-- Hover Tooltip: Gelatin Weight & Volume Specs Table (reveals only on hover) -->
-                <div class="tree-tooltip-popup" role="tooltip" aria-hidden="true">
-                  <div class="tree-tooltip-heading">WEIGHT OF CAPSULE (In Milligram) &amp; VOLUME (In CC)</div>
-                  <div class="tree-tooltip-sub">AVERAGE WEIGHT (Deviation +/-5%) &amp; VOLUME (In CC)</div>
-                  <table class="tree-tooltip-table">
+              <!-- Gelatin Specifications Table Panel (Fades into Space 1 on Hover) -->
+              <div class="tree-bay-panel tree-bay-panel--gelatin" id="bayPanelGelatin" role="region" aria-label="Gelatin Weight and Volume Specifications">
+                <div class="tree-bay-panel__head tree-bay-panel__head--red">
+                  <h4 class="tree-bay-panel__title">WEIGHT OF CAPSULE &amp; VOLUME</h4>
+                  <p class="tree-bay-panel__sub">Average Weight (±5%) &amp; Volume (cc)</p>
+                </div>
+                <div class="tree-bay-table-scroll">
+                  <table class="tree-bay-table">
                     <thead>
                       <tr>
                         <th>Size</th>
-                        <th>Average Wt.(Mg)</th>
-                        <th>Volume (cc)</th>
-                        <th>Suitable For (1.0 g/cc)</th>
+                        <th>Avg. Wt(mg)</th>
+                        <th>Vol(cc)</th>
+                        <th>Suitable(1g/cc)</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -274,112 +344,478 @@
               </div>
             </div>
 
-            <!-- 2. Middle Box: Specialty Formulations (Gray) -->
-            <div class="tree-triad-col tree-triad-col--center">
-              <div class="tree-box-card-gray" role="region" aria-label="Specialty capsule formulations (hover any item to read details)">
-
-                <!-- 1. Sticky Free -->
-                <div class="tree-spec-item" tabindex="0">
-                  <span class="tree-spec-pill">Sticky Free Capsules</span>
-                  <div class="tree-spec-tooltip" role="tooltip">
-                    <h4 class="tree-spec-tooltip__title">Sticky Free Capsules</h4>
-                    <p class="tree-spec-tooltip__text">These capsules are specially designed for dry powder medicaments . The residual medicine left in the capsules is substantially less as compared to normal capsules, thus releasing proper desired dosage.</p>
-                  </div>
+            <!-- 3. Middle Card: Specialty Capsules (Blue) -->
+            <div class="tree-card tree-card--blue" id="cardSpecialty">
+              <div class="tree-card__badge-wrap">
+                <div class="tree-card__badge">
+                  <img class="tree-card__badge-img" src="images/tree/badge-specialty.png" alt="Specialty Capsules" width="88" height="88" loading="lazy">
                 </div>
+              </div>
+              <div class="tree-card__header">
+                <h3 class="tree-card__title">Specialty Capsules</h3>
+              </div>
+              <div class="tree-card__body">
+                <ul class="tree-card__list">
+                  <!-- 1. Sticky Free Capsules -->
+                  <li class="tree-card__item tree-spec-item is-active" tabindex="0"
+                      data-spec-title="Sticky Free Capsules"
+                      data-spec-desc="These capsules are specially designed for dry powder medicaments . The residual medicine left in the capsules is substantially less as compared to normal capsules, thus releasing proper desired dosage.">
+                    <div class="tree-spec-item__left">
+                      <span class="tree-card__spec-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <rect x="3" y="8" width="13" height="8" rx="4" transform="rotate(-35 9.5 12)" />
+                          <line x1="6" y1="9" x2="13" y2="15" transform="rotate(-35 9.5 12)" />
+                          <circle cx="18" cy="5" r="1.2" fill="currentColor"/>
+                          <circle cx="21" cy="9" r="1.6" fill="currentColor"/>
+                          <circle cx="16" cy="10" r="1" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="tree-card__pipe">|</span>
+                      <span class="tree-card__name">Sticky Free Capsules</span>
+                    </div>
+                    <span class="tree-spec-item__info" title="Hover for details">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    </span>
+                  </li>
 
-                <!-- 2. Preservative Free -->
-                <div class="tree-spec-item" tabindex="0">
-                  <span class="tree-spec-pill">Preservative Free Capsules</span>
-                  <div class="tree-spec-tooltip" role="tooltip">
-                    <h4 class="tree-spec-tooltip__title">Preservative Free Capsules</h4>
-                    <p class="tree-spec-tooltip__text">In order to cater to the specific &amp; customized requirement of customers about providing them capsules with minimal additives and free of undesired preservatives , we offer them special &ldquo;Preservative Free Capsules&rdquo;.</p>
-                  </div>
-                </div>
+                  <!-- 2. Preservative Free Capsules -->
+                  <li class="tree-card__item tree-spec-item" tabindex="0"
+                      data-spec-title="Preservative Free Capsules"
+                      data-spec-desc="In order to cater to the specific &amp; customized requirement of customers about providing them capsules with minimal additives and free of undesired preservatives , we offer them special &ldquo;Preservative Free Capsules&rdquo;.">
+                    <div class="tree-spec-item__left">
+                      <span class="tree-card__spec-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M10 2v5.5L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 7.5V2"/>
+                          <path d="M8.5 2h7"/>
+                          <path d="M15 14c2-2 4-1 4 2s-3 3-5 3c0-2 0-3 1-5z" fill="#22c55e" stroke="#16a34a"/>
+                        </svg>
+                      </span>
+                      <span class="tree-card__pipe">|</span>
+                      <span class="tree-card__name">Preservative Free Capsules</span>
+                    </div>
+                    <span class="tree-spec-item__info" title="Hover for details">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    </span>
+                  </li>
 
-                <!-- 3. Liquid Filling -->
-                <div class="tree-spec-item" tabindex="0">
-                  <span class="tree-spec-pill">Liquid Filling Capsules</span>
-                  <div class="tree-spec-tooltip" role="tooltip">
-                    <h4 class="tree-spec-tooltip__title">Liquid Filling Capsules</h4>
-                    <p class="tree-spec-tooltip__text">For your non-aqueous &amp; semi solid products , we offer special liquid filling capsules which can directly be filled with such substances and then band sealed.</p>
-                  </div>
-                </div>
+                  <!-- 3. Liquid Filling Capsules -->
+                  <li class="tree-card__item tree-spec-item" tabindex="0"
+                      data-spec-title="Liquid Filling Capsules"
+                      data-spec-desc="For your non-aqueous &amp; semi solid products , we offer special liquid filling capsules which can directly be filled with such substances and then band sealed.">
+                    <div class="tree-spec-item__left">
+                      <span class="tree-card__spec-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                        </svg>
+                      </span>
+                      <span class="tree-card__pipe">|</span>
+                      <span class="tree-card__name">Liquid Filling Capsules</span>
+                    </div>
+                    <span class="tree-spec-item__info" title="Hover for details">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    </span>
+                  </li>
 
-                <!-- 4. TSE/BSE Free -->
-                <div class="tree-spec-item" tabindex="0">
-                  <span class="tree-spec-pill">TSE/BSE free capsules</span>
-                  <div class="tree-spec-tooltip" role="tooltip">
-                    <h4 class="tree-spec-tooltip__title">TSE/BSE free capsules</h4>
-                    <p class="tree-spec-tooltip__text">In order to cater to the specific &amp; customized requirement of customers about providing them capsules with minimal additives and free of undesired preservatives , we offer them special &ldquo;TSE/BSE free capsules&rdquo; certified for international safety standards.</p>
-                  </div>
-                </div>
+                  <!-- 4. TSE/BSE Free Capsules -->
+                  <li class="tree-card__item tree-spec-item" tabindex="0"
+                      data-spec-title="TSE/BSE Free Capsules"
+                      data-spec-desc="In order to cater to the specific &amp; customized requirement of customers about providing them capsules with minimal additives and free of undesired preservatives, we offer them special &ldquo;TSE/BSE Free Capsules&rdquo; certified for international safety standards.">
+                    <div class="tree-spec-item__left">
+                      <span class="tree-card__spec-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M6 18h8"/>
+                          <path d="M3 22h18"/>
+                          <path d="M14 22a7 7 0 1 0 0-14h-1"/>
+                          <path d="M9 14h2"/>
+                          <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/>
+                          <path d="M12 6V3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3"/>
+                        </svg>
+                      </span>
+                      <span class="tree-card__pipe">|</span>
+                      <span class="tree-card__name">TSE/BSE Free Capsules</span>
+                    </div>
+                    <span class="tree-spec-item__info" title="Hover for details">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    </span>
+                  </li>
 
-                <!-- 5. SLS Free -->
-                <div class="tree-spec-item" tabindex="0">
-                  <span class="tree-spec-pill">SLS free capsules</span>
-                  <div class="tree-spec-tooltip" role="tooltip">
-                    <h4 class="tree-spec-tooltip__title">SLS free capsules</h4>
-                    <p class="tree-spec-tooltip__text">This is another customisation made in capsule for those who do not want SLS in their formulation &amp; product. We give them &ldquo;SLS free Capsules&rdquo;.</p>
-                  </div>
-                </div>
+                  <!-- 5. SLS Free Capsules -->
+                  <li class="tree-card__item tree-spec-item" tabindex="0"
+                      data-spec-title="SLS Free Capsules"
+                      data-spec-desc="This is another customisation made in capsule for those who do not want SLS in their formulation &amp; product. We give them &ldquo;SLS Free Capsules&rdquo;.">
+                    <div class="tree-spec-item__left">
+                      <span class="tree-card__spec-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="18" cy="5" r="3"/>
+                          <circle cx="6" cy="12" r="3"/>
+                          <circle cx="18" cy="19" r="3"/>
+                          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                        </svg>
+                      </span>
+                      <span class="tree-card__pipe">|</span>
+                      <span class="tree-card__name">SLS Free Capsules</span>
+                    </div>
+                    <span class="tree-spec-item__info" title="Hover for details">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    </span>
+                  </li>
 
-                <!-- 6. Metallic -->
-                <div class="tree-spec-item" tabindex="0">
-                  <span class="tree-spec-pill">Metallic Capsules</span>
-                  <div class="tree-spec-tooltip" role="tooltip">
-                    <h4 class="tree-spec-tooltip__title">Metallic Capsules</h4>
-                    <p class="tree-spec-tooltip__text">This is a very attractive product which is now widely used for various reasons. Its strong metallic aesthetics helps in Brand protection , product differentiation &amp; in creating strong visual appeal.</p>
-                  </div>
-                </div>
+                  <!-- 6. Metallic Capsules -->
+                  <li class="tree-card__item tree-spec-item" tabindex="0"
+                      data-spec-title="Metallic Capsules"
+                      data-spec-desc="This is a very attractive product which is now widely used for various reasons. Its strong metallic aesthetics helps in Brand protection , product differentiation &amp; in creating strong visual appeal.">
+                    <div class="tree-spec-item__left">
+                      <span class="tree-card__spec-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                          <polyline points="2 17 12 22 22 17"/>
+                          <polyline points="2 12 12 17 22 12"/>
+                        </svg>
+                      </span>
+                      <span class="tree-card__pipe">|</span>
+                      <span class="tree-card__name">Metallic Capsules</span>
+                    </div>
+                    <span class="tree-spec-item__info" title="Hover for details">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    </span>
+                  </li>
 
-                <!-- 7. Pearl & Golden -->
-                <div class="tree-spec-item" tabindex="0">
-                  <span class="tree-spec-pill">Pearl &amp; Golden Capsules</span>
-                  <div class="tree-spec-tooltip" role="tooltip">
-                    <h4 class="tree-spec-tooltip__title">Pearl &amp; Golden Capsules</h4>
-                    <p class="tree-spec-tooltip__text">Along with all the benefits of metallic capsules , these two capsules carry a unique ornamental appeal , thus making it a preferred choice for cosmetic products and products related to sex &amp; stamina.</p>
-                  </div>
-                </div>
-
+                  <!-- 7. Pearl & Golden Capsules -->
+                  <li class="tree-card__item tree-spec-item" tabindex="0"
+                      data-spec-title="Pearl &amp; Golden Capsules"
+                      data-spec-desc="Along with all the benefits of metallic capsules , these two capsules carry a unique ornamental appeal , thus making it a preferred choice for cosmetic products and products related to sex &amp; stamina.">
+                    <div class="tree-spec-item__left">
+                      <span class="tree-card__spec-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                          <circle cx="12" cy="12" r="8" fill="url(#pearlGradP)" stroke="#94a3b8" stroke-width="1.5"/>
+                          <ellipse cx="9.5" cy="8.5" rx="2.5" ry="1.5" fill="#ffffff" opacity="0.95" transform="rotate(-30 9.5 8.5)"/>
+                          <defs>
+                            <radialGradient id="pearlGradP" cx="35%" cy="35%" r="65%">
+                              <stop offset="0%" stop-color="#ffffff"/>
+                              <stop offset="50%" stop-color="#e2e8f0"/>
+                              <stop offset="100%" stop-color="#94a3b8"/>
+                            </radialGradient>
+                          </defs>
+                        </svg>
+                      </span>
+                      <span class="tree-card__pipe">|</span>
+                      <span class="tree-card__name">Pearl &amp; Golden Capsules</span>
+                    </div>
+                    <span class="tree-spec-item__info" title="Hover for details">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <!-- 3. Right Box: HPMC Sizes (Green) -->
-            <div class="tree-triad-col tree-triad-col--right">
-              <div class="tree-box-card-green-sizes" tabindex="0" role="region" aria-label="HPMC vegetarian capsule sizes (hover to view weight and volume specifications)">
-                <a href="product.html?size=00" class="tree-link-size">Size - 00</a>
-                <a href="product.html?size=0" class="tree-link-size">Size - 0</a>
-                <a href="product.html?size=1" class="tree-link-size">Size - 1</a>
-                <a href="product.html?size=2" class="tree-link-size">Size - 2</a>
-                <a href="product.html?size=3" class="tree-link-size">Size - 3</a>
-                <a href="product.html?size=3" class="tree-link-size">Size - 3 (DPI)</a>
+            <!-- 4. Space 2: Dedicated Inter-Card Info Bay between Specialty & HPMC (ZERO OVERLAP) -->
+            <div class="tree-space-bay tree-space-bay--right" id="treeBayRight">
+              <!-- Default Hint in Space 2 (hidden when active panel displays) -->
+              <div class="tree-bay-hint is-hidden" id="bayHintRight">
+                <span class="tree-bay-hint__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                </span>
+                <span class="tree-bay-hint__text">Hover items or HPMC for live details</span>
+              </div>
 
-                <!-- Hover Tooltip: HPMC Weight & Volume Specs Table (reveals only on hover) -->
-                <div class="tree-tooltip-popup tree-tooltip-popup--right" role="tooltip" aria-hidden="true">
-                  <div class="tree-tooltip-heading">WEIGHT OF CAPSULE (In Milligram) &amp; VOLUME (In CC)</div>
-                  <div class="tree-tooltip-sub">AVERAGE WEIGHT (Deviation +/-5%) &amp; VOLUME (In CC)</div>
-                  <table class="tree-tooltip-table">
+              <!-- Live Specialty Item Panel (Active in Space 2) -->
+              <div class="tree-bay-panel tree-bay-panel--specialty is-active" id="bayPanelSpecialty" role="region" aria-label="Specialty Capsule Feature Details">
+                <div class="tree-bay-panel__head tree-bay-panel__head--blue">
+                  <span class="tree-bay-panel__icon" id="baySpecialtyIcon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="8" width="13" height="8" rx="4" transform="rotate(-35 9.5 12)" />
+                      <line x1="6" y1="9" x2="13" y2="15" transform="rotate(-35 9.5 12)" />
+                      <circle cx="18" cy="5" r="1.2" fill="currentColor"/>
+                      <circle cx="21" cy="9" r="1.6" fill="currentColor"/>
+                      <circle cx="16" cy="10" r="1" fill="currentColor"/>
+                    </svg>
+                  </span>
+                  <h4 class="tree-bay-panel__title" id="baySpecialtyTitle">Sticky Free Capsules</h4>
+                </div>
+                <div class="tree-bay-panel__body">
+                  <p class="tree-bay-panel__desc" id="baySpecialtyDesc">These capsules are specially designed for dry powder medicaments . The residual medicine left in the capsules is substantially less as compared to normal capsules, thus releasing proper desired dosage.</p>
+                </div>
+              </div>
+
+              <!-- HPMC Specifications Table Panel (Fades into Space 2 on Hover) -->
+              <div class="tree-bay-panel tree-bay-panel--hpmc" id="bayPanelHpmc" role="region" aria-label="HPMC Weight and Volume Specifications">
+                <div class="tree-bay-panel__head tree-bay-panel__head--green">
+                  <h4 class="tree-bay-panel__title">WEIGHT OF CAPSULE &amp; VOLUME</h4>
+                  <p class="tree-bay-panel__sub">Average Weight (±5%) &amp; Volume (cc)</p>
+                </div>
+                <div class="tree-bay-table-scroll">
+                  <table class="tree-bay-table">
                     <thead>
                       <tr>
                         <th>Size</th>
-                        <th>Average Wt.(Mg)</th>
-                        <th>Volume (cc)</th>
-                        <th>Suitable For (1.0 g/cc)</th>
+                        <th>Avg. Wt(mg)</th>
+                        <th>Vol(cc)</th>
+                        <th>Suitable(1g/cc)</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr><td><strong>00</strong></td><td>119</td><td>0.95</td><td>950 mg</td></tr>
                       <tr><td><strong>0</strong></td><td>96</td><td>0.68</td><td>680 mg</td></tr>
+                      <tr><td><strong>1</strong></td><td>76</td><td>0.50</td><td>480 mg</td></tr>
                       <tr><td><strong>2</strong></td><td>63</td><td>0.37</td><td>370 mg</td></tr>
                       <tr><td><strong>3</strong></td><td>50</td><td>0.30</td><td>300 mg</td></tr>
+                      <tr><td><strong>3 (DPI)</strong></td><td>50</td><td>0.30</td><td>300 mg</td></tr>
                     </tbody>
                   </table>
                 </div>
               </div>
             </div>
+
+            <!-- 5. Right Card: HPMC/Veg (Green) -->
+            <div class="tree-card tree-card--green" id="cardHpmc">
+              <div class="tree-card__badge-wrap">
+                <div class="tree-card__badge">
+                  <img class="tree-card__badge-img" src="images/tree/badge-hpmc.png" alt="HPMC/Veg Capsules" width="88" height="88" loading="lazy">
+                </div>
+              </div>
+              <div class="tree-card__header">
+                <h3 class="tree-card__title">HPMC/Veg</h3>
+              </div>
+              <div class="tree-card__body">
+                <ul class="tree-card__list">
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--green">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=00" class="tree-card__link">Size – 00</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--green">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=0" class="tree-card__link">Size – 0</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--green">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=1" class="tree-card__link">Size – 1</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--green">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=2" class="tree-card__link">Size – 2</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--green">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=3" class="tree-card__link">Size – 3</a>
+                  </li>
+                  <li class="tree-card__item">
+                    <span class="tree-card__check tree-card__check--green">
+                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2L4.8 8.5L9.5 3.5" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </span>
+                    <a href="product.html?size=3" class="tree-card__link">Size – 3 (DPI)</a>
+                  </li>
+                </ul>
+
+                <!-- Interactive Specs Button -->
+                <div class="tree-card__specs-btn tree-card__specs-btn--green" id="btnHpmcSpecs" tabindex="0" role="button" aria-haspopup="true" title="Hover to view HPMC/Veg capsule weight and volume specifications">
+                  <span class="tree-card__specs-btn-icon">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                  </span>
+                  <span>Hover for Specs Table</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Responsive Dock for Medium Screens (< 1200px) when bays are collapsed -->
+          <div class="tree-specs-dock" id="treeSpecsDock" aria-live="polite">
+            <!-- Gelatin Table Panel -->
+            <div class="tree-specs-panel tree-specs-panel--gelatin" id="dockGelatinSpecs">
+              <div class="tree-specs-panel__header">
+                <div class="tree-specs-panel__badge tree-specs-panel__badge--red">Gelatin Specifications</div>
+                <h3 class="tree-specs-panel__title">WEIGHT OF CAPSULE (In Milligram) &amp; VOLUME (In CC)</h3>
+                <p class="tree-specs-panel__sub">AVERAGE WEIGHT (Deviation +/-5%) &amp; VOLUME (In CC)</p>
+              </div>
+              <div class="tree-specs-table-wrap">
+                <table class="tree-specs-table">
+                  <thead>
+                    <tr>
+                      <th>Size</th>
+                      <th>Average Wt.(Mg)</th>
+                      <th>Volume (cc)</th>
+                      <th>Suitable For (1.0 g/cc)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><strong>Size – 00</strong></td><td>119</td><td>0.95</td><td>950 mg</td></tr>
+                    <tr><td><strong>Size – 0EL</strong></td><td>104</td><td>0.78</td><td>780 mg</td></tr>
+                    <tr><td><strong>Size – 0</strong></td><td>96</td><td>0.68</td><td>680 mg</td></tr>
+                    <tr><td><strong>Size – 1</strong></td><td>76</td><td>0.50</td><td>480 mg</td></tr>
+                    <tr><td><strong>Size – 2</strong></td><td>63</td><td>0.37</td><td>370 mg</td></tr>
+                    <tr><td><strong>Size – 3</strong></td><td>50</td><td>0.30</td><td>300 mg</td></tr>
+                    <tr><td><strong>Size – 4</strong></td><td>40</td><td>0.21</td><td>210 mg</td></tr>
+                    <tr><td><strong>Size – 5</strong></td><td>28</td><td>0.13</td><td>130 mg</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- HPMC Table Panel -->
+            <div class="tree-specs-panel tree-specs-panel--hpmc" id="dockHpmcSpecs">
+              <div class="tree-specs-panel__header">
+                <div class="tree-specs-panel__badge tree-specs-panel__badge--green">HPMC / Vegetarian Specifications</div>
+                <h3 class="tree-specs-panel__title">WEIGHT OF CAPSULE (In Milligram) &amp; VOLUME (In CC)</h3>
+                <p class="tree-specs-panel__sub">AVERAGE WEIGHT (Deviation +/-5%) &amp; VOLUME (In CC)</p>
+              </div>
+              <div class="tree-specs-table-wrap">
+                <table class="tree-specs-table">
+                  <thead>
+                    <tr>
+                      <th>Size</th>
+                      <th>Average Wt.(Mg)</th>
+                      <th>Volume (cc)</th>
+                      <th>Suitable For (1.0 g/cc)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><strong>Size – 00</strong></td><td>119</td><td>0.95</td><td>950 mg</td></tr>
+                    <tr><td><strong>Size – 0</strong></td><td>96</td><td>0.68</td><td>680 mg</td></tr>
+                    <tr><td><strong>Size – 1</strong></td><td>76</td><td>0.50</td><td>480 mg</td></tr>
+                    <tr><td><strong>Size – 2</strong></td><td>63</td><td>0.37</td><td>370 mg</td></tr>
+                    <tr><td><strong>Size – 3</strong></td><td>50</td><td>0.30</td><td>300 mg</td></tr>
+                    <tr><td><strong>Size – 3 (DPI)</strong></td><td>50</td><td>0.30</td><td>300 mg</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Live Interactive Hover Script (In-Flow, Zero Overlap Guaranteed) -->
+      <script>
+        (function() {
+          // --- Elements ---
+          const cardGelatin = document.getElementById('cardGelatin');
+          const btnGelatinSpecs = document.getElementById('btnGelatinSpecs');
+          const bayHintLeft = document.getElementById('bayHintLeft');
+          const bayPanelGelatin = document.getElementById('bayPanelGelatin');
+
+          const specItems = document.querySelectorAll('.tree-spec-item');
+          const bayHintRight = document.getElementById('bayHintRight');
+          const bayPanelSpecialty = document.getElementById('bayPanelSpecialty');
+          const baySpecialtyTitle = document.getElementById('baySpecialtyTitle');
+          const baySpecialtyDesc = document.getElementById('baySpecialtyDesc');
+          const baySpecialtyIcon = document.getElementById('baySpecialtyIcon');
+
+          const cardHpmc = document.getElementById('cardHpmc');
+          const btnHpmcSpecs = document.getElementById('btnHpmcSpecs');
+          const bayPanelHpmc = document.getElementById('bayPanelHpmc');
+
+          // Fallback dock elements for < 1200px
+          const dock = document.getElementById('treeSpecsDock');
+          const dockGelatin = document.getElementById('dockGelatinSpecs');
+          const dockHpmc = document.getElementById('dockHpmcSpecs');
+
+          // 1. Gelatin Card & Button Hover -> Shows Gelatin Specs in Space 1
+          function showGelatinSpecs() {
+            if (bayPanelGelatin) bayPanelGelatin.classList.add('is-active');
+            if (bayHintLeft) bayHintLeft.classList.add('is-hidden');
+            if (btnGelatinSpecs) btnGelatinSpecs.classList.add('is-active');
+
+            // Responsive fallback
+            if (window.innerWidth < 1200 && dock && dockGelatin) {
+              dock.classList.add('is-open');
+              dockGelatin.classList.add('is-active');
+              if (dockHpmc) dockHpmc.classList.remove('is-active');
+            }
+          }
+
+          function resetGelatinSpecs() {
+            if (bayPanelGelatin) bayPanelGelatin.classList.remove('is-active');
+            if (bayHintLeft) bayHintLeft.classList.remove('is-hidden');
+            if (btnGelatinSpecs) btnGelatinSpecs.classList.remove('is-active');
+          }
+
+          if (cardGelatin) {
+            cardGelatin.addEventListener('mouseenter', showGelatinSpecs);
+            cardGelatin.addEventListener('mouseleave', resetGelatinSpecs);
+          }
+          if (btnGelatinSpecs) {
+            btnGelatinSpecs.addEventListener('focus', showGelatinSpecs);
+            btnGelatinSpecs.addEventListener('blur', resetGelatinSpecs);
+            btnGelatinSpecs.addEventListener('click', (e) => {
+              e.preventDefault();
+              showGelatinSpecs();
+              if (window.innerWidth < 1200 && dock) dock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+          }
+
+          // 2. Specialty Items Hover -> Updates and shows item detail in Space 2
+          specItems.forEach(item => {
+            const activateItem = () => {
+              specItems.forEach(i => i.classList.remove('is-active'));
+              item.classList.add('is-active');
+
+              const title = item.getAttribute('data-spec-title');
+              const desc = item.getAttribute('data-spec-desc');
+              const iconSvg = item.querySelector('.tree-card__spec-icon svg');
+
+              if (baySpecialtyTitle && title) baySpecialtyTitle.textContent = title;
+              if (baySpecialtyDesc && desc) baySpecialtyDesc.innerHTML = desc;
+              if (baySpecialtyIcon && iconSvg) baySpecialtyIcon.innerHTML = iconSvg.outerHTML;
+
+              // Ensure Specialty panel is visible in Space 2, HPMC specs hidden
+              if (bayPanelSpecialty) bayPanelSpecialty.classList.add('is-active');
+              if (bayPanelHpmc) bayPanelHpmc.classList.remove('is-active');
+              if (bayHintRight) bayHintRight.classList.add('is-hidden');
+            };
+
+            item.addEventListener('mouseenter', activateItem);
+            item.addEventListener('focus', activateItem);
+            item.addEventListener('click', activateItem);
+          });
+
+          // 3. HPMC Card & Button Hover -> Shows HPMC Specs in Space 2
+          function showHpmcSpecs() {
+            if (bayPanelHpmc) bayPanelHpmc.classList.add('is-active');
+            if (bayPanelSpecialty) bayPanelSpecialty.classList.remove('is-active');
+            if (bayHintRight) bayHintRight.classList.add('is-hidden');
+            if (btnHpmcSpecs) btnHpmcSpecs.classList.add('is-active');
+
+            // Responsive fallback
+            if (window.innerWidth < 1200 && dock && dockHpmc) {
+              dock.classList.add('is-open');
+              dockHpmc.classList.add('is-active');
+              if (dockGelatin) dockGelatin.classList.remove('is-active');
+            }
+          }
+
+          function restoreSpecialtyFromHpmc() {
+            if (bayPanelHpmc) bayPanelHpmc.classList.remove('is-active');
+            if (btnHpmcSpecs) btnHpmcSpecs.classList.remove('is-active');
+            // Re-show active specialty capsule item
+            if (bayPanelSpecialty) bayPanelSpecialty.classList.add('is-active');
+          }
+
+          if (cardHpmc) {
+            cardHpmc.addEventListener('mouseenter', showHpmcSpecs);
+            cardHpmc.addEventListener('mouseleave', restoreSpecialtyFromHpmc);
+          }
+          if (btnHpmcSpecs) {
+            btnHpmcSpecs.addEventListener('focus', showHpmcSpecs);
+            btnHpmcSpecs.addEventListener('blur', restoreSpecialtyFromHpmc);
+            btnHpmcSpecs.addEventListener('click', (e) => {
+              e.preventDefault();
+              showHpmcSpecs();
+              if (window.innerWidth < 1200 && dock) dock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+          }
+        })();
+      </script>
     </section>
 
     <!-- 2. Hero: Image + Summary (Sticky Summary on Desktop) -->

@@ -1043,7 +1043,7 @@
       }
 
       /* --------------------------------------------------------------------------
-       WHO WE ARE: SCROLL-DRIVEN PINNED SECTION WITH FLUSH-LEFT IMAGES
+       WHO WE ARE: SCROLL-DRIVEN PINNED SECTION (CONTAINER ALIGNED)
        -------------------------------------------------------------------------- */
       .who-scroll-section {
         position: relative;
@@ -1066,13 +1066,19 @@
         background: #ffffff;
       }
 
+      .who-scroll-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+
       .who-scroll-inner {
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-columns: minmax(360px, 48vw) 1fr;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         align-items: center;
-        gap: clamp(2.5rem, 5vw, 6rem);
+        gap: clamp(2.5rem, 4.5vw, 5rem);
       }
 
       .who-scroll-media-col {
@@ -1087,13 +1093,13 @@
       .who-scroll-frame {
         position: relative;
         width: 100%;
-        height: 85%;
-        max-height: 85vh;
+        max-width: 580px;
+        aspect-ratio: 1 / 1;
+        max-height: min(82vh, 580px);
         border-radius: 5px;
         overflow: hidden;
         background: #f8fafc;
         border: 1px solid rgba(0, 0, 0, 0.08);
-        border-left: none;
       }
 
       .who-scroll-track {
@@ -1132,7 +1138,7 @@
       .who-scroll-dots {
         position: absolute;
         bottom: 24px;
-        left: 36px;
+        left: 28px;
         display: flex;
         align-items: center;
         gap: 8px;
@@ -1162,7 +1168,7 @@
       }
 
       .who-scroll-text-col {
-        padding-inline-end:0;
+        padding-inline-end: 0;
         max-width: 100%;
         box-sizing: border-box;
       }
@@ -1180,20 +1186,29 @@
           min-height: auto !important;
         }
 
+        .who-scroll-container {
+          height: auto !important;
+          display: block !important;
+        }
+
         .who-scroll-inner {
           grid-template-columns: 1fr !important;
           gap: 2rem !important;
+          height: auto !important;
         }
 
         .who-scroll-frame {
+          width: 100% !important;
+          max-width: 100% !important;
           height: 380px !important;
           max-height: none !important;
-          border-radius: 0 !important;
-          border-right: none !important;
+          aspect-ratio: auto !important;
+          border-radius: 5px !important;
+          border: 1px solid rgba(0, 0, 0, 0.08) !important;
         }
 
         .who-scroll-text-col {
-          padding-inline: 20px !important;
+          padding-inline: 0 !important;
           max-width: 100% !important;
         }
       }
@@ -1507,6 +1522,7 @@
       .container,
       .container--editorial,
       .container--video,
+      .who-scroll-container,
       .header__inner {
         width: 80% !important;
         max-width: 80% !important;
@@ -2138,6 +2154,7 @@
         .container,
         .container--editorial,
         .container--video,
+        .who-scroll-container,
         .header__inner {
           width: 90% !important;
           max-width: 90% !important;
@@ -2233,6 +2250,7 @@
       .container,
       .container--editorial,
       .container--video,
+      .who-scroll-container,
       .site-header .header__inner,
       .site-topbar__inner,
       .site-footer .container {
@@ -2775,96 +2793,98 @@
       </div>
     </section>
         <!-- ==================================================================
-         3. NEXT STEPS SECTION / WHO WE ARE (SCROLL-DRIVEN FLUSH-LEFT)
+         3. NEXT STEPS SECTION / WHO WE ARE (SCROLL-DRIVEN)
          ================================================================== -->
     <section class="who-scroll-section" id="nextStepsSection" aria-labelledby="nextStepsHeading">
       <div class="who-scroll-pin" id="whoScrollPin">
-        <div class="who-scroll-inner">
+        <div class="container who-scroll-container">
+          <div class="who-scroll-inner">
 
-          <!-- Left Side: Flush to Left Screen Boundary -->
-          <div class="who-scroll-media-col">
-            <div class="who-scroll-frame" id="whoScrollFrame">
-              <div class="who-scroll-track" id="whoScrollTrack">
-                <div class="who-scroll-img-item is-active" data-index="0">
-                <img class="who-scroll-img" src="images/whoweare1.png"
-                  alt="Empty hard Gelatin and HPMC vegetarian capsule polymers" width="700" height="700"
-                  loading="lazy">
-              </div>
+            <!-- Left Side: Capsule Slides Frame -->
+            <div class="who-scroll-media-col">
+              <div class="who-scroll-frame" id="whoScrollFrame">
+                <div class="who-scroll-track" id="whoScrollTrack">
+                  <div class="who-scroll-img-item is-active" data-index="0">
+                    <img class="who-scroll-img" src="images/whoweare1.png"
+                      alt="Empty hard Gelatin and HPMC vegetarian capsule polymers" width="700" height="700"
+                      loading="lazy">
+                  </div>
 
-              <div class="who-scroll-img-item" data-index="1">
-                <img class="who-scroll-img" src="images/whoweare2.png"
-                  alt="Automated cleanroom capsule production and AC container logistics" width="700" height="700"
-                  loading="lazy">
-              </div>
+                  <div class="who-scroll-img-item" data-index="1">
+                    <img class="who-scroll-img" src="images/whoweare2.png"
+                      alt="Automated cleanroom capsule production and AC container logistics" width="700" height="700"
+                      loading="lazy">
+                  </div>
 
-              <div class="who-scroll-img-item" data-index="2">
-                <img class="who-scroll-img" src="images/whoweare3.png"
-                  alt="Stringent I.P. 2014 quality inspection of empty hard capsules" width="700" height="700"
-                  loading="lazy">
-              </div>
+                  <div class="who-scroll-img-item" data-index="2">
+                    <img class="who-scroll-img" src="images/whoweare3.png"
+                      alt="Stringent I.P. 2014 quality inspection of empty hard capsules" width="700" height="700"
+                      loading="lazy">
+                  </div>
 
-              <div class="who-scroll-img-item" data-index="3">
-                <img class="who-scroll-img" src="images/whoweare4.png"
-                  alt="Automated camera sorting and cleanroom dimensional tolerances" width="700" height="700"
-                  loading="lazy">
-              </div>
-              </div>
+                  <div class="who-scroll-img-item" data-index="3">
+                    <img class="who-scroll-img" src="images/whoweare4.png"
+                      alt="Automated camera sorting and cleanroom dimensional tolerances" width="700" height="700"
+                      loading="lazy">
+                  </div>
+                </div>
 
-              <!-- Slide Indicators / Dots -->
-              <div class="who-scroll-dots" role="tablist" aria-label="Who We Are slide indicators">
-                <button type="button" class="who-scroll-dot is-active" role="tab" aria-selected="true"
-                  aria-label="Slide 1" data-slide="0"></button>
-                <button type="button" class="who-scroll-dot" role="tab" aria-selected="false" aria-label="Slide 2"
-                  data-slide="1"></button>
-                <button type="button" class="who-scroll-dot" role="tab" aria-selected="false" aria-label="Slide 3"
-                  data-slide="2"></button>
-                <button type="button" class="who-scroll-dot" role="tab" aria-selected="false" aria-label="Slide 4"
-                  data-slide="3"></button>
+                <!-- Slide Indicators / Dots -->
+                <div class="who-scroll-dots" role="tablist" aria-label="Who We Are slide indicators">
+                  <button type="button" class="who-scroll-dot is-active" role="tab" aria-selected="true"
+                    aria-label="Slide 1" data-slide="0"></button>
+                  <button type="button" class="who-scroll-dot" role="tab" aria-selected="false" aria-label="Slide 2"
+                    data-slide="1"></button>
+                  <button type="button" class="who-scroll-dot" role="tab" aria-selected="false" aria-label="Slide 3"
+                    data-slide="2"></button>
+                  <button type="button" class="who-scroll-dot" role="tab" aria-selected="false" aria-label="Slide 4"
+                    data-slide="3"></button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Right Side: Who We Are Text Content -->
-          <div class="who-scroll-text-col">
-            <span class="section-tag" data-aos="fade-up" data-aos-delay="100"><span
-                class="section-tag__dot"></span>Empty Capsules Manufacturers</span>
-            <h2 class="section-heading" id="nextStepsHeading" data-aos="fade-up" data-aos-delay="150">Who We Are</h2>
-            <p class="section-lead" data-aos="fade-up" data-aos-delay="200">
-              Erawat Pharma Limited, an Erawat Group Company, ranks among the top <a
-                href="manufacturing-setup.html">Capsule manufacturers</a> in the world &amp; second largest in India.
-            </p>
-            <p class="section-lead" data-aos="fade-up" data-aos-delay="250">
-              Manufacturing empty hard capsules since 1997, our team brings more than 30 years of total group experience
-              in capsule manufacturing technologies. Backed by high technical competence and rigorous R &amp; D, we
-              manufacture empty Gelatin Capsules as well as plant-derived <a href="epl-products.html">HPMC Capsules</a>
-              for vegetarian and hygroscopic formulations.
-            </p>
-            <div class="steps-intro__cta" data-aos="fade-up" data-aos-delay="300">
-              <a class="btn-black-pill" href="profile.html">
-                <span class="btn-anim__text">
-                  <span class="btn-anim__text-track">
-                    <span class="btn-anim__text-item">View More</span>
-                    <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">View More</span>
+            <!-- Right Side: Who We Are Text Content -->
+            <div class="who-scroll-text-col">
+              <span class="section-tag" data-aos="fade-up" data-aos-delay="100"><span
+                  class="section-tag__dot"></span>Empty Capsules Manufacturers</span>
+              <h2 class="section-heading" id="nextStepsHeading" data-aos="fade-up" data-aos-delay="150">Who We Are</h2>
+              <p class="section-lead" data-aos="fade-up" data-aos-delay="200">
+                Erawat Pharma Limited, an Erawat Group Company, ranks among the top <a
+                  href="manufacturing-setup.html">Capsule manufacturers</a> in the world &amp; second largest in India.
+              </p>
+              <p class="section-lead" data-aos="fade-up" data-aos-delay="250">
+                Manufacturing empty hard capsules since 1997, our team brings more than 30 years of total group experience
+                in capsule manufacturing technologies. Backed by high technical competence and rigorous R &amp; D, we
+                manufacture empty Gelatin Capsules as well as plant-derived <a href="epl-products.html">HPMC Capsules</a>
+                for vegetarian and hygroscopic formulations.
+              </p>
+              <div class="steps-intro__cta" data-aos="fade-up" data-aos-delay="300">
+                <a class="btn-black-pill" href="profile.html">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">View More</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">View More</span>
+                    </span>
                   </span>
-                </span>
-                <span class="btn-anim__icon">
-                  <span class="btn-anim__icon-track">
-                    <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
-                      stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
-                      aria-hidden="true">
-                      <path d="M4 2L8 6L4 10" />
-                    </svg>
-                    <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
-                      fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
-                      stroke-linejoin="round" aria-hidden="true">
-                      <path d="M4 2L8 6L4 10" />
-                    </svg>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                        stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                        fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 2L8 6L4 10" />
+                      </svg>
+                    </span>
                   </span>
-                </span>
-              </a>
+                </a>
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </section>
