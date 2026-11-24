@@ -415,8 +415,14 @@
     const video = document.querySelector(".page-banner__video");
     if (!video) return;
 
+    video.muted = true;
+    video.defaultMuted = true;
+
     if (video.hasAttribute("autoplay")) {
-      video.play().catch(function () {});
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(function () {});
+      }
     }
 
     if ("IntersectionObserver" in window) {

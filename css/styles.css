@@ -3871,14 +3871,14 @@ body.is-loading {
 /* 11. PAGE BANNER & CTA BAND MODERN ENHANCEMENTS */
 .page-banner {
   position: relative;
-  height: 700px !important;
-  min-height: 700px !important;
+  height: 60vh !important;
+  min-height: 60vh !important;
   display: flex !important;
   align-items: center !important;
   background: radial-gradient(ellipse 90% 120% at 50% 10%, rgba(30, 41, 59, 0.95) 0%, rgba(10, 15, 26, 0.98) 85%), linear-gradient(180deg, #0f172a 0%, #020617 100%) !important;
   border-block-end: 1px solid rgba(255, 255, 255, 0.08) !important;
-  padding-block-start: calc(var(--header-h, 110px) + 1.5rem) !important;
-  padding-block-end: 3rem !important;
+  padding-block-start: calc(var(--header-h, 110px) + 1rem) !important;
+  padding-block-end: 2rem !important;
   box-sizing: border-box !important;
   overflow: hidden !important;
 }
@@ -4129,8 +4129,10 @@ textarea:focus {
 
 @media (max-width: 768px) {
   .page-banner {
-    padding-block-start: calc(var(--header-h, 110px) + 1.5rem) !important;
-    padding-block-end: 2.5rem !important;
+    height: 60vh !important;
+    min-height: 60vh !important;
+    padding-block-start: calc(var(--header-h, 110px) + 1rem) !important;
+    padding-block-end: 1.5rem !important;
   }
 
   .page-banner .page-banner__title {
