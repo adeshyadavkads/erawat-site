@@ -304,15 +304,7 @@
 
             <!-- 2. Space 1: Dedicated Inter-Card Info Bay between Gelatin & Specialty (ZERO OVERLAP) -->
             <div class="tree-space-bay tree-space-bay--left" id="treeBayLeft">
-              <!-- Default State in Space 1 -->
-              <div class="tree-bay-hint" id="bayHintLeft">
-                <span class="tree-bay-hint__icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-                </span>
-                <span class="tree-bay-hint__text">Hover Gelatin for Weight &amp; Volume Specs</span>
-              </div>
-
-              <!-- Gelatin Specifications Table Panel (Fades into Space 1 on Hover) -->
+              <!-- Gelatin Specifications Table Panel (Shows in Space 1 ONLY on Hover) -->
               <div class="tree-bay-panel tree-bay-panel--gelatin" id="bayPanelGelatin" role="region" aria-label="Gelatin Weight and Volume Specifications">
                 <div class="tree-bay-panel__head tree-bay-panel__head--red">
                   <h4 class="tree-bay-panel__title">WEIGHT OF CAPSULE &amp; VOLUME</h4>
@@ -356,7 +348,7 @@
               <div class="tree-card__body">
                 <ul class="tree-card__list">
                   <!-- 1. Sticky Free Capsules -->
-                  <li class="tree-card__item tree-spec-item is-active" tabindex="0"
+                  <li class="tree-card__item tree-spec-item" tabindex="0"
                       data-spec-title="Sticky Free Capsules"
                       data-spec-desc="These capsules are specially designed for dry powder medicaments . The residual medicine left in the capsules is substantially less as compared to normal capsules, thus releasing proper desired dosage.">
                     <div class="tree-spec-item__left">
@@ -511,16 +503,8 @@
 
             <!-- 4. Space 2: Dedicated Inter-Card Info Bay between Specialty & HPMC (ZERO OVERLAP) -->
             <div class="tree-space-bay tree-space-bay--right" id="treeBayRight">
-              <!-- Default Hint in Space 2 (hidden when active panel displays) -->
-              <div class="tree-bay-hint is-hidden" id="bayHintRight">
-                <span class="tree-bay-hint__icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-                </span>
-                <span class="tree-bay-hint__text">Hover items or HPMC for live details</span>
-              </div>
-
-              <!-- Live Specialty Item Panel (Active in Space 2) -->
-              <div class="tree-bay-panel tree-bay-panel--specialty is-active" id="bayPanelSpecialty" role="region" aria-label="Specialty Capsule Feature Details">
+              <!-- Live Specialty Item Panel (Shows in Space 2 ONLY on Hover) -->
+              <div class="tree-bay-panel tree-bay-panel--specialty" id="bayPanelSpecialty" role="region" aria-label="Specialty Capsule Feature Details">
                 <div class="tree-bay-panel__head tree-bay-panel__head--blue">
                   <span class="tree-bay-panel__icon" id="baySpecialtyIcon">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -538,7 +522,7 @@
                 </div>
               </div>
 
-              <!-- HPMC Specifications Table Panel (Fades into Space 2 on Hover) -->
+              <!-- HPMC Specifications Table Panel (Shows in Space 2 ONLY on Hover) -->
               <div class="tree-bay-panel tree-bay-panel--hpmc" id="bayPanelHpmc" role="region" aria-label="HPMC Weight and Volume Specifications">
                 <div class="tree-bay-panel__head tree-bay-panel__head--green">
                   <h4 class="tree-bay-panel__title">WEIGHT OF CAPSULE &amp; VOLUME</h4>
@@ -694,17 +678,18 @@
         </div>
       </div>
 
-      <!-- Live Interactive Hover Script (In-Flow, Zero Overlap Guaranteed) -->
+      <!-- Live Interactive Hover Script (In-Flow, Zero Overlap, Shows ONLY on Hover) -->
       <script>
         (function() {
           // --- Elements ---
           const cardGelatin = document.getElementById('cardGelatin');
           const btnGelatinSpecs = document.getElementById('btnGelatinSpecs');
-          const bayHintLeft = document.getElementById('bayHintLeft');
+          const bayLeft = document.getElementById('treeBayLeft');
           const bayPanelGelatin = document.getElementById('bayPanelGelatin');
 
+          const cardSpecialty = document.getElementById('cardSpecialty');
           const specItems = document.querySelectorAll('.tree-spec-item');
-          const bayHintRight = document.getElementById('bayHintRight');
+          const bayRight = document.getElementById('treeBayRight');
           const bayPanelSpecialty = document.getElementById('bayPanelSpecialty');
           const baySpecialtyTitle = document.getElementById('baySpecialtyTitle');
           const baySpecialtyDesc = document.getElementById('baySpecialtyDesc');
@@ -719,13 +704,17 @@
           const dockGelatin = document.getElementById('dockGelatinSpecs');
           const dockHpmc = document.getElementById('dockHpmcSpecs');
 
-          // 1. Gelatin Card & Button Hover -> Shows Gelatin Specs in Space 1
-          function showGelatinSpecs() {
+          let gelatinTimer = null;
+          let specialtyTimer = null;
+          let hpmcTimer = null;
+
+          // 1. GELATIN HOVER (Space 1)
+          function showGelatin() {
+            clearTimeout(gelatinTimer);
             if (bayPanelGelatin) bayPanelGelatin.classList.add('is-active');
-            if (bayHintLeft) bayHintLeft.classList.add('is-hidden');
             if (btnGelatinSpecs) btnGelatinSpecs.classList.add('is-active');
 
-            // Responsive fallback
+            // Responsive fallback for < 1200px
             if (window.innerWidth < 1200 && dock && dockGelatin) {
               dock.classList.add('is-open');
               dockGelatin.classList.add('is-active');
@@ -733,59 +722,97 @@
             }
           }
 
-          function resetGelatinSpecs() {
-            if (bayPanelGelatin) bayPanelGelatin.classList.remove('is-active');
-            if (bayHintLeft) bayHintLeft.classList.remove('is-hidden');
-            if (btnGelatinSpecs) btnGelatinSpecs.classList.remove('is-active');
+          function hideGelatin() {
+            gelatinTimer = setTimeout(function() {
+              if (bayPanelGelatin) bayPanelGelatin.classList.remove('is-active');
+              if (btnGelatinSpecs) btnGelatinSpecs.classList.remove('is-active');
+              if (window.innerWidth < 1200 && dock) {
+                dock.classList.remove('is-open');
+                if (dockGelatin) dockGelatin.classList.remove('is-active');
+              }
+            }, 100);
           }
 
           if (cardGelatin) {
-            cardGelatin.addEventListener('mouseenter', showGelatinSpecs);
-            cardGelatin.addEventListener('mouseleave', resetGelatinSpecs);
+            cardGelatin.addEventListener('mouseenter', showGelatin);
+            cardGelatin.addEventListener('mouseleave', hideGelatin);
+          }
+          if (bayLeft) {
+            bayLeft.addEventListener('mouseenter', showGelatin);
+            bayLeft.addEventListener('mouseleave', hideGelatin);
           }
           if (btnGelatinSpecs) {
-            btnGelatinSpecs.addEventListener('focus', showGelatinSpecs);
-            btnGelatinSpecs.addEventListener('blur', resetGelatinSpecs);
-            btnGelatinSpecs.addEventListener('click', (e) => {
+            btnGelatinSpecs.addEventListener('focus', showGelatin);
+            btnGelatinSpecs.addEventListener('blur', hideGelatin);
+            btnGelatinSpecs.addEventListener('click', function(e) {
               e.preventDefault();
-              showGelatinSpecs();
+              showGelatin();
               if (window.innerWidth < 1200 && dock) dock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             });
           }
 
-          // 2. Specialty Items Hover -> Updates and shows item detail in Space 2
-          specItems.forEach(item => {
-            const activateItem = () => {
-              specItems.forEach(i => i.classList.remove('is-active'));
-              item.classList.add('is-active');
+          // 2. SPECIALTY CAPSULES HOVER (Space 2)
+          function showSpecialtyItem(item) {
+            clearTimeout(specialtyTimer);
+            clearTimeout(hpmcTimer);
 
-              const title = item.getAttribute('data-spec-title');
-              const desc = item.getAttribute('data-spec-desc');
-              const iconSvg = item.querySelector('.tree-card__spec-icon svg');
+            // Hide HPMC panel if active
+            if (bayPanelHpmc) bayPanelHpmc.classList.remove('is-active');
+            if (btnHpmcSpecs) btnHpmcSpecs.classList.remove('is-active');
 
-              if (baySpecialtyTitle && title) baySpecialtyTitle.textContent = title;
-              if (baySpecialtyDesc && desc) baySpecialtyDesc.innerHTML = desc;
-              if (baySpecialtyIcon && iconSvg) baySpecialtyIcon.innerHTML = iconSvg.outerHTML;
+            specItems.forEach(function(i) { i.classList.remove('is-active'); });
+            item.classList.add('is-active');
 
-              // Ensure Specialty panel is visible in Space 2, HPMC specs hidden
-              if (bayPanelSpecialty) bayPanelSpecialty.classList.add('is-active');
-              if (bayPanelHpmc) bayPanelHpmc.classList.remove('is-active');
-              if (bayHintRight) bayHintRight.classList.add('is-hidden');
-            };
+            const title = item.getAttribute('data-spec-title');
+            const desc = item.getAttribute('data-spec-desc');
+            const iconSvg = item.querySelector('.tree-card__spec-icon svg');
 
-            item.addEventListener('mouseenter', activateItem);
-            item.addEventListener('focus', activateItem);
-            item.addEventListener('click', activateItem);
+            if (baySpecialtyTitle && title) baySpecialtyTitle.textContent = title;
+            if (baySpecialtyDesc && desc) baySpecialtyDesc.innerHTML = desc;
+            if (baySpecialtyIcon && iconSvg) baySpecialtyIcon.innerHTML = iconSvg.outerHTML;
+
+            if (bayPanelSpecialty) bayPanelSpecialty.classList.add('is-active');
+          }
+
+          function hideSpecialty() {
+            specialtyTimer = setTimeout(function() {
+              specItems.forEach(function(i) { i.classList.remove('is-active'); });
+              if (bayPanelSpecialty) bayPanelSpecialty.classList.remove('is-active');
+            }, 100);
+          }
+
+          specItems.forEach(function(item) {
+            item.addEventListener('mouseenter', function() { showSpecialtyItem(item); });
+            item.addEventListener('focus', function() { showSpecialtyItem(item); });
           });
 
-          // 3. HPMC Card & Button Hover -> Shows HPMC Specs in Space 2
-          function showHpmcSpecs() {
-            if (bayPanelHpmc) bayPanelHpmc.classList.add('is-active');
+          if (cardSpecialty) {
+            cardSpecialty.addEventListener('mouseleave', hideSpecialty);
+          }
+          if (bayRight) {
+            bayRight.addEventListener('mouseenter', function() {
+              clearTimeout(specialtyTimer);
+              clearTimeout(hpmcTimer);
+            });
+            bayRight.addEventListener('mouseleave', function() {
+              hideSpecialty();
+              hideHpmc();
+            });
+          }
+
+          // 3. HPMC HOVER (Space 2)
+          function showHpmc() {
+            clearTimeout(hpmcTimer);
+            clearTimeout(specialtyTimer);
+
+            // Hide Specialty panel if active
             if (bayPanelSpecialty) bayPanelSpecialty.classList.remove('is-active');
-            if (bayHintRight) bayHintRight.classList.add('is-hidden');
+            specItems.forEach(function(i) { i.classList.remove('is-active'); });
+
+            if (bayPanelHpmc) bayPanelHpmc.classList.add('is-active');
             if (btnHpmcSpecs) btnHpmcSpecs.classList.add('is-active');
 
-            // Responsive fallback
+            // Responsive fallback for < 1200px
             if (window.innerWidth < 1200 && dock && dockHpmc) {
               dock.classList.add('is-open');
               dockHpmc.classList.add('is-active');
@@ -793,23 +820,27 @@
             }
           }
 
-          function restoreSpecialtyFromHpmc() {
-            if (bayPanelHpmc) bayPanelHpmc.classList.remove('is-active');
-            if (btnHpmcSpecs) btnHpmcSpecs.classList.remove('is-active');
-            // Re-show active specialty capsule item
-            if (bayPanelSpecialty) bayPanelSpecialty.classList.add('is-active');
+          function hideHpmc() {
+            hpmcTimer = setTimeout(function() {
+              if (bayPanelHpmc) bayPanelHpmc.classList.remove('is-active');
+              if (btnHpmcSpecs) btnHpmcSpecs.classList.remove('is-active');
+              if (window.innerWidth < 1200 && dock) {
+                dock.classList.remove('is-open');
+                if (dockHpmc) dockHpmc.classList.remove('is-active');
+              }
+            }, 100);
           }
 
           if (cardHpmc) {
-            cardHpmc.addEventListener('mouseenter', showHpmcSpecs);
-            cardHpmc.addEventListener('mouseleave', restoreSpecialtyFromHpmc);
+            cardHpmc.addEventListener('mouseenter', showHpmc);
+            cardHpmc.addEventListener('mouseleave', hideHpmc);
           }
           if (btnHpmcSpecs) {
-            btnHpmcSpecs.addEventListener('focus', showHpmcSpecs);
-            btnHpmcSpecs.addEventListener('blur', restoreSpecialtyFromHpmc);
-            btnHpmcSpecs.addEventListener('click', (e) => {
+            btnHpmcSpecs.addEventListener('focus', showHpmc);
+            btnHpmcSpecs.addEventListener('blur', hideHpmc);
+            btnHpmcSpecs.addEventListener('click', function(e) {
               e.preventDefault();
-              showHpmcSpecs();
+              showHpmc();
               if (window.innerWidth < 1200 && dock) dock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             });
           }
