@@ -18,7 +18,9 @@
   <meta property="og:title" content="Capsule Manufacturers | Empty Gelatin Capsule Manufacturers | Erawat">
   <meta property="og:description" content="Erawat Pharma is known for Capsule manufacturers, empty hard capsules, capsule shell and gelatin capsule manufacturers in the world &amp; second largest in India.">
   <meta property="og:image" content="https://www.erawat.com/images/logo.gif">
-  <link rel="icon" type="image/gif" href="images/logo.gif">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
   <!-- Typography: Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Careers at Erawat | Engineering &amp; Manufacturing Opportunities</title>
   <meta name="description" content="Explore career opportunities at Erawat Pharma Limited in Indore, India. Work with experienced capsule manufacturing and R&D engineers.">
-  <link rel="icon" type="image/gif" href="images/logo.gif">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

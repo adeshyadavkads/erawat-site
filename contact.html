@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Direct Factory Support | Erawat Pharma Limited</title>
   <meta name="description" content="Reach Erawat Pharma Limited in Indore, India. Direct factory sales, sampling dispatch, regulatory documentation, and machine technical support.">
-  <link rel="icon" type="image/gif" href="images/logo.gif">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

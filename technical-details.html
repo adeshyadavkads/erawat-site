@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Technical Specifications &amp; Quality Parameters | Erawat Pharma</title>
   <meta name="description" content="Comprehensive dimensional tolerances, fill volumes, disintegration times, and pharmacopeial limits for QA and formulation teams.">
-  <link rel="icon" type="image/gif" href="images/logo.gif">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

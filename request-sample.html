@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Request Trial Capsule Sample | Erawat Pharma Limited</title>
   <meta name="description" content="Request complimentary empty hard gelatin or HPMC vegetarian capsule samples for test-running on your high-speed filling machines.">
-  <link rel="icon" type="image/gif" href="images/logo.gif">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Empty Hard Capsules | Gelatin &amp; Vegetarian HPMC | Erawat Pharma</title>
   <meta name="description" content="Explore Erawat empty hard gelatin and HPMC vegetarian capsules across sizes 00, 0EL, 0, 1, 2, 3, 4, and 5 with custom colors and precision printing.">
-  <link rel="icon" type="image/gif" href="images/logo.gif">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

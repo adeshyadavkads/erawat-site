@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Global Export &amp; Supply Chain | One Star Export House | Erawat Pharma</title>
   <meta name="description" content="Erawat Pharma Limited exports over 12 billion empty hard Gelatin and HPMC vegetarian capsules annually to 40+ countries worldwide, backed by One Star Export House recognition and US FDA DMF filings.">
-  <link rel="icon" type="image/gif" href="images/logo.gif">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

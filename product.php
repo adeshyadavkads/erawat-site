@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Size 0 Empty Hard Capsule | Specifications &amp; Fill Volume | Erawat</title>
   <meta name="description" content="Technical specifications, fill volume, dimensional tolerances, and packaging details for Size 0 empty hard gelatin and vegetarian HPMC capsules.">
-  <link rel="icon" type="image/gif" href="images/logo.gif">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

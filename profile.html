@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Erawat Pharma | Empty Capsule Manufacturers Since 1997</title>
   <meta name="description" content="Erawat Pharma Limited is India's second largest manufacturer of empty hard gelatin and HPMC vegetarian capsules, founded in 1997 in Indore.">
-  <link rel="icon" type="image/gif" href="images/logo.gif">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

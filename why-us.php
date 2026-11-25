@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Why Buy From Us | Maximum Uptime &amp; Minimal Rejections | Erawat</title>
   <meta name="description" content="Discover why leading global pharmaceutical manufacturers choose Erawat empty hard capsules for higher filling yields, direct technical support, and minimal downtime.">
-  <link rel="icon" type="image/gif" href="images/logo.gif">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="images/favicon.png">
 
   <!-- Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
