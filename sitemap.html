@@ -184,7 +184,7 @@
 
     <section class="section">
       <div class="container" style="max-width: 52rem;" data-aos="fade-up">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 2rem;">
           <!-- Column 1: Company -->
           <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 2rem;">
             <h2 style="font-family: var(--font-heading); font-size: 1.45rem; font-weight: 800; color: var(--green-900); border-bottom: 2px solid var(--green-600); padding-bottom: 0.5rem; margin-bottom: 1.25rem;">Company</h2>

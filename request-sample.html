@@ -224,7 +224,7 @@
                 
                 <div style="margin-bottom: 1rem;">
                   <label class="field-line__label">Capsule Type<span class="required-star">*</span></label>
-                  <div style="display: flex; gap: 1.5rem; margin-top: 0.35rem;">
+                  <div style="display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin-top: 0.35rem;">
                     <label style="font-size: 0.9rem; font-weight: 500; display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer;">
                       <input type="radio" name="capsule_type" value="Gelatin" checked> Gelatin Hard Capsule
                     </label>
