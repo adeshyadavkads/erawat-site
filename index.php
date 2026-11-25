@@ -485,7 +485,7 @@
         align-items: center !important;
         gap: 0.5rem !important;
         background: transparent !important;
-        color: #ff0000 !important;
+        color: #0D8236 !important;
         font-family: var(--font-body, "Poppins", sans-serif) !important;
         font-size: 0.775rem !important;
         font-weight: 700 !important;
@@ -496,7 +496,7 @@
         margin-bottom: 0.85rem !important;
         width: fit-content !important;
         user-select: none !important;
-        border: 1px solid #ff0000 !important;
+        border: 1px solid #0D8236 !important;
         backdrop-filter: none !important;
         letter-spacing: normal !important;
       }
@@ -1213,11 +1213,16 @@
         }
       }
 
+      :root {
+        --brand-green: #772d00;
+        --gradient-banner-btn: #772d00;
+      }
+
       /* --------------------------------------------------------------------------
        TOP UTILITY BAR (MODERN SLEEK DESIGN)
        -------------------------------------------------------------------------- */
       .site-topbar {
-        background: hsl(141.03deg 81.82% 28.04%);
+        background: #772d00 !important;
         color: #94a3b8;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         font-size: 1rem;
@@ -2184,14 +2189,17 @@
         margin: 0 0 1rem 0 !important;
       }
 
-      /* 4. UNIFIED RED EYEBROW TAGS */
-      .section-tag {
+      /* 4. UNIFIED GREEN OUTLINE EYEBROW TAGS */
+      .section-tag,
+      .form-badge,
+      .page-banner__label,
+      .badge--editorial {
         display: inline-flex !important;
         align-items: center !important;
         gap: 0.5rem !important;
-        background: transparent;
-        color: #ff0000 !important;
-        font-family: var(--font-body, "Inter", sans-serif) !important;
+        background: transparent !important;
+        color: #0D8236 !important;
+        font-family: var(--font-body, "Poppins", sans-serif) !important;
         font-size: 0.775rem !important;
         font-weight: 700 !important;
         text-transform: uppercase !important;
@@ -2201,7 +2209,7 @@
         margin-bottom: 0.85rem !important;
         width: fit-content !important;
         user-select: none !important;
-        border: 1px solid;
+        border: 1px solid #0D8236 !important;
       }
 
       .section-tag__dot {
@@ -2242,14 +2250,32 @@
         transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
       }
 
+      .btn,
+      .btn-primary,
       .btn-black-pill,
+      .btn-gradient-pill,
+      .btn-solid-pill,
       .site-header .btn-gradient-pill,
       .site-header .nav__mobile-cta .btn-gradient-pill,
       .btn-editorial-send {
-        background: hsl(141.03deg 81.82% 28.04%) !important;
+        background: #772d00 !important;
         color: #ffffff !important;
         /* border: 1.5px solid #000000 !important; */
         /* box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15) !important; -- shadow removed */
+      }
+
+      .field-line__input:focus,
+      .form-control:focus,
+      input:focus,
+      select:focus,
+      textarea:focus {
+        border-color: #772d00 !important;
+      }
+
+      @media (max-width: 1024px) {
+        .site-header .nav__link:hover {
+          color: #772d00 !important;
+        }
       }
 
       .btn-black-pill:hover,
