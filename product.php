@@ -107,6 +107,7 @@
           <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
           <li><a class="nav__link" href="certification.html">Certification</a></li>
           <li><a class="nav__link is-active" href="epl-products.html">Products</a></li>
+          <li><a class="nav__link" href="export.html">Export</a></li>
           <li><a class="nav__link" href="contact.html">Contact</a></li>
           <li><a class="nav__link" href="careers.html">Careers</a></li>
         </ul>
@@ -1076,6 +1077,16 @@
           <p class="footer__desc">
             Erawat Pharma Limited, an Erawat Group Company, ranks among the top Capsule manufacturers in the world &amp; second largest in India. Founded in 1997.
           </p>
+
+          <div class="footer__contact">
+            <h2 class="footer__heading">Contact Details</h2>
+            <address class="footer__address">
+              <span class="footer__address-line">12-C/FA, Scheme No. 94, Ring Road, Near Pipliyahana Square, Indore - 452016, Madhya Pradesh, India</span>
+              <a class="footer__link" href="tel:+917316659100">+91 731 6659100</a>
+              <a class="footer__link" href="mailto:info@erawatgroup.com">info@erawatgroup.com</a>
+              <a class="footer__link" href="mailto:marketing@erawatgroup.com">marketing@erawatgroup.com</a>
+            </address>
+          </div>
         </div>
 
         <div class="footer__columns">
@@ -1101,18 +1112,9 @@
           </div>
 
           <div>
-            <h2 class="footer__heading">Contact Details</h2>
-            <address class="footer__address">
-              <span class="footer__address-line">12-C/FA, Scheme No. 94, Ring Road, Near Pipliyahana Square, Indore - 452016, Madhya Pradesh, India</span>
-              <a class="footer__link" href="tel:+917316659100">+91 731 6659100</a>
-              <a class="footer__link" href="mailto:info@erawatgroup.com">info@erawatgroup.com</a>
-              <a class="footer__link" href="mailto:marketing@erawatgroup.com">marketing@erawatgroup.com</a>
-            </address>
-          </div>
-
-          <div>
             <h2 class="footer__heading">Navigation</h2>
             <ul class="footer__list">
+              <li><a class="footer__link" href="export.html">Export</a></li>
               <li><a class="footer__link" href="contact.html">Contact Us</a></li>
               <li><a class="footer__link" href="product.html">Size-by-Size Details</a></li>
               <li><a class="footer__link" href="sitemap.html">SiteMap</a></li>
@@ -1123,7 +1125,7 @@
 
       <div class="footer__bottom">
         <p>Copyright &copy; 2026 Erawat Pharma Limited. All Rights Reserved | <a class="footer__link" href="sitemap.html">SiteMap</a></p>
-        <p>Indore, Madhya Pradesh, India</p>
+        <p>Created and developed by 10dumbs</p>
       </div>
     </div>
   </footer>

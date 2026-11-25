@@ -567,7 +567,11 @@
           const videoSrc = trigger.getAttribute("data-video-src");
           if (videoSrc) {
             const iframe = modal.querySelector("iframe");
-            if (iframe) iframe.src = videoSrc;
+            if (iframe) {
+              iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+              iframe.referrerPolicy = "strict-origin-when-cross-origin";
+              iframe.src = videoSrc;
+            }
           }
 
           openModal(modalId, trigger);

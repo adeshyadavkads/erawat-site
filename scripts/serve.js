@@ -37,7 +37,10 @@ const server = http.createServer((req, res) => {
         res.end('500 Internal Server Error: ' + err.code);
       }
     } else {
-      res.writeHead(200, { 'Content-Type': contentType });
+      res.writeHead(200, {
+        'Content-Type': contentType,
+        'Referrer-Policy': 'strict-origin-when-cross-origin'
+      });
       res.end(content);
     }
   });
