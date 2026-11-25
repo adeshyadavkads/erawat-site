@@ -2010,8 +2010,8 @@ body.is-loading {
    10. FOOTER & GIANT WORDMARK
    -------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #000000;
-  color: var(--color-dark-text);
+  background-color: #772d00;
+  color: #ffffff;
   padding-block: var(--space-3xl) var(--space-xl);
   overflow: hidden;
 }
@@ -2037,11 +2037,10 @@ body.is-loading {
   max-inline-size: 24rem;
 }
 
-.footer__contact {
+/* .footer__contact {
   margin-block-start: var(--space-xs);
   padding-block-start: var(--space-sm);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
+} */
 
 .footer__contact .footer__heading {
   margin-block-end: var(--space-2xs);
@@ -2059,7 +2058,7 @@ body.is-loading {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2xs);
-  color: var(--color-dark-text);
+  color: #ffffff;
   font-family: var(--font-heading);
   font-size: var(--text-h3);
   font-weight: var(--weight-extrabold);
@@ -2068,7 +2067,7 @@ body.is-loading {
 .footer__desc {
   font-size: var(--text-small);
   line-height: var(--leading-snug);
-  color: var(--color-dark-muted);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .footer__columns {
@@ -2087,7 +2086,7 @@ body.is-loading {
   font-family: var(--font-heading);
   font-size: var(--text-body);
   font-weight: var(--weight-semibold);
-  color: var(--color-dark-text);
+  color: #ffffff;
   margin-block-end: var(--space-sm);
 }
 
@@ -2102,7 +2101,7 @@ body.is-loading {
   align-items: center;
   min-block-size: var(--touch-target);
   font-size: var(--text-small);
-  color: var(--color-dark-muted);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .footer__link:hover {
@@ -2112,7 +2111,7 @@ body.is-loading {
 .footer__address {
   font-style: normal;
   font-size: var(--text-small);
-  color: var(--color-dark-muted);
+  color: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -2130,9 +2129,9 @@ body.is-loading {
   gap: var(--space-xs);
   justify-content: space-between;
   padding-block: var(--space-lg) var(--space-sm);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
   font-size: var(--text-small);
-  color: var(--color-dark-muted);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 @media (min-width: 40em) {
