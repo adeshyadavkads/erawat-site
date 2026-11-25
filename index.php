@@ -2218,6 +2218,12 @@
         display: none !important;
       }
 
+      #missionSection .section-tag,
+      .section--mission .section-tag {
+        color: #ffffff !important;
+        border-color: #ffffff !important;
+      }
+
       /* 5. UNIFIED BODY & LEAD TYPOGRAPHY */
       .section-lead,
       .mfg-header__desc,

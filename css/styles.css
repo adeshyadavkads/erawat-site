@@ -4946,12 +4946,14 @@ textarea:focus {
   text-align: center;
 }
 
-.mission-card__eyebrow {
+.mission-card__eyebrow,
+#missionSection .section-tag,
+.section--mission .section-tag {
   display: inline-flex !important;
   align-items: center !important;
   gap: 0.5rem !important;
   background: transparent !important;
-  color: #0D8236 !important;
+  color: #ffffff !important;
   font-family: var(--font-body, "Poppins", sans-serif) !important;
   font-size: 0.775rem !important;
   font-weight: 700 !important;
@@ -4962,7 +4964,7 @@ textarea:focus {
   margin-bottom: 0.85rem !important;
   width: fit-content !important;
   user-select: none !important;
-  border: 1px solid #0D8236 !important;
+  border: 1px solid #ffffff !important;
   backdrop-filter: none !important;
   letter-spacing: normal !important;
 }
