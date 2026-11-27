@@ -1,0 +1,144 @@
+<!-- ===== ERAWAT 4-SCENE SCROLL BANNER: paste where your current banner is (keep your own navbar) ===== -->
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+.ez{position:relative;height:560vh;background:#07070a;color:#fff;font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+.ez *{box-sizing:border-box}
+.ez-pin{position:sticky;top:0;height:100vh;overflow:hidden}
+.ez canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:2}
+.ez-vig{position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.6) 100%),linear-gradient(rgba(0,0,0,.4),transparent 25%)}
+.ez-t{position:absolute;z-index:4;left:6vw;top:50%;max-width:min(560px,86vw);opacity:0;pointer-events:none;will-change:opacity,transform;padding:34px 38px;border-radius:6px;backdrop-filter:blur(7px)}
+.ez-t h2{margin:0 0 14px;font-size:clamp(2.6rem,6vw,5.2rem);line-height:1;font-weight:800;letter-spacing:-.02em}
+.ez-t p{margin:0 0 22px;font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.6;color:#fff}
+.ez-t.g{background:rgba(190,16,22,.55)}.ez-t.h{background:rgba(24,140,60,.55)}.ez-t.f{background:rgba(20,22,56,.6)}
+.ez-t.s{left:0;right:0;margin:auto;text-align:center;top:11vh;padding:0;background:none;backdrop-filter:none;max-width:none}
+.ez-t.s h2{font-size:clamp(2rem,4.4vw,3.6rem);margin-bottom:6px}.ez-t.s p{margin:0;color:#ffd9d4}
+.ez-btn{display:inline-block;padding:15px 36px;border-radius:99px;background:linear-gradient(90deg,#c9191f,#f4571f);color:#fff;font-weight:800;letter-spacing:.05em;text-transform:uppercase;font-size:.9rem;text-decoration:none;box-shadow:0 12px 34px rgba(220,50,30,.4);transition:transform .25s}
+.ez-btn:hover{transform:translateY(-3px)}
+.ez-panel{position:absolute;z-index:1;left:50%;top:50%;width:60vw;height:42vh;margin:-21vh 0 0 -30vw;background:#e03a2a;border-radius:4px;opacity:0;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.ez-lbl{position:absolute;z-index:4;translate:-50% 0;font-weight:800;font-size:clamp(.8rem,1.4vw,1.15rem);opacity:0;pointer-events:none}
+.ez-wheel{position:absolute;z-index:4;right:7vw;top:50%;width:min(76vh,46vw,580px);aspect-ratio:1;margin-top:calc(min(76vh,46vw,580px)/-2);opacity:0;pointer-events:none}
+.ez-wheel svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 20px 40px rgba(0,0,0,.45))}
+.ez-wheel .wd{cursor:pointer}.ez-wheel text{pointer-events:none;font-family:inherit;font-weight:800;fill:#fff;font-size:15px}
+.ez-dots{position:absolute;z-index:5;right:2.2vw;top:50%;translate:0 -50%;display:flex;flex-direction:column;gap:14px;align-items:flex-end}
+.ez-dots button{display:flex;align-items:center;gap:10px;background:none;border:0;color:#fff;font:inherit;font-weight:600;font-size:.85rem;cursor:pointer;padding:0}
+.ez-dots button span{opacity:0;translate:6px 0;transition:.3s}.ez-dots button.on span,.ez-dots button:hover span{opacity:1;translate:0 0}
+.ez-dots i{width:11px;height:11px;border-radius:50%;border:2px solid #fff;transition:background .3s,scale .3s}.ez-dots .on i{background:#fff;scale:1.25}
+.ez-bar{position:absolute;z-index:5;left:0;bottom:0;height:4px;width:100%;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,#c9191f,#f4571f)}
+.ez-mouse{position:absolute;z-index:5;left:50%;bottom:calc(26px + env(safe-area-inset-bottom,0px));translate:-50% 0;width:28px;height:46px;border:1.5px solid #fff;border-radius:20px;transition:opacity .4s}
+.ez-mouse::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:4px;background:#fff;animation:ezM 1.6s infinite}
+@keyframes ezM{0%{opacity:1;translate:0 0}80%{opacity:0;translate:0 16px}100%{opacity:0}}
+@media (max-width:800px){
+.ez-t{left:4vw;right:4vw;top:auto;bottom:9vh;max-width:none;padding:20px 22px}.ez-t.s{top:11vh;bottom:auto}
+.ez-panel{width:92vw;margin-left:-46vw}.ez-wheel{right:auto;left:50%;width:min(88vw,50vh);margin-left:calc(min(88vw,50vh)/-2);top:36%;margin-top:calc(min(88vw,50vh)/-2)}
+.ez-dots span{display:none}.ez-dots{right:10px}}
+@media (prefers-reduced-motion:reduce){.ez-mouse::after{animation:none}}
+</style>
+<section class="ez" id="ez" aria-label="Erawat capsule range">
+ <div class="ez-pin" id="ez-pin">
+  <div class="ez-panel" id="ez-panel"></div>
+  <canvas id="ez-gl" aria-hidden="true"></canvas>
+  <div class="ez-vig"></div>
+  <div class="ez-t g"><h2>Gelatin</h2><p>High Quality TSE/BSE Free Gelatin Capsules giving outstanding performance on all varieties of high speed filling machine available in the world.</p><a class="ez-btn" href="#manufacturingSection">Know more</a></div>
+  <div class="ez-t h"><h2>HPMC</h2><p>Providing a range of HPMC capsules in vivid colors suitable for nutraceuticals, herbal as well as regular applications.</p><a class="ez-btn" href="#manufacturingSection">Know more</a></div>
+  <div class="ez-t s"><h2>Every size you fill</h2><p>00, 0EL, 0, 1, 2, 3, 4 and 5</p></div>
+  <div class="ez-t f"><h2>Made for every formulation</h2><p>Sticky free, preservative free, liquid filling, TSE/BSE free, SLS free, metallic, and pearl &amp; golden capsules.</p><a class="ez-btn" href="#getStartedSection">Send inquiry →</a></div>
+  <div id="ez-labels"></div>
+  <div class="ez-wheel" id="ez-wheel"><svg viewBox="-230 -230 460 460" id="ez-svg" role="img" aria-label="Capsule types"></svg></div>
+  <div class="ez-dots" id="ez-dots"></div>
+  <div class="ez-mouse" id="ez-m"></div>
+  <div class="ez-bar" id="ez-bar"></div>
+ </div>
+</section>
+<script>
+(function(){
+var sec=document.getElementById('ez'),pin=document.getElementById('ez-pin'),cv=document.getElementById('ez-gl'),texts=[].slice.call(sec.querySelectorAll('.ez-t')),panel=document.getElementById('ez-panel'),wheel=document.getElementById('ez-wheel'),svg=document.getElementById('ez-svg'),lblBox=document.getElementById('ez-labels'),dotBox=document.getElementById('ez-dots'),mouse=document.getElementById('ez-m'),bar=document.getElementById('ez-bar');
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,run=false,ready=false,loading=false,tp=0,sp=0,W=1,H=1,mx=0,my=0,hov=-1,R,S,C,fw,fr,hero,ha,hb,row=[],rowG,fd=[],dm,flip;
+function L(a,b,t){return a+(b-a)*t}function cl(v,a,b){return Math.min(b==null?1:b,Math.max(a||0,v))}function ss(t){t=cl(t);return t*t*(3-2*t)}
+/* palettes: A half, B half, background, name */
+var PAL=[{a:[.91,.91,.93],b:[.77,.09,.11],bg:[120,12,18],n:'Gelatin'},{a:[.79,.86,.23],b:[.11,.6,.28],bg:[10,96,44],n:'HPMC'},{a:[.95,.95,.97],b:[.17,.16,.49],bg:[96,34,24],n:'Sizes'},{a:[.95,.48,.12],b:[.23,.18,.7],bg:[26,32,100],n:'Features'}];
+var SZ=['00','0EL','0','1','2','3','4','5'],RT=[1,.88,.81,.71,.65,.58,.5,.43];
+var WH=[['Sticky Free','Capsules'],['Preservative','Free','Capsules'],['Liquid Filling','Capsules'],['TSE/BSE','Free','Capsules'],['SLS Free','Capsules'],['Metallic','Capsules'],['Pearl &','Golden','Capsules']],WC=['#b08560','#f0891f','#f06b6b','#5b7184','#2aa6c0','#9a6fb0','#9bb838'];
+/* DOM builders */
+var lbls=SZ.map(function(s){var d=document.createElement('div');d.className='ez-lbl';d.textContent=s;lblBox.appendChild(d);return d});
+var dots=PAL.map(function(p,i){var b=document.createElement('button');b.innerHTML='<span>'+p.n+'</span><i></i>';b.setAttribute('aria-label',p.n);b.onclick=function(){go((i+.5)/4)};dotBox.appendChild(b);return b});
+function P2(r,a){a=a*Math.PI/180;return [r*Math.cos(a),r*Math.sin(a)]}
+var wg=WH.map(function(w,i){var c=-100+i*360/7,a0=c-180/7+1.2,a1=c+180/7-1.2,o0=P2(200,a0),o1=P2(200,a1),i1=P2(84,a1),i0=P2(84,a0);
+var g=document.createElementNS('http://www.w3.org/2000/svg','g');g.setAttribute('class','wd');
+g.innerHTML='<path d="M'+o0+' A200 200 0 0 1 '+o1+' L'+i1+' A84 84 0 0 0 '+i0+'Z" fill="'+WC[i]+'" stroke="#fff" stroke-width="3"/>';
+var m=P2(142,c),t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('text-anchor','middle');
+t.innerHTML=w.map(function(l,k){return '<tspan x="'+m[0]+'" y="'+(m[1]+(k-(w.length-1)/2)*17+5)+'">'+l+'</tspan>'}).join('');g.appendChild(t);
+g.addEventListener('pointerenter',function(){hov=i});g.addEventListener('pointerleave',function(){hov=-1});svg.appendChild(g);return {g:g,c:c}});
+var ctr=document.createElementNS('http://www.w3.org/2000/svg','g');ctr.innerHTML='<circle r="72" fill="#fff"/><g transform="rotate(-40) scale(.9)"><rect x="-17" y="-40" width="34" height="40" rx="17" fill="#d8232a"/><rect x="-17" y="-22" width="34" height="22" fill="#d8232a"/><rect x="-17" y="0" width="34" height="40" rx="17" fill="#ececf0"/><rect x="-17" y="0" width="34" height="22" fill="#ececf0"/></g>';svg.appendChild(ctr);
+function prog(){var r=sec.getBoundingClientRect();return cl(-r.top/Math.max(1,r.height-innerHeight))}
+function go(f){var top=sec.getBoundingClientRect().top+scrollY,max=sec.offsetHeight-innerHeight;scrollTo({top:top+max*f,behavior:reduce?'auto':'smooth'})}
+/* 3D */
+function init(){
+try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});}catch(e){return}
+R.setPixelRatio(Math.min(devicePixelRatio,2));
+S=new THREE.Scene();S.fog=new THREE.Fog(0x07070a,12,50);C=new THREE.PerspectiveCamera(36,1,.1,90);S.add(C);
+S.add(new THREE.HemisphereLight(0xffffff,0x331010,.8));
+var k1=new THREE.DirectionalLight(0xffffff,1.5);k1.position.set(4,6,8);S.add(k1);
+var k2=new THREE.PointLight(0xff5a30,1.8,40);k2.position.set(-6,-3,2);S.add(k2);
+var pts=[new THREE.Vector2(0,0),new THREE.Vector2(.6,0),new THREE.Vector2(.6,1.1)];for(var i=1;i<=14;i++){var a=i/14*Math.PI/2;pts.push(new THREE.Vector2(.6*Math.cos(a),1.1+.6*Math.sin(a)))}
+var geo=new THREE.LatheGeometry(pts,40),M=function(c,o){return new THREE.MeshStandardMaterial({color:c,roughness:.38,metalness:.05,side:THREE.DoubleSide,transparent:true,opacity:1})};
+var N=110;fw=new THREE.InstancedMesh(geo,M(0xffffff),N);fr=new THREE.InstancedMesh(geo,M(0xff0000),N);S.add(fw,fr);
+for(i=0;i<N;i++)fd.push({x:(Math.random()-.5)*32,y:(Math.random()-.5)*17,z:-66+Math.random()*80,s:.8+Math.random()*1.1,rx:Math.random()*6,ry:Math.random()*6,rz:Math.random()*6,sp:(Math.random()-.5)*.6});
+dm=new THREE.Object3D();flip=new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1,0,0),Math.PI);
+function hm(c){return new THREE.MeshPhysicalMaterial({color:c,roughness:.14,clearcoat:1,clearcoatRoughness:.05,side:THREE.DoubleSide})}
+hero=new THREE.Group();ha=new THREE.Mesh(geo,hm(0xffffff));hb=new THREE.Mesh(geo,hm(0xff0000));hb.rotation.z=Math.PI;hero.add(ha,hb);C.add(hero);hero.position.z=-9;
+rowG=new THREE.Group();rowG.position.z=-9;C.add(rowG);
+var nm=hm(0x2b2a82),wm=hm(0xf4f4f8);
+for(i=0;i<8;i++){var g=new THREE.Group(),t=new THREE.Mesh(geo,nm),b=new THREE.Mesh(geo,wm);b.rotation.z=Math.PI;g.add(t,b);rowG.add(g);row.push(g)}
+ready=true;size();
+}
+function size(){W=cv.clientWidth||innerWidth;H=cv.clientHeight||innerHeight;if(R){R.setSize(W,H,false);C.aspect=W/H;C.updateProjectionMatrix()}}
+addEventListener('resize',size);
+pin.addEventListener('pointermove',function(e){var r=pin.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5},{passive:true});
+addEventListener('scroll',function(){tp=prog()},{passive:true});tp=prog();sp=tp;
+new IntersectionObserver(function(en){run=en[0].isIntersecting;if(run&&!window.THREE&&!loading)load()},{rootMargin:'300px'}).observe(sec);
+function load(){loading=true;var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';s.onload=init;document.head.appendChild(s)}
+if(window.THREE)init();
+function lerpC(A,B,f){return [L(A[0],B[0],f),L(A[1],B[1],f),L(A[2],B[2],f)]}
+function tick(t){
+requestAnimationFrame(tick);if(!run)return;
+sp+=(tp-sp)*(reduce?1:.09);var q=sp*4,nar=innerWidth<800,w=[],k,i;
+for(k=0;k<4;k++){var d=(k==0&&q<.5)||(k==3&&q>3.5)?0:Math.abs(q-(k+.5));w.push(ss(1-d*2.2))}
+/* colours */
+var e=cl(q-.5,0,2.999),ci=Math.floor(e),cf=ss(e-ci),A=lerpC(PAL[ci].a,PAL[ci+1].a,cf),B=lerpC(PAL[ci].b,PAL[ci+1].b,cf),bg=lerpC(PAL[ci].bg,PAL[ci+1].bg,cf);
+pin.style.background='radial-gradient(ellipse at 60% 45%,rgb('+bg.map(Math.round)+') 0%,rgb('+bg.map(function(v){return Math.round(v*.22)})+') 78%)';
+/* text */
+texts.forEach(function(el,n){el.style.opacity=w[n];el.style.transform=(n==2?'':'translateY(-50%) ')+'translateY('+((1-w[n])*(q<n+.5?36:-36))+'px)';el.style.pointerEvents=w[n]<.4?'none':'auto'});
+if(nar)texts.forEach(function(el){el.style.transform='translateY('+(0)+'px)'});
+/* sizes panel + labels */
+var l3=cl(q-2),halfH=9*Math.tan(18*Math.PI/180),fwid=nar?.8:.47,pw=nar?.92:.6;
+panel.style.opacity=w[2];panel.style.transform='scaleX('+ss(l3*2.6)+')';
+var base=-.68,asp=W/H,halfW=halfH*asp,spacing=fwid/7*2*halfW,s0=Math.min(.5,.62*spacing);
+for(k=0;k<8;k++){var fx=-fwid/2+fwid*k/7,ek=ss(l3*2-k*.12-.1);
+lbls[k].style.left=(W/2+fx*W)+'px';lbls[k].style.top=(H/2*(1-base/halfH)+16)+'px';lbls[k].style.opacity=w[2]*ek}
+/* wheel */
+var l4=cl(q-3),sc=1;wheel.style.opacity=w[3];wheel.style.pointerEvents=w[3]<.4?'none':'auto';
+wheel.style.transform='rotate('+((1-ss(l4*1.6))*-140)+'deg)';
+wg.forEach(function(o,n){var ek=ss(l4*2.2-n*.16),out=(1-ek)*300+(hov==n?10:0),a=o.c*Math.PI/180,s=hov==n?1.04:(hov>=0?.97:1);
+o.g.style.transform='translate('+(Math.cos(a)*out)+'px,'+(Math.sin(a)*out)+'px) scale('+s+')';o.g.style.opacity=ek*(hov>=0&&hov!=n?.7:1);o.g.style.transition='transform .25s ease-out'});
+ctr.style.transform='scale('+ss(l4*2.4-.2)+')';ctr.style.transformOrigin='0 0';
+/* ui */
+var act=cl(Math.floor(q),0,3);dots.forEach(function(b,n){b.classList.toggle('on',n===act)});
+mouse.style.opacity=sp>.01?0:1;bar.style.transform='scaleX('+sp+')';
+/* 3D */
+if(!ready)return;
+fw.material.color.setRGB(A[0],A[1],A[2]);fr.material.color.setRGB(B[0],B[1],B[2]);
+fw.material.opacity=fr.material.opacity=1-.6*w[2]-.45*w[3];
+var camZ=10-sp*60;C.position.z=camZ;
+for(i=0;i<fd.length;i++){var f=fd[i];dm.position.set(f.x,f.y+Math.sin(t/1500+i)*.15,f.z);dm.rotation.set(f.rx+t*.0002*f.sp*3,f.ry+t*.0003*f.sp*3,f.rz);dm.scale.setScalar(f.s);dm.updateMatrix();fw.setMatrixAt(i,dm.matrix);dm.quaternion.multiply(flip);dm.updateMatrix();fr.setMatrixAt(i,dm.matrix)}
+fw.instanceMatrix.needsUpdate=true;fr.instanceMatrix.needsUpdate=true;
+ha.material.color.setRGB(A[0],A[1],A[2]);hb.material.color.setRGB(B[0],B[1],B[2]);
+var hv=1-ss((q-1.7)/.45),hs=(nar?.6:1.15)*hv;hero.visible=hs>.01;hero.position.x=nar?0:halfW*.5;hero.position.y=nar?halfH*.42:0;hero.scale.setScalar(Math.max(.001,hs));
+var flipT=ss((q-.7)/.6);hero.rotation.set(.3+my*.3,t*.0004+mx*.7+flipT*Math.PI*2,.8+Math.sin(t/1800)*.12);
+rowG.visible=w[2]>.01;
+for(k=0;k<8;k++){var ek2=ss(l3*2-k*.12-.1),fx2=-fwid/2+fwid*k/7,sk=s0*RT[k]*Math.max(.001,ek2),g=row[k];
+g.position.set(fx2*2*halfW,base+1.7*s0*RT[k]-(1-ek2)*3.4,0);g.scale.setScalar(sk);g.rotation.set(0,mx*.6+Math.sin(t/1200+k)*.25,0)}
+R.render(S,C)}
+requestAnimationFrame(tick);
+})();
+</script>
+<!-- ===== END ERAWAT 4-SCENE SCROLL BANNER ===== -->

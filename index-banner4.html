@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,8 @@
   <meta name="email" content="info@erawatgroup.com">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Capsule Manufacturers | Empty Gelatin Capsule Manufacturers | Erawat">
-  <meta property="og:description" content="Erawat Pharma is known for Capsule manufacturers, empty hard capsules, capsule shell and gelatin capsule manufacturers in the world &amp; second largest in India.">
+  <meta property="og:description"
+    content="Erawat Pharma is known for Capsule manufacturers, empty hard capsules, capsule shell and gelatin capsule manufacturers in the world &amp; second largest in India.">
   <meta property="og:image" content="https://www.erawat.com/images/logo.gif">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -27,58 +29,2216 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
-  <!-- External Stylesheets Only -->
+  <!-- External Stylesheets -->
   <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=2.5">
   <link rel="stylesheet" href="css/aos.css">
   <script src="js/three.min.js"></script>
+
+  <!-- Unified Design System Overrides (Matching index.html Colors & Design) -->
+  <style>
+    /* Universal Shadow Removal - Matching index.html */
+    *,
+    *::before,
+    *::after {
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+
+    :root {
+      --brand-green: #772d00;
+      --gradient-banner-btn: #772d00;
+      --header-actual-h: 110px;
+    }
+
+    /* --------------------------------------------------------------------------
+       TOP UTILITY BAR (MATCHING INDEX.HTML)
+       -------------------------------------------------------------------------- */
+    .site-topbar {
+      background: #772d00 !important;
+      color: #94a3b8;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 1rem;
+      line-height: 1;
+      position: relative;
+      z-index: 1001;
+    }
+
+    .site-topbar__inner {
+      margin-inline: auto !important;
+      padding: 14px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-sizing: border-box;
+    }
+
+    .site-topbar__left,
+    .site-topbar__right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 0;
+    }
+
+    .site-topbar__item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .site-topbar__icon {
+      color: #fff;
+      flex-shrink: 0;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .site-topbar__item:hover .site-topbar__icon {
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .site-topbar__muted {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .site-topbar__link {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .site-topbar__link:hover {
+      color: #ffffff;
+    }
+
+    .site-topbar__link--highlight {
+      position: relative;
+      color: #ffffff;
+    }
+
+    .site-topbar__divider {
+      display: inline-block;
+      width: 1px;
+      height: 11px;
+      background: rgba(255, 255, 255, 0.15);
+      flex-shrink: 0;
+    }
+
+    .site-topbar__social {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.25s ease;
+    }
+
+    .site-topbar__social:hover {
+      color: #ffffff;
+      background: #0077b5;
+      border-color: #0077b5;
+      transform: translateY(-1px);
+    }
+
+    .site-topbar__social-icon {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .site-topbar__inner {
+        padding: 8px 0 !important;
+        font-size: 0.75rem !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        gap: 6px 12px !important;
+        overflow-x: visible !important;
+        white-space: normal !important;
+      }
+
+      .site-topbar__left,
+      .site-topbar__right {
+        flex-wrap: wrap !important;
+        flex-shrink: 1 !important;
+        min-width: 0 !important;
+        gap: 6px 10px !important;
+      }
+
+      .site-topbar__muted {
+        display: none;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .site-topbar__inner {
+        font-size: 0.72rem !important;
+        gap: 6px 10px !important;
+      }
+
+      .site-topbar__left .site-topbar__divider,
+      .site-topbar__right .site-topbar__divider {
+        display: none;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       WHITE HEADER STYLING (MATCHING INDEX.HTML)
+       -------------------------------------------------------------------------- */
+    .site-header {
+      background: rgba(255, 255, 255, 0.98) !important;
+      border-block-end: 1px solid rgba(0, 0, 0, 0.08) !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+    }
+
+    .site-header .brand__logo {
+      filter: brightness(0) !important;
+    }
+
+    .site-header .nav__link {
+      color: #1a1e24 !important;
+      font-weight: 600 !important;
+      position: relative;
+      display: inline-block;
+      transition: color 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .site-header .nav__link::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #e0302f;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.36s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .site-header .nav__link:hover {
+      color: #e0302f !important;
+      background-color: transparent !important;
+    }
+
+    .site-header .nav__link:hover::after {
+      transform: scaleX(1);
+    }
+
+    .site-header .nav-toggle {
+      color: #1a1e24 !important;
+      background: #f1f4f9 !important;
+      border: 1px solid #d8dde6 !important;
+    }
+
+    .site-header .header__inner {
+      padding-inline: 0 !important;
+    }
+
+    @media (min-width: 1025px) {
+      .nav-toggle {
+        display: none !important;
+      }
+
+      .site-header .nav__mobile-cta {
+        display: none !important;
+      }
+
+      .site-header .header__inner {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 16px !important;
+        padding-block: clamp(14px, 1.6vh, 22px) !important;
+      }
+
+      .site-header .brand {
+        margin-right: auto !important;
+        flex-shrink: 0 !important;
+      }
+
+      .site-header .site-nav {
+        margin-left: auto !important;
+        display: flex !important;
+        align-items: center !important;
+      }
+
+      .site-header .nav__list {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+        gap: clamp(2px, 0.4vw, 8px) !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+      }
+
+      .site-header .nav__link {
+        white-space: nowrap !important;
+      }
+
+      .site-header .header__actions {
+        display: flex !important;
+        align-items: center !important;
+        margin-left: clamp(12px, 1.6vw, 24px) !important;
+        flex-shrink: 0 !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .site-header .nav__link:hover {
+        color: #772d00 !important;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       HOMEPAGE UNIFIED DESIGN SYSTEM (EYEBROWS, HEADINGS, BUTTONS, TYPOGRAPHY)
+       -------------------------------------------------------------------------- */
+    .section-heading,
+    .mfg-header__heading,
+    .facility-video__heading,
+    .inquiry-heading {
+      font-family: var(--font-heading, "Poppins", sans-serif) !important;
+      font-size: clamp(2.1rem, 1.8rem + 1.4vw, 2.85rem) !important;
+      font-weight: 700 !important;
+      color: #000000 !important;
+      -webkit-text-fill-color: #000000 !important;
+      line-height: 1.15 !important;
+      margin: 0 0 1rem 0 !important;
+    }
+
+    .section-tag,
+    .form-badge,
+    .page-banner__label,
+    .badge--editorial {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 0.5rem !important;
+      background: transparent !important;
+      color: #772d00 !important;
+      font-family: var(--font-body, "Poppins", sans-serif) !important;
+      font-size: 0.775rem !important;
+      font-weight: 700 !important;
+      text-transform: uppercase !important;
+      line-height: 1 !important;
+      padding: 0.42rem 0.85rem !important;
+      border-radius: 6px !important;
+      margin-bottom: 0.85rem !important;
+      width: fit-content !important;
+      user-select: none !important;
+      border: 1px solid #772d00 !important;
+    }
+
+    .section-tag--light {
+      color: #ffffff !important;
+      border-color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    .section-tag__dot {
+      display: none !important;
+    }
+
+    #missionSection .section-tag,
+    .section--mission .section-tag {
+      color: #772d00 !important;
+      border-color: #772d00 !important;
+    }
+
+    .section-lead,
+    .mfg-header__desc,
+    .facility-video__desc,
+    .inquiry-lead {
+      font-family: var(--font-body, "Poppins", sans-serif) !important;
+      font-size: clamp(0.95rem, 1.02vw, 1.1rem) !important;
+      color: #475569 !important;
+      line-height: 1.68 !important;
+    }
+
+    /* Unified #772d00 Pill Buttons + Rolling Text & Sliding Arrow Animation */
+    .btn,
+    .btn-primary,
+    .btn-black-pill,
+    .btn-gradient-pill,
+    .btn-solid-pill,
+    .btn-editorial-send,
+    .site-header .btn-gradient-pill,
+    .site-header .nav__mobile-cta .btn-gradient-pill {
+      position: relative !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px !important;
+      padding: 12px 24px !important;
+      border-radius: 9999px !important;
+      background: #772d00 !important;
+      color: #ffffff !important;
+      border: none !important;
+      font-family: var(--font-body, "Poppins", sans-serif) !important;
+      font-weight: 700 !important;
+      font-size: 0.88rem !important;
+      text-transform: uppercase !important;
+      text-decoration: none !important;
+      line-height: 1 !important;
+      overflow: hidden !important;
+      cursor: pointer !important;
+      box-sizing: border-box !important;
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.25s ease !important;
+    }
+
+    .site-header .btn-gradient-pill {
+      padding: 10px 20px !important;
+      font-size: 0.82rem !important;
+    }
+
+    .btn-black-pill::before,
+    .btn-gradient-pill::before,
+    .btn-editorial-send::before,
+    .site-header .btn-gradient-pill::before,
+    .site-header .nav__mobile-cta .btn-gradient-pill::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background: #1e293b;
+      z-index: 0;
+      pointer-events: none;
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 0.42s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+
+    .btn-black-pill:hover::before,
+    .btn-gradient-pill:hover::before,
+    .btn-editorial-send:hover::before,
+    .site-header .btn-gradient-pill:hover::before,
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover::before {
+      transform: scaleX(1);
+    }
+
+    .btn:hover,
+    .btn-primary:hover,
+    .btn-black-pill:hover,
+    .btn-gradient-pill:hover,
+    .btn-solid-pill:hover,
+    .btn-editorial-send:hover,
+    .site-header .btn-gradient-pill:hover,
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover {
+      background: #1e293b !important;
+      border-color: #1e293b !important;
+      color: #ffffff !important;
+      transform: translateY(-2px) !important;
+    }
+
+    .btn-anim__text {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      line-height: 1.25;
+      vertical-align: middle;
+    }
+
+    .btn-anim__text-track {
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: transform;
+    }
+
+    .btn-anim__text-item {
+      display: block;
+      white-space: nowrap;
+      line-height: 1.25;
+    }
+
+    .btn-anim__text-clone {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+    }
+
+    .btn-black-pill:hover .btn-anim__text-track,
+    .btn-gradient-pill:hover .btn-anim__text-track,
+    .btn-editorial-send:hover .btn-anim__text-track,
+    .site-header .btn-gradient-pill:hover .btn-anim__text-track,
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__text-track {
+      transform: translateY(-100%);
+    }
+
+    .btn-anim__icon {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      overflow: hidden;
+      flex-shrink: 0;
+      vertical-align: middle;
+    }
+
+    .btn-anim__icon-track {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .btn-anim__icon-item {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      will-change: transform, opacity;
+    }
+
+    .btn-anim__icon-item:not(.btn-anim__icon-clone) {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .btn-anim__icon-clone {
+      transform: translateX(-150%);
+      opacity: 0;
+    }
+
+    .btn-black-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+    .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+    .btn-editorial-send:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+    .site-header .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone),
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__icon-item:not(.btn-anim__icon-clone) {
+      transform: translateX(150%);
+      opacity: 0;
+    }
+
+    .btn-black-pill:hover .btn-anim__icon-clone,
+    .btn-gradient-pill:hover .btn-anim__icon-clone,
+    .btn-editorial-send:hover .btn-anim__icon-clone,
+    .site-header .btn-gradient-pill:hover .btn-anim__icon-clone,
+    .site-header .nav__mobile-cta .btn-gradient-pill:hover .btn-anim__icon-clone {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    .field-line__input:focus,
+    .form-control:focus,
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #772d00 !important;
+    }
+
+    /* --------------------------------------------------------------------------
+       PAGE LOADER, BUTTON POLISH & REFINED AOS MOTION CURVES (THIS PAGE ONLY)
+       -------------------------------------------------------------------------- */
+    .page-loader {
+      transition:
+        opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.65s cubic-bezier(0.22, 1, 0.36, 1) !important;
+    }
+
+    .page-loader.is-hidden {
+      transform: scale(1.02) !important;
+    }
+
+    /* Inline Erawat Loader Animation (Scoped to index-banner4.html only) */
+    .page-loader__icon .erawat-globe-spin {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: erawatGlobeRotate 3.6s linear infinite;
+    }
+
+    .page-loader__icon .erawat-outer-frame {
+      stroke-dasharray: 760;
+      stroke-dashoffset: 760;
+      animation: erawatDrawFrame 2.4s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+    }
+
+    .page-loader__icon .erawat-bar-1 {
+      transform-box: view-box;
+      transform-origin: 146px 104px;
+      animation: erawatBarSlide 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    }
+
+    .page-loader__icon .erawat-bar-2 {
+      transform-box: view-box;
+      transform-origin: 108px 142px;
+      animation: erawatBarSlide2 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    }
+
+    .page-loader__icon .erawat-wordmark {
+      animation: erawatTextReveal 2.4s ease-in-out infinite;
+    }
+
+    @keyframes erawatGlobeRotate {
+      0% { transform: rotate(-25deg); }
+      100% { transform: rotate(335deg); }
+    }
+
+    @keyframes erawatDrawFrame {
+      0% { stroke-dashoffset: 760; opacity: 0.2; }
+      45% { stroke-dashoffset: 0; opacity: 1; }
+      80% { stroke-dashoffset: 0; opacity: 1; }
+      100% { stroke-dashoffset: -760; opacity: 0.2; }
+    }
+
+    @keyframes erawatBarSlide {
+      0%, 15% { opacity: 0; transform: translateX(-18px); }
+      42%, 82% { opacity: 1; transform: translateX(0); }
+      100% { opacity: 0; transform: translateX(14px); }
+    }
+
+    @keyframes erawatBarSlide2 {
+      0%, 24% { opacity: 0; transform: translateX(-18px); }
+      50%, 82% { opacity: 1; transform: translateX(0); }
+      100% { opacity: 0; transform: translateX(14px); }
+    }
+
+    @keyframes erawatTextReveal {
+      0%, 28% { opacity: 0; transform: translateY(4px); }
+      52%, 82% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(-2px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .page-loader__icon .erawat-globe-spin,
+      .page-loader__icon .erawat-outer-frame,
+      .page-loader__icon .erawat-bar-1,
+      .page-loader__icon .erawat-bar-2,
+      .page-loader__icon .erawat-wordmark {
+        animation: none;
+        stroke-dashoffset: 0;
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    [data-aos^="fade"][data-aos^="fade"] {
+      transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1) !important;
+      transition-duration: 0.85s !important;
+      will-change: opacity, transform;
+    }
+
+    [data-aos="fade-up"] {
+      transform: translate3d(0, 28px, 0) !important;
+    }
+
+    [data-aos="fade-down"] {
+      transform: translate3d(0, -24px, 0) !important;
+    }
+
+    [data-aos="fade-right"] {
+      transform: translate3d(-28px, 0, 0) !important;
+    }
+
+    [data-aos="fade-left"] {
+      transform: translate3d(28px, 0, 0) !important;
+    }
+
+    [data-aos].aos-animate {
+      transform: translate3d(0, 0, 0) !important;
+    }
+
+    .minimal-chip span {
+      transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease !important;
+    }
+
+    .minimal-chip input:checked + span {
+      transform: scale(1.03);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      [data-aos^="fade"][data-aos^="fade"] {
+        transform: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       ANIMATION 1: 4-SCENE 3D SCROLL BANNER (.ez) — FROM animationsection/erawat-banner-4.html
+       -------------------------------------------------------------------------- */
+    .ez {
+      position: relative;
+      height: 500vh;
+      background: #0d0806;
+      color: #ffffff;
+      font-family: var(--font-body, "Poppins", sans-serif);
+    }
+
+    .ez * {
+      box-sizing: border-box;
+    }
+
+    .ez-pin {
+      position: sticky;
+      top: var(--header-actual-h, 110px);
+      height: calc(100vh - var(--header-actual-h, 110px));
+      min-height: 520px;
+      overflow: hidden;
+      contain: layout paint;
+    }
+
+    .ez canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: 2;
+    }
+
+    .ez-vig {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      pointer-events: none;
+      background: radial-gradient(ellipse at center, transparent 45%, rgba(0, 0, 0, 0.54) 100%),
+        linear-gradient(rgba(0, 0, 0, 0.28), transparent 24%);
+    }
+
+    .ez-t {
+      position: absolute;
+      z-index: 4;
+      left: 6vw;
+      top: 50%;
+      max-width: min(500px, 41vw);
+      opacity: 0;
+      pointer-events: none;
+      will-change: opacity, transform;
+      backface-visibility: hidden;
+      padding: 32px 36px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .ez-t h1,
+    .ez-t h2 {
+      margin: 0 0 12px;
+      font-family: var(--font-heading, "Poppins", sans-serif);
+      font-size: clamp(2.4rem, 4.8vw, 4.5rem);
+      line-height: 1.04;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+
+    .ez-t p {
+      margin: 0 0 22px;
+      font-size: clamp(0.95rem, 1.2vw, 1.12rem);
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.94);
+      max-inline-size: none;
+    }
+
+    .ez-t.g {
+      background: rgba(82, 31, 4, 0.8);
+    }
+
+    .ez-t.h {
+      background: rgba(16, 86, 42, 0.78);
+    }
+
+    .ez-t.f {
+      background: rgba(15, 23, 42, 0.82);
+    }
+
+    .ez-t.s {
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      top: clamp(20px, 6vh, 64px);
+      padding: 0 20px;
+      background: none;
+      border: none;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      max-width: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .ez-t.s h2 {
+      font-size: clamp(1.9rem, 3.8vw, 3.2rem);
+      margin-bottom: 6px;
+    }
+
+    .ez-t.s p {
+      margin: 0;
+      color: #fde68a;
+      font-weight: 600;
+    }
+
+    .ez-btn {
+      border: 1px solid rgba(255, 255, 255, 0.28) !important;
+      padding: 13px 28px !important;
+    }
+
+    .ez-panel {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 52%;
+      width: 60vw;
+      height: min(38vh, 340px);
+      margin-top: calc(min(38vh, 340px) / -2);
+      margin-left: -30vw;
+      background: #772d00;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 8px;
+      opacity: 0;
+      will-change: opacity, transform;
+    }
+
+    .ez-lbl {
+      position: absolute;
+      z-index: 4;
+      left: 0;
+      top: 0;
+      font-weight: 700;
+      font-size: clamp(0.8rem, 1.3vw, 1.1rem);
+      color: #ffffff;
+      opacity: 0;
+      pointer-events: none;
+      will-change: transform, opacity;
+      white-space: nowrap;
+    }
+
+    .ez-wheel {
+      position: absolute;
+      z-index: 4;
+      right: 5vw;
+      top: 50%;
+      width: min(62vh, 42vw, 480px);
+      aspect-ratio: 1;
+      margin-top: calc(min(62vh, 42vw, 480px) / -2);
+      opacity: 0;
+      pointer-events: none;
+      will-change: transform, opacity;
+    }
+
+    .ez-wheel svg {
+      width: 100%;
+      height: 100%;
+      block-size: 100%;
+      overflow: visible;
+    }
+
+    .ez-wheel .wd {
+      cursor: pointer;
+      will-change: transform, opacity;
+    }
+
+    .ez-wheel text {
+      pointer-events: none;
+      font-family: inherit;
+      font-weight: 700;
+      fill: #ffffff;
+      font-size: 15px;
+    }
+
+    .ez-dots {
+      position: absolute;
+      z-index: 5;
+      right: 2.2vw;
+      top: 50%;
+      translate: 0 -50%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: flex-end;
+    }
+
+    .ez-dots button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: none;
+      border: 0;
+      color: #ffffff;
+      font: inherit;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .ez-dots button span {
+      opacity: 0;
+      translate: 6px 0;
+      transition: 0.3s;
+    }
+
+    .ez-dots button.on span,
+    .ez-dots button:hover span {
+      opacity: 1;
+      translate: 0 0;
+    }
+
+    .ez-dots i {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      transition: background 0.3s, scale 0.3s;
+    }
+
+    .ez-dots .on i {
+      background: #ffffff;
+      scale: 1.25;
+    }
+
+    .ez-bar {
+      position: absolute;
+      z-index: 5;
+      left: 0;
+      bottom: 0;
+      height: 4px;
+      width: 100%;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      background: linear-gradient(90deg, #772d00, #ea580c);
+    }
+
+    .ez-mouse {
+      position: absolute;
+      z-index: 5;
+      left: 50%;
+      bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+      translate: -50% 0;
+      width: 26px;
+      height: 42px;
+      border: 1.5px solid rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      transition: opacity 0.4s;
+    }
+
+    .ez-mouse::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 8px;
+      width: 4px;
+      height: 8px;
+      margin-left: -2px;
+      border-radius: 4px;
+      background: #ffffff;
+      animation: ezM 1.6s infinite;
+    }
+
+    @keyframes ezM {
+      0% { opacity: 1; translate: 0 0; }
+      80% { opacity: 0; translate: 0 14px; }
+      100% { opacity: 0; }
+    }
+
+    @media (max-width: 800px) {
+      .ez-pin {
+        min-height: 480px;
+      }
+
+      .ez-t {
+        left: 4vw;
+        right: 4vw;
+        top: auto;
+        bottom: 58px;
+        max-width: none;
+        padding: 16px 18px;
+      }
+
+      .ez-t h1,
+      .ez-t h2 {
+        font-size: clamp(1.65rem, 6vw, 2.35rem);
+        margin-bottom: 8px;
+      }
+
+      .ez-t p {
+        font-size: 0.88rem;
+        margin-bottom: 12px;
+      }
+
+      .ez-t.s {
+        top: 24px;
+        bottom: auto;
+      }
+
+      .ez-panel {
+        width: 92vw;
+        margin-left: -46vw;
+      }
+
+      .ez-wheel {
+        right: auto;
+        left: 50%;
+        width: min(72vw, 33vh);
+        margin-left: calc(min(72vw, 33vh) / -2);
+        top: 27%;
+        margin-top: calc(min(72vw, 33vh) / -2);
+      }
+
+      .ez-dots span {
+        display: none;
+      }
+
+      .ez-dots {
+        right: 10px;
+      }
+
+      .ez-mouse {
+        bottom: 14px;
+        width: 22px;
+        height: 36px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ez-mouse::after {
+        animation: none;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       ANIMATION 2: WHY YOU SHOULD BUY FROM US (.ew) — animationsection/erawat-why.html + index.html cards
+       -------------------------------------------------------------------------- */
+    .ew {
+      position: relative;
+      height: 310vh;
+      background-color: #f1f4f9;
+      border-block: 1px solid #e2e8f0;
+      color: #0b0c10;
+      font-family: var(--font-body, "Poppins", sans-serif);
+      scroll-margin-top: var(--header-actual-h, 110px);
+    }
+
+    .ew * {
+      box-sizing: border-box;
+    }
+
+    .ew-pin {
+      position: sticky;
+      top: var(--header-actual-h, 110px);
+      height: calc(100vh - var(--header-actual-h, 110px));
+      min-height: 540px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: clamp(16px, 2.5vh, 32px) 0;
+      contain: layout paint;
+    }
+
+    .ew-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .ew-head {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: clamp(1.5rem, 3vw, 3rem);
+      margin-bottom: clamp(22px, 3.6vh, 42px);
+    }
+
+    .ew h2 {
+      margin: 0 !important;
+      font-size: clamp(1.85rem, 1.5rem + 1.15vw, 2.65rem) !important;
+      line-height: 1.12 !important;
+      font-weight: 700 !important;
+      color: #000000 !important;
+    }
+
+    .ew h2 .w {
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: top;
+      padding-bottom: 0.12em;
+      margin-bottom: -0.12em;
+      margin-right: 0.22em;
+    }
+
+    .ew h2 .w > span {
+      display: inline-block;
+      will-change: transform;
+    }
+
+    .ew-sub {
+      max-width: 34rem;
+      margin: 0;
+      color: #556987 !important;
+      font-size: clamp(0.86rem, 0.95vw, 1rem) !important;
+      line-height: 1.6 !important;
+    }
+
+    .ew-row {
+      position: relative;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(1.15rem, 2vw, 1.85rem);
+      perspective: 1500px;
+    }
+
+    /* Card Design from index.html (.mfg-card) */
+    .ew-card.mfg-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      border-radius: 0px !important;
+      background: #ffffff !important;
+      min-height: clamp(250px, 37vh, 330px) !important;
+      height: auto !important;
+      max-height: none !important;
+      box-sizing: border-box;
+      overflow: visible !important;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      will-change: transform, opacity;
+      transition: border-color 0.45s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .ew-card.mfg-card .mfg-card__badge {
+      transition: transform 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    #ew-chip,
+    .ew-sub {
+      will-change: transform, opacity;
+    }
+
+    .ew-prog i b {
+      will-change: transform;
+    }
+
+    .mfg-card__link {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100% !important;
+      flex: 1 1 auto;
+      text-decoration: none;
+      color: inherit;
+      padding: clamp(1.2rem, 1.6vw, 1.5rem) clamp(1rem, 1.4vw, 1.35rem) clamp(0.9rem, 1.2vw, 1.1rem) !important;
+      border-radius: inherit;
+      box-sizing: border-box;
+      position: relative;
+      overflow: visible !important;
+    }
+
+    .mfg-card__badge {
+      position: absolute;
+      top: 14px !important;
+      left: -6px !important;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 92px !important;
+      height: 64px !important;
+      padding: 0 10px !important;
+      border-radius: 8px 14px 14px 3px !important;
+      font-weight: 800;
+      font-size: 0.92rem !important;
+      color: #ffffff;
+      z-index: 5;
+      transition: transform 0.3s ease;
+    }
+
+    .mfg-card:hover .mfg-card__badge,
+    .mfg-card.is-spot .mfg-card__badge {
+      transform: scale(1.06);
+    }
+
+    .mfg-card__badge::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 6px 6px 0 !important;
+    }
+
+    /* Card 1: Lime Green Theme */
+    .mfg-card--green {
+      border: 2px solid #84cc16 !important;
+    }
+
+    .mfg-card--green .mfg-card__badge {
+      background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
+    }
+
+    .mfg-card--green .mfg-card__badge::before {
+      border-color: transparent #3f6212 transparent transparent;
+    }
+
+    .mfg-card--green .mfg-card__headline {
+      color: #000000 !important;
+    }
+
+    .mfg-card--green .mfg-card__readmore {
+      color: #65a30d;
+      text-decoration-color: #84cc16;
+    }
+
+    .mfg-card--green:hover,
+    .mfg-card--green.is-spot {
+      border-color: #65a30d !important;
+      background: linear-gradient(180deg, #ffffff 55%, #f7fee7 100%) !important;
+    }
+
+    .mfg-card--green:hover .mfg-card__readmore,
+    .mfg-card--green.is-spot .mfg-card__readmore {
+      color: #3f6212;
+      text-decoration-color: #3f6212;
+      text-decoration-thickness: 2.5px;
+    }
+
+    /* Card 2: Golden Yellow Theme */
+    .mfg-card--yellow {
+      border: 2px solid #eab308 !important;
+    }
+
+    .mfg-card--yellow .mfg-card__badge {
+      background: linear-gradient(135deg, #facc15 0%, #ca8a04 100%);
+    }
+
+    .mfg-card--yellow .mfg-card__badge::before {
+      border-color: transparent #854d0e transparent transparent;
+    }
+
+    .mfg-card--yellow .mfg-card__headline {
+      color: #000000 !important;
+    }
+
+    .mfg-card--yellow .mfg-card__readmore {
+      color: #ca8a04;
+      text-decoration-color: #eab308;
+    }
+
+    .mfg-card--yellow:hover,
+    .mfg-card--yellow.is-spot {
+      border-color: #ca8a04 !important;
+      background: linear-gradient(180deg, #ffffff 55%, #fefce8 100%) !important;
+    }
+
+    .mfg-card--yellow:hover .mfg-card__readmore,
+    .mfg-card--yellow.is-spot .mfg-card__readmore {
+      color: #854d0e;
+      text-decoration-color: #854d0e;
+      text-decoration-thickness: 2.5px;
+    }
+
+    /* Card 3: Warm Orange Theme */
+    .mfg-card--orange {
+      border: 2px solid #f97316 !important;
+    }
+
+    .mfg-card--orange .mfg-card__badge {
+      background: linear-gradient(135deg, #fb923c 0%, #ea580c 100%);
+    }
+
+    .mfg-card--orange .mfg-card__badge::before {
+      border-color: transparent #9a3412 transparent transparent;
+    }
+
+    .mfg-card--orange .mfg-card__headline {
+      color: #000000 !important;
+    }
+
+    .mfg-card--orange .mfg-card__readmore {
+      color: #ea580c;
+      text-decoration-color: #f97316;
+    }
+
+    .mfg-card--orange:hover,
+    .mfg-card--orange.is-spot {
+      border-color: #ea580c !important;
+      background: linear-gradient(180deg, #ffffff 55%, #fff7ed 100%) !important;
+    }
+
+    .mfg-card--orange:hover .mfg-card__readmore,
+    .mfg-card--orange.is-spot .mfg-card__readmore {
+      color: #9a3412;
+      text-decoration-color: #9a3412;
+      text-decoration-thickness: 2.5px;
+    }
+
+    .mfg-card__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 100% !important;
+      flex: 1 1 auto;
+      justify-content: space-between;
+      gap: 6px !important;
+      box-sizing: border-box;
+    }
+
+    .mfg-card__content {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      padding-top: 24px;
+    }
+
+    .mfg-card__category {
+      font-size: clamp(0.78rem, 0.9vw, 0.88rem) !important;
+      font-weight: 600;
+      color: #64748b;
+      line-height: 1.2;
+    }
+
+    .mfg-card__headline {
+      font-family: var(--font-heading, "Poppins", sans-serif);
+      font-size: clamp(1.18rem, 1.4vw, 1.42rem) !important;
+      font-weight: 700 !important;
+      line-height: 1.18;
+      margin: 4px 0 6px !important;
+      color: #000000 !important;
+    }
+
+    .mfg-card__desc {
+      font-size: clamp(0.76rem, 0.82vw, 0.84rem) !important;
+      line-height: 1.48 !important;
+      color: #64748b;
+      margin: 0;
+      max-width: 30ch;
+    }
+
+    .mfg-card__action {
+      padding-top: 10px !important;
+      padding-bottom: 4px !important;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .mfg-card__readmore {
+      display: inline-block;
+      font-family: var(--font-body, "Poppins", sans-serif);
+      font-size: 0.92rem;
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+      text-decoration-thickness: 1.5px;
+      letter-spacing: 0.02em;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .ew-prog {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: clamp(20px, 3vh, 30px);
+    }
+
+    .ew-prog i {
+      width: 48px;
+      height: 4px;
+      border-radius: 4px;
+      background: rgba(119, 45, 0, 0.16);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .ew-prog i b {
+      position: absolute;
+      inset: 0;
+      background: #772d00;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+    }
+
+    @media (max-width: 800px) {
+      .ew-pin {
+        min-height: 480px;
+      }
+
+      .ew-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+        margin-bottom: 18px;
+      }
+
+      .ew-sub {
+        margin: 0;
+        max-width: none;
+      }
+
+      .ew-row {
+        display: block;
+        height: clamp(240px, 40vh, 310px);
+      }
+
+      .ew-card.mfg-card {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        min-height: 0 !important;
+        height: auto !important;
+        left: 50%;
+        width: 82vw;
+        margin-left: -41vw;
+      }
+
+      .mfg-card__badge {
+        min-width: 72px !important;
+        height: 52px !important;
+        font-size: 0.82rem !important;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       ANIMATION 3: WHO WE ARE (.ww) — animationsection/erawat-who.html + index.html
+       -------------------------------------------------------------------------- */
+    .ww {
+      position: relative;
+      height: 260vh;
+      background: #ffffff;
+      color: #000000;
+      border-block-start: 1px solid #e2e8f0;
+      font-family: var(--font-body, "Poppins", sans-serif);
+      scroll-margin-top: var(--header-actual-h, 110px);
+    }
+
+    .ww * {
+      box-sizing: border-box;
+    }
+
+    .ww-pin {
+      position: sticky;
+      top: var(--header-actual-h, 110px);
+      height: calc(100vh - var(--header-actual-h, 110px));
+      min-height: 540px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(20px, 3vh, 40px) 0;
+      contain: layout paint;
+    }
+
+    #ww-text,
+    #ww-chip {
+      will-change: transform, opacity;
+    }
+
+    .ww-in {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: clamp(2rem, 4.5vw, 5rem);
+      align-items: center;
+    }
+
+    .ww h2 {
+      margin: 0 0 18px !important;
+      font-size: clamp(2rem, 1.8rem + 1.3vw, 2.85rem) !important;
+      line-height: 1.12 !important;
+      font-weight: 700 !important;
+      color: #000000 !important;
+    }
+
+    .ww h2 .w {
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: top;
+      padding-bottom: 0.12em;
+      margin-bottom: -0.12em;
+      margin-right: 0.22em;
+    }
+
+    .ww h2 .w > span {
+      display: inline-block;
+      will-change: transform;
+    }
+
+    .ww p {
+      margin: 0 0 16px;
+      font-size: clamp(0.95rem, 1.02vw, 1.08rem);
+      line-height: 1.68;
+      color: #475569;
+      max-width: 60ch;
+    }
+
+    .ww p a {
+      color: #1d4ed8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .ww p a:hover {
+      text-decoration: underline;
+    }
+
+    .ww p .sw {
+      opacity: 0.28;
+      will-change: opacity;
+    }
+
+    .ww-cta {
+      margin-top: 20px;
+      will-change: opacity, transform;
+    }
+
+    .ww-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(12px, 1.6vw, 20px);
+      perspective: 1400px;
+    }
+
+    .ww-tile {
+      position: relative;
+      aspect-ratio: 1;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      will-change: transform, opacity;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+    }
+
+    .ww-art {
+      position: absolute;
+      inset: -8%;
+      width: 116% !important;
+      height: 116% !important;
+      max-width: none !important;
+      max-inline-size: none !important;
+      block-size: 116% !important;
+      object-fit: cover;
+      display: block;
+      will-change: transform, scale;
+      transition: scale 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .ww-tile:hover .ww-art {
+      scale: 1.06;
+    }
+
+    @media (max-width: 900px) {
+      .ww {
+        height: auto;
+      }
+
+      .ww-pin {
+        position: relative;
+        top: auto;
+        height: auto;
+        min-height: 0;
+        overflow: hidden;
+        padding: 3.5rem 0;
+      }
+
+      .ww-in {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ww p .sw {
+        opacity: 1;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       ANIMATION 4: PLANT & TECHNOLOGY (.pv) — animationsection/erawat-plant.html + index.html
+       -------------------------------------------------------------------------- */
+    .pv {
+      position: relative;
+      height: 270vh;
+      background: #ffffff;
+      color: #000000;
+      border-block-start: 1px solid #e2e8f0;
+      border-block-end: 1px solid #e2e8f0;
+      font-family: var(--font-body, "Poppins", sans-serif);
+      scroll-margin-top: var(--header-actual-h, 110px);
+    }
+
+    .pv * {
+      box-sizing: border-box;
+    }
+
+    .pv-pin {
+      position: sticky;
+      top: var(--header-actual-h, 110px);
+      height: calc(100vh - var(--header-actual-h, 110px));
+      min-height: 540px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: clamp(16px, 2.5vh, 32px) 0;
+      contain: layout paint;
+    }
+
+    .pv-inner {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pv-head {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: clamp(1.5rem, 3.5vw, 3.5rem);
+      margin-bottom: clamp(18px, 3vh, 30px);
+    }
+
+    .pv-head > div:first-child {
+      flex: 1 1 54%;
+    }
+
+    .pv h2 {
+      margin: 0 !important;
+      font-size: clamp(1.75rem, 1.4rem + 1.25vw, 2.5rem) !important;
+      line-height: 1.15 !important;
+      font-weight: 700 !important;
+      color: #000000 !important;
+      max-width: 20em;
+    }
+
+    .pv h2 .w {
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: top;
+      padding-bottom: 0.12em;
+      margin-bottom: -0.12em;
+      margin-right: 0.22em;
+    }
+
+    .pv h2 .w > span {
+      display: inline-block;
+      will-change: transform;
+    }
+
+    .pv-head-right {
+      flex: 0 1 46%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .pv-sub {
+      margin: 0;
+      color: #475569;
+      font-size: clamp(0.88rem, 0.96vw, 1rem);
+      line-height: 1.62;
+      max-inline-size: none;
+    }
+
+    .pv-slot {
+      width: 100%;
+      aspect-ratio: 2.35 / 1;
+      max-height: calc(100vh - var(--header-actual-h, 110px) - 245px);
+      min-height: 220px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .pv-media {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      overflow: hidden;
+      background: #0b111e;
+      will-change: clip-path;
+    }
+
+    .pv-img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      max-width: none !important;
+      max-inline-size: none !important;
+      display: block;
+      transform-origin: 50% 50%;
+      will-change: transform;
+      backface-visibility: hidden;
+    }
+
+    .pv-shade {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(6, 12, 20, 0.25) 0%, rgba(6, 12, 20, 0.12) 45%, rgba(6, 12, 20, 0.78) 100%);
+      opacity: 0.5;
+      will-change: opacity;
+    }
+
+    .pv-play {
+      position: absolute;
+      z-index: 4;
+      left: 0;
+      top: 0;
+      width: 96px;
+      height: 96px;
+      margin: -48px 0 0 -48px;
+      border: 0;
+      padding: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      will-change: transform, opacity;
+    }
+
+    .pv-play::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.65);
+      animation: pvP 2.2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    }
+
+    .pv-play i {
+      position: relative;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background: #ffffff;
+      display: grid;
+      place-items: center;
+      transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.32s ease;
+    }
+
+    .pv-play:hover i {
+      transform: scale(1.1);
+      background: #e53935;
+    }
+
+    .pv-play i::after {
+      content: "";
+      margin-left: 5px;
+      border-left: 19px solid #e53935;
+      border-top: 11px solid transparent;
+      border-bottom: 11px solid transparent;
+      transition: border-left-color 0.3s ease;
+    }
+
+    .pv-play:hover i::after {
+      border-left-color: #ffffff;
+    }
+
+    @keyframes pvP {
+      0% { transform: scale(0.85); opacity: 0.9; }
+      100% { transform: scale(1.45); opacity: 0; }
+    }
+
+    .pv-stats {
+      position: absolute;
+      z-index: 3;
+      left: 0;
+      right: 0;
+      bottom: clamp(18px, 4.5vh, 48px);
+      width: min(1040px, 90vw);
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      pointer-events: none;
+    }
+
+    .pv-stat {
+      padding: 18px 22px;
+      border-radius: 8px;
+      background: rgba(15, 23, 42, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-top: 3px solid #772d00;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #ffffff;
+      will-change: transform, opacity;
+    }
+
+    .pv-stat b {
+      display: block;
+      font-size: clamp(1.5rem, 2.6vw, 2.25rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      white-space: nowrap;
+    }
+
+    .pv-stat span {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    @media (max-width: 800px) {
+      .pv-pin {
+        min-height: 500px;
+      }
+
+      .pv-head {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+
+      .pv-head-right {
+        gap: 10px;
+      }
+
+      .pv-slot {
+        aspect-ratio: 16 / 10;
+        min-height: 180px;
+        border-radius: 8px;
+      }
+
+      .pv-play {
+        width: 78px;
+        height: 78px;
+        margin: -39px 0 0 -39px;
+      }
+
+      .pv-play i {
+        width: 54px;
+        height: 54px;
+      }
+
+      .pv-play i::after {
+        border-left-width: 15px;
+        border-top-width: 9px;
+        border-bottom-width: 9px;
+      }
+
+      .pv-stats {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        bottom: 16px;
+      }
+
+      .pv-stat {
+        padding: 10px 14px;
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+      }
+
+      .pv-stat b {
+        font-size: clamp(1.1rem, 4vw, 1.35rem);
+        white-space: nowrap;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .pv-play::before {
+        animation: none;
+      }
+    }
+
+    /* --------------------------------------------------------------------------
+       5. OUR MISSION SECTION (WHITE BACKGROUND FOR INDEX-BANNER4.HTML)
+       -------------------------------------------------------------------------- */
+    .section--mission {
+      position: relative !important;
+      width: 100% !important;
+      height: auto !important;
+      min-height: clamp(320px, 44vh, 480px) !important;
+      max-height: none !important;
+      padding: 0 !important;
+      padding-block: clamp(4rem, 7.5vw, 6.5rem) !important;
+      margin: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      overflow: hidden !important;
+      background-color: #ffffff !important;
+      background: #ffffff !important;
+      border-block-start: 1px solid #e2e8f0 !important;
+      box-sizing: border-box !important;
+      scroll-margin-top: var(--header-actual-h, 110px);
+    }
+
+    .mission-parallax__bg,
+    .mission-parallax__overlay {
+      display: none !important;
+    }
+
+    .mission-parallax__container {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      max-width: 1080px;
+      margin-inline: auto;
+      padding-inline: clamp(1.25rem, 5vw, 3rem);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .mission-parallax__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(1.1rem, 2.2vh, 1.75rem);
+      text-align: center;
+    }
+
+    .mission-card__text {
+      font-family: var(--font-heading, "Poppins", sans-serif);
+      font-size: clamp(1.35rem, 1.15rem + 1.2vw, 2.15rem);
+      font-weight: 600;
+      color: #000000 !important;
+      line-height: 1.58;
+      margin: 0;
+      text-align: center;
+      letter-spacing: -0.01em;
+    }
+
+    /* --------------------------------------------------------------------------
+       6. SEND INQUIRY SECTION: 2-PART SPLIT (MATCHING INDEX.HTML)
+       -------------------------------------------------------------------------- */
+    .section--editorial {
+      background-color: #f1f5f9 !important;
+      border-block-start: 1px solid #e2e8f0 !important;
+      min-height: 100vh !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: center !important;
+      padding-block: clamp(2.5rem, 4vh, 4rem) !important;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      box-sizing: border-box !important;
+      scroll-margin-top: var(--header-actual-h, 110px);
+    }
+
+    .inquiry-split-layout {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      gap: 2rem !important;
+      align-items: stretch !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    @media (min-width: 993px) {
+      .inquiry-split-layout {
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+        gap: clamp(2rem, 3.5vw, 3.5rem) !important;
+        align-items: stretch !important;
+      }
+    }
+
+    .inquiry-split__left {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 1.5rem !important;
+      box-sizing: border-box !important;
+    }
+
+    .inquiry-header-compact {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 0.65rem !important;
+      align-items: flex-start !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    .inquiry-header-compact .inquiry-heading {
+      font-family: var(--font-heading, "Poppins", sans-serif) !important;
+      font-size: clamp(2rem, 1.8rem + 1.2vw, 2.75rem) !important;
+      font-weight: 700 !important;
+      color: #000000 !important;
+      line-height: 1.15 !important;
+      margin: 0 !important;
+      max-width: 100% !important;
+      word-wrap: break-word !important;
+    }
+
+    .inquiry-header-compact .inquiry-lead {
+      font-size: 0.95rem !important;
+      color: #475569 !important;
+      line-height: 1.6 !important;
+      margin: 0 !important;
+      max-width: 48ch !important;
+    }
+
+    .form-grid-row--2 {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      gap: 1.25rem !important;
+      margin-block-end: 0.25rem !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    @media (min-width: 540px) {
+      .form-grid-row--2 {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1.25rem 1.75rem !important;
+      }
+    }
+
+    .editorial-submit-row {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      gap: 1.25rem !important;
+      margin-top: 1rem !important;
+      padding-top: 1.25rem !important;
+      border-top: 1px solid rgba(113, 113, 122, 0.35) !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    .inquiry-split__right {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 0 !important;
+      height: 100% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      box-sizing: border-box !important;
+    }
+
+    .inquiry-image-card {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 100% !important;
+      flex: 1 1 auto !important;
+      border-radius: 5px !important;
+      overflow: hidden !important;
+      box-sizing: border-box !important;
+    }
+
+    .inquiry-image-card__img {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: cover !important;
+      object-position: center !important;
+      display: block !important;
+      transition: transform 0.65s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    }
+
+    .inquiry-image-card:hover .inquiry-image-card__img {
+      transform: scale(1.04) !important;
+    }
+
+    @media (max-width: 992px) {
+      .inquiry-image-card {
+        min-height: 320px !important;
+        aspect-ratio: 16 / 10 !important;
+        height: auto !important;
+        flex: none !important;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .section--editorial {
+        min-height: auto !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <!-- ====================================================================
-       PAGE LOADER (ERAWAT ANIMATED SVG)
+       PAGE LOADER (ERAWAT ANIMATED SVG — INDEX-BANNER4 COLORS)
        ==================================================================== -->
   <div class="page-loader" id="pageLoader" role="status" aria-live="polite" aria-label="Loading Erawat Pharma Limited">
     <div class="page-loader__content">
-      <img
-        class="page-loader__icon"
-        src="images/erawat-loader.svg"
-        alt="Erawat Loading"
-        width="300"
-        height="240"
-      >
+      <svg class="page-loader__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" width="300" height="240" role="img" aria-label="Erawat Loading">
+        <defs>
+          <clipPath id="erawatGlobeClip">
+            <circle cx="66" cy="68" r="35.5" />
+          </clipPath>
+        </defs>
+
+        <!-- 1. Top-Left Tilted Wireframe Globe -->
+        <g class="erawat-globe-spin">
+          <circle cx="66" cy="68" r="36" fill="none" stroke="#000000" stroke-width="2.4" />
+          <g clip-path="url(#erawatGlobeClip)" fill="none" stroke="#000000" stroke-width="1.7">
+            <ellipse cx="66" cy="68" rx="12" ry="36" />
+            <ellipse cx="66" cy="68" rx="25" ry="36" />
+            <line x1="66" y1="32" x2="66" y2="104" />
+            <path d="M 30 53 Q 66 61 102 53" />
+            <line x1="30" y1="68" x2="102" y2="68" />
+            <path d="M 30 83 Q 66 75 102 83" />
+          </g>
+        </g>
+
+        <!-- 2. Stylized Geometric 'E' Outer Structure -->
+        <path class="erawat-outer-frame"
+          d="M 272 52 L 160 52 L 56 156 L 56 202 L 272 202"
+          fill="none"
+          stroke="#000000"
+          stroke-width="16"
+          stroke-linejoin="miter"
+          stroke-miterlimit="4" />
+        <!-- Solid Bottom Base Bar housing 'Erawat' -->
+        <rect x="48" y="182" width="224" height="32" fill="#000000" />
+
+        <!-- 3. Upper Inner Horizontal Bar (#202b3f) -->
+        <polygon class="erawat-bar-1"
+          points="154,96 272,96 272,112 138,112"
+          fill="#202b3f" />
+
+        <!-- 4. Lower Inner Horizontal Bar (#772d00) -->
+        <polygon class="erawat-bar-2"
+          points="116,138 272,138 272,154 100,154"
+          fill="#772d00" />
+
+        <!-- 5. 'Erawat' Wordmark inside Bottom Base Bar -->
+        <text class="erawat-wordmark"
+          x="166"
+          y="206"
+          text-anchor="middle"
+          font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="25"
+          font-weight="600"
+          letter-spacing="2.2"
+          fill="#ffffff">Erawat</text>
+      </svg>
     </div>
   </div>
 
   <a class="skip-link" href="#mainContent">Skip to main content</a>
 
   <!-- ====================================================================
-       1. STICKY HEADER
+       1. STICKY HEADER & TOP UTILITY BAR (MATCHING INDEX.HTML)
        ==================================================================== -->
   <header class="site-header">
+    <!-- Top Utility Bar -->
+    <div class="site-topbar">
+      <div class="site-topbar__inner">
+        <div class="site-topbar__left">
+          <div class="site-topbar__item">
+            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            <span class="site-topbar__muted">Email Us:</span>
+            <a href="mailto:info@erawatgroup.com" class="site-topbar__link">info@erawatgroup.com</a>
+          </div>
+
+          <span class="site-topbar__divider" aria-hidden="true"></span>
+
+          <div class="site-topbar__item">
+            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span class="site-topbar__muted">Phone:</span>
+            <a href="tel:+917316659100" class="site-topbar__link">+91 731 6659100</a>
+          </div>
+        </div>
+
+        <div class="site-topbar__right">
+          <div class="site-topbar__item">
+            <svg class="site-topbar__icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+              <path d="M4 15V4a2 2 0 0 1 2-2h8.5L20 7.5V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1" />
+              <path d="M2 15h10" />
+              <path d="m9 18 3-3-3-3" />
+            </svg>
+            <a href="request-sample.html" class="site-topbar__link site-topbar__link--highlight">Request Sample</a>
+          </div>
+
+          <span class="site-topbar__divider" aria-hidden="true"></span>
+
+          <a href="https://www.linkedin.com/company/erawat-pharma-limited" target="_blank" rel="noopener noreferrer"
+            class="site-topbar__social" aria-label="Follow Erawat on LinkedIn">
+            <svg class="site-topbar__social-icon" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"
+              aria-hidden="true">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.7a1.64 1.64 0 0 0-1.64 1.64c0 .91.73 1.64 1.64 1.64s1.64-.73 1.64-1.64A1.64 1.64 0 0 0 7.83 6.7Z" />
+            </svg>
+            <span class="site-topbar__social-text">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <div class="header__inner">
-      <a class="brand" href="index.html" aria-label="Erawat Pharma Limited Home" data-aos="fade-down" data-aos-duration="600">
+      <a class="brand" href="index.html" aria-label="Erawat Pharma Limited Home" data-aos="fade-down"
+        data-aos-duration="600">
         <span class="brand__logo-wrap">
-          <img
-            class="brand__logo"
-            src="images/logo_1.png"
-            alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine"
-            width="180"
-            height="48"
-          >
+          <img class="brand__logo" src="images/logo_1.png" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine"
+            width="180" height="48">
         </span>
       </a>
 
-      <button
-        type="button"
-        id="navToggle"
-        class="nav-toggle"
-        aria-controls="siteNav"
-        aria-expanded="false"
-      >
+      <button type="button" id="navToggle" class="nav-toggle" aria-controls="siteNav" aria-expanded="false">
         Menu
       </button>
 
-      <nav class="site-nav" id="siteNav" aria-label="Primary navigation" data-aos="fade-down" data-aos-duration="600" data-aos-delay="100">
+      <nav class="site-nav" id="siteNav" aria-label="Primary navigation" data-aos="fade-down" data-aos-duration="600"
+        data-aos-delay="100">
         <ul class="nav__list">
           <li><a class="nav__link" href="profile.html">About</a></li>
           <li><a class="nav__link" href="manufacturing-setup.html">Manufacturing Setup</a></li>
@@ -89,587 +2249,1436 @@
           <li><a class="nav__link" href="careers.html">Careers</a></li>
         </ul>
         <div class="nav__mobile-cta">
-          <a class="btn-gradient-pill" href="#getStartedSection"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Send Inquiry</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
+          <a class="btn-gradient-pill" href="#getStartedSection">
+            <span class="btn-anim__text">
+              <span class="btn-anim__text-track">
+                <span class="btn-anim__text-item">Send Inquiry</span>
+                <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
+              </span>
+            </span>
+            <span class="btn-anim__icon">
+              <span class="btn-anim__icon-track">
+                <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                  stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M4 2L8 6L4 10" />
+                </svg>
+                <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                  fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path d="M4 2L8 6L4 10" />
+                </svg>
+              </span>
+            </span>
+          </a>
         </div>
       </nav>
 
       <div class="header__actions" data-aos="fade-down" data-aos-duration="600" data-aos-delay="200">
-        <a class="btn-gradient-pill" href="#getStartedSection"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Send Inquiry</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
-        <button type="button" class="header__search-btn" id="headerSearchBtn" aria-label="Search site">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
+        <a class="btn-gradient-pill" href="#getStartedSection">
+          <span class="btn-anim__text">
+            <span class="btn-anim__text-track">
+              <span class="btn-anim__text-item">Send Inquiry</span>
+              <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
+            </span>
+          </span>
+          <span class="btn-anim__icon">
+            <span class="btn-anim__icon-track">
+              <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 2L8 6L4 10" />
+              </svg>
+              <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12"
+                fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M4 2L8 6L4 10" />
+              </svg>
+            </span>
+          </span>
+        </a>
       </div>
     </div>
   </header>
 
   <main id="mainContent">
-    <!-- ===== ERAWAT 4-SCENE SCROLL BANNER: paste where your current banner is (keep your own navbar) ===== -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<style>
-.ez{position:relative;height:560vh;background:#07070a;color:#fff;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif}
-.ez *{box-sizing:border-box}
-.ez-pin{position:sticky;top:0;height:100vh;overflow:hidden}
-.ez canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:2}
-.ez-vig{position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.6) 100%),linear-gradient(rgba(0,0,0,.4),transparent 25%)}
-.ez-t{position:absolute;z-index:4;left:6vw;top:50%;max-width:min(560px,86vw);opacity:0;pointer-events:none;will-change:opacity,transform;padding:34px 38px;border-radius:6px;backdrop-filter:blur(7px)}
-.ez-t h2{margin:0 0 14px;font-size:clamp(2.6rem,6vw,5.2rem);line-height:1;font-weight:800;letter-spacing:-.02em}
-.ez-t p{margin:0 0 22px;font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.6;color:#fff}
-.ez-t.g{background:rgba(190,16,22,.55)}.ez-t.h{background:rgba(24,140,60,.55)}.ez-t.f{background:rgba(20,22,56,.6)}
-.ez-t.s{left:0;right:0;margin:auto;text-align:center;top:11vh;padding:0;background:none;backdrop-filter:none;max-width:none}
-.ez-t.s h2{font-size:clamp(2rem,4.4vw,3.6rem);margin-bottom:6px}.ez-t.s p{margin:0;color:#ffd9d4}
-.ez-btn{display:inline-block;padding:15px 36px;border-radius:99px;background:linear-gradient(90deg,#c9191f,#f4571f);color:#fff;font-weight:800;letter-spacing:.05em;text-transform:uppercase;font-size:.9rem;text-decoration:none;box-shadow:0 12px 34px rgba(220,50,30,.4);transition:transform .25s}
-.ez-btn:hover{transform:translateY(-3px)}
-.ez-panel{position:absolute;z-index:1;left:50%;top:50%;width:60vw;height:42vh;margin:-21vh 0 0 -30vw;background:#e03a2a;border-radius:4px;opacity:0;box-shadow:0 30px 80px rgba(0,0,0,.5)}
-.ez-lbl{position:absolute;z-index:4;translate:-50% 0;font-weight:800;font-size:clamp(.8rem,1.4vw,1.15rem);opacity:0;pointer-events:none}
-.ez-wheel{position:absolute;z-index:4;right:7vw;top:50%;width:min(76vh,46vw,580px);aspect-ratio:1;margin-top:calc(min(76vh,46vw,580px)/-2);opacity:0;pointer-events:none}
-.ez-wheel svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 20px 40px rgba(0,0,0,.45))}
-.ez-wheel .wd{cursor:pointer}.ez-wheel text{pointer-events:none;font-family:inherit;font-weight:800;fill:#fff;font-size:15px}
-.ez-dots{position:absolute;z-index:5;right:2.2vw;top:50%;translate:0 -50%;display:flex;flex-direction:column;gap:14px;align-items:flex-end}
-.ez-dots button{display:flex;align-items:center;gap:10px;background:none;border:0;color:#fff;font:inherit;font-weight:600;font-size:.85rem;cursor:pointer;padding:0}
-.ez-dots button span{opacity:0;translate:6px 0;transition:.3s}.ez-dots button.on span,.ez-dots button:hover span{opacity:1;translate:0 0}
-.ez-dots i{width:11px;height:11px;border-radius:50%;border:2px solid #fff;transition:background .3s,scale .3s}.ez-dots .on i{background:#fff;scale:1.25}
-.ez-bar{position:absolute;z-index:5;left:0;bottom:0;height:4px;width:100%;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,#c9191f,#f4571f)}
-.ez-mouse{position:absolute;z-index:5;left:50%;bottom:calc(26px + env(safe-area-inset-bottom,0px));translate:-50% 0;width:28px;height:46px;border:1.5px solid #fff;border-radius:20px;transition:opacity .4s}
-.ez-mouse::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:4px;background:#fff;animation:ezM 1.6s infinite}
-@keyframes ezM{0%{opacity:1;translate:0 0}80%{opacity:0;translate:0 16px}100%{opacity:0}}
-@media (max-width:800px){
-.ez-t{left:4vw;right:4vw;top:auto;bottom:9vh;max-width:none;padding:20px 22px}.ez-t.s{top:11vh;bottom:auto}
-.ez-panel{width:92vw;margin-left:-46vw}.ez-wheel{right:auto;left:50%;width:min(88vw,50vh);margin-left:calc(min(88vw,50vh)/-2);top:36%;margin-top:calc(min(88vw,50vh)/-2)}
-.ez-dots span{display:none}.ez-dots{right:10px}}
-@media (prefers-reduced-motion:reduce){.ez-mouse::after{animation:none}}
+    <!-- Shared Sticky Header Height Cache & Frame-Rate-Independent Motion Utilities -->
+    <script>
+      (function () {
+        var hdr = document.querySelector('.site-header');
+        var cachedH = hdr ? hdr.offsetHeight : 110;
+        function updateHeaderHeight() {
+          cachedH = hdr ? hdr.offsetHeight : 110;
+          document.documentElement.style.setProperty('--header-actual-h', cachedH + 'px');
+        }
+        window.__erawatHdrH = function () { return cachedH; };
+        updateHeaderHeight();
+        window.addEventListener('resize', updateHeaderHeight, { passive: true });
+        window.addEventListener('load', updateHeaderHeight);
+        if (typeof ResizeObserver !== 'undefined' && hdr) {
+          new ResizeObserver(updateHeaderHeight).observe(hdr);
+        }
 
-/* Seamless Header Integration with 3D Banner */
-body:has(.ez) .site-header:not(.is-past-ez) {
-  background: linear-gradient(180deg, rgba(7, 7, 10, 0.92) 0%, rgba(7, 7, 10, 0.45) 65%, transparent 100%) !important;
-  box-shadow: none !important;
-  border-block-end: none !important;
-  border-bottom: none !important;
-  backdrop-filter: blur(8px) !important;
-  -webkit-backdrop-filter: blur(8px) !important;
-}
-body:has(.ez) .site-header:not(.is-past-ez) .brand__logo {
-  filter: brightness(0) invert(1) !important;
-}
-body:has(.ez) .site-header:not(.is-past-ez) .nav__link {
-  color: #ffffff !important;
-}
-body:has(.ez) .site-header:not(.is-past-ez) .header__search-btn {
-  border-color: rgba(255, 255, 255, 0.3) !important;
-  color: #ffffff !important;
-}
-body:has(.ez) .site-header:not(.is-past-ez) .nav-toggle {
-  background-color: rgba(255, 255, 255, 0.12) !important;
-  color: #ffffff !important;
-  border-color: rgba(255, 255, 255, 0.25) !important;
-}
-</style>
-<section class="ez" id="ez" aria-label="Erawat capsule range">
- <div class="ez-pin" id="ez-pin">
-  <div class="ez-panel" id="ez-panel"></div>
-  <canvas id="ez-gl" aria-hidden="true"></canvas>
-  <div class="ez-vig"></div>
-  <div class="ez-t g"><h2>Gelatin</h2><p>High Quality TSE/BSE Free Gelatin Capsules giving outstanding performance on all varieties of high speed filling machine available in the world.</p><a class="ez-btn" href="#manufacturingSection">Know more</a></div>
-  <div class="ez-t h"><h2>HPMC</h2><p>Providing a range of HPMC capsules in vivid colors suitable for nutraceuticals, herbal as well as regular applications.</p><a class="ez-btn" href="#manufacturingSection">Know more</a></div>
-  <div class="ez-t s"><h2>Every size you fill</h2><p>00, 0EL, 0, 1, 2, 3, 4 and 5</p></div>
-  <div class="ez-t f"><h2>Made for every formulation</h2><p>Sticky free, preservative free, liquid filling, TSE/BSE free, SLS free, metallic, and pearl &amp; golden capsules.</p><a class="ez-btn" href="#getStartedSection"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Send Inquiry</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a></div>
-  <div id="ez-labels"></div>
-  <div class="ez-wheel" id="ez-wheel"><svg viewBox="-230 -230 460 460" id="ez-svg" role="img" aria-label="Capsule types"></svg></div>
-  <div class="ez-dots" id="ez-dots"></div>
-  <div class="ez-mouse" id="ez-m"></div>
-  <div class="ez-bar" id="ez-bar"></div>
- </div>
-</section>
-<script>
-(function(){
-var sec=document.getElementById('ez'),pin=document.getElementById('ez-pin'),cv=document.getElementById('ez-gl'),texts=[].slice.call(sec.querySelectorAll('.ez-t')),panel=document.getElementById('ez-panel'),wheel=document.getElementById('ez-wheel'),svg=document.getElementById('ez-svg'),lblBox=document.getElementById('ez-labels'),dotBox=document.getElementById('ez-dots'),mouse=document.getElementById('ez-m'),bar=document.getElementById('ez-bar');
-var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,run=false,ready=false,loading=false,tp=0,sp=0,W=1,H=1,mx=0,my=0,hov=-1,R,S,C,fw,fr,hero,ha,hb,row=[],rowG,fd=[],dm,flip;
-function L(a,b,t){return a+(b-a)*t}function cl(v,a,b){return Math.min(b==null?1:b,Math.max(a||0,v))}function ss(t){t=cl(t);return t*t*(3-2*t)}
-/* palettes: A half, B half, background, name */
-var PAL=[{a:[.91,.91,.93],b:[.77,.09,.11],bg:[120,12,18],n:'Gelatin'},{a:[.79,.86,.23],b:[.11,.6,.28],bg:[10,96,44],n:'HPMC'},{a:[.95,.95,.97],b:[.17,.16,.49],bg:[96,34,24],n:'Sizes'},{a:[.95,.48,.12],b:[.23,.18,.7],bg:[26,32,100],n:'Features'}];
-var SZ=['00','0EL','0','1','2','3','4','5'],RT=[1,.88,.81,.71,.65,.58,.5,.43];
-var WH=[['Sticky Free','Capsules'],['Preservative','Free','Capsules'],['Liquid Filling','Capsules'],['TSE/BSE','Free','Capsules'],['SLS Free','Capsules'],['Metallic','Capsules'],['Pearl &','Golden','Capsules']],WC=['#b08560','#f0891f','#f06b6b','#5b7184','#2aa6c0','#9a6fb0','#9bb838'];
-/* DOM builders */
-var lbls=SZ.map(function(s){var d=document.createElement('div');d.className='ez-lbl';d.textContent=s;lblBox.appendChild(d);return d});
-var dots=PAL.map(function(p,i){var b=document.createElement('button');b.innerHTML='<span>'+p.n+'</span><i></i>';b.setAttribute('aria-label',p.n);b.onclick=function(){go((i+.5)/4)};dotBox.appendChild(b);return b});
-function P2(r,a){a=a*Math.PI/180;return [r*Math.cos(a),r*Math.sin(a)]}
-var wg=WH.map(function(w,i){var c=-100+i*360/7,a0=c-180/7+1.2,a1=c+180/7-1.2,o0=P2(200,a0),o1=P2(200,a1),i1=P2(84,a1),i0=P2(84,a0);
-var g=document.createElementNS('http://www.w3.org/2000/svg','g');g.setAttribute('class','wd');
-g.innerHTML='<path d="M'+o0+' A200 200 0 0 1 '+o1+' L'+i1+' A84 84 0 0 0 '+i0+'Z" fill="'+WC[i]+'" stroke="#fff" stroke-width="3"/>';
-var m=P2(142,c),t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('text-anchor','middle');
-t.innerHTML=w.map(function(l,k){return '<tspan x="'+m[0]+'" y="'+(m[1]+(k-(w.length-1)/2)*17+5)+'">'+l+'</tspan>'}).join('');g.appendChild(t);
-g.addEventListener('pointerenter',function(){hov=i});g.addEventListener('pointerleave',function(){hov=-1});svg.appendChild(g);return {g:g,c:c}});
-var ctr=document.createElementNS('http://www.w3.org/2000/svg','g');ctr.innerHTML='<circle r="72" fill="#fff"/><g transform="rotate(-40) scale(.9)"><rect x="-17" y="-40" width="34" height="40" rx="17" fill="#d8232a"/><rect x="-17" y="-22" width="34" height="22" fill="#d8232a"/><rect x="-17" y="0" width="34" height="40" rx="17" fill="#ececf0"/><rect x="-17" y="0" width="34" height="22" fill="#ececf0"/></g>';svg.appendChild(ctr);
-function prog(){var r=sec.getBoundingClientRect();return cl(-r.top/Math.max(1,r.height-innerHeight))}
-function go(f){var top=sec.getBoundingClientRect().top+scrollY,max=sec.offsetHeight-innerHeight;scrollTo({top:top+max*f,behavior:reduce?'auto':'smooth'})}
-/* 3D */
-function init(){
-if(ready)return;
-try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});}catch(e){return}
-R.setPixelRatio(Math.min(devicePixelRatio,2));
-S=new THREE.Scene();S.fog=new THREE.Fog(0x07070a,12,50);C=new THREE.PerspectiveCamera(36,1,.1,90);S.add(C);
-S.add(new THREE.HemisphereLight(0xffffff,0x331010,.8));
-var k1=new THREE.DirectionalLight(0xffffff,1.5);k1.position.set(4,6,8);S.add(k1);
-var k2=new THREE.PointLight(0xff5a30,1.8,40);k2.position.set(-6,-3,2);S.add(k2);
-var pts=[new THREE.Vector2(0,0),new THREE.Vector2(.6,0),new THREE.Vector2(.6,1.1)];for(var i=1;i<=14;i++){var a=i/14*Math.PI/2;pts.push(new THREE.Vector2(.6*Math.cos(a),1.1+.6*Math.sin(a)))}
-var geo=new THREE.LatheGeometry(pts,40),M=function(c,o){return new THREE.MeshStandardMaterial({color:c,roughness:.38,metalness:.05,side:THREE.DoubleSide,transparent:true,opacity:1})};
-var N=110;fw=new THREE.InstancedMesh(geo,M(0xffffff),N);fr=new THREE.InstancedMesh(geo,M(0xff0000),N);S.add(fw,fr);
-for(i=0;i<N;i++)fd.push({x:(Math.random()-.5)*32,y:(Math.random()-.5)*17,z:-66+Math.random()*80,s:.8+Math.random()*1.1,rx:Math.random()*6,ry:Math.random()*6,rz:Math.random()*6,sp:(Math.random()-.5)*.6});
-dm=new THREE.Object3D();flip=new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1,0,0),Math.PI);
-function hm(c){return new THREE.MeshPhysicalMaterial({color:c,roughness:.14,clearcoat:1,clearcoatRoughness:.05,side:THREE.DoubleSide})}
-hero=new THREE.Group();ha=new THREE.Mesh(geo,hm(0xffffff));hb=new THREE.Mesh(geo,hm(0xff0000));hb.rotation.z=Math.PI;hero.add(ha,hb);C.add(hero);hero.position.z=-9;
-rowG=new THREE.Group();rowG.position.z=-9;C.add(rowG);
-var nm=hm(0x2b2a82),wm=hm(0xf4f4f8);
-for(i=0;i<8;i++){var g=new THREE.Group(),t=new THREE.Mesh(geo,nm),b=new THREE.Mesh(geo,wm);b.rotation.z=Math.PI;g.add(t,b);rowG.add(g);row.push(g)}
-ready=true;size();
-}
-function size(){W=cv.clientWidth||innerWidth;H=cv.clientHeight||innerHeight;if(R){R.setSize(W,H,false);C.aspect=W/H;C.updateProjectionMatrix()}}
-addEventListener('resize',size);
-pin.addEventListener('pointermove',function(e){var r=pin.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5},{passive:true});
-var hdr=document.querySelector('.site-header');
-function syncHdr(){if(!hdr)return;var r=sec.getBoundingClientRect();if(r.bottom<=80){hdr.classList.add('is-past-ez')}else{hdr.classList.remove('is-past-ez')}}
-addEventListener('scroll',function(){tp=prog();syncHdr()},{passive:true});
-addEventListener('resize',syncHdr,{passive:true});
-tp=prog();sp=tp;syncHdr();
-new IntersectionObserver(function(en){run=en[0].isIntersecting;if(run&&!window.THREE&&!loading)load()},{rootMargin:'300px'}).observe(sec);
-function load(){loading=true;var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';s.onload=init;document.head.appendChild(s)}
-if(window.THREE)init();
-function lerpC(A,B,f){return [L(A[0],B[0],f),L(A[1],B[1],f),L(A[2],B[2],f)]}
-function tick(t){
-requestAnimationFrame(tick);if(!run)return;
-sp+=(tp-sp)*(reduce?1:.09);var q=sp*4,nar=innerWidth<800,w=[],k,i;
-for(k=0;k<4;k++){var d=(k==0&&q<.5)||(k==3&&q>3.5)?0:Math.abs(q-(k+.5));w.push(ss(1-d*2.2))}
-/* colours */
-var e=cl(q-.5,0,2.999),ci=Math.floor(e),cf=ss(e-ci),A=lerpC(PAL[ci].a,PAL[ci+1].a,cf),B=lerpC(PAL[ci].b,PAL[ci+1].b,cf),bg=lerpC(PAL[ci].bg,PAL[ci+1].bg,cf);
-pin.style.background='radial-gradient(ellipse at 60% 45%,rgb('+bg.map(Math.round)+') 0%,rgb('+bg.map(function(v){return Math.round(v*.22)})+') 78%)';
-/* text */
-texts.forEach(function(el,n){el.style.opacity=w[n];el.style.transform=(n==2?'':'translateY(-50%) ')+'translateY('+((1-w[n])*(q<n+.5?36:-36))+'px)';el.style.pointerEvents=w[n]<.4?'none':'auto'});
-if(nar)texts.forEach(function(el){el.style.transform='translateY('+(0)+'px)'});
-/* sizes panel + labels */
-var l3=cl(q-2),halfH=9*Math.tan(18*Math.PI/180),fwid=nar?.8:.47,pw=nar?.92:.6;
-panel.style.opacity=w[2];panel.style.transform='scaleX('+ss(l3*2.6)+')';
-var base=-.68,asp=W/H,halfW=halfH*asp,spacing=fwid/7*2*halfW,s0=Math.min(.5,.62*spacing);
-for(k=0;k<8;k++){var fx=-fwid/2+fwid*k/7,ek=ss(l3*2-k*.12-.1);
-lbls[k].style.left=(W/2+fx*W)+'px';lbls[k].style.top=(H/2*(1-base/halfH)+16)+'px';lbls[k].style.opacity=w[2]*ek}
-/* wheel */
-var l4=cl(q-3),sc=1;wheel.style.opacity=w[3];wheel.style.pointerEvents=w[3]<.4?'none':'auto';
-wheel.style.transform='rotate('+((1-ss(l4*1.6))*-140)+'deg)';
-wg.forEach(function(o,n){var ek=ss(l4*2.2-n*.16),out=(1-ek)*300+(hov==n?10:0),a=o.c*Math.PI/180,s=hov==n?1.04:(hov>=0?.97:1);
-o.g.style.transform='translate('+(Math.cos(a)*out)+'px,'+(Math.sin(a)*out)+'px) scale('+s+')';o.g.style.opacity=ek*(hov>=0&&hov!=n?.7:1);o.g.style.transition='transform .25s ease-out'});
-ctr.style.transform='scale('+ss(l4*2.4-.2)+')';ctr.style.transformOrigin='0 0';
-/* ui */
-var act=cl(Math.floor(q),0,3);dots.forEach(function(b,n){b.classList.toggle('on',n===act)});
-mouse.style.opacity=sp>.01?0:1;bar.style.transform='scaleX('+sp+')';
-/* 3D */
-if(!ready)return;
-fw.material.color.setRGB(A[0],A[1],A[2]);fr.material.color.setRGB(B[0],B[1],B[2]);
-fw.material.opacity=fr.material.opacity=1-.6*w[2]-.45*w[3];
-var camZ=10-sp*60;C.position.z=camZ;
-for(i=0;i<fd.length;i++){var f=fd[i];dm.position.set(f.x,f.y+Math.sin(t/1500+i)*.15,f.z);dm.rotation.set(f.rx+t*.0002*f.sp*3,f.ry+t*.0003*f.sp*3,f.rz);dm.scale.setScalar(f.s);dm.updateMatrix();fw.setMatrixAt(i,dm.matrix);dm.quaternion.multiply(flip);dm.updateMatrix();fr.setMatrixAt(i,dm.matrix)}
-fw.instanceMatrix.needsUpdate=true;fr.instanceMatrix.needsUpdate=true;
-ha.material.color.setRGB(A[0],A[1],A[2]);hb.material.color.setRGB(B[0],B[1],B[2]);
-var hv=1-ss((q-1.7)/.45),hs=(nar?.6:1.15)*hv;hero.visible=hs>.01;hero.position.x=nar?0:halfW*.5;hero.position.y=nar?halfH*.42:0;hero.scale.setScalar(Math.max(.001,hs));
-var flipT=ss((q-.7)/.6);hero.rotation.set(.3+my*.3,t*.0004+mx*.7+flipT*Math.PI*2,.8+Math.sin(t/1800)*.12);
-rowG.visible=w[2]>.01;
-for(k=0;k<8;k++){var ek2=ss(l3*2-k*.12-.1),fx2=-fwid/2+fwid*k/7,sk=s0*RT[k]*Math.max(.001,ek2),g=row[k];
-g.position.set(fx2*2*halfW,base+1.7*s0*RT[k]-(1-ek2)*3.4,0);g.scale.setScalar(sk);g.rotation.set(0,mx*.6+Math.sin(t/1200+k)*.25,0)}
-R.render(S,C)}
-requestAnimationFrame(tick);
-})();
-</script>
-<!-- ===== END ERAWAT 4-SCENE SCROLL BANNER ===== -->
-
-<!-- ===== ERAWAT "WHY CHOOSE US" SCROLL SECTION: paste in place of your current section ===== -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<style>
-.ew{position:relative;height:430vh;background:#eff2f8;color:#0b0c10;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif}
-.ew *{box-sizing:border-box}
-.ew-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 5vw}
-.ew-head{width:min(1100px,100%);display:flex;justify-content:space-between;align-items:flex-start;gap:40px;margin-bottom:56px}
-.ew-chip{display:inline-block;background:#e0302f;color:#fff;font-weight:800;font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;padding:5px 20px 5px 12px;clip-path:polygon(0 0,calc(100% - 9px) 0,100% 50%,calc(100% - 9px) 100%,0 100%);margin-bottom:12px}
-.ew h2{margin:0;font-size:clamp(2rem,3.6vw,3.1rem);line-height:1.08;font-weight:800;letter-spacing:-.025em}
-.ew h2 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}.ew h2 .w>span{display:inline-block;will-change:transform}
-.ew-sub{max-width:330px;margin:44px 60px 0 0;color:#5a6b8c;font-size:.86rem;line-height:1.7}
-.ew-row{position:relative;width:min(1100px,100%);display:grid;grid-template-columns:repeat(3,1fr);gap:24px;perspective:1500px}
-.ew-card{position:relative;height:clamp(260px,47vh,420px);border-radius:8px;overflow:hidden;background:#16181d;color:#fff;transform-style:preserve-3d;will-change:transform,opacity;
-box-shadow:0 calc(10px + 24px*var(--f,0)) calc(24px + 30px*var(--f,0)) rgba(10,20,40,calc(.12 + .2*var(--f,0)));text-decoration:none;display:block}
-.ew-art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;scale:var(--z,1);transition:scale .2s linear}
-.ew-card::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(8,8,8,.94) 0,rgba(8,8,8,.7) 34%,rgba(8,8,8,0) 72%)}
-.ew-card .t{position:absolute;z-index:2;left:7.5%;right:7.5%;top:7%}
-.ew-card h3{margin:0 0 8px;font-size:clamp(1.15rem,1.7vw,1.5rem);font-weight:800;letter-spacing:-.01em}
-.ew-card p{margin:0;font-size:.78rem;line-height:1.55;color:#e8e8ec}
-.ew-go{position:absolute;z-index:2;right:7%;bottom:7%;height:38px;max-width:calc(38px + 84px*var(--f,0));padding:0 11px;border-radius:99px;background:#fff;color:#111;display:flex;align-items:center;gap:8px;overflow:hidden;white-space:nowrap;font-weight:800;font-size:.8rem;box-shadow:0 6px 20px rgba(0,0,0,.3);flex-direction:row-reverse;justify-content:flex-start}
-.ew-go svg{flex:none}.ew-go span{opacity:var(--f,0)}
-.ew-prog{display:flex;gap:10px;margin-top:30px}.ew-prog i{width:46px;height:4px;border-radius:4px;background:rgba(11,12,16,.14);overflow:hidden;position:relative}
-.ew-prog i b{position:absolute;inset:0;background:linear-gradient(90deg,#c9191f,#f4571f);transform:scaleX(0);transform-origin:0 50%}
-@media (max-width:800px){
-.ew-head{flex-direction:column;gap:6px;margin-bottom:24px}.ew-sub{margin:0;max-width:none}
-.ew-row{display:block;height:48vh}
-.ew-card{position:absolute;top:0;bottom:0;height:auto;left:50%;width:80vw;margin-left:-40vw}
-}
-@media (prefers-reduced-motion:reduce){.ew-art{transition:none}}
-</style>
-<section class="ew" id="ew" aria-label="Why you should buy from us">
-  <div id="manufacturingSection" style="position:absolute;top:0;left:0;pointer-events:none;" aria-hidden="true"></div>
- <div class="ew-pin" id="ew-pin">
-  <div class="ew-head">
-   <div><span class="ew-chip" id="ew-chip">Why choose us</span><h2 id="ew-h2">Why You Should Buy From Us</h2></div>
-   <p class="ew-sub" id="ew-sub">Minimal rejections, dedicated technical team support, and maximum machine uptime for global pharmaceutical manufacturers.</p>
-  </div>
-  <div class="ew-row" id="ew-row">
-   <a class="ew-card" href="why-us.html" aria-label="View more about Product specifications"><img class="ew-art" src="images/buycard1.png" alt="Product" loading="lazy"><div class="t"><h3>Product</h3><p>Minimal rejections on filing machine, resulting in higher yield and lesser wastage of expensive formulation.</p></div><div class="ew-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Explore</span></div></a>
-   <a class="ew-card" href="why-us.html" aria-label="View more about Certifications"><img class="ew-art" src="images/buycard2.png" alt="Certifications" loading="lazy"><div class="t"><h3>Certifications</h3><p>Readily available technical team from EPL and R&amp;D unit to rectify mechanical and setting related problems on customer's filing machines.</p></div><div class="ew-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Explore</span></div></a>
-   <a class="ew-card" href="why-us.html" aria-label="View more about Technical Specs"><img class="ew-art" src="images/buycard3.png" alt="Technical Specs" loading="lazy"><div class="t"><h3>Technical Specs</h3><p>Machine performance such as to give minimum downtime on filing machine, thus increasing machine and operator output.</p></div><div class="ew-go"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>Explore</span></div></a>
-  </div>
-  <div class="ew-prog" id="ew-prog"><i><b></b></i><i><b></b></i><i><b></b></i></div>
- </div>
-</section>
-<script>
-(function(){
-var sec=document.getElementById('ew'),pin=document.getElementById('ew-pin'),row=document.getElementById('ew-row'),cards=[].slice.call(row.children),segs=[].slice.call(document.querySelectorAll('#ew-prog b')),chip=document.getElementById('ew-chip'),sub=document.getElementById('ew-sub'),h2=document.getElementById('ew-h2');
-var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,run=false,tp=0,sp=0,W=1,H=1,mx=0,my=0,lay={cx:[0,0,0],top:0,cw:1,ch:1,rc:0};
-function cl(v,a,b){return Math.min(b==null?1:b,Math.max(a||0,v))}
-function ss(t){t=cl(t);return t*t*(3-2*t)}
-/* split headline into masked words */
-var words=h2.textContent.trim().split(/\s+/);h2.setAttribute('aria-label',h2.textContent.trim());h2.innerHTML=words.map(function(w){return '<span class="w" aria-hidden="true"><span>'+w+'</span></span>'}).join(' ');var ws=[].slice.call(h2.querySelectorAll('.w>span'));
-function measure(){var r=row;lay.rc=r.offsetLeft+r.offsetWidth/2;lay.top=r.offsetTop;lay.cw=cards[0].offsetWidth;lay.ch=cards[0].offsetHeight;
-cards.forEach(function(c,k){lay.cx[k]=r.offsetLeft+c.offsetLeft+c.offsetWidth/2});W=pin.clientWidth;H=pin.clientHeight}
-function prog(){var r=sec.getBoundingClientRect();return cl(-r.top/Math.max(1,r.height-innerHeight))}
-function size(){measure()}
-addEventListener('resize',size);addEventListener('load',size);size();
-pin.addEventListener('pointermove',function(e){var r=pin.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5},{passive:true});
-addEventListener('scroll',function(){tp=prog()},{passive:true});tp=prog();sp=tp;
-new IntersectionObserver(function(en){run=en[0].isIntersecting},{rootMargin:'200px'}).observe(sec);
-function tick(t){
-requestAnimationFrame(tick);if(!run)return;
-sp+=(tp-sp)*(reduce?1:.1);var p=sp,nar=innerWidth<800;
-var rect=sec.getBoundingClientRect(),enter=cl((innerHeight-rect.top)/(innerHeight*.85));
-/* header reveal */
-chip.style.opacity=ss(enter*3-.6);chip.style.translate='0 '+(1-ss(enter*3-.6))*14+'px';
-ws.forEach(function(w,i){w.style.transform='translateY('+(1-ss(enter*3.2-.9-i*.25))*110+'%)'});
-sub.style.opacity=ss(enter*3-1.6);sub.style.translate='0 '+(1-ss(enter*3-1.6))*16+'px';
-/* deal + stages */
-var d=ss((p-.02)/.3),s=cl((p-.36)/.54,0,1)*2,fon=ss((p-.34)/.06)*(1-ss((p-.93)/.07));
-cards.forEach(function(c,n){
-var f=ss(1-Math.abs(s-n)*1.25)*fon;
-var dx=nar?0:(lay.rc-lay.cx[n])*(1-d),ro=n-1,sc=(.86+.14*d)*(1+.05*f)*(1-.03*fon*(1-f)),ry=-ro*26*(1-d)+mx*10*f,rz=ro*5*(1-d),rx=-my*8*f,dy=(1-d)*50-14*f,op=ss(enter*2.2-.5);
-if(nar){var o=n-s*(p>.34?1:0);dx=o*W*.9;ry+=o*-16;op*=1-.55*Math.min(1,Math.abs(o));sc*=1-.08*Math.min(1,Math.abs(o))}
-c.style.transform='translate3d('+dx+'px,'+dy+'px,'+(f*40)+'px) rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ('+rz+'deg) scale('+sc+')';
-c.style.opacity=op;c.style.zIndex=(nar?10-Math.round(Math.abs(n-s)):n==1?3:2)+(f>.5?5:0);
-c.style.setProperty('--f',f.toFixed(3));c.style.setProperty('--z',(1+.12*f).toFixed(3))});
-segs.forEach(function(b,n){b.style.transform='scaleX('+(p<.34?0:cl(s-n+.6,0,1))+')'});
-}
-requestAnimationFrame(tick);
-})();
-</script>
-<!-- ===== END ERAWAT WHY CHOOSE US SECTION ===== -->
+        window.__erawatAnim = {
+          cl: function (v, a, b) {
+            return Math.min(b == null ? 1 : b, Math.max(a || 0, v));
+          },
+          lerp: function (a, b, t) {
+            return a + (b - a) * t;
+          },
+          ss: function (t) {
+            t = Math.min(1, Math.max(0, t));
+            return t * t * (3 - 2 * t);
+          },
+          qss: function (t) {
+            t = Math.min(1, Math.max(0, t));
+            return t * t * t * (t * (t * 6 - 15) + 10);
+          },
+          outQuart: function (t) {
+            t = Math.min(1, Math.max(0, t));
+            return 1 - Math.pow(1 - t, 4);
+          },
+          damp: function (curr, target, lambda, dt) {
+            return curr + (target - curr) * (1 - Math.exp(-lambda * dt));
+          }
+        };
+      })();
+    </script>
 
     <!-- ==================================================================
-         3. NEXT STEPS SECTION / WHO WE ARE
+         1. 4-SCENE 3D SCROLL BANNER (animationsection/erawat-banner-4.html)
          ================================================================== -->
-<!-- ===== ERAWAT "WHO WE ARE" SCROLL SECTION: paste in place of your current section ===== -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<style>
-.ww{position:relative;height:320vh;background:#fff;color:#111;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif}
-.ww *{box-sizing:border-box}
-.ww-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center;padding:0 5vw}
-.ww-in{width:min(1200px,100%);display:grid;grid-template-columns:1.35fr 1fr;gap:5vw;align-items:center}
-.ww-chip{display:inline-block;background:#e0302f;color:#fff;font-weight:800;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;padding:7px 24px 7px 14px;clip-path:polygon(0 0,calc(100% - 11px) 0,100% 50%,calc(100% - 11px) 100%,0 100%);margin-bottom:22px}
-.ww h2{margin:0 0 20px;font-size:clamp(2.2rem,3.8vw,3.2rem);line-height:1.05;font-weight:800;letter-spacing:-.025em}
-.ww h2 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}.ww h2 .w>span{display:inline-block;will-change:transform}
-.ww p{margin:0 0 18px;font-size:clamp(.98rem,1.25vw,1.12rem);line-height:1.7;color:#4a4d57;max-width:62ch}
-.ww p a{color:#1d4ed8;text-decoration:none}
-.ww p a:hover{text-decoration:underline}
-.ww p .sw{opacity:.22}
-.ww-btn{display:inline-block;margin-top:14px;padding:19px 46px;border-radius:99px;background:linear-gradient(90deg,#c9191f,#f4571f);color:#fff;font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:.95rem;text-decoration:none;box-shadow:0 14px 36px rgba(220,50,30,.3);transition:box-shadow .3s,transform .3s}
-.ww-btn:hover{box-shadow:0 18px 44px rgba(220,50,30,.45)}
-.ww-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,24px)}
-.ww-tile{position:relative;aspect-ratio:1;border-radius:14px;overflow:hidden;background:#e4e6ea;box-shadow:0 12px 34px rgba(20,30,60,.14);will-change:clip-path,transform}
-.ww-art{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;display:block;will-change:transform}
-.ww canvas{position:absolute;inset:0;width:100%;height:100%;z-index:5;pointer-events:none;filter:drop-shadow(0 16px 20px rgba(30,20,0,.38))}
-@media (max-width:900px){
-.ww{height:auto}.ww-pin{position:relative;height:auto;overflow:hidden;padding:70px 5vw}
-.ww-in{grid-template-columns:1fr;gap:34px}
-}
-@media (prefers-reduced-motion:reduce){.ww p .sw{opacity:1}}
-</style>
-<section class="ww" id="ww" aria-label="Who we are">
-     <div id="nextStepsSection" style="position:absolute;top:0;left:0;pointer-events:none;" aria-hidden="true"></div>
- <div class="ww-pin" id="ww-pin">
-  <div class="ww-in">
-   <div id="ww-text">
-    <span class="ww-chip" id="ww-chip">Empty Capsules Manufacturers</span>
-    <h2 id="ww-h2">Who We Are</h2>
-    <p>Erawat Pharma Limited, an Erawat Group Company, ranks among the top <a href="manufacturing-setup.html">Capsule manufacturers</a> in the world &amp; second largest in India.</p>
-    <p>Manufacturing empty hard capsules since 1997, our team brings more than 30 years of total group experience in capsule manufacturing technologies. Backed by high technical competence and rigorous R &amp; D, we manufacture empty Gelatin Capsules as well as plant-derived <a href="epl-products.html">HPMC Capsules</a> for vegetarian and hygroscopic formulations.</p>
-    <a class="ww-btn" id="ww-btn" href="profile.html"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">View More</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">View More</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></a>
-   </div>
-   <div class="ww-grid" id="ww-grid">
-    <div class="ww-tile"><img class="ww-art" src="images/whoweare1.png" alt="Empty hard Gelatin and HPMC vegetarian capsule polymers" loading="lazy"></div>
-    <div class="ww-tile"><img class="ww-art" src="images/whoweare2.png" alt="Automated cleanroom capsule production and AC container logistics" loading="lazy"></div>
-    <div class="ww-tile"><img class="ww-art" src="images/whoweare3.png" alt="Stringent I.P. 2014 quality inspection of empty hard capsules" loading="lazy"></div>
-    <div class="ww-tile"><img class="ww-art" src="images/whoweare4.png" alt="Automated camera sorting and cleanroom dimensional tolerances" loading="lazy"></div>
-   </div>
-  </div>
-  <canvas id="ww-gl" aria-hidden="true"></canvas>
- </div>
-</section>
-<script>
-(function(){
-var sec=document.getElementById('ww'),pin=document.getElementById('ww-pin'),grid=document.getElementById('ww-grid'),cv=document.getElementById('ww-gl'),tiles=[].slice.call(grid.children),arts=tiles.map(function(t){return t.firstElementChild}),chip=document.getElementById('ww-chip'),h2=document.getElementById('ww-h2'),btn=document.getElementById('ww-btn'),text=document.getElementById('ww-text');
-var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,run=true,ready=false,loading=false,tp=0,sp=0,W=1,H=1,R,S,C,cap,ha,hb,G={cx:0,cy:0,w:1};
-function L(a,b,t){return a+(b-a)*t}function cl(v,a,b){return Math.min(b==null?1:b,Math.max(a||0,v))}function ss(t){t=cl(t);return t*t*(3-2*t)}
-/* word-by-word scrub for the paragraphs (links keep their colour) */
-var sw=[];function wrap(n){[].slice.call(n.childNodes).forEach(function(c){if(c.nodeType==3){var f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(function(w){if(!w)return;if(/^\s+$/.test(w)){f.appendChild(document.createTextNode(w))}else{var s=document.createElement('span');s.className='sw';s.textContent=w;sw.push(s);f.appendChild(s)}});n.replaceChild(f,c)}else if(c.nodeType==1)wrap(c)})}
-[].slice.call(text.querySelectorAll('p')).forEach(wrap);
-var words=h2.textContent.trim().split(/\s+/);h2.setAttribute('aria-label',h2.textContent.trim());h2.innerHTML=words.map(function(w){return '<span class="w" aria-hidden="true"><span>'+w+'</span></span>'}).join(' ');var ws=[].slice.call(h2.querySelectorAll('.w>span'));
-function measure(){W=pin.clientWidth;H=pin.clientHeight;var pr=pin.getBoundingClientRect(),gr=grid.getBoundingClientRect();G.cx=gr.left-pr.left+gr.width/2;G.cy=gr.top-pr.top+gr.height/2;G.w=gr.width}
-function prog(){var r=sec.getBoundingClientRect();if(innerWidth<900)return cl((innerHeight*.9-r.top)/(r.height+innerHeight*.2));return cl(-r.top/Math.max(1,r.height-innerHeight))}
-/* one polished gold capsule, lit with a studio-style reflection map */
-function init(){
-if(ready)return;
-try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});}catch(e){return}
-R.setPixelRatio(Math.min(devicePixelRatio,2));S=new THREE.Scene();C=new THREE.PerspectiveCamera(30,1,.1,50);C.position.z=12;
-var pm=new THREE.PMREMGenerator(R),es=new THREE.Scene();es.background=new THREE.Color(0x6f7480);
-function bx(x,y,z,w,h,d,c,i){var m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),new THREE.MeshBasicMaterial({color:new THREE.Color(c).multiplyScalar(i)}));m.position.set(x,y,z);es.add(m)}
-bx(0,9,0,14,.6,14,0xffffff,3.2);bx(7,0,4,.6,7,7,0xffffff,2.4);bx(-8,1,-3,.6,6,9,0xfff0d0,1.8);bx(0,-7,0,14,.4,14,0x555a66,1);bx(0,0,-9,14,8,.4,0xffffff,1.4);
-S.environment=pm.fromScene(es,.03).texture;
-var pts=[new THREE.Vector2(0,0),new THREE.Vector2(.6,0),new THREE.Vector2(.6,1.1)];for(var i=1;i<=16;i++){var a=i/16*Math.PI/2;pts.push(new THREE.Vector2(.6*Math.cos(a),1.1+.6*Math.sin(a)))}
-var geo=new THREE.LatheGeometry(pts,64),gm=function(c){return new THREE.MeshPhysicalMaterial({color:c,metalness:1,roughness:.2,clearcoat:.4,clearcoatRoughness:.15,side:THREE.DoubleSide})};
-cap=new THREE.Group();ha=new THREE.Mesh(geo,gm(0xe3ab2e));hb=new THREE.Mesh(geo,gm(0xd89c22));hb.rotation.z=Math.PI;cap.add(ha,hb);S.add(cap);
-ready=true;size()}
-function size(){measure();if(R){R.setSize(W,H,false);C.aspect=W/H;C.updateProjectionMatrix()}}
-addEventListener('resize',size);addEventListener('load',size);size();setTimeout(size,400);
-addEventListener('scroll',function(){tp=prog()},{passive:true});tp=prog();sp=tp;
-new IntersectionObserver(function(en){run=en[0].isIntersecting;if(run){measure();if(!window.THREE&&!loading)load()}},{rootMargin:'200px'}).observe(sec);
-function load(){loading=true;if(window.THREE){init();return;}var existing=document.querySelector('script[src*="three.min.js"]');if(existing){existing.addEventListener('load',init);return;}var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';s.onload=init;document.head.appendChild(s);}
-if(window.THREE)init();
-function tick(t){
-requestAnimationFrame(tick);if(!run)return;
-sp+=(tp-sp)*(reduce?1:.1);var p=sp,nar=innerWidth<900,rect=sec.getBoundingClientRect(),enter=nar?1:cl((innerHeight-rect.top)/(innerHeight*.85));
-var u=nar?p*3:enter*.5+p*1.7;
-chip.style.opacity=ss(u*2.4);chip.style.translate='0 '+(1-ss(u*2.4))*12+'px';
-ws.forEach(function(w,n){w.style.transform='translateY('+(1-ss(u*2.6-.25-n*.3))*110+'%)'});
-var N=sw.length,sc=cl((p-.08)/(nar?.5:.46))*N;sw.forEach(function(s,n){s.style.opacity=reduce?1:(.22+.78*cl(sc-n+.5))});
-var b=ss((p-(nar?.5:.5))/.12);btn.style.opacity=reduce?1:b;btn.style.translate='0 '+(1-b)*20+'px';
-/* photo tiles: clean mask reveal, top row from the bottom, bottom row from the top */
-tiles.forEach(function(el,k){var a=reduce?1:ss(u*1.55-k*.2-.12),up=k<2,inset=(1-a)*100;
-el.style.clipPath=up?'inset('+inset+'% 0 0 0 round 14px)':'inset(0 0 '+inset+'% 0 round 14px)';
-el.style.transform='translateY('+((1-a)*(up?36:-36))+'px)';
-arts[k].style.transform='translateY('+((p-.5)*-22*(k%2?-1:1))+'px) scale('+(1+.28*(1-a))+')'});
-if(!ready)return;
-var wpp=Math.tan(15*Math.PI/180)*12/(H/2),Lp=G.w*.36,s=Lp*wpp/3.4*(reduce?1:ss((p-.34)/.16)),fl=Math.sin(t/1100)*5;
-cap.visible=s>.002;cap.position.set((G.cx-W/2)*wpp,(H/2-G.cy-fl)*wpp,0);cap.scale.setScalar(Math.max(.001,s));
-cap.rotation.set(.2,p*Math.PI*3+t*.00025,1.0+Math.sin(t/1700)*.06);
-R.render(S,C)}
-requestAnimationFrame(tick);
-})();
-</script>
-<!-- ===== END ERAWAT WHO WE ARE SECTION ===== -->
+    <section class="ez" id="ez" aria-label="Erawat capsule range">
+      <div class="ez-pin" id="ez-pin">
+        <div class="ez-panel" id="ez-panel"></div>
+        <canvas id="ez-gl" aria-hidden="true"></canvas>
+        <div class="ez-vig"></div>
 
-    <!-- ==================================================================
-         4. FACILITY VIDEO & MANUFACTURING EXCELLENCE SECTION
-         ================================================================== -->
-    <section class="section section--facility-video" id="facilityVideoSection" aria-labelledby="facilityVideoHeading">
-      <div class="container container--video">
-        <!-- Above Video: Section Tag, Heading and Paragraph -->
-        <div class="facility-video__header">
-          <div class="facility-video__header-left" data-aos="fade-right" data-aos-duration="700">
-            <span class="section-tag"><span class="section-tag__dot"></span>Plant &amp; Technology</span>
-            <h2 class="facility-video__heading" id="facilityVideoHeading">
-              State-of-the-Art Capsule Manufacturing in Action
-            </h2>
-          </div>
-          <p class="facility-video__desc" data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
-            Step inside Erawat's fully automated, cGMP-compliant cleanroom facility. With high-speed production lines operating 24/7 under computerized air handling units (AHUs), our plants produce over 12 billion hard gelatin and HPMC vegetarian capsules annually with micron-level precision and zero-defect consistency for global pharmaceutical leaders.
-          </p>
+        <div class="ez-t g">
+          <span class="section-tag section-tag--light">Empty Capsules &bull; TSE/BSE Free</span>
+          <h1>Gelatin</h1>
+          <p>High Quality TSE/BSE Free Gelatin Capsules giving outstanding performance on all varieties of high speed filling machine available in the world.</p>
+          <a class="btn-black-pill ez-btn" href="#manufacturingSection">
+            <span class="btn-anim__text">
+              <span class="btn-anim__text-track">
+                <span class="btn-anim__text-item">Know more</span>
+                <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Know more</span>
+              </span>
+            </span>
+            <span class="btn-anim__icon">
+              <span class="btn-anim__icon-track">
+                <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+                <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+              </span>
+            </span>
+          </a>
         </div>
 
-        <!-- Widescreen Video Banner with Rounded Corners (matching reference image) -->
-        <div class="facility-video__banner" data-aos="zoom-in-up" data-aos-duration="850">
-          <img
-            class="facility-video__thumbnail"
-            src="images/banners/bannerawat1.png"
-            alt="Erawat capsule manufacturing cleanroom facility"
-            width="1280"
-            height="720"
-            loading="lazy"
-          >
-
-          <div class="facility-video__overlay"></div>
-
-          <!-- Center: Play Button with Direct YouTube Link -->
-          <a class="facility-video__play-link" href="https://www.youtube.com/watch?v=9Zb0B9ABYlw" data-open-modal="modalFacilityVideo" data-video-src="https://www.youtube.com/embed/9Zb0B9ABYlw?si=NDvobKFWEKUeato7&autoplay=1&mute=1" aria-label="Play Erawat Capsule Manufacturing Video">
-            <span class="play-ripple" aria-hidden="true"></span>
-            <span class="play-ripple play-ripple--2" aria-hidden="true"></span>
-            <span class="play-btn-circle">
-              <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <polygon points="6 4 20 12 6 20 6 4"></polygon>
-              </svg>
+        <div class="ez-t h">
+          <span class="section-tag section-tag--light">Plant-Derived &bull; Vegetarian</span>
+          <h2>HPMC</h2>
+          <p>Providing a range of HPMC capsules in vivid colors suitable for nutraceuticals, herbal as well as regular applications.</p>
+          <a class="btn-black-pill ez-btn" href="#manufacturingSection">
+            <span class="btn-anim__text">
+              <span class="btn-anim__text-track">
+                <span class="btn-anim__text-item">Know more</span>
+                <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Know more</span>
+              </span>
             </span>
-        
+            <span class="btn-anim__icon">
+              <span class="btn-anim__icon-track">
+                <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+                <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+              </span>
+            </span>
           </a>
+        </div>
+
+        <div class="ez-t s">
+          <span class="section-tag section-tag--light">Full Spectrum Sizes</span>
+          <h2>Every size you fill</h2>
+          <p>00, 0EL, 0, 1, 2, 3, 4 and 5</p>
+        </div>
+
+        <div class="ez-t f">
+          <span class="section-tag section-tag--light">Global Quality &bull; Custom Grades</span>
+          <h2>Made for every formulation</h2>
+          <p>Sticky free, preservative free, liquid filling, TSE/BSE free, SLS free, metallic, and pearl &amp; golden capsules.</p>
+          <a class="btn-black-pill ez-btn" href="#getStartedSection">
+            <span class="btn-anim__text">
+              <span class="btn-anim__text-track">
+                <span class="btn-anim__text-item">Send Inquiry</span>
+                <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
+              </span>
+            </span>
+            <span class="btn-anim__icon">
+              <span class="btn-anim__icon-track">
+                <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+                <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div id="ez-labels"></div>
+        <div class="ez-wheel" id="ez-wheel">
+          <svg viewBox="-230 -230 460 460" id="ez-svg" role="img" aria-label="Capsule types"></svg>
+        </div>
+        <div class="ez-dots" id="ez-dots"></div>
+        <div class="ez-mouse" id="ez-m"></div>
+        <div class="ez-bar" id="ez-bar"></div>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        var A_HELP = window.__erawatAnim,
+          L = A_HELP.lerp,
+          cl = A_HELP.cl,
+          qss = A_HELP.qss,
+          outQuart = A_HELP.outQuart,
+          damp = A_HELP.damp;
+
+        var sec = document.getElementById('ez'),
+          pin = document.getElementById('ez-pin'),
+          cv = document.getElementById('ez-gl'),
+          texts = [].slice.call(sec.querySelectorAll('.ez-t')),
+          panel = document.getElementById('ez-panel'),
+          wheel = document.getElementById('ez-wheel'),
+          svg = document.getElementById('ez-svg'),
+          lblBox = document.getElementById('ez-labels'),
+          dotBox = document.getElementById('ez-dots'),
+          mouse = document.getElementById('ez-m'),
+          bar = document.getElementById('ez-bar');
+
+        var reduce = matchMedia('(prefers-reduced-motion:reduce)').matches,
+          run = false, ready = false, loading = false,
+          tp = 0, sp = 0, W = 1, H = 1,
+          mx = 0, my = 0, smx = 0, smy = 0, hov = -1,
+          whov = [0, 0, 0, 0, 0, 0, 0],
+          lastBgKey = '', lastAct = -1, lastMouseOp = -1, lastT = 0,
+          R, S, C, k2, fw, fr, hero, ha, hb, row = [], rowG, fd = [], dm, flip;
+
+        function hdrH() { return window.__erawatHdrH ? window.__erawatHdrH() : 0; }
+
+        /* Palettes: A half, B half, radial studio background, rim accent, scene name */
+        var PAL = [
+          { a: [.93, .93, .95], b: [.77, .09, .11], bg: [119, 45, 0], rim: [1, .35, .19], n: 'Gelatin' },
+          { a: [.79, .86, .23], b: [.11, .60, .28], bg: [14, 96, 46], rim: [.18, .82, .42], n: 'HPMC' },
+          { a: [.95, .95, .97], b: [.17, .16, .49], bg: [38, 48, 72], rim: [.42, .45, .96], n: 'Sizes' },
+          { a: [.95, .48, .12], b: [.23, .18, .70], bg: [30, 41, 59], rim: [.25, .72, .95], n: 'Features' }
+        ];
+        var SZ = ['00', '0EL', '0', '1', '2', '3', '4', '5'],
+          RT = [1, .88, .81, .71, .65, .58, .5, .43];
+        var WH = [
+          ['Sticky Free', 'Capsules'],
+          ['Preservative', 'Free', 'Capsules'],
+          ['Liquid Filling', 'Capsules'],
+          ['TSE/BSE', 'Free', 'Capsules'],
+          ['SLS Free', 'Capsules'],
+          ['Metallic', 'Capsules'],
+          ['Pearl &', 'Golden', 'Capsules']
+        ],
+          WC = ['#b08560', '#f0891f', '#f06b6b', '#5b7184', '#2aa6c0', '#9a6fb0', '#9bb838'];
+
+        /* DOM builders */
+        var lbls = SZ.map(function (s) {
+          var d = document.createElement('div');
+          d.className = 'ez-lbl';
+          d.textContent = s;
+          lblBox.appendChild(d);
+          return d;
+        });
+
+        var dots = PAL.map(function (p, i) {
+          var b = document.createElement('button');
+          b.innerHTML = '<span>' + p.n + '</span><i></i>';
+          b.setAttribute('aria-label', p.n);
+          b.onclick = function () { go((i + .5) / 4); };
+          dotBox.appendChild(b);
+          return b;
+        });
+
+        function P2(r, a) { a = a * Math.PI / 180; return [r * Math.cos(a), r * Math.sin(a)]; }
+        var wg = WH.map(function (w, i) {
+          var c = -100 + i * 360 / 7,
+            a0 = c - 180 / 7 + 1.2,
+            a1 = c + 180 / 7 - 1.2,
+            o0 = P2(200, a0), o1 = P2(200, a1),
+            i1 = P2(84, a1), i0 = P2(84, a0);
+          var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+          g.setAttribute('class', 'wd');
+          g.innerHTML = '<path d="M' + o0 + ' A200 200 0 0 1 ' + o1 + ' L' + i1 + ' A84 84 0 0 0 ' + i0 + 'Z" fill="' + WC[i] + '" stroke="#fff" stroke-width="3"/>';
+          var m = P2(142, c),
+            t = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+          t.setAttribute('text-anchor', 'middle');
+          t.innerHTML = w.map(function (l, k) {
+            return '<tspan x="' + m[0] + '" y="' + (m[1] + (k - (w.length - 1) / 2) * 17 + 5) + '">' + l + '</tspan>';
+          }).join('');
+          g.appendChild(t);
+          g.addEventListener('pointerenter', function () { hov = i; });
+          g.addEventListener('pointerleave', function () { hov = -1; });
+          svg.appendChild(g);
+          return { g: g, c: c };
+        });
+
+        var ctr = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        ctr.innerHTML = '<circle r="72" fill="#fff"/><g transform="rotate(-40) scale(.9)"><rect x="-17" y="-40" width="34" height="40" rx="17" fill="#d8232a"/><rect x="-17" y="-22" width="34" height="22" fill="#d8232a"/><rect x="-17" y="0" width="34" height="40" rx="17" fill="#ececf0"/><rect x="-17" y="0" width="34" height="22" fill="#ececf0"/></g>';
+        svg.appendChild(ctr);
+
+        function prog() {
+          var r = sec.getBoundingClientRect(), hH = hdrH();
+          return cl((hH - r.top) / Math.max(1, r.height - (innerHeight - hH)));
+        }
+        function go(f) {
+          var r = sec.getBoundingClientRect(), hH = hdrH(), max = Math.max(1, r.height - (innerHeight - hH));
+          scrollTo({ top: r.top + scrollY - hH + max * f, behavior: reduce ? 'auto' : 'smooth' });
+        }
+
+        /* 3D */
+        function makeCapsuleGeo(radSeg, domeSeg) {
+          var pts = [new THREE.Vector2(.6, 0), new THREE.Vector2(.6, 1.1)];
+          for (var i = 1; i <= domeSeg; i++) {
+            var a = i / domeSeg * Math.PI / 2;
+            pts.push(new THREE.Vector2(.6 * Math.cos(a), 1.1 + .6 * Math.sin(a)));
+          }
+          return new THREE.LatheGeometry(pts, radSeg);
+        }
+
+        function init() {
+          if (ready) return;
+          try {
+            R = new THREE.WebGLRenderer({ canvas: cv, antialias: true, alpha: true, powerPreference: 'high-performance' });
+          } catch (e) { return; }
+          R.setPixelRatio(Math.min(devicePixelRatio || 1, 1.75));
+          S = new THREE.Scene();
+          S.fog = new THREE.Fog(0x1a0a00, 12, 48);
+          C = new THREE.PerspectiveCamera(36, 1, .1, 90);
+          S.add(C);
+          S.add(new THREE.HemisphereLight(0xffffff, 0x26120c, .9));
+          var k1 = new THREE.DirectionalLight(0xffffff, 1.55);
+          k1.position.set(4, 6, 8);
+          S.add(k1);
+          k2 = new THREE.PointLight(0xff5a30, 1.85, 42);
+          k2.position.set(-6, -3, 2);
+          S.add(k2);
+
+          var geoBg = makeCapsuleGeo(22, 10),
+            geoHero = makeCapsuleGeo(44, 16),
+            M = function (c) {
+              return new THREE.MeshStandardMaterial({
+                color: c, roughness: .36, metalness: .06, side: THREE.DoubleSide, transparent: false, opacity: 1
+              });
+            };
+          var N = 84;
+          fw = new THREE.InstancedMesh(geoBg, M(0xffffff), N);
+          fr = new THREE.InstancedMesh(geoBg, M(0xff0000), N);
+          S.add(fw, fr);
+          for (var i = 0; i < N; i++) {
+            fd.push({
+              x: (Math.random() - .5) * 32,
+              y: (Math.random() - .5) * 17,
+              z: -85 + Math.random() * 82,
+              s: .8 + Math.random() * 1.05,
+              rx: Math.random() * 6,
+              ry: Math.random() * 6,
+              rz: Math.random() * 6,
+              sp: (Math.random() - .5) * .55
+            });
+          }
+          dm = new THREE.Object3D();
+          flip = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), Math.PI);
+
+          function hm(c) {
+            return new THREE.MeshPhysicalMaterial({
+              color: c, roughness: .14, clearcoat: 1, clearcoatRoughness: .05, side: THREE.DoubleSide
+            });
+          }
+          hero = new THREE.Group();
+          ha = new THREE.Mesh(geoHero, hm(0xffffff));
+          hb = new THREE.Mesh(geoHero, hm(0xff0000));
+          hb.rotation.z = Math.PI;
+          hero.add(ha, hb);
+          C.add(hero);
+          hero.position.z = -9;
+
+          rowG = new THREE.Group();
+          rowG.position.z = -9;
+          C.add(rowG);
+          var nm = hm(0x2b2a82), wm = hm(0xf4f4f8);
+          for (i = 0; i < 8; i++) {
+            var g = new THREE.Group(),
+              t = new THREE.Mesh(geoHero, nm),
+              b = new THREE.Mesh(geoHero, wm);
+            b.rotation.z = Math.PI;
+            g.add(t, b);
+            rowG.add(g);
+            row.push(g);
+          }
+          ready = true;
+          size();
+        }
+
+        function size() {
+          W = cv.clientWidth || innerWidth;
+          H = cv.clientHeight || innerHeight;
+          if (R) {
+            R.setPixelRatio(Math.min(devicePixelRatio || 1, 1.75));
+            R.setSize(W, H, false);
+            C.aspect = W / H;
+            C.updateProjectionMatrix();
+          }
+        }
+        addEventListener('resize', size);
+        addEventListener('load', size);
+        pin.addEventListener('pointermove', function (e) {
+          var r = pin.getBoundingClientRect();
+          mx = (e.clientX - r.left) / r.width - .5;
+          my = (e.clientY - r.top) / r.height - .5;
+        }, { passive: true });
+        pin.addEventListener('pointerleave', function () { mx = 0; my = 0; });
+        addEventListener('scroll', function () { tp = prog(); }, { passive: true });
+        tp = prog(); sp = tp;
+
+        new IntersectionObserver(function (en) {
+          run = en[0].isIntersecting;
+          if (run) {
+            tp = prog();
+            size();
+            if (!window.THREE && !loading) load();
+          }
+        }, { rootMargin: '300px' }).observe(sec);
+
+        function load() {
+          loading = true;
+          if (window.THREE) { init(); return; }
+          var existing = document.querySelector('script[src*="three.min.js"]');
+          if (existing) { existing.addEventListener('load', init); return; }
+          var s = document.createElement('script');
+          s.src = 'js/three.min.js';
+          s.onload = init;
+          document.head.appendChild(s);
+        }
+        if (window.THREE) init();
+
+        function lerpC(A, B, f) { return [L(A[0], B[0], f), L(A[1], B[1], f), L(A[2], B[2], f)]; }
+
+        function tick(t) {
+          requestAnimationFrame(tick);
+          if (!lastT) lastT = t;
+          var dt = Math.min(0.05, Math.max(0.001, (t - lastT) * 0.001));
+          lastT = t;
+          if (!run) return;
+
+          if (reduce) {
+            sp = tp; smx = 0; smy = 0;
+          } else {
+            sp = damp(sp, tp, 7.5, dt);
+            smx = damp(smx, mx, 6.5, dt);
+            smy = damp(smy, my, 6.5, dt);
+          }
+
+          var q = sp * 4, nar = innerWidth < 800, w = [], k, i;
+          for (k = 0; k < 4; k++) {
+            var d = (k == 0 && q < .5) || (k == 3 && q > 3.5) ? 0 : Math.abs(q - (k + .5));
+            w.push(qss(1 - d * 1.92));
+          }
+
+          /* colours (cached string to avoid CSS gradient thrashing) */
+          var e = cl(q - .5, 0, 2.999), ci = Math.floor(e), cf = qss(e - ci),
+            A = lerpC(PAL[ci].a, PAL[ci + 1].a, cf),
+            B = lerpC(PAL[ci].b, PAL[ci + 1].b, cf),
+            bg = lerpC(PAL[ci].bg, PAL[ci + 1].bg, cf),
+            rim = lerpC(PAL[ci].rim, PAL[ci + 1].rim, cf);
+          var bg1 = bg.map(Math.round),
+            bg2 = bg.map(function (v) { return Math.round(v * .22); }),
+            bgKey = bg1.join(',');
+          if (bgKey !== lastBgKey) {
+            lastBgKey = bgKey;
+            pin.style.background = 'radial-gradient(ellipse at 60% 45%,rgb(' + bgKey + ') 0%,rgb(' + bg2.join(',') + ') 78%)';
+          }
+
+          /* text cross-dissolve via GPU transform + scale */
+          texts.forEach(function (el, n) {
+            var wn = w[n],
+              dirY = (1 - wn) * (q < n + .5 ? 24 : -24),
+              scT = .965 + .035 * wn;
+            el.style.opacity = wn.toFixed(4);
+            el.style.transform = nar
+              ? 'translate3d(0,' + ((1 - wn) * 14).toFixed(2) + 'px,0) scale(' + scT.toFixed(4) + ')'
+              : (n == 2 ? '' : 'translateY(-50%) ') + 'translate3d(0,' + dirY.toFixed(2) + 'px,0) scale(' + scT.toFixed(4) + ')';
+            el.style.pointerEvents = wn < .4 ? 'none' : 'auto';
+          });
+
+          /* sizes panel + GPU-positioned labels */
+          var l3 = cl(q - 2), halfH = 9 * Math.tan(18 * Math.PI / 180), fwid = nar ? .8 : .47;
+          panel.style.opacity = w[2].toFixed(4);
+          panel.style.transform = 'translate3d(0,0,0) scaleX(' + qss(l3 * 3.8).toFixed(4) + ')';
+          var base = -.68, asp = W / H, halfW = halfH * asp, spacing = fwid / 7 * 2 * halfW, s0 = Math.min(.5, .62 * spacing);
+          var lblTopBase = H / 2 * (1 - base / halfH) + 16;
+          for (k = 0; k < 8; k++) {
+            var fx = -fwid / 2 + fwid * k / 7,
+              ek = qss(l3 * 4 - k * .11 - .08),
+              lx = W / 2 + fx * W,
+              ly = lblTopBase + (1 - ek) * 18;
+            lbls[k].style.transform = 'translate3d(' + lx.toFixed(1) + 'px,' + ly.toFixed(1) + 'px,0) translate(-50%,0)';
+            lbls[k].style.opacity = (w[2] * ek).toFixed(4);
+          }
+
+          /* wheel with zero CSS transition collision & smooth damped hover springs */
+          var l4 = cl(q - 3), wRot = (1 - qss(l4 * 2.5)) * -110;
+          wheel.style.opacity = w[3].toFixed(4);
+          wheel.style.pointerEvents = w[3] < .4 ? 'none' : 'auto';
+          wheel.style.transform = 'translate3d(' + (smx * -10).toFixed(2) + 'px,' + (smy * -10).toFixed(2) + 'px,0) rotate(' + wRot.toFixed(2) + 'deg)';
+          wg.forEach(function (o, n) {
+            var targetHov = (hov === n) ? 1 : (hov >= 0 ? -1 : 0);
+            whov[n] = reduce ? targetHov : damp(whov[n], targetHov, 13, dt);
+            var hPos = Math.max(0, whov[n]), hDim = Math.max(0, -whov[n]);
+            var ek = qss(l4 * 3.5 - n * .075),
+              out = (1 - ek) * (nar ? 36 : 74) + hPos * 12,
+              a = o.c * Math.PI / 180,
+              s = 1 + hPos * 0.045 - hDim * 0.025;
+            o.g.style.transform = 'translate(' + (Math.cos(a) * out).toFixed(2) + 'px,' + (Math.sin(a) * out).toFixed(2) + 'px) scale(' + s.toFixed(4) + ')';
+            o.g.style.opacity = (ek * (1 - hDim * 0.28)).toFixed(4);
+          });
+          ctr.style.transform = 'scale(' + qss(l4 * 3.3 - .12).toFixed(4) + ')';
+          ctr.style.transformOrigin = '0 0';
+
+          /* ui indicators */
+          var act = cl(Math.floor(q), 0, 3);
+          if (act !== lastAct) {
+            lastAct = act;
+            dots.forEach(function (b, n) { b.classList.toggle('on', n === act); });
+          }
+          var mop = sp > .01 ? 0 : 1;
+          if (mop !== lastMouseOp) {
+            lastMouseOp = mop;
+            mouse.style.opacity = mop;
+          }
+          bar.style.transform = 'scaleX(' + sp.toFixed(5) + ')';
+
+          /* 3D */
+          if (!ready) return;
+          S.fog.color.setRGB(bg[0] * .22 / 255, bg[1] * .22 / 255, bg[2] * .22 / 255);
+          k2.color.setRGB(rim[0], rim[1], rim[2]);
+
+          var bgOp = cl(1 - .8 * w[2] - .75 * w[3], 0.05, 1);
+          var needTrans = bgOp < .995;
+          if (fw.material.transparent !== needTrans) {
+            fw.material.transparent = fr.material.transparent = needTrans;
+            fw.material.depthWrite = fr.material.depthWrite = !needTrans;
+            fw.material.needsUpdate = fr.material.needsUpdate = true;
+          }
+          fw.material.color.setRGB(A[0], A[1], A[2]);
+          fr.material.color.setRGB(B[0], B[1], B[2]);
+          fw.material.opacity = fr.material.opacity = bgOp;
+
+          var camZ = 10 - sp * 60;
+          C.position.z = camZ;
+          for (i = 0; i < fd.length; i++) {
+            var f = fd[i],
+              dz = camZ - f.z,
+              zoneFade = dz > 12 ? qss((dz - 12) / 5) : 0;
+            dm.position.set(f.x, f.y + Math.sin(t * 0.00075 + i) * .18, f.z);
+            dm.rotation.set(f.rx + t * .0002 * f.sp * 2.8, f.ry + t * .0003 * f.sp * 2.8, f.rz);
+            dm.scale.setScalar(Math.max(.0001, f.s * zoneFade));
+            dm.updateMatrix();
+            fw.setMatrixAt(i, dm.matrix);
+            dm.quaternion.multiply(flip);
+            dm.updateMatrix();
+            fr.setMatrixAt(i, dm.matrix);
+          }
+          fw.instanceMatrix.needsUpdate = true;
+          fr.instanceMatrix.needsUpdate = true;
+
+          ha.material.color.setRGB(A[0], A[1], A[2]);
+          hb.material.color.setRGB(B[0], B[1], B[2]);
+          var hv = 1 - qss((q - 1.7) / .45),
+            hs = (nar ? .6 : 1.15) * hv;
+          hero.visible = hs > .01;
+          hero.position.x = nar ? 0 : halfW * .5;
+          hero.position.y = (nar ? halfH * .42 : 0) + Math.sin(t * 0.0014) * .08;
+          hero.scale.setScalar(Math.max(.001, hs));
+          var flipT = qss((q - .7) / .65),
+            splitGap = Math.sin(flipT * Math.PI) * .16;
+          ha.position.y = splitGap;
+          hb.position.y = -splitGap;
+          hero.rotation.set(.3 + smy * .32, t * .00042 + smx * .72 + flipT * Math.PI * 2, .8 + Math.sin(t * 0.0006) * .12);
+
+          rowG.visible = w[2] > .01;
+          for (k = 0; k < 8; k++) {
+            var ek2 = qss(l3 * 4 - k * .11 - .08),
+              ekLift = outQuart(ek2),
+              fx2 = -fwid / 2 + fwid * k / 7,
+              sk = s0 * RT[k] * Math.max(.001, ek2),
+              g = row[k];
+            g.position.set(fx2 * 2 * halfW, base + 1.7 * s0 * RT[k] - (1 - ekLift) * 2.8, 0);
+            g.scale.setScalar(sk);
+            g.rotation.set(smy * .16, smx * .65 + Math.sin(t * 0.00085 + k * .7) * .28, 0);
+          }
+          R.render(S, C);
+        }
+        requestAnimationFrame(tick);
+      })();
+    </script>
+
+    <!-- ==================================================================
+         2. WHY YOU SHOULD BUY FROM US (animationsection/erawat-why.html + index.html cards)
+         ================================================================== -->
+    <section class="ew" id="manufacturingSection" aria-labelledby="manufacturingHeading">
+      <div class="ew-pin" id="ew-pin">
+        <div class="container ew-container">
+          <div class="ew-head">
+            <div>
+              <span class="section-tag" id="ew-chip"><span class="section-tag__dot"></span>Why Choose Us</span>
+              <h2 class="mfg-header__heading" id="manufacturingHeading">Why You Should Buy From Us</h2>
+            </div>
+            <p class="ew-sub" id="ew-sub">Minimal rejections, dedicated technical team support, and maximum machine uptime for global pharmaceutical manufacturers.</p>
+          </div>
+
+          <div class="ew-row" id="ew-row">
+            <!-- Card 1: Product Quality (Lime Green Theme) -->
+            <article class="ew-card mfg-card mfg-card--green">
+              <a class="mfg-card__link" href="why-us.html" aria-label="View more about Product specifications">
+                <div class="mfg-card__badge">01</div>
+                <div class="mfg-card__body">
+                  <div class="mfg-card__content">
+                    <span class="mfg-card__category">Product Quality</span>
+                    <h3 class="mfg-card__headline">Minimal Rejections</h3>
+                    <p class="mfg-card__desc">
+                      Minimal rejections on filing machine, resulting in higher yield and lesser wastage of expensive formulation.
+                    </p>
+                  </div>
+                  <div class="mfg-card__action">
+                    <span class="mfg-card__readmore">Read More</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Card 2: Technical Support (Golden Yellow Theme) -->
+            <article class="ew-card mfg-card mfg-card--yellow">
+              <a class="mfg-card__link" href="why-us.html" aria-label="View more about Certifications and Technical Support">
+                <div class="mfg-card__badge">02</div>
+                <div class="mfg-card__body">
+                  <div class="mfg-card__content">
+                    <span class="mfg-card__category">Technical Support</span>
+                    <h3 class="mfg-card__headline">Dedicated R&amp;D Team</h3>
+                    <p class="mfg-card__desc">
+                      Readily available technical team from EPL and R&amp;D unit to rectify mechanical and setting related problems on customer's filing machines.
+                    </p>
+                  </div>
+                  <div class="mfg-card__action">
+                    <span class="mfg-card__readmore">Read More</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Card 3: Machine Performance (Warm Orange Theme) -->
+            <article class="ew-card mfg-card mfg-card--orange">
+              <a class="mfg-card__link" href="why-us.html" aria-label="View more about Technical Specs">
+                <div class="mfg-card__badge">03</div>
+                <div class="mfg-card__body">
+                  <div class="mfg-card__content">
+                    <span class="mfg-card__category">Machine Performance</span>
+                    <h3 class="mfg-card__headline">Zero Downtime</h3>
+                    <p class="mfg-card__desc">
+                      Machine performance such as to give minimum downtime on filing machine, thus increasing machine and operator output.
+                    </p>
+                  </div>
+                  <div class="mfg-card__action">
+                    <span class="mfg-card__readmore">Read More</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <div class="ew-prog" id="ew-prog"><i><b></b></i><i><b></b></i><i><b></b></i></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        var A_HELP = window.__erawatAnim,
+          cl = A_HELP.cl,
+          qss = A_HELP.qss,
+          outQuart = A_HELP.outQuart,
+          damp = A_HELP.damp;
+
+        var sec = document.getElementById('manufacturingSection'),
+          pin = document.getElementById('ew-pin'),
+          row = document.getElementById('ew-row'),
+          cards = [].slice.call(row.children),
+          segs = [].slice.call(document.querySelectorAll('#ew-prog b')),
+          chip = document.getElementById('ew-chip'),
+          sub = document.getElementById('ew-sub'),
+          h2 = document.getElementById('manufacturingHeading');
+
+        var reduce = matchMedia('(prefers-reduced-motion:reduce)').matches,
+          run = false, dirty = true, lastT = 0,
+          tp = 0, sp = 0, te = 0, se = 0,
+          W = 1, H = 1, mx = 0, my = 0, smx = 0, smy = 0,
+          lay = { cx: [0, 0, 0], top: 0, cw: 1, ch: 1, rc: 0 };
+
+        function hdrH() { return window.__erawatHdrH ? window.__erawatHdrH() : 0; }
+
+        /* split headline into masked words */
+        var words = h2.textContent.trim().split(/\s+/);
+        h2.setAttribute('aria-label', h2.textContent.trim());
+        h2.innerHTML = words.map(function (w) {
+          return '<span class="w" aria-hidden="true"><span>' + w + '</span></span>';
+        }).join(' ');
+        var ws = [].slice.call(h2.querySelectorAll('.w>span'));
+
+        function measure() {
+          var pr = pin.getBoundingClientRect(), rr = row.getBoundingClientRect();
+          lay.rc = (rr.left - pr.left) + rr.width / 2;
+          lay.top = rr.top - pr.top;
+          lay.cw = cards[0].offsetWidth;
+          lay.ch = cards[0].offsetHeight;
+          cards.forEach(function (c, k) {
+            lay.cx[k] = (rr.left - pr.left) + c.offsetLeft + c.offsetWidth / 2;
+          });
+          W = pin.clientWidth;
+          H = pin.clientHeight;
+          dirty = true;
+        }
+
+        function sampleTargets() {
+          var r = sec.getBoundingClientRect(), hH = hdrH();
+          tp = cl((hH - r.top) / Math.max(1, r.height - (innerHeight - hH)));
+          te = cl((innerHeight - r.top) / (innerHeight * .85));
+          dirty = true;
+        }
+
+        addEventListener('resize', function () { measure(); sampleTargets(); });
+        addEventListener('load', function () { measure(); sampleTargets(); });
+        measure();
+        setTimeout(measure, 350);
+
+        pin.addEventListener('pointermove', function (e) {
+          var r = pin.getBoundingClientRect();
+          mx = (e.clientX - r.left) / r.width - .5;
+          my = (e.clientY - r.top) / r.height - .5;
+          dirty = true;
+        }, { passive: true });
+        pin.addEventListener('pointerleave', function () { mx = 0; my = 0; dirty = true; });
+        addEventListener('scroll', sampleTargets, { passive: true });
+        sampleTargets(); sp = tp; se = te;
+
+        new IntersectionObserver(function (en) {
+          run = en[0].isIntersecting;
+          if (run) { measure(); sampleTargets(); }
+        }, { rootMargin: '250px' }).observe(sec);
+
+        function renderFrame() {
+          var p = sp, enter = se, nar = innerWidth < 800;
+
+          /* header reveal */
+          var cE = qss(enter * 2.8 - .45),
+            sE = qss(enter * 2.8 - 1.35);
+          chip.style.opacity = reduce ? 1 : cE.toFixed(4);
+          chip.style.transform = 'translate3d(0,' + (reduce ? 0 : (1 - cE) * 14).toFixed(2) + 'px,0)';
+          ws.forEach(function (w, i) {
+            var we = outQuart(cl(enter * 3.1 - .75 - i * .22));
+            w.style.transform = 'translate3d(0,' + (reduce ? 0 : (1 - we) * 112).toFixed(2) + '%,0)';
+          });
+          sub.style.opacity = reduce ? 1 : sE.toFixed(4);
+          sub.style.transform = 'translate3d(0,' + (reduce ? 0 : (1 - sE) * 16).toFixed(2) + 'px,0)';
+
+          /* staggered deal + overlapping 3D stage focus */
+          var s = cl((p - .35) / .57, 0, 1) * 2,
+            fon = qss((p - .33) / .07) * (1 - qss((p - .93) / .07));
+
+          cards.forEach(function (c, n) {
+            var dn = reduce ? 1 : qss((p - .02 - n * .032) / .27),
+              f = qss(1 - Math.abs(s - n) * 1.12) * fon,
+              dx = nar ? 0 : (lay.rc - lay.cx[n]) * (1 - dn),
+              ro = n - 1,
+              sc = (.88 + .12 * dn) * (1 + .05 * f) * (1 - .028 * fon * (1 - f)),
+              ry = -ro * 22 * (1 - dn) + smx * 9 * f,
+              rz = ro * 4.5 * (1 - dn),
+              rx = -smy * 7 * f,
+              dy = (1 - dn) * 38 - 13 * f,
+              op = reduce ? 1 : qss(enter * 2.4 - .45 - n * .08);
+
+            if (nar) {
+              var o = n - s;
+              dx = o * W * .88 * (.14 + .86 * dn);
+              ry = -ro * 16 * (1 - dn) + o * -14;
+              op *= 1 - .55 * Math.min(1, Math.abs(o));
+              sc *= 1 - .08 * Math.min(1, Math.abs(o));
+            }
+            c.style.transform = 'translate3d(' + dx.toFixed(2) + 'px,' + dy.toFixed(2) + 'px,' + (f * 42).toFixed(2) + 'px) rotateX(' + rx.toFixed(2) + 'deg) rotateY(' + ry.toFixed(2) + 'deg) rotateZ(' + rz.toFixed(2) + 'deg) scale(' + sc.toFixed(4) + ')';
+            c.style.opacity = op.toFixed(4);
+            c.style.zIndex = (nar ? 10 - Math.round(Math.abs(n - s)) : n == 1 ? 3 : 2) + (f > .5 ? 5 : 0);
+            c.classList.toggle('is-spot', f > .45);
+          });
+
+          segs.forEach(function (b, n) {
+            var sv = p < .33 ? 0 : qss(s - n + .6);
+            b.style.transform = 'scaleX(' + sv.toFixed(4) + ')';
+          });
+        }
+        renderFrame();
+
+        function tick(t) {
+          requestAnimationFrame(tick);
+          if (!lastT) lastT = t;
+          var dt = Math.min(0.05, Math.max(0.001, (t - lastT) * 0.001));
+          lastT = t;
+          if (!run || !dirty) return;
+
+          if (reduce) {
+            sp = tp; se = te; smx = 0; smy = 0; dirty = false;
+          } else {
+            sp = damp(sp, tp, 8, dt);
+            se = damp(se, te, 9, dt);
+            smx = damp(smx, mx, 7, dt);
+            smy = damp(smy, my, 7, dt);
+            if (Math.abs(sp - tp) < 1e-4 && Math.abs(se - te) < 1e-4 && Math.abs(smx - mx) < 1e-4 && Math.abs(smy - my) < 1e-4) {
+              sp = tp; se = te; smx = mx; smy = my; dirty = false;
+            }
+          }
+          renderFrame();
+        }
+        requestAnimationFrame(tick);
+      })();
+    </script>
+
+    <!-- ==================================================================
+         3. WHO WE ARE (animationsection/erawat-who.html + index.html design & images)
+         ================================================================== -->
+    <section class="ww" id="nextStepsSection" aria-labelledby="nextStepsHeading">
+      <div class="ww-pin" id="ww-pin">
+        <div class="container">
+          <div class="ww-in">
+            <div id="ww-text">
+              <span class="section-tag" id="ww-chip"><span class="section-tag__dot"></span>Empty Capsules Manufacturers</span>
+              <h2 class="section-heading" id="nextStepsHeading">Who We Are</h2>
+              <p class="section-lead">Erawat Pharma Limited, an Erawat Group Company, ranks among the top <a href="manufacturing-setup.html">Capsule manufacturers</a> in the world &amp; second largest in India.</p>
+              <p class="section-lead">Manufacturing empty hard capsules since 1997, our team brings more than 30 years of total group experience in capsule manufacturing technologies. Backed by high technical competence and rigorous R &amp; D, we manufacture empty Gelatin Capsules as well as plant-derived <a href="epl-products.html">HPMC Capsules</a> for vegetarian and hygroscopic formulations.</p>
+              <div class="ww-cta" id="ww-btn-wrap">
+                <a class="btn-black-pill" id="ww-btn" href="profile.html">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">View More</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">View More</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <div class="ww-grid" id="ww-grid">
+              <div class="ww-tile"><img class="ww-art" src="images/whoweare1.png" alt="Empty hard Gelatin and HPMC vegetarian capsule polymers" loading="eager" decoding="async"></div>
+              <div class="ww-tile"><img class="ww-art" src="images/whoweare2.png" alt="Automated cleanroom capsule production and AC container logistics" loading="eager" decoding="async"></div>
+              <div class="ww-tile"><img class="ww-art" src="images/whoweare3.png" alt="Stringent I.P. 2014 quality inspection of empty hard capsules" loading="eager" decoding="async"></div>
+              <div class="ww-tile"><img class="ww-art" src="images/whoweare4.png" alt="Automated camera sorting and cleanroom dimensional tolerances" loading="eager" decoding="async"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        var A_HELP = window.__erawatAnim,
+          cl = A_HELP.cl,
+          qss = A_HELP.qss,
+          outQuart = A_HELP.outQuart,
+          damp = A_HELP.damp;
+
+        var sec = document.getElementById('nextStepsSection'),
+          pin = document.getElementById('ww-pin'),
+          grid = document.getElementById('ww-grid'),
+          tiles = [].slice.call(grid.children),
+          arts = tiles.map(function (t) { return t.firstElementChild; }),
+          chip = document.getElementById('ww-chip'),
+          h2 = document.getElementById('nextStepsHeading'),
+          btnWrap = document.getElementById('ww-btn-wrap'),
+          text = document.getElementById('ww-text');
+
+        var reduce = matchMedia('(prefers-reduced-motion:reduce)').matches,
+          run = false, dirty = true, lastT = 0,
+          tp = 0, sp = 0, te = 1, se = 1,
+          mx = 0, my = 0, smx = 0, smy = 0;
+
+        function hdrH() { return window.__erawatHdrH ? window.__erawatHdrH() : 0; }
+
+        /* word-by-word scroll scrub (links keep their colour, zero CSS transition fight) */
+        var sw = [], swLast = [];
+        function wrap(n) {
+          [].slice.call(n.childNodes).forEach(function (c) {
+            if (c.nodeType == 3) {
+              var f = document.createDocumentFragment();
+              c.textContent.split(/(\s+)/).forEach(function (w) {
+                if (!w) return;
+                if (/^\s+$/.test(w)) {
+                  f.appendChild(document.createTextNode(w));
+                } else {
+                  var s = document.createElement('span');
+                  s.className = 'sw';
+                  s.textContent = w;
+                  sw.push(s);
+                  swLast.push(-1);
+                  f.appendChild(s);
+                }
+              });
+              n.replaceChild(f, c);
+            } else if (c.nodeType == 1) {
+              wrap(c);
+            }
+          });
+        }
+        [].slice.call(text.querySelectorAll('p')).forEach(wrap);
+
+        var words = h2.textContent.trim().split(/\s+/);
+        h2.setAttribute('aria-label', h2.textContent.trim());
+        h2.innerHTML = words.map(function (w) {
+          return '<span class="w" aria-hidden="true"><span>' + w + '</span></span>';
+        }).join(' ');
+        var ws = [].slice.call(h2.querySelectorAll('.w>span'));
+
+        function sampleTargets() {
+          var r = sec.getBoundingClientRect(), hH = hdrH(), nar = innerWidth < 900;
+          if (nar) {
+            tp = cl((innerHeight * .92 - r.top) / (r.height + innerHeight * .25));
+            te = 1;
+          } else {
+            tp = cl((hH - r.top) / Math.max(1, r.height - (innerHeight - hH)));
+            te = cl((innerHeight - r.top) / (innerHeight * .85));
+          }
+          dirty = true;
+        }
+
+        pin.addEventListener('pointermove', function (e) {
+          var r = pin.getBoundingClientRect();
+          mx = (e.clientX - r.left) / r.width - .5;
+          my = (e.clientY - r.top) / r.height - .5;
+          dirty = true;
+        }, { passive: true });
+        pin.addEventListener('pointerleave', function () { mx = 0; my = 0; dirty = true; });
+        addEventListener('scroll', sampleTargets, { passive: true });
+        addEventListener('resize', sampleTargets);
+        sampleTargets(); sp = tp; se = te;
+
+        new IntersectionObserver(function (en) {
+          run = en[0].isIntersecting;
+          if (run) sampleTargets();
+        }, { rootMargin: '250px' }).observe(sec);
+
+        var FROM = [
+          [-210, -145, -18, 26, -14],
+          [240, -175, 22, -26, 12],
+          [-220, 190, 15, 24, 10],
+          [250, 210, -20, -28, -10]
+        ];
+
+        function renderFrame() {
+          var p = sp, nar = innerWidth < 900, enter = se;
+          var u = nar ? p * 3.1 : enter * .55 + p * 1.95;
+
+          var cU = qss(u * 2.2);
+          chip.style.opacity = reduce ? 1 : cU.toFixed(4);
+          chip.style.transform = 'translate3d(0,' + (reduce ? 0 : (1 - cU) * 14).toFixed(2) + 'px,0)';
+          ws.forEach(function (w, n) {
+            var wu = outQuart(cl(u * 2.4 - .26 - n * .24));
+            w.style.transform = 'translate3d(0,' + (reduce ? 0 : (1 - wu) * 112).toFixed(2) + '%,0)';
+          });
+
+          /* scrubbed paragraph spanning clean 0.04..0.64 range */
+          var N = sw.length, sc = cl((p - .04) / (nar ? .38 : .58)) * N;
+          for (var n = 0; n < N; n++) {
+            var ov = reduce ? 1 : (.28 + .72 * qss(sc - n + .6));
+            if (Math.abs(ov - swLast[n]) > .004) {
+              swLast[n] = ov;
+              sw[n].style.opacity = ov.toFixed(3);
+            }
+          }
+
+          /* button glide */
+          var b = qss((p - (nar ? .2 : .42)) / .16);
+          btnWrap.style.opacity = reduce ? 1 : b.toFixed(4);
+          btnWrap.style.transform = 'translate3d(0,' + (reduce ? 0 : (1 - b) * 18).toFixed(2) + 'px,0)';
+
+          /* tiles fly smoothly into 2x2 grid with damped 3D tilt + parallax */
+          var fScale = nar ? .45 : 1;
+          tiles.forEach(function (tl, k) {
+            var a = reduce ? 1 : qss(u * 1.95 - k * .15 - .08),
+              F = FROM[k], m = 1 - a, dz = (k % 2 ? 1 : -1) * 20;
+            tl.style.opacity = a.toFixed(4);
+            tl.style.transform = 'translate3d(' + (F[0] * fScale * m).toFixed(2) + 'px,' + (F[1] * fScale * m).toFixed(2) + 'px,' + (-260 * m + a * dz * smx * 2).toFixed(2) + 'px) rotateX(' + (F[3] * m - smy * 6 * a).toFixed(2) + 'deg) rotateY(' + (F[4] * m + smx * 8 * a).toFixed(2) + 'deg) rotateZ(' + (F[2] * m).toFixed(2) + 'deg) scale(' + (.62 + .38 * a).toFixed(4) + ')';
+            if (arts[k]) {
+              arts[k].style.transform = 'translate3d(0,' + ((p - .5) * -28 * (k % 2 ? -1 : 1)).toFixed(2) + 'px,0)';
+            }
+          });
+          text.style.transform = 'translate3d(0,' + ((.5 - p) * 14).toFixed(2) + 'px,0)';
+        }
+        renderFrame();
+
+        function tick(t) {
+          requestAnimationFrame(tick);
+          if (!lastT) lastT = t;
+          var dt = Math.min(0.05, Math.max(0.001, (t - lastT) * 0.001));
+          lastT = t;
+          if (!run || !dirty) return;
+
+          if (reduce) {
+            sp = tp; se = te; smx = 0; smy = 0; dirty = false;
+          } else {
+            sp = damp(sp, tp, 8, dt);
+            se = damp(se, te, 8.5, dt);
+            smx = damp(smx, mx, 7, dt);
+            smy = damp(smy, my, 7, dt);
+            if (Math.abs(sp - tp) < 1e-4 && Math.abs(se - te) < 1e-4 && Math.abs(smx - mx) < 1e-4 && Math.abs(smy - my) < 1e-4) {
+              sp = tp; se = te; smx = mx; smy = my; dirty = false;
+            }
+          }
+          renderFrame();
+        }
+        requestAnimationFrame(tick);
+      })();
+    </script>
+
+    <!-- ==================================================================
+         4. PLANT & TECHNOLOGY / FACILITY VIDEO (animationsection/erawat-plant.html + index.html)
+         ================================================================== -->
+    <section class="pv" id="facilityVideoSection" aria-labelledby="facilityVideoHeading">
+      <div class="pv-pin" id="pv-pin">
+        <div class="container pv-inner">
+          <div class="pv-head" id="pv-head">
+            <div>
+              <span class="section-tag" id="pv-chip"><span class="section-tag__dot"></span>Plant &amp; Technology</span>
+              <h2 class="facility-video__heading" id="facilityVideoHeading">State-of-the-Art Capsule Manufacturing in Action</h2>
+            </div>
+            <div class="pv-head-right" id="pv-sub-wrap">
+              <p class="pv-sub" id="pv-sub">
+                Step inside Erawat's fully automated, cGMP-compliant cleanroom facility. With high-speed production lines operating 24/7 under computerized air handling units (AHUs), our plants produce over 12 billion hard gelatin and HPMC vegetarian capsules annually with micron-level precision and zero-defect consistency for global pharmaceutical leaders.
+              </p>
+              <a class="btn-black-pill" href="manufacturing-setup.html">
+                <span class="btn-anim__text">
+                  <span class="btn-anim__text-track">
+                    <span class="btn-anim__text-item">Explore Setup</span>
+                    <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Explore Setup</span>
+                  </span>
+                </span>
+                <span class="btn-anim__icon">
+                  <span class="btn-anim__icon-track">
+                    <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+                    <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="pv-slot" id="pv-slot"></div>
+        </div>
+
+        <div class="pv-media" id="pv-media">
+          <img class="pv-img" id="pv-img" src="images/banners/tumvideoimg.jpg" alt="Erawat capsule manufacturing cleanroom facility" decoding="async">
+          <div class="pv-shade" id="pv-shade"></div>
+        </div>
+
+        <button type="button" class="pv-play" id="pv-play" data-open-modal="modalFacilityVideo"
+          data-video-src="https://www.youtube.com/embed/9Zb0B9ABYlw?si=NDvobKFWEKUeato7&autoplay=1&mute=1"
+          aria-label="Play Erawat Capsule Manufacturing Video">
+          <i></i>
+        </button>
+
+        <div class="pv-stats" id="pv-stats">
+          <div class="pv-stat"><b><em style="font-style:normal" data-n="12">0</em>B+</b><span>capsules produced annually</span></div>
+          <div class="pv-stat"><b>24/7</b><span>high-speed production lines</span></div>
+          <div class="pv-stat"><b>Zero-defect</b><span>consistency, micron-level precision</span></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      (function () {
+        var A_HELP = window.__erawatAnim,
+          L = A_HELP.lerp,
+          cl = A_HELP.cl,
+          qss = A_HELP.qss,
+          outQuart = A_HELP.outQuart,
+          damp = A_HELP.damp;
+
+        var sec = document.getElementById('facilityVideoSection'),
+          pin = document.getElementById('pv-pin'),
+          slot = document.getElementById('pv-slot'),
+          media = document.getElementById('pv-media'),
+          img = document.getElementById('pv-img'),
+          shade = document.getElementById('pv-shade'),
+          play = document.getElementById('pv-play'),
+          head = document.getElementById('pv-head'),
+          chip = document.getElementById('pv-chip'),
+          h2 = document.getElementById('facilityVideoHeading'),
+          subWrap = document.getElementById('pv-sub-wrap'),
+          stats = [].slice.call(document.querySelectorAll('.pv-stat')),
+          num = document.querySelector('#pv-stats [data-n]');
+
+        var reduce = matchMedia('(prefers-reduced-motion:reduce)').matches,
+          run = false, dirty = true, lastT = 0, lastClip = '',
+          tp = 0, sp = 0, te = 0, se = 0, W = 1, H = 1,
+          S = { l: 0, t: 0, w: 1, h: 1 },
+          a1w = 100, a1h = 100, s0 = 1,
+          mx = 0, my = 0, smx = 0, smy = 0, counted = false;
+
+        function hdrH() { return window.__erawatHdrH ? window.__erawatHdrH() : 0; }
+
+        var words = h2.textContent.trim().split(/\s+/);
+        h2.setAttribute('aria-label', h2.textContent.trim());
+        h2.innerHTML = words.map(function (w) {
+          return '<span class="w" aria-hidden="true"><span>' + w + '</span></span>';
+        }).join(' ');
+        var ws = [].slice.call(h2.querySelectorAll('.w>span'));
+
+        function measure() {
+          W = pin.clientWidth || innerWidth;
+          H = pin.clientHeight || innerHeight;
+          var pr = pin.getBoundingClientRect(), sr = slot.getBoundingClientRect();
+          S.l = sr.left - pr.left;
+          S.t = sr.top - pr.top;
+          S.w = sr.width;
+          S.h = sr.height;
+
+          var ar = (img.naturalWidth / img.naturalHeight) || 1.78;
+          function cover(w, h) { var ww = Math.max(w, h * ar); return [ww, ww / ar]; }
+          var a0 = cover(S.w, S.h),
+            a1 = cover(W * 1.05, H * 1.05);
+          a1w = a1[0];
+          a1h = a1[1];
+          s0 = a1w > 0 ? a0[0] / a1w : 1;
+
+          /* Set final image dimensions ONCE here — zero width/height/left/top mutation in rAF */
+          img.style.width = a1w.toFixed(1) + 'px';
+          img.style.height = a1h.toFixed(1) + 'px';
+          dirty = true;
+        }
+        addEventListener('resize', function () { measure(); sampleTargets(); });
+        addEventListener('load', function () { measure(); sampleTargets(); });
+        img.addEventListener('load', measure);
+        measure();
+        setTimeout(measure, 400);
+
+        function sampleTargets() {
+          var r = sec.getBoundingClientRect(), hH = hdrH();
+          tp = cl((hH - r.top) / Math.max(1, r.height - (innerHeight - hH)));
+          te = cl((innerHeight - r.top) / (innerHeight * .85));
+          dirty = true;
+        }
+        addEventListener('scroll', sampleTargets, { passive: true });
+        sampleTargets(); sp = tp; se = te;
+
+        pin.addEventListener('pointermove', function (e) {
+          var r = pin.getBoundingClientRect();
+          mx = (e.clientX - r.left) / r.width - .5;
+          my = (e.clientY - r.top) / r.height - .5;
+          dirty = true;
+        }, { passive: true });
+        pin.addEventListener('pointerleave', function () { mx = 0; my = 0; dirty = true; });
+
+        new IntersectionObserver(function (en) {
+          run = en[0].isIntersecting;
+          if (run) { measure(); sampleTargets(); }
+        }, { rootMargin: '250px' }).observe(sec);
+
+        function count() {
+          if (!num) return;
+          var n = +num.dataset.n, t0 = performance.now();
+          (function f(t) {
+            var k = Math.min(1, (t - t0) / 1450);
+            num.textContent = Math.round(n * outQuart(k));
+            if (k < 1) requestAnimationFrame(f);
+          })(t0);
+        }
+
+        function renderFrame() {
+          var p = sp, enter = se, nar = innerWidth < 800;
+
+          /* heading reveal on arrival */
+          var cE = qss(enter * 2.8 - .45),
+            sE = qss(enter * 2.8 - 1.3);
+          chip.style.opacity = reduce ? 1 : cE.toFixed(4);
+          chip.style.transform = 'translate3d(0,' + (reduce ? 0 : (1 - cE) * 12).toFixed(2) + 'px,0)';
+          ws.forEach(function (w, n) {
+            var we = outQuart(cl(enter * 3.1 - .65 - n * .18));
+            w.style.transform = 'translate3d(0,' + (reduce ? 0 : (1 - we) * 112).toFixed(2) + '%,0)';
+          });
+          subWrap.style.opacity = reduce ? 1 : sE.toFixed(4);
+          subWrap.style.transform = 'translate3d(0,' + (reduce ? 0 : (1 - sE) * 14).toFixed(2) + 'px,0)';
+
+          /* expand the rounded preview cleanly via clipPath + GPU transform */
+          var e = qss((p - .05) / .5), out = qss((p - .07) / .3);
+          head.style.opacity = (1 - out).toFixed(4);
+          head.style.transform = 'translate3d(0,' + (-out * 42).toFixed(2) + 'px,0)';
+          head.style.pointerEvents = out > .5 ? 'none' : 'auto';
+
+          var ins0 = (Math.max(0, S.t) * (1 - e)).toFixed(1),
+            ins1 = (Math.max(0, W - S.l - S.w) * (1 - e)).toFixed(1),
+            ins2 = (Math.max(0, H - S.t - S.h) * (1 - e)).toFixed(1),
+            ins3 = (Math.max(0, S.l) * (1 - e)).toFixed(1),
+            rad = (10 * (1 - e)).toFixed(1),
+            clipStr = 'inset(' + ins0 + 'px ' + ins1 + 'px ' + ins2 + 'px ' + ins3 + 'px round ' + rad + 'px)';
+          if (clipStr !== lastClip) {
+            lastClip = clipStr;
+            media.style.clipPath = clipStr;
+          }
+
+          var bx = L(S.l + S.w / 2, W / 2, e),
+            by = L(S.t + S.h / 2, H / 2, e),
+            isc = L(s0, 1, e),
+            tx = bx - a1w / 2 + smx * -16 * e,
+            ty = by - a1h / 2 + smy * -10 * e;
+          img.style.transform = 'translate3d(' + tx.toFixed(2) + 'px,' + ty.toFixed(2) + 'px,0) scale(' + isc.toFixed(4) + ')';
+          shade.style.opacity = (.34 + .5 * e).toFixed(4);
+
+          var cx = bx,
+            cy = L(S.t + S.h / 2, nar ? H * .34 : H / 2, e),
+            playOp = reduce ? 1 : qss(enter * 2.5 - .25);
+          play.style.opacity = playOp.toFixed(4);
+          play.style.transform = 'translate3d(' + cx.toFixed(2) + 'px,' + cy.toFixed(2) + 'px,0) scale(' + ((.85 + .15 * playOp) * (1 + .22 * e)).toFixed(4) + ')';
+
+          /* stat cards staggered entrance */
+          stats.forEach(function (s, k) {
+            var a = reduce ? 1 : qss((p - .55 - k * .05) / .13),
+              scS = .96 + .04 * a;
+            s.style.opacity = a.toFixed(4);
+            s.style.transform = 'translate3d(0,' + ((1 - a) * 26).toFixed(2) + 'px,0) scale(' + scS.toFixed(4) + ')';
+          });
+          if (p > .6 && !counted) { counted = true; count(); }
+        }
+        renderFrame();
+
+        function tick(t) {
+          requestAnimationFrame(tick);
+          if (!lastT) lastT = t;
+          var dt = Math.min(0.05, Math.max(0.001, (t - lastT) * 0.001));
+          lastT = t;
+          if (!run || !dirty) return;
+
+          if (reduce) {
+            sp = tp; se = te; smx = 0; smy = 0; dirty = false;
+          } else {
+            sp = damp(sp, tp, 7.5, dt);
+            se = damp(se, te, 8.5, dt);
+            smx = damp(smx, mx, 7, dt);
+            smy = damp(smy, my, 7, dt);
+            if (Math.abs(sp - tp) < 1e-4 && Math.abs(se - te) < 1e-4 && Math.abs(smx - mx) < 1e-4 && Math.abs(smy - my) < 1e-4) {
+              sp = tp; se = te; smx = mx; smy = my; dirty = false;
+            }
+          }
+          renderFrame();
+        }
+        requestAnimationFrame(tick);
+      })();
+    </script>
+
+    <!-- ==================================================================
+         5. OUR MISSION SECTION (WHITE BACKGROUND FOR INDEX-BANNER4.HTML)
+         ================================================================== -->
+    <section class="section--mission" id="missionSection" aria-label="Our Mission">
+      <div class="container mission-parallax__container">
+        <div class="mission-parallax__content">
+          <span class="section-tag" data-aos="fade-down" data-aos-duration="600"><span class="section-tag__dot"></span>Our Mission</span>
+
+          <blockquote class="mission-card__text" data-aos="fade-up" data-aos-duration="700" data-aos-delay="150">
+            &ldquo;To provide pharmaceutical manufacturers with products and services with consistent quality of such
+            a level that gives our customers highest output, highest reliability, maximum continuity and thus lowest
+            production cost.&rdquo;
+          </blockquote>
         </div>
       </div>
     </section>
 
     <!-- ==================================================================
-         5. SEND INQUIRY SECTION (HORIZONTAL EDITORIAL LAYOUT)
+         6. SEND INQUIRY SECTION (2-PART SPLIT LAYOUT MATCHING INDEX.HTML)
          ================================================================== -->
     <section class="section section--editorial" id="getStartedSection" aria-labelledby="getStartedHeading">
       <div class="container container--editorial">
-        <!-- Top: Heading on Left, Paragraph & Contacts on Right -->
-        <div class="inquiry-header">
-          <div class="inquiry-header__left" data-aos="fade-right" data-aos-duration="700">
-            <span class="section-tag"><span class="section-tag__dot"></span>Direct Factory Support &bull; EPL India</span>
-            <h2 class="inquiry-heading" id="getStartedHeading">
-              Send A Technical<br>Inquiry
-            </h2>
+        <div class="inquiry-split-layout">
+
+          <!-- LEFT SIDE: Header + Form -->
+          <div class="inquiry-split__left" data-aos="fade-right" data-aos-duration="700">
+            <div class="inquiry-header-compact">
+              <span class="section-tag"><span class="section-tag__dot"></span>Direct Factory Support &bull; EPL India</span>
+              <h2 class="inquiry-heading" id="getStartedHeading">
+                Send A Technical Inquiry
+              </h2>
+              <p class="inquiry-lead">
+                Submit your requirements below. Our EPL technical engineering &amp; R&amp;D team will connect with you within 24 hours.
+              </p>
+            </div>
+
+            <form class="editorial-form" id="inquiryForm" novalidate>
+              <!-- Row 1: Name* & Company Name* -->
+              <div class="form-grid-row--2">
+                <div class="field-line">
+                  <label class="field-line__label" for="fullName">Name<span class="required-star">*</span></label>
+                  <input class="field-line__input" type="text" id="fullName" name="fullName"
+                    placeholder="e.g. Rajesh Sharma" autocomplete="name" required>
+                  <span class="field__error" id="fullNameError" aria-live="polite"></span>
+                </div>
+
+                <div class="field-line">
+                  <label class="field-line__label" for="companyName">Company Name<span class="required-star">*</span></label>
+                  <input class="field-line__input" type="text" id="companyName" name="companyName"
+                    placeholder="e.g. Medilife Formulations" autocomplete="organization" required>
+                  <span class="field__error" id="companyNameError" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Row 2: Official Email* & 10 Digit Contact Number* -->
+              <div class="form-grid-row--2">
+                <div class="field-line">
+                  <label class="field-line__label" for="workEmail">Official Email Id<span class="required-star">*</span></label>
+                  <input class="field-line__input" type="email" id="workEmail" name="workEmail"
+                    placeholder="e.g. name@company.com" autocomplete="email" required>
+                  <span class="field__error" id="workEmailError" aria-live="polite"></span>
+                </div>
+
+                <div class="field-line">
+                  <label class="field-line__label" for="phoneNumber">10 Digit Contact Number<span class="required-star">*</span></label>
+                  <input class="field-line__input" type="tel" id="phoneNumber" name="phoneNumber"
+                    placeholder="e.g. 9876543210" autocomplete="tel" required>
+                  <span class="field__error" id="phoneNumberError" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Row 3: Designation* & Location (Country* & City*) -->
+              <div class="form-grid-row--2">
+                <div class="field-line">
+                  <label class="field-line__label" for="designation">Designation<span class="required-star">*</span></label>
+                  <input class="field-line__input" type="text" id="designation" name="designation"
+                    placeholder="e.g. Procurement / Production Manager" required>
+                  <span class="field__error" id="designationError" aria-live="polite"></span>
+                </div>
+
+                <div class="field-line-row">
+                  <div class="field-line">
+                    <label class="field-line__label" for="country">Country<span class="required-star">*</span></label>
+                    <input class="field-line__input" type="text" id="country" name="country" placeholder="e.g. India" required>
+                    <span class="field__error" id="countryError" aria-live="polite"></span>
+                  </div>
+                  <div class="field-line">
+                    <label class="field-line__label" for="city">City<span class="required-star">*</span></label>
+                    <input class="field-line__input" type="text" id="city" name="city" placeholder="e.g. Mumbai" required>
+                    <span class="field__error" id="cityError" aria-live="polite"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 4: Interest Area (Capsule Sizes) -->
+              <div class="field-line interest-area-line" style="margin-block: 0.25rem 1rem;">
+                <label class="field-line__label">Interest Area<span class="required-star">*</span> <span class="field-line__hint">(Capsule sizes)</span></label>
+                <div class="interest-minimal">
+                  <div class="interest-minimal__group">
+                    <span class="interest-minimal__title">Gelatin:</span>
+                    <div class="interest-minimal__chips">
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="00"><span>00</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="0EL"><span>0EL</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="0"><span>0</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="1"><span>1</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="2"><span>2</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="3"><span>3</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="4"><span>4</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="5"><span>5</span></label>
+                    </div>
+                  </div>
+
+                  <div class="interest-minimal__group">
+                    <span class="interest-minimal__title">HPMC:</span>
+                    <div class="interest-minimal__chips">
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="00"><span>00</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="0EL"><span>0EL</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="0"><span>0</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="1"><span>1</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="2"><span>2</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="3"><span>3</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="4"><span>4</span></label>
+                      <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="5"><span>5</span></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 5: Your Message -->
+              <div class="field-line" style="margin-bottom: 1.25rem;">
+                <label class="field-line__label" for="inquiryMessage">Your message</label>
+                <textarea class="field-line__input field-line__textarea" id="inquiryMessage" name="inquiryMessage"
+                  placeholder="Filling machine model, estimated volume, or custom colors..." rows="2"></textarea>
+              </div>
+
+              <!-- Row 6: reCAPTCHA + Submit Button -->
+              <div class="editorial-submit-row">
+                <div class="recaptcha-card" id="recaptchaWidget">
+                  <label class="recaptcha-box" for="recaptchaCheck">
+                    <input type="checkbox" id="recaptchaCheck" class="recaptcha-box__input">
+                    <span class="recaptcha-box__checkbox" aria-hidden="true">
+                      <svg class="recaptcha-box__check-icon" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 8.5L6.5 12L13 4.5" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span class="recaptcha-box__label">I'm not a robot</span>
+                  </label>
+                  <div class="recaptcha-brand">
+                    <div class="recaptcha-logo" aria-hidden="true">
+                      <svg viewBox="0 0 48 48" width="24" height="24">
+                        <path fill="#4285F4" d="M24 4.5c5 0 9.5 1.9 12.9 5l-4.5 4.5C30.2 12.1 27.3 11 24 11c-6.8 0-12.4 4.9-13.8 11.3l-6.3-4.9C7.4 9.6 15 4.5 24 4.5z" />
+                        <path fill="#34A853" d="M43.5 24c0 10.8-8.7 19.5-19.5 19.5-5 0-9.5-1.9-12.9-5l4.5-4.5c2.2 1.9 5.1 3 8.4 3 6.8 0 12.4-4.9 13.8-11.3l6.3 4.9c-.4 2.3-1.6 4.4-3.2 6.1z" />
+                        <path fill="#4A90E2" d="M24 18c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z" />
+                      </svg>
+                    </div>
+                    <span class="recaptcha-brand__text">reCAPTCHA</span>
+                  </div>
+                </div>
+
+                <button class="btn-black-pill btn-editorial-send" type="submit" id="submitInquiryBtn">
+                  <span class="btn-anim__text">
+                    <span class="btn-anim__text-track">
+                      <span class="btn-anim__text-item">Send Message</span>
+                      <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Message</span>
+                    </span>
+                  </span>
+                  <span class="btn-anim__icon">
+                    <span class="btn-anim__icon-track">
+                      <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+                      <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+                    </span>
+                  </span>
+                </button>
+              </div>
+
+              <div class="form-status is-hidden" id="formStatus" role="status" aria-live="polite"></div>
+            </form>
           </div>
 
-          <div class="inquiry-header__right" data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
-            <h3 class="inquiry-subhead">READY TO ELEVATE YOUR CAPSULE FORMULATION?</h3>
-            <p class="inquiry-desc">
-              We'll help you achieve minimal machine downtime, maximum filling yield, and certified compliance. Submit your details — our EPL technical &amp; R&amp;D engineering specialists will connect with you to discuss specifications or dispatch trial sample batches.
-            </p>
-            <div class="inquiry-contacts">
-              <a class="inquiry-contact-link" href="tel:+917316659100">+91 731 6659100</a>
-              <span class="inquiry-sep">/</span>
-              <a class="inquiry-contact-link" href="mailto:info@erawatgroup.com">info@erawatgroup.com</a>
+          <!-- RIGHT SIDE: Image Card (Matching Form Height) -->
+          <div class="inquiry-split__right" data-aos="fade-left" data-aos-duration="700" data-aos-delay="150">
+            <div class="inquiry-image-card">
+              <img class="inquiry-image-card__img" src="images/contactsec.jpeg"
+                alt="EPL technical engineering support and capsule manufacturing plant" width="1456" height="733"
+                loading="lazy">
             </div>
           </div>
+
         </div>
-
-        <!-- Below: Horizontal Multi-Column Form -->
-        <form class="editorial-form editorial-form--horizontal" id="inquiryForm" novalidate>
-          <!-- Row 1: Name*, Company Name*, Designation* (3 columns across) -->
-          <div class="form-grid-row--3" data-aos="fade-up" data-aos-delay="100">
-            <div class="field-line">
-              <label class="field-line__label" for="fullName">Name<span class="required-star">*</span></label>
-              <input class="field-line__input" type="text" id="fullName" name="fullName" placeholder="e.g. Rajesh Sharma" autocomplete="name" required>
-              <span class="field__error" id="fullNameError" aria-live="polite"></span>
-            </div>
-
-            <div class="field-line">
-              <label class="field-line__label" for="companyName">Company Name<span class="required-star">*</span></label>
-              <input class="field-line__input" type="text" id="companyName" name="companyName" placeholder="e.g. Medilife Formulations" autocomplete="organization" required>
-              <span class="field__error" id="companyNameError" aria-live="polite"></span>
-            </div>
-
-            <div class="field-line">
-              <label class="field-line__label" for="designation">Designation<span class="required-star">*</span></label>
-              <input class="field-line__input" type="text" id="designation" name="designation" placeholder="e.g. Procurement / Production Manager" required>
-              <span class="field__error" id="designationError" aria-live="polite"></span>
-            </div>
-          </div>
-
-          <!-- Row 2: Official Email*, Contact Number*, Country* & City* (3 columns across) -->
-          <div class="form-grid-row--3" data-aos="fade-up" data-aos-delay="200">
-            <div class="field-line">
-              <label class="field-line__label" for="workEmail">Official Email Id<span class="required-star">*</span></label>
-              <input class="field-line__input" type="email" id="workEmail" name="workEmail" placeholder="e.g. name@company.com" autocomplete="email" required>
-              <span class="field__error" id="workEmailError" aria-live="polite"></span>
-            </div>
-
-            <div class="field-line">
-              <label class="field-line__label" for="phoneNumber">10 Digit Contact Number<span class="required-star">*</span></label>
-              <input class="field-line__input" type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g. 9876543210" autocomplete="tel" required>
-              <span class="field__error" id="phoneNumberError" aria-live="polite"></span>
-            </div>
-
-            <div class="field-line-row">
-              <div class="field-line">
-                <label class="field-line__label" for="country">Country<span class="required-star">*</span></label>
-                <input class="field-line__input" type="text" id="country" name="country" placeholder="e.g. India" required>
-                <span class="field__error" id="countryError" aria-live="polite"></span>
-              </div>
-              <div class="field-line">
-                <label class="field-line__label" for="city">City<span class="required-star">*</span></label>
-                <input class="field-line__input" type="text" id="city" name="city" placeholder="e.g. Mumbai" required>
-                <span class="field__error" id="cityError" aria-live="polite"></span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Row 3: Split Interest Area (Capsule Sizes) on Left, Message on Right -->
-          <div class="form-grid-row--split" data-aos="fade-up" data-aos-delay="300">
-            <div class="field-line interest-area-line">
-              <label class="field-line__label">Interest Area<span class="required-star">*</span> <span class="field-line__hint">(Capsule sizes)</span></label>
-              <div class="interest-minimal">
-                <div class="interest-minimal__group">
-                  <span class="interest-minimal__title">Gelatin:</span>
-                  <div class="interest-minimal__chips">
-                    <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="00"><span>00</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="0EL"><span>0EL</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="0"><span>0</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="1"><span>1</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="2"><span>2</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="3"><span>3</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="4"><span>4</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="gelatin_size" value="5"><span>5</span></label>
-                  </div>
-                </div>
-
-                <div class="interest-minimal__group">
-                  <span class="interest-minimal__title">HPMC:</span>
-                  <div class="interest-minimal__chips">
-                    <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="00"><span>00</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="0EL"><span>0EL</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="0"><span>0</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="1"><span>1</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="2"><span>2</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="3"><span>3</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="4"><span>4</span></label>
-                    <label class="minimal-chip"><input type="checkbox" name="hpmc_size" value="5"><span>5</span></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Your Message -->
-            <div class="field-line">
-              <label class="field-line__label" for="inquiryMessage">Your message</label>
-              <textarea class="field-line__input field-line__textarea" id="inquiryMessage" name="inquiryMessage" placeholder="Filling machine model, estimated volume, or custom colors..." rows="2"></textarea>
-            </div>
-          </div>
-
-          <!-- Row 4: reCAPTCHA + Gradient Pill Submit Button -->
-          <div class="editorial-submit-row" data-aos="fade-up" data-aos-delay="350">
-            <div class="recaptcha-card" id="recaptchaWidget">
-              <label class="recaptcha-box" for="recaptchaCheck">
-                <input type="checkbox" id="recaptchaCheck" class="recaptcha-box__input">
-                <span class="recaptcha-box__checkbox" aria-hidden="true">
-                  <svg class="recaptcha-box__check-icon" viewBox="0 0 16 16" fill="none">
-                    <path d="M3 8.5L6.5 12L13 4.5" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </span>
-                <span class="recaptcha-box__label">I'm not a robot</span>
-              </label>
-              <div class="recaptcha-brand">
-                <div class="recaptcha-logo" aria-hidden="true">
-                  <svg viewBox="0 0 48 48" width="24" height="24">
-                    <path fill="#4285F4" d="M24 4.5c5 0 9.5 1.9 12.9 5l-4.5 4.5C30.2 12.1 27.3 11 24 11c-6.8 0-12.4 4.9-13.8 11.3l-6.3-4.9C7.4 9.6 15 4.5 24 4.5z"/>
-                    <path fill="#34A853" d="M43.5 24c0 10.8-8.7 19.5-19.5 19.5-5 0-9.5-1.9-12.9-5l4.5-4.5c2.2 1.9 5.1 3 8.4 3 6.8 0 12.4-4.9 13.8-11.3l6.3 4.9c-.4 2.3-1.6 4.4-3.2 6.1z"/>
-                    <path fill="#4A90E2" d="M24 18c3.3 0 6 2.7 6 6s-2.7 6-6 6-6-2.7-6-6 2.7-6 6-6z"/>
-                  </svg>
-                </div>
-                <span class="recaptcha-brand__text">reCAPTCHA</span>
-              </div>
-            </div>
-
-            <button class="btn-editorial-send" type="submit" id="submitInquiryBtn"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Send Message</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Message</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
-          </div>
-
-          <div class="form-status is-hidden" id="formStatus" role="status" aria-live="polite"></div>
-        </form>
       </div>
     </section>
   </main>
 
   <!-- ====================================================================
-       7. FOOTER WITH GIANT GRADIENT WORDMARK
+       7. FOOTER (MATCHING INDEX.HTML)
        ==================================================================== -->
   <footer class="site-footer">
     <div class="container">
@@ -677,21 +3686,12 @@ requestAnimationFrame(tick);
         <div class="footer__brand" data-aos="fade-up" data-aos-delay="100">
           <a class="footer__logo" href="index.html" aria-label="Erawat Pharma Limited Home">
             <span class="brand__logo-wrap">
-              <img
-                class="brand__logo"
-                src="images/logo-white.png"
-                alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine"
-                width="180"
-                height="48"
-              >
+              <img class="brand__logo" src="images/logo-white.png" alt="Erawat — Hard Capsules HPMC/VEG &amp; Gelatine"
+                width="180" height="48">
             </span>
           </a>
-          <p class="footer__desc">
-            Erawat Pharma Limited, an Erawat Group Company, ranks among the top Capsule manufacturers in the world &amp; second largest in India. Founded in 1997.
-          </p>
 
           <div class="footer__contact">
-            <h2 class="footer__heading">Contact Details</h2>
             <address class="footer__address">
               <span class="footer__address-line">12-C/FA, Scheme No. 94, Ring Road, Near Pipliyahana Square, Indore - 452016, Madhya Pradesh, India</span>
               <a class="footer__link" href="tel:+917316659100">+91 731 6659100</a>
@@ -723,8 +3723,7 @@ requestAnimationFrame(tick);
             </ul>
           </div>
 
-
-<div data-aos="fade-up" data-aos-delay="450">
+          <div data-aos="fade-up" data-aos-delay="450">
             <h2 class="footer__heading">Navigation</h2>
             <ul class="footer__list">
               <li><a class="footer__link" href="export.html">Export</a></li>
@@ -737,17 +3736,15 @@ requestAnimationFrame(tick);
       </div>
 
       <div class="footer__bottom" data-aos="fade-up" data-aos-delay="200">
-        <p>Copyright &copy; 2026 Erawat Pharma Limited. All Rights Reserved | <a class="footer__link"
-            href="sitemap.html">SiteMap</a></p>
+        <p>Copyright &copy; 2026 Erawat Pharma Limited. All Rights Reserved | <a class="footer__link" href="sitemap.html">SiteMap</a></p>
         <p>Created and developed by <a href="https://www.10dumbs.com/" target="_blank" rel="noopener noreferrer">10dumbs</a></p>
       </div>
     </div>
   </footer>
 
   <!-- ====================================================================
-       REUSABLE POPUPS & MODALS (P1: SEND INQUIRY & P9: COOKIE NOTICE)
+       MODALS & COOKIE NOTICE (MATCHING INDEX.HTML)
        ==================================================================== -->
-  <!-- P1: Send Inquiry Modal -->
   <!-- Modal Video: Facility Manufacturing Video -->
   <div class="modal-backdrop modal-backdrop--video" id="modalFacilityVideo" role="dialog" aria-modal="true" aria-labelledby="facilityVideoModalTitle" aria-hidden="true">
     <div class="modal-overlay" data-close-modal></div>
@@ -760,6 +3757,7 @@ requestAnimationFrame(tick);
     </div>
   </div>
 
+  <!-- Send Inquiry Modal -->
   <div class="modal-backdrop" id="modalSendInquiry" role="dialog" aria-modal="true" aria-labelledby="inquiryModalTitle" aria-hidden="true">
     <div class="modal-overlay" data-close-modal></div>
     <div class="modal-dialog">
@@ -801,9 +3799,23 @@ requestAnimationFrame(tick);
         </div>
         <div class="field-line" style="margin-bottom: 1.25rem;">
           <label class="field-line__label" for="modalInqMessage">Message</label>
-          <textarea class="field-line__input field-line__textarea" id="modalInqMessage" name="message" rows="2" placeholder="Specify filling speed, formulations, or trial requirements..."></textarea>
+          <textarea class="field-line__input field-line__textarea" id="modalInqMessage" name="message" rows="2"
+            placeholder="Specify filling speed, formulations, or trial requirements..."></textarea>
         </div>
-        <button type="submit" class="btn-gradient-pill" style="width: 100%;"><span class="btn-anim__text"><span class="btn-anim__text-track"><span class="btn-anim__text-item">Send Inquiry</span><span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span></span></span><span class="btn-anim__icon"><span class="btn-anim__icon-track"><svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg><svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg></span></span></button>
+        <button type="submit" class="btn-black-pill" style="width: 100%; justify-content: center;">
+          <span class="btn-anim__text">
+            <span class="btn-anim__text-track">
+              <span class="btn-anim__text-item">Send Inquiry</span>
+              <span class="btn-anim__text-item btn-anim__text-clone" aria-hidden="true">Send Inquiry</span>
+            </span>
+          </span>
+          <span class="btn-anim__icon">
+            <span class="btn-anim__icon-track">
+              <svg class="btn-anim__icon-item" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+              <svg class="btn-anim__icon-item btn-anim__icon-clone" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2L8 6L4 10" /></svg>
+            </span>
+          </span>
+        </button>
       </form>
       <div class="modal-success is-hidden" style="display: none; padding: 2rem 1rem; text-align: center;">
         <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--green-900); margin-bottom: 0.5rem;">Thanks. We will reply by email soon.</h4>
@@ -813,7 +3825,7 @@ requestAnimationFrame(tick);
     </div>
   </div>
 
-  <!-- P9: Cookie Notice -->
+  <!-- Cookie Notice -->
   <aside class="cookie-notice is-hidden" id="cookieNotice" role="region" aria-label="Cookie preferences">
     <p style="margin: 0; line-height: 1.45;">We use essential cookies to maintain site performance and process technical inquiries. No advertising trackers.</p>
     <div class="cookie-notice__actions">

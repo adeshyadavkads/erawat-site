@@ -1,0 +1,100 @@
+<!-- ===== ERAWAT "PLANT & TECHNOLOGY" SCROLL SECTION: paste in place of your current section ===== -->
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+.pv{position:relative;height:300vh;background:#f9fafc;color:#0e0f13;font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+.pv *{box-sizing:border-box}
+.pv-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:0 5vw}
+.pv-head{width:min(1000px,100%);display:flex;justify-content:space-between;align-items:flex-start;gap:48px;margin-bottom:34px}
+.pv-chip{display:inline-block;background:#e0302f;color:#fff;font-weight:800;font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;padding:5px 20px 5px 12px;clip-path:polygon(0 0,calc(100% - 9px) 0,100% 50%,calc(100% - 9px) 100%,0 100%);margin-bottom:12px}
+.pv-head>div:first-child{flex:1 1 58%}.pv h2{margin:0;font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.1;font-weight:800;letter-spacing:-.025em;max-width:19em}
+.pv h2 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}.pv h2 .w>span{display:inline-block;will-change:transform}
+.pv-sub{flex:0 1 410px;margin:22px 0 0;color:#5a6577;font-size:.86rem;line-height:1.75}
+.pv-slot{width:min(1000px,100%);aspect-ratio:2.4/1;max-height:calc(100vh - 270px);border-radius:28px;box-shadow:0 34px 70px rgba(20,30,60,.2)}
+.pv-media{position:absolute;inset:0;z-index:2;overflow:hidden;background:#10241a;will-change:clip-path}
+.pv-img{position:absolute;left:0;top:0;width:100px;height:100px;max-width:none;display:block}
+.pv-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,12,10,.25),rgba(6,12,10,.1) 40%,rgba(6,12,10,.75));opacity:.5}
+.pv-play{position:absolute;z-index:4;left:0;top:0;width:106px;height:106px;margin:-53px 0 0 -53px;border:0;padding:0;border-radius:50%;background:rgba(255,255,255,.22);cursor:pointer;display:grid;place-items:center;backdrop-filter:blur(2px)}
+.pv-play::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid rgba(255,255,255,.6);animation:pvP 2.2s ease-out infinite}
+.pv-play i{position:relative;width:74px;height:74px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .3s}
+.pv-play:hover i{transform:scale(1.1)}
+.pv-play i::after{content:"";margin-left:5px;border-left:20px solid #e0302f;border-top:12px solid transparent;border-bottom:12px solid transparent}
+@keyframes pvP{0%{transform:scale(.8);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+.pv-stats{position:absolute;z-index:3;left:0;right:0;bottom:calc(7vh + env(safe-area-inset-bottom,0px));width:min(1000px,90vw);margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;pointer-events:none}
+.pv-stat{padding:18px 22px;border-radius:16px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);color:#fff;will-change:transform,opacity}
+.pv-stat b{display:block;font-size:clamp(1.6rem,3vw,2.5rem);font-weight:800;line-height:1.05;letter-spacing:-.02em}
+.pv-stat span{font-size:.86rem;color:#e6ece8}
+.pv-modal{position:fixed;inset:0;z-index:9999;background:rgba(5,8,12,.88);display:none;align-items:center;justify-content:center;padding:5vw}
+.pv-modal.on{display:flex}
+.pv-modal div{position:relative;width:min(1100px,100%);aspect-ratio:16/9;background:#000;border-radius:14px;overflow:hidden}
+.pv-modal iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.pv-x{position:absolute;top:18px;right:22px;z-index:2;width:44px;height:44px;border-radius:50%;border:0;background:#fff;color:#111;font-size:1.4rem;cursor:pointer}
+@media (max-width:800px){
+.pv-head{flex-direction:column;gap:0;margin-bottom:22px}.pv-sub{margin-top:12px}
+.pv-slot{aspect-ratio:4/3;border-radius:20px}
+.pv-play{width:84px;height:84px;margin:-42px 0 0 -42px}.pv-play i{width:58px;height:58px}
+.pv-stats{grid-template-columns:1fr;gap:8px;bottom:4vh}.pv-stat{padding:11px 16px;display:flex;align-items:baseline;gap:12px}.pv-stat b{font-size:1.4rem}
+}
+@media (prefers-reduced-motion:reduce){.pv-play::before{animation:none}}
+</style>
+<section class="pv" id="pv" aria-label="Plant and technology">
+ <div class="pv-pin" id="pv-pin">
+  <div class="pv-head" id="pv-head">
+   <div><span class="pv-chip" id="pv-chip">Plant &amp; Technology</span><h2 id="pv-h2">State-of-the-Art Capsule Manufacturing in Action</h2></div>
+   <p class="pv-sub" id="pv-sub">Step inside Erawat's fully automated, cGMP-compliant cleanroom facility. With high-speed production lines operating 24/7 under computerized air handling units (AHUs), our plants produce over 12 billion hard gelatin and HPMC vegetarian capsules annually with micron-level precision and zero-defect consistency for global pharmaceutical leaders.</p>
+  </div>
+  <div class="pv-slot" id="pv-slot"></div>
+  <div class="pv-media" id="pv-media"><img class="pv-img" id="pv-img" src="images/plant.jpg" alt="HPMC capsules in the plant"><div class="pv-shade" id="pv-shade"></div></div>
+  <button class="pv-play" id="pv-play" aria-label="Play video"><i></i></button>
+  <div class="pv-stats" id="pv-stats">
+   <div class="pv-stat"><b><em style="font-style:normal" data-n="12">0</em>B+</b><span>capsules produced annually</span></div>
+   <div class="pv-stat"><b>24/7</b><span>high-speed production lines</span></div>
+   <div class="pv-stat"><b>Zero-defect</b><span>consistency, micron-level precision</span></div>
+  </div>
+ </div>
+</section>
+<div class="pv-modal" id="pv-modal" role="dialog" aria-modal="true" aria-label="Video"><button class="pv-x" id="pv-x" aria-label="Close video">×</button><div id="pv-frame"></div></div>
+<script>
+(function(){
+var VIDEO='9Zb0B9ABYlw'; /* YouTube video id: change to your own */
+var sec=document.getElementById('pv'),pin=document.getElementById('pv-pin'),slot=document.getElementById('pv-slot'),media=document.getElementById('pv-media'),img=document.getElementById('pv-img'),shade=document.getElementById('pv-shade'),play=document.getElementById('pv-play'),head=document.getElementById('pv-head'),chip=document.getElementById('pv-chip'),h2=document.getElementById('pv-h2'),sub=document.getElementById('pv-sub'),stats=[].slice.call(document.querySelectorAll('.pv-stat')),num=document.querySelector('[data-n]');
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,run=true,tp=0,sp=0,W=1,H=1,S={l:0,t:0,w:1,h:1},mx=0,my=0,counted=false;
+function L(a,b,t){return a+(b-a)*t}function cl(v,a,b){return Math.min(b==null?1:b,Math.max(a||0,v))}function ss(t){t=cl(t);return t*t*(3-2*t)}
+var words=h2.textContent.trim().split(/\s+/);h2.setAttribute('aria-label',h2.textContent.trim());h2.innerHTML=words.map(function(w){return '<span class="w" aria-hidden="true"><span>'+w+'</span></span>'}).join(' ');var ws=[].slice.call(h2.querySelectorAll('.w>span'));
+function measure(){W=pin.clientWidth;H=pin.clientHeight;var pr=pin.getBoundingClientRect(),sr=slot.getBoundingClientRect();S.l=sr.left-pr.left;S.t=sr.top-pr.top;S.w=sr.width;S.h=sr.height}
+addEventListener('resize',function(){measure()});measure();setTimeout(measure,400);
+function prog(){var r=sec.getBoundingClientRect();return cl(-r.top/Math.max(1,r.height-innerHeight))}
+addEventListener('scroll',function(){tp=prog()},{passive:true});tp=prog();sp=tp;
+pin.addEventListener('pointermove',function(e){var r=pin.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5},{passive:true});
+new IntersectionObserver(function(en){run=en[0].isIntersecting;if(run)measure()},{rootMargin:'200px'}).observe(sec);
+function count(){var n=+num.dataset.n,t0=performance.now();(function f(t){var k=Math.min(1,(t-t0)/1400);num.textContent=Math.round(n*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(f)})(t0)}
+function tick(){
+requestAnimationFrame(tick);if(!run)return;
+sp+=(tp-sp)*(reduce?1:.1);var p=sp,r=sec.getBoundingClientRect(),enter=cl((innerHeight-r.top)/(innerHeight*.85));
+/* heading reveal on arrival */
+chip.style.opacity=ss(enter*3-.5);chip.style.translate='0 '+(1-ss(enter*3-.5))*12+'px';
+ws.forEach(function(w,n){w.style.transform='translateY('+(1-ss(enter*3.2-.7-n*.22))*110+'%)'});
+sub.style.opacity=ss(enter*3-1.4);
+/* expand the card to full screen */
+var e=ss((p-.06)/.5),out=ss((p-.08)/.3);
+head.style.opacity=1-out;head.style.transform='translateY('+(-out*50)+'px)';
+var ins=[S.t*(1-e),(W-S.l-S.w)*(1-e),(H-S.t-S.h)*(1-e),S.l*(1-e)],rad=28*(1-e);
+media.style.clipPath='inset('+ins.map(function(v){return Math.max(0,v)+'px'}).join(' ')+' round '+rad+'px)';
+slot.style.boxShadow='0 34px 70px rgba(20,30,60,'+(.2*(1-e))+')';
+var ar=(img.naturalWidth/img.naturalHeight)||2.42;function cover(w,h){var ww=Math.max(w,h*ar);return [ww,ww/ar]}
+var a0=cover(S.w,S.h),a1=cover(W*1.04,H*1.04),iw=L(a0[0],a1[0],e),ih=L(a0[1],a1[1],e),bx=L(S.l+S.w/2,W/2,e),by=L(S.t+S.h/2,H/2,e);
+img.style.width=iw+'px';img.style.height=ih+'px';img.style.left=(bx-iw/2+mx*-12*e)+'px';img.style.top=(by-ih/2+my*-8*e)+'px';
+shade.style.opacity=.35+.5*e;
+var cx=L(S.l+S.w/2,W/2,e),cy=L(S.t+S.h/2,H/2,e);play.style.transform='translate('+cx+'px,'+cy+'px) scale('+(1+.3*e)+')';
+/* stat cards */
+stats.forEach(function(s,k){var a=reduce?1:ss((p-.62-k*.07)/.14);s.style.opacity=a;s.style.transform='translateY('+(1-a)*26+'px)'});
+if(p>.7&&!counted){counted=true;count()}}
+requestAnimationFrame(tick);
+/* video modal */
+var modal=document.getElementById('pv-modal'),frame=document.getElementById('pv-frame');
+function open(){frame.insertAdjacentHTML('beforeend','<iframe src="https://www.youtube.com/embed/'+VIDEO+'?autoplay=1&rel=0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen title="Erawat plant video"></iframe>');modal.classList.add('on');document.getElementById('pv-x').focus()}
+function close(){modal.classList.remove('on');var f=frame.querySelector('iframe');if(f)f.remove();play.focus()}
+play.addEventListener('click',open);document.getElementById('pv-x').addEventListener('click',close);
+modal.addEventListener('click',function(e){if(e.target===modal)close()});addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('on'))close()});
+})();
+</script>
+<!-- ===== END ERAWAT PLANT & TECHNOLOGY SECTION ===== -->

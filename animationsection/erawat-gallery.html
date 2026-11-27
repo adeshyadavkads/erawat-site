@@ -1,0 +1,92 @@
+<!-- ===== ERAWAT "PLANT GALLERY" SCROLL SECTION: paste in place of your current section ===== -->
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+.pg{position:relative;height:720vh;background:#faf9f6;color:#111;font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif}
+.pg *{box-sizing:border-box}
+.pg-pin{position:sticky;top:0;height:100vh;overflow:hidden}
+.pg-head{position:absolute;z-index:20;left:0;right:0;top:36px;width:min(1000px,88vw);margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end}
+.pg-chip{display:inline-block;background:#e0302f;color:#fff;font-weight:800;font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;padding:5px 20px 5px 12px;clip-path:polygon(0 0,calc(100% - 9px) 0,100% 50%,calc(100% - 9px) 100%,0 100%);margin-bottom:12px}
+.pg h2{margin:0;font-size:clamp(1.9rem,3vw,2.6rem);line-height:1.1;font-weight:800;letter-spacing:-.025em}
+.pg h2 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}.pg h2 .w>span{display:inline-block;will-change:transform}
+.pg-count{text-align:right;opacity:0;font-weight:800;font-size:1rem;letter-spacing:.02em}
+.pg-count b{font-size:2.2rem;letter-spacing:-.03em}.pg-count span{color:#8c8f98}
+.pg-ticks{display:flex;gap:5px;margin-top:8px;justify-content:flex-end}.pg-ticks i{width:26px;height:4px;border-radius:4px;background:#d9dae0;position:relative;overflow:hidden}.pg-ticks i b{position:absolute;inset:0;background:linear-gradient(90deg,#c9191f,#f4571f);transform:scaleX(0);transform-origin:0 50%}
+.pg-tile{position:absolute;left:0;top:0;overflow:hidden;background:#d9dadf;box-shadow:0 10px 30px rgba(20,25,40,.14);cursor:default;will-change:left,top,width,height,opacity}
+.pg-tile img{position:absolute;left:-4%;top:-4%;width:108%;height:108%;max-width:none;object-fit:cover;display:block;transition:scale .5s}
+.pg-tile:hover img{scale:1.05}
+.pg-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.6));pointer-events:none}
+.pg-sm{position:absolute;z-index:2;left:12px;bottom:10px;color:#fff;font-weight:600;font-size:.76rem}
+.pg-big{position:absolute;z-index:2;left:clamp(18px,3vw,36px);bottom:clamp(16px,3vw,34px);color:#fff;opacity:0;pointer-events:none}
+.pg-big em{display:block;font-style:normal;font-weight:800;font-size:clamp(3rem,7vw,6rem);line-height:.9;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:2px rgba(255,255,255,.85)}
+.pg-big span{display:block;margin-top:8px;font-weight:800;font-size:clamp(1.3rem,2.4vw,2.2rem);letter-spacing:-.02em}
+.pg.tour-on .pg-tile{cursor:pointer}
+@media (max-width:900px){
+.pg{height:auto}.pg-pin{position:relative;height:auto;padding:36px 5vw 60px}
+.pg-head{position:relative;top:0;width:100%;margin-bottom:26px}.pg-count{display:none}
+.pg-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pg-tile{position:relative!important;left:auto!important;top:auto!important;width:auto!important;height:auto!important;aspect-ratio:4/3;border-radius:8px!important}
+.pg-big{display:none}
+}
+</style>
+<section class="pg" id="pg" aria-label="Plant gallery">
+ <div class="pg-pin" id="pg-pin">
+  <div class="pg-head" id="pg-head">
+   <div><span class="pg-chip" id="pg-chip">Facility Tour</span><h2 id="pg-h2">Plant Gallery</h2></div>
+   <div class="pg-count" id="pg-count"><b id="pg-n">01</b> <span>/ 06</span><div class="pg-ticks" id="pg-ticks"></div></div>
+  </div>
+  <div class="pg-grid" id="pg-grid">
+   <!-- Replace each src with your own photo -->
+   <figure class="pg-tile" style="margin:0"><img src="images/gallery-1.jpg" alt="Dipping line"><div class="pg-sm">01 Dipping line</div><div class="pg-big"><em>01</em><span>Dipping line</span></div></figure>
+   <figure class="pg-tile" style="margin:0"><img src="images/gallery-2.jpg" alt="Drying chamber"><div class="pg-sm">02 Drying chamber</div><div class="pg-big"><em>02</em><span>Drying chamber</span></div></figure>
+   <figure class="pg-tile" style="margin:0"><img src="images/gallery-3.jpg" alt="Inspection"><div class="pg-sm">03 Inspection</div><div class="pg-big"><em>03</em><span>Inspection</span></div></figure>
+   <figure class="pg-tile" style="margin:0"><img src="images/gallery-4.jpg" alt="Packing"><div class="pg-sm">04 Packing</div><div class="pg-big"><em>04</em><span>Packing</span></div></figure>
+   <figure class="pg-tile" style="margin:0"><img src="images/gallery-5.jpg" alt="Warehouse"><div class="pg-sm">05 Warehouse</div><div class="pg-big"><em>05</em><span>Warehouse</span></div></figure>
+   <figure class="pg-tile" style="margin:0"><img src="images/gallery-6.jpg" alt="R&amp;D lab"><div class="pg-sm">06 R&amp;D lab</div><div class="pg-big"><em>06</em><span>R&amp;D lab</span></div></figure>
+  </div>
+ </div>
+</section>
+<script>
+(function(){
+var sec=document.getElementById('pg'),pin=document.getElementById('pg-pin'),head=document.getElementById('pg-head'),grid=document.getElementById('pg-grid'),tiles=[].slice.call(grid.children),imgs=tiles.map(function(t){return t.querySelector('img')}),sms=tiles.map(function(t){return t.querySelector('.pg-sm')}),bigs=tiles.map(function(t){return t.querySelector('.pg-big')}),chip=document.getElementById('pg-chip'),h2=document.getElementById('pg-h2'),cnt=document.getElementById('pg-count'),nEl=document.getElementById('pg-n'),tk=document.getElementById('pg-ticks');
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches,run=true,tp=0,sp=0,W=1,H=1,mx=0,my=0,nar=false,G=[],B={},ya=0,yb=0,Rx=0,Rw=0,Rh=0,gp=16,SH=0,N=tiles.length;
+function L(a,b,t){return a+(b-a)*t}function cl(v,a,b){return Math.min(b==null?1:b,Math.max(a||0,v))}function ss(t){t=cl(t);return t*t*(3-2*t)}
+for(var i=0;i<N;i++){var b=document.createElement('i');b.innerHTML='<b></b>';tk.appendChild(b)}var tks=[].slice.call(tk.querySelectorAll('b'));
+var words=h2.textContent.trim().split(/\s+/);h2.setAttribute('aria-label',h2.textContent.trim());h2.innerHTML=words.map(function(w){return '<span class="w" aria-hidden="true"><span>'+w+'</span></span>'}).join(' ');var ws=[].slice.call(h2.querySelectorAll('.w>span'));
+function measure(){
+W=pin.clientWidth;H=pin.clientHeight;nar=innerWidth<=900;if(nar)return;
+var pr=pin.getBoundingClientRect(),hr=head.getBoundingClientRect(),x0=hr.left-pr.left,cw=hr.width,gap=18,tw=(cw-2*gap)/3,top=172,th=Math.min(tw*.75,(H-top-26-gap)/2);
+G=[];for(var k=0;k<N;k++)G.push({x:x0+(k%3)*(tw+gap),y:top+Math.floor(k/3)*(th+gap),w:tw,h:th});
+ya=top;yb=H-28;SH=yb-ya;var bw=cw*.64;B={x:x0,y:ya,w:bw,h:SH};Rx=x0+bw+24;Rw=cw-bw-24;Rh=Math.min(150,(SH-2*gp)/3);
+}
+addEventListener('resize',measure);measure();setTimeout(measure,400);
+function prog(){var r=sec.getBoundingClientRect();return cl(-r.top/Math.max(1,r.height-innerHeight))}
+addEventListener('scroll',function(){tp=prog()},{passive:true});tp=prog();sp=tp;
+pin.addEventListener('pointermove',function(e){var r=pin.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5},{passive:true});
+new IntersectionObserver(function(en){run=en[0].isIntersecting;if(run)measure()},{rootMargin:'200px'}).observe(sec);
+function goTo(k){var top=sec.getBoundingClientRect().top+scrollY,max=sec.offsetHeight-innerHeight;scrollTo({top:top+max*(.14+(k/(N-1))*.74),behavior:reduce?'auto':'smooth'})}
+tiles.forEach(function(t,k){t.addEventListener('click',function(){if(!nar&&sec.classList.contains('tour-on'))goTo(k)})});
+function lr(a,b,t){return {x:L(a.x,b.x,t),y:L(a.y,b.y,t),w:L(a.w,b.w,t),h:L(a.h,b.h,t)}}
+function tick(){
+requestAnimationFrame(tick);if(!run)return;
+var rect=sec.getBoundingClientRect(),enter=cl((innerHeight-rect.top)/(innerHeight*.85));
+chip.style.opacity=ss(enter*3-.4);chip.style.translate='0 '+(1-ss(enter*3-.4))*12+'px';
+ws.forEach(function(w,n){w.style.transform='translateY('+(1-ss(enter*3.2-.6-n*.25))*110+'%)'});
+if(nar){tiles.forEach(function(t,k){var r=t.getBoundingClientRect(),a=ss((innerHeight*.96-r.top)/(innerHeight*.3));t.style.opacity=a;t.style.clipPath='inset(0 0 '+((1-a)*100)+'% 0 round 8px)';imgs[k].style.transform='translateY('+((r.top/innerHeight-.5)*-14)+'px)'});return}
+sp+=(tp-sp)*(reduce?1:.1);var p=sp,m=ss((p-.02)/.12)*(1-ss((p-.9)/.08)),raw=cl((p-.14)/.74)*(N-1),fi=Math.min(N-2,Math.floor(raw)),s=fi+ss(cl((raw-fi-.22)/.56));if(raw>=N-1)s=N-1;
+sec.classList.toggle('tour-on',m>.6);
+var cur=Math.round(s);nEl.textContent=('0'+(cur+1)).slice(-2);cnt.style.opacity=m;tks.forEach(function(b,k){b.style.transform='scaleX('+(k<=cur?1:0)+')'});
+tiles.forEach(function(t,k){
+var d=k-s,T,op=1,big=cl(1-Math.abs(d)),z;
+if(d>=0&&d<=1){T=lr(B,{x:Rx,y:ya,w:Rw,h:Rh},ss(d));z=10-d}
+else if(d>1){T={x:Rx,y:ya+(d-1)*(Rh+gp),w:Rw,h:Rh};op=cl((yb+8-(T.y+Rh*.4))/(Rh*.7));z=9-d}
+else{T={x:B.x,y:B.y+d*SH*.16,w:B.w,h:B.h};op=cl(1+d*1.7);z=5}
+var g=G[k],a=reduce?1:ss(enter*2.3-.5-k*.14),F=lr(g,T,m),o=L(1,op,m)*a,b=ss(big)*m;
+t.style.left=F.x+'px';t.style.top=(F.y+(1-a)*34*(1-m))+'px';t.style.width=F.w+'px';t.style.height=F.h+'px';t.style.opacity=o;t.style.zIndex=Math.round(z);
+t.style.borderRadius=(4+12*b)+'px';
+sms[k].style.opacity=cl(1-b*1.6);bigs[k].style.opacity=cl((b-.35)*1.6);
+imgs[k].style.transform='translate('+(mx*-16*b)+'px,'+(my*-10*b)+'px)'});
+}
+requestAnimationFrame(tick);
+})();
+</script>
+<!-- ===== END ERAWAT PLANT GALLERY SECTION ===== -->
